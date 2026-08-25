@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Cyclone Overflow goes to --></label>
+    <name>Cyclone_Overflow_goes_to__c</name>
+    <picklistValues>
+        <masterLabel>AG mill</masterLabel>
+        <translation><!-- AG mill --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Ball Mill</masterLabel>
+        <translation><!-- Ball Mill --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Filtering</masterLabel>
+        <translation><!-- Filtering --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Flotation Cell</masterLabel>
+        <translation><!-- Flotation Cell --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Magnetic Separator</masterLabel>
+        <translation><!-- Magnetic Separator --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Rod Mill</masterLabel>
+        <translation><!-- Rod Mill --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>SAG mill</masterLabel>
+        <translation><!-- SAG mill --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Screen</masterLabel>
+        <translation><!-- Screen --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Spiral</masterLabel>
+        <translation><!-- Spiral --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Tank</masterLabel>
+        <translation><!-- Tank --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Thickness</masterLabel>
+        <translation><!-- Thickness --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

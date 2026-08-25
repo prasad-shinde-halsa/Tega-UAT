@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Rubber Block Size --></label>
+    <name>Rubber_Block_Size__c</name>
+    <picklistValues>
+        <masterLabel>Rubber Block 125x150x25</masterLabel>
+        <translation><!-- Rubber Block 125x150x25 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Rubber Block 125x150x25/15</masterLabel>
+        <translation><!-- Rubber Block 125x150x25/15 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Rubber Block 150x200x25</masterLabel>
+        <translation><!-- Rubber Block 150x200x25 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Rubber Block 150x200x32</masterLabel>
+        <translation><!-- Rubber Block 150x200x32 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Rubber Block 150x200x32/22</masterLabel>
+        <translation><!-- Rubber Block 150x200x32/22 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Rubber Block 150x265x25</masterLabel>
+        <translation><!-- Rubber Block 150x265x25 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Rubber Block 150x265x32</masterLabel>
+        <translation><!-- Rubber Block 150x265x32 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Rubber Block 170x200x20</masterLabel>
+        <translation><!-- Rubber Block 170x200x20 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Rubber Block 200x200x20</masterLabel>
+        <translation><!-- Rubber Block 200x200x20 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Rubber Block 200x90x20</masterLabel>
+        <translation><!-- Rubber Block 200x90x20 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Rubber Block 205x200x20</masterLabel>
+        <translation><!-- Rubber Block 205x200x20 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Rubber Block 220x200x20</masterLabel>
+        <translation><!-- Rubber Block 220x200x20 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Rubber Block 500X112X14/20</masterLabel>
+        <translation><!-- Rubber Block 500X112X14/20 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Rubber Block 500X170X15/20</masterLabel>
+        <translation><!-- Rubber Block 500X170X15/20 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Rubber Block 500X170X15/30</masterLabel>
+        <translation><!-- Rubber Block 500X170X15/30 --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

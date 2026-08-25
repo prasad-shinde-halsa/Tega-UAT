@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Queue xmlns="http://soap.sforce.com/2006/04/metadata">
+    <doesIncludeBosses>true</doesIncludeBosses>
+    <doesSendEmailToMembers>false</doesSendEmailToMembers>
+    <name>Conveyor Component-PPR-TA01-CCOF</name>
+    <queueMembers>
+        <users>
+            <user>pmg.conveyorcomponent@tega.com.prd</user>
+            <user>soumen.manna@tegaindustries.com</user>
+            <user>souvik.santra@tegaindustries.com</user>
+        </users>
+    </queueMembers>
+    <queueSobject>
+        <sobjectType>PPR_Line_Item__c</sobjectType>
+    </queueSobject>
+    <queueSobject>
+        <sobjectType>Task</sobjectType>
+    </queueSobject>
+</Queue>

@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RecordType xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Mill</fullName>
+    <active>true</active>
+    <label>Mill</label>
+    <picklistValues>
+        <picklist>Item_Desc__c</picklist>
+        <values>
+            <fullName>Aluminium</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Any other cost  1</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Any other cost  2</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Casting- T1</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Casting- T2</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Hardox 100- 500 BHN</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Hardox 25- 500 BHN</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Hardox 50- 500 BHN</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Hardox 65- 550 BHN</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Hardox 75- 500 BHN</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Hardox 80- 550 BHN</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Hardox 80- 600 BHN</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Rubber 102</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Rubber 106</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Stainless Steel</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Structural Steel</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+</RecordType>

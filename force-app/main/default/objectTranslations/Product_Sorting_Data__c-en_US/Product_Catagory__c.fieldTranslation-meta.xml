@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Product Catagory --></label>
+    <name>Product_Catagory__c</name>
+    <picklistValues>
+        <masterLabel>PLM</masterLabel>
+        <translation><!-- PLM --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>PLS</masterLabel>
+        <translation><!-- PLS --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>PLT</masterLabel>
+        <translation><!-- PLT --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

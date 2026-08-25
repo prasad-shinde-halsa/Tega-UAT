@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Where_it_is__c</fullName>
+    <label>Status</label>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>At Site</fullName>
+                <default>false</default>
+                <label>At Site</label>
+            </value>
+            <value>
+                <fullName>Installed</fullName>
+                <default>false</default>
+                <label>Installed</label>
+            </value>
+            <value>
+                <fullName>Removed</fullName>
+                <default>false</default>
+                <label>Removed</label>
+            </value>
+            <value>
+                <fullName>Inventory</fullName>
+                <default>false</default>
+                <label>Inventory</label>
+            </value>
+            <value>
+                <fullName>Partially Installed</fullName>
+                <default>false</default>
+                <label>Partially Installed</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

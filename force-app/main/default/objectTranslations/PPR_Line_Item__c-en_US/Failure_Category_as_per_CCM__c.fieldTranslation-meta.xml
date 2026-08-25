@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Failure Category as per CCM --></label>
+    <name>Failure_Category_as_per_CCM__c</name>
+    <picklistValues>
+        <masterLabel>Aluminium Track Worn Out</masterLabel>
+        <translation><!-- Aluminium Track Worn Out --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Aluminium Track channel-gap smal</masterLabel>
+        <translation><!-- Aluminium Track channel-gap smal --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Bolt Breakage</masterLabel>
+        <translation><!-- Bolt Breakage --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Bolt Head and Clamp Block Mismatching</masterLabel>
+        <translation><!-- Bolt Head and Clamp Block Mismatching --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Casting Breakage / Crack / Faster Wear</masterLabel>
+        <translation><!-- Casting Breakage / Crack / Faster Wear --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>De-bonding</masterLabel>
+        <translation><!-- De-bonding --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Delayed Supply</masterLabel>
+        <translation><!-- Delayed Supply --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Fitment Problem</masterLabel>
+        <translation><!-- Fitment Problem --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Hardox Crack &amp; Faster Wear</masterLabel>
+        <translation><!-- Hardox Crack &amp; Faster Wear --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Packaging Complaint</masterLabel>
+        <translation><!-- Packaging Complaint --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Poor Life of Rubber / Faster Wear</masterLabel>
+        <translation><!-- Poor Life of Rubber / Faster Wear --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Short Supply</masterLabel>
+        <translation><!-- Short Supply --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Wrong Supply</masterLabel>
+        <translation><!-- Wrong Supply --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Order Acknowledgement --></label>
+    <name>Order_Acknowledgement__c</name>
+    <relationshipLabel><!-- Order Acknowledgement Line Item --></relationshipLabel>
+</CustomFieldTranslation>

@@ -1,0 +1,123 @@
+.slds-table {
+    width: 100%;
+    border-collapse: separate; /* Allows spacing between cells */
+}
+
+.slds-truncate {
+    max-width: 150px; /* Adjust based on content */
+    word-wrap: break-word;
+    text-align: center;
+    overflow: hidden;
+    text-overflow: ellipsis; /* Adds ellipsis for long text */
+    white-space: normal; /* Allows wrapping */
+    margin-left: 20px;
+    margin-right: 30px;
+}
+
+.slds-table_resizable-cols th, 
+.slds-table_resizable-cols td {
+   
+    white-space: normal; /* Allows wrapping */
+    text-align: center;
+    vertical-align: middle; /* Ensures content is vertically aligned */
+}
+
+.slds-table_resizable-cols th {
+    color: white;
+    background-color: rgb(3, 3, 159);
+    text-transform: uppercase; /* Makes header text consistent */
+}
+
+@media only screen and (max-width: 600px) {
+    .slds-table_resizable-cols {
+        display: block; /* Stacks the table rows */
+        overflow-x: auto;
+    }
+
+    .slds-table_resizable-cols th,
+    .slds-table_resizable-cols td {
+        display: block; /* Stacks columns for small screens */
+        width: 100%;
+        box-sizing: border-box; /* Includes padding/borders in width */
+    }
+
+    .slds-table_resizable-cols thead {
+        display: none; /* Hides header row on mobile */
+    }
+
+    .slds-table_resizable-cols tbody tr {
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 1rem; /* Adds spacing between rows */
+        border: 1px solid #ccc; /* Optional: adds a border for distinction */
+    }
+
+    .slds-table_resizable-cols tbody td:before {
+        content: attr(data-label); /* Shows the column label */
+        font-weight: bold;
+        display: block;
+        margin-bottom: 0.5rem; /* Adds spacing for readability */
+    }
+}
+
+.custom-input{
+    font-weight: bold;
+}
+.neon-input {
+    background-color: #d9f5f8; /* Light blue background */
+    color: #070707; /* Dark text color */
+    border: 2px solid #0026ff; /* Neon blue border */
+    border-radius: 5px; /* Rounded corners */
+    padding: 10px; /* Padding inside the input */
+    transition: border-color 0.3s ease, box-shadow 0.3s ease; /* Smooth transition for hover effect */
+    box-shadow: 0 0 20px rgba(1, 31, 255, 0.7); /* Neon blue glow */
+    font-weight: bold; /* Bold text */
+    outline: none; /* Remove default outline */
+}
+
+/* Hover effect for the input */
+.neon-input:hover {
+    border-color: #048d21; /* Neon green border on hover */
+    box-shadow: 0 0 20px rgba(17, 255, 0, 0.7); /* Neon green glow on hover */
+}
+
+/* Focus effect for the input */
+.neon-input:focus {
+    border-color: #048d21; /* Neon green border on focus */
+    box-shadow: 0 0 20px rgba(17, 255, 0, 0.9); /* More intense glow on focus */
+}
+
+/* Label style for lightning-input */
+.slds-form-element__label {
+    color: #030303 !important; /* Force black label color */
+    font-weight: bold; /* Bold label */
+}
+.combobox-container {
+    display: flex;
+    flex-direction: column; /* Align items vertically */
+    
+}
+
+.neon-combobox {
+    background-color: #d9f5f8; /* Dark background for combobox */
+    color: #070707; /* White text color */
+    border: 2px solid #0026ff; /* Neon border color */
+    border-radius: 5px; /* Rounded corners for combobox */
+    padding: 10px; /* Padding inside combobox */
+    transition: border-color 0.3s ease; /* Smooth transition for hover effect */
+    box-shadow: 0 0 20px rgba(1, 31, 255, 0.7);
+    font-weight: bold;
+}
+
+/* Hover effect */
+.neon-combobox:hover {
+    border-color: #048d21; /* Change border color on hover */
+    box-shadow: 0 0 20px rgba(17, 255, 0, 0.7); /* Neon glow effect on hover */
+}
+/* Style for combobox labels */
+.neon-combobox .slds-form-element__label {
+    color: #030303 !important; /* Force white label color */
+}
+.red-font {
+    color: rgb(0, 113, 63);
+}

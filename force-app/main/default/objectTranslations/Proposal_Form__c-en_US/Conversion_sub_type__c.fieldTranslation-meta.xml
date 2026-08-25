@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Conversion sub type --></label>
+    <name>Conversion_sub_type__c</name>
+    <picklistValues>
+        <masterLabel>Application conversion</masterLabel>
+        <translation><!-- Application conversion --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Customer conversion</masterLabel>
+        <translation><!-- Customer conversion --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

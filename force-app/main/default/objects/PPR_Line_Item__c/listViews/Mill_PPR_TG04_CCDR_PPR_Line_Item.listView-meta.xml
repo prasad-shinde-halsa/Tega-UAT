@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Mill_PPR_TG04_CCDR_PPR_Line_Item</fullName>
+    <filterScope>Queue</filterScope>
+    <label>Mill-PPR-TG04-CCDR</label>
+    <queue>Mill_PPR_TG04_CCDR</queue>
+    <sharedTo>
+        <allInternalUsers></allInternalUsers>
+    </sharedTo>
+</ListView>

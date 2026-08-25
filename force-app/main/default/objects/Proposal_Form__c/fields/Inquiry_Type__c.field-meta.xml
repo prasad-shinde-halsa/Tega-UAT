@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Inquiry_Type__c</fullName>
+    <label>Inquiry Type</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Limited Tender</fullName>
+                <default>false</default>
+                <label>Limited Tender</label>
+            </value>
+            <value>
+                <fullName>Open Tender</fullName>
+                <default>false</default>
+                <label>Open Tender</label>
+            </value>
+            <value>
+                <fullName>Single Tender</fullName>
+                <default>false</default>
+                <label>Single Tender</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

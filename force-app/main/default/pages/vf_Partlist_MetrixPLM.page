@@ -1,0 +1,275 @@
+<apex:page standardController="Part_List__c" extensions="Ctrl_PartList_Metrix" lightningStylesheets="true" docType="HTML-5.0">
+    <apex:form >
+        <apex:slds >
+            
+            <!-- Header-->
+            
+            <div style="position: sticky; top: 0; z-index: 1; font-size: small;">
+                <apex:pageBlock id="pb1" rendered="{!Part_List__c.Part_List_Type__c == 'PLM'}">
+                    <table>
+                        <thead style="background-color:#DCDCDC; font-size: small;">
+                            <tr> 
+                                <td style="text-align:center">Partlist Number:&nbsp;&nbsp;<apex:outputField value="{!Part_List__c.Name}" style="font-weight: bold;"/> </td>
+                                <td style="text-align:center">Customer Name:&nbsp;&nbsp;<apex:outputField value="{!Part_List__c.Customer__c}" style="font-weight: bold;"/></td>
+                                <td style="text-align:center">Type and Size:&nbsp;&nbsp;<apex:outputField value="{!Part_List__c.Description__c}" style="font-weight: bold;"/></td>
+                            </tr>
+                        </thead>
+                    </table>
+                </apex:pageBlock>
+            </div>
+            
+            <!--L2Product and L3Product Management Table-->
+            
+            <style>
+                .slds-table_container {
+                overflow-y: auto;
+                max-height: 400px; 
+                }
+                
+                .slds-table_container thead {
+                position: sticky;
+                top: 0;
+                background-color: #ff9933;
+                z-index: 1;
+                }
+                
+                .slds-table_container tbody tr:nth-child(even) {
+                background-color: #f2f2f2; 
+                }
+                
+                .rightAlign {text-align:right !important;}
+            </style>
+            
+            <apex:pageBlock id="pb" rendered="{!Part_List__c.Part_List_Type__c == 'PLM'}">
+                <div class="slds-table_container">
+                    <table width="60%" align="center">
+                        <tr>
+                            <td>
+                                <table class="slds-table slds-table_cell-buffer slds-table_bordered slds-cell-wrap">
+                                    <thead style="background-color:#DCDCDC; font-size: medium; ">
+                                        <tr>
+                                            <td>Sr.No</td>
+                                            <td>Item Code</td>
+                                            <td>Item Description</td>
+                                            <td>FEH</td>
+                                            <td>DEH</td>
+                                            <td>SHELL</td> 
+                                            <td>SPARE</td>
+                                            <td>TOTAL</td>
+                                        </tr>
+                                    </thead>
+                                    <apex:variable value="{!0}" var="proNum"/>
+                                    <apex:repeat value="{!filterList}" var="PLM" id="plm">
+                                        <tr>
+                                            <td>
+                                                <apex:outputText value="{0}" style="float:right;">                
+                                                    <apex:param value="{!proNum}" /> 
+                                                    <apex:variable value="{!proNum+1}" var="proNum"/>
+                                                </apex:outputText>
+                                            </td>
+                                            <td><apex:outputText value="{!PLM.L2ProductName}" /></td>
+                                            <td><apex:outputText value="{!PLM.ItemDescription}" /></td>
+                                            <td><apex:outputText value="{!PLM.fehQuantity}" style="float:right;" /></td>
+                                            <td><apex:outputText value="{!PLM.dehQuantity}" style="float:right;"/></td>
+                                            <td><apex:outputText value="{!PLM.shellQuantity}" style="float:right;"/></td>
+                                            <td><apex:outputText value="{!PLM.spareQuantity}" style="float:right;"/></td>
+                                            <td><apex:outputText value="{!PLM.PLMtotalQuantity}" style="float:right;"/></td>
+                                        </tr>
+                                    </apex:repeat>
+                                </table>
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+            </apex:pageBlock>    
+            <apex:pageblock id="pbplm" rendered="{!Part_List__c.Part_List_Type__c == 'PLM'}">
+            <apex:outputPanel id="pgblk0" title="">
+                <center>
+                    <apex:commandButton value="DownLoad as Excel" action="{!downloadExcelPLM}" styleClass="slds-button slds-button_brand"/>
+                    <apex:commandButton value="DownLoad as PDF" action="{!downloadPDFPLM}" styleClass="slds-button slds-button_brand"/>
+                </center>
+            </apex:outputPanel>
+            </apex:pageblock>
+            
+            
+            <!--PLS Metrix-->
+            
+                        <!-- Header-->
+            
+            <div style="position: sticky; top: 0; z-index: 1; font-size: small;">
+                <apex:pageBlock id="pb3" rendered="{!Part_List__c.Part_List_Type__c == 'PLS'}">
+                    <table>
+                        <thead style="background-color:#DCDCDC; font-size: small;">
+                            <tr> 
+                                <td style="text-align:center">Partlist Number:&nbsp;&nbsp;<apex:outputField value="{!Part_List__c.Name}" style="font-weight: bold;"/> </td>
+                                <td style="text-align:center">Customer Name:&nbsp;&nbsp;<apex:outputField value="{!Part_List__c.Customer__c}" style="font-weight: bold;"/></td>
+                                <td style="text-align:center">Type and Size:&nbsp;&nbsp;<apex:outputField value="{!Part_List__c.Description__c}" style="font-weight: bold;"/></td>
+                            </tr>
+                        </thead>
+                    </table>
+                </apex:pageBlock>
+            </div>
+            
+            <!--L2Product and L3Product Management Table-->
+            
+            <style>
+                
+                .slds-table_container {
+                overflow-y: auto;
+                max-height: 400px; 
+                }
+                
+                .slds-table_container thead {
+                position: sticky;
+                top: 0;
+                background-color: #ff9933;
+                z-index: 1;
+                }
+                
+                .slds-table_container tbody tr:nth-child(even) {
+                background-color: #f2f2f2; 
+                }
+            </style>
+            <apex:pageBlock id="pb2" rendered="{!Part_List__c.Part_List_Type__c == 'PLS'}">
+                <div class="slds-table_container">
+                    <table width="60%" align="center">
+                        <tr>
+                            <td>
+                                <table class="slds-table slds-table_cell-buffer slds-table_bordered slds-cell-wrap">
+                                    <thead style="background-color:#DCDCDC; font-size: medium;">
+                                        <tr>
+                                            <td>Sr.No</td>
+                                            <td>Item Code</td>
+                                            <td>Item Description</td>
+                                            <td>PNL</td>
+                                            <td>SFB</td>
+                                            <td>MFB</td> 
+                                            <td>SPARE</td>
+                                            <td>TOTAL</td>
+                                        </tr>
+                                    </thead>
+                                    <apex:variable value="{!0}" var="proNum"/>
+                                    <apex:repeat value="{!filterList2}" var="PLM" id="plm">
+                                        <tr>
+                                            <td>
+                                                <apex:outputText value="{0}" style="float:right;" >                
+                                                    <apex:param value="{!proNum}"/> 
+                                                    <apex:variable value="{!proNum+1}" var="proNum"/>
+                                                </apex:outputText>
+                                            </td>
+                                            <td><apex:outputText value="{!PLM.L2ProductName}" /></td>
+                                            <td><apex:outputText value="{!PLM.ItemDescription}" /></td>
+                                            <td><apex:outputText value="{!PLM.pnlQuantity}" style="float:right;" /></td>
+                                            <td><apex:outputText value="{!PLM.sfbQuantity}" style="float:right;" /></td>
+                                            <td><apex:outputText value="{!PLM.mfbQuantity}" style="float:right;" /></td>
+                                            <td><apex:outputText value="{!PLM.spareQuantity}" style="float:right;" /></td>
+                                            <td><apex:outputText value="{!PLM.PLStotalQuantity}" style="float:right;" /></td>
+                                        </tr>
+                                    </apex:repeat>
+                                </table>
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+                
+            </apex:pageBlock>
+            <apex:pageblock id="pbplss" rendered="{!Part_List__c.Part_List_Type__c == 'PLS'}">
+            <apex:outputPanel id="pgblk1" title="">
+                <center>
+                    <apex:commandButton value="DownLoad as Excel" action="{!downloadExcelPLS}" styleClass="slds-button slds-button_brand"/>
+                    <apex:commandButton value="DownLoad as PDF" action="{!downloadPDFPLS}" styleClass="slds-button slds-button_brand"/>
+                </center>                
+            </apex:outputPanel>
+            </apex:pageblock>         
+            
+            <!--PLT Table-->
+            
+                        <div style="position: sticky; top: 0; z-index: 1; font-size: small;">
+                <apex:pageBlock id="pb7" rendered="{!Part_List__c.Part_List_Type__c == 'PLT'}">
+                    <table>
+                        <thead style="background-color:#DCDCDC; font-size: small;">
+                            <tr> 
+                                <td style="text-align:center">Partlist Number:&nbsp;&nbsp;<apex:outputField value="{!Part_List__c.Name}" style="font-weight: bold;"/> </td>
+                                <td style="text-align:center">Customer Name:&nbsp;&nbsp;<apex:outputField value="{!Part_List__c.Customer__c}" style="font-weight: bold;"/></td>
+                                <td style="text-align:center">Type and Size:&nbsp;&nbsp;<apex:outputField value="{!Part_List__c.Description__c}" style="font-weight: bold;"/></td>
+                            </tr>
+                        </thead>
+                    </table>
+                </apex:pageBlock>
+            </div>
+            
+            <!--L2Product and L3Product Management Table-->
+            
+            <style>
+                
+                .slds-table_container {
+                overflow-y: auto;
+                max-height: 400px; 
+                }
+                
+                .slds-table_container thead {
+                position: sticky;
+                top: 0;
+                background-color: #ff9933;
+                z-index: 1;
+                }
+                
+                .slds-table_container tbody tr:nth-child(even) {
+                background-color: #f2f2f2; 
+                }
+            </style>
+            <apex:pageBlock id="pb8" rendered="{!Part_List__c.Part_List_Type__c == 'PLT'}">
+                <div class="slds-table_container">
+                    <table width="60%" align="center">
+                        <tr>
+                            <td>
+                                <table class="slds-table slds-table_cell-buffer slds-table_bordered slds-cell-wrap">
+                                    <thead style="background-color:#DCDCDC; font-size: medium;">
+                                        <tr>
+                                            <td>Sr.No</td>
+                                            <td>Item Code</td>
+                                            <td>Item Description</td>
+                                            <td>STR</td>
+                                            <td>PNL</td>
+                                            <td>SPRL</td> 
+                                            <td>SPARE</td>
+                                            <td>TOTAL</td>
+                                        </tr>
+                                    </thead>
+                                    <apex:variable value="{!0}" var="proNum"/>
+                                    <apex:repeat value="{!filterList3}" var="PLM" id="plm">
+                                        <tr>
+                                            <td>
+                                                <apex:outputText value="{0}" style="float:right;" >                
+                                                    <apex:param value="{!proNum}"/> 
+                                                    <apex:variable value="{!proNum+1}" var="proNum"/>
+                                                </apex:outputText>
+                                            </td>
+                                            <td><apex:outputText value="{!PLM.L2ProductName}" /></td>
+                                            <td><apex:outputText value="{!PLM.ItemDescription}" /></td>
+                                            <td><apex:outputText value="{!PLM.strQuantity}" style="float:right;" /></td>
+                                            <td><apex:outputText value="{!PLM.pnlQuantity}" style="float:right;" /></td>
+                                            <td><apex:outputText value="{!PLM.sprlQuantity}" style="float:right;" /></td>
+                                            <td><apex:outputText value="{!PLM.spareQuantity}" style="float:right;" /></td>
+                                            <td><apex:outputText value="{!PLM.PLTtotalQuantity}" style="float:right;" /></td>
+                                        </tr>
+                                    </apex:repeat>
+                                </table>
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+                
+            </apex:pageBlock>
+            <apex:pageblock id="pbpls" rendered="{!Part_List__c.Part_List_Type__c == 'PLT'}">
+            <apex:outputPanel id="pgblk1" title="">
+                <center>
+                    <apex:commandButton value="DownLoad as Excel" action="{!downloadExcelPLT}" styleClass="slds-button slds-button_brand"/>
+                    <apex:commandButton value="DownLoad as PDF" action="{!downloadPDFPLT}" styleClass="slds-button slds-button_brand"/>
+                </center>                
+            </apex:outputPanel>
+            </apex:pageblock> 
+            
+        </apex:slds>
+    </apex:form>
+</apex:page>

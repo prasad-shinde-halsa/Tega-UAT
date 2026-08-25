@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Condition of Impact Bed structure --></label>
+    <name>Condition_of_Impact_Bed_structure__c</name>
+    <picklistValues>
+        <masterLabel>Fastening bolts got loose- repair/tightening required</masterLabel>
+        <translation><!-- Fastening bolts got loose- repair/tightening required --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Full trough rollers not provided at both ends of the impact bed</masterLabel>
+        <translation><!-- Full trough rollers not provided at both ends of the impact bed --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Impact pads worn off-replacment required</masterLabel>
+        <translation><!-- Impact pads worn off-replacment required --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Structural damage-replacement required</masterLabel>
+        <translation><!-- Structural damage-replacement required --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Working fine</masterLabel>
+        <translation><!-- Working fine --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

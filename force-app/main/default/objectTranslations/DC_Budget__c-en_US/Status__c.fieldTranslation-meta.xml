@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Status --></label>
+    <name>Status__c</name>
+    <picklistValues>
+        <masterLabel>Draft</masterLabel>
+        <translation><!-- Draft --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>ExCom Approved</masterLabel>
+        <translation><!-- ExCom Approved --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Global Sales Head Approved</masterLabel>
+        <translation><!-- Global Sales Head Approved --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>PMG Approved</masterLabel>
+        <translation><!-- PMG Approved --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Regional Manager Approved</masterLabel>
+        <translation><!-- Regional Manager Approved --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Submitted</masterLabel>
+        <translation><!-- Submitted --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

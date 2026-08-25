@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Operating Parameters</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Operating Parameters</value>
+    </caseValues>
+    <layouts>
+        <layout>Conveyer Component Operating Parameter Layout</layout>
+        <sections>
+            <label><!-- Conveyor Details --></label>
+            <section>Conveyor Details</section>
+        </sections>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- Material Details --></label>
+            <section>Material Details</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Hydrocyclone Operating Parameter Layout</layout>
+        <sections>
+            <label><!-- Application Details --></label>
+            <section>Application Details</section>
+        </sections>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- Customer&apos;s Separation Requirement --></label>
+            <section>Customer&apos;s Separation Requirement</section>
+        </sections>
+        <sections>
+            <label><!-- Hydrocyclone Feed Slurry Data --></label>
+            <section>Hydrocyclone Feed Slurry Data</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Mill Operating Parameters Layout</layout>
+        <sections>
+            <label><!-- Additional Fields --></label>
+            <section>Additional Fields</section>
+        </sections>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- System Information --></label>
+            <section>System Information</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Screen Operating Parameters Layout</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- System Information --></label>
+            <section>System Information</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Trommel Operating Parameters Layout</layout>
+        <sections>
+            <label><!-- Additional Fields, If Type of Discharge is Grate --></label>
+            <section>Additional Fields, If Type of Discharge is Grate</section>
+        </sections>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- System Information --></label>
+            <section>System Information</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Wear Component Operating Parameters Layout</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- Fields --></label>
+            <section>Fields</section>
+        </sections>
+    </layouts>
+    <recordTypes>
+        <label><!-- Conveyor Component --></label>
+        <name>Conveyor_Component</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- Hydrocyclone --></label>
+        <name>Hydrocyclone</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- Mill --></label>
+        <name>Mill</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- Screen --></label>
+        <name>Screen</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- Trommel --></label>
+        <name>Trommel</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- Wear Component --></label>
+        <name>Wear_Component</name>
+    </recordTypes>
+    <startsWith>Consonant</startsWith>
+    <validationRules>
+        <errorMessage><!-- Record Type of Operating Parameters &amp; Customer Equipment should be same --></errorMessage>
+        <name>DIfferent_Record_Type</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- This field is mandatory if &quot;Other&quot; is selected in Nature of Liquid --></errorMessage>
+        <name>Nature_of_Liquid_Check</name>
+    </validationRules>
+    <webLinks>
+        <label><!-- Create_PSD_with_PSD_Line_Item --></label>
+        <name>Create_PSD_with_PSD_Line_Item</name>
+    </webLinks>
+</CustomObjectTranslation>

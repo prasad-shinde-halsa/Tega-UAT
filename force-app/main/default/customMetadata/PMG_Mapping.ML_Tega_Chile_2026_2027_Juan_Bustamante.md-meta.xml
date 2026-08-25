@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomMetadata xmlns="http://soap.sforce.com/2006/04/metadata" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+    <label>ML-Tega Chile-2026-2027-Juan Bustamante</label>
+    <protected>false</protected>
+    <values>
+        <field>Company__c</field>
+        <value xsi:type="xsd:string">Tega Chile</value>
+    </values>
+    <values>
+        <field>Financial_Year__c</field>
+        <value xsi:type="xsd:string">2026-27</value>
+    </values>
+    <values>
+        <field>Object_Name__c</field>
+        <value xsi:type="xsd:string">DC budget</value>
+    </values>
+    <values>
+        <field>PMG_Approver_ID__c</field>
+        <value xsi:type="xsd:string">005S200000EADqNIAX</value>
+    </values>
+    <values>
+        <field>PMG_Approver_Name__c</field>
+        <value xsi:type="xsd:string">Juan Bustamante</value>
+    </values>
+    <values>
+        <field>PMG_Head_ID__c</field>
+        <value xsi:nil="true"/>
+    </values>
+    <values>
+        <field>PMG_Head_Name__c</field>
+        <value xsi:nil="true"/>
+    </values>
+    <values>
+        <field>PMG__c</field>
+        <value xsi:type="xsd:string">Mill</value>
+    </values>
+    <values>
+        <field>PMG_code__c</field>
+        <value xsi:type="xsd:string">ML</value>
+    </values>
+    <values>
+        <field>User_Role__c</field>
+        <value xsi:type="xsd:string">PMG Head</value>
+    </values>
+</CustomMetadata>

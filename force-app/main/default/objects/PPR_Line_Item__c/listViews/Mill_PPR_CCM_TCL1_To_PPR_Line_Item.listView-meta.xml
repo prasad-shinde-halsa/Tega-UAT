@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Mill_PPR_CCM_TCL1_To_PPR_Line_Item</fullName>
+    <filterScope>Queue</filterScope>
+    <label>Mill-PPR-CCM-TCL1-To</label>
+    <queue>Mill_PPR_CCM_TCL1_To</queue>
+    <sharedTo>
+        <allInternalUsers></allInternalUsers>
+    </sharedTo>
+</ListView>

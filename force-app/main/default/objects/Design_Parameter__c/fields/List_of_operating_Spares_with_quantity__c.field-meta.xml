@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>List_of_operating_Spares_with_quantity__c</fullName>
+    <externalId>false</externalId>
+    <inlineHelpText>This is applied for new cases. No. of Spares to be provided in the first supply</inlineHelpText>
+    <label>List of Operating Spares with Quantity</label>
+    <length>255</length>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

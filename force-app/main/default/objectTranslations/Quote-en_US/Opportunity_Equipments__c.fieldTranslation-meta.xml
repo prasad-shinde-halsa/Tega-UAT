@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Proposal Form --></label>
+    <lookupFilter>
+        <errorMessage><!-- Offer&apos;s Opportunity should be same as PRF&apos;s Opportunity and PRF Status should be &quot;Closed&quot; --></errorMessage>
+    </lookupFilter>
+    <name>Opportunity_Equipments__c</name>
+    <relationshipLabel><!-- Offers --></relationshipLabel>
+</CustomFieldTranslation>

@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Offer Doc Type --></label>
+    <name>Offer_Type__c</name>
+    <picklistValues>
+        <masterLabel>Budgetary Offer</masterLabel>
+        <translation><!-- Budgetary Offer --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Case Study</masterLabel>
+        <translation><!-- Case Study --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Complete Offer for Long Term Contract</masterLabel>
+        <translation><!-- Complete Offer for Long Term Contract --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Firm Offer - Item Level (L3)</masterLabel>
+        <translation><!-- Firm Offer - Item Level (L3) --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Firm Offer - Set Level (L1)</masterLabel>
+        <translation><!-- Firm Offer - Set Level (L1) --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Firm Offer - Subset Level (L2)</masterLabel>
+        <translation><!-- Firm Offer - Subset Level (L2) --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

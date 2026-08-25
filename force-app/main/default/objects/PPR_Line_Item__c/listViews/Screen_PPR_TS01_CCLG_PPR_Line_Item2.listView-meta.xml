@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Screen_PPR_TS01_CCLG_PPR_Line_Item2</fullName>
+    <filterScope>Queue</filterScope>
+    <label>Screen-PPR-TS01-CCLG</label>
+    <queue>Screen_PPR_TS01_CCLG</queue>
+    <sharedTo>
+        <allInternalUsers></allInternalUsers>
+    </sharedTo>
+</ListView>

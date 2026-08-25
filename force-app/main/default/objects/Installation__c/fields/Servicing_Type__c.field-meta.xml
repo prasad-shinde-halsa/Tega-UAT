@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Servicing_Type__c</fullName>
+    <label>Servicing Type</label>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Spare Replacement</fullName>
+                <default>false</default>
+                <label>Spare Replacement</label>
+            </value>
+            <value>
+                <fullName>Adjustment</fullName>
+                <default>false</default>
+                <label>Adjustment</label>
+            </value>
+            <value>
+                <fullName>Reblading</fullName>
+                <default>false</default>
+                <label>Reblading</label>
+            </value>
+            <value>
+                <fullName>Reinstallation/Relocation</fullName>
+                <default>false</default>
+                <label>Reinstallation/Relocation</label>
+            </value>
+            <value>
+                <fullName>Major servicing by taking scraper outside</fullName>
+                <default>false</default>
+                <label>Major servicing by taking scraper outside</label>
+            </value>
+            <value>
+                <fullName>Other</fullName>
+                <default>false</default>
+                <label>Other</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

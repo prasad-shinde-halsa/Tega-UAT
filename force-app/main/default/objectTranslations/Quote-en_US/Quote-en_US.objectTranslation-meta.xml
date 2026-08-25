@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Offer</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Offers</value>
+    </caseValues>
+    <layouts>
+        <layout>Combine Layout</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- Fields --></label>
+            <section>Fields</section>
+        </sections>
+        <sections>
+            <label><!-- System Information --></label>
+            <section>System Information</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Compile Layout</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- Fields --></label>
+            <section>Fields</section>
+        </sections>
+        <sections>
+            <label><!-- System Information --></label>
+            <section>System Information</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Non Spare</layout>
+        <sections>
+            <label><!-- Drawing --></label>
+            <section>Drawing</section>
+        </sections>
+        <sections>
+            <label><!-- Loss Reason --></label>
+            <section>Loss Reason</section>
+        </sections>
+        <sections>
+            <label><!-- Presentation --></label>
+            <section>Presentation</section>
+        </sections>
+        <sections>
+            <label><!-- Selection --></label>
+            <section>Selection</section>
+        </sections>
+        <sections>
+            <label><!-- Simulation --></label>
+            <section>Simulation</section>
+        </sections>
+        <sections>
+            <label><!-- Technical Specification --></label>
+            <section>Technical Specification</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Quote Layout</layout>
+        <sections>
+            <label><!-- Order Loss Form --></label>
+            <section>Order Loss Form</section>
+        </sections>
+        <sections>
+            <label><!-- Payment &amp; Shipping Information --></label>
+            <section>Payment &amp; Shipping Information</section>
+        </sections>
+        <sections>
+            <label><!-- Tender Information --></label>
+            <section>Tender Information</section>
+        </sections>
+    </layouts>
+    <quickActions>
+        <label><!-- Clone Offer --></label>
+        <name>Clone_Offer</name>
+    </quickActions>
+    <quickActions>
+        <label><!-- Create 4E --></label>
+        <name>Create_4E</name>
+    </quickActions>
+    <quickActions>
+        <label><!-- Create 4D --></label>
+        <name>Create_4E_4D</name>
+    </quickActions>
+    <quickActions>
+        <label><!-- Finalize Offer --></label>
+        <name>Finalize_Offer</name>
+    </quickActions>
+    <quickActions>
+        <label><!-- Order Loss Form --></label>
+        <name>Loss_Reason</name>
+    </quickActions>
+    <quickActions>
+        <label><!-- Revise Offer --></label>
+        <name>Revise_Offer</name>
+    </quickActions>
+    <quickActions>
+        <label><!-- SendEmail --></label>
+        <name>SendEmail</name>
+    </quickActions>
+    <quickActions>
+        <label><!-- Send to SAP --></label>
+        <name>Send_to_SAP</name>
+    </quickActions>
+    <quickActions>
+        <label><!-- Update Offer --></label>
+        <name>Update_Offer</name>
+    </quickActions>
+    <quickActions>
+        <label><!-- Update Offer LWC --></label>
+        <name>Update_Offer_LWC</name>
+    </quickActions>
+    <startsWith>Consonant</startsWith>
+</CustomObjectTranslation>

@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Req P80 Pass Size in Cyclone Overflow --></label>
+    <name>Req_P80_pass_size_in_cyclone_overflow__c</name>
+</CustomFieldTranslation>

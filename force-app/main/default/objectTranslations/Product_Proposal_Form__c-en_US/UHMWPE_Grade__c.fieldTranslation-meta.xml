@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- UHMWPE Grade --></label>
+    <name>UHMWPE_Grade__c</name>
+    <picklistValues>
+        <masterLabel>Normal</masterLabel>
+        <translation><!-- Normal --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>TIVAR</masterLabel>
+        <translation><!-- TIVAR --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

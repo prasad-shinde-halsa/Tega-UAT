@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- Insert comma separated value to control FY value in MIS Report Status Check --></help>
+    <label><!-- FY Option For MIS Status Check --></label>
+    <name>FY_Option_For_MIS_Status_Check__c</name>
+</CustomFieldTranslation>

@@ -1,0 +1,125 @@
+<template>
+    <lightning-spinner if:true={isLoading} size="large" alternative-text="Loading...">
+
+    </lightning-spinner>
+
+    <div class="slds-grid slds-grid_vertical-align-center ">
+
+        <!-- Left spacer -->
+        <div class="slds-col slds-size_1-of-3"></div>
+
+        <!-- Center: Header -->
+        <div class="slds-col slds-size_1-of-3 slds-text-align_center">
+            <h1 class="slds-text-heading_medium" style="font-weight: bold; color: rgb(146, 231, 207)">Custom Report
+                (Figures are in Thousand (000))</h1>
+        </div>
+
+        <!-- Right: Button -->
+        <div class="slds-col slds-size_1-of-3 slds-text-align_right">
+            <lightning-button label="Export to Excel" onclick={exportToExcel} icon-name="utility:download"
+                variant="brand">
+            </lightning-button>
+        </div>
+
+    </div>
+
+    <div class="slds-grid slds-wrap slds-p-around_medium" style="margin-top: 10px; border: auto;">
+        <div class="slds-col slds-size_1-of-1 slds-medium-size_1-of-4 slds-p-horizontal_small" style="border: auto;">
+            <lightning-combobox label="Search By FY" value={selectedFY} options={financialYearOptions}
+                onchange={handleFYChange} class="neon-combobox">
+            </lightning-combobox>
+        </div>
+        <div class="slds-col slds-size_1-of-1 slds-medium-size_1-of-4 slds-p-horizontal_small" style="border: auto;">
+            <lightning-combobox label="Search By Month" value={selectedMonth} options={monthOptions}
+                onchange={handleMonthChange} class="neon-combobox">
+            </lightning-combobox>
+        </div>
+        <div class="slds-col slds-size_1-of-1 slds-medium-size_1-of-4 slds-p-horizontal_small" style="border: auto;">
+            <lightning-input type="search" label="Search By PMG" placeholder="Enter search term ..."
+                onchange={handleSearchPMG} class="neon-input" value={searchTermPMG}>
+            </lightning-input>
+        </div>
+        <div class="slds-col slds-size_1-of-1 slds-medium-size_1-of-4 slds-p-horizontal_small" style="border: auto;">
+            <lightning-combobox label="Search By Order Type" value={selectedOrderType} options={OrderTypeOptions}
+                onchange={handleOrderTypeChange} class="neon-combobox">
+            </lightning-combobox>
+        </div>
+
+
+    </div>
+    <template if:false={showTable}>
+        <header class="slds-modal__header" style="height: auto; background-color: rgb(1, 68, 134);">
+            <h2 class="slds-text-heading_medium slds-hyphenate custom-header-title"
+                style="font-weight: bold; font-size: 1.2em; color: rgb(255, 255, 255);">
+                No Details Found</h2>
+        </header>
+    </template>
+    <template if:true={showTable}>
+        <div class="slds-table_edit_container slds-is-relative" style="font-size: 0.95rem;">
+            <table class="slds-table slds-table_cell-buffer slds-table_bordered slds-no-row-hover"
+                style="width: 100%; font-size: 1rem;">
+                <thead style="position: sticky; top: 0; background-color: rgb(1, 68, 134); z-index: 1;">
+                    <tr class="slds-line-height_reset">
+                        <th
+                            style="background-color: rgb(1, 68, 134); color: white; text-align: center; font-size: 1.05rem; padding: 6px;">
+                            <div class="slds-truncate" title="Month">Month</div>
+                        </th>
+                        <th
+                            style="background-color: rgb(1, 68, 134); color: white; text-align: center; font-size: 1.05rem; padding: 6px;">
+                            <div class="slds-truncate" title="Month">PMG</div>
+                        </th>
+                        <th
+                            style="background-color: rgb(1, 68, 134); color: white; text-align: center; font-size: 1.05rem; padding: 6px;">
+                            <div class="slds-truncate" title="Actual">Actual Order</div>
+                        </th>
+                        <th
+                            style="background-color: rgb(1, 68, 134); color: white; text-align: center; font-size: 1.05rem; padding: 6px;">
+                            <div class="slds-truncate" title="Budgeted">Budgeted Order</div>
+                        </th>
+                        <th
+                            style="background-color: rgb(1, 68, 134); color: white; text-align: center; font-size: 1.05rem; padding: 6px;">
+                            <div class="slds-truncate" title="Received">Received Order</div>
+                        </th>
+                        <th
+                            style="background-color: rgb(1, 68, 134); color: white; text-align: center; font-size: 1.05rem; padding: 6px;">
+                            <div class="slds-truncate" title="Expected">Expected Order</div>
+                        </th>
+                        <template if:true={showForcast}>
+                            <th
+                                style="background-color: rgb(1, 68, 134); color: white; text-align: center; font-size: 1.05rem; padding: 6px;">
+                                <div class="slds-truncate" title="Forecast (next 3 months)">
+                                    Forecast (next 3 months projection)
+                                </div>
+                            </th>
+                        </template>
+                    </tr>
+                </thead>
+                <tbody>
+                    <template for:each={visibleMatrix} for:item="row">
+                        <tr key={row.month}>
+                            <td
+                                style="font-weight: bold; background-color: #e9f5f3; font-size: 1rem; text-align: center; padding: 8px;">
+                                {row.month}</td>
+                                <td style="font-weight: 600; text-align: center; padding: 8px;">{row.PMG_Name__c}</td>
+                            <td style="font-weight: 600; text-align: center; padding: 8px;">{currencyCode} {row.actual}
+                            </td>
+                            <td style="font-weight: 600; text-align: center; padding: 8px;"> {currencyCode}
+                                {row.budgeted}</td>
+                            <td style="font-weight: 600; text-align: center; padding: 8px;">{currencyCode}
+                                {row.received}</td>
+                            <td style="font-weight: 600; text-align: center; padding: 8px;">{currencyCode}
+                                {row.expected}</td>
+                            <template if:true={showForcast}>
+                                <td style="font-weight: 600; text-align: center; padding: 8px; text-wrap: wrap; text-align: center;">
+                                    <template if:true={row.showForecast}>
+                                        {currencyCode} {forecastTotal}
+                                    </template>
+                                </td>
+                            </template>
+                        </tr>
+                    </template>
+                </tbody>
+            </table>
+        </div>
+    </template>
+</template>

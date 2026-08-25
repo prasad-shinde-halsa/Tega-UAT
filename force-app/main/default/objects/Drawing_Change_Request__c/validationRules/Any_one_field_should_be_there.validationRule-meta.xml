@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Any_one_field_should_be_there</fullName>
+    <active>true</active>
+    <errorConditionFormula>if(OR(NOT(ISBLANK(Part_List__c)),NOT(ISBLANK(Sales_Orders__c)) ), false, true)</errorConditionFormula>
+    <errorMessage>Please Fill Partlist or Sales Order</errorMessage>
+</ValidationRule>

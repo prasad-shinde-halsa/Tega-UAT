@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Elastomount_Size_2__c</fullName>
+    <label>Elastomount Size 2</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Size A</fullName>
+                <default>false</default>
+                <label>Size A</label>
+            </value>
+            <value>
+                <fullName>Size B</fullName>
+                <default>false</default>
+                <label>Size B</label>
+            </value>
+            <value>
+                <fullName>Size C</fullName>
+                <default>false</default>
+                <label>Size C</label>
+            </value>
+            <value>
+                <fullName>Size D</fullName>
+                <default>false</default>
+                <label>Size D</label>
+            </value>
+            <value>
+                <fullName>Size E</fullName>
+                <default>false</default>
+                <label>Size E</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Carrier_Tube_condition__c</fullName>
+    <label>Carrier Tube condition</label>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Ok-in good condition</fullName>
+                <default>false</default>
+                <label>Ok-in good condition</label>
+            </value>
+            <value>
+                <fullName>Corrosion took place-replacement required</fullName>
+                <default>false</default>
+                <label>Corrosion took place-replacement required</label>
+            </value>
+            <value>
+                <fullName>Bending observed-replacement required</fullName>
+                <default>false</default>
+                <label>Bending observed-replacement required</label>
+            </value>
+            <value>
+                <fullName>Not suitable-upgradation</fullName>
+                <default>false</default>
+                <label>Not suitable-upgradation</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

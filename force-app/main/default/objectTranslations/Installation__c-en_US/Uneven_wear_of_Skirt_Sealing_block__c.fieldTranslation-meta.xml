@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Uneven wear of Skirt Sealing block --></label>
+    <name>Uneven_wear_of_Skirt_Sealing_block__c</name>
+    <picklistValues>
+        <masterLabel>No wear-working fine</masterLabel>
+        <translation><!-- No wear-working fine --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Wear took place-needs adjustment</masterLabel>
+        <translation><!-- Wear took place-needs adjustment --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Worn off-replacement of rubber blocks done</masterLabel>
+        <translation><!-- Worn off-replacement of rubber blocks done --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Worn off-replacement of rubber blocks required</masterLabel>
+        <translation><!-- Worn off-replacement of rubber blocks required --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

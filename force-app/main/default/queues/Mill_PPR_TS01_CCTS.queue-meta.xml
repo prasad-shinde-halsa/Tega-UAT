@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Queue xmlns="http://soap.sforce.com/2006/04/metadata">
+    <doesIncludeBosses>true</doesIncludeBosses>
+    <doesSendEmailToMembers>false</doesSendEmailToMembers>
+    <name>Mill-PPR-TS01-CCTS</name>
+    <queueMembers>
+        <users>
+            <user>nurul.haque@tegaindustries.com</user>
+            <user>rajat.roy@tegaindustries.com</user>
+            <user>sumeet.pahi@tegaindustries.com</user>
+            <user>vikash.mehta@tegaindustries.com</user>
+        </users>
+    </queueMembers>
+    <queueSobject>
+        <sobjectType>PPR_Line_Item__c</sobjectType>
+    </queueSobject>
+    <queueSobject>
+        <sobjectType>Task</sobjectType>
+    </queueSobject>
+</Queue>

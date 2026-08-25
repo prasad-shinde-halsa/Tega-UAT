@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Customer Visit Plan --></label>
+    <name>Customer_Visit_Plan__c</name>
+    <relationshipLabel><!-- Customer Visits --></relationshipLabel>
+</CustomFieldTranslation>

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Belt Condition --></label>
+    <name>Belt_Condition__c</name>
+    <picklistValues>
+        <masterLabel>Good</masterLabel>
+        <translation><!-- Good --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Poor</masterLabel>
+        <translation><!-- Poor --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Very Good</masterLabel>
+        <translation><!-- Very Good --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

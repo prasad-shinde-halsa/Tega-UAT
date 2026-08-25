@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Total_Order__c</fullName>
+    <label>Total Order (in Thousand)</label>
+    <summarizedField>DC_Budget_Line_Items__c.Total_Order__c</summarizedField>
+    <summaryFilterItems>
+        <field>DC_Budget_Line_Items__c.Active_Status__c</field>
+        <operation>equals</operation>
+        <value>True</value>
+    </summaryFilterItems>
+    <summaryForeignKey>DC_Budget_Line_Items__c.Budget__c</summaryForeignKey>
+    <summaryOperation>sum</summaryOperation>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Summary</type>
+</CustomField>

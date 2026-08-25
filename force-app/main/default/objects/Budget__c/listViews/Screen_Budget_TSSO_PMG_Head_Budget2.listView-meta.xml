@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Screen_Budget_TSSO_PMG_Head_Budget2</fullName>
+    <filterScope>Queue</filterScope>
+    <label>Screen-Budget-TS01-PMG Head</label>
+    <queue>Screen_Budget_TS01_PMG_Head</queue>
+    <sharedTo>
+        <allInternalUsers></allInternalUsers>
+    </sharedTo>
+</ListView>

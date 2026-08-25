@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Valve Type --></label>
+    <name>Valve_type__c</name>
+    <picklistValues>
+        <masterLabel>Angle Bayonet</masterLabel>
+        <translation><!-- Angle Bayonet --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Knife Gate</masterLabel>
+        <translation><!-- Knife Gate --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

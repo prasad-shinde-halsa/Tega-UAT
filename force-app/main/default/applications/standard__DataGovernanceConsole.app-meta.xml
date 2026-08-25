@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomApplication xmlns="http://soap.sforce.com/2006/04/metadata">
+    <formFactors>Large</formFactors>
+    <isNavAutoTempTabsDisabled>false</isNavAutoTempTabsDisabled>
+    <isNavPersonalizationDisabled>false</isNavPersonalizationDisabled>
+    <isNavTabPersistenceDisabled>false</isNavTabPersistenceDisabled>
+    <isOmniPinnedViewEnabled>false</isOmniPinnedViewEnabled>
+    <label>Policy Center</label>
+    <navType>Standard</navType>
+    <tabs>standard-home</tabs>
+    <tabs>standard-DataMgmtPolicy</tabs>
+    <tabs>Budget_Report_Segregation__c</tabs>
+    <tabs>Sales_Organization_Product__c</tabs>
+    <tabs>L2_L3_product__c</tabs>
+    <tabs>SAP_data_Sync__c</tabs>
+    <tabs>TOP_Field_Staging__c</tabs>
+    <tabs>Molycop_Referral__c</tabs>
+    <uiType>Lightning</uiType>
+</CustomApplication>

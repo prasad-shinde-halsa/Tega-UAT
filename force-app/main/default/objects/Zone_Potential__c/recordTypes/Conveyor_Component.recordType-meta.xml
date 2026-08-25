@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RecordType xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Conveyor_Component</fullName>
+    <active>true</active>
+    <label>Conveyor Component</label>
+    <picklistValues>
+        <picklist>Product_Type__c</picklist>
+        <values>
+            <fullName>Belt Scrapers</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Belt Tracker Roller</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Ceradisc</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Ceramic Pulley Lagging</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Impact Bed System</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Impact Pad With Frame</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Impact Pad Without Frame</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Rear Skirt Sealing</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Side Skirt Sealing</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+</RecordType>

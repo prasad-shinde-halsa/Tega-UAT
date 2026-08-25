@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Total_Order_in_Thousand__c</fullName>
+    <description>To get the total order value in thousand.</description>
+    <formula>(
+  BLANKVALUE(Apr_Order__c, 0) +
+  BLANKVALUE(May_Order__c, 0) +
+  BLANKVALUE(Jun_Order__c, 0) +
+  BLANKVALUE(Jul_Order__c, 0) +
+  BLANKVALUE(Aug_Order__c, 0) +
+  BLANKVALUE(Sep_Order__c, 0) +
+  BLANKVALUE(Oct_Order__c, 0) +
+  BLANKVALUE(Nov_Order__c, 0) +
+  BLANKVALUE(Dec_Order__c, 0) +
+  BLANKVALUE(Jan_Order__c, 0) +
+  BLANKVALUE(Feb_Order__c, 0) +
+  BLANKVALUE(Mar_Order__c, 0)
+) * 1000</formula>
+    <label>Total Order in Thousand</label>
+    <precision>18</precision>
+    <required>false</required>
+    <scale>2</scale>
+    <trackTrending>false</trackTrending>
+    <type>Currency</type>
+</CustomField>

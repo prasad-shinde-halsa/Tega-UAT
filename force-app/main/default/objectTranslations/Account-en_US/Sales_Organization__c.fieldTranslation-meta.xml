@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Sales Organization --></label>
+    <name>Sales_Organization__c</name>
+    <picklistValues>
+        <masterLabel>HOSCH Sales Org</masterLabel>
+        <translation><!-- HOSCH Sales Org --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Losugen Sales Org</masterLabel>
+        <translation><!-- Losugen Sales Org --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Tega Aus Sales Org</masterLabel>
+        <translation><!-- Tega Aus Sales Org --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Tega Chile Sales Org</masterLabel>
+        <translation><!-- Tega Chile Sales Org --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Tega SA Sales Org</masterLabel>
+        <translation><!-- Tega SA Sales Org --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Tega SNG Sales Org</masterLabel>
+        <translation><!-- Tega SNG Sales Org --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Tega Sales Org</masterLabel>
+        <translation><!-- Tega Sales Org --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

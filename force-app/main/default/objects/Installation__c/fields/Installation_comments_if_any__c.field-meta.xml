@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Installation_comments_if_any__c</fullName>
+    <label>Installation comments(if any)</label>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Belt sway observed</fullName>
+                <default>false</default>
+                <label>Belt sway observed</label>
+            </value>
+            <value>
+                <fullName>Installed qty is as per requirement</fullName>
+                <default>false</default>
+                <label>Installed qty is as per requirement</label>
+            </value>
+            <value>
+                <fullName>Installed qty is less than requirement</fullName>
+                <default>false</default>
+                <label>Installed qty is less than requirement</label>
+            </value>
+            <value>
+                <fullName>Installed as per Tega MA drawing</fullName>
+                <default>false</default>
+                <label>Installed as per Tega MA drawing</label>
+            </value>
+            <value>
+                <fullName>Installed with deviation to Tega MA drawing</fullName>
+                <default>false</default>
+                <label>Installed with deviation to Tega MA drawing</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

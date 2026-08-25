@@ -1,0 +1,1063 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RecordType xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Mill</fullName>
+    <active>true</active>
+    <label>Mill</label>
+    <picklistValues>
+        <picklist>Application_Type__c</picklist>
+        <values>
+            <fullName>desliming</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>dewatering</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>primary classification</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>secondary classification</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>tailing recovery</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Are_Panels_Blind_in_the_Impact_Area__c</picklist>
+        <values>
+            <fullName>No</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Yes</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Belt_Joint__c</picklist>
+        <values>
+            <fullName>Mechanical</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Vulcanized</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Belt_Operation__c</picklist>
+        <values>
+            <fullName>Reversible</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Undirectional</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Belt_Run_Back__c</picklist>
+        <values>
+            <fullName>No</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Yes</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Belt_Type__c</picklist>
+        <values>
+            <fullName>EP</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Nylon-Nylon</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Steel Cord</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Belt_types__c</picklist>
+        <values>
+            <fullName>EP-Polyester fabric</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Nylon</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Steel cord</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Carrier_Tube_condition__c</picklist>
+        <values>
+            <fullName>Bending observed-replacement required</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Corrosion took place-replacement required</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Not suitable-upgradation</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Ok-in good condition</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Circuit_Type__c</picklist>
+        <values>
+            <fullName>Closed</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Open</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Commissioning_note__c</picklist>
+        <values>
+            <fullName>Load trail conducted succesfully</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Trial Pending</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Trial done without load</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Competitor_Product_Condition__c</picklist>
+        <values>
+            <fullName>Customer prefers product of competitor</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Product not working-Customer not happy</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Product working-Customer happy</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Product working-Customer not happy</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Condition_of_Bottom_Bearing_housing__c</picklist>
+        <values>
+            <fullName>Bearing damaged-needs replacement</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Working fine</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Condition_of_Impact_Bed_structure__c</picklist>
+        <values>
+            <fullName>Fastening bolts got loose- repair%2Ftightening required</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Full trough rollers not provided at both ends of the impact bed</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Impact pads worn off-replacment required</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Structural damage-replacement required</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Working fine</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Condition_of_Pulley_lagging__c</picklist>
+        <values>
+            <fullName>Ceramic tiles removed-No replacement required</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Lagging sheet removed from edges- Repair required</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Major damage in rubber%2Fceramic tiles- needs replacement</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Working fine</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Condition_of_Tracker_roller_structure__c</picklist>
+        <values>
+            <fullName>Minor deformities-rectified at site</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Structural damage-replacement required</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Working fine</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Condition_of_belt__c</picklist>
+        <values>
+            <fullName>Cracked</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Edge damaged</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Good condition</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Grooved</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Shortened width with edge damage</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Condition_of_roller_bearing__c</picklist>
+        <values>
+            <fullName>Bearing damaged%2Froller seized-needs replacement</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Working fine</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Condition_of_roller_lagging__c</picklist>
+        <values>
+            <fullName>Major damage%2Fwear-roller replacement required</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Minor damage%2Fwear-no replacement of roller required</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Working fine</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Crowning_of_Pulley__c</picklist>
+        <values>
+            <fullName>No</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Yes</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Elastomount_condition__c</picklist>
+        <values>
+            <fullName>No deflection observed-replacement required</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Ok-Normal deflection observed</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Sagging observed-replacement required</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Stop screw%2Flocking screws missing</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Vibration of the assembly carrier observed</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Element_Condition__c</picklist>
+        <values>
+            <fullName>Different version-replacement required</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>No deflection-replacement required</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Ok-normal deflection observed</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Physical damage took place- replacement required</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Sagging observed-replacement required</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Installation_Notes__c</picklist>
+        <values>
+            <fullName>Back plate modification of the discharge chute done</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Belt condition is not good</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Belt flapping present</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Damaged belt joint</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Damaged pulley lagging-head%2FSnub pulley</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Eccentric movement of pulley %28Head%2FSnub%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Excessive belt sway</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Minor modification done in the scraper during installation</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Minor modification required of the scraper-to be done</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Installation_comments_if_any__c</picklist>
+        <values>
+            <fullName>Belt sway observed</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Installed as per Tega MA drawing</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Installed qty is as per requirement</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Installed qty is less than requirement</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Installed with deviation to Tega MA drawing</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Last_Product_details__c</picklist>
+        <values>
+            <fullName>Competitor%E2%80%99s Product</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Hosch%E2%80%99s Product</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>No product</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Tega%E2%80%99s Product</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Material_Handled__c</picklist>
+        <values>
+            <fullName>Aggregate</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Alumina</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Bauxite Ore</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Betonite%2C 100 mesh</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Cement%2C Clinker</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Cement%2C Portland</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Chrome Ore</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Coal%2C Antracite sized</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Coal%2C Bituminous ROM</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Coal%2C Clean</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Coal%2C Lignite</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Coal%2C Powder river Basin</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Coke</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Coke Breeze</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Coke%2C Petroleum</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Copper Ore</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Dolomite</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Earth%2C ROM Dry</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Earth%2C Wet with Clay</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Fines</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Flyash</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Gold Ore</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Granite</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Gravel%2C Bank Run</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Gravel%2C Pebbles</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Gypsum</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Iron Ore</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Iron Ore Pellets</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Lime%2C Hydrated</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Limestone%2C Crushed</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Molybdenum Ore</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Ore</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Others</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Overburden</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Phosphate%2C Rock</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Phosphate%2C Rock%2C Pulverized</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Quartz</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Sand%2C Dry Bank</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Sand%2C Foundry</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Sinter</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Slag BF Granular Dry</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Slag BF Granular Wet</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Zinc Ore</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Method_of_Feeding__c</picklist>
+        <values>
+            <fullName>Chute</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Feeder</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Method_of_Screening__c</picklist>
+        <values>
+            <fullName>Dry</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Wet</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Nature_of_Liquid__c</picklist>
+        <values>
+            <fullName>Other</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Water</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Ore_Type__c</picklist>
+        <values>
+            <fullName>Chromium</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Copper</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Gold</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Iron</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Lead</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Magnesium</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Other</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Silver</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Zinc</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Ore__c</picklist>
+        <values>
+            <fullName>Aggregate</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Alumina</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Bauxite Ore</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Betonite%2C 100 mesh</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Cement%2C Clinker</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Cement%2C Portland</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Chrome Ore</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Coal%2C Antracite sized</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Coal%2C Bituminous ROM</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Coal%2C Clean</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Coal%2C Lignite</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Coal%2C Powder river Basin</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Coke Breeze</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Coke%2C Petroleum</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Copper Ore</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Dolomite</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Earth%2C ROM Dry</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Earth%2C Wet with Clay</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Flyash</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Gold Ore</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Granite</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Gravel%2C Bank Run</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Gravel%2C Pebbles</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Gypsum</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Iron Ore</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Iron Ore Pellets</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Lime%2C Hydrated</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Limestone%2C Crushed</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Molybdenum Ore</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Others</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Overburden</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Phosphate%2C Rock</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Phosphate%2C Rock%2C Pulverized</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Quartz</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Sand%2C Dry Bank</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Sand%2C Foundry</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Slag BF Granular Dry</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Slag BF Granular Wet</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Zinc Ore</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Product_Type__c</picklist>
+        <values>
+            <fullName>Belt Tracker Roller</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>CeraDisc</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Ceramic Pulley Lagging</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Hosch Scraper</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Impact Bed System</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Skirt Sealing System</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Return_Belt_Condition__c</picklist>
+        <values>
+            <fullName>Belt edge damage</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Damaged belt splice</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Groove in belt top cover</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Patchy belt top cover</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Skew%2Fmis-aligned belt joint</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Uneven belt thickness</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Wrapped carry back mat%2E at return belt</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Sense_of_Rotation_looking_from_FEH__c</picklist>
+        <values>
+            <fullName>Anticlockwise</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Both</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Clockwise</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Servicing_Type__c</picklist>
+        <values>
+            <fullName>Adjustment</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Major servicing by taking scraper outside</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Other</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Reblading</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Reinstallation%2FRelocation</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Spare Replacement</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Shape_of_Material__c</picklist>
+        <values>
+            <fullName>Angular</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Flaky</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Others</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Round</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Shape_of_Particles__c</picklist>
+        <values>
+            <fullName>Flaky</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Round</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Status__c</picklist>
+        <values>
+            <fullName>Closed</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>New</fullName>
+            <default>true</default>
+        </values>
+        <values>
+            <fullName>Submitted to PMG</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Tega_Hosch_Product_Condition__c</picklist>
+        <values>
+            <fullName>In working condition-No replacement required</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>In working condition-Normal replacement required</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Not working-replacement required</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Periodic service not done</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Product disengaged intentionally</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Type__c</picklist>
+        <values>
+            <fullName>Inspection</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Installation</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Service</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Type_of_Grinding__c</picklist>
+        <values>
+            <fullName>Dry</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Wet</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Type_of_Pulley__c</picklist>
+        <values>
+            <fullName>Magnetic</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Non-Magnetic</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Type_of_belt_joint__c</picklist>
+        <values>
+            <fullName>Mechanical</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Vulcanized</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Uneven_wear_of_Skirt_Sealing_block__c</picklist>
+        <values>
+            <fullName>No wear-working fine</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Wear took place-needs adjustment</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Worn off-replacement of rubber blocks done</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Worn off-replacement of rubber blocks required</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+</RecordType>

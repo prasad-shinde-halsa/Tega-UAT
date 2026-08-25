@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomMetadata xmlns="http://soap.sforce.com/2006/04/metadata" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+    <label>2nd level Approver</label>
+    <protected>false</protected>
+    <values>
+        <field>Approver_ID__c</field>
+        <value xsi:type="xsd:string">005S2000002S4AnIAK</value>
+    </values>
+    <values>
+        <field>Approver_Name__c</field>
+        <value xsi:type="xsd:string">Pratik Basu Roy</value>
+    </values>
+    <values>
+        <field>Financial_Year__c</field>
+        <value xsi:type="xsd:string">2025-26</value>
+    </values>
+    <values>
+        <field>Type__c</field>
+        <value xsi:type="xsd:string">Global Sales Head</value>
+    </values>
+</CustomMetadata>

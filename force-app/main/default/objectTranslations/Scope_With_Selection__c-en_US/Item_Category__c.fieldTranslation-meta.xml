@@ -1,0 +1,269 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Item Category --></label>
+    <name>Item_Category__c</name>
+    <picklistValues>
+        <masterLabel>Air Blaster</masterLabel>
+        <translation><!-- Air Blaster --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>B6</masterLabel>
+        <translation><!-- B6 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>B6C</masterLabel>
+        <translation><!-- B6C --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>B6RE</masterLabel>
+        <translation><!-- B6RE --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>B9S</masterLabel>
+        <translation><!-- B9S --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>C series</masterLabel>
+        <translation><!-- C series --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Centrax</masterLabel>
+        <translation><!-- Centrax --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Ceradisc</masterLabel>
+        <translation><!-- Ceradisc --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Cerahard Liner</masterLabel>
+        <translation><!-- Cerahard Liner --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Ceramic Liner</masterLabel>
+        <translation><!-- Ceramic Liner --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Combination Liners</masterLabel>
+        <translation><!-- Combination Liners --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Cryston</masterLabel>
+        <translation><!-- Cryston --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>D Plough</masterLabel>
+        <translation><!-- D Plough --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>DynaPrime</masterLabel>
+        <translation><!-- DynaPrime --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>DynaPulp</masterLabel>
+        <translation><!-- DynaPulp --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>DynaSteel</masterLabel>
+        <translation><!-- DynaSteel --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>DynaWear</masterLabel>
+        <translation><!-- DynaWear --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Easy Adjustable</masterLabel>
+        <translation><!-- Easy Adjustable --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Eco Flip</masterLabel>
+        <translation><!-- Eco Flip --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Engineering Chute</masterLabel>
+        <translation><!-- Engineering Chute --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Filter Press Diaphragm (Green Dog)</masterLabel>
+        <translation><!-- Filter Press Diaphragm (Green Dog) --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Friflo</masterLabel>
+        <translation><!-- Friflo --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>HDPUL</masterLabel>
+        <translation><!-- HDPUL --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Jumbo</masterLabel>
+        <translation><!-- Jumbo --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Misc.</masterLabel>
+        <translation><!-- Misc. --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Mosaic Liner</masterLabel>
+        <translation><!-- Mosaic Liner --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Others</masterLabel>
+        <translation><!-- Others --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>PU Cross tension</masterLabel>
+        <translation><!-- PU Cross tension --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>PU Flexi for screen</masterLabel>
+        <translation><!-- PU Flexi for screen --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>PU Flipflo leg type</masterLabel>
+        <translation><!-- PU Flipflo leg type --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>PU Liner</masterLabel>
+        <translation><!-- PU Liner --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>PU V type panel</masterLabel>
+        <translation><!-- PU V type panel --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>PU birdsbeak</masterLabel>
+        <translation><!-- PU birdsbeak --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>PU bolt down</masterLabel>
+        <translation><!-- PU bolt down --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>PU button type half</masterLabel>
+        <translation><!-- PU button type half --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>PU flipflo non leg type</masterLabel>
+        <translation><!-- PU flipflo non leg type --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>PU modular button type</masterLabel>
+        <translation><!-- PU modular button type --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>PU modular pin &amp; Lug</masterLabel>
+        <translation><!-- PU modular pin &amp; Lug --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>PU rapido</masterLabel>
+        <translation><!-- PU rapido --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Pensen Smart Liner</masterLabel>
+        <translation><!-- Pensen Smart Liner --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Polyurethane (PU)</masterLabel>
+        <translation><!-- Polyurethane (PU) --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Rubber</masterLabel>
+        <translation><!-- Rubber --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Rubber Cross tension</masterLabel>
+        <translation><!-- Rubber Cross tension --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Rubber Liner</masterLabel>
+        <translation><!-- Rubber Liner --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Rubber Modular Pin&amp;Lug</masterLabel>
+        <translation><!-- Rubber Modular Pin&amp;Lug --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Rubber Modular button type</masterLabel>
+        <translation><!-- Rubber Modular button type --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Rubber Panel Cord</masterLabel>
+        <translation><!-- Rubber Panel Cord --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Rubber Panel cord with rider bar</masterLabel>
+        <translation><!-- Rubber Panel cord with rider bar --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Rubber Rapido</masterLabel>
+        <translation><!-- Rubber Rapido --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Rubber bolt down</masterLabel>
+        <translation><!-- Rubber bolt down --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>SB-PM Liner</masterLabel>
+        <translation><!-- SB-PM Liner --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Single Wing</masterLabel>
+        <translation><!-- Single Wing --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Slipex</masterLabel>
+        <translation><!-- Slipex --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Spillex</masterLabel>
+        <translation><!-- Spillex --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Trommel PU  panel bolt down</masterLabel>
+        <translation><!-- Trommel PU  panel bolt down --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Trommel PU modular panel</masterLabel>
+        <translation><!-- Trommel PU modular panel --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Trommel PU spiral</masterLabel>
+        <translation><!-- Trommel PU spiral --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Trommel PU spiral reducing pitch</masterLabel>
+        <translation><!-- Trommel PU spiral reducing pitch --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Trommel Rubber modular panel</masterLabel>
+        <translation><!-- Trommel Rubber modular panel --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Trommel Rubber panel bolt down</masterLabel>
+        <translation><!-- Trommel Rubber panel bolt down --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Trommel Rubber spiral</masterLabel>
+        <translation><!-- Trommel Rubber spiral --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Trommel Rubber spiral reducing pitch</masterLabel>
+        <translation><!-- Trommel Rubber spiral reducing pitch --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Trommel structure</masterLabel>
+        <translation><!-- Trommel structure --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Trutrac</masterLabel>
+        <translation><!-- Trutrac --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>UHMWPE</masterLabel>
+        <translation><!-- UHMWPE --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>V Plough</masterLabel>
+        <translation><!-- V Plough --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

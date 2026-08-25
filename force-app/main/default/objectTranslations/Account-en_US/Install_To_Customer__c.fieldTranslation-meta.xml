@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Install To Customer --></label>
+    <name>Install_To_Customer__c</name>
+    <relationshipLabel><!-- Customers (Install To Customer) --></relationshipLabel>
+</CustomFieldTranslation>

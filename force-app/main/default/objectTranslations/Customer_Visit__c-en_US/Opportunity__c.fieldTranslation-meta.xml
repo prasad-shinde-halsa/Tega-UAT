@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Opportunity --></label>
+    <lookupFilter>
+        <errorMessage><!-- You can select only those opportunities which are related to the customer. --></errorMessage>
+    </lookupFilter>
+    <name>Opportunity__c</name>
+    <relationshipLabel><!-- Customer Visits --></relationshipLabel>
+</CustomFieldTranslation>

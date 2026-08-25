@@ -1,0 +1,853 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Product_Sub_Type__c</fullName>
+    <label>Product Sub-Type</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <controllingField>Product_Type__c</controllingField>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>SAG Mill</fullName>
+                <default>false</default>
+                <label>SAG Mill</label>
+            </value>
+            <value>
+                <fullName>AG Mill</fullName>
+                <default>false</default>
+                <label>AG Mill</label>
+            </value>
+            <value>
+                <fullName>Others Mill</fullName>
+                <default>false</default>
+                <label>Others Mill</label>
+            </value>
+            <value>
+                <fullName>Primary</fullName>
+                <default>false</default>
+                <label>Primary</label>
+            </value>
+            <value>
+                <fullName>Secondary</fullName>
+                <default>false</default>
+                <label>Secondary</label>
+            </value>
+            <value>
+                <fullName>Tertiary</fullName>
+                <default>false</default>
+                <label>Tertiary</label>
+            </value>
+            <value>
+                <fullName>Sizing</fullName>
+                <default>false</default>
+                <label>Sizing</label>
+            </value>
+            <value>
+                <fullName>Sag mill screen</fullName>
+                <default>false</default>
+                <label>Sag mill screen</label>
+            </value>
+            <value>
+                <fullName>Ball mill screen</fullName>
+                <default>false</default>
+                <label>Ball mill screen</label>
+            </value>
+            <value>
+                <fullName>Rod mill screen</fullName>
+                <default>false</default>
+                <label>Rod mill screen</label>
+            </value>
+            <value>
+                <fullName>Dewatering</fullName>
+                <default>false</default>
+                <label>Dewatering</label>
+            </value>
+            <value>
+                <fullName>Other Screen</fullName>
+                <default>false</default>
+                <label>Other Screen</label>
+            </value>
+            <value>
+                <fullName>Sag mill trommel</fullName>
+                <default>false</default>
+                <label>Sag mill trommel</label>
+            </value>
+            <value>
+                <fullName>Ball mill trommel</fullName>
+                <default>false</default>
+                <label>Ball mill trommel</label>
+            </value>
+            <value>
+                <fullName>Rod mill trommel</fullName>
+                <default>false</default>
+                <label>Rod mill trommel</label>
+            </value>
+            <value>
+                <fullName>Scrubber trommel</fullName>
+                <default>false</default>
+                <label>Scrubber trommel</label>
+            </value>
+            <value>
+                <fullName>Other Trommel</fullName>
+                <default>false</default>
+                <label>Other Trommel</label>
+            </value>
+            <value>
+                <fullName>Mill Chutes</fullName>
+                <default>false</default>
+                <label>Mill Chutes</label>
+            </value>
+            <value>
+                <fullName>Transfer Chutes</fullName>
+                <default>false</default>
+                <label>Transfer Chutes</label>
+            </value>
+            <value>
+                <fullName>Silos/Bins/Hoppers</fullName>
+                <default>false</default>
+                <label>Silos/Bins/Hoppers</label>
+            </value>
+            <value>
+                <fullName>Track Hoppers</fullName>
+                <default>false</default>
+                <label>Track Hoppers</label>
+            </value>
+            <value>
+                <fullName>Feeder /Launder</fullName>
+                <default>false</default>
+                <label>Feeder /Launder</label>
+            </value>
+            <value>
+                <fullName>Filter Press</fullName>
+                <default>false</default>
+                <label>Filter Press</label>
+            </value>
+            <value>
+                <fullName>Others WC</fullName>
+                <default>false</default>
+                <label>Others WC</label>
+            </value>
+            <value>
+                <fullName>Tracker Roller</fullName>
+                <default>false</default>
+                <label>Tracker Roller</label>
+            </value>
+            <value>
+                <fullName>Impact Pad</fullName>
+                <default>false</default>
+                <label>Impact Pad</label>
+            </value>
+            <value>
+                <fullName>Skirt Sealing</fullName>
+                <default>false</default>
+                <label>Skirt Sealing</label>
+            </value>
+            <value>
+                <fullName>Ceramic Product</fullName>
+                <default>false</default>
+                <label>Ceramic Product</label>
+            </value>
+            <value>
+                <fullName>Classification</fullName>
+                <default>false</default>
+                <label>Classification</label>
+            </value>
+            <value>
+                <fullName>Desliming</fullName>
+                <default>false</default>
+                <label>Desliming</label>
+            </value>
+            <value>
+                <fullName>B9S</fullName>
+                <default>false</default>
+                <label>B9S</label>
+            </value>
+            <value>
+                <fullName>HDPUL</fullName>
+                <default>false</default>
+                <label>HDPUL</label>
+            </value>
+            <value>
+                <fullName>B6</fullName>
+                <default>false</default>
+                <label>B6</label>
+            </value>
+            <value>
+                <fullName>B6C</fullName>
+                <default>false</default>
+                <label>B6C</label>
+            </value>
+            <value>
+                <fullName>B6RE</fullName>
+                <default>false</default>
+                <label>B6RE</label>
+            </value>
+            <value>
+                <fullName>C series</fullName>
+                <default>false</default>
+                <label>C series</label>
+            </value>
+            <value>
+                <fullName>V Plough</fullName>
+                <default>false</default>
+                <label>V Plough</label>
+            </value>
+            <value>
+                <fullName>D Plough</fullName>
+                <default>false</default>
+                <label>D Plough</label>
+            </value>
+            <value>
+                <fullName>Primary Scraper ( B9S)</fullName>
+                <default>false</default>
+                <label>Primary Scraper ( B9S)</label>
+            </value>
+            <value>
+                <fullName>Primary Scraper ( B9SV)</fullName>
+                <default>false</default>
+                <label>Primary Scraper ( B9SV)</label>
+            </value>
+            <value>
+                <fullName>Primary Scraper ( B9SVT)</fullName>
+                <default>false</default>
+                <label>Primary Scraper ( B9SVT)</label>
+            </value>
+            <value>
+                <fullName>Primary Scraper (HDPU-L)</fullName>
+                <default>false</default>
+                <label>Primary Scraper (HDPU-L)</label>
+            </value>
+            <value>
+                <fullName>Primary Scraper (HDPU-S)</fullName>
+                <default>false</default>
+                <label>Primary Scraper (HDPU-S)</label>
+            </value>
+            <value>
+                <fullName>Primary Scraper ( HD Series)</fullName>
+                <default>false</default>
+                <label>Primary Scraper ( HD Series)</label>
+            </value>
+            <value>
+                <fullName>Secondary Scraper ( B6 Series with Single EM)</fullName>
+                <default>false</default>
+                <label>Secondary Scraper ( B6 Series with Single EM)</label>
+            </value>
+            <value>
+                <fullName>Secondary Scraper ( B6 Series with Parallel EM)</fullName>
+                <default>false</default>
+                <label>Secondary Scraper ( B6 Series with Parallel EM)</label>
+            </value>
+            <value>
+                <fullName>Secondary Scraper ( B6 Series with reversing adaptar and Parallel EM)</fullName>
+                <default>false</default>
+                <label>Secondary Scraper ( B6 Series with reversing adaptar and Parallel EM)</label>
+            </value>
+            <value>
+                <fullName>C Series Scraper  C1V</fullName>
+                <default>false</default>
+                <label>C Series Scraper  C1V</label>
+            </value>
+            <value>
+                <fullName>C Series Scraper  C2</fullName>
+                <default>false</default>
+                <label>C Series Scraper  C2</label>
+            </value>
+            <value>
+                <fullName>C Series Scraper  C3</fullName>
+                <default>false</default>
+                <label>C Series Scraper  C3</label>
+            </value>
+            <value>
+                <fullName>C Series Scraper  CT</fullName>
+                <default>false</default>
+                <label>C Series Scraper  CT</label>
+            </value>
+            <value>
+                <fullName>Internal Scraper (VP)</fullName>
+                <default>false</default>
+                <label>Internal Scraper (VP)</label>
+            </value>
+            <value>
+                <fullName>Internal Scraper (DP)</fullName>
+                <default>false</default>
+                <label>Internal Scraper (DP)</label>
+            </value>
+            <value>
+                <fullName>Spill ex Model 150x200x25</fullName>
+                <default>false</default>
+                <label>Spill ex Model 150x200x25</label>
+            </value>
+            <value>
+                <fullName>Baby Spillex Model 125x150x25</fullName>
+                <default>false</default>
+                <label>Baby Spillex Model 125x150x25</label>
+            </value>
+            <value>
+                <fullName>Baby Spillex Model 125x150x25/15</fullName>
+                <default>false</default>
+                <label>Baby Spillex Model 125x150x25/15</label>
+            </value>
+            <value>
+                <fullName>Spillex Model 150x200x32/22</fullName>
+                <default>false</default>
+                <label>Spillex Model 150x200x32/22</label>
+            </value>
+            <value>
+                <fullName>Eco Flip Model 170x200x20</fullName>
+                <default>false</default>
+                <label>Eco Flip Model 170x200x20</label>
+            </value>
+            <value>
+                <fullName>Eco Flip Model 200x200x20</fullName>
+                <default>false</default>
+                <label>Eco Flip Model 200x200x20</label>
+            </value>
+            <value>
+                <fullName>Eco Flip Model 220x200x20</fullName>
+                <default>false</default>
+                <label>Eco Flip Model 220x200x20</label>
+            </value>
+            <value>
+                <fullName>Tru Seal Model 205x200x20</fullName>
+                <default>false</default>
+                <label>Tru Seal Model 205x200x20</label>
+            </value>
+            <value>
+                <fullName>Easy Seal Model 200x90x20</fullName>
+                <default>false</default>
+                <label>Easy Seal Model 200x90x20</label>
+            </value>
+            <value>
+                <fullName>Single Wing Seal Model 500x112X14/20</fullName>
+                <default>false</default>
+                <label>Single Wing Seal Model 500x112X14/20</label>
+            </value>
+            <value>
+                <fullName>Single Wing Seal Model 500x170X15/20</fullName>
+                <default>false</default>
+                <label>Single Wing Seal Model 500x170X15/20</label>
+            </value>
+            <value>
+                <fullName>Single Wing Seal Model 500x170X15/30</fullName>
+                <default>false</default>
+                <label>Single Wing Seal Model 500x170X15/30</label>
+            </value>
+            <value>
+                <fullName>Spillex Model 150x200x32</fullName>
+                <default>false</default>
+                <label>Spillex Model 150x200x32</label>
+            </value>
+            <value>
+                <fullName>Spillex Model 150x265x32</fullName>
+                <default>false</default>
+                <label>Spillex Model 150x265x32</label>
+            </value>
+            <value>
+                <fullName>Spillex Model 150x265x25</fullName>
+                <default>false</default>
+                <label>Spillex Model 150x265x25</label>
+            </value>
+            <value>
+                <fullName>Spillex Model 150x265x20</fullName>
+                <default>false</default>
+                <label>Spillex Model 150x265x20</label>
+            </value>
+            <value>
+                <fullName>Spillex Model 150x300x32</fullName>
+                <default>false</default>
+                <label>Spillex Model 150x300x32</label>
+            </value>
+            <value>
+                <fullName>Spillex Model 150x300x25</fullName>
+                <default>false</default>
+                <label>Spillex Model 150x300x25</label>
+            </value>
+            <value>
+                <fullName>Spillex Model 150x300x20</fullName>
+                <default>false</default>
+                <label>Spillex Model 150x300x20</label>
+            </value>
+            <value>
+                <fullName>Belt Tracker Model TTFR</fullName>
+                <default>false</default>
+                <label>Belt Tracker Model TTFR</label>
+            </value>
+            <value>
+                <fullName>Belt Tracker Model TTT</fullName>
+                <default>false</default>
+                <label>Belt Tracker Model TTT</label>
+            </value>
+            <value>
+                <fullName>Belt Tracker Model TTDR</fullName>
+                <default>false</default>
+                <label>Belt Tracker Model TTDR</label>
+            </value>
+            <value>
+                <fullName>Belt Tracker Model TTVR</fullName>
+                <default>false</default>
+                <label>Belt Tracker Model TTVR</label>
+            </value>
+            <value>
+                <fullName>CentralX SO  Series</fullName>
+                <default>false</default>
+                <label>CentralX SO  Series</label>
+            </value>
+            <value>
+                <fullName>CentraX S series</fullName>
+                <default>false</default>
+                <label>CentraX S series</label>
+            </value>
+            <value>
+                <fullName>CentraX SK Series</fullName>
+                <default>false</default>
+                <label>CentraX SK Series</label>
+            </value>
+            <value>
+                <fullName>CentraX SKO series</fullName>
+                <default>false</default>
+                <label>CentraX SKO series</label>
+            </value>
+            <value>
+                <fullName>CertraX SO-VR</fullName>
+                <default>false</default>
+                <label>CertraX SO-VR</label>
+            </value>
+            <value>
+                <fullName>CertraX SKO-VR</fullName>
+                <default>false</default>
+                <label>CertraX SKO-VR</label>
+            </value>
+            <value>
+                <fullName>CPL standard Sheet</fullName>
+                <default>false</default>
+                <label>CPL standard Sheet</label>
+            </value>
+            <value>
+                <fullName>CPL Long Sheet</fullName>
+                <default>false</default>
+                <label>CPL Long Sheet</label>
+            </value>
+            <value>
+                <fullName>H Type</fullName>
+                <default>false</default>
+                <label>H Type</label>
+            </value>
+            <value>
+                <fullName>T Type</fullName>
+                <default>false</default>
+                <label>T Type</label>
+            </value>
+            <value>
+                <fullName>P Type</fullName>
+                <default>false</default>
+                <label>P Type</label>
+            </value>
+            <value>
+                <fullName>R Type</fullName>
+                <default>false</default>
+                <label>R Type</label>
+            </value>
+            <value>
+                <fullName>RUBBER BLOCK</fullName>
+                <default>false</default>
+                <label>RUBBER BLOCK</label>
+            </value>
+            <value>
+                <fullName>BACKING PLATE</fullName>
+                <default>false</default>
+                <label>BACKING PLATE</label>
+            </value>
+            <value>
+                <fullName>SERRATED CLAMP WITH HARDWARE</fullName>
+                <default>false</default>
+                <label>SERRATED CLAMP WITH HARDWARE</label>
+            </value>
+            <value>
+                <fullName>ELEMENT</fullName>
+                <default>false</default>
+                <label>ELEMENT</label>
+            </value>
+            <value>
+                <fullName>ELASTOMOUNT</fullName>
+                <default>false</default>
+                <label>ELASTOMOUNT</label>
+            </value>
+            <value>
+                <fullName>CARRIER TUBE</fullName>
+                <default>false</default>
+                <label>CARRIER TUBE</label>
+            </value>
+            <value>
+                <fullName>SECONDARY SR BLADE</fullName>
+                <default>false</default>
+                <label>Belt Scrapers BLADE</label>
+            </value>
+            <value>
+                <fullName>DP BLADE</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>DP BLADE</label>
+            </value>
+            <value>
+                <fullName>PRIMARY SCRAPER BLADE</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>PRIMARY SCRAPER BLADE</label>
+            </value>
+            <value>
+                <fullName>VP BLADE</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>VP BLADE</label>
+            </value>
+        </valueSetDefinition>
+        <valueSettings>
+            <controllingFieldValue>Polyurethane (PU)</controllingFieldValue>
+            <valueName>Classification</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Rubber</controllingFieldValue>
+            <valueName>Desliming</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Cryston</controllingFieldValue>
+            <controllingFieldValue>Rubber Modular button type</controllingFieldValue>
+            <valueName>Dewatering</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Belt Scrapers</controllingFieldValue>
+            <valueName>ELEMENT</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Belt Scrapers</controllingFieldValue>
+            <valueName>ELASTOMOUNT</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Belt Scrapers</controllingFieldValue>
+            <valueName>CARRIER TUBE</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Belt Scrapers</controllingFieldValue>
+            <valueName>SECONDARY SR BLADE</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Side Skirt Sealing</controllingFieldValue>
+            <valueName>Easy Seal Model 200x90x20</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Side Skirt Sealing</controllingFieldValue>
+            <controllingFieldValue>Rear Skirt Sealing</controllingFieldValue>
+            <valueName>RUBBER BLOCK</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Side Skirt Sealing</controllingFieldValue>
+            <controllingFieldValue>Rear Skirt Sealing</controllingFieldValue>
+            <valueName>BACKING PLATE</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Side Skirt Sealing</controllingFieldValue>
+            <controllingFieldValue>Rear Skirt Sealing</controllingFieldValue>
+            <valueName>SERRATED CLAMP WITH HARDWARE</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Impact Pad Without Frame</controllingFieldValue>
+            <controllingFieldValue>Impact Bed System</controllingFieldValue>
+            <valueName>H Type</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Impact Pad Without Frame</controllingFieldValue>
+            <controllingFieldValue>Impact Bed System</controllingFieldValue>
+            <valueName>T Type</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Impact Pad Without Frame</controllingFieldValue>
+            <controllingFieldValue>Impact Bed System</controllingFieldValue>
+            <valueName>P Type</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Impact Pad Without Frame</controllingFieldValue>
+            <controllingFieldValue>Impact Bed System</controllingFieldValue>
+            <valueName>R Type</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>PU Cross tension</controllingFieldValue>
+            <valueName>Sag mill screen</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Belt Tracker Roller</controllingFieldValue>
+            <valueName>Belt Tracker Model TTFR</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Belt Tracker Roller</controllingFieldValue>
+            <valueName>Belt Tracker Model TTT</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Belt Tracker Roller</controllingFieldValue>
+            <valueName>Belt Tracker Model TTDR</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Belt Tracker Roller</controllingFieldValue>
+            <valueName>Belt Tracker Model TTVR</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Belt Tracker Roller</controllingFieldValue>
+            <valueName>CentralX SO  Series</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Belt Tracker Roller</controllingFieldValue>
+            <valueName>CentraX S series</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Belt Tracker Roller</controllingFieldValue>
+            <valueName>CentraX SK Series</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Belt Tracker Roller</controllingFieldValue>
+            <valueName>CentraX SKO series</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Belt Tracker Roller</controllingFieldValue>
+            <valueName>CertraX SO-VR</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Belt Tracker Roller</controllingFieldValue>
+            <valueName>CertraX SKO-VR</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>PU bolt down</controllingFieldValue>
+            <valueName>Ball mill screen</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Ceramic Pulley Lagging</controllingFieldValue>
+            <valueName>CPL standard Sheet</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Ceramic Pulley Lagging</controllingFieldValue>
+            <valueName>CPL Long Sheet</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Rubber Modular Pin&amp;Lug</controllingFieldValue>
+            <valueName>Rod mill screen</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Ceradisc</controllingFieldValue>
+            <valueName>Ceramic Product</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Rubber Rapido</controllingFieldValue>
+            <valueName>Other Screen</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>DynaPrime</controllingFieldValue>
+            <valueName>SAG Mill</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>DynaSteel</controllingFieldValue>
+            <valueName>AG Mill</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>DynaWear</controllingFieldValue>
+            <valueName>Others Mill</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Rubber Panel Cord</controllingFieldValue>
+            <valueName>Primary</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Rubber Panel cord with rider bar</controllingFieldValue>
+            <valueName>Secondary</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Rubber bolt down</controllingFieldValue>
+            <valueName>Tertiary</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Rubber Cross tension</controllingFieldValue>
+            <valueName>Sizing</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Trommel structure</controllingFieldValue>
+            <valueName>Sag mill trommel</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Trommel Rubber panel bolt down</controllingFieldValue>
+            <valueName>Ball mill trommel</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Trommel Rubber modular panel</controllingFieldValue>
+            <valueName>Rod mill trommel</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Trommel PU  panel bolt down</controllingFieldValue>
+            <valueName>Scrubber trommel</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Trommel PU modular panel</controllingFieldValue>
+            <valueName>Other Trommel</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Belt Scrapers - Conversion</controllingFieldValue>
+            <valueName>Primary Scraper ( B9S)</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Belt Scrapers - Conversion</controllingFieldValue>
+            <valueName>Primary Scraper ( B9SV)</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Belt Scrapers - Conversion</controllingFieldValue>
+            <valueName>Primary Scraper ( B9SVT)</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Belt Scrapers - Conversion</controllingFieldValue>
+            <valueName>Primary Scraper (HDPU-L)</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Belt Scrapers - Conversion</controllingFieldValue>
+            <valueName>Primary Scraper (HDPU-S)</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Belt Scrapers - Conversion</controllingFieldValue>
+            <valueName>Primary Scraper ( HD Series)</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Belt Scrapers - Conversion</controllingFieldValue>
+            <valueName>Secondary Scraper ( B6 Series with Single EM)</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Belt Scrapers - Conversion</controllingFieldValue>
+            <valueName>Secondary Scraper ( B6 Series with Parallel EM)</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Belt Scrapers - Conversion</controllingFieldValue>
+            <valueName>Secondary Scraper ( B6 Series with reversing adaptar and Parallel EM)</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Belt Scrapers - Conversion</controllingFieldValue>
+            <valueName>C Series Scraper  C1V</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Belt Scrapers - Conversion</controllingFieldValue>
+            <valueName>C Series Scraper  C2</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Belt Scrapers - Conversion</controllingFieldValue>
+            <valueName>C Series Scraper  C3</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Belt Scrapers - Conversion</controllingFieldValue>
+            <valueName>C Series Scraper  CT</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Belt Scrapers - Conversion</controllingFieldValue>
+            <valueName>Internal Scraper (VP)</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Belt Scrapers - Conversion</controllingFieldValue>
+            <valueName>Internal Scraper (DP)</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Side Skirt Sealing - Conversion</controllingFieldValue>
+            <valueName>Spill ex Model 150x200x25</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Side Skirt Sealing - Conversion</controllingFieldValue>
+            <valueName>Baby Spillex Model 125x150x25</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Side Skirt Sealing - Conversion</controllingFieldValue>
+            <valueName>Baby Spillex Model 125x150x25/15</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Side Skirt Sealing - Conversion</controllingFieldValue>
+            <valueName>Spillex Model 150x200x32/22</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Side Skirt Sealing - Conversion</controllingFieldValue>
+            <valueName>Eco Flip Model 170x200x20</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Side Skirt Sealing - Conversion</controllingFieldValue>
+            <valueName>Eco Flip Model 200x200x20</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Side Skirt Sealing - Conversion</controllingFieldValue>
+            <valueName>Eco Flip Model 220x200x20</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Side Skirt Sealing - Conversion</controllingFieldValue>
+            <valueName>Tru Seal Model 205x200x20</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Side Skirt Sealing - Conversion</controllingFieldValue>
+            <valueName>Single Wing Seal Model 500x112X14/20</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Side Skirt Sealing - Conversion</controllingFieldValue>
+            <valueName>Single Wing Seal Model 500x170X15/20</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Side Skirt Sealing - Conversion</controllingFieldValue>
+            <valueName>Single Wing Seal Model 500x170X15/30</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Side Skirt Sealing - Conversion</controllingFieldValue>
+            <valueName>Spillex Model 150x200x32</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Side Skirt Sealing - Conversion</controllingFieldValue>
+            <valueName>Spillex Model 150x265x32</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Side Skirt Sealing - Conversion</controllingFieldValue>
+            <valueName>Spillex Model 150x265x25</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Side Skirt Sealing - Conversion</controllingFieldValue>
+            <valueName>Spillex Model 150x265x20</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Rubber Liner</controllingFieldValue>
+            <valueName>Mill Chutes</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Rear Skirt Sealing - Conversion</controllingFieldValue>
+            <valueName>Spillex Model 150x300x32</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Rear Skirt Sealing - Conversion</controllingFieldValue>
+            <valueName>Spillex Model 150x300x25</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Rear Skirt Sealing - Conversion</controllingFieldValue>
+            <valueName>Spillex Model 150x300x20</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Ceramic Liner</controllingFieldValue>
+            <valueName>Transfer Chutes</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>UHMWPE</controllingFieldValue>
+            <valueName>Silos/Bins/Hoppers</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>PU Liner</controllingFieldValue>
+            <valueName>Track Hoppers</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Air Blaster</controllingFieldValue>
+            <valueName>Feeder /Launder</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Misc.</controllingFieldValue>
+            <valueName>Filter Press</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Engineering Chute</controllingFieldValue>
+            <valueName>Others WC</valueName>
+        </valueSettings>
+    </valueSet>
+</CustomField>

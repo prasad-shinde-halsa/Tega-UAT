@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>PMG_Validation</fullName>
+    <active>true</active>
+    <errorConditionFormula>(Part_List_Exist__c = false) &amp;&amp; ISBLANK(TEXT(PMG__c))</errorConditionFormula>
+    <errorDisplayField>PMG__c</errorDisplayField>
+    <errorMessage>Please fill PMG</errorMessage>
+</ValidationRule>

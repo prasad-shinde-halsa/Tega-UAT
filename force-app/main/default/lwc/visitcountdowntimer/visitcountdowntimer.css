@@ -1,0 +1,82 @@
+/* visitCountdownTimer.css */
+
+.timer-container {
+    padding: 0.5rem 0;
+}
+
+.timer-box {
+    display: flex;
+    align-items: center;
+    gap: 0.6rem;
+    padding: 0.75rem 1rem;
+    border-radius: 6px;
+    font-family: 'Salesforce Sans', Arial, sans-serif;
+    flex-wrap: wrap;
+}
+
+/* ── State colours ── */
+.timer-ok {
+    background-color: #e3f5e1;
+    border-left: 4px solid #2e844a;
+    color: #1d5531;
+}
+
+.timer-warning {
+    background-color: #fff3e0;
+    border-left: 4px solid #dd7a01;
+    color: #6a3d00;
+}
+
+.timer-critical {
+    background-color: #fde8e8;
+    border-left: 4px solid #c23934;
+    color: #7a1111;
+    animation: pulse 1.5s ease-in-out infinite;
+}
+
+.timer-expired {
+    background-color: #f3f3f3;
+    border-left: 4px solid #8e8e8e;
+    color: #5e5e5e;
+}
+
+/* ── Elements ── */
+.timer-icon {
+    flex-shrink: 0;
+}
+
+.timer-label {
+    font-size: 0.85rem;
+    font-weight: 600;
+    white-space: nowrap;
+}
+
+.timer-display {
+    font-size: 1.6rem;
+    font-weight: 700;
+    letter-spacing: 0.05em;
+    font-variant-numeric: tabular-nums;
+    white-space: nowrap;
+}
+
+.timer-sub {
+    font-size: 0.78rem;
+    opacity: 0.75;
+    margin-left: auto;
+    white-space: nowrap;
+}
+
+.expired-badge {
+    font-size: 0.78rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.04em;
+    margin-left: auto;
+    white-space: nowrap;
+}
+
+/* ── Pulse animation for critical state ── */
+@keyframes pulse {
+    0%, 100% { opacity: 1; }
+    50%       { opacity: 0.7; }
+}

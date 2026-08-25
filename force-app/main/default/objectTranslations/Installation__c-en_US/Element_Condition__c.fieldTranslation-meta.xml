@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Element Condition --></label>
+    <name>Element_Condition__c</name>
+    <picklistValues>
+        <masterLabel>Different version-replacement required</masterLabel>
+        <translation><!-- Different version-replacement required --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>No deflection-replacement required</masterLabel>
+        <translation><!-- No deflection-replacement required --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Ok-normal deflection observed</masterLabel>
+        <translation><!-- Ok-normal deflection observed --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Physical damage took place- replacement required</masterLabel>
+        <translation><!-- Physical damage took place- replacement required --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Sagging observed-replacement required</masterLabel>
+        <translation><!-- Sagging observed-replacement required --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

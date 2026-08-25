@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Financial Year Tenure --></label>
+    <name>Financial_Year_Tenure__c</name>
+    <picklistValues>
+        <masterLabel>Current FY Year</masterLabel>
+        <translation><!-- Current FY Year --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Following FY Year</masterLabel>
+        <translation><!-- Following FY Year --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Next FY Year</masterLabel>
+        <translation><!-- Next FY Year --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

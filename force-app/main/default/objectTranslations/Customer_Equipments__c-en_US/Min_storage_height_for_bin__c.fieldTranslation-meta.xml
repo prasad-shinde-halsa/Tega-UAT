@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Min. Storage Height for Bin (mm) --></label>
+    <name>Min_storage_height_for_bin__c</name>
+</CustomFieldTranslation>

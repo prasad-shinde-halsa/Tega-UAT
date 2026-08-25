@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Elastomount Size 3 --></label>
+    <name>Elastomount_Size_3__c</name>
+    <picklistValues>
+        <masterLabel>Size A</masterLabel>
+        <translation><!-- Size A --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Size B</masterLabel>
+        <translation><!-- Size B --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Size C</masterLabel>
+        <translation><!-- Size C --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Size D</masterLabel>
+        <translation><!-- Size D --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Size E</masterLabel>
+        <translation><!-- Size E --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

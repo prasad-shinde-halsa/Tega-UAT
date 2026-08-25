@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Inventory Part List Relationship --></label>
+    <lookupFilter>
+        <errorMessage><!-- Part lIst of Budget and Inventory Part List Relationship should be same --></errorMessage>
+        <informationalMessage><!-- Part lIst of Budget and Inventory Part List Relationship should be same --></informationalMessage>
+    </lookupFilter>
+    <name>Inventory_Part_List_Relationship__c</name>
+    <relationshipLabel><!-- Budget lines --></relationshipLabel>
+</CustomFieldTranslation>

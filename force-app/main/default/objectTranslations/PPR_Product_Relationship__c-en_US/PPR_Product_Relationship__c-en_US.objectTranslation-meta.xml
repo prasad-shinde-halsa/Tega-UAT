@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>PPR Product Relationship</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>PPR Product Relationships</value>
+    </caseValues>
+    <layouts>
+        <layout>PPR Product Relationship Layout</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+    </layouts>
+    <startsWith>Consonant</startsWith>
+    <validationRules>
+        <errorMessage><!-- Deadline for Action should be future date. --></errorMessage>
+        <name>Validation_on_Deadline_on_Action</name>
+    </validationRules>
+</CustomObjectTranslation>

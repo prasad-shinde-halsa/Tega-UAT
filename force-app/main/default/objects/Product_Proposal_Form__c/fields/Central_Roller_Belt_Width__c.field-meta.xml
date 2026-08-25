@@ -1,0 +1,199 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Central_Roller_Belt_Width__c</fullName>
+    <label>Central Roller Belt Width</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <controllingField>Product_Sub_Type__c</controllingField>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>450</fullName>
+                <default>false</default>
+                <label>450</label>
+            </value>
+            <value>
+                <fullName>500</fullName>
+                <default>false</default>
+                <label>500</label>
+            </value>
+            <value>
+                <fullName>600</fullName>
+                <default>false</default>
+                <label>600</label>
+            </value>
+            <value>
+                <fullName>650</fullName>
+                <default>false</default>
+                <label>650</label>
+            </value>
+            <value>
+                <fullName>800</fullName>
+                <default>false</default>
+                <label>800</label>
+            </value>
+            <value>
+                <fullName>1000</fullName>
+                <default>false</default>
+                <label>1000</label>
+            </value>
+            <value>
+                <fullName>1200</fullName>
+                <default>false</default>
+                <label>1200</label>
+            </value>
+            <value>
+                <fullName>1400</fullName>
+                <default>false</default>
+                <label>1400</label>
+            </value>
+            <value>
+                <fullName>1600</fullName>
+                <default>false</default>
+                <label>1600</label>
+            </value>
+            <value>
+                <fullName>1800</fullName>
+                <default>false</default>
+                <label>1800</label>
+            </value>
+            <value>
+                <fullName>2000</fullName>
+                <default>false</default>
+                <label>2000</label>
+            </value>
+            <value>
+                <fullName>2200</fullName>
+                <default>false</default>
+                <label>2200</label>
+            </value>
+            <value>
+                <fullName>2400</fullName>
+                <default>false</default>
+                <label>2400</label>
+            </value>
+            <value>
+                <fullName>2600</fullName>
+                <default>false</default>
+                <label>2600</label>
+            </value>
+            <value>
+                <fullName>2800</fullName>
+                <default>false</default>
+                <label>2800</label>
+            </value>
+            <value>
+                <fullName>3000</fullName>
+                <default>false</default>
+                <label>3000</label>
+            </value>
+        </valueSetDefinition>
+        <valueSettings>
+            <controllingFieldValue>Belt Tracker Model TTDR</controllingFieldValue>
+            <controllingFieldValue>Belt Tracker Model TTVR</controllingFieldValue>
+            <controllingFieldValue>CentralX SO  Series</controllingFieldValue>
+            <controllingFieldValue>CentraX S series</controllingFieldValue>
+            <controllingFieldValue>CertraX SO-VR</controllingFieldValue>
+            <valueName>1400</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Belt Tracker Model TTDR</controllingFieldValue>
+            <controllingFieldValue>Belt Tracker Model TTVR</controllingFieldValue>
+            <controllingFieldValue>CentralX SO  Series</controllingFieldValue>
+            <controllingFieldValue>CentraX S series</controllingFieldValue>
+            <controllingFieldValue>CertraX SO-VR</controllingFieldValue>
+            <valueName>1600</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Belt Tracker Model TTDR</controllingFieldValue>
+            <controllingFieldValue>Belt Tracker Model TTVR</controllingFieldValue>
+            <controllingFieldValue>CentralX SO  Series</controllingFieldValue>
+            <controllingFieldValue>CentraX S series</controllingFieldValue>
+            <controllingFieldValue>CertraX SO-VR</controllingFieldValue>
+            <valueName>1800</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Belt Tracker Model TTDR</controllingFieldValue>
+            <controllingFieldValue>Belt Tracker Model TTVR</controllingFieldValue>
+            <controllingFieldValue>CentralX SO  Series</controllingFieldValue>
+            <controllingFieldValue>CentraX S series</controllingFieldValue>
+            <controllingFieldValue>CertraX SO-VR</controllingFieldValue>
+            <valueName>2000</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Belt Tracker Model TTDR</controllingFieldValue>
+            <controllingFieldValue>Belt Tracker Model TTVR</controllingFieldValue>
+            <controllingFieldValue>CentralX SO  Series</controllingFieldValue>
+            <controllingFieldValue>CentraX S series</controllingFieldValue>
+            <controllingFieldValue>CertraX SO-VR</controllingFieldValue>
+            <valueName>2200</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Belt Tracker Model TTDR</controllingFieldValue>
+            <controllingFieldValue>Belt Tracker Model TTVR</controllingFieldValue>
+            <valueName>2400</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Belt Tracker Model TTDR</controllingFieldValue>
+            <controllingFieldValue>Belt Tracker Model TTVR</controllingFieldValue>
+            <valueName>2600</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Belt Tracker Model TTDR</controllingFieldValue>
+            <controllingFieldValue>Belt Tracker Model TTVR</controllingFieldValue>
+            <valueName>2800</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Belt Tracker Model TTDR</controllingFieldValue>
+            <controllingFieldValue>Belt Tracker Model TTVR</controllingFieldValue>
+            <valueName>3000</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Belt Tracker Model TTVR</controllingFieldValue>
+            <valueName>450</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Belt Tracker Model TTVR</controllingFieldValue>
+            <valueName>500</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Belt Tracker Model TTVR</controllingFieldValue>
+            <controllingFieldValue>CentraX SK Series</controllingFieldValue>
+            <controllingFieldValue>CentraX SKO series</controllingFieldValue>
+            <controllingFieldValue>CertraX SKO-VR</controllingFieldValue>
+            <valueName>600</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Belt Tracker Model TTVR</controllingFieldValue>
+            <controllingFieldValue>CentraX SK Series</controllingFieldValue>
+            <controllingFieldValue>CentraX SKO series</controllingFieldValue>
+            <controllingFieldValue>CertraX SKO-VR</controllingFieldValue>
+            <valueName>650</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Belt Tracker Model TTVR</controllingFieldValue>
+            <controllingFieldValue>CentraX SK Series</controllingFieldValue>
+            <controllingFieldValue>CentraX SKO series</controllingFieldValue>
+            <controllingFieldValue>CertraX SKO-VR</controllingFieldValue>
+            <valueName>800</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Belt Tracker Model TTVR</controllingFieldValue>
+            <controllingFieldValue>CentraX SK Series</controllingFieldValue>
+            <controllingFieldValue>CentraX SKO series</controllingFieldValue>
+            <controllingFieldValue>CertraX SKO-VR</controllingFieldValue>
+            <valueName>1000</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Belt Tracker Model TTVR</controllingFieldValue>
+            <controllingFieldValue>CentralX SO  Series</controllingFieldValue>
+            <controllingFieldValue>CentraX S series</controllingFieldValue>
+            <controllingFieldValue>CertraX SO-VR</controllingFieldValue>
+            <valueName>1200</valueName>
+        </valueSettings>
+    </valueSet>
+</CustomField>

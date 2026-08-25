@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Competitor_Product_Condition__c</fullName>
+    <label>Competitor Product Condition</label>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Product working-Customer happy</fullName>
+                <default>false</default>
+                <label>Product working-Customer happy</label>
+            </value>
+            <value>
+                <fullName>Product working-Customer not happy</fullName>
+                <default>false</default>
+                <label>Product working-Customer not happy</label>
+            </value>
+            <value>
+                <fullName>Product not working-Customer not happy</fullName>
+                <default>false</default>
+                <label>Product not working-Customer not happy</label>
+            </value>
+            <value>
+                <fullName>Customer prefers product of competitor</fullName>
+                <default>false</default>
+                <label>Customer prefers product of competitor</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

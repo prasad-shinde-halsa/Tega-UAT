@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>L1L3_Code_match</fullName>
+    <active>false</active>
+    <description>L1L3_Code should be combination of &quot;Part List name&quot; +&quot;_&quot;+&quot;L3 Name&quot;</description>
+    <errorConditionFormula>AND(
+  NOT(ISBLANK(L1L3_Code__c)),
+  NOT(ISBLANK(Part_List__c)),
+  NOT(ISBLANK(Product_del__c)),
+  L1L3_Code__c != Part_List__r.Name + &quot;_&quot; + Product_del__r.Name
+)</errorConditionFormula>
+    <errorDisplayField>L1L3_Code__c</errorDisplayField>
+    <errorMessage>L1L3_Code should be combination of &quot;Part List name&quot; +&quot;_&quot;+&quot;L3 Name&quot;</errorMessage>
+</ValidationRule>

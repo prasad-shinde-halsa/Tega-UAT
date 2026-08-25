@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Budget List</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Budget List</value>
+    </caseValues>
+    <layouts>
+        <layout>Budget Layout</layout>
+        <sections>
+            <label><!-- Amount Details --></label>
+            <section>Amount Details</section>
+        </sections>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+    </layouts>
+    <quickActions>
+        <label><!-- Approve --></label>
+        <name>Approve</name>
+    </quickActions>
+    <quickActions>
+        <label><!-- Clone --></label>
+        <name>Clone</name>
+    </quickActions>
+    <quickActions>
+        <label><!-- Create New Budget Line Item --></label>
+        <name>Create_Budget_Line_Item</name>
+    </quickActions>
+    <quickActions>
+        <label><!-- Create New Budget Line Item --></label>
+        <name>Create_New_Budget_Line_Item</name>
+    </quickActions>
+    <quickActions>
+        <label><!-- Delete --></label>
+        <name>Delete</name>
+    </quickActions>
+    <quickActions>
+        <label><!-- Delete --></label>
+        <name>Delete_sysAdmin</name>
+    </quickActions>
+    <quickActions>
+        <label><!-- Edit --></label>
+        <name>Edit</name>
+    </quickActions>
+    <quickActions>
+        <label><!-- Edit --></label>
+        <name>Edit_Dc_Budget_Line_Item_leadership</name>
+    </quickActions>
+    <quickActions>
+        <label><!-- Submit for Approval --></label>
+        <name>Submit_for_Approval</name>
+    </quickActions>
+    <quickActions>
+        <label><!-- Update Exchange Rate --></label>
+        <name>Update_Exchange_Rate</name>
+    </quickActions>
+    <recordTypes>
+        <label><!-- Advance Budget --></label>
+        <name>Advance_Budget</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- Development Outside Budget --></label>
+        <name>Development_Budget</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- PMG --></label>
+        <name>PMG</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- Sales --></label>
+        <name>Sales</name>
+    </recordTypes>
+    <startsWith>Consonant</startsWith>
+    <validationRules>
+        <errorMessage><!-- You do not have the necessary permissions to go back to the previous stage. --></errorMessage>
+        <name>RestrictPreviousStageMovementForNonAdmin</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- You do not have necessary permissions to edit the Budget. --></errorMessage>
+        <name>Restrict_ExCom_Manager_User_Edit</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- You do not have necessary permissions to edit the Budget. --></errorMessage>
+        <name>Restrict_GS_User_Edit</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- You do not have necessary permissions to edit the Budget. --></errorMessage>
+        <name>Restrict_PMG_User_Edit</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- You do not have necessary permissions to edit the Budget. --></errorMessage>
+        <name>Restrict_RM_User_Edit</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- You do not have necessary permissions to edit the Budget. --></errorMessage>
+        <name>Restrict_Sales_User_Edit</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- You can only move to a previous stage. --></errorMessage>
+        <name>Restrict_Stage_Advancement_For_Admin</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- You do not have necessary permissions to edit the Name of the Budget. --></errorMessage>
+        <name>Restrict_User_Edit_PMG_Advanced_Budget</name>
+    </validationRules>
+    <webLinks>
+        <label><!-- View_Budget --></label>
+        <name>View_Budget</name>
+    </webLinks>
+</CustomObjectTranslation>

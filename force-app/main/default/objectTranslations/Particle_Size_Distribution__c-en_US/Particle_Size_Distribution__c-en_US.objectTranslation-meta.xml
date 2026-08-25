@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Particle Size Distribution</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Particle Size Distributions</value>
+    </caseValues>
+    <layouts>
+        <layout>Particle Size Distribution Layout</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- System Information --></label>
+            <section>System Information</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Wear Component Particle Size Distribution Layout</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- System Information --></label>
+            <section>System Information</section>
+        </sections>
+    </layouts>
+    <recordTypes>
+        <label><!-- Hydrocyclone --></label>
+        <name>Hydrocyclone</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- Mill --></label>
+        <name>Mill</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- Screen --></label>
+        <name>Screen</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- Trommel --></label>
+        <name>Trommel</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- Wear Component --></label>
+        <name>Wear_Component</name>
+    </recordTypes>
+    <startsWith>Consonant</startsWith>
+    <validationRules>
+        <errorMessage><!-- Record Type of this record and related Operating Parameter should be same. --></errorMessage>
+        <name>Different_Record_Type_OP_PSD</name>
+    </validationRules>
+</CustomObjectTranslation>

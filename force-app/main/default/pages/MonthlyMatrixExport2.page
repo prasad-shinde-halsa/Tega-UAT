@@ -1,0 +1,170 @@
+<apex:page controller="MonthlyMatrixExportController" contentType="application/vnd.ms-excel#MIS_Report_{!exportFileName}.xls" cache="true" standardStylesheets="false">
+    <html xmlns:o="urn:schemas-microsoft-com:office:office" xmlns:x="urn:schemas-microsoft-com:office:excel">
+        <head>
+            <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+            <meta name="ProgId" content="Excel.Sheet"/>
+        </head>
+        <body>
+            <!-- Header -->
+            <table cellpadding="0" cellspacing="0" border="0" width="100%">
+                <tr>
+                    <td colspan="10" style="background-color:#014486; color:#FFFFFF; font-weight:bold; font-size:14pt; text-align:center; padding:10px; border:1px solid #000000;">
+                        MIS Report
+                    </td>
+                </tr>
+            </table>
+            
+            <br/>
+            
+            <!-- Filters -->
+            <table cellpadding="0" cellspacing="0" border="1" width="100%">
+                <tr>
+                    <td style="background-color:#E9F5F3; padding:8px; font-size:10pt; border:1px solid #CCCCCC;"><b>FY:</b> {!fy}</td>
+                    <td style="background-color:#E9F5F3; padding:8px; font-size:10pt; border:1px solid #CCCCCC;"><b>Quarter:</b> {!quarter}</td>
+                    <td style="background-color:#E9F5F3; padding:8px; font-size:10pt; border:1px solid #CCCCCC;"><b>Month:</b> {!monthName}</td>
+                    <td style="background-color:#E9F5F3; padding:8px; font-size:10pt; border:1px solid #CCCCCC;"><b>Order Type:</b> {!orderType}</td>
+                    <td style="background-color:#E9F5F3; padding:8px; font-size:10pt; border:1px solid #CCCCCC;"><b>Level 1:</b> {!level1}</td>
+                    <td style="background-color:#E9F5F3; padding:8px; font-size:10pt; border:1px solid #CCCCCC;"><b>Level 2:</b> {!level2}</td>
+                </tr>
+            </table>
+            
+            <br/>
+            
+            <!-- Main Data Table -->
+            <table cellpadding="0" cellspacing="0" border="1" width="100%">
+                <!-- Header Group Row -->
+                <tr>
+                    <th rowspan="2" style="background-color:#014486; color:#FFFFFF; text-align:center; padding:8px; border:1px solid #5a8fc4; font-weight:bold; vertical-align:middle; min-width:120px;">
+                        PMG
+                    </th>
+                    
+                    <!-- Monthly Group -->
+                    <th colspan="3" style="background-color:#00326E; color:#a8d4f5; text-align:center; padding:6px; border:1px solid #5a8fc4; font-weight:bold; font-size:9pt; text-transform:uppercase;">
+                        {!periodLabel}
+                    </th>
+                    
+                    <!-- YTD Group -->
+                    <th colspan="3" style="background-color:#00503C; color:#a8f5d4; text-align:center; padding:6px; border:1px solid #5a8fc4; font-weight:bold; font-size:9pt; text-transform:uppercase;">
+                        YEAR TO DATE (YTD)
+                    </th>
+                    
+                    <!-- Forecast Group -->
+                    <th colspan="3" style="background-color:#502800; color:#f5d4a8; text-align:center; padding:6px; border:1px solid #5a8fc4; font-weight:bold; font-size:9pt; text-transform:uppercase;">
+                        FORECAST
+                    </th>
+                </tr>
+                
+                <!-- Column Header Row -->
+                <tr>
+                    <!-- Monthly columns -->
+                    <th style="background-color:#014486; color:#FFFFFF; text-align:center; padding:6px; border:1px solid #5a8fc4; font-weight:bold; font-size:9pt; min-width:110px;">
+                        Budgeted Order
+                    </th>
+                    <th style="background-color:#014486; color:#FFFFFF; text-align:center; padding:6px; border:1px solid #5a8fc4; font-weight:bold; font-size:9pt; min-width:110px;">
+                        Order Received
+                    </th>
+                    <th style="background-color:#013770; color:#ffe080; text-align:center; padding:6px; border:1px solid #5a8fc4; font-weight:bold; font-size:9pt; min-width:90px;">
+                        % Achievement
+                    </th>
+                    
+                    <!-- YTD columns -->
+                    <th style="background-color:#005A46; color:#FFFFFF; text-align:center; padding:6px; border:1px solid #5a8fc4; font-weight:bold; font-size:9pt; min-width:110px;">
+                        YTD Budgeted Order
+                    </th>
+                    <th style="background-color:#005A46; color:#FFFFFF; text-align:center; padding:6px; border:1px solid #5a8fc4; font-weight:bold; font-size:9pt; min-width:110px;">
+                        YTD Actual Order Received
+                    </th>
+                    <th style="background-color:#004B3A; color:#ffe080; text-align:center; padding:6px; border:1px solid #5a8fc4; font-weight:bold; font-size:9pt; min-width:90px;">
+                        YTD % Achievement
+                    </th>
+                    
+                    <!-- Forecast columns -->
+                    <th style="background-color:#4B2800; color:#FFFFFF; text-align:center; padding:6px; border:1px solid #5a8fc4; font-weight:bold; font-size:9pt; min-width:110px;">
+                        Next 3 months (Budget)
+                    </th>
+                    <th style="background-color:#4B2800; color:#FFFFFF; text-align:center; padding:6px; border:1px solid #5a8fc4; font-weight:bold; font-size:9pt; min-width:120px;">
+                        Forecast - Next 3 months (MIS)
+                    </th>
+                    <th style="background-color:#5A3200; color:#ffe080; text-align:center; padding:6px; border:1px solid #5a8fc4; font-weight:bold; font-size:9pt; min-width:130px;">
+                        Full Year Forecast
+                    </th>
+                </tr>
+                
+                <!-- Data Rows -->
+                <apex:repeat value="{!exportData}" var="row">
+                    <tr>
+                        <td style="background-color:#e9f5f3; font-weight:bold; font-size:10pt; text-align:center; padding:8px; border:1px solid #CCCCCC;">
+                            {!row.pmg}
+                        </td>
+                        <td style="background-color:#f0f4ff; font-weight:bold; text-align:center; padding:8px; border:1px solid #CCCCCC; font-size:10pt;">
+                            USD {!row.budgetedOrder}
+                        </td>
+                        <td style="background-color:#f0f4ff; font-weight:bold; text-align:center; padding:8px; border:1px solid #CCCCCC; font-size:10pt;">
+                            USD {!row.monthlyReceived}
+                        </td>
+                        <td style="background-color:#fffbe6; color:#7a5a00; font-weight:bold; text-align:center; padding:8px; border:1px solid #CCCCCC; font-size:10pt;">
+                            {!row.achievement}
+                        </td>
+                        <td style="background-color:#f0fff8; font-weight:bold; text-align:center; padding:8px; border:1px solid #CCCCCC; font-size:10pt;">
+                            USD {!row.ytdBudget}
+                        </td>
+                        <td style="background-color:#f0fff8; font-weight:bold; text-align:center; padding:8px; border:1px solid #CCCCCC; font-size:10pt;">
+                            USD {!row.ytdActual}
+                        </td>
+                        <td style="background-color:#fffbe6; color:#7a5a00; font-weight:bold; text-align:center; padding:8px; border:1px solid #CCCCCC; font-size:10pt;">
+                            {!row.ytdAchievement}
+                        </td>
+                        <td style="background-color:#fff8f0; font-weight:bold; text-align:center; padding:8px; border:1px solid #CCCCCC; font-size:10pt;">
+                            USD {!row.forecastBudget}
+                        </td>
+                        <td style="background-color:#fff8f0; font-weight:bold; text-align:center; padding:8px; border:1px solid #CCCCCC; font-size:10pt;">
+                            USD {!row.forecastMIS}
+                        </td>
+                        <td style="background-color:#fff3d6; color:#5a3500; font-weight:bold; text-align:center; padding:8px; border:1px solid #CCCCCC; font-size:10pt;">
+                            USD {!row.fullYearForecast}
+                        </td>
+                    </tr>
+                </apex:repeat>
+                
+                <!-- Spacer Row -->
+                <tr>
+                    <td colspan="10" style="padding:6px; background-color:transparent; border:none;"></td>
+                </tr>
+                
+                <!-- Total Row -->
+                <tr style="border-top:3px solid #ffd700;">
+                    <td style="background-color:#0e2a45; color:#ffd700; letter-spacing:0.05em; text-transform:uppercase; text-align:center; padding:8px; border:1px solid #5a8fc4; font-weight:bold; font-size:10pt;">
+                        TOTAL
+                    </td>
+                    <td style="background-color:#1e3a6e; color:#a8d4f5; text-align:center; padding:8px; border:1px solid #5a8fc4; font-weight:bold; font-size:10pt;">
+                        USD {!totals.budgetedOrder}
+                    </td>
+                    <td style="background-color:#1e3a6e; color:#a8d4f5; text-align:center; padding:8px; border:1px solid #5a8fc4; font-weight:bold; font-size:10pt;">
+                        USD {!totals.monthlyReceived}
+                    </td>
+                    <td style="background-color:#1e3a6e; color:#a8d4f5; text-align:center; padding:8px; border:1px solid #5a8fc4; font-weight:bold; font-size:10pt;">
+                        {!totals.achievement}%
+                    </td>
+                    <td style="background-color:#0e3d2a; color:#a8f5d4; text-align:center; padding:8px; border:1px solid #5a8fc4; font-weight:bold; font-size:10pt;">
+                        USD {!totals.ytdBudget}
+                    </td>
+                    <td style="background-color:#0e3d2a; color:#a8f5d4; text-align:center; padding:8px; border:1px solid #5a8fc4; font-weight:bold; font-size:10pt;">
+                        USD {!totals.ytdActual}
+                    </td>
+                    <td style="background-color:#0e3d2a; color:#a8f5d4; text-align:center; padding:8px; border:1px solid #5a8fc4; font-weight:bold; font-size:10pt;">
+                        {!totals.ytdAchievement}%
+                    </td>
+                    <td style="background-color:#3d1e00; color:#f5d4a8; text-align:center; padding:8px; border:1px solid #5a8fc4; font-weight:bold; font-size:10pt;">
+                        USD {!totals.forecastBudget}
+                    </td>
+                    <td style="background-color:#3d1e00; color:#f5d4a8; text-align:center; padding:8px; border:1px solid #5a8fc4; font-weight:bold; font-size:10pt;">
+                        USD {!totals.forecastMIS}
+                    </td>
+                    <td style="background-color:#4a2800; color:#ffd700; text-align:center; padding:8px; border:1px solid #5a8fc4; font-weight:bold; font-size:10pt;">
+                        USD {!totals.fullYearForecast}
+                    </td>
+                </tr>
+            </table>
+        </body>
+    </html>
+</apex:page>

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Condition of belt --></label>
+    <name>Condition_of_belt__c</name>
+    <picklistValues>
+        <masterLabel>Cracked</masterLabel>
+        <translation><!-- Cracked --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Edge damaged</masterLabel>
+        <translation><!-- Edge damaged --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Good condition</masterLabel>
+        <translation><!-- Good condition --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Grooved</masterLabel>
+        <translation><!-- Grooved --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Shortened width with edge damage</masterLabel>
+        <translation><!-- Shortened width with edge damage --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- 4E/4D --></label>
+    <name>X4E_4D__c</name>
+    <relationshipLabel><!-- 4E/4D Line Items --></relationshipLabel>
+</CustomFieldTranslation>

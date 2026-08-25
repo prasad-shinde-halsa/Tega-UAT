@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Conveyor_Product_PPR_TG01_CCMF_PPR_Line_Item</fullName>
+    <filterScope>Queue</filterScope>
+    <label>Conveyor Component-PPR-TG01-CCMF</label>
+    <queue>Conveyor_Component_PPR_TG01_CCMF</queue>
+    <sharedTo>
+        <allInternalUsers></allInternalUsers>
+    </sharedTo>
+</ListView>

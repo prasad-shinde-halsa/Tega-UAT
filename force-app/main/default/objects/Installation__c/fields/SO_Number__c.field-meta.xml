@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>SO_Number__c</fullName>
+    <deleteConstraint>SetNull</deleteConstraint>
+    <label>SFDC SO Number</label>
+    <lookupFilter>
+        <active>true</active>
+        <errorMessage>SO Number does not match with selected Customer</errorMessage>
+        <filterItems>
+            <field>Order.AccountId</field>
+            <operation>equals</operation>
+            <valueField>$Source.Customer__c</valueField>
+        </filterItems>
+        <isOptional>false</isOptional>
+    </lookupFilter>
+    <referenceTo>Order</referenceTo>
+    <relationshipLabel>Installation Reports (SO Number)</relationshipLabel>
+    <relationshipName>Installations1</relationshipName>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Lookup</type>
+</CustomField>

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- Any other information that will help specify the location. Eg: 5m from loading point --></help>
+    <label><!-- Location Identification --></label>
+    <name>Location_Identification__c</name>
+</CustomFieldTranslation>

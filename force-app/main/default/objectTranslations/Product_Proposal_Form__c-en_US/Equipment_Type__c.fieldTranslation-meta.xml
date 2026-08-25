@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Equipment Type --></label>
+    <name>Equipment_Type__c</name>
+    <picklistValues>
+        <masterLabel>BELT FEEDER</masterLabel>
+        <translation><!-- BELT FEEDER --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>BOOM CONVEYOR</masterLabel>
+        <translation><!-- BOOM CONVEYOR --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Bunker</masterLabel>
+        <translation><!-- Bunker --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>FIXED TRIPPER</masterLabel>
+        <translation><!-- FIXED TRIPPER --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>OTHERS</masterLabel>
+        <translation><!-- OTHERS --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>REVERSIBLE CONVEYOR</masterLabel>
+        <translation><!-- REVERSIBLE CONVEYOR --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>SHUTTLE CONVEYOR</masterLabel>
+        <translation><!-- SHUTTLE CONVEYOR --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>STACKER RECLAIMER</masterLabel>
+        <translation><!-- STACKER RECLAIMER --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>TRAVELLING TRIPPER</masterLabel>
+        <translation><!-- TRAVELLING TRIPPER --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>UNIDIRECTIONAL CONVEYOR</masterLabel>
+        <translation><!-- UNIDIRECTIONAL CONVEYOR --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

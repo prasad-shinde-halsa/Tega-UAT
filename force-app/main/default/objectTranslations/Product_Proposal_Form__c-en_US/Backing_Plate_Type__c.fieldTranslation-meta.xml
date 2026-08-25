@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Backing Plate Type --></label>
+    <name>Backing_Plate_Type__c</name>
+    <picklistValues>
+        <masterLabel>Easy Seal</masterLabel>
+        <translation><!-- Easy Seal --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Eco Filp 200 mm high</masterLabel>
+        <translation><!-- Eco Filp 200 mm high --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Eco Filp 220 mm high</masterLabel>
+        <translation><!-- Eco Filp 220 mm high --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Eco- Flip</masterLabel>
+        <translation><!-- Eco- Flip --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>I-Type</masterLabel>
+        <translation><!-- I-Type --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>L type</masterLabel>
+        <translation><!-- L type --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>None</masterLabel>
+        <translation><!-- None --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Z-Type</masterLabel>
+        <translation><!-- Z-Type --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

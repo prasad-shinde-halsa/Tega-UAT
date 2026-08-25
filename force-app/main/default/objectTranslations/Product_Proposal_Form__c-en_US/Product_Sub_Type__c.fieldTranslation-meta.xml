@@ -1,0 +1,385 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Product Sub-Type --></label>
+    <name>Product_Sub_Type__c</name>
+    <picklistValues>
+        <masterLabel>AG Mill</masterLabel>
+        <translation><!-- AG Mill --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>B6</masterLabel>
+        <translation><!-- B6 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>B6C</masterLabel>
+        <translation><!-- B6C --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>B6RE</masterLabel>
+        <translation><!-- B6RE --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>B9S</masterLabel>
+        <translation><!-- B9S --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>BACKING PLATE</masterLabel>
+        <translation><!-- BACKING PLATE --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Baby Spillex Model 125x150x25</masterLabel>
+        <translation><!-- Baby Spillex Model 125x150x25 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Baby Spillex Model 125x150x25/15</masterLabel>
+        <translation><!-- Baby Spillex Model 125x150x25/15 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Ball mill screen</masterLabel>
+        <translation><!-- Ball mill screen --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Ball mill trommel</masterLabel>
+        <translation><!-- Ball mill trommel --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Belt Scrapers BLADE</masterLabel>
+        <translation><!-- Belt Scrapers BLADE --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Belt Tracker Model TTDR</masterLabel>
+        <translation><!-- Belt Tracker Model TTDR --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Belt Tracker Model TTFR</masterLabel>
+        <translation><!-- Belt Tracker Model TTFR --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Belt Tracker Model TTT</masterLabel>
+        <translation><!-- Belt Tracker Model TTT --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Belt Tracker Model TTVR</masterLabel>
+        <translation><!-- Belt Tracker Model TTVR --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>C Series Scraper  C1V</masterLabel>
+        <translation><!-- C Series Scraper  C1V --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>C Series Scraper  C2</masterLabel>
+        <translation><!-- C Series Scraper  C2 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>C Series Scraper  C3</masterLabel>
+        <translation><!-- C Series Scraper  C3 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>C Series Scraper  CT</masterLabel>
+        <translation><!-- C Series Scraper  CT --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>C series</masterLabel>
+        <translation><!-- C series --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>CARRIER TUBE</masterLabel>
+        <translation><!-- CARRIER TUBE --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>CPL Long Sheet</masterLabel>
+        <translation><!-- CPL Long Sheet --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>CPL standard Sheet</masterLabel>
+        <translation><!-- CPL standard Sheet --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>CentraX S series</masterLabel>
+        <translation><!-- CentraX S series --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>CentraX SK Series</masterLabel>
+        <translation><!-- CentraX SK Series --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>CentraX SKO series</masterLabel>
+        <translation><!-- CentraX SKO series --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>CentralX SO  Series</masterLabel>
+        <translation><!-- CentralX SO  Series --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Ceramic Product</masterLabel>
+        <translation><!-- Ceramic Product --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>CertraX SKO-VR</masterLabel>
+        <translation><!-- CertraX SKO-VR --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>CertraX SO-VR</masterLabel>
+        <translation><!-- CertraX SO-VR --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Classification</masterLabel>
+        <translation><!-- Classification --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>D Plough</masterLabel>
+        <translation><!-- D Plough --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Desliming</masterLabel>
+        <translation><!-- Desliming --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Dewatering</masterLabel>
+        <translation><!-- Dewatering --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>ELASTOMOUNT</masterLabel>
+        <translation><!-- ELASTOMOUNT --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>ELEMENT</masterLabel>
+        <translation><!-- ELEMENT --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Easy Seal Model 200x90x20</masterLabel>
+        <translation><!-- Easy Seal Model 200x90x20 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Eco Flip Model 170x200x20</masterLabel>
+        <translation><!-- Eco Flip Model 170x200x20 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Eco Flip Model 200x200x20</masterLabel>
+        <translation><!-- Eco Flip Model 200x200x20 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Eco Flip Model 220x200x20</masterLabel>
+        <translation><!-- Eco Flip Model 220x200x20 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Feeder /Launder</masterLabel>
+        <translation><!-- Feeder /Launder --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Filter Press</masterLabel>
+        <translation><!-- Filter Press --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>H Type</masterLabel>
+        <translation><!-- H Type --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>HDPUL</masterLabel>
+        <translation><!-- HDPUL --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Impact Pad</masterLabel>
+        <translation><!-- Impact Pad --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Internal Scraper (DP)</masterLabel>
+        <translation><!-- Internal Scraper (DP) --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Internal Scraper (VP)</masterLabel>
+        <translation><!-- Internal Scraper (VP) --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Mill Chutes</masterLabel>
+        <translation><!-- Mill Chutes --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Other Screen</masterLabel>
+        <translation><!-- Other Screen --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Other Trommel</masterLabel>
+        <translation><!-- Other Trommel --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Others Mill</masterLabel>
+        <translation><!-- Others Mill --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Others WC</masterLabel>
+        <translation><!-- Others WC --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>P Type</masterLabel>
+        <translation><!-- P Type --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Primary</masterLabel>
+        <translation><!-- Primary --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Primary Scraper ( B9S)</masterLabel>
+        <translation><!-- Primary Scraper ( B9S) --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Primary Scraper ( B9SV)</masterLabel>
+        <translation><!-- Primary Scraper ( B9SV) --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Primary Scraper ( B9SVT)</masterLabel>
+        <translation><!-- Primary Scraper ( B9SVT) --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Primary Scraper ( HD Series)</masterLabel>
+        <translation><!-- Primary Scraper ( HD Series) --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Primary Scraper (HDPU-L)</masterLabel>
+        <translation><!-- Primary Scraper (HDPU-L) --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Primary Scraper (HDPU-S)</masterLabel>
+        <translation><!-- Primary Scraper (HDPU-S) --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>R Type</masterLabel>
+        <translation><!-- R Type --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>RUBBER BLOCK</masterLabel>
+        <translation><!-- RUBBER BLOCK --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Rod mill screen</masterLabel>
+        <translation><!-- Rod mill screen --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Rod mill trommel</masterLabel>
+        <translation><!-- Rod mill trommel --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>SAG Mill</masterLabel>
+        <translation><!-- SAG Mill --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>SERRATED CLAMP WITH HARDWARE</masterLabel>
+        <translation><!-- SERRATED CLAMP WITH HARDWARE --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Sag mill screen</masterLabel>
+        <translation><!-- Sag mill screen --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Sag mill trommel</masterLabel>
+        <translation><!-- Sag mill trommel --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Scrubber trommel</masterLabel>
+        <translation><!-- Scrubber trommel --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Secondary</masterLabel>
+        <translation><!-- Secondary --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Secondary Scraper ( B6 Series with Parallel EM)</masterLabel>
+        <translation><!-- Secondary Scraper ( B6 Series with Parallel EM) --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Secondary Scraper ( B6 Series with Single EM)</masterLabel>
+        <translation><!-- Secondary Scraper ( B6 Series with Single EM) --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Secondary Scraper ( B6 Series with reversing adaptar and Parallel EM)</masterLabel>
+        <translation><!-- Secondary Scraper ( B6 Series with reversing adaptar and Parallel EM) --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Silos/Bins/Hoppers</masterLabel>
+        <translation><!-- Silos/Bins/Hoppers --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Single Wing Seal Model 500x112X14/20</masterLabel>
+        <translation><!-- Single Wing Seal Model 500x112X14/20 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Single Wing Seal Model 500x170X15/20</masterLabel>
+        <translation><!-- Single Wing Seal Model 500x170X15/20 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Single Wing Seal Model 500x170X15/30</masterLabel>
+        <translation><!-- Single Wing Seal Model 500x170X15/30 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Sizing</masterLabel>
+        <translation><!-- Sizing --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Skirt Sealing</masterLabel>
+        <translation><!-- Skirt Sealing --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Spill ex Model 150x200x25</masterLabel>
+        <translation><!-- Spill ex Model 150x200x25 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Spillex Model 150x200x32</masterLabel>
+        <translation><!-- Spillex Model 150x200x32 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Spillex Model 150x200x32/22</masterLabel>
+        <translation><!-- Spillex Model 150x200x32/22 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Spillex Model 150x265x20</masterLabel>
+        <translation><!-- Spillex Model 150x265x20 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Spillex Model 150x265x25</masterLabel>
+        <translation><!-- Spillex Model 150x265x25 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Spillex Model 150x265x32</masterLabel>
+        <translation><!-- Spillex Model 150x265x32 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Spillex Model 150x300x20</masterLabel>
+        <translation><!-- Spillex Model 150x300x20 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Spillex Model 150x300x25</masterLabel>
+        <translation><!-- Spillex Model 150x300x25 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Spillex Model 150x300x32</masterLabel>
+        <translation><!-- Spillex Model 150x300x32 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>T Type</masterLabel>
+        <translation><!-- T Type --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Tertiary</masterLabel>
+        <translation><!-- Tertiary --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Track Hoppers</masterLabel>
+        <translation><!-- Track Hoppers --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Tracker Roller</masterLabel>
+        <translation><!-- Tracker Roller --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Transfer Chutes</masterLabel>
+        <translation><!-- Transfer Chutes --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Tru Seal Model 205x200x20</masterLabel>
+        <translation><!-- Tru Seal Model 205x200x20 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>V Plough</masterLabel>
+        <translation><!-- V Plough --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

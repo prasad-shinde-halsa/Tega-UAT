@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- Please enter Deck Number in following format =&gt; &quot;Deck-1&quot; or &quot;Deck-2&quot; like this. --></help>
+    <label><!-- Deck Number --></label>
+    <name>Deck_Number__c</name>
+</CustomFieldTranslation>

@@ -1,0 +1,464 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Failure_Category__c</fullName>
+    <label>Failure Category</label>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>MultiselectPicklist</type>
+    <valueSet>
+        <controllingField>PMG__c</controllingField>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Bolt Breakage</fullName>
+                <default>false</default>
+                <label>Bolt Breakage</label>
+            </value>
+            <value>
+                <fullName>De-bonding</fullName>
+                <default>false</default>
+                <label>De-bonding</label>
+            </value>
+            <value>
+                <fullName>Poor Life of Rubber / Faster Wear</fullName>
+                <default>false</default>
+                <label>Poor Life of Rubber / Faster Wear</label>
+            </value>
+            <value>
+                <fullName>Aluminium Track Worn Out</fullName>
+                <default>false</default>
+                <label>Aluminium Track Worn Out</label>
+            </value>
+            <value>
+                <fullName>Aluminium Track channel-gap smal</fullName>
+                <default>false</default>
+                <label>Aluminium Track channel-gap smal</label>
+            </value>
+            <value>
+                <fullName>Fitment Problem</fullName>
+                <default>false</default>
+                <label>Fitment Problem</label>
+            </value>
+            <value>
+                <fullName>Bolt Head and Clamp Block Mismatching</fullName>
+                <default>false</default>
+                <label>Bolt Head and Clamp Block Mismatching</label>
+            </value>
+            <value>
+                <fullName>Short Supply</fullName>
+                <default>false</default>
+                <label>Short Supply</label>
+            </value>
+            <value>
+                <fullName>Delayed Supply</fullName>
+                <default>false</default>
+                <label>Delayed Supply</label>
+            </value>
+            <value>
+                <fullName>Wrong Supply</fullName>
+                <default>false</default>
+                <label>Wrong Supply</label>
+            </value>
+            <value>
+                <fullName>Packaging Complaint</fullName>
+                <default>false</default>
+                <label>Packaging Complaint</label>
+            </value>
+            <value>
+                <fullName>Hardox Crack &amp; Faster Wear</fullName>
+                <default>false</default>
+                <label>Hardox Crack &amp; Faster Wear</label>
+            </value>
+            <value>
+                <fullName>Casting Breakage / Crack / Faster Wear</fullName>
+                <default>false</default>
+                <label>Casting Breakage / Crack / Faster Wear</label>
+            </value>
+            <value>
+                <fullName>De-lamination</fullName>
+                <default>false</default>
+                <label>De-lamination</label>
+            </value>
+            <value>
+                <fullName>Sagging of Panels</fullName>
+                <default>false</default>
+                <label>Sagging of Panels</label>
+            </value>
+            <value>
+                <fullName>Bouncing of Material</fullName>
+                <default>false</default>
+                <label>Bouncing of Material</label>
+            </value>
+            <value>
+                <fullName>Side Plate Cracking</fullName>
+                <default>false</default>
+                <label>Side Plate Cracking</label>
+            </value>
+            <value>
+                <fullName>Bucker Up Frame Cracking/ Failure</fullName>
+                <default>false</default>
+                <label>Bucker Up Frame Cracking/ Failure</label>
+            </value>
+            <value>
+                <fullName>Under Cutting of Panels</fullName>
+                <default>false</default>
+                <label>Under Cutting of Panels</label>
+            </value>
+            <value>
+                <fullName>Low Life of Panel</fullName>
+                <default>false</default>
+                <label>Low Life of Panel</label>
+            </value>
+            <value>
+                <fullName>Low Screening Efficiency</fullName>
+                <default>false</default>
+                <label>Low Screening Efficiency</label>
+            </value>
+            <value>
+                <fullName>FLIP FLO Screen problem</fullName>
+                <default>false</default>
+                <label>FLIP FLO Screen problem</label>
+            </value>
+            <value>
+                <fullName>Dimensional/ Fitment Problem</fullName>
+                <default>false</default>
+                <label>Dimensional/ Fitment Problem</label>
+            </value>
+            <value>
+                <fullName>Trommel Structure and Panel problem</fullName>
+                <default>false</default>
+                <label>Trommel Structure and Panel problem</label>
+            </value>
+            <value>
+                <fullName>Wearing out of Liners due to Impact</fullName>
+                <default>false</default>
+                <label>Wearing out of Liners due to Impact</label>
+            </value>
+            <value>
+                <fullName>Jamming of Material</fullName>
+                <default>false</default>
+                <label>Jamming of Material</label>
+            </value>
+            <value>
+                <fullName>Wearing out of Liners due to Abrasion</fullName>
+                <default>false</default>
+                <label>Wearing out of Liners due to Abrasion</label>
+            </value>
+            <value>
+                <fullName>Poor Life of liner</fullName>
+                <default>false</default>
+                <label>Poor Life of liner</label>
+            </value>
+            <value>
+                <fullName>Chute/Hopper</fullName>
+                <default>false</default>
+                <label>Chute/Hopper</label>
+            </value>
+            <value>
+                <fullName>Installation Failure</fullName>
+                <default>false</default>
+                <label>Installation Failure</label>
+            </value>
+            <value>
+                <fullName>Product Failure</fullName>
+                <default>false</default>
+                <label>Product Failure</label>
+            </value>
+            <value>
+                <fullName>Finishing Problem</fullName>
+                <default>false</default>
+                <label>Finishing Problem</label>
+            </value>
+            <value>
+                <fullName>Fast wear/Damage of Spillex rubber blocks</fullName>
+                <default>false</default>
+                <label>Fast wear/Damage of Spillex rubber blocks</label>
+            </value>
+            <value>
+                <fullName>Problem in Backing plate of Spill-ex</fullName>
+                <default>false</default>
+                <label>Problem in Backing plate of Spill-ex</label>
+            </value>
+            <value>
+                <fullName>Faster wear/De-bonding of UHMWPE/poor life</fullName>
+                <default>false</default>
+                <label>Faster wear/De-bonding of UHMWPE/poor life</label>
+            </value>
+            <value>
+                <fullName>Jaming of Belt Tracking System</fullName>
+                <default>false</default>
+                <label>Jaming of Belt Tracking System</label>
+            </value>
+            <value>
+                <fullName>Premature wear out/Poor life of lagging-Belt Tracking System</fullName>
+                <default>false</default>
+                <label>Premature wear out/Poor life of lagging-Belt Tracking System</label>
+            </value>
+            <value>
+                <fullName>Housing/seal failed or came out of the-Belt Tracking System</fullName>
+                <default>false</default>
+                <label>Housing/seal failed or came out of the-Belt Tracking System</label>
+            </value>
+            <value>
+                <fullName>De-bonding of ceramic tiles from the ceramic lagging sheet</fullName>
+                <default>false</default>
+                <label>De-bonding of ceramic tiles from the ceramic lagging sheet</label>
+            </value>
+            <value>
+                <fullName>De-bonding of ceramic lagging from the pulley surface</fullName>
+                <default>false</default>
+                <label>De-bonding of ceramic lagging from the pulley surface</label>
+            </value>
+            <value>
+                <fullName>Blade Holder( Element ) Breakage</fullName>
+                <default>false</default>
+                <label>Blade Holder( Element ) Breakage</label>
+            </value>
+            <value>
+                <fullName>Fast wear/Damage of Blades</fullName>
+                <default>false</default>
+                <label>Fast wear/Damage of Blades</label>
+            </value>
+            <value>
+                <fullName>Problem in Elastomount</fullName>
+                <default>false</default>
+                <label>Problem in Elastomount</label>
+            </value>
+            <value>
+                <fullName>Damage of Spindle</fullName>
+                <default>false</default>
+                <label>Damage of Spindle</label>
+            </value>
+            <value>
+                <fullName>Product Performance Problem</fullName>
+                <default>false</default>
+                <label>Product Performance Problem</label>
+            </value>
+            <value>
+                <fullName>Poor Life of Liner / Faster Wear</fullName>
+                <default>false</default>
+                <label>Poor Life of Liner / Faster Wear</label>
+            </value>
+            <value>
+                <fullName>Leakage from cyclone parts</fullName>
+                <default>false</default>
+                <label>Leakage from cyclone parts</label>
+            </value>
+            <value>
+                <fullName>Dimensional Problem</fullName>
+                <default>false</default>
+                <label>Dimensional Problem</label>
+            </value>
+        </valueSetDefinition>
+        <valueSettings>
+            <controllingFieldValue>Mill</controllingFieldValue>
+            <controllingFieldValue>Screen</controllingFieldValue>
+            <controllingFieldValue>Trommel</controllingFieldValue>
+            <controllingFieldValue>Wear Component</controllingFieldValue>
+            <controllingFieldValue>Conveyor Component</controllingFieldValue>
+            <valueName>Bolt Breakage</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Mill</controllingFieldValue>
+            <valueName>De-bonding</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Mill</controllingFieldValue>
+            <valueName>Poor Life of Rubber / Faster Wear</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Mill</controllingFieldValue>
+            <valueName>Aluminium Track Worn Out</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Mill</controllingFieldValue>
+            <valueName>Aluminium Track channel-gap smal</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Mill</controllingFieldValue>
+            <controllingFieldValue>Hydrocyclone</controllingFieldValue>
+            <valueName>Fitment Problem</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Mill</controllingFieldValue>
+            <valueName>Bolt Head and Clamp Block Mismatching</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Mill</controllingFieldValue>
+            <controllingFieldValue>Screen</controllingFieldValue>
+            <controllingFieldValue>Trommel</controllingFieldValue>
+            <controllingFieldValue>Hydrocyclone</controllingFieldValue>
+            <controllingFieldValue>Wear Component</controllingFieldValue>
+            <controllingFieldValue>Conveyor Component</controllingFieldValue>
+            <valueName>Short Supply</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Mill</controllingFieldValue>
+            <controllingFieldValue>Screen</controllingFieldValue>
+            <controllingFieldValue>Trommel</controllingFieldValue>
+            <controllingFieldValue>Hydrocyclone</controllingFieldValue>
+            <controllingFieldValue>Wear Component</controllingFieldValue>
+            <controllingFieldValue>Conveyor Component</controllingFieldValue>
+            <valueName>Delayed Supply</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Mill</controllingFieldValue>
+            <controllingFieldValue>Screen</controllingFieldValue>
+            <controllingFieldValue>Trommel</controllingFieldValue>
+            <controllingFieldValue>Hydrocyclone</controllingFieldValue>
+            <controllingFieldValue>Wear Component</controllingFieldValue>
+            <controllingFieldValue>Conveyor Component</controllingFieldValue>
+            <valueName>Wrong Supply</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Mill</controllingFieldValue>
+            <controllingFieldValue>Screen</controllingFieldValue>
+            <controllingFieldValue>Hydrocyclone</controllingFieldValue>
+            <controllingFieldValue>Wear Component</controllingFieldValue>
+            <controllingFieldValue>Conveyor Component</controllingFieldValue>
+            <valueName>Packaging Complaint</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Mill</controllingFieldValue>
+            <valueName>Hardox Crack &amp; Faster Wear</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Mill</controllingFieldValue>
+            <valueName>Casting Breakage / Crack / Faster Wear</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Mill</controllingFieldValue>
+            <valueName>De-lamination</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Screen</controllingFieldValue>
+            <valueName>Sagging of Panels</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Screen</controllingFieldValue>
+            <valueName>Bouncing of Material</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Screen</controllingFieldValue>
+            <valueName>Side Plate Cracking</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Screen</controllingFieldValue>
+            <valueName>Bucker Up Frame Cracking/ Failure</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Screen</controllingFieldValue>
+            <valueName>Under Cutting of Panels</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Screen</controllingFieldValue>
+            <valueName>Low Life of Panel</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Screen</controllingFieldValue>
+            <valueName>Low Screening Efficiency</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Screen</controllingFieldValue>
+            <valueName>FLIP FLO Screen problem</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Screen</controllingFieldValue>
+            <controllingFieldValue>Trommel</controllingFieldValue>
+            <controllingFieldValue>Wear Component</controllingFieldValue>
+            <controllingFieldValue>Conveyor Component</controllingFieldValue>
+            <valueName>Dimensional/ Fitment Problem</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Trommel</controllingFieldValue>
+            <valueName>Trommel Structure and Panel problem</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Hydrocyclone</controllingFieldValue>
+            <controllingFieldValue>Wear Component</controllingFieldValue>
+            <valueName>Poor Life of liner</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Wear Component</controllingFieldValue>
+            <valueName>Wearing out of Liners due to Impact</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Wear Component</controllingFieldValue>
+            <valueName>Jamming of Material</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Wear Component</controllingFieldValue>
+            <valueName>Wearing out of Liners due to Abrasion</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Wear Component</controllingFieldValue>
+            <valueName>Chute/Hopper</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Wear Component</controllingFieldValue>
+            <valueName>Installation Failure</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Wear Component</controllingFieldValue>
+            <valueName>Product Failure</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Wear Component</controllingFieldValue>
+            <valueName>Finishing Problem</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Conveyor Component</controllingFieldValue>
+            <valueName>Fast wear/Damage of Spillex rubber blocks</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Conveyor Component</controllingFieldValue>
+            <valueName>Problem in Backing plate of Spill-ex</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Conveyor Component</controllingFieldValue>
+            <valueName>Faster wear/De-bonding of UHMWPE/poor life</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Conveyor Component</controllingFieldValue>
+            <valueName>Jaming of Belt Tracking System</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Conveyor Component</controllingFieldValue>
+            <valueName>Premature wear out/Poor life of lagging-Belt Tracking System</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Conveyor Component</controllingFieldValue>
+            <valueName>Housing/seal failed or came out of the-Belt Tracking System</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Conveyor Component</controllingFieldValue>
+            <valueName>De-bonding of ceramic tiles from the ceramic lagging sheet</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Conveyor Component</controllingFieldValue>
+            <valueName>De-bonding of ceramic lagging from the pulley surface</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Conveyor Component</controllingFieldValue>
+            <valueName>Blade Holder( Element ) Breakage</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Conveyor Component</controllingFieldValue>
+            <valueName>Fast wear/Damage of Blades</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Conveyor Component</controllingFieldValue>
+            <valueName>Problem in Elastomount</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Conveyor Component</controllingFieldValue>
+            <valueName>Damage of Spindle</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Conveyor Component</controllingFieldValue>
+            <valueName>Product Performance Problem</valueName>
+        </valueSettings>
+    </valueSet>
+    <visibleLines>5</visibleLines>
+</CustomField>

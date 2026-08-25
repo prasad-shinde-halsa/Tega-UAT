@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Order Type --></label>
+    <name>Order_Type__c</name>
+    <picklistValues>
+        <masterLabel>C-Conversion</masterLabel>
+        <translation><!-- C-Conversion --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>E-Spares</masterLabel>
+        <translation><!-- E-Spares --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>P-Project</masterLabel>
+        <translation><!-- P-Project --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>S-Service</masterLabel>
+        <translation><!-- S-Service --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

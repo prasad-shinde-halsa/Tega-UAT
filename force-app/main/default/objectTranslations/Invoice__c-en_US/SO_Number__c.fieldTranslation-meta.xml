@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- SO Number --></label>
+    <lookupFilter>
+        <errorMessage><!-- Customer of Invoice &amp; SO No should be same --></errorMessage>
+    </lookupFilter>
+    <name>SO_Number__c</name>
+    <relationshipLabel><!-- Invoice (SO Number) --></relationshipLabel>
+</CustomFieldTranslation>

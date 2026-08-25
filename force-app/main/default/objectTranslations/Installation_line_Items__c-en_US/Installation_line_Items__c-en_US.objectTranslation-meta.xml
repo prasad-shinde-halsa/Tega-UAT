@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Installation line Item</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Installation line Items</value>
+    </caseValues>
+    <layouts>
+        <layout>Installation line Item Layout</layout>
+        <sections>
+            <label><!-- Contractor&apos;s Information --></label>
+            <section>Contractor&apos;s Information</section>
+        </sections>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+    </layouts>
+    <startsWith>Consonant</startsWith>
+    <validationRules>
+        <errorMessage><!-- If Installation at zone is select, please select the L2 level. --></errorMessage>
+        <name>Zone_level_installation</name>
+    </validationRules>
+    <webLinks>
+        <label><!-- Dismantle --></label>
+        <name>Dismantle</name>
+    </webLinks>
+</CustomObjectTranslation>

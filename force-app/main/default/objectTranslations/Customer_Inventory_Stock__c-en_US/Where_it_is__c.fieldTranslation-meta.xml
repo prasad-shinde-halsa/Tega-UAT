@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Status --></label>
+    <name>Where_it_is__c</name>
+    <picklistValues>
+        <masterLabel>At Site</masterLabel>
+        <translation><!-- At Site --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Installed</masterLabel>
+        <translation><!-- Installed --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Inventory</masterLabel>
+        <translation><!-- Inventory --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Partially Installed</masterLabel>
+        <translation><!-- Partially Installed --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Removed</masterLabel>
+        <translation><!-- Removed --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

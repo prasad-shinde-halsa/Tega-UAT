@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- % Solids Required in Underflow (w/w) --></label>
+    <name>Solids_Required_in_Underflow_w_w__c</name>
+</CustomFieldTranslation>

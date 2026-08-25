@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Type__c</fullName>
+    <label>Type</label>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Feed Particle Size Distribuition</fullName>
+                <default>false</default>
+                <label>Feed Particle Size Distribuition</label>
+            </value>
+            <value>
+                <fullName>Product Particle Size Distribuition</fullName>
+                <default>false</default>
+                <label>Product Particle Size Distribuition</label>
+            </value>
+            <value>
+                <fullName>Oversize Particle Distribution</fullName>
+                <default>false</default>
+                <label>Oversize Particle Distribution</label>
+            </value>
+            <value>
+                <fullName>Undersize Particle Distribution</fullName>
+                <default>false</default>
+                <label>Undersize Particle Distribution</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

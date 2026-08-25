@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>PMG_cannot_edit_details_section</fullName>
+    <active>true</active>
+    <errorConditionFormula>AND(
+$Profile.Name = &quot;PMG&quot;,
+ISCHANGED(Customer_Name__c) ||
+ISCHANGED(Opportunity__c) ||
+ISCHANGED(Customer_Equipment__c) ||
+ISCHANGED(Operating_Parameters__c) ||
+ISCHANGED(PMG_Head__c)
+)</errorConditionFormula>
+    <errorMessage>Editing fields are not allowed</errorMessage>
+</ValidationRule>

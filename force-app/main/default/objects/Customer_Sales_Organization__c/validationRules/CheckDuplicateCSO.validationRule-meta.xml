@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>CheckDuplicateCSO</fullName>
+    <active>true</active>
+    <errorConditionFormula>AND($Profile.Name != &apos;System Administrator&apos;,isDuplicate__c  = true)</errorConditionFormula>
+    <errorMessage>Cannot create record with this Company as it already exists</errorMessage>
+</ValidationRule>

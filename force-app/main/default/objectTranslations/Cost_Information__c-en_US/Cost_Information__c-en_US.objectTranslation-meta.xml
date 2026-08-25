@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Cost Information</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Cost Information</value>
+    </caseValues>
+    <layouts>
+        <layout>Conveyor Component Cost Information Layout</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Hydrocyclone Cost Information Layout</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- Fields --></label>
+            <section>Fields</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Mill Cost Information Layout</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Screen Cost Information Layout</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Trommel Cost Information Layout</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Wear Component Cost Information Layout</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+    </layouts>
+    <recordTypes>
+        <label><!-- Conveyor Component --></label>
+        <name>Conveyor_Component</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- Hydrocyclone --></label>
+        <name>Hydrocyclone</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- Mill --></label>
+        <name>Mill</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- Screen --></label>
+        <name>Screen</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- Trommel --></label>
+        <name>Trommel</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- Wear Component --></label>
+        <name>Wear_Component</name>
+    </recordTypes>
+    <startsWith>Consonant</startsWith>
+</CustomObjectTranslation>

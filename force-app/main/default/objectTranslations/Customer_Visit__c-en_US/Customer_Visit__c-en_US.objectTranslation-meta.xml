@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Customer Visit</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Customer Visits</value>
+    </caseValues>
+    <layouts>
+        <layout>Customer Visit Layout</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- General --></label>
+            <section>General</section>
+        </sections>
+        <sections>
+            <label><!-- Purpose of Visit --></label>
+            <section>Purpose of Visit</section>
+        </sections>
+    </layouts>
+    <quickActions>
+        <label><!-- Edit Customer Branch Assignment --></label>
+        <name>Edit_Customer_Branch_Assignment</name>
+    </quickActions>
+    <quickActions>
+        <label><!-- SUBMIT --></label>
+        <name>SUBMIT</name>
+    </quickActions>
+    <startsWith>Consonant</startsWith>
+    <validationRules>
+        <errorMessage><!-- You don&apos;t have necessary permissions to edit the submitted record. --></errorMessage>
+        <name>Restrict_Record_Edit_After_Submit</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Please specify the risk factor before submitting the record. --></errorMessage>
+        <name>Restrict_Record_Submit_Without_Risk</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Visit date cannot be in Future &amp; should be in range specified for user --></errorMessage>
+        <name>Visit_Date_Customer_Visit_Validation</name>
+    </validationRules>
+    <webLinks>
+        <label><!-- Create_New_Customer_Visit --></label>
+        <name>Create_New_Customer_Visit</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- New_Customer_Visit --></label>
+        <name>New_Customer_Visit</name>
+    </webLinks>
+</CustomObjectTranslation>

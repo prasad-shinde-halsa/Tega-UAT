@@ -1,0 +1,201 @@
+<template>
+    <lightning-spinner if:true={isLoading} size="large" alternative-text="Loading...">
+    </lightning-spinner>
+    <header class="slds-modal__header slds-grid slds-grid_vertical-align-center slds-p-around_small"
+        style="background-color: rgb(1, 68, 134); position: relative;">
+
+        <!-- Title centered -->
+        <h2 class="slds-text-heading_medium slds-hyphenate slds-col slds-align_absolute-center"
+            style="font-weight: bold; font-size: 1.2em; color: rgb(255, 255, 255);">
+            MIS Data Dump
+        </h2>
+
+        <!-- Export to PDF button aligned to right -->
+        <button onclick={exportToPDF} class="slds-button slds-button_neutral export-pdf-btn">
+            Export to Excel
+        </button>
+
+    </header>
+    <div class="slds-grid slds-wrap slds-p-around_medium" style="margin-top: 10px; border: auto;">
+        <div class="slds-col slds-size_1-of-1 slds-medium-size_1-of-1 slds-p-horizontal_small" style="border: auto;">
+            <lightning-combobox label="Calculate By FY" value={selectedFY} options={financialYearOptions}
+                onchange={handleFYChange} class="neon-combobox">
+            </lightning-combobox>
+        </div>
+    </div>
+    <template if:false={showTable}>
+        <header class="slds-modal__header" style="height: auto; background-color: rgb(1, 68, 134);">
+            <h2 class="slds-text-heading_medium slds-hyphenate custom-header-title"
+                style="font-weight: bold; font-size: 1.2em; color: rgb(255, 255, 255);">
+                No Details Found</h2>
+        </header>
+    </template>
+    <template if:true={showTable}>
+
+        <div class="slds-table_edit_container slds-is-relative" style="overflow-y:scroll;  max-height: 800px;">
+            <table
+                class="slds-table slds-table_cell-buffer slds-table_bordered slds-table_resizable-cols slds-no-row-hover slds-max-medium-table_stacked">
+                <thead style="position: sticky; top: 0; z-index: 1;">
+                    <tr class="slds-line-height_reset">
+                        <th scope="col" style="background-color: rgb(1, 68, 134);">
+                            <div class="slds-truncate" title="Sl. No"
+                                style="padding-top: 1em; padding-bottom: 1em; font-size: 15px; color: white; text-align: center;">
+                                Sl. No
+                            </div>
+                        </th>
+                        <th scope="col" style="background-color: rgb(1, 68, 134);">
+                            <div class="slds-truncate" title="Budget Name"
+                                style="padding-top: 1em; padding-bottom: 1em; font-size: 15px; color: white; text-align: center;">
+                                Budget Name
+                            </div>
+                        </th>
+                        <th scope="col" style="background-color: rgb(1, 68, 134);">
+                            <div class="slds-truncate" title="Budget Status"
+                                style="padding-top: 1em; padding-bottom: 1em; font-size: 15px; color: white; text-align: center;">
+                                Budget Status
+                            </div>
+                        </th>
+                        <th scope="col" style="background-color: rgb(1, 68, 134);">
+                            <div class="slds-truncate" title="MIS Month"
+                                style="padding-top: 1em; padding-bottom: 1em; font-size: 15px; color: white; text-align: center;">
+                                MIS Month
+                            </div>
+                        </th>
+                        <th scope="col" style="background-color: rgb(1, 68, 134);">
+                            <div class="slds-truncate" title="Currency code"
+                                style="padding-top: 1em; padding-bottom: 1em; font-size: 15px; color: white; text-align: center;">
+                                Currency code
+                            </div>
+                        </th>
+                        <th scope="col" style="background-color: rgb(1, 68, 134);">
+                            <div class="slds-truncate" title="PMG Name"
+                                style="padding-top: 1em; padding-bottom: 1em; font-size: 15px; color: white; text-align: center;">
+                                PMG Name
+                            </div>
+                        </th>
+                        <th scope="col" style="background-color: rgb(1, 68, 134);">
+                            <div class="slds-truncate" title="Product Group"
+                                style="padding-top: 1em; padding-bottom: 1em; font-size: 15px; color: white; text-align: center;">
+                                Product Group
+                            </div>
+                        </th>
+                        <th scope="col" style="background-color: rgb(1, 68, 134);">
+                            <div class="slds-truncate" title="Description"
+                                style="padding-top: 1em; padding-bottom: 1em; font-size: 15px; color: white; text-align: center;">
+                                Description
+                            </div>
+                        </th>
+                        <th scope="col" style="background-color: rgb(1, 68, 134);">
+                            <div class="slds-truncate" title="Customer Code"
+                                style="padding-top: 1em; padding-bottom: 1em; font-size: 15px; color: white; text-align: center;">
+                                Customer Code
+                            </div>
+                        </th>
+                        <th scope="col" style="background-color: rgb(1, 68, 134);">
+                            <div class="slds-truncate" title="Customer Name"
+                                style="padding-top: 1em; padding-bottom: 1em; font-size: 15px; color: white; text-align: center;">
+                                Customer Name
+                            </div>
+                        </th>
+                        <th scope="col" style="background-color: rgb(1, 68, 134);">
+                            <div class="slds-truncate" title="Annual Potential"
+                                style="padding-top: 1em; padding-bottom: 1em; font-size: 15px; color: white; text-align: center;">
+                                Annual Potential
+                            </div>
+                        </th>
+                        <th scope="col" style="background-color: rgb(1, 68, 134);">
+                            <div class="slds-truncate" title="Order Expectd Stage"
+                                style="padding-top: 1em; padding-bottom: 1em; font-size: 15px; color: white; text-align: center;">
+                                Order Expectd Stage
+                            </div>
+                        </th>
+
+
+                        <th scope="col" style="background-color: rgb(1, 68, 134);">
+                            <div class="slds-truncate" title="Remarks"
+                                style="padding-top: 1em; padding-bottom: 1em; font-size: 15px; color: white; text-align: center;">
+                                Remarks
+                            </div>
+                        </th>
+                        <th scope="col" style="background-color: rgb(1, 68, 134);">
+                            <div class="slds-truncate" title="Order Expected"
+                                style="padding-top: 1em; padding-bottom: 1em; font-size: 15px; color: white; text-align: center;">
+                                Order Expected 
+                            </div>
+                        </th>
+                        <th scope="col" style="background-color: rgb(1, 68, 134);">
+                            <div class="slds-truncate" title="Budgeted Order"
+                                style="padding-top: 1em; padding-bottom: 1em; font-size: 15px; color: white; text-align: center;">
+                                Budgeted Order
+                            </div>
+                        </th>
+                        <th scope="col" style="background-color: rgb(1, 68, 134);">
+                            <div class="slds-truncate" title="Budget Month"
+                                style="padding-top: 1em; padding-bottom: 1em; font-size: 15px; color: white; text-align: center;">
+                                Budget Month
+                            </div>
+                        </th>
+                        <th scope="col" style="background-color: rgb(1, 68, 134);">
+                            <div class="slds-truncate" title="Order Expected Month"
+                                style="padding-top: 1em; padding-bottom: 1em; font-size: 15px; color: white; text-align: center;">
+                                Order Expected Month
+                            </div>
+                        </th>
+                        <th scope="col" style="background-color: rgb(1, 68, 134);">
+                            <div class="slds-truncate" title="Order Type"
+                                style="padding-top: 1em; padding-bottom: 1em; font-size: 15px; color: white; text-align: center;">
+                                Order Type
+                            </div>
+                        </th>
+                        <th scope="col" style="background-color: rgb(1, 68, 134);">
+                            <div class="slds-truncate" title="Budget Type"
+                                style="padding-top: 1em; padding-bottom: 1em; font-size: 15px; color: white; text-align: center;">
+                                Budget Type
+                            </div>
+                        </th>
+
+                        <th scope="col" style="background-color: rgb(1, 68, 134);">
+                            <div class="slds-truncate" title="Branch"
+                                style="padding-top: 1em; padding-bottom: 1em; font-size: 15px; color: white; text-align: center;">
+                                Branch
+                            </div>
+                        </th>
+                        <th scope="col" style="background-color: rgb(1, 68, 134);">
+                            <div class="slds-truncate" title="MIS Created By"
+                                style="padding-top: 1em; padding-bottom: 1em; font-size: 15px; color: white; text-align: center;">
+                                MIS Created By
+                            </div>
+                        </th>
+                    </tr>
+                </thead>
+                <tbody style="font-weight: bold;">
+                    <template for:each={tableData} for:item="row">
+                        <tr key={row.id}>
+                            <td style="text-align: center;">{row.slNo}</td>
+                            <td style="text-align: center;">{row.budgetId}</td>
+                            <td style="text-align: center;">{row.budgetStatus}</td>
+                            <td style="text-align: center;">{row.misMonth}</td>
+                            <td style="text-align: center;">{row.currencyCode}</td>
+                            <td style="text-align: center;">{row.pmgName}</td>
+                            <td style="text-align: center;">{row.productGroup}</td>
+                            <td style="text-align: center;">{row.description}</td>
+                            <td style="text-align: center;">{row.customerCode}</td>
+                            <td style="text-align: center;">{row.customerName}</td>
+                            <td style="text-align: center;">{row.annualPotential}</td>
+                            <td style="text-align: center;">{row.orderExpectedStage}</td>
+                            <td style="text-align: center;">{row.remarks}</td>
+                            <td style="text-align: center;">{row.orderExpectedValue}</td>
+                            <td style="text-align: center;">{row.budgetedOrder}</td>
+                            <td style="text-align: center;">{row.budgetMonth}</td>
+                            <td style="text-align: center;">{row.orderExpectedMonth}</td>
+                            <td style="text-align: center;">{row.orderType}</td>
+                            <td style="text-align: center;">{row.budgetType}</td>
+                            <td style="text-align: center;">{row.branch}</td>
+                            <td style="text-align: center;">{row.misCreatedBy}</td>
+                        </tr>
+                    </template>
+                </tbody>
+            </table>
+        </div>
+    </template>
+</template>

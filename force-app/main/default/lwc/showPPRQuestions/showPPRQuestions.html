@@ -1,0 +1,43 @@
+<template>
+    <div class="slds-m-around_xxx-small">
+        <lightning-card>
+            
+            <div class="slds-section slds-is-open">
+                <h3 class="slds-section__title slds-theme_shade">
+                    <span class="slds-p-horizontal_small" title="Fill Questionaries">Fill Questionaries</span>
+                </h3>
+            </div>
+
+
+            <div class="slds-m-around_small">
+                <template if:true={results}>  
+                <template for:each={results} for:item="p" for:index="index">
+                    <div key={p.failureCategory} class="slds-text-heading_medium slds-p-bottom_medium">
+                      {p.failureCategory}
+                    </div>
+                    <template for:each={p.questions} for:item="q" for:index="index">  
+                        <p key={q.Sequence}>{q.Sequence}.&nbsp;{q.QuestionLabel}<br/>
+                            <template lwc:if={q.isText}>
+                                    <lightning-input data-target-id={index} data-field-name="Answer__c" data-formfield="AnsText" data-type="Text" value={q.Answer}  class="string-input"  data-index={index} data-label={q.QuestionLabel} data-id={q.QuestionMaster} required={q.isMandatory}></lightning-input>  <br/>  
+                            </template>
+                            <template lwc:if={q.isDropDown}>                      
+                                <lightning-combobox 
+                                value={q.Answer} options={q.options2} data-id={q.QuestionMaster} required={q.isMandatory}></lightning-combobox> <br/>       
+                            </template>
+                            <template lwc:if={q.isDate}>
+                                <lightning-input  data-formfield="A3" type="Date"   value={q.Answer} data-id={q.QuestionMaster} required={q.isMandatory}></lightning-input> <br/>         
+                            </template>
+                            
+                        </p>
+                    </template>
+                </template>
+                </template><br/>
+                <div class="slds-align_absolute-center">
+                    <lightning-button icon-name="utility:save" variant="brand" label="Save" onclick={saveButtonHandler}></lightning-button>
+                    &nbsp;&nbsp;&nbsp;&nbsp;
+                    <lightning-button  icon-name="utility:cancel_file_request" variant="neutral" label="Cancel" onclick={navigateToRecordPage}></lightning-button>
+                </div>
+            </div>
+        </lightning-card>
+    </div>
+</template>

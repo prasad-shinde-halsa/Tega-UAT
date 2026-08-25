@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RecordType xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Wear_Component</fullName>
+    <active>true</active>
+    <label>Wear Component</label>
+    <picklistValues>
+        <picklist>Item_Desc__c</picklist>
+        <values>
+            <fullName>Aluminium</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Ceramic Cylinder 20 mm Dia x 15 mm height</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Ceramic Cylinder 20 mm Dia x 20 mm height</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Ceramic Tiles</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Engg%2FDesign Cost</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Half Locking Ceramic 40x20x25 mm thk</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Half Locking Ceramic 40x20x40 mm thk</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Hardox</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Hardox 25- 500 BHN</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Hardox 50- 500 BHN</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Hardox 75- 500 BHN</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Hardware</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Hex Ceramic Tiles 19%2E05x19%2E05x12%2E5 mm thk</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Hex Ceramic Tiles 19%2E05x19%2E05x7 mm thk</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Liner Installation%2FSupervision Cost</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Locking Ceramic 40x40x25 mm thk</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Locking Ceramic 40x40x40 mm thk</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Mould%2FInsert Cost</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Other Cost 1</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Other Cost 2</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Other Cost 3</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Other Cost 4</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Other Cost 5</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Polyurethane Compound</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Rubber Compound</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Slipoly</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Square Ceramic 20x20x5 mm thk</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Square Ceramic 33x33x15 mm thk</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Stainless Steel</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Structural Steel</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>UHMWPE</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+</RecordType>

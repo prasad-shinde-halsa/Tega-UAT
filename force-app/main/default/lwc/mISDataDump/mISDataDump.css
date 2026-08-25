@@ -1,0 +1,69 @@
+.neon-input:focus {
+    border-color: #048d21; /* Neon green border on focus */
+    box-shadow: 0 0 20px rgba(17, 255, 0, 0.9); /* More intense glow on focus */
+}
+.neon-combobox {
+    background-color: #d9f5f8; /* Dark background for combobox */
+    color: #070707; /* White text color */
+    border: 2px solid #0026ff; /* Neon border color */
+    border-radius: 5px; /* Rounded corners for combobox */
+    padding: 10px; /* Padding inside combobox */
+    transition: border-color 0.3s ease; /* Smooth transition for hover effect */
+    box-shadow: 0 0 20px rgba(1, 31, 255, 0.7);
+    font-weight: bold;
+}
+
+/* Hover effect */
+.neon-combobox:hover {
+    border-color: #048d21; /* Change border color on hover */
+    box-shadow: 0 0 20px rgba(17, 255, 0, 0.7); /* Neon glow effect on hover */
+}
+/* Style for combobox labels */
+.neon-combobox .slds-form-element__label {
+    color: #030303 !important; /* Force white label color */
+}
+.export-pdf-btn {
+    position: absolute;
+    right: 1rem;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgb(1, 68, 134);
+    color: rgb(252, 252, 252);
+    font-weight: bold;
+    transition: background-color 0.3s, box-shadow 0.3s;
+}
+
+.export-pdf-btn:hover {
+    background-color: rgb(0, 90, 180); /* Lighter blue */
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.6); /* Glow effect */
+    cursor: pointer;
+}
+.slds-table {
+    width: 100%;
+    border-collapse: separate; /* Allows spacing between cells */
+}
+
+.slds-truncate {
+    max-width: 150px; /* Adjust based on content */
+    word-wrap: break-word;
+    text-align: center;
+    overflow: hidden;
+    text-overflow: ellipsis; /* Adds ellipsis for long text */
+    white-space: normal; /* Allows wrapping */
+    margin-left: 20px;
+    margin-right: 30px;
+}
+
+.slds-table_resizable-cols th, 
+.slds-table_resizable-cols td {
+   
+    white-space: normal; /* Allows wrapping */
+    text-align: center;
+    vertical-align: middle; /* Ensures content is vertically aligned */
+}
+
+.slds-table_resizable-cols th {
+    color: white;
+    background-color: rgb(3, 3, 159);
+    text-transform: uppercase; /* Makes header text consistent */
+}

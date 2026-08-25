@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Container Type --></label>
+    <name>Container_Type__c</name>
+    <picklistValues>
+        <masterLabel>20ft</masterLabel>
+        <translation><!-- 20ft --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>40ft</masterLabel>
+        <translation><!-- 40ft --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>New Container</masterLabel>
+        <translation><!-- New Container --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Open Contaner</masterLabel>
+        <translation><!-- Open Contaner --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Side Open Container</masterLabel>
+        <translation><!-- Side Open Container --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

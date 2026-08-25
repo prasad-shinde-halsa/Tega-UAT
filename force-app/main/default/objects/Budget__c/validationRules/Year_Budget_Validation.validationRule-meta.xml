@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Year_Budget_Validation</fullName>
+    <active>true</active>
+    <errorConditionFormula>TODAY() &lt;  $CustomMetadata.Budget_Year_Date_Range__mdt.Current_Budget_setup.Start_Date__c ||  TODAY() &gt;  $CustomMetadata.Budget_Year_Date_Range__mdt.Current_Budget_setup.End_Date__c</errorConditionFormula>
+    <errorMessage>Budget can only be created at specific date duration, Contact your admin to know this duration</errorMessage>
+</ValidationRule>

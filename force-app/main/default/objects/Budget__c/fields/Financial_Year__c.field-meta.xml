@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Financial_Year__c</fullName>
+    <externalId>false</externalId>
+    <formula>IF(ISPICKVAL(Budget_For_Financial_Year__c, &apos;Current FY Year&apos;) , TEXT($CustomMetadata.Budget_Year_Date_Range__mdt.Current_Budget_setup.Referential_Year_For_Budget__c) &amp; &apos;-&apos; &amp; TEXT($CustomMetadata.Budget_Year_Date_Range__mdt.Current_Budget_setup.Referential_Year_For_Budget__c+1),
+IF(ISPICKVAL(Budget_For_Financial_Year__c, &apos;Next FY Year&apos;), TEXT($CustomMetadata.Budget_Year_Date_Range__mdt.Current_Budget_setup.Referential_Year_For_Budget__c+1) &amp; &apos;-&apos; &amp; TEXT($CustomMetadata.Budget_Year_Date_Range__mdt.Current_Budget_setup.Referential_Year_For_Budget__c+2),
+IF(ISPICKVAL(Budget_For_Financial_Year__c, &apos;Following FY Year&apos;), TEXT($CustomMetadata.Budget_Year_Date_Range__mdt.Current_Budget_setup.Referential_Year_For_Budget__c+2) &amp; &apos;-&apos; &amp; TEXT($CustomMetadata.Budget_Year_Date_Range__mdt.Current_Budget_setup.Referential_Year_For_Budget__c+3),&apos;None&apos;)))</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>Financial Year</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

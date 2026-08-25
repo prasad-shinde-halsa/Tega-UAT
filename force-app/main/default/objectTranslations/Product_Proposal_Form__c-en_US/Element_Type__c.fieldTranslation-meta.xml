@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Element Type --></label>
+    <name>Element_Type__c</name>
+    <picklistValues>
+        <masterLabel>LV</masterLabel>
+        <translation><!-- LV --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>SV</masterLabel>
+        <translation><!-- SV --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

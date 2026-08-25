@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Same_PartList_Validation</fullName>
+    <active>true</active>
+    <errorConditionFormula>Budget__r.Part_List__c  &lt;&gt;  Part_List__c</errorConditionFormula>
+    <errorDisplayField>Part_List__c</errorDisplayField>
+    <errorMessage>Part List of Budget &amp; Zone Identification For Budget should be same</errorMessage>
+</ValidationRule>

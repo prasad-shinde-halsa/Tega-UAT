@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Installed_Qty_Check</fullName>
+    <active>true</active>
+    <errorConditionFormula>Installation_Quantity__c &gt;  Quantity__c</errorConditionFormula>
+    <errorMessage>Installation Quantity should be less than Inventory Quantity</errorMessage>
+</ValidationRule>

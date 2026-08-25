@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Form 4E/4D</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Form 4E/4D</value>
+    </caseValues>
+    <layouts>
+        <layout>4D Layout</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- Specific Requests --></label>
+            <section>Specific Requests</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>4E Layout</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- Fields --></label>
+            <section>Fields</section>
+        </sections>
+        <sections>
+            <label><!-- Specific Actions --></label>
+            <section>Specific Actions</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Approved 4D</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- Specific Requests --></label>
+            <section>Specific Requests</section>
+        </sections>
+        <sections>
+            <label><!-- System Information --></label>
+            <section>System Information</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Approved 4E</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- Specific Requests --></label>
+            <section>Specific Requests</section>
+        </sections>
+        <sections>
+            <label><!-- System Information --></label>
+            <section>System Information</section>
+        </sections>
+    </layouts>
+    <quickActions>
+        <label><!-- Close 4E/4D --></label>
+        <name>Close_4E_4D</name>
+    </quickActions>
+    <quickActions>
+        <label><!-- Create lines --></label>
+        <name>Create_lines</name>
+    </quickActions>
+    <quickActions>
+        <label><!-- Send To Sales Rep --></label>
+        <name>Send_to_Sales_Rep</name>
+    </quickActions>
+    <quickActions>
+        <label><!-- Submit --></label>
+        <name>Submit</name>
+    </quickActions>
+    <recordTypes>
+        <label><!-- Approved 4D --></label>
+        <name>Approved_4D</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- Approved 4E --></label>
+        <name>Approved_4E</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- 4D --></label>
+        <name>X4D</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- 4E --></label>
+        <name>X4E</name>
+    </recordTypes>
+    <startsWith>Consonant</startsWith>
+    <validationRules>
+        <errorMessage><!-- Please fill Action for &amp; Exp date of PO fields --></errorMessage>
+        <name>Action_For_Validation</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Cannot edit closed 4E/4D --></errorMessage>
+        <name>Closed_4E_4D</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Only 4E or 4D types are allowed --></errorMessage>
+        <name>Disallow_Approved_Form_Creation</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Please fill thie field --></errorMessage>
+        <name>Dispatch_Mode_Validation</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Please fill PO No &amp; PO Date fields --></errorMessage>
+        <name>PO_Validation</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Please enter this field. --></errorMessage>
+        <name>Road_Permit_Validation</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- SAP SO Number must contain only numeric characters. --></errorMessage>
+        <name>SAP_SO_Number_must_contain_only_numeric</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Please fill thie field --></errorMessage>
+        <name>Transit_date_validation</name>
+    </validationRules>
+</CustomObjectTranslation>

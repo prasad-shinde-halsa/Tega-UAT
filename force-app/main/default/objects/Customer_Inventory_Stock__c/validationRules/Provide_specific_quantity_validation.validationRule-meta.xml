@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Provide_specific_quantity_validation</fullName>
+    <active>true</active>
+    <description>Restrict user from providing specific quantity to be Installed when All quantity to be used checkbox is selected.</description>
+    <errorConditionFormula>NOT( All_Quantity_Applied__c  = False)</errorConditionFormula>
+    <errorDisplayField>Installation_Quantity__c</errorDisplayField>
+    <errorMessage>All Inventory Quantity are applied, You can&apos;t provide specific quantity to be used.!</errorMessage>
+</ValidationRule>

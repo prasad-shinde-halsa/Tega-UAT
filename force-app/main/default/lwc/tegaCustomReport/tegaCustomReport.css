@@ -1,0 +1,43 @@
+.neon-input {
+    background-color: #d9f5f8; /* Light blue background */
+    color: #070707; /* Dark text color */
+    border: 2px solid #0026ff; /* Neon blue border */
+    border-radius: 5px; /* Rounded corners */
+    padding: 10px; /* Padding inside the input */
+    transition: border-color 0.3s ease, box-shadow 0.3s ease; /* Smooth transition for hover effect */
+    box-shadow: 0 0 20px rgba(1, 31, 255, 0.7); /* Neon blue glow */
+    font-weight: bold; /* Bold text */
+    outline: none; /* Remove default outline */
+}
+
+/* Hover effect for the input */
+.neon-input:hover {
+    border-color: #048d21; /* Neon green border on hover */
+    box-shadow: 0 0 20px rgba(17, 255, 0, 0.7); /* Neon green glow on hover */
+}
+
+/* Focus effect for the input */
+.neon-input:focus {
+    border-color: #048d21; /* Neon green border on focus */
+    box-shadow: 0 0 20px rgba(17, 255, 0, 0.9); /* More intense glow on focus */
+}
+.neon-combobox {
+    background-color: #d9f5f8; /* Dark background for combobox */
+    color: #070707; /* White text color */
+    border: 2px solid #0026ff; /* Neon border color */
+    border-radius: 5px; /* Rounded corners for combobox */
+    padding: 10px; /* Padding inside combobox */
+    transition: border-color 0.3s ease; /* Smooth transition for hover effect */
+    box-shadow: 0 0 20px rgba(1, 31, 255, 0.7);
+    font-weight: bold;
+}
+
+/* Hover effect */
+.neon-combobox:hover {
+    border-color: #048d21; /* Change border color on hover */
+    box-shadow: 0 0 20px rgba(17, 255, 0, 0.7); /* Neon glow effect on hover */
+}
+/* Style for combobox labels */
+.neon-combobox .slds-form-element__label {
+    color: #030303 !important; /* Force white label color */
+}

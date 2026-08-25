@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Preferred_Shipment_Mode_for_FRO__c</fullName>
+    <label>Preferred Shipment Mode for FRO</label>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Sea</fullName>
+                <default>false</default>
+                <label>Sea</label>
+            </value>
+            <value>
+                <fullName>Air</fullName>
+                <default>false</default>
+                <label>Air</label>
+            </value>
+            <value>
+                <fullName>Road</fullName>
+                <default>false</default>
+                <label>Road</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

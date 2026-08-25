@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>For_CCM_Hydrocyclone</fullName>
+    <columns>NAME</columns>
+    <columns>Company__c</columns>
+    <columns>Branch__c</columns>
+    <columns>PMG__c</columns>
+    <columns>Customer_Name__c</columns>
+    <columns>FRO_required_for_this_item__c</columns>
+    <columns>Sales_Order_Number__c</columns>
+    <columns>Status__c</columns>
+    <columns>Submit_On__c</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>PMG__c</field>
+        <operation>equals</operation>
+        <value>Hydrocyclone</value>
+    </filters>
+    <filters>
+        <field>Status__c</field>
+        <operation>notEqual</operation>
+        <value>New</value>
+    </filters>
+    <label>For CCM - Hydrocyclone</label>
+    <sharedTo>
+        <group>CCM_Users</group>
+        <group>PMG_Hydrocyclone</group>
+    </sharedTo>
+</ListView>

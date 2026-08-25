@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- No of Ring 1 --></label>
+    <name>No_of_Ring_1__c</name>
+    <picklistValues>
+        <masterLabel>Double Ring</masterLabel>
+        <translation><!-- Double Ring --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>NA</masterLabel>
+        <translation><!-- NA --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Single Ring</masterLabel>
+        <translation><!-- Single Ring --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Aperture Size of Top Deck (%) Passing --></label>
+    <name>Aperture_Size_of_Middle_Deck_passing__c</name>
+</CustomFieldTranslation>

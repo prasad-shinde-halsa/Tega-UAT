@@ -1,0 +1,3322 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RecordType xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Conveyer_Component_Hosch</fullName>
+    <active>false</active>
+    <label>Conveyer Component Hosch</label>
+    <picklistValues>
+        <picklist>Adhesive_Required__c</picklist>
+        <values>
+            <fullName>No</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Yes</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>BLADE_TIP_HEIGHT_1__c</picklist>
+        <values>
+            <fullName>10 MM</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>20 MM</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>NA</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>BLADE_TIP_HEIGHT_2__c</picklist>
+        <values>
+            <fullName>10 MM</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>20 MM</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>NA</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>BLADE_TIP_HEIGHT_3__c</picklist>
+        <values>
+            <fullName>10 MM</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>20 MM</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>NA</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>BLADE_TIP_HEIGHT__c</picklist>
+        <values>
+            <fullName>10 MM</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>20 MM</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>NA</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Backing_Plate_Length__c</picklist>
+        <values>
+            <fullName>1000 mm</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>500 mm</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>625 mm</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>750 mm</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>875 mm</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Backing_Plate_MOC__c</picklist>
+        <values>
+            <fullName>Mild Steel</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>SS Steel</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Backing_Plate_Paint__c</picklist>
+        <values>
+            <fullName>Electroplating %28upto 8 DFT%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Paint</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Powder coated</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Backing_Plate_Painting__c</picklist>
+        <values>
+            <fullName>Electroplating %28 upto 8 DFT%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Paint</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Powder coated</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Backing_Plate_Thickness__c</picklist>
+        <values>
+            <fullName>2mm</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>3mm</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>5mm</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Backing_Plate_Type__c</picklist>
+        <values>
+            <fullName>Easy Seal</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Eco- Flip</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>I-Type</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>L type</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Belt_Joint__c</picklist>
+        <values>
+            <fullName>Mechanical</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Vulcanized</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Belt_Operation__c</picklist>
+        <values>
+            <fullName>Reversible</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Undirectional</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Belt_Run_Back__c</picklist>
+        <values>
+            <fullName>No</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Yes</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Belt_Type__c</picklist>
+        <values>
+            <fullName>EP</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Nylon-Nylon</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Steel Cord</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Belt_Width_mm__c</picklist>
+        <values>
+            <fullName>1000</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>1200</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>1400</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>1600</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>1800</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>2000</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>650</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>800</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Blade_Hardness__c</picklist>
+        <values>
+            <fullName>HR</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>NR</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Blade_Size_1__c</picklist>
+        <values>
+            <fullName>B9S Blade-150MM</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>B9S Blade-300 MM</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>B9SV Blade-100 MM</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>B9SV Blade-200 MM</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>HD01-X3-12N</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>HD01-X3-12S</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>HD01-X3-20N</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>HD01-X3-20S</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>HD02-X3-12N</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>HD02-X3-12S</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>HD02-X3-20N</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>HD02-X3-20S</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>HDPU-L Blade</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>HDPU-S Blade</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>PU-100</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>PU-200</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>V-120 Blade with 10 mm tip</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>V-120 Blade with 20 mm tip</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>V-240 Blade with 10 mm tip</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>V-240 Blade with 20 mm tip</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>X3-120 Blade with 10 mm tip</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>X3-120 Blade with 20 mm tip</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>X3-12N Blade</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>X3-12S Blade</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>X3-20N Blade</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>X3-20S Blade</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>X3-240 Blade with 10 mm tip</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>X3-240 Blade with 20 mm tip</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Z-120 Blade with 10 mm tip</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Z-120 Blade with 20 mm tip</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Z-240 Blade with 10 mm tip</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Z-240 Blade with 20 mm tip</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Blade_Size_2__c</picklist>
+        <values>
+            <fullName>B9S Blade-150MM</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>B9S Blade-300 MM</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>B9SV Blade-100 MM</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>B9SV Blade-200 MM</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>HD01-X3-12N</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>HD01-X3-12S</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>HD01-X3-20N</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>HD01-X3-20S</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>HD02-X3-12N</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>HD02-X3-12S</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>HD02-X3-20N</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>HD02-X3-20S</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>HDPU-L Blade</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>HDPU-S Blade</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>PU-100</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>PU-200</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>V-120 Blade with 10 mm tip</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>V-120 Blade with 20 mm tip</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>V-240 Blade with 10 mm tip</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>V-240 Blade with 20 mm tip</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>X3-120 Blade with 10 mm tip</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>X3-120 Blade with 20 mm tip</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>X3-12N Blade</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>X3-12S Blade</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>X3-20N Blade</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>X3-20S Blade</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>X3-240 Blade with 10 mm tip</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>X3-240 Blade with 20 mm tip</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Z-120 Blade with 10 mm tip</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Z-120 Blade with 20 mm tip</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Z-240 Blade with 10 mm tip</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Z-240 Blade with 20 mm tip</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Blade_Size_3__c</picklist>
+        <values>
+            <fullName>B9S Blade-150MM</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>B9S Blade-300 MM</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>B9SV Blade-100 MM</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>B9SV Blade-200 MM</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>HD01-X3-12N</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>HD01-X3-12S</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>HD01-X3-20N</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>HD01-X3-20S</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>HD02-X3-12N</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>HD02-X3-12S</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>HD02-X3-20N</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>HD02-X3-20S</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>HDPU-L Blade</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>HDPU-S Blade</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>PU-100</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>PU-200</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>V-120 Blade with 10 mm tip</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>V-120 Blade with 20 mm tip</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>V-240 Blade with 10 mm tip</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>V-240 Blade with 20 mm tip</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>X3-120 Blade with 10 mm tip</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>X3-120 Blade with 20 mm tip</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>X3-12N Blade</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>X3-12S Blade</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>X3-20N Blade</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>X3-20S Blade</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>X3-240 Blade with 10 mm tip</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>X3-240 Blade with 20 mm tip</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Z-120 Blade with 10 mm tip</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Z-120 Blade with 20 mm tip</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Z-240 Blade with 10 mm tip</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Z-240 Blade with 20 mm tip</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Blade_Size__c</picklist>
+        <values>
+            <fullName>B9S Blade-150MM</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>B9S Blade-300 MM</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>B9SV Blade-100 MM</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>B9SV Blade-200 MM</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Block_Grade__c</picklist>
+        <values>
+            <fullName>FRAS</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Normal</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>OGR</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Bottom_Bearing_Belt_Width__c</picklist>
+        <values>
+            <fullName>1200</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>1400</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>1600</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>1800</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>2000</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>2200</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Brazing_1__c</picklist>
+        <values>
+            <fullName>NA</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Normal</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Silver</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Brazing_2__c</picklist>
+        <values>
+            <fullName>NA</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Normal</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Silver</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Brazing_3__c</picklist>
+        <values>
+            <fullName>NA</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Normal</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Silver</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Brazing__c</picklist>
+        <values>
+            <fullName>NA</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Normal</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Silver</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Carrier_Tube_Belt_Width_1_mm__c</picklist>
+        <values>
+            <fullName>1000</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>1200</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>1400</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>1600</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>1800</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>2000</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>2200</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>2400</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>2600</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>2800</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>3000</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>450</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>500</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>600</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>650</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>800</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Carrier_Tube_Belt_Width_3_mm__c</picklist>
+        <values>
+            <fullName>1000</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>1200</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>1400</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>1600</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>1800</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>2000</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>2200</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>2400</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>2600</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>2800</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>3000</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>450</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>500</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>600</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>650</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>800</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Carrier_Tube_Belt_Width_mm__c</picklist>
+        <values>
+            <fullName>1000</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>1200</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>1400</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>1600</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>1800</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>2000</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>2200</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>2400</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>2600</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>2800</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>3000</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>450</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>500</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>600</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>650</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>800</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Carrier_Tube_Type_1__c</picklist>
+        <values>
+            <fullName>3 Piece</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Single</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Carrier_Tube_Type_2__c</picklist>
+        <values>
+            <fullName>3 Piece</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Single</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Carrier_Tube_Type_3__c</picklist>
+        <values>
+            <fullName>3 Piece</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Single</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Carrier_Tube_Type__c</picklist>
+        <values>
+            <fullName>3 Piece</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Single</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Central_Roller_Belt_Width__c</picklist>
+        <values>
+            <fullName>1000</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>1200</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>1400</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>1600</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>1800</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>2000</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>2200</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>2400</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>2600</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>2800</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>3000</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>450</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>500</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>600</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>650</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>800</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Centrax_Roller__c</picklist>
+        <values>
+            <fullName>Conical roller</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Middle roller</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Conical_Roller_Belt_Width__c</picklist>
+        <values>
+            <fullName>1400</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>1600</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>1800</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>2000</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>2200</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>2400</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>2600</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>2800</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>3000</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Crowning_of_Pulley__c</picklist>
+        <values>
+            <fullName>No</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Yes</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Department__c</picklist>
+        <values>
+            <fullName>Beneficiation Plant</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Blast Furnace</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>CHP</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>CPP</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Cement Mill</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Coal Crusher</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Coal Handling Plant</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Coal Mill</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Coal Washery</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Coke Oven</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Crusher</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>DRI</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Iron Washery</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Kiln</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>MHS</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Mines</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Packing Plant</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Pellet Plant</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Power Plant</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>RMHS</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Raw Mill</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Sinter Plant</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Slag Mill</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Stacker</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Wagon Tippler</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Elastomount_Size_1__c</picklist>
+        <values>
+            <fullName>Size A</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Size B</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Size C</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Size D</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Size E</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Elastomount_Size_2__c</picklist>
+        <values>
+            <fullName>Size A</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Size B</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Size C</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Size D</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Size E</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Elastomount_Size_3__c</picklist>
+        <values>
+            <fullName>Size A</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Size B</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Size C</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Size D</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Size E</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Elastomount_Size__c</picklist>
+        <values>
+            <fullName>Size A</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Size B</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Size C</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Size D</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Size E</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Elastomount_Type_1__c</picklist>
+        <values>
+            <fullName>Normal Elastomount</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Parallel Elastomount</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Elastomount_Type_2__c</picklist>
+        <values>
+            <fullName>Normal Elastomount</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Parallel Elastomount</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Elastomount_Type_3__c</picklist>
+        <values>
+            <fullName>Normal Elastomount</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Parallel Elastomount</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Elastomount_Type__c</picklist>
+        <values>
+            <fullName>Normal Elastomount</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Parallel Elastomount</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Element_Hardness__c</picklist>
+        <values>
+            <fullName>HR</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>NR</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Element_Material_1__c</picklist>
+        <values>
+            <fullName>NA</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>SG CASTING</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>SS</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Element_Material_2__c</picklist>
+        <values>
+            <fullName>NA</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>SG CASTING</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>SS</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Element_Material_3__c</picklist>
+        <values>
+            <fullName>NA</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>SG CASTING</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>SS</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Element_Material__c</picklist>
+        <values>
+            <fullName>NA</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>SG CASTING</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>SS</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Element_Type_1__c</picklist>
+        <values>
+            <fullName>Long Version -HR</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Long Version -NR</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Short Version- HR</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Short Version- NR</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Element_Type_2__c</picklist>
+        <values>
+            <fullName>Long Version -HR</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Long Version -NR</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Short Version- HR</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Short Version- NR</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Element_Type_3__c</picklist>
+        <values>
+            <fullName>Long Version -HR</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Long Version -NR</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Short Version- HR</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Short Version- NR</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Element_Type_4__c</picklist>
+        <values>
+            <fullName>Long Version -HR</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Long Version -NR</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Short Version- HR</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Short Version- NR</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Element_Type__c</picklist>
+        <values>
+            <fullName>LV</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>SV</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Equipment_Type__c</picklist>
+        <values>
+            <fullName>BELT FEEDER</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>BOOM CONVEYOR</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Bunker</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>FIXED TRIPPER</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>OTHERS</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>REVERSIBLE CONVEYOR</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>SHUTTLE CONVEYOR</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>STACKER RECLAIMER</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>TRAVELLING TRIPPER</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>UNIDIRECTIONAL CONVEYOR</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Item_Type__c</picklist>
+        <values>
+            <fullName>1500 mm</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>2mm</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>3mm</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>500 mm</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>600 mm</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Belt Width 1200</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Belt Width 1400</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Belt Width 450</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Belt Width 600</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>HR</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>NR Grade</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Powder coated</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>REA2</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>SS SKIRT</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>SS Steel</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Single piece</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Size A</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Straight tube</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Type A</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Items__c</picklist>
+        <values>
+            <fullName>B9S Blade-150MM</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>B9S Blade-300 MM</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>B9SV Blade-100 MM</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>B9SV Blade-200 MM</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>BACKING PLATE</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Blade HD01-X3-12N</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Blade HD01-X3-12S</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Blade HD01-X3-20N</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Blade HD01-X3-20S</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Blade HD02-X3-12N</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Blade HD02-X3-12S</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Blade HD02-X3-20N</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Blade HD02-X3-20S</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>CLAMP</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Carrier tube</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Central Roller TTDR</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Central Roller TTVR</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Clamp with Stud</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Element LV</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Element SV</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Frame</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>HARWARE</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>HDPU-L Blade</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>HDPU-S Blade</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>I Pad H Type 55x100x1500</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>I Pad H Type 75x100x1500</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>I Pad P Type 55x100x1300</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>I Pad P Type 75x100x1300</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>I Pad P Type 75x100x1500</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>I Pad R Type 55x100x1220</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>I Pad R Type 55x100x1560</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>I Pad R Type 75x100x1220</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>I Pad R Type 75x100x1560</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>I Pad T Type 100x100x1220</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>I Pad T Type 100x100x1560</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>I Pad T Type 55x100x1560</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>I Pad T Type 75x100x1220</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>I Pad T Type 75x100x1400</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>I Pad T Type 75x100x1560</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>IMPACT BED WITH I PAD H Type 55x100x1300</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>IMPACT BED WITH I PAD H Type 55x100x1500</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>IMPACT BED WITH I PAD H Type 75x100x1500</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>IMPACT BED WITH I PAD P Type 55x100x1300</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>IMPACT BED WITH I PAD P Type 75x100x1300</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>IMPACT BED WITH I PAD P Type 75x100x1500</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>IMPACT BED WITH I PAD R Type 55x100x1560</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>IMPACT BED WITH I PAD R Type 75x100x1220</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>IMPACT BED WITH I PAD T Type 100x100x1220</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>IMPACT BED WITH I PAD T Type 100x100x1560</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>IMPACT BED WITH I PAD T Type 55x100x1220</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>IMPACT BED WITH I PAD T Type 55x100x1560</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>IMPACT BED WITH I PAD T Type 75x100x1220</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>IMPACT BED WITH I PAD T Type 75x100x1400</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>IMPACT BED WITH I PAD T Type 75x100x1560</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>NO SPARE FOR THIS MODEL</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Normal Elastomount</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>PU-100</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>PU-200</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Parallel Elastomount</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Reversing Adaptar</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Rubber Block 125x150x25</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Rubber Block 125x150x25%2F15</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Rubber Block 150x200x25</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Rubber Block 150x200x32%2F22</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Rubber Block 150x265x25</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Rubber Block 150x265x32</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Rubber Block 150x300x20</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Rubber Block 150x300x25</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Rubber Block 150x300x32</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Rubber Block 170x200x20</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Rubber Block 200x200x20</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Rubber Block 200x90x20</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Rubber Block 205x200x20</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Rubber Block 220x200x20</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Rubber Block 500X112X14%2F20</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Rubber Block 500X170X15%2F20</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Rubber Block 500X170X15%2F30</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Serrated Clamp with HW</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Spring Tensioner</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>V-120 Blade with 10 mm tip</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>V-120 Blade with 20 mm tip</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>V-240 Blade with 10 mm tip</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>V-240 Blade with 20 mm tip</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>VP Frame with End Tube</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>WING ROLLER TTT</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>X3-120 Blade with 10 mm tip</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>X3-120 Blade with 20 mm tip</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>X3-12N Blade</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>X3-12S Blade</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>X3-20N Blade</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>X3-20S Blade</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>X3-240 Blade with 10 mm tip</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>X3-240 Blade with 20 mm tip</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Z-120 Blade with 10 mm tip</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Z-120 Blade with 20 mm tip</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Z-240 Blade with 10 mm tip</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Z-240 Blade with 20 mm tip</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Link_adjacent_equipment_Stream_1__c</picklist>
+        <values>
+            <fullName>Downstream</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>None</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Upstream</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Link_adjacent_equipment_Stream_2__c</picklist>
+        <values>
+            <fullName>Downstream</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>None</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Upstream</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Material_Handled__c</picklist>
+        <values>
+            <fullName>Aggregate</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Alumina</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Bauxite Ore</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Betonite%2C 100 mesh</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Cement%2C Clinker</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Cement%2C Portland</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Chrome Ore</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Coal%2C Antracite sized</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Coal%2C Bituminous ROM</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Coal%2C Clean</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Coal%2C Lignite</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Coal%2C Powder river Basin</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Coke</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Coke Breeze</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Coke%2C Petroleum</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Copper Ore</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Dolomite</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Earth%2C ROM Dry</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Earth%2C Wet with Clay</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Fines</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Flyash</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Gold Ore</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Granite</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Gravel%2C Bank Run</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Gravel%2C Pebbles</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Gypsum</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Iron Ore</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Iron Ore Pellets</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Lime%2C Hydrated</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Limestone%2C Crushed</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Molybdenum Ore</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Ore</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Others</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Overburden</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Phosphate%2C Rock</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Phosphate%2C Rock%2C Pulverized</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Quartz</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Sand%2C Dry Bank</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Sand%2C Foundry</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Sinter</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Slag BF Granular Dry</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Slag BF Granular Wet</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Zinc Ore</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Material__c</picklist>
+        <values>
+            <fullName>Mild Steel</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Stainless Steel</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Material_of_Carrier_Tube_1__c</picklist>
+        <values>
+            <fullName>Mild Steel</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Stainless Steel</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Material_of_Carrier_Tube_2__c</picklist>
+        <values>
+            <fullName>Mild Steel</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Stainless Steel</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Material_of_Carrier_Tube_3__c</picklist>
+        <values>
+            <fullName>Mild Steel</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Stainless Steel</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Material_of_Carrier_Tube__c</picklist>
+        <values>
+            <fullName>Mild Steel</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Stainless Steel</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>No_of_Ring_1__c</picklist>
+        <values>
+            <fullName>Double Ring</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>NA</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Single Ring</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>No_of_Ring_2__c</picklist>
+        <values>
+            <fullName>Double Ring</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>NA</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Single Ring</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>No_of_Ring_3__c</picklist>
+        <values>
+            <fullName>Double Ring</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>NA</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Single Ring</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>No_of_Ring__c</picklist>
+        <values>
+            <fullName>Double Ring</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>NA</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Single Ring</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>PAINT__c</picklist>
+        <values>
+            <fullName>PAINT DFT 50 MICRON</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>POWDER COATED DFT 80 MICRON</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>PU_Grade_1__c</picklist>
+        <values>
+            <fullName>HR%2FHAR</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>NA</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>NR</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>PU_Grade_2__c</picklist>
+        <values>
+            <fullName>HR%2FHAR</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>NA</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>NR</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>PU_Grade_3__c</picklist>
+        <values>
+            <fullName>HR%2FHAR</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>NA</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>NR</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>PU_Grade__c</picklist>
+        <values>
+            <fullName>HR%2FHAR</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>NA</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>NR</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Product_Sub_Type__c</picklist>
+        <values>
+            <fullName>AG Mill</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>B6</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>B6C</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>B6RE</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>B9S</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Ball mill screen</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Ball mill trommel</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>C series</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Ceramic Product</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Classification</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>D Plough</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Desliming</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Dewatering</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Feeder %2FLaunder</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Filter Press</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>HDPUL</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Impact Pad</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Mill Chutes</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Other Screen</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Other Trommel</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Others Mill</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Others WC</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Primary</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Rod mill screen</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Rod mill trommel</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>SAG Mill</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Sag mill screen</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Sag mill trommel</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Scrubber trommel</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Secondary</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Silos%2FBins%2FHoppers</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Sizing</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Skirt Sealing</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Tertiary</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Track Hoppers</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Tracker Roller</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Transfer Chutes</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>V Plough</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Product_Type__c</picklist>
+        <values>
+            <fullName>Air Blaster</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Cerahard Liner</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Ceramic Liner</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Combination Liners</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Cryston</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>DynaPrime</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>DynaPulp</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>DynaSteel</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>DynaWear</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Engineering Chute</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Filter Press Diaphragm %28Green Dog%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Misc%2E</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Mosaic Liner</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Others</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>PU Cross tension</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>PU Flexi for screen</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>PU Flipflo leg type</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>PU Liner</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>PU V type panel</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>PU birdsbeak</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>PU bolt down</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>PU button type half</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>PU flipflo non leg type</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>PU modular button type</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>PU modular pin %26 Lug</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>PU rapido</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Pensen Smart Liner</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Polyurethane %28PU%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Rubber</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Rubber Cross tension</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Rubber Liner</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Rubber Modular Pin%26Lug</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Rubber Modular button type</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Rubber Panel Cord</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Rubber Panel cord with rider bar</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Rubber Rapido</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Rubber bolt down</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>SB-PM Liner</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Trommel PU modular panel</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Trommel PU spiral</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Trommel PU spiral reducing pitch</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Trommel PU%C2%A0 panel bolt down</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Trommel Rubber modular panel</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Trommel Rubber panel bolt down</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Trommel Rubber spiral</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Trommel Rubber spiral reducing pitch</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Trommel structure</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>UHMWPE</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Return_Belt_Condition__c</picklist>
+        <values>
+            <fullName>Belt edge damage</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Damaged belt splice</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Groove in belt top cover</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Patchy belt top cover</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Skew%2Fmis-aligned belt joint</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Uneven belt thickness</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Wrapped carry back mat%2E at return belt</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Reversing_Adaptar__c</picklist>
+        <values>
+            <fullName>REA2</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>REA3</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Reversing_Adaptor_1__c</picklist>
+        <values>
+            <fullName>REA2</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>REA3</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Reversing_Adaptor_2__c</picklist>
+        <values>
+            <fullName>REA2</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>REA3</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Reversing_Adaptor_3__c</picklist>
+        <values>
+            <fullName>REA2</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>REA3</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Rubber_Block_Grade__c</picklist>
+        <values>
+            <fullName>FRAS</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>HIGH TEMP</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>NONE</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>NORMAL TEMP</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>OGR</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>SUPER HIGH TEMP</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Rubber_Block_Hardness__c</picklist>
+        <values>
+            <fullName>FRAS Grade</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>HR Grade</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>NR Grade</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>OGR Grade</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>SHT Grade</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>SK Grade</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Rubber_Block_Size__c</picklist>
+        <values>
+            <fullName>Rubber Block 125x150x25</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Rubber Block 150x200x25</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Rubber_Grade__c</picklist>
+        <values>
+            <fullName>FRAS</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Normal</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>OGR</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Rubber_Type_1__c</picklist>
+        <values>
+            <fullName>FRAS</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Normal</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>OGR</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Rubber_Type_2__c</picklist>
+        <values>
+            <fullName>FRAS</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Normal</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>OGR</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Rubber_Type_3__c</picklist>
+        <values>
+            <fullName>FRAS</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Normal</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>OGR</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Run_Back_Device_1__c</picklist>
+        <values>
+            <fullName>NO</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>YES</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Run_Back_Device_2__c</picklist>
+        <values>
+            <fullName>NO</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>YES</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Run_Back_Device_3__c</picklist>
+        <values>
+            <fullName>NO</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>YES</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Run_Back_Device__c</picklist>
+        <values>
+            <fullName>NO</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>YES</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Serrated_Clamp_Type__c</picklist>
+        <values>
+            <fullName>Baby</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Standard</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Serrated_Clamp_with_HW_MOC__c</picklist>
+        <values>
+            <fullName>Mild Steel</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>SS Steel</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Serrated_Clamp_with_HW_Painting__c</picklist>
+        <values>
+            <fullName>Electroplating %28 upto 8 DFT%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Paint</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Powder coated</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Spring_Tensioner_1__c</picklist>
+        <values>
+            <fullName>Type A</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Type B</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Spring_Tensioner_2__c</picklist>
+        <values>
+            <fullName>Type A</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Type B</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Spring_Tensioner_3__c</picklist>
+        <values>
+            <fullName>Type A</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Type B</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Spring_Tensioner__c</picklist>
+        <values>
+            <fullName>Type A</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Type B</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Thickness__c</picklist>
+        <values>
+            <fullName>2mm</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>3mm</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>5mm</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Type_of_Pulley__c</picklist>
+        <values>
+            <fullName>Magnetic</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Non-Magnetic</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Type_of_Skirt_1__c</picklist>
+        <values>
+            <fullName>NA</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Polypropelene</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Stainless Steel</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Type_of_Skirt_2__c</picklist>
+        <values>
+            <fullName>NA</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Polypropelene</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Stainless Steel</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Type_of_Skirt_3__c</picklist>
+        <values>
+            <fullName>NA</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Polypropelene</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Stainless Steel</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Type_of_Skirt__c</picklist>
+        <values>
+            <fullName>NA</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Polypropelene</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Stainless Steel</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>UHMWPE_Grade__c</picklist>
+        <values>
+            <fullName>Normal</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>TIVAR</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>UHMWPE_Thickess__c</picklist>
+        <values>
+            <fullName>10 mm</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>12 mm</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>25%2E4 mm</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>VP_Frame_with_End_Tube__c</picklist>
+        <values>
+            <fullName>Straight tube</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>With Offeset</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Wing_Roller_Belt_Width__c</picklist>
+        <values>
+            <fullName>1000</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>1200</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>1400</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>1600</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>1800</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>2000</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>2200</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>2400</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>2600</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>2800</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>3000</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>450</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>500</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>600</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>650</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>800</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+</RecordType>

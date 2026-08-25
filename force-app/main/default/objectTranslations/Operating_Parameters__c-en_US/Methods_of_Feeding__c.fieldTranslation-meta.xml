@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Methods of Feeding # --></label>
+    <name>Methods_of_Feeding__c</name>
+    <picklistValues>
+        <masterLabel>Conveyor Discharge</masterLabel>
+        <translation><!-- Conveyor Discharge --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Crusher Discharge</masterLabel>
+        <translation><!-- Crusher Discharge --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Mill Feed/Discharge</masterLabel>
+        <translation><!-- Mill Feed/Discharge --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Silo/Bunker/Bin/Hpper</masterLabel>
+        <translation><!-- Silo/Bunker/Bin/Hpper --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>VIB Feeder/Scalper</masterLabel>
+        <translation><!-- VIB Feeder/Scalper --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>VIB. Screen Discharge</masterLabel>
+        <translation><!-- VIB. Screen Discharge --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

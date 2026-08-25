@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Proposal Form</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Proposal Form</value>
+    </caseValues>
+    <layouts>
+        <layout>CC Proposal Form</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Conveyor Component Layout</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Opportunity Equipment Layout</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+    </layouts>
+    <quickActions>
+        <label><!-- Clone Proposal Form --></label>
+        <name>Clone_Proposal_Form</name>
+    </quickActions>
+    <quickActions>
+        <label><!-- Close PRF --></label>
+        <name>Close_PRF</name>
+    </quickActions>
+    <quickActions>
+        <label><!-- Revise PRF --></label>
+        <name>Revise_PRF</name>
+    </quickActions>
+    <quickActions>
+        <label><!-- Select Operating Paramater --></label>
+        <name>Select_Operating_Paramater</name>
+    </quickActions>
+    <quickActions>
+        <label><!-- Submit Proposal Request to PMG --></label>
+        <name>Submit_Proposal_Request_to_PMG</name>
+    </quickActions>
+    <quickActions>
+        <label><!-- Sync with SAP --></label>
+        <name>Sync_with_SAP</name>
+    </quickActions>
+    <recordTypes>
+        <label><!-- Conveyor Component --></label>
+        <name>Conveyor_Component</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- Hydrocyclone --></label>
+        <name>Hydrocyclone</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- Mill --></label>
+        <name>Mill</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- Screen --></label>
+        <name>Screen</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- Trommel --></label>
+        <name>Trommel</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- Wear Component --></label>
+        <name>Wear_Component</name>
+    </recordTypes>
+    <startsWith>Consonant</startsWith>
+    <validationRules>
+        <errorMessage><!-- The associated opportunity must have customer branch assignment --></errorMessage>
+        <name>CBS_of_Opp_should_be_filled</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Please fill this field --></errorMessage>
+        <name>Converted_sub_type_Mandatory_Check</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- PRF Closed. To edit this PRF, please raise an offer revision request --></errorMessage>
+        <name>Lock_Record</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Please fill this field --></errorMessage>
+        <name>Mandatory_Conversion_Type</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Editing fields are not allowed --></errorMessage>
+        <name>PMG_cannot_edit_details_section</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- “Product Details SOW” is mandatory for Branch to fill up for submitting it to PMG. --></errorMessage>
+        <name>ProductDetailsSOW_mandatory_for_Branch</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Cannot edit this record when Status is &apos;Submitted to PMG&apos; --></errorMessage>
+        <name>Record_lock_on_Status_Submitted_to_PMG</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Budget line item should be associated with Proposal Form before it is submitted. --></errorMessage>
+        <name>RestrictStatusChangeWithoutAnyBudgetLine</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Before adding the SAP Offer Number, please approve the Proposal Form. --></errorMessage>
+        <name>SAP_Offer_No_entered_Status_Accepted_PMG</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- SAP Offer No must contain only numeric characters. --></errorMessage>
+        <name>SAP_Offer_No_must_contain_only_numeric</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- At least 1 scope of supply and 1 cost information sheet value are mandatory for PMG. --></errorMessage>
+        <name>SOS_CIS_mandatory_for_PMG</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- PRF Record Type should match Child Opportunity&apos;s Record Type --></errorMessage>
+        <name>Same_Record_Type_as_Opportunity</name>
+    </validationRules>
+    <webLinks>
+        <label><!-- Clone2 --></label>
+        <name>Clone2</name>
+    </webLinks>
+</CustomObjectTranslation>

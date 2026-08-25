@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RecordType xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Screen</fullName>
+    <active>true</active>
+    <label>Screen</label>
+    <picklistValues>
+        <picklist>Item_Category__c</picklist>
+        <values>
+            <fullName>PU Cross tension</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>PU Flexi for screen</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>PU Flipflo leg type</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>PU V type panel</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>PU birdsbeak</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>PU bolt down</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>PU button type half</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>PU flipflo non leg type</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>PU modular button type</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>PU modular pin %26 Lug</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>PU rapido</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Rubber Cross tension</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Rubber Modular Pin%26Lug</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Rubber Modular button type</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Rubber Panel Cord</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Rubber Panel cord with rider bar</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Rubber Rapido</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Rubber bolt down</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>UOM__c</picklist>
+        <values>
+            <fullName>Itemized with varied qty</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Set</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+</RecordType>

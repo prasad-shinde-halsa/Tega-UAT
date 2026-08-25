@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>For_CCM_All_Closed</fullName>
+    <columns>NAME</columns>
+    <columns>Company__c</columns>
+    <columns>Branch__c</columns>
+    <columns>PMG__c</columns>
+    <columns>Sales_Order_Number__c</columns>
+    <columns>FRO_required_for_this_item__c</columns>
+    <columns>Status__c</columns>
+    <columns>Submit_On__c</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>Status__c</field>
+        <operation>equals</operation>
+        <value>Rejected,Closed</value>
+    </filters>
+    <label>For CCM - All Closed</label>
+    <sharedTo>
+        <group>CCM_Users</group>
+    </sharedTo>
+</ListView>

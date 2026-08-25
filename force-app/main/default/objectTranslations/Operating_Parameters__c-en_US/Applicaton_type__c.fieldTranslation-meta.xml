@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Application Type --></label>
+    <name>Applicaton_type__c</name>
+    <picklistValues>
+        <masterLabel>desliming</masterLabel>
+        <translation><!-- desliming --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>dewatering</masterLabel>
+        <translation><!-- dewatering --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>primary classification</masterLabel>
+        <translation><!-- primary classification --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>secondary classification</masterLabel>
+        <translation><!-- secondary classification --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>tailing recovery</masterLabel>
+        <translation><!-- tailing recovery --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

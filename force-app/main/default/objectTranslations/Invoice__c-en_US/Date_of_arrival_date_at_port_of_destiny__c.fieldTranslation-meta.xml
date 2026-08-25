@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Date of arrival date at port of destiny --></label>
+    <name>Date_of_arrival_date_at_port_of_destiny__c</name>
+</CustomFieldTranslation>

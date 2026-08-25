@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Customer Branch Assignment --></label>
+    <lookupFilter>
+        <errorMessage><!-- Customer Branch Assignment&apos;s Customer should be same as Budget&apos;s Customer. --></errorMessage>
+        <informationalMessage><!-- Customer Branch Assignment&apos;s Customer should be same as Budget&apos;s Customer --></informationalMessage>
+    </lookupFilter>
+    <name>Customer_Branch_Assignment__c</name>
+    <relationshipLabel><!-- Budget lines --></relationshipLabel>
+</CustomFieldTranslation>

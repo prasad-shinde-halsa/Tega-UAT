@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Elastomount Type 2 --></label>
+    <name>Elastomount_Type_2__c</name>
+    <picklistValues>
+        <masterLabel>Normal Elastomount</masterLabel>
+        <translation><!-- Normal Elastomount --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Parallel Elastomount</masterLabel>
+        <translation><!-- Parallel Elastomount --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

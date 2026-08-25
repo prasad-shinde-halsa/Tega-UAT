@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Budget Line</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Budget lines</value>
+    </caseValues>
+    <layouts>
+        <layout>Multi Year Budget Layout</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Yearly Budget Layout</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+    </layouts>
+    <quickActions>
+        <label><!-- Create Manual Budget Line Item --></label>
+        <name>Create_Manual_Budget_Line_Item</name>
+    </quickActions>
+    <recordTypes>
+        <label><!-- Yearly Budget --></label>
+        <name>Budget</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- Development outside of Budget --></label>
+        <name>Budget_Outside_Of_Development</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- Multi Year Budget --></label>
+        <name>Multi_Year_Budget</name>
+    </recordTypes>
+    <startsWith>Consonant</startsWith>
+    <validationRules>
+        <errorMessage><!-- Please fill this field --></errorMessage>
+        <name>Financial_Year_Validation</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Only approver can edit Budget at this time --></errorMessage>
+        <name>Lock_Budget</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Please fill PMG --></errorMessage>
+        <name>PMG_Validation</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- FInancial Year of User Budget and Budget should be same --></errorMessage>
+        <name>User_Budget_FY_Validation</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Budget can only be created at specific date duration, Contact your admin to know this duration --></errorMessage>
+        <name>Year_Budget_Validation</name>
+    </validationRules>
+</CustomObjectTranslation>

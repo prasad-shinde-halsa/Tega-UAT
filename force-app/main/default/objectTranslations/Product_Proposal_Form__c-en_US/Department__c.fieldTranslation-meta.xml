@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Department --></label>
+    <name>Department__c</name>
+    <picklistValues>
+        <masterLabel>Beneficiation Plant</masterLabel>
+        <translation><!-- Beneficiation Plant --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Blast Furnace</masterLabel>
+        <translation><!-- Blast Furnace --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>CHP</masterLabel>
+        <translation><!-- CHP --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>CPP</masterLabel>
+        <translation><!-- CPP --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Cement Mill</masterLabel>
+        <translation><!-- Cement Mill --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Coal Crusher</masterLabel>
+        <translation><!-- Coal Crusher --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Coal Handling Plant</masterLabel>
+        <translation><!-- Coal Handling Plant --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Coal Mill</masterLabel>
+        <translation><!-- Coal Mill --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Coal Washery</masterLabel>
+        <translation><!-- Coal Washery --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Coke Oven</masterLabel>
+        <translation><!-- Coke Oven --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Crusher</masterLabel>
+        <translation><!-- Crusher --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>DRI</masterLabel>
+        <translation><!-- DRI --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Iron Washery</masterLabel>
+        <translation><!-- Iron Washery --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Kiln</masterLabel>
+        <translation><!-- Kiln --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>MHS</masterLabel>
+        <translation><!-- MHS --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Mines</masterLabel>
+        <translation><!-- Mines --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Packing Plant</masterLabel>
+        <translation><!-- Packing Plant --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Pellet Plant</masterLabel>
+        <translation><!-- Pellet Plant --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Power Plant</masterLabel>
+        <translation><!-- Power Plant --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>RMHS</masterLabel>
+        <translation><!-- RMHS --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Raw Mill</masterLabel>
+        <translation><!-- Raw Mill --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Sinter Plant</masterLabel>
+        <translation><!-- Sinter Plant --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Slag Mill</masterLabel>
+        <translation><!-- Slag Mill --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Stacker</masterLabel>
+        <translation><!-- Stacker --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Wagon Tippler</masterLabel>
+        <translation><!-- Wagon Tippler --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

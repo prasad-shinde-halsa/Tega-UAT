@@ -1,0 +1,797 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RecordType xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Wear_Component</fullName>
+    <active>true</active>
+    <label>Wear Component</label>
+    <picklistValues>
+        <picklist>Applicaton_type__c</picklist>
+        <values>
+            <fullName>desliming</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>dewatering</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>primary classification</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>secondary classification</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>tailing recovery</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Are_Panels_Blind_in_the_Impact_Area__c</picklist>
+        <values>
+            <fullName>No</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Yes</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Belt_Condition__c</picklist>
+        <values>
+            <fullName>Good</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Poor</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Very Good</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Belt_Joint__c</picklist>
+        <values>
+            <fullName>Mechanical</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Vulcanized</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Belt_Operation__c</picklist>
+        <values>
+            <fullName>Reversible</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Undirectional</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Belt_Type__c</picklist>
+        <values>
+            <fullName>EP</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Nylon-Nylon</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Steel Cord</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Circuit_Type__c</picklist>
+        <values>
+            <fullName>Closed</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Open</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Cyclone_Overflow_goes_to__c</picklist>
+        <values>
+            <fullName>AG mill</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Ball Mill</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Filtering</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Flotation Cell</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Magnetic Separator</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Rod Mill</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>SAG mill</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Screen</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Spiral</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Tank</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Thickness</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Cyclone_Underflow_goes_to__c</picklist>
+        <values>
+            <fullName>AG mill</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Ball Mill</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Filtering</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Flotation Cell</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Magnetic Separator</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Rod Mill</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>SAG mill</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Screen</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Spiral</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Tank</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Thickness</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Existing_Cyclone_Cluster_foot_print__c</picklist>
+        <values>
+            <fullName>No</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Yes</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Material_Handled__c</picklist>
+        <values>
+            <fullName>Aggregate</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Alumina</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Bauxite Ore</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Betonite%2C 100 mesh</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Cement%2C Clinker</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Cement%2C Portland</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Chrome Ore</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Coal%2C Antracite sized</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Coal%2C Bituminous ROM</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Coal%2C Clean</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Coal%2C Lignite</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Coal%2C Powder river Basin</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Coke</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Coke Breeze</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Coke%2C Petroleum</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Copper Ore</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Dolomite</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Earth%2C ROM Dry</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Earth%2C Wet with Clay</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Fines</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Flyash</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Gold Ore</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Granite</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Gravel%2C Bank Run</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Gravel%2C Pebbles</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Gypsum</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Iron Ore</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Iron Ore Pellets</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Lime%2C Hydrated</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Limestone%2C Crushed</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Molybdenum Ore</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Ore</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Others</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Overburden</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Phosphate%2C Rock</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Phosphate%2C Rock%2C Pulverized</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Quartz</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Sand%2C Dry Bank</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Sand%2C Foundry</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Sinter</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Slag BF Granular Dry</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Slag BF Granular Wet</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Zinc Ore</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Method_of_Feeding__c</picklist>
+        <values>
+            <fullName>Chute</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Feeder</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Method_of_Screening__c</picklist>
+        <values>
+            <fullName>Dry</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Wet</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Methods_of_Feeding__c</picklist>
+        <values>
+            <fullName>Conveyor Discharge</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Crusher Discharge</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Mill Feed%2FDischarge</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Silo%2FBunker%2FBin%2FHpper</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>VIB Feeder%2FScalper</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>VIB%2E Screen Discharge</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Nature_of_Liquid__c</picklist>
+        <values>
+            <fullName>Other</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Water</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Ore__c</picklist>
+        <values>
+            <fullName>Aggregate</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Alumina</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Bauxite Ore</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Betonite%2C 100 mesh</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Cement%2C Clinker</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Cement%2C Portland</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Chrome Ore</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Coal%2C Antracite sized</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Coal%2C Bituminous ROM</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Coal%2C Clean</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Coal%2C Lignite</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Coal%2C Powder river Basin</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Coke Breeze</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Coke%2C Petroleum</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Copper Ore</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Dolomite</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Earth%2C ROM Dry</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Earth%2C Wet with Clay</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Flyash</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Gold Ore</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Granite</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Gravel%2C Bank Run</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Gravel%2C Pebbles</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Gypsum</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Iron Ore</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Iron Ore Pellets</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Lime%2C Hydrated</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Limestone%2C Crushed</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Molybdenum Ore</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Others</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Overburden</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Phosphate%2C Rock</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Phosphate%2C Rock%2C Pulverized</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Platinum</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Quartz</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Sand%2C Dry Bank</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Sand%2C Foundry</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Slag BF Granular Dry</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Slag BF Granular Wet</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Zinc Ore</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Ore_type__c</picklist>
+        <values>
+            <fullName>Chromium</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Copper</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Gold</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Iron</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Lead</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Magnesium</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Other</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Platinum</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Silver</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Zinc</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Presence_of_Chemicals_Oils_Etc__c</picklist>
+        <values>
+            <fullName>No</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Yes</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Sense_of_Rotation_looking_from_FEH__c</picklist>
+        <values>
+            <fullName>Anticlockwise</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Both</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Clockwise</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Shape_of_Material__c</picklist>
+        <values>
+            <fullName>Angular</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Flaky</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Others</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Round</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Shape_of_Particles__c</picklist>
+        <values>
+            <fullName>Flaky</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Round</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Source_of_Cyclone_Feed__c</picklist>
+        <values>
+            <fullName>AG mill</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Ball Mill</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Crusher</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Filtering</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Flotation Cell</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Magnetic Separator</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Rod Mill</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>SAG mill</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Screen</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Spiral</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Tank</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Thickness</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Status__c</picklist>
+        <values>
+            <fullName>Current</fullName>
+            <default>true</default>
+        </values>
+        <values>
+            <fullName>Ideal</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Type__c</picklist>
+        <values>
+            <fullName>Autogenous</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Ball</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Cylpebs</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Rod</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Type_of_Grinding__c</picklist>
+        <values>
+            <fullName>Dry</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Wet</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+</RecordType>

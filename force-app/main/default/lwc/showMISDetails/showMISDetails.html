@@ -1,0 +1,1370 @@
+<template>
+    <lightning-spinner style="background-color: #16325c" if:true={isLoading} size="large" alternative-text="Loading...">
+        
+    </lightning-spinner>
+
+    <header class="slds-modal__header slds-grid slds-grid_vertical-align-center" style="background-color: rgb(1, 68, 134);">
+        <!-- Title centered -->
+        <h2 class="slds-text-heading_medium slds-hyphenate slds-col slds-align_absolute-center"
+            style="font-weight: bold; font-size: 1.2em; color: rgb(255, 255, 255);">
+            Monthly Report(Figures are in Thousand (000))
+        </h2>
+    </header>
+    <div class="slds-grid slds-wrap slds-p-around_medium" style="margin-top: 10px; border: auto;">
+        <div class="slds-col slds-size_1-of-1 slds-medium-size_1-of-3 slds-p-horizontal_small" style="border: auto;">
+            <lightning-input type="search" label="Search By Customer" placeholder="Enter search term ..."
+                onchange={handleSearch} class="neon-input" value={searchTerm}>
+            </lightning-input>
+        </div>
+        <div class="slds-col slds-size_1-of-1 slds-medium-size_1-of-3 slds-p-horizontal_small" style="border: auto;">
+            <lightning-input type="search" label="Search By PMG" placeholder="Enter search term ..."
+                onchange={handleSearchPMG} class="neon-input" value={searchTermPMG}>
+            </lightning-input>
+        </div>
+        <div class="slds-col slds-size_1-of-1 slds-medium-size_1-of-3 slds-p-horizontal_small" style="border: auto;">
+            <lightning-combobox label="Search By Order Type" value={selectedOrderType} options={OrderTypeOptions}
+                onchange={handleOrderTypeChange} class="neon-combobox">
+            </lightning-combobox>
+        </div>
+    </div>
+    <template if:false={showTable}>
+        <header class="slds-modal__header" style="height: auto; background-color: rgb(1, 68, 134);">
+            <h2 class="slds-text-heading_medium slds-hyphenate custom-header-title"
+                style="font-weight: bold; font-size: 1.2em; color: rgb(255, 255, 255);">
+                No Details Found</h2>
+        </header>
+        <!-- <template if:true={isLoading}>
+            <lightning-spinner alternative-text="Loading" size="medium"></lightning-spinner>
+        </template> -->
+    </template>
+    <template if:true={showTable}>
+        <div class="slds-table_edit_container slds-is-relative" style="overflow-y:scroll; height: 350px; max-height: 500px;">
+            <table
+                class="slds-table slds-table_cell-buffer slds-table_bordered slds-table_resizable-cols slds-no-row-hover slds-max-medium-table_stacked">
+                <thead style="position: sticky; top: 0; z-index: 10;">
+                    <tr class="slds-line-height_reset">
+                        <th scope="col" style=" background-color: rgb(1, 68, 134);">
+                            <div class="slds-truncate" title="Sl. No"
+                                style="padding-top: 1em; padding-bottom: 1em; font-size: 15px; color: white; text-align: center;">
+                                Sl. No
+                            </div>
+                        </th>
+                        
+                        <th scope="col" style=" background-color: rgb(1, 68, 134);">
+                            <div class="slds-truncate" title="PMG"
+                                style="padding-top: 1em; padding-bottom: 1em; font-size: 15px; color: white; text-align: center;">
+                                PMG</div>
+                        </th>
+                        <th scope="col" style=" background-color: rgb(1, 68, 134);">
+                            <div class="slds-truncate" title="Product Group"
+                                style="padding-top: 1em; padding-bottom: 1em; font-size: 15px; color: white; text-align: center;">
+                                Product Group</div>
+                        </th>
+                        <th scope="col" style=" background-color: rgb(1, 68, 134);">
+                            <div class="slds-truncate" title="Description"
+                                style="padding-top: 1em; padding-bottom: 1em; font-size: 15px; color: white; text-align: center;">
+                                Description</div>
+                        </th>
+                        
+                        <th scope="col" style=" background-color: rgb(1, 68, 134);">
+                            <div class="slds-truncate" title="Order Type"
+                                style="padding-top: 1em; padding-bottom: 1em; font-size: 15px; color: white; text-align: center;">
+                                Order Type</div>
+                        </th>
+                        <th scope="col" style=" background-color: rgb(1, 68, 134);">
+                            <div class="slds-truncate" title="Customer"
+                                style="padding-top: 1em; padding-bottom: 1em; font-size: 15px; color: white; text-align: center;">
+                                Customer</div>
+                        </th>
+                        <th scope="col" style=" background-color: rgb(1, 68, 134);">
+                            <div class="slds-truncate" title="Part List"
+                                style="padding-top: 1em; padding-bottom: 1em; font-size: 15px; color: white; text-align: center;">
+                                Part List</div>
+                        </th>
+                        
+                        
+                        <th scope="col" style=" background-color: rgb(1, 68, 134);">
+                            <div class="slds-truncate" title="Budgeted Month"
+                                style="padding-top: 1em; padding-bottom: 1em; font-size: 15px; color: white; text-align: center;">
+                                Budgeted Month</div>
+                        </th>
+                        <th scope="col" style=" background-color: rgb(1, 68, 134);">
+                            <div class="slds-truncate" title="Budgetd Order"
+                                style="padding-top: 1em; padding-bottom: 1em; font-size: 15px; color: white; text-align: center;">
+                                Budgeted Order Value</div>
+                        </th>
+                        <th scope="col" style=" background-color: rgb(1, 68, 134);">
+                            <div class="slds-truncate" title="Order Recieve"
+                                style="padding-top: 1em; padding-bottom: 1em; font-size: 15px; color: white; text-align: center;">
+                                Order Recieved</div>
+                        </th>
+                        <th scope="col" style=" background-color: rgb(1, 68, 134);">
+                            <div class="slds-truncate" title="Order Expected Stage" 
+                                style="padding-top: 1em; padding-bottom: 1em; font-size: 15px; color: white; text-align: center;">
+                                Order Expected Stage</div>
+                        </th>
+                        <th scope="col" style=" background-color: rgb(1, 68, 134);">
+                            <div class="slds-truncate" title="Order Expected Month"
+                                style="padding-top: 1em; padding-bottom: 1em; font-size: 15px; color: white; text-align: center;">
+                                Order Expected Month</div>
+                        </th>
+                        <th scope="col" style=" background-color: rgb(1, 68, 134);">
+                            <div class="slds-truncate" title="Expected Order Value"
+                                style="padding-top: 1em; padding-bottom: 1em; font-size: 15px; color: white; text-align: center;">
+                                Expected Order Value</div>
+                        </th>
+
+                        <th scope="col" style=" background-color: rgb(1, 68, 134);">
+                            <div class="slds-truncate" title="Remarks"
+                                style="padding-top: 1em; padding-bottom: 1em; font-size: 15px; color: white; text-align: center;">
+                                Remarks
+                            </div>
+                        </th>
+                        <!-- <th scope="col" style=" background-color: rgb(1, 68, 134);">
+                            <div class="slds-truncate" title="AUG Sales"
+                                style="padding-top: 1em; padding-bottom: 1em; font-size: 15px; color: white; text-align: center;">
+                                AUG Sales</div>
+                        </th> -->
+                    </tr>
+                </thead>
+                <tbody>
+                    <template for:each={budgetLineItemsWithIndex} for:item="record">
+                        <!-- jan  -->
+                        <tr key={record.Id} class={record.rowClass} if:true={record.Jan_Order__c} >
+                            <td data-label="Sl. No">
+                                <div class="slds-truncate" style="font-weight: bold; text-wrap: wrap; text-align: center;">
+                                    {record.jan_index}
+                                </div>
+                            </td>
+                            
+                            <td data-label="PMG">
+                                <div class="slds-truncate" title={record.PMG_Master}
+                                    style="font-weight: bold; text-wrap: wrap; text-align: center;">
+                                    {record.PMG_Master}
+                                </div>
+                            </td>
+                            <td data-label="Product Group">
+                                <div class="slds-truncate" title={record.PG_Master}
+                                    style="font-weight: bold; text-wrap: wrap; text-align: center;">
+                                    {record.PG_Master}
+                                </div>
+                            </td>
+                            <td data-label="Description">
+                                <div class="slds-truncate" title={record.Description}
+                                    style="font-weight: bold; text-wrap: wrap; text-align: center;">
+                                    {record.Description__c}
+                                </div>
+                            </td>
+                           
+                            <!-- <td data-label="Application Type">
+                                <div class="slds-truncate" title={record.Application_Type_Master}
+                                    style="font-weight: bold; text-wrap: wrap; text-align: center;">
+                                    January
+                                </div>
+                            </td> -->
+                            <td data-label="Order Type">
+                                <div class="slds-truncate" title={record.Order_Type__c}
+                                    style="font-weight: bold; text-wrap: wrap; text-align: center;">
+                                    {record.Order_Type__c}
+                                </div>
+                            </td>
+                            <td data-label="Customer">
+                                <div class="slds-truncate" title={record.Customer_Name__c}
+                                    style="font-weight: bold; text-wrap: wrap; text-align: center;">
+                                    {record.Customer_Name__c}
+                                </div>
+                            </td>
+                            <td data-label="Part List">
+                                <div class="slds-truncate" title={record.Part_List}
+                                    style="font-weight: bold; text-wrap: wrap; text-align: center;">
+                                    {record.Part_List}
+                                </div>
+                            </td>
+                            
+                           
+                            <td data-label="Budgeted Month">
+                                <div class="slds-truncate" title={record.Name}
+                                    style="font-weight: bold; text-wrap: wrap; text-align: center;">
+                                    Jan
+                                </div>
+                            </td>
+                            <td data-label="Budgetd Order">
+                                <input type="text" class="slds-input" value={record.Jan_Order__c} data-id={record.Id}
+                                    data-field="Jan_Order__c" onchange={handleInlineEdit} disabled={record.isDisabled}
+                                    style="text-align: center; font-weight: bold;" />
+                            </td>
+                            <td data-label="Order Recieve">
+                                <input type="text" class="slds-input" value={record.Jan_Order_Actual__c} data-id={record.Id}
+                                    data-field="Jan_Order_Actual__c" onchange={handleInlineEdit} disabled={record.isDisabled}
+                                    style="text-align: center; font-weight: bold;" />
+                            </td>
+
+                            <td data-label="Order Expected Stage"  style="padding-bottom: 15px;">
+                                <lightning-combobox name="Budgetd Order Stage" value={record.Order_Expected_Stage_Jan__c}
+                                    options={record.Order_Stage_Options} data-id={record.Id}
+                                    data-field="Order_Expected_Stage_Jan__c" onchange={handleInlineEdit} 
+                                    disabled={record.disableJanFields} dropdown-alignment="auto" class="full-width-dropdown"
+                                    >
+                                </lightning-combobox>
+                            </td>
+                            <td data-label="Order Expected Month" style="padding-bottom: 15px;">
+                                <lightning-combobox name="Order Expected Month" value={record.Order_Expected_Month_Jan__c}
+                                    options={record.Order_Month_Options} data-id={record.Id}
+                                    data-field="Order_Expected_Month_Jan__c" onchange={handleInlineEdit}
+                                    disabled={record.disableJanFields} dropdown-alignment="auto" class="full-width-dropdown">
+                                </lightning-combobox>
+                            </td>
+                            <td data-label="Expected Order Value">
+                                <input type="text" class="slds-input" value={record.Expected_Order_Value_Jan__c} data-id={record.Id}
+                                    data-field="Expected_Order_Value_Jan__c" onchange={handleInlineEdit} disabled={record.disableJanFields}
+                                    style="text-align: center; font-weight: bold;" />
+                            </td>
+                            <!-- <td data-label="AUG Sales">
+                                <input type="text" class="slds-input" value={record.Aug_Sales__c} data-id={record.Id}
+                                    data-field="Aug_Sales__c" onchange={handleInlineEdit} disabled={record.isDisabled}
+                                    style="text-align: center; font-weight: bold;" />
+                            </td> -->
+
+                            <td data-label="Remarks">
+                                <input type="text" class="slds-input" value={record.Remarks_Jan__c} data-id={record.Id}
+                                    data-field="Remarks_Jan__c" onchange={handleInlineEdit} disabled={record.disableRemarkField}
+                                    style="text-align: center; font-weight: bold;" />
+                            </td>
+                        </tr>
+
+                        <!-- Feb row -->
+                        <tr key={record.Id} class={record.rowClass} if:true={record.Feb_Order__c}>
+                            <td data-label="Sl. No">
+                                <div class="slds-truncate" style="font-weight: bold; text-wrap: wrap; text-align: center;">
+                                    {record.feb_index}
+                                </div>
+                            </td>
+                           
+                            <td data-label="PMG">
+                                <div class="slds-truncate" title={record.PMG_Master}
+                                    style="font-weight: bold; text-wrap: wrap; text-align: center;">
+                                    {record.PMG_Master}
+                                </div>
+                            </td>
+                            <td data-label="Product Group">
+                                <div class="slds-truncate" title={record.PG_Master}
+                                    style="font-weight: bold; text-wrap: wrap; text-align: center;">
+                                    {record.PG_Master}
+                                </div>
+                            </td>
+                            <td data-label="Description">
+                                <div class="slds-truncate" title={record.Description}
+                                    style="font-weight: bold; text-wrap: wrap; text-align: center;">
+                                    {record.Description__c}
+                                </div>
+                            </td>
+                           
+                            <!-- <td data-label="Application Type">
+                                <div class="slds-truncate" title={record.Application_Type_Master}
+                                    style="font-weight: bold; text-wrap: wrap; text-align: center;">
+                                    Feb
+                                </div>
+                            </td> -->
+                            <td data-label="Order Type">
+                                <div class="slds-truncate" title={record.Order_Type__c}
+                                    style="font-weight: bold; text-wrap: wrap; text-align: center;">
+                                    {record.Order_Type__c}
+                                </div>
+                            </td>
+                            <td data-label="Customer">
+                                <div class="slds-truncate" title={record.Customer_Name__c}
+                                    style="font-weight: bold; text-wrap: wrap; text-align: center;">
+                                    {record.Customer_Name__c}
+                                </div>
+                            </td>
+                            <td data-label="Part List">
+                                <div class="slds-truncate" title={record.Part_List}
+                                    style="font-weight: bold; text-wrap: wrap; text-align: center;">
+                                    {record.Part_List}
+                                </div>
+                            </td>
+                            
+                            
+                            <td data-label="Budgeted Month">
+                                <div class="slds-truncate" title={record.Name}
+                                    style="font-weight: bold; text-wrap: wrap; text-align: center;">
+                                    Feb
+                                </div>
+                            </td>
+                            <td data-label="Budgetd Order">
+                                <input type="text" class="slds-input" value={record.Feb_Order__c} data-id={record.Id}
+                                    data-field="Feb_Order__c" onchange={handleInlineEdit} disabled={record.isDisabled}
+                                    style="text-align: center; font-weight: bold;" />
+                            </td>
+                            <td data-label="Order Recieve">
+                                <input type="text" class="slds-input" value={record.Feb_Order_Actual__c} data-id={record.Id}
+                                    data-field="Feb_Order_Actual__c" onchange={handleInlineEdit} disabled={record.isDisabled}
+                                    style="text-align: center; font-weight: bold;" />
+                            </td>
+
+                            <td data-label="Order Expected Stage"  style="padding-bottom: 15px;">
+                                <lightning-combobox name="Budgetd Order Stage" value={record.Order_Expected_Stage_Feb__c}
+                                    options={record.Order_Stage_Options} data-id={record.Id}
+                                    data-field="Order_Expected_Stage_Feb__c" onchange={handleInlineEdit} 
+                                    disabled={record.disableFebFields} dropdown-alignment="auto" class="full-width-dropdown">
+                                </lightning-combobox>
+                            </td>
+                            <td data-label="Order Expected Month" style="padding-bottom: 15px;">
+                                <lightning-combobox name="Order Expected Month" value={record.Order_Expected_Month_Feb__c}
+                                    options={record.Order_Month_Options} data-id={record.Id}
+                                    data-field="Order_Expected_Month_Feb__c" onchange={handleInlineEdit}
+                                    disabled={record.disableFebFields} dropdown-alignment="auto" class="full-width-dropdown">
+                                </lightning-combobox>
+                            </td>
+                            <td data-label="Expected Order Value">
+                                <input type="text" class="slds-input" value={record.Expected_Order_Value_Feb__c} data-id={record.Id}
+                                    data-field="Expected_Order_Value_Feb__c" onchange={handleInlineEdit} disabled={record.disableFebFields}
+                                    style="text-align: center; font-weight: bold;" />
+                            </td>
+                            <!-- <td data-label="AUG Sales">
+                                <input type="text" class="slds-input" value={record.Aug_Sales__c} data-id={record.Id}
+                                    data-field="Aug_Sales__c" onchange={handleInlineEdit} disabled={record.isDisabled}
+                                    style="text-align: center; font-weight: bold;" />
+                            </td> -->
+                            <td data-label="Remarks">
+                                <input type="text" class="slds-input" value={record.Remarks_Feb__c} data-id={record.Id}
+                                    data-field="Remarks_Feb__c" onchange={handleInlineEdit} disabled={record.disableRemarkField}
+                                    style="text-align: center; font-weight: bold;" />
+                            </td>
+                        </tr>
+
+                        <!-- March Row -->
+
+                        <tr key={record.Id} class={record.rowClass} if:true={record.Mar_Order__c}>
+                            <td data-label="Sl. No">
+                                <div class="slds-truncate" style="font-weight: bold; text-wrap: wrap; text-align: center;">
+                                    {record.mar_index}
+                                </div>
+                            </td>
+                            
+                            <td data-label="PMG">
+                                <div class="slds-truncate" title={record.PMG_Master}
+                                    style="font-weight: bold; text-wrap: wrap; text-align: center;">
+                                    {record.PMG_Master}
+                                </div>
+                            </td>
+                            <td data-label="Product Group">
+                                <div class="slds-truncate" title={record.PG_Master}
+                                    style="font-weight: bold; text-wrap: wrap; text-align: center;">
+                                    {record.PG_Master}
+                                </div>
+                            </td>
+                            <td data-label="Description">
+                                <div class="slds-truncate" title={record.Description}
+                                    style="font-weight: bold; text-wrap: wrap; text-align: center;">
+                                    {record.Description__c}
+                                </div>
+                            </td>
+                           
+                            <!-- <td data-label="Application Type">
+                                <div class="slds-truncate" title={record.Application_Type_Master}
+                                    style="font-weight: bold; text-wrap: wrap; text-align: center;">
+                                    Mar
+                                </div>
+                            </td> -->
+                            <td data-label="Order Type">
+                                <div class="slds-truncate" title={record.Order_Type__c}
+                                    style="font-weight: bold; text-wrap: wrap; text-align: center;">
+                                    {record.Order_Type__c}
+                                </div>
+                            </td>
+                            <td data-label="Customer">
+                                <div class="slds-truncate" title={record.Customer_Name__c}
+                                    style="font-weight: bold; text-wrap: wrap; text-align: center;">
+                                    {record.Customer_Name__c}
+                                </div>
+                            </td>
+                            <td data-label="Part List">
+                                <div class="slds-truncate" title={record.Part_List}
+                                    style="font-weight: bold; text-wrap: wrap; text-align: center;">
+                                    {record.Part_List}
+                                </div>
+                            </td>
+                            
+                            
+                            <td data-label="Budgeted Month">
+                                <div class="slds-truncate" title={record.Name}
+                                    style="font-weight: bold; text-wrap: wrap; text-align: center;">
+                                    Mar
+                                </div>
+                            </td>
+                            <td data-label="Budgetd Order">
+                                <input type="text" class="slds-input" value={record.Mar_Order__c} data-id={record.Id}
+                                    data-field="Mar_Order__c" onchange={handleInlineEdit} disabled={record.isDisabled}
+                                    style="text-align: center; font-weight: bold;" />
+                            </td>
+                            <td data-label="Order Recieve">
+                                <input type="text" class="slds-input" value={record.Mar_Order_Actual__c} data-id={record.Id}
+                                    data-field="Mar_Order_Actual__c" onchange={handleInlineEdit} disabled={record.isDisabled}
+                                    style="text-align: center; font-weight: bold;" />
+                            </td>
+
+                            <td data-label="Order Expected Stage"  style="padding-bottom: 15px;">
+                                <lightning-combobox name="Budgetd Order Stage" value={record.Order_Expected_Stage_Mar__c}
+                                    options={record.Order_Stage_Options} data-id={record.Id}
+                                    data-field="Order_Expected_Stage_Mar__c" onchange={handleInlineEdit} 
+                                    disabled={record.disableMarFields} dropdown-alignment="auto" class="full-width-dropdown">
+                                </lightning-combobox>
+                            </td>
+                            <td data-label="Order Expected Month" style="padding-bottom: 15px;">
+                                <lightning-combobox name="Order Expected Month" value={record.Order_Expected_Month_Mar__c}
+                                    options={record.Order_Month_Options} data-id={record.Id}
+                                    data-field="Order_Expected_Month_Mar__c" onchange={handleInlineEdit}
+                                    disabled={record.disableMarFields} dropdown-alignment="auto" class="full-width-dropdown">
+                                </lightning-combobox>
+                            </td>
+                            <td data-label="Expected Order Value">
+                                <input type="text" class="slds-input" value={record.Expected_Order_Value_Mar__c} data-id={record.Id}
+                                    data-field="Expected_Order_Value_Mar__c" onchange={handleInlineEdit} disabled={record.disableMarFields}
+                                    style="text-align: center; font-weight: bold;" />
+                            </td>
+                            <!-- <td data-label="AUG Sales">
+                                <input type="text" class="slds-input" value={record.Aug_Sales__c} data-id={record.Id}
+                                    data-field="Aug_Sales__c" onchange={handleInlineEdit} disabled={record.isDisabled}
+                                    style="text-align: center; font-weight: bold;" />
+                            </td> -->
+                            <td data-label="Remarks">
+                                <input type="text" class="slds-input" value={record.Remarks_Mar__c} data-id={record.Id}
+                                    data-field="Remarks_Mar__c" onchange={handleInlineEdit} disabled={record.disableRemarkField}
+                                    style="text-align: center; font-weight: bold;" />
+                            </td>
+                        </tr>
+
+                        <!-- April row -->
+
+                        <tr key={record.Id} class={record.rowClass} if:true={record.Apr_Order__c}>
+                            <td data-label="Sl. No">
+                                <div class="slds-truncate" style="font-weight: bold; text-wrap: wrap; text-align: center;">
+                                    {record.apr_index}
+                                </div>
+                            </td>
+                           
+                            <td data-label="PMG">
+                                <div class="slds-truncate" title={record.PMG_Master}
+                                    style="font-weight: bold; text-wrap: wrap; text-align: center;">
+                                    {record.PMG_Master}
+                                </div>
+                            </td>
+                            <td data-label="Product Group">
+                                <div class="slds-truncate" title={record.PG_Master}
+                                    style="font-weight: bold; text-wrap: wrap; text-align: center;">
+                                    {record.PG_Master}
+                                </div>
+                            </td>
+                            <td data-label="Description">
+                                <div class="slds-truncate" title={record.Description}
+                                    style="font-weight: bold; text-wrap: wrap; text-align: center;">
+                                    {record.Description__c}
+                                </div>
+                            </td>
+                           
+                            <!-- <td data-label="Application Type">
+                                <div class="slds-truncate" title={record.Application_Type_Master}
+                                    style="font-weight: bold; text-wrap: wrap; text-align: center;">
+                                    Apr
+                                </div>
+                            </td> -->
+                            <td data-label="Order Type">
+                                <div class="slds-truncate" title={record.Order_Type__c}
+                                    style="font-weight: bold; text-wrap: wrap; text-align: center;">
+                                    {record.Order_Type__c}
+                                </div>
+                            </td>
+                            <td data-label="Customer">
+                                <div class="slds-truncate" title={record.Customer_Name__c}
+                                    style="font-weight: bold; text-wrap: wrap; text-align: center;">
+                                    {record.Customer_Name__c}
+                                </div>
+                            </td>
+                            <td data-label="Part List">
+                                <div class="slds-truncate" title={record.Part_List}
+                                    style="font-weight: bold; text-wrap: wrap; text-align: center;">
+                                    {record.Part_List}
+                                </div>
+                            </td>
+                            
+                           
+                            <td data-label="Budgeted Month">
+                                <div class="slds-truncate" title={record.Name}
+                                    style="font-weight: bold; text-wrap: wrap; text-align: center;">
+                                    Apr
+                                </div>
+                            </td>
+                            <td data-label="Budgetd Order">
+                                <input type="text" class="slds-input" value={record.Apr_Order__c} data-id={record.Id}
+                                    data-field="Apr_Order__c" onchange={handleInlineEdit} disabled={record.isDisabled}
+                                    style="text-align: center; font-weight: bold;" />
+                            </td>
+
+                            <td data-label="Order Recieve">
+                                <input type="text" class="slds-input" value={record.Apr_Order_Actual__c} data-id={record.Id}
+                                    data-field="Apr_Order_Actual__c" onchange={handleInlineEdit} disabled={record.isDisabled}
+                                    style="text-align: center; font-weight: bold;" />
+                            </td>
+
+                            <td data-label="Order Expected Stage"  style="padding-bottom: 15px;">
+                                <lightning-combobox name="Budgetd Order Stage" value={record.Order_Expected_Stage_Apr__c}
+                                    options={record.Order_Stage_Options} data-id={record.Id}
+                                    data-field="Order_Expected_Stage_Apr__c" onchange={handleInlineEdit} 
+                                    disabled={record.disableAprFields} dropdown-alignment="auto" class="full-width-dropdown">
+                                </lightning-combobox>
+                            </td>
+                            <td data-label="Order Expected Month" style="padding-bottom: 15px;">
+                                <lightning-combobox name="Order Expected Month" value={record.Order_Expected_Month_Apr__c}
+                                    options={record.Order_Month_Options} data-id={record.Id}
+                                    data-field="Order_Expected_Month_Apr__c" onchange={handleInlineEdit}
+                                    disabled={record.disableAprFields} dropdown-alignment="auto" class="full-width-dropdown">
+                                </lightning-combobox>
+                            </td>
+                            <td data-label="Expected Order Value">
+                                <input type="text" class="slds-input" value={record.Expected_Order_Value_April__c} data-id={record.Id}
+                                    data-field="Expected_Order_Value_April__c" onchange={handleInlineEdit} disabled={record.disableAprFields}
+                                    style="text-align: center; font-weight: bold;" />
+                            </td>
+                            <!-- <td data-label="AUG Sales">
+                                <input type="text" class="slds-input" value={record.Aug_Sales__c} data-id={record.Id}
+                                    data-field="Aug_Sales__c" onchange={handleInlineEdit} disabled={record.isDisabled}
+                                    style="text-align: center; font-weight: bold;" />
+                            </td> -->
+                            <td data-label="Remarks">
+                                <input type="text" class="slds-input" value={record.Remarks_Apr__c} data-id={record.Id}
+                                    data-field="Remarks_Apr__c" onchange={handleInlineEdit} disabled={record.disableRemarkField}
+                                    style="text-align: center; font-weight: bold;" />
+                            </td>
+                        </tr>
+
+                        <!-- May row -->
+
+                        <tr key={record.Id} class={record.rowClass} if:true={record.May_Order__c}>
+                            <td data-label="Sl. No">
+                                <div class="slds-truncate" style="font-weight: bold; text-wrap: wrap; text-align: center;">
+                                    {record.may_index}
+                                </div>
+                            </td>
+                           
+                            <td data-label="PMG">
+                                <div class="slds-truncate" title={record.PMG_Master}
+                                    style="font-weight: bold; text-wrap: wrap; text-align: center;">
+                                    {record.PMG_Master}
+                                </div>
+                            </td>
+                            <td data-label="Product Group">
+                                <div class="slds-truncate" title={record.PG_Master}
+                                    style="font-weight: bold; text-wrap: wrap; text-align: center;">
+                                    {record.PG_Master}
+                                </div>
+                            </td>
+                            <td data-label="Description">
+                                <div class="slds-truncate" title={record.Description}
+                                    style="font-weight: bold; text-wrap: wrap; text-align: center;">
+                                    {record.Description__c}
+                                </div>
+                            </td>
+                           
+                            <!-- <td data-label="Application Type">
+                                <div class="slds-truncate" title={record.Application_Type_Master}
+                                    style="font-weight: bold; text-wrap: wrap; text-align: center;">
+                                    May
+                                </div>
+                            </td> -->
+                            <td data-label="Order Type">
+                                <div class="slds-truncate" title={record.Order_Type__c}
+                                    style="font-weight: bold; text-wrap: wrap; text-align: center;">
+                                    {record.Order_Type__c}
+                                </div>
+                            </td>
+                            <td data-label="Customer">
+                                <div class="slds-truncate" title={record.Customer_Name__c}
+                                    style="font-weight: bold; text-wrap: wrap; text-align: center;">
+                                    {record.Customer_Name__c}
+                                </div>
+                            </td>
+                            <td data-label="Part List">
+                                <div class="slds-truncate" title={record.Part_List}
+                                    style="font-weight: bold; text-wrap: wrap; text-align: center;">
+                                    {record.Part_List}
+                                </div>
+                            </td>
+                           
+                           
+                            <td data-label="Budgeted Month">
+                                <div class="slds-truncate" title={record.Name}
+                                    style="font-weight: bold; text-wrap: wrap; text-align: center;">
+                                    May
+                                </div>
+                            </td>
+                            <td data-label="Budgetd Order">
+                                <input type="text" class="slds-input" value={record.May_Order__c} data-id={record.Id}
+                                    data-field="May_Order__c" onchange={handleInlineEdit} disabled={record.isDisabled}
+                                    style="text-align: center; font-weight: bold;" />
+                            </td>
+                            <td data-label="Order Recieve">
+                                <input type="text" class="slds-input" value={record.May_Order_Actual__c} data-id={record.Id}
+                                    data-field="May_Order_Actual__c" onchange={handleInlineEdit} disabled={record.isDisabled}
+                                    style="text-align: center; font-weight: bold;" />
+                            </td>
+
+                            <td data-label="Order Expected Stage" style="padding-bottom: 15px;">
+                                <lightning-combobox name="Budgeted Order Stage" value={record.Order_Expected_Stage_May__c}
+                                    options={record.Order_Stage_Options} data-id={record.Id}
+                                    data-field="Order_Expected_Stage_May__c" onchange={handleInlineEdit} 
+                                    disabled={record.disableMayFields} dropdown-alignment="auto" class="full-width-dropdown">
+                                </lightning-combobox>
+                            </td>
+                            <td data-label="Order Expected Month" style="padding-bottom: 15px;">
+                                <lightning-combobox name="Order Expected Month" value={record.Order_Expected_Month_May__c}
+                                    options={record.Order_Month_Options} data-id={record.Id}
+                                    data-field="Order_Expected_Month_May__c" onchange={handleInlineEdit}
+                                    disabled={record.disableMayFields} dropdown-alignment="auto" class="full-width-dropdown">
+                                </lightning-combobox>
+                            </td>
+                            <td data-label="Expected Order Value">
+                                <input type="text" class="slds-input" value={record.Expected_Order_Value_May__c} data-id={record.Id}
+                                    data-field="Expected_Order_Value_May__c" onchange={handleInlineEdit} disabled={record.disableMayFields}
+                                    style="text-align: center; font-weight: bold;" />
+                            </td>
+                            <!-- <td data-label="AUG Sales">
+                                <input type="text" class="slds-input" value={record.Aug_Sales__c} data-id={record.Id}
+                                    data-field="Aug_Sales__c" onchange={handleInlineEdit} disabled={record.isDisabled}
+                                    style="text-align: center; font-weight: bold;" />
+                            </td> -->
+                            <td data-label="Remarks">
+                                <input type="text" class="slds-input" value={record.Remarks_May__c} data-id={record.Id}
+                                    data-field="Remarks_May__c" onchange={handleInlineEdit} disabled={record.disableRemarkField}
+                                    style="text-align: center; font-weight: bold;" />
+                            </td>
+                        </tr>
+
+                        <!-- June Row -->
+
+                        <tr key={record.Id} class={record.rowClass} if:true={record.Jun_Order__c}>
+                            <td data-label="Sl. No">
+                                <div class="slds-truncate" style="font-weight: bold; text-wrap: wrap; text-align: center;">
+                                    {record.jun_index}
+                                </div>
+                            </td>
+                           
+                            <td data-label="PMG">
+                                <div class="slds-truncate" title={record.PMG_Master}
+                                    style="font-weight: bold; text-wrap: wrap; text-align: center;">
+                                    {record.PMG_Master}
+                                </div>
+                            </td>
+                            <td data-label="Product Group">
+                                <div class="slds-truncate" title={record.PG_Master}
+                                    style="font-weight: bold; text-wrap: wrap; text-align: center;">
+                                    {record.PG_Master}
+                                </div>
+                            </td>
+                            <td data-label="Description">
+                                <div class="slds-truncate" title={record.Description}
+                                    style="font-weight: bold; text-wrap: wrap; text-align: center;">
+                                    {record.Description__c}
+                                </div>
+                            </td>
+                            <!-- <td data-label="Application Type">
+                                <div class="slds-truncate" title={record.Application_Type_Master}
+                                    style="font-weight: bold; text-wrap: wrap; text-align: center;">
+                                    June
+                                </div>
+                            </td> -->
+                            
+                            <td data-label="Order Type">
+                                <div class="slds-truncate" title={record.Order_Type__c}
+                                    style="font-weight: bold; text-wrap: wrap; text-align: center;">
+                                    {record.Order_Type__c}
+                                </div>
+                            </td>
+                            <td data-label="Customer">
+                                <div class="slds-truncate" title={record.Customer_Name__c}
+                                    style="font-weight: bold; text-wrap: wrap; text-align: center;">
+                                    {record.Customer_Name__c}
+                                </div>
+                            </td>
+                            <td data-label="Part List">
+                                <div class="slds-truncate" title={record.Part_List}
+                                    style="font-weight: bold; text-wrap: wrap; text-align: center;">
+                                    {record.Part_List}
+                                </div>
+                            </td>
+                            
+                            
+                            <td data-label="Budgeted Month">
+                                <div class="slds-truncate" title={record.Name}
+                                    style="font-weight: bold; text-wrap: wrap; text-align: center;">
+                                    Jun
+                                </div>
+                            </td>
+                            <td data-label="Budgetd Order">
+                                <input type="text" class="slds-input" value={record.Jun_Order__c} data-id={record.Id}
+                                    data-field="Jun_Order__c" onchange={handleInlineEdit} disabled={record.isDisabled}
+                                    style="text-align: center; font-weight: bold;" />
+                            </td>
+                            <td data-label="Order Recieve">
+                                <input type="text" class="slds-input" value={record.Jun_Order_Actual__c} data-id={record.Id}
+                                    data-field="Jun_Order_Actual__c" onchange={handleInlineEdit} disabled={record.isDisabled}
+                                    style="text-align: center; font-weight: bold;" />
+                            </td>
+
+                            <td data-label="Order Expected Stage" style="padding-bottom: 15px;">
+                                <lightning-combobox name="Budgeted Order Stage" value={record.Order_Expected_Stage_Jun__c}
+                                    options={record.Order_Stage_Options} data-id={record.Id}
+                                    data-field="Order_Expected_Stage_Jun__c" onchange={handleInlineEdit} 
+                                    disabled={record.disableJunFields} dropdown-alignment="auto" class="full-width-dropdown">
+                                </lightning-combobox>
+                            </td>
+                            <td data-label="Order Expected Month" style="padding-bottom: 15px;">
+                                <lightning-combobox name="Order Expected Month" value={record.Order_Expected_Month_Jun__c}
+                                    options={record.Order_Month_Options} data-id={record.Id}
+                                    data-field="Order_Expected_Month_Jun__c" onchange={handleInlineEdit}
+                                    disabled={record.disableJunFields} dropdown-alignment="auto" class="full-width-dropdown">
+                                </lightning-combobox>
+                            </td>
+                            <td data-label="Expected Order Value">
+                                <input type="text" class="slds-input" value={record.Expected_Order_Value_June__c} data-id={record.Id}
+                                    data-field="Expected_Order_Value_June__c" onchange={handleInlineEdit} disabled={record.disableJunFields}
+                                    style="text-align: center; font-weight: bold;" />
+                            </td>
+                            <!-- <td data-label="AUG Sales">
+                                <input type="text" class="slds-input" value={record.Aug_Sales__c} data-id={record.Id}
+                                    data-field="Aug_Sales__c" onchange={handleInlineEdit} disabled={record.isDisabled}
+                                    style="text-align: center; font-weight: bold;" />
+                            </td> -->
+                            <td data-label="Remarks">
+                                <input type="text" class="slds-input" value={record.Remarks_Jun__c} data-id={record.Id}
+                                    data-field="Remarks_Jun__c" onchange={handleInlineEdit} disabled={record.disableRemarkField}
+                                    style="text-align: center; font-weight: bold;" />
+                            </td>
+                        </tr>
+
+                        <!-- July Row -->
+
+                        <tr key={record.Id} class={record.rowClass} if:true={record.Jul_Order__c}>
+                            <td data-label="Sl. No">
+                                <div class="slds-truncate" style="font-weight: bold; text-wrap: wrap; text-align: center;">
+                                    {record.jul_index}
+                                </div>
+                            </td>
+                           
+                            <td data-label="PMG">
+                                <div class="slds-truncate" title={record.PMG_Master}
+                                    style="font-weight: bold; text-wrap: wrap; text-align: center;">
+                                    {record.PMG_Master}
+                                </div>
+                            </td>
+                            <td data-label="Product Group">
+                                <div class="slds-truncate" title={record.PG_Master}
+                                    style="font-weight: bold; text-wrap: wrap; text-align: center;">
+                                    {record.PG_Master}
+                                </div>
+                            </td>
+                            <td data-label="Description">
+                                <div class="slds-truncate" title={record.Description}
+                                    style="font-weight: bold; text-wrap: wrap; text-align: center;">
+                                    {record.Description__c}
+                                </div>
+                            </td>
+                           
+                            <!-- <td data-label="Application Type">
+                                <div class="slds-truncate" title={record.Application_Type_Master}
+                                    style="font-weight: bold; text-wrap: wrap; text-align: center;">
+                                    Jul
+                                </div>
+                            </td> -->
+                            <td data-label="Order Type">
+                                <div class="slds-truncate" title={record.Order_Type__c}
+                                    style="font-weight: bold; text-wrap: wrap; text-align: center;">
+                                    {record.Order_Type__c}
+                                </div>
+                            </td>
+                            <td data-label="Customer">
+                                <div class="slds-truncate" title={record.Customer_Name__c}
+                                    style="font-weight: bold; text-wrap: wrap; text-align: center;">
+                                    {record.Customer_Name__c}
+                                </div>
+                            </td>
+                            <td data-label="Part List">
+                                <div class="slds-truncate" title={record.Part_List}
+                                    style="font-weight: bold; text-wrap: wrap; text-align: center;">
+                                    {record.Part_List}
+                                </div>
+                            </td>
+                           
+                            
+                            <td data-label="Budgeted Month">
+                                <div class="slds-truncate" title={record.Name}
+                                    style="font-weight: bold; text-wrap: wrap; text-align: center;">
+                                    Jul
+                                </div>
+                            </td>
+                            <td data-label="Budgetd Order">
+                                <input type="text" class="slds-input" value={record.Jul_Order__c} data-id={record.Id}
+                                    data-field="Jul_Order__c" onchange={handleInlineEdit} disabled={record.isDisabled}
+                                    style="text-align: center; font-weight: bold;" />
+                            </td>
+
+                            <td data-label="Order Recieve">
+                                <input type="text" class="slds-input" value={record.Jul_Order_Actual__c} data-id={record.Id}
+                                    data-field="Jul_Order_Actual__c" onchange={handleInlineEdit} disabled={record.isDisabled}
+                                    style="text-align: center; font-weight: bold;" />
+                            </td>
+
+                            <td data-label="Order Expected Stage" style="padding-bottom: 15px;">
+                                <lightning-combobox name="Budgeted Order Stage" value={record.Order_Expected_Stage_Jul__c}
+                                    options={record.Order_Stage_Options} data-id={record.Id}
+                                    data-field="Order_Expected_Stage_Jul__c" onchange={handleInlineEdit} 
+                                    disabled={record.disableJulFields} dropdown-alignment="auto" class="full-width-dropdown">
+                                </lightning-combobox>
+                            </td>
+                            <td data-label="Order Expected Month" style="padding-bottom: 15px;">
+                                <lightning-combobox name="Order Expected Month" value={record.Order_Expected_Month_Jul__c}
+                                    options={record.Order_Month_Options} data-id={record.Id}
+                                    data-field="Order_Expected_Month_Jul__c" onchange={handleInlineEdit}
+                                    disabled={record.disableJulFields} dropdown-alignment="auto" class="full-width-dropdown">
+                                </lightning-combobox>
+                            </td>
+                            <td data-label="Expected Order Value">
+                                <input type="text" class="slds-input" value={record.Expected_Order_Value_Jul__c} data-id={record.Id}
+                                    data-field="Expected_Order_Value_Jul__c" onchange={handleInlineEdit} disabled={record.disableJulFields}
+                                    style="text-align: center; font-weight: bold;" />
+                            </td>
+                            <!-- <td data-label="AUG Sales">
+                                <input type="text" class="slds-input" value={record.Aug_Sales__c} data-id={record.Id}
+                                    data-field="Aug_Sales__c" onchange={handleInlineEdit} disabled={record.isDisabled}
+                                    style="text-align: center; font-weight: bold;" />
+                            </td> -->
+                            <td data-label="Remarks">
+                                <input type="text" class="slds-input" value={record.Remarks_Jul__c} data-id={record.Id}
+                                    data-field="Remarks_Jul__c" onchange={handleInlineEdit} disabled={record.disableRemarkField}
+                                    style="text-align: center; font-weight: bold;" />
+                            </td>
+                        </tr>
+
+                        <!-- Auguest row -->
+
+                        <tr key={record.Id} class={record.rowClass} if:true={record.Aug_Order__c}>
+                            <td data-label="Sl. No">
+                                <div class="slds-truncate" style="font-weight: bold; text-wrap: wrap; text-align: center;">
+                                    {record.aug_index}
+                                </div>
+                            </td>
+                            
+                            <td data-label="PMG">
+                                <div class="slds-truncate" title={record.PMG_Master}
+                                    style="font-weight: bold; text-wrap: wrap; text-align: center;">
+                                    {record.PMG_Master}
+                                </div>
+                            </td>
+                            <td data-label="Product Group">
+                                <div class="slds-truncate" title={record.PG_Master}
+                                    style="font-weight: bold; text-wrap: wrap; text-align: center;">
+                                    {record.PG_Master}
+                                </div>
+                            </td>
+                            <td data-label="Description">
+                                <div class="slds-truncate" title={record.Description}
+                                    style="font-weight: bold; text-wrap: wrap; text-align: center;">
+                                    {record.Description__c}
+                                </div>
+                            </td>
+                            
+                            <!-- <td data-label="Application Type">
+                                <div class="slds-truncate" title={record.Application_Type_Master}
+                                    style="font-weight: bold; text-wrap: wrap; text-align: center;">
+                                    Aug
+                                </div>
+                            </td> -->
+                            <td data-label="Order Type">
+                                <div class="slds-truncate" title={record.Order_Type__c}
+                                    style="font-weight: bold; text-wrap: wrap; text-align: center;">
+                                    {record.Order_Type__c}
+                                </div>
+                            </td>
+                            <td data-label="Customer">
+                                <div class="slds-truncate" title={record.Customer_Name__c
+                                    style="font-weight: bold; text-wrap: wrap; text-align: center;">
+                                    {record.Customer_Name__c}
+                                </div>
+                            </td>
+                            <td data-label="Part List">
+                                <div class="slds-truncate" title={record.Part_List}
+                                    style="font-weight: bold; text-wrap: wrap; text-align: center;">
+                                    {record.Part_List}
+                                </div>
+                            </td>
+                            
+                            
+                            <td data-label="Budgeted Month">
+                                <div class="slds-truncate" title={record.Name}
+                                    style="font-weight: bold; text-wrap: wrap; text-align: center;">
+                                    Aug
+                                </div>
+                            </td>
+                            <td data-label="Budgetd Order">
+                                <input type="text" class="slds-input" value={record.Aug_Order__c} data-id={record.Id}
+                                    data-field="Aug_Order__c" onchange={handleInlineEdit} disabled={record.isDisabled}
+                                    style="text-align: center; font-weight: bold;" />
+                            </td>
+
+                            <td data-label="Order Recieve">
+                                <input type="text" class="slds-input" value={record.Aug_Order_Actual__c} data-id={record.Id}
+                                    data-field="Aug_Order_Actual__c" onchange={handleInlineEdit} disabled={record.isDisabled}
+                                    style="text-align: center; font-weight: bold;" />
+                            </td>
+
+                            <td data-label="Order Expected Stage" style="padding-bottom: 15px;">
+                                <lightning-combobox name="Budgeted Order Stage" value={record.Order_Expected_Stage_Aug__c}
+                                    options={record.Order_Stage_Options} data-id={record.Id}
+                                    data-field="Order_Expected_Stage_Aug__c" onchange={handleInlineEdit} 
+                                    disabled={record.disableAugFields} dropdown-alignment="auto" class="full-width-dropdown">
+                                </lightning-combobox>
+                            </td>
+                            <td data-label="Order Expected Month" style="padding-bottom: 15px;">
+                                <lightning-combobox name="Order Expected Month" value={record.Order_Expected_Month_Aug__c}
+                                    options={record.Order_Month_Options} data-id={record.Id}
+                                    data-field="Order_Expected_Month_Aug__c" onchange={handleInlineEdit}
+                                    disabled={record.disableAugFields} dropdown-alignment="auto" class="full-width-dropdown">
+                                </lightning-combobox>
+                            </td>
+                            <td data-label="Expected Order Value">
+                                <input type="text" class="slds-input" value={record.Expected_Order_Value_Aug__c} data-id={record.Id}
+                                    data-field="Expected_Order_Value_Aug__c" onchange={handleInlineEdit} disabled={record.disableAugFields}
+                                    style="text-align: center; font-weight: bold;" />
+                            </td>
+                            <!-- <td data-label="AUG Sales">
+                                <input type="text" class="slds-input" value={record.Aug_Sales__c} data-id={record.Id}
+                                    data-field="Aug_Sales__c" onchange={handleInlineEdit} disabled={record.isDisabled}
+                                    style="text-align: center; font-weight: bold;" />
+                            </td> -->
+                            <td data-label="Remarks">
+                                <input type="text" class="slds-input" value={record.Remarks_Aug__c} data-id={record.Id}
+                                    data-field="Remarks_Aug__c" onchange={handleInlineEdit} disabled={record.disableRemarkField}
+                                    style="text-align: center; font-weight: bold;" />
+                            </td>
+                        </tr>
+
+                        <!-- September -->
+
+                        <tr key={record.Id} class={record.rowClass} if:true={record.Sep_Order__c}>
+                            <td data-label="Sl. No">
+                                <div class="slds-truncate" style="font-weight: bold; text-wrap: wrap; text-align: center;">
+                                    {record.sep_index}
+                                </div>
+                            </td>
+                            
+                            <td data-label="PMG">
+                                <div class="slds-truncate" title={record.PMG_Master}
+                                    style="font-weight: bold; text-wrap: wrap; text-align: center;">
+                                    {record.PMG_Master}
+                                </div>
+                            </td>
+                            <td data-label="Product Group">
+                                <div class="slds-truncate" title={record.PG_Master}
+                                    style="font-weight: bold; text-wrap: wrap; text-align: center;">
+                                    {record.PG_Master}
+                                </div>
+                            </td>
+                            <td data-label="Description">
+                                <div class="slds-truncate" title={record.Description}
+                                    style="font-weight: bold; text-wrap: wrap; text-align: center;">
+                                    {record.Description__c}
+                                </div>
+                            </td>
+                            
+                            <!-- <td data-label="Application Type">
+                                <div class="slds-truncate" title={record.Application_Type_Master}
+                                    style="font-weight: bold; text-wrap: wrap; text-align: center;">
+                                    Sep
+                                </div>
+                            </td> -->
+                            <td data-label="Order Type">
+                                <div class="slds-truncate" title={record.Order_Type__c}
+                                    style="font-weight: bold; text-wrap: wrap; text-align: center;">
+                                    {record.Order_Type__c}
+                                </div>
+                            </td>
+                            <td data-label="Customer">
+                                <div class="slds-truncate" title={record.Customer_Name__c}
+                                    style="font-weight: bold; text-wrap: wrap; text-align: center;">
+                                    {record.Customer_Name__c}
+                                </div>
+                            </td>
+                            <td data-label="Part List">
+                                <div class="slds-truncate" title={record.Part_List}
+                                    style="font-weight: bold; text-wrap: wrap; text-align: center;">
+                                    {record.Part_List}
+                                </div>
+                            </td>
+                            
+                            
+                            <td data-label="Budgeted Month">
+                                <div class="slds-truncate" title={record.Name}
+                                    style="font-weight: bold; text-wrap: wrap; text-align: center;">
+                                    Sept
+                                </div>
+                            </td>
+                            <td data-label="Budgetd Order">
+                                <input type="text" class="slds-input" value={record.Sep_Order__c} data-id={record.Id}
+                                    data-field="Sep_Order__c" onchange={handleInlineEdit} disabled={record.isDisabled}
+                                    style="text-align: center; font-weight: bold;" />
+                            </td>
+
+                            <td data-label="Order Recieve">
+                                <input type="text" class="slds-input" value={record.Sep_Order_Actual__c} data-id={record.Id}
+                                    data-field="Sep_Order_Actual__c" onchange={handleInlineEdit} disabled={record.isDisabled}
+                                    style="text-align: center; font-weight: bold;" />
+                            </td>
+
+                            <td data-label="Order Expected Stage" style="padding-bottom: 15px;">
+                                <lightning-combobox name="Budgeted Order Stage" value={record.Order_Expected_Stage_Sep__c}
+                                    options={record.Order_Stage_Options} data-id={record.Id}
+                                    data-field="Order_Expected_Stage_Sep__c" onchange={handleInlineEdit} 
+                                    disabled={record.disableSepFields} dropdown-alignment="auto" class="full-width-dropdown">
+                                </lightning-combobox>
+                            </td>
+                            <td data-label="Order Expected Month" style="padding-bottom: 15px;">
+                                <lightning-combobox name="Order Expected Month" value={record.Order_Expected_Month_Sep__c}
+                                    options={record.Order_Month_Options} data-id={record.Id}
+                                    data-field="Order_Expected_Month_Sep__c" onchange={handleInlineEdit}
+                                    disabled={record.disableSepFields} dropdown-alignment="auto" class="full-width-dropdown">
+                                </lightning-combobox>
+                            </td>
+                            <td data-label="Expected Order Value">
+                                <input type="text" class="slds-input" value={record.Expected_Order_Value_Sep__c} data-id={record.Id}
+                                    data-field="Expected_Order_Value_Sep__c" onchange={handleInlineEdit} disabled={record.disableSepFields}
+                                    style="text-align: center; font-weight: bold;" />
+                            </td>
+                            <!-- <td data-label="AUG Sales">
+                                <input type="text" class="slds-input" value={record.Aug_Sales__c} data-id={record.Id}
+                                    data-field="Aug_Sales__c" onchange={handleInlineEdit} disabled={record.isDisabled}
+                                    style="text-align: center; font-weight: bold;" />
+                            </td> -->
+                            <td data-label="Remarks">
+                                <input type="text" class="slds-input" value={record.Remarks_Sep__c} data-id={record.Id}
+                                    data-field="Remarks_Sep__c" onchange={handleInlineEdit} disabled={record.disableRemarkField}
+                                    style="text-align: center; font-weight: bold;" />
+                            </td>
+                        </tr>
+
+                        <!-- October -->
+                        <tr key={record.Id} class={record.rowClass} if:true={record.Oct_Order__c}>
+                            <td data-label="Sl. No">
+                                <div class="slds-truncate" style="font-weight: bold; text-wrap: wrap; text-align: center;">
+                                    {record.oct_index}
+                                </div>
+                            </td>
+                            
+                            <td data-label="PMG">
+                                <div class="slds-truncate" title={record.PMG_Master}
+                                    style="font-weight: bold; text-wrap: wrap; text-align: center;">
+                                    {record.PMG_Master}
+                                </div>
+                            </td>
+                            <td data-label="Product Group">
+                                <div class="slds-truncate" title={record.PG_Master}
+                                    style="font-weight: bold; text-wrap: wrap; text-align: center;">
+                                    {record.PG_Master}
+                                </div>
+                            </td>
+                            <td data-label="Description">
+                                <div class="slds-truncate" title={record.Description}
+                                    style="font-weight: bold; text-wrap: wrap; text-align: center;">
+                                    {record.Description__c}
+                                </div>
+                            </td>
+                           
+                            <!-- <td data-label="Application Type">
+                                <div class="slds-truncate" title={record.Application_Type_Master}
+                                    style="font-weight: bold; text-wrap: wrap; text-align: center;">
+                                    Oct
+                                </div>
+                            </td> -->
+                            <td data-label="Order Type">
+                                <div class="slds-truncate" title={record.Order_Type__c}
+                                    style="font-weight: bold; text-wrap: wrap; text-align: center;">
+                                    {record.Order_Type__c}
+                                </div>
+                            </td>
+                            <td data-label="Customer">
+                                <div class="slds-truncate" title={record.Customer_Name__c}
+                                    style="font-weight: bold; text-wrap: wrap; text-align: center;">
+                                    {record.Customer_Name__c}
+                                </div>
+                            </td>
+                            <td data-label="Part List">
+                                <div class="slds-truncate" title={record.Part_List}
+                                    style="font-weight: bold; text-wrap: wrap; text-align: center;">
+                                    {record.Part_List}
+                                </div>
+                            </td>
+                           
+                           
+                            <td data-label="Budgeted Month">
+                                <div class="slds-truncate" title={record.Name}
+                                    style="font-weight: bold; text-wrap: wrap; text-align: center;">
+                                    Oct
+                                </div>
+                            </td>
+                            <td data-label="Budgetd Order">
+                                <input type="text" class="slds-input" value={record.Oct_Order__c} data-id={record.Id}
+                                    data-field="Oct_Order__c" onchange={handleInlineEdit} disabled={record.isDisabled}
+                                    style="text-align: center; font-weight: bold;" />
+                            </td>
+
+                            <td data-label="Order Recieve">
+                                <input type="text" class="slds-input" value={record.Oct_Order_Actual__c} data-id={record.Id}
+                                    data-field="Oct_Order_Actual__c" onchange={handleInlineEdit} disabled={record.isDisabled}
+                                    style="text-align: center; font-weight: bold;" />
+                            </td>
+
+                            <td data-label="Order Expected Stage" style="padding-bottom: 15px;">
+                                <lightning-combobox name="Budgeted Order Stage" value={record.Order_Expected_Stage_Oct__c}
+                                    options={record.Order_Stage_Options} data-id={record.Id}
+                                    data-field="Order_Expected_Stage_Oct__c" onchange={handleInlineEdit} 
+                                    disabled={record.disableOctFields} dropdown-alignment="auto" class="full-width-dropdown">
+                                </lightning-combobox>
+                            </td>
+                            <td data-label="Order Expected Month" style="padding-bottom: 15px;">
+                                <lightning-combobox name="Order Expected Month" value={record.Order_Expected_Month_Oct__c}
+                                    options={record.Order_Month_Options} data-id={record.Id}
+                                    data-field="Order_Expected_Month_Oct__c" onchange={handleInlineEdit}
+                                    disabled={record.disableOctFields} dropdown-alignment="auto" class="full-width-dropdown">
+                                </lightning-combobox>
+                            </td>
+                            <td data-label="Expected Order Value">
+                                <input type="text" class="slds-input" value={record.Expected_Order_Value_Oct__c} data-id={record.Id}
+                                    data-field="Expected_Order_Value_Oct__c" onchange={handleInlineEdit} disabled={record.disableOctFields}
+                                    style="text-align: center; font-weight: bold;" />
+                            </td>
+                            <!-- <td data-label="AUG Sales">
+                                <input type="text" class="slds-input" value={record.Aug_Sales__c} data-id={record.Id}
+                                    data-field="Aug_Sales__c" onchange={handleInlineEdit} disabled={record.isDisabled}
+                                    style="text-align: center; font-weight: bold;" />
+                            </td> -->
+                            <td data-label="Remarks">
+                                <input type="text" class="slds-input" value={record.Remarks_Oct__c} data-id={record.Id}
+                                    data-field="Remarks_Oct__c" onchange={handleInlineEdit} disabled={record.disableRemarkField}
+                                    style="text-align: center; font-weight: bold;" />
+                            </td>
+                        </tr>
+
+                        <!-- November -->
+
+                        <tr key={record.Id} class={record.rowClass} if:true={record.Nov_Order__c}>
+                            <td data-label="Sl. No">
+                                <div class="slds-truncate" style="font-weight: bold; text-wrap: wrap; text-align: center;">
+                                    {record.nov_index}
+                                </div>
+                            </td>
+                            
+                            <td data-label="PMG">
+                                <div class="slds-truncate" title={record.PMG_Master}
+                                    style="font-weight: bold; text-wrap: wrap; text-align: center;">
+                                    {record.PMG_Master}
+                                </div>
+                            </td>
+                            <td data-label="Product Group">
+                                <div class="slds-truncate" title={record.PG_Master}
+                                    style="font-weight: bold; text-wrap: wrap; text-align: center;">
+                                    {record.PG_Master}
+                                </div>
+                            </td>
+                            <td data-label="Description">
+                                <div class="slds-truncate" title={record.Description}
+                                    style="font-weight: bold; text-wrap: wrap; text-align: center;">
+                                    {record.Description__c}
+                                </div>
+                            </td>
+                            
+                            <!-- <td data-label="Application Type">
+                                <div class="slds-truncate" title={record.Application_Type_Master}
+                                    style="font-weight: bold; text-wrap: wrap; text-align: center;">
+                                    Nov
+                                </div>
+                            </td> -->
+                            <td data-label="Order Type">
+                                <div class="slds-truncate" title={record.Order_Type__c}
+                                    style="font-weight: bold; text-wrap: wrap; text-align: center;">
+                                    {record.Order_Type__c}
+                                </div>
+                            </td>
+                            <td data-label="Customer">
+                                <div class="slds-truncate" title={record.Customer_Name__c}
+                                    style="font-weight: bold; text-wrap: wrap; text-align: center;">
+                                    {record.Customer_Name__c}
+                                </div>
+                            </td>
+                            <td data-label="Part List">
+                                <div class="slds-truncate" title={record.Part_List}
+                                    style="font-weight: bold; text-wrap: wrap; text-align: center;">
+                                    {record.Part_List}
+                                </div>
+                            </td>
+                            
+                            
+                            <td data-label="Budgeted Month">
+                                <div class="slds-truncate" title={record.Name}
+                                    style="font-weight: bold; text-wrap: wrap; text-align: center;">
+                                    Nov
+                                </div>
+                            </td>
+                            <td data-label="Budgetd Order">
+                                <input type="text" class="slds-input" value={record.Nov_Order__c} data-id={record.Id}
+                                    data-field="Nov_Order__c" onchange={handleInlineEdit} disabled={record.isDisabled}
+                                    style="text-align: center; font-weight: bold;" />
+                            </td>
+                            <td data-label="Order Recieve">
+                                <input type="text" class="slds-input" value={record.Nov_Order_Actual__c} data-id={record.Id}
+                                    data-field="Nov_Order_Actual__c" onchange={handleInlineEdit} disabled={record.isDisabled}
+                                    style="text-align: center; font-weight: bold;" />
+                            </td>
+
+                            <td data-label="Order Expected Stage" style="padding-bottom: 15px;">
+                                <lightning-combobox name="Budgeted Order Stage" value={record.Order_Expected_Stage_Nov__c}
+                                    options={record.Order_Stage_Options} data-id={record.Id}
+                                    data-field="Order_Expected_Stage_Nov__c" onchange={handleInlineEdit} 
+                                    disabled={record.disableNovFields} dropdown-alignment="auto" class="full-width-dropdown">
+                                </lightning-combobox>
+                            </td>
+                            <td data-label="Order Expected Month" style="padding-bottom: 15px;">
+                                <lightning-combobox name="Order Expected Month" value={record.Order_Expected_Month_Nov__c}
+                                    options={record.Order_Month_Options} data-id={record.Id}
+                                    data-field="Order_Expected_Month_Nov__c" onchange={handleInlineEdit}
+                                    disabled={record.disableNovFields} dropdown-alignment="auto" class="full-width-dropdown">
+                                </lightning-combobox>
+                            </td>
+                            <td data-label="Expected Order Value">
+                                <input type="text" class="slds-input" value={record.Expected_Order_Value_Nov__c} data-id={record.Id}
+                                    data-field="Expected_Order_Value_Nov__c" onchange={handleInlineEdit} disabled={record.disableNovFields}
+                                    style="text-align: center; font-weight: bold;" />
+                            </td>
+                            <!-- <td data-label="AUG Sales">
+                                <input type="text" class="slds-input" value={record.Aug_Sales__c} data-id={record.Id}
+                                    data-field="Aug_Sales__c" onchange={handleInlineEdit} disabled={record.isDisabled}
+                                    style="text-align: center; font-weight: bold;" />
+                            </td> -->
+                            <td data-label="Remarks">
+                                <input type="text" class="slds-input" value={record.Remarks_Nov__c} data-id={record.Id}
+                                    data-field="Remarks_Nov__c" onchange={handleInlineEdit} disabled={record.disableRemarkField}
+                                    style="text-align: center; font-weight: bold;" />
+                            </td>
+                        </tr>
+
+                        <!-- December -->
+                        <tr key={record.Id} class={record.rowClass} if:true={record.Dec_Order__c}>
+                            <td data-label="Sl. No">
+                                <div class="slds-truncate" style="font-weight: bold; text-wrap: wrap; text-align: center;">
+                                    {record.dec_index}
+                                </div>
+                            </td>
+                            
+                            <td data-label="PMG">
+                                <div class="slds-truncate" title={record.PMG_Master}
+                                    style="font-weight: bold; text-wrap: wrap; text-align: center;">
+                                    {record.PMG_Master}
+                                </div>
+                            </td>
+                            <td data-label="Product Group">
+                                <div class="slds-truncate" title={record.PG_Master}
+                                    style="font-weight: bold; text-wrap: wrap; text-align: center;">
+                                    {record.PG_Master}
+                                </div>
+                            </td>
+                            <td data-label="Description">
+                                <div class="slds-truncate" title={record.Description}
+                                    style="font-weight: bold; text-wrap: wrap; text-align: center;">
+                                    {record.Description__c}
+                                </div>
+                            </td>
+                           
+                            <!-- <td data-label="Application Type">
+                                <div class="slds-truncate" title={record.Application_Type_Master}
+                                    style="font-weight: bold; text-wrap: wrap; text-align: center;">
+                                    Dec
+                                </div>
+                            </td> -->
+                            <td data-label="Order Type">
+                                <div class="slds-truncate" title={record.Order_Type__c}
+                                    style="font-weight: bold; text-wrap: wrap; text-align: center;">
+                                    {record.Order_Type__c}
+                                </div>
+                            </td>
+                            <td data-label="Customer">
+                                <div class="slds-truncate" title={record.Customer_Name__c}
+                                    style="font-weight: bold; text-wrap: wrap; text-align: center;">
+                                    {record.Customer_Name__c}
+                                </div>
+                            </td>
+                            <td data-label="Part List">
+                                <div class="slds-truncate" title={record.Part_List}
+                                    style="font-weight: bold; text-wrap: wrap; text-align: center;">
+                                    {record.Part_List}
+                                </div>
+                            </td>
+                            
+                           
+                            <td data-label="Budgeted Month">
+                                <div class="slds-truncate" title={record.Name}
+                                    style="font-weight: bold; text-wrap: wrap; text-align: center;">
+                                    Dec
+                                </div>
+                            </td>
+                            <td data-label="Budgetd Order">
+                                <input type="text" class="slds-input" value={record.Dec_Order__c} data-id={record.Id}
+                                    data-field="Dec_Order__c" onchange={handleInlineEdit} disabled={record.isDisabled}
+                                    style="text-align: center; font-weight: bold;" />
+                            </td>
+
+                            <td data-label="Order Recieve">
+                                <input type="text" class="slds-input" value={record.Dec_Order_Actual__c} data-id={record.Id}
+                                    data-field="Dec_Order_Actual__c" onchange={handleInlineEdit} disabled={record.isDisabled}
+                                    style="text-align: center; font-weight: bold;" />
+                            </td>
+
+                            <td data-label="Order Expected Stage"  style="padding-bottom: 15px;">
+                                <lightning-combobox name="Budgetd Order Stage" value={record.Order_Expected_Stage_Dec__c}
+                                    options={record.Order_Stage_Options} data-id={record.Id}
+                                    data-field="Order_Expected_Stage_Dec__c" onchange={handleInlineEdit} 
+                                    disabled={record.disableDecFields} dropdown-alignment="auto" class="full-width-dropdown">
+                                </lightning-combobox>
+                            </td>
+                            <td data-label="Order Expected Month" style="padding-bottom: 15px;">
+                                <lightning-combobox name="Order Expected Month" value={record.Order_Expected_Month_Dec__c}
+                                    options={record.Order_Month_Options} data-id={record.Id}
+                                    data-field="Order_Expected_Month_Dec__c" onchange={handleInlineEdit}
+                                    disabled={record.disableDecFields} dropdown-alignment="auto" class="full-width-dropdown">
+                                </lightning-combobox>
+                            </td>
+                            <td data-label="Expected Order Value">
+                                <input type="text" class="slds-input" value={record.Expected_Order_Value_Dec__c} data-id={record.Id}
+                                    data-field="Expected_Order_Value_Dec__c" onchange={handleInlineEdit} disabled={record.disableDecFields}
+                                    style="text-align: center; font-weight: bold;" />
+                            </td>
+                            <!-- <td data-label="AUG Sales">
+                                <input type="text" class="slds-input" value={record.Aug_Sales__c} data-id={record.Id}
+                                    data-field="Aug_Sales__c" onchange={handleInlineEdit} disabled={record.isDisabled}
+                                    style="text-align: center; font-weight: bold;" />
+                            </td> -->
+                            <td data-label="Remarks">
+                                <input type="text" class="slds-input" value={record.Remarks_Dec__c} data-id={record.Id}
+                                    data-field="Remarks_Dec__c" onchange={handleInlineEdit} disabled={record.disableRemarkField}
+                                    style="text-align: center; font-weight: bold;" />
+                            </td>
+                        </tr>
+
+                    </template>
+                </tbody>
+            </table>
+        </div>
+        <div style="margin-top: 1em; text-align: center;" if:true={showButtons}>
+            <lightning-button label="Save" variant="brand" onclick={handleSave}></lightning-button>
+            <lightning-button label="Cancel" variant="neutral" onclick={handleCancel}
+                class="slds-m-left_small"></lightning-button>
+        </div>
+    </template>
+</template>

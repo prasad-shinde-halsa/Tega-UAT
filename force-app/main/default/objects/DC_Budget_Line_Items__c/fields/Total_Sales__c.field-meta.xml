@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Total_Sales__c</fullName>
+    <formula>Apr_Sales__c + May_Sales__c + Jun_Sales__c + Jul_Sales__c + Aug_Sales__c + Sep_Sales__c + Oct_Sales__c + Nov_Sales__c + Dec_Sales__c + Jan_Sales__c + Feb_Sales__c + Mar_Sales__c</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>Total Sales</label>
+    <precision>18</precision>
+    <required>false</required>
+    <scale>2</scale>
+    <trackTrending>false</trackTrending>
+    <type>Currency</type>
+</CustomField>

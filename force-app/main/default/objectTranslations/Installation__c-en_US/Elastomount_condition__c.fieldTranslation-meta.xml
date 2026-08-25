@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Elastomount condition --></label>
+    <name>Elastomount_condition__c</name>
+    <picklistValues>
+        <masterLabel>No deflection observed-replacement required</masterLabel>
+        <translation><!-- No deflection observed-replacement required --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Ok-Normal deflection observed</masterLabel>
+        <translation><!-- Ok-Normal deflection observed --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Sagging observed-replacement required</masterLabel>
+        <translation><!-- Sagging observed-replacement required --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Stop screw/locking screws missing</masterLabel>
+        <translation><!-- Stop screw/locking screws missing --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Vibration of the assembly carrier observed</masterLabel>
+        <translation><!-- Vibration of the assembly carrier observed --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

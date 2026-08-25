@@ -1,0 +1,97 @@
+<apex:page standardController="Operating_Parameters__c" extensions="ctrl_ParticleSD_Management" lightningStylesheets="true" docType="HTML-5.0">
+    <apex:slds >
+        <apex:form id="frm">
+            <table align="center" style="width: 60%;">
+                <tr> 
+                    <td colspan="1">
+                        <apex:pageBlock id="pgblk4">
+                            <div width ="50%" align="center">
+                                <br/>
+                                <apex:outputPanel >
+                                    <center>
+                                        <div>
+                                            <h1 style="font-size:2em">
+                                                <b>Particle Size Distribution</b><br/>
+                                            </h1>
+                                        </div>
+                                    </center>
+                                    <br/>
+                                    <apex:outputPanel >
+                                        <div width ="auto" align="center">
+                                            <table >
+                                                <tr>
+                                                    <td style="text-align:center"><b>Operating Parameter:&nbsp;&nbsp;</b><apex:outputField value="{!OP.Name}" style="font-weight: bold;"/></td>
+                                                    <td style="text-align:center"><b>Record Type:&nbsp;&nbsp;</b><apex:outputField value="{!OP.RecordTypeId}" style="font-weight: bold;"/></td>
+                                                    <td align="center"><b>Type:&nbsp;&nbsp;</b><apex:inputField value="{!psd.Type__c}"/></td>
+                                                    <td align="center"><b>Today's Date:&nbsp;&nbsp;</b><apex:input value="{!TodaysDate}" required="true" type="date" label="Date"/></td>
+                                                </tr>
+                                            </table>
+                                        </div>
+                                    </apex:outputPanel>
+                                </apex:outputPanel>
+                            </div>
+                            
+                        </apex:pageBlock>
+                        <br />
+                        <br />
+                        <apex:pageBlock id="pb">
+                            <div width ="50%" align="center">
+                                <br/>
+                                <center><h1 style="font-size:2em">
+                                    <b>Particle Size Distribution Line Item</b>
+                                    </h1>
+                                </center>
+                                <br/>
+                            </div>
+                            <apex:pageMessages />
+                            <table width="60%" align="center">
+                                <tr> 
+                                    <td>
+                                        <table class="slds-table slds-table_cell-buffer slds-table_bordered slds-cell-wrap">
+                                            <tr>
+                                                <thead style="background-color:#DCDCDC; font-size: large;">
+                                                    <td><b>Sr No.</b></td>
+                                                    <td><b>Size of Sieve(mm)</b></td>
+                                                    <td><b>Weight %</b></td>
+                                                    <td><b>Add</b></td>
+                                                    <td><b>Remove</b></td>
+                                                </thead>
+                                            </tr>
+                                            <apex:variable value="{!1}" var="rowIndex"/>
+                                            <apex:repeat value="{!psdlineList}" var="psdl">
+                                                <tr>
+                                                    <td>
+                                                        <apex:outputText value="{0}" style="text-align:center;">                
+                                                            <apex:param value="{!rowIndex}" />
+                                                        </apex:outputText>
+                                                    </td>
+                                                    <td><apex:inputField value="{!psdl.Sieve_mm__c}" /></td>
+                                                    <td><apex:inputField value="{!psdl.Weight__c}" /></td>
+                                                    <td>
+                                                        <apex:commandButton value="+" action="{!addNewRow}" styleClass="slds-button slds-button_brand" immediate="true" reRender="pb"/>
+                                                    </td>
+                                                    <td>
+                                                        <apex:commandButton value="-" action="{!removeRow}" styleClass="slds-button slds-button_destructive" immediate="true" reRender="pb">
+                                                            <apex:param name="rowIndex" value="{!rowIndex}" assignTo="{!rowIndex}"/>
+                                                        </apex:commandButton>
+                                                    </td>
+                                                </tr>
+                                                <apex:variable var="rowIndex" value="{!rowIndex+1}" />
+                                            </apex:repeat>
+                                        </table>
+                                        <br/><br/>
+                                        <center> 
+                                            <apex:commandButton value="Save" action="{!save}" styleClass="slds-button slds-button_brand" reRender="pb"/>
+                                            <apex:commandButton value="Cancel" action="{!cancel}" styleClass="slds-button slds-button_destructive" immediate="true" html-formnovalidate="formnovalidate"/>
+                                        </center>
+                                        <br/>
+                                    </td>
+                                </tr>
+                            </table>
+                        </apex:pageBlock>
+                    </td>
+                </tr>
+            </table>
+        </apex:form>
+    </apex:slds>
+</apex:page>

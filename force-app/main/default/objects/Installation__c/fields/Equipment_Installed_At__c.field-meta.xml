@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Equipment_Installed_At__c</fullName>
+    <deleteConstraint>SetNull</deleteConstraint>
+    <label>Equipment</label>
+    <lookupFilter>
+        <active>true</active>
+        <filterItems>
+            <field>$Source.Customer__c</field>
+            <operation>equals</operation>
+            <valueField>Customer_Equipments__c.Customer__r.Id</valueField>
+        </filterItems>
+        <isOptional>false</isOptional>
+    </lookupFilter>
+    <referenceTo>Customer_Equipments__c</referenceTo>
+    <relationshipName>Installations</relationshipName>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Lookup</type>
+</CustomField>

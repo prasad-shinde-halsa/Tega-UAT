@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Hydrocyclone_PMG_list</fullName>
+    <columns>NAME</columns>
+    <columns>RECORDTYPE</columns>
+    <columns>Category__c</columns>
+    <columns>PMG__c</columns>
+    <columns>Purchaser_Code_Address__c</columns>
+    <columns>SAP_SO_Number__c</columns>
+    <columns>Region__c</columns>
+    <columns>PO_No__c</columns>
+    <columns>PO_Date__c</columns>
+    <columns>Status_SO__c</columns>
+    <columns>CREATED_DATE</columns>
+    <columns>CREATEDBY_USER</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>PMG__c</field>
+        <operation>equals</operation>
+        <value>Hydrocyclone</value>
+    </filters>
+    <label>Hydrocyclone PMG list</label>
+    <sharedTo>
+        <group>PMG_Hydrocyclone</group>
+    </sharedTo>
+</ListView>

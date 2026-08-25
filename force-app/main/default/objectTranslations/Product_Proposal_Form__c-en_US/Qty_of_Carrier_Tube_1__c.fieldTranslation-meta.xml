@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Qty of Carrier Tube 1 --></label>
+    <name>Qty_of_Carrier_Tube_1__c</name>
+</CustomFieldTranslation>

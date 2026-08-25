@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Gap Between Skirt and Belt Edge (mm) --></label>
+    <name>Gap_Between_Skirt_and_Belt_Edge__c</name>
+</CustomFieldTranslation>

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Merged_Parent_Record_Name__c</fullName>
+    <externalId>false</externalId>
+    <formula>PMG_Master__r.Name &amp; &quot;-&quot; &amp; 
+PG_Master__r.Name &amp; &quot;-&quot; &amp; 
+Application_Type_Master__r.Name &amp; &quot;-&quot; &amp; 
+ TEXT(Order_Type__c)  &amp; &quot;-&quot; &amp; 
+Customer__r.Customer_Name_With_Code__c &amp; 
+IF(NOT(ISBLANK(Part_List__r.Id)), &quot;-&quot; &amp; Part_List__r.Name, &quot;&quot;) &amp; 
+IF(NOT(ISBLANK(Product__c)), &quot;-&quot; &amp; Product__r.Name, &quot;&quot;)</formula>
+    <label>Merged Parent Record Name</label>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

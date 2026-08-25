@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Status ASO --></label>
+    <name>Status__c</name>
+    <picklistValues>
+        <masterLabel>ASO Approval Raised</masterLabel>
+        <translation><!-- ASO Approval Raised --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>ASO Approved</masterLabel>
+        <translation><!-- ASO Approved --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Discount Approval Approved</masterLabel>
+        <translation><!-- Discount Approval Approved --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Discount Approval Raised</masterLabel>
+        <translation><!-- Discount Approval Raised --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Draft</masterLabel>
+        <translation><!-- Draft --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>No Discount Approval Needed</masterLabel>
+        <translation><!-- No Discount Approval Needed --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>No Short Delivery Approval Needed</masterLabel>
+        <translation><!-- No Short Delivery Approval Needed --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Open to Enter PO Details</masterLabel>
+        <translation><!-- Open to Enter PO Details --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Short Delivery Approval Approved</masterLabel>
+        <translation><!-- Short Delivery Approval Approved --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Short Delivery Approval Raised</masterLabel>
+        <translation><!-- Short Delivery Approval Raised --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

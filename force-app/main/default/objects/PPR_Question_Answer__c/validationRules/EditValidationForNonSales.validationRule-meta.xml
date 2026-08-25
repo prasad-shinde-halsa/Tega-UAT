@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>EditValidationForNonSales</fullName>
+    <active>true</active>
+    <errorConditionFormula>if( $Profile.Name != &apos;Sales&apos;, True,False ) &amp;&amp; if( $Profile.Name != &apos;System Administrator&apos;, True,False ) &amp;&amp; if( $Profile.Name != &apos;Regional Manager&apos;, True,False ) &amp;&amp; if( $Profile.Name != &apos;Ex-Com Leadership&apos;, True,False )</errorConditionFormula>
+    <errorMessage>Only Sales User can update the Answers.</errorMessage>
+</ValidationRule>

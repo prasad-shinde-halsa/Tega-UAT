@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Type__c</fullName>
+    <label>Type</label>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Ball</fullName>
+                <default>false</default>
+                <label>Ball</label>
+            </value>
+            <value>
+                <fullName>Cylpebs</fullName>
+                <default>false</default>
+                <label>Cylpebs</label>
+            </value>
+            <value>
+                <fullName>Rod</fullName>
+                <default>false</default>
+                <label>Rod</label>
+            </value>
+            <value>
+                <fullName>Autogenous</fullName>
+                <default>false</default>
+                <label>Autogenous</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

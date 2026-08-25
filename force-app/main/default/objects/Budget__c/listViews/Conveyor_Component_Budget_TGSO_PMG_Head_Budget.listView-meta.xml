@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Conveyor_Component_Budget_TGSO_PMG_Head_Budget</fullName>
+    <filterScope>Queue</filterScope>
+    <label>Conveyor Component-Budget-TG01-PMG Head</label>
+    <queue>Conveyor_Component_Budget_TG01_PMG_Head</queue>
+    <sharedTo>
+        <allInternalUsers></allInternalUsers>
+    </sharedTo>
+</ListView>

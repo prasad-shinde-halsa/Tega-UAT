@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Rubber Block Hardness --></label>
+    <name>Rubber_Block_Hardness__c</name>
+    <picklistValues>
+        <masterLabel>FRAS Grade</masterLabel>
+        <translation><!-- FRAS Grade --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>HR Grade</masterLabel>
+        <translation><!-- HR Grade --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>NR Grade</masterLabel>
+        <translation><!-- NR Grade --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>OGR Grade</masterLabel>
+        <translation><!-- OGR Grade --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>SHT Grade</masterLabel>
+        <translation><!-- SHT Grade --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>SK Grade</masterLabel>
+        <translation><!-- SK Grade --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

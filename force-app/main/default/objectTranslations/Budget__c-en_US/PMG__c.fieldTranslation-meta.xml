@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- PMG --></label>
+    <name>PMG__c</name>
+    <picklistValues>
+        <masterLabel>Conveyor Component</masterLabel>
+        <translation><!-- Conveyor Component --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Hydrocyclone</masterLabel>
+        <translation><!-- Hydrocyclone --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Mill</masterLabel>
+        <translation><!-- Mill --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Screen</masterLabel>
+        <translation><!-- Screen --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Trommel</masterLabel>
+        <translation><!-- Trommel --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Wear Component</masterLabel>
+        <translation><!-- Wear Component --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

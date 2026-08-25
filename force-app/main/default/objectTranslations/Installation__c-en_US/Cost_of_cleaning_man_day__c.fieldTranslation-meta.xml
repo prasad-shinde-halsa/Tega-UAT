@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Cost of cleaning man-day --></label>
+    <name>Cost_of_cleaning_man_day__c</name>
+</CustomFieldTranslation>

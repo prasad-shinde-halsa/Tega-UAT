@@ -1,0 +1,293 @@
+<template>
+    <lightning-card title="Create Installation Line Item " icon-name="custom:custom63">
+    <div class="slds-p-around_medium">
+        <lightning-record-edit-form record-id={installationId} object-api-name="Installation__c">
+             <!-- Customer Field -->
+             <lightning-input
+             type="text"
+             label="Customer"
+             value={customer}
+             disabled
+         ></lightning-input>
+
+         <!-- Part List Field -->
+         <lightning-input
+             type="text"
+             label="Partlist"
+             value={partlist}
+             disabled
+         ></lightning-input>
+
+         <!-- SO Number Field -->
+         <lightning-input
+             type="text"
+             label="SAP SO Number"
+             value={soNumber}
+             disabled
+         ></lightning-input>
+
+         <!-- Sales Order Field -->
+         <lightning-input
+             type="text"
+             label="Sales Order"
+             value={salesOrder}
+             onchange={handleSalesOrderChange}
+             disabled={isSalesOrderDisabled}
+         ></lightning-input>
+         </lightning-record-edit-form>
+    </div>
+           <!-- Dynamic Table -->
+            <div if:true={displayPLMtable}>
+           <table class="slds-table slds-table_cell-buffer slds-table_bordered">
+            <thead>
+                <tr>
+                    <th>Item</th>
+                    <th>Item Code</th>
+                    <th>Component</th>
+                    <th>Total Qty</th>
+                    <th>Inst. Qty</th>
+                    <th>Problem</th>
+                    <th>Dimension Received at Site(If any)</th>
+                    <th>Remarks</th>
+                    <th>Action</th>
+                </tr>
+            </thead>
+            <tbody>
+                <!-- Iterate over tableData to generate rows dynamically -->
+                <template for:each={tableData} for:item="row">
+                    <tr key={row.id}>
+                        <!-- Part List Dropdown -->
+                        <td>
+                            <lightning-combobox 
+                                data-id={row.id} 
+                                data-field="partlist" 
+                                options={partListOptions} 
+                                value={row.partlist} 
+                                onchange={handleFieldChange}
+                                required="true">
+                            </lightning-combobox>
+                        </td>
+                        <!-- Item Code -->
+                        <td>
+                            <lightning-input 
+                                data-id={row.id} 
+                                data-field="itemCode" 
+                                value={row.itemCode.ItemCode} 
+                                disabled>
+                            </lightning-input>
+                        </td>
+                        <!-- Component Dropdown -->
+                        <td>
+                            <lightning-combobox 
+                                data-id={row.id} 
+                                data-field="component" 
+                                label="Component"
+                                options={componentOptions} 
+                                value={row.component} 
+                                onchange={handleFieldChange}
+                                required="true">
+                            </lightning-combobox>
+                        </td>
+                        <!-- Total Quantity -->
+                        <td>
+                            <lightning-input 
+                                data-id={row.id}
+                                data-field="totalQuantity"
+                                label="Total Quantity"
+                                value={row.totalQuantity}
+                                disabled
+                            ></lightning-input>
+                        </td>
+                        <!-- Installation Quantity -->
+                        <td>
+                            <lightning-input 
+                                type="number" 
+                                data-id={row.id} 
+                                data-field="installationQuantity" 
+                                value={row.installationQuantity} 
+                                onchange={handleFieldChange}
+                                required="true">
+                            </lightning-input>
+                        </td>
+                        <!-- Problem Checkbox -->
+                        <td>
+                            <lightning-input 
+                                type="checkbox" 
+                                data-id={row.id} 
+                                data-field="problem" 
+                                checked={row.problem} 
+                                onchange={handleFieldChange}>
+                            </lightning-input>
+                        </td>
+                        <!-- Dimension -->
+                        <td>
+                            <lightning-input 
+                                type="text" 
+                                data-id={row.id} 
+                                data-field="dimension" 
+                                value={row.dimension} 
+                                onchange={handleFieldChange}>
+                            </lightning-input>
+                        </td>
+                        <!-- Remarks -->
+                        <td>
+                            <lightning-input 
+                                type="text" 
+                                data-id={row.id} 
+                                data-field="remarks" 
+                                value={row.remarks} 
+                                onchange={handleFieldChange}>
+                            </lightning-input>
+                        </td>
+                        <!-- Remove Row Button -->
+                        <td>
+                            <lightning-button-icon
+                                icon-name="utility:add"
+                                alternative-text="Add"
+                                variant="bare"
+                                onclick={handleAddRow}>
+                            </lightning-button-icon>
+                            <lightning-button-icon 
+                                icon-name="utility:delete"
+                                alternative-text="Remove"
+                                variant="bare"
+                                data-id={row.id}
+                                onclick={handleRemoveRow}>
+                            </lightning-button-icon>
+                        </td>
+                    </tr>
+                </template>
+            </tbody>
+        </table>
+    </div>
+    <div if:true={displaySOtable}>
+        <table class="slds-table slds-table_cell-buffer slds-table_bordered">
+            <thead>
+                <tr>
+                    <th>Item</th>
+                    <th>Item Code</th>
+                   <!--<th>Component</th>--> 
+                    <th>Total Qty</th>
+                    <th>Inst. Qty</th>
+                    <th>Problem</th>
+                    <th>Dimension Received at Site(If any)</th>
+                    <th>Remarks</th>
+                    <th>Action</th>
+                </tr>
+            </thead>
+            <tbody>
+                <!-- Iterate over tableData to generate rows dynamically -->
+                <template for:each={tableData2} for:item="row">
+                    <tr key={row.id}>
+                        <!-- Part List Dropdown -->
+                        <td>
+                            <lightning-combobox 
+                                data-id={row.id} 
+                                data-field="soDescription"  
+                                value={row.soDescription} 
+                                options={soOptions}
+                                onchange={handleSoChange} 
+                                required> 
+                            </lightning-combobox>
+                        </td>
+                        <!-- Item Code -->
+                        <td>
+                            <lightning-input 
+                                data-id={row.id} 
+                                data-field="itemCode" 
+                                value={row.itemCode} 
+                                disabled>
+                            </lightning-input>
+                        </td>
+                        <!-- Total Quantity -->
+                        <td>
+                            <lightning-input 
+                                data-id={row.id}
+                                data-field="quantity"
+                                label="Total Quantity"
+                                value={row.quantity}
+                                disabled
+                            ></lightning-input>
+                        </td>
+                        <!-- Installation Quantity -->
+                        <td>
+                            <lightning-input 
+                                type="number" 
+                                data-id={row.id} 
+                                data-field="installationQuantity" 
+                                value={row.installationQuantity} 
+                                onchange={handleSoChange}
+                                required>
+                            </lightning-input>
+                        </td>
+                        <!-- Problem Checkbox -->
+                        <td>
+                            <lightning-input 
+                                type="checkbox" 
+                                data-id={row.id} 
+                                data-field="problem" 
+                                checked={row.problem} 
+                                onchange={handleSoChange}>
+                            </lightning-input>
+                        </td>
+                        <!-- Dimension -->
+                        <td>
+                            <lightning-input 
+                                type="text" 
+                                data-id={row.id} 
+                                data-field="dimension" 
+                                value={row.dimension} 
+                                onchange={handleSoChange}>
+                            </lightning-input>
+                        </td>
+                        <!-- Remarks -->
+                        <td>
+                            <lightning-input 
+                                type="text" 
+                                data-id={row.id} 
+                                data-field="remarks" 
+                                value={row.remarks} 
+                                onchange={handleSoChange}>
+                            </lightning-input>
+                        </td>
+                        <!-- Remove Row Button -->
+                        <td>
+                            <lightning-button-icon
+                                icon-name="utility:add"
+                                alternative-text="Add"
+                                variant="bare"
+                                onclick={handleAddRowSo}>
+                            </lightning-button-icon>
+                            <lightning-button-icon 
+                                icon-name="utility:delete"
+                                alternative-text="Remove"
+                                variant="bare"
+                                data-id={row.id}
+                                onclick={handleRemoveRowSo}>
+                            </lightning-button-icon>
+                        </td>
+                    </tr>
+                </template>
+            </tbody>
+        </table>
+    </div>
+    <div if:true={displayManualtable}>
+        <p>This is under development, It will take sometime.
+            Thanks </p>
+    </div>
+    <div if:true={displayPLMtable} class="slds-align_absolute-center slds-m-top_medium">
+        <lightning-button 
+            label="Save" 
+            variant="brand" 
+            onclick={handleSave}>
+        </lightning-button>
+    </div>
+    <div if:true={displaySOtable} class="slds-align_absolute-center slds-m-top_medium">
+        <lightning-button 
+            label="Save" 
+            variant="brand" 
+            onclick={handleSaveSo}>
+        </lightning-button>
+    </div>
+    </lightning-card>
+</template>

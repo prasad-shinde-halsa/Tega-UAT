@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Zone_Priority_Selection__c</fullName>
+    <deleteConstraint>SetNull</deleteConstraint>
+    <label>Zone Priority Selection</label>
+    <referenceTo>Zone_Priority_Selection__c</referenceTo>
+    <relationshipLabel>Virtual Inventory Lines</relationshipLabel>
+    <relationshipName>Virtual_Inventory_Lines</relationshipName>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Lookup</type>
+</CustomField>

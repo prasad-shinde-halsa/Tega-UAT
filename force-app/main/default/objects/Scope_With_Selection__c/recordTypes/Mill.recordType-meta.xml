@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RecordType xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Mill</fullName>
+    <active>true</active>
+    <label>Mill</label>
+    <picklistValues>
+        <picklist>Item_Category__c</picklist>
+        <values>
+            <fullName>DynaPrime</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>DynaPulp</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>DynaSteel</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>DynaWear</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Others</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>UOM__c</picklist>
+        <values>
+            <fullName>Itemized with varied qty</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Set</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+</RecordType>

@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Fixing_Type__c</fullName>
+    <label>Fixing Type #</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>boltdown</fullName>
+                <default>false</default>
+                <label>boltdown</label>
+            </value>
+            <value>
+                <fullName>buttontype</fullName>
+                <default>false</default>
+                <label>buttontype</label>
+            </value>
+            <value>
+                <fullName>bird beak</fullName>
+                <default>false</default>
+                <label>bird beak</label>
+            </value>
+            <value>
+                <fullName>Pin and sleeve</fullName>
+                <default>false</default>
+                <label>Pin and sleeve</label>
+            </value>
+            <value>
+                <fullName>cross tension</fullName>
+                <default>false</default>
+                <label>cross tension</label>
+            </value>
+            <value>
+                <fullName>modular integrated lug panels</fullName>
+                <default>false</default>
+                <label>modular integrated lug panels</label>
+            </value>
+            <value>
+                <fullName>V-type fixing</fullName>
+                <default>false</default>
+                <label>V-type fixing</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

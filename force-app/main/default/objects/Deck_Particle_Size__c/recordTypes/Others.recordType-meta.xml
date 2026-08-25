@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RecordType xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Others</fullName>
+    <active>true</active>
+    <label>Lower Deck/Decks (it will have two types of PSD: OS, US)</label>
+    <picklistValues>
+        <picklist>Type__c</picklist>
+        <values>
+            <fullName>Oversize Particle Distribution</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Undersize Particle Distribution</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+</RecordType>

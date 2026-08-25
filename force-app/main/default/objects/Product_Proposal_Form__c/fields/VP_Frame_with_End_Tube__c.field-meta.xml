@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>VP_Frame_with_End_Tube__c</fullName>
+    <label>VP Frame with End Tube</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <controllingField>Product_Sub_Type__c</controllingField>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Straight tube</fullName>
+                <default>false</default>
+                <label>Straight tube</label>
+            </value>
+            <value>
+                <fullName>With Offeset</fullName>
+                <default>false</default>
+                <label>With Offeset</label>
+            </value>
+        </valueSetDefinition>
+        <valueSettings>
+            <controllingFieldValue>Internal Scraper (VP)</controllingFieldValue>
+            <controllingFieldValue>Internal Scraper (DP)</controllingFieldValue>
+            <valueName>Straight tube</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Internal Scraper (VP)</controllingFieldValue>
+            <controllingFieldValue>Internal Scraper (DP)</controllingFieldValue>
+            <valueName>With Offeset</valueName>
+        </valueSettings>
+    </valueSet>
+</CustomField>

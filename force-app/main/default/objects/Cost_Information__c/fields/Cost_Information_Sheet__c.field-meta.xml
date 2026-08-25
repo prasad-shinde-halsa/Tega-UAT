@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Cost_Information_Sheet__c</fullName>
+    <label>Cost Information Sheet</label>
+    <referenceTo>Cost_Information_sheet__c</referenceTo>
+    <relationshipLabel>Cost Information</relationshipLabel>
+    <relationshipName>Cost_Information</relationshipName>
+    <relationshipOrder>0</relationshipOrder>
+    <reparentableMasterDetail>false</reparentableMasterDetail>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>MasterDetail</type>
+    <writeRequiresMasterRead>false</writeRequiresMasterRead>
+</CustomField>

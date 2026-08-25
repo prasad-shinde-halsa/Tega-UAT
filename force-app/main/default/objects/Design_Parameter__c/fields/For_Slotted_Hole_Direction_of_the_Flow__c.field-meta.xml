@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>For_Slotted_Hole_Direction_of_the_Flow__c</fullName>
+    <label>For Slotted Hole, Direction of the Flow</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Along the Flow</fullName>
+                <default>false</default>
+                <label>Along the Flow</label>
+            </value>
+            <value>
+                <fullName>Across the Flow</fullName>
+                <default>false</default>
+                <label>Across the Flow</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

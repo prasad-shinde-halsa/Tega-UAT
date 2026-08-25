@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Apperture Shape # --></label>
+    <name>Apperture_Shape__c</name>
+    <picklistValues>
+        <masterLabel>circular</masterLabel>
+        <translation><!-- circular --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>others</masterLabel>
+        <translation><!-- others --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>slotted</masterLabel>
+        <translation><!-- slotted --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>square</masterLabel>
+        <translation><!-- square --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>tear drop</masterLabel>
+        <translation><!-- tear drop --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

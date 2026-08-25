@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Condition of Bottom-Bearing housing --></label>
+    <name>Condition_of_Bottom_Bearing_housing__c</name>
+    <picklistValues>
+        <masterLabel>Bearing damaged-needs replacement</masterLabel>
+        <translation><!-- Bearing damaged-needs replacement --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Working fine</masterLabel>
+        <translation><!-- Working fine --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

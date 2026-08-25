@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Failure_Category_as_per_CCM__c</fullName>
+    <label>Failure Category as per CCM</label>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>MultiselectPicklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Bolt Breakage</fullName>
+                <default>false</default>
+                <label>Bolt Breakage</label>
+            </value>
+            <value>
+                <fullName>De-bonding</fullName>
+                <default>false</default>
+                <label>De-bonding</label>
+            </value>
+            <value>
+                <fullName>Poor Life of Rubber / Faster Wear</fullName>
+                <default>false</default>
+                <label>Poor Life of Rubber / Faster Wear</label>
+            </value>
+            <value>
+                <fullName>Aluminium Track Worn Out</fullName>
+                <default>false</default>
+                <label>Aluminium Track Worn Out</label>
+            </value>
+            <value>
+                <fullName>Aluminium Track channel-gap smal</fullName>
+                <default>false</default>
+                <label>Aluminium Track channel-gap smal</label>
+            </value>
+            <value>
+                <fullName>Fitment Problem</fullName>
+                <default>false</default>
+                <label>Fitment Problem</label>
+            </value>
+            <value>
+                <fullName>Bolt Head and Clamp Block Mismatching</fullName>
+                <default>false</default>
+                <label>Bolt Head and Clamp Block Mismatching</label>
+            </value>
+            <value>
+                <fullName>Short Supply</fullName>
+                <default>false</default>
+                <label>Short Supply</label>
+            </value>
+            <value>
+                <fullName>Delayed Supply</fullName>
+                <default>false</default>
+                <label>Delayed Supply</label>
+            </value>
+            <value>
+                <fullName>Wrong Supply</fullName>
+                <default>false</default>
+                <label>Wrong Supply</label>
+            </value>
+            <value>
+                <fullName>Packaging Complaint</fullName>
+                <default>false</default>
+                <label>Packaging Complaint</label>
+            </value>
+            <value>
+                <fullName>Hardox Crack &amp; Faster Wear</fullName>
+                <default>false</default>
+                <label>Hardox Crack &amp; Faster Wear</label>
+            </value>
+            <value>
+                <fullName>Casting Breakage / Crack / Faster Wear</fullName>
+                <default>false</default>
+                <label>Casting Breakage / Crack / Faster Wear</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+    <visibleLines>4</visibleLines>
+</CustomField>

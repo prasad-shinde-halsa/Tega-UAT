@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- ISP Activities --></label>
+    <name>ISP_Activities__c</name>
+    <picklistValues>
+        <masterLabel>Contact Map Creation</masterLabel>
+        <translation><!-- Contact Map Creation --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Long Terms Contract Introduction</masterLabel>
+        <translation><!-- Long Terms Contract Introduction --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>New Contact Initial Visits</masterLabel>
+        <translation><!-- New Contact Initial Visits --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>New Enquiry Closing Visit (PA)</masterLabel>
+        <translation><!-- New Enquiry Closing Visit (PA) --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>New Enquiry Data Collection/ Questionnaire</masterLabel>
+        <translation><!-- New Enquiry Data Collection/ Questionnaire --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>New Enquiry First Visit (DA)</masterLabel>
+        <translation><!-- New Enquiry First Visit (DA) --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>New Enquiry Generation</masterLabel>
+        <translation><!-- New Enquiry Generation --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>PMG Cheat Sheet Filled Up</masterLabel>
+        <translation><!-- PMG Cheat Sheet Filled Up --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>PMG Site Visit</masterLabel>
+        <translation><!-- PMG Site Visit --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>PMG Site Visit/ Presentation</masterLabel>
+        <translation><!-- PMG Site Visit/ Presentation --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Scanning Visit</masterLabel>
+        <translation><!-- Scanning Visit --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Senior Exec Visit</masterLabel>
+        <translation><!-- Senior Exec Visit --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Service Support Visit (Installation)</masterLabel>
+        <translation><!-- Service Support Visit (Installation) --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Service Support Visit (Inventory)</masterLabel>
+        <translation><!-- Service Support Visit (Inventory) --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Service Support Visit (Wear Measurement)</masterLabel>
+        <translation><!-- Service Support Visit (Wear Measurement) --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>TSS Site Visit/ Presentation</masterLabel>
+        <translation><!-- TSS Site Visit/ Presentation --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

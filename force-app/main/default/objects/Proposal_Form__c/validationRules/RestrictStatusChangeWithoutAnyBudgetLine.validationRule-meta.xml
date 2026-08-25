@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>RestrictStatusChangeWithoutAnyBudgetLine</fullName>
+    <active>false</active>
+    <description>Restrict Status Change Without Any Budget Line Match</description>
+    <errorConditionFormula>AND(NOT(ISNEW()),
+    ISCHANGED(Status__c),
+    ISPICKVAL(Status__c,&apos;Submitted to PMG&apos;),
+    ISBLANK(DC_Budget_Line_Items__c)
+)</errorConditionFormula>
+    <errorMessage>Budget line item should be associated with Proposal Form before it is submitted.</errorMessage>
+</ValidationRule>

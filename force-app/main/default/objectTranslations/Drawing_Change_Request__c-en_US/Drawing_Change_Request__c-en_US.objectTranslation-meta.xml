@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Drawing Change</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Drawing Change</value>
+    </caseValues>
+    <layouts>
+        <layout>Drawing Change Recommendation</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- Fields --></label>
+            <section>Fields</section>
+        </sections>
+        <sections>
+            <label><!-- System Information --></label>
+            <section>System Information</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Drawing Change Request Layout</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- System Information --></label>
+            <section>System Information</section>
+        </sections>
+    </layouts>
+    <quickActions>
+        <label><!-- Close  DCR --></label>
+        <name>Close_DCR</name>
+    </quickActions>
+    <quickActions>
+        <label><!-- Create DCR Lines --></label>
+        <name>Create_DCR_Lines</name>
+    </quickActions>
+    <quickActions>
+        <label><!-- Mark as Invalid --></label>
+        <name>Mark_as_Invalid</name>
+    </quickActions>
+    <quickActions>
+        <label><!-- Submit DCR --></label>
+        <name>Send_DCR_To_PMG</name>
+    </quickActions>
+    <recordTypes>
+        <label><!-- Drawing Change Recommendation --></label>
+        <name>Drawing_Change_Recommendation</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- Drawing Change Request --></label>
+        <name>Drawing_Change_Request</name>
+    </recordTypes>
+    <startsWith>Consonant</startsWith>
+    <validationRules>
+        <errorMessage><!-- Please Fill Partlist or Sales Order --></errorMessage>
+        <name>Any_one_field_should_be_there</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Cannot modify DCR when Status is Submitted --></errorMessage>
+        <name>Block_Edits_When_Submitted</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Cannot modify when status in Closed or Invalid --></errorMessage>
+        <name>No_Edits_Allowed_on_Invalid</name>
+    </validationRules>
+</CustomObjectTranslation>

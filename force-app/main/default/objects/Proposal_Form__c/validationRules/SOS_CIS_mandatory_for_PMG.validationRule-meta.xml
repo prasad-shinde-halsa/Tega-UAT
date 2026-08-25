@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>SOS_CIS_mandatory_for_PMG</fullName>
+    <active>true</active>
+    <description>“At least 1 scope of supply and 1 cost information sheet value” are mandatory for PMG.</description>
+    <errorConditionFormula>AND($Profile.Name = &quot;PMG&quot;,
+    NOT(ISNEW()),
+    ISCHANGED(Status__c),
+    OR(Count_Scope_of_Supply__c = 0,
+    Count_Cost_Information_Sheet__c = 0))</errorConditionFormula>
+    <errorMessage>At least 1 scope of supply and 1 cost information sheet value are mandatory for PMG.</errorMessage>
+</ValidationRule>

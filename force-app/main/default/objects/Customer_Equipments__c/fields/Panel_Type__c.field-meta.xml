@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Panel_Type__c</fullName>
+    <label>Panel Type #</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Panelcord</fullName>
+                <default>false</default>
+                <label>Panelcord</label>
+            </value>
+            <value>
+                <fullName>Steel Embedded Bolt Down Rubber</fullName>
+                <default>false</default>
+                <label>Steel Embedded Bolt Down Rubber</label>
+            </value>
+            <value>
+                <fullName>Cross Tension Rubber</fullName>
+                <default>false</default>
+                <label>Cross Tension Rubber</label>
+            </value>
+            <value>
+                <fullName>Cross Tension PU</fullName>
+                <default>false</default>
+                <label>Cross Tension PU</label>
+            </value>
+            <value>
+                <fullName>Modular Pin and Sleeve Type</fullName>
+                <default>false</default>
+                <label>Modular Pin and Sleeve Type</label>
+            </value>
+            <value>
+                <fullName>Dual Hardness</fullName>
+                <default>false</default>
+                <label>Dual Hardness</label>
+            </value>
+            <value>
+                <fullName>Anti Clogging</fullName>
+                <default>false</default>
+                <label>Anti Clogging</label>
+            </value>
+            <value>
+                <fullName>Flipflo with Leg Panels</fullName>
+                <default>false</default>
+                <label>Flipflo with Leg Panels</label>
+            </value>
+            <value>
+                <fullName>Flipflo without Leg Panels</fullName>
+                <default>false</default>
+                <label>Flipflo without Leg Panels</label>
+            </value>
+            <value>
+                <fullName>Steel Embedded Bolt Down PU</fullName>
+                <default>false</default>
+                <label>Steel Embedded Bolt Down PU</label>
+            </value>
+            <value>
+                <fullName>Rapido</fullName>
+                <default>false</default>
+                <label>Rapido</label>
+            </value>
+            <value>
+                <fullName>Flexi Panels</fullName>
+                <default>false</default>
+                <label>Flexi Panels</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

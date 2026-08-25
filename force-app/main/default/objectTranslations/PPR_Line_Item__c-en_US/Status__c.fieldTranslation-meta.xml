@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Status --></label>
+    <name>Status__c</name>
+    <picklistValues>
+        <masterLabel>Approved by CCM</masterLabel>
+        <translation><!-- Approved by CCM --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Approved by MD</masterLabel>
+        <translation><!-- Approved by MD --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Approved by QH</masterLabel>
+        <translation><!-- Approved by QH --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Closed</masterLabel>
+        <translation><!-- Closed --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>New</masterLabel>
+        <translation><!-- New --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Rejected</masterLabel>
+        <translation><!-- Rejected --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Request Pending With CCM</masterLabel>
+        <translation><!-- Request Pending With CCM --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Request pending with MD</masterLabel>
+        <translation><!-- Request pending with MD --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Request pending with QH</masterLabel>
+        <translation><!-- Request pending with QH --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Submit to Department</masterLabel>
+        <translation><!-- Submit to Department --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

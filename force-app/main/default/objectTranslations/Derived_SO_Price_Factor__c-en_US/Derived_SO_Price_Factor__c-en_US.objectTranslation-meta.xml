@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Derived SO Price Factor</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Derived SO Price Factors</value>
+    </caseValues>
+    <layouts>
+        <layout>Derived SO Price Factor Layout</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+    </layouts>
+    <startsWith>Consonant</startsWith>
+    <validationRules>
+        <errorMessage><!-- SO Price Factor Field cannot be empty. Put &apos;0&apos; as minimum value. --></errorMessage>
+        <name>SO_Price_Factor</name>
+    </validationRules>
+</CustomObjectTranslation>

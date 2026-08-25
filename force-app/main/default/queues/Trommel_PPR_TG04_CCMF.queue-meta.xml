@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Queue xmlns="http://soap.sforce.com/2006/04/metadata">
+    <doesIncludeBosses>true</doesIncludeBosses>
+    <doesSendEmailToMembers>false</doesSendEmailToMembers>
+    <name>Trommel-PPR-TG04-CCMF</name>
+    <queueMembers>
+        <users>
+            <user>alay.dave@tegaindustries.com</user>
+            <user>punit.kalra@tegaindustries.com</user>
+            <user>rupak.das@tegaindustries.com</user>
+        </users>
+    </queueMembers>
+    <queueSobject>
+        <sobjectType>PPR_Line_Item__c</sobjectType>
+    </queueSobject>
+    <queueSobject>
+        <sobjectType>Task</sobjectType>
+    </queueSobject>
+</Queue>

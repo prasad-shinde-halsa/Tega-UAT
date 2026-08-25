@@ -1,0 +1,17 @@
+<template>
+    <div class="slds-grid slds-wrap slds-p-around_medium" style="margin-top: 10px; border: auto;">
+            <div class="slds-col slds-size_1-of-1 slds-medium-size_1-of-2 slds-p-horizontal_small"
+                style="border: auto;">
+                <lightning-combobox label="Select Budget Month" value={selectedMonth} options={monthOptions}
+                    onchange={handleMonthChange} class="neon-combobox">
+                </lightning-combobox>
+            </div>
+            <div class="slds-col slds-size_1-of-1 slds-medium-size_1-of-2 slds-p-horizontal_small"
+                style="border: auto;">
+                <lightning-input type="string" label="Selected Month Order Value" disabled="true" class="neon-input"
+                    value={formattedSelectedMonthValue}>
+                </lightning-input>
+                
+            </div>
+    </div>
+</template>

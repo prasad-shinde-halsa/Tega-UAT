@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Inform_Desired_Life__c</fullName>
+    <externalId>false</externalId>
+    <inlineHelpText>Existing life should be captured in Design Parameter form (DP TR): Life of the structure, life of the panels and life of the spiral (hours)</inlineHelpText>
+    <label>Inform Desired Life</label>
+    <length>255</length>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

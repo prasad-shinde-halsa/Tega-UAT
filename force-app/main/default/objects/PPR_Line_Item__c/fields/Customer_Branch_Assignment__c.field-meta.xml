@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Customer_Branch_Assignment__c</fullName>
+    <deleteConstraint>SetNull</deleteConstraint>
+    <label>Customer company assignment</label>
+    <lookupFilter>
+        <active>true</active>
+        <errorMessage>Check Customer company assignment</errorMessage>
+        <filterItems>
+            <field>$Source.Customer_Name__c</field>
+            <operation>equals</operation>
+            <valueField>Customer_Sales_Organization__c.Customer__r.Id</valueField>
+        </filterItems>
+        <isOptional>false</isOptional>
+    </lookupFilter>
+    <referenceTo>Customer_Sales_Organization__c</referenceTo>
+    <relationshipName>Product_Complain_Problem_Reports</relationshipName>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Lookup</type>
+</CustomField>

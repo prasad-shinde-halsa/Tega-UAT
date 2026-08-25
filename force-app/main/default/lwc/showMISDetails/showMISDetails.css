@@ -1,0 +1,14 @@
+.slds-truncate {
+    max-width: 150px; /* Adjust based on content */
+    word-wrap: break-word;
+    text-align: center;
+    overflow: hidden;
+    text-overflow: ellipsis; /* Adds ellipsis for long text */
+    white-space: normal; /* Allows wrapping */
+    margin-left: 20px;
+    margin-right: 30px;
+}
+.backgroundInverse {
+    position: relative;
+    background-color: #16325c;
+}

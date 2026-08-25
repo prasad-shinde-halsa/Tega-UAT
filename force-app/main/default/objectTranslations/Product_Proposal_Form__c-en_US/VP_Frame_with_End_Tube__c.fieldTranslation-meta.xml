@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- VP Frame with End Tube --></label>
+    <name>VP_Frame_with_End_Tube__c</name>
+    <picklistValues>
+        <masterLabel>Straight tube</masterLabel>
+        <translation><!-- Straight tube --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>With Offeset</masterLabel>
+        <translation><!-- With Offeset --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

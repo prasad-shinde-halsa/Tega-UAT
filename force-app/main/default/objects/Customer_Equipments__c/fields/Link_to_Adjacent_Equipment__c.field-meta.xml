@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Link_to_Adjacent_Equipment__c</fullName>
+    <deleteConstraint>SetNull</deleteConstraint>
+    <description>To know what equipments are adjacent to this equipment. Sometimes the output of adjacent equipment are inputs to the current equipment.</description>
+    <inlineHelpText>Please remember to link the upstream mill using this feature. If an upstream mill is linked, please view/update the mill details by clicking on the linked equipment.</inlineHelpText>
+    <label>Link to Adjacent Equipment Upstream</label>
+    <lookupFilter>
+        <active>true</active>
+        <filterItems>
+            <field>Customer_Equipments__c.Customer__c</field>
+            <operation>equals</operation>
+            <valueField>$Source.Customer__c</valueField>
+        </filterItems>
+        <isOptional>false</isOptional>
+    </lookupFilter>
+    <referenceTo>Customer_Equipments__c</referenceTo>
+    <relationshipLabel>Customer Equipments (Link to Adjacent Equipment)</relationshipLabel>
+    <relationshipName>Customer_Equipments2</relationshipName>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Lookup</type>
+</CustomField>

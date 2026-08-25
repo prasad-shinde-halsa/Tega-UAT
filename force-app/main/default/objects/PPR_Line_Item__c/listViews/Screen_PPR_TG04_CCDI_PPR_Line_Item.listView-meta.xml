@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Screen_PPR_TG04_CCDI_PPR_Line_Item</fullName>
+    <filterScope>Queue</filterScope>
+    <label>Screen-PPR-TG04-CCDI</label>
+    <queue>Screen_PPR_TG04_CCDI</queue>
+    <sharedTo>
+        <allInternalUsers></allInternalUsers>
+    </sharedTo>
+</ListView>

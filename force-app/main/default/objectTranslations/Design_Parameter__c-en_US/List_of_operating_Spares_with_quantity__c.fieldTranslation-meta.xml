@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- This is applied for new cases. No. of Spares to be provided in the first supply --></help>
+    <label><!-- List of Operating Spares with Quantity --></label>
+    <name>List_of_operating_Spares_with_quantity__c</name>
+</CustomFieldTranslation>

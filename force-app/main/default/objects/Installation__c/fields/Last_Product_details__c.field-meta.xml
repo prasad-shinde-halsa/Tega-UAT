@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Last_Product_details__c</fullName>
+    <label>Last Product details</label>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Tega’s Product</fullName>
+                <default>false</default>
+                <label>Tega’s Product</label>
+            </value>
+            <value>
+                <fullName>Hosch’s Product</fullName>
+                <default>false</default>
+                <label>Hosch’s Product</label>
+            </value>
+            <value>
+                <fullName>Competitor’s Product</fullName>
+                <default>false</default>
+                <label>Competitor’s Product</label>
+            </value>
+            <value>
+                <fullName>No product</fullName>
+                <default>false</default>
+                <label>No product</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

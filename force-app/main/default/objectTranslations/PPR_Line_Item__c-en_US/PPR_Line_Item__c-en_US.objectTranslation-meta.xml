@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Product Problem/Customer Complain Report</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Product Problem/Customer Complain Report</value>
+    </caseValues>
+    <fieldSets>
+        <label><!-- RCA Fields --></label>
+        <name>RCA_Fields</name>
+    </fieldSets>
+    <layouts>
+        <layout>PPR Line Item Layout</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- FRO Section --></label>
+            <section>FRO Section</section>
+        </sections>
+    </layouts>
+    <quickActions>
+        <label><!-- Create CAPA Entry --></label>
+        <name>Create_CAPA_Entry</name>
+    </quickActions>
+    <quickActions>
+        <label><!-- Edit Customer Branch Assignment --></label>
+        <name>Edit_Customer_Branch_Assignment</name>
+    </quickActions>
+    <quickActions>
+        <label><!-- Enter Failure Category --></label>
+        <name>Enter_Failure_Category</name>
+    </quickActions>
+    <quickActions>
+        <label><!-- FRO : Submit for Approval --></label>
+        <name>FRO_Submit_for_Approval</name>
+    </quickActions>
+    <quickActions>
+        <label><!-- Product Selection --></label>
+        <name>Product_Selection</name>
+    </quickActions>
+    <quickActions>
+        <label><!-- Reopen --></label>
+        <name>Reopen</name>
+    </quickActions>
+    <quickActions>
+        <label><!-- Send Acceptance Note --></label>
+        <name>Send_Acceptance_Note</name>
+    </quickActions>
+    <quickActions>
+        <label><!-- Submit to CCM --></label>
+        <name>Submit_to_CCM</name>
+    </quickActions>
+    <quickActions>
+        <label><!-- Submit to Department --></label>
+        <name>Submit_to_Department</name>
+    </quickActions>
+    <sharingReasons>
+        <label><!-- accessSharing --></label>
+        <name>accessSharing</name>
+    </sharingReasons>
+    <startsWith>Consonant</startsWith>
+    <validationRules>
+        <errorMessage><!-- Cannot modify when record is closed --></errorMessage>
+        <name>Close_Status</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- If Customer Branch Assignment is blank then the record should be blank and cannot be updated. --></errorMessage>
+        <name>If_CBA_isblank_then_rec_cant_be_updated</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- SBO cannot edit this field --></errorMessage>
+        <name>SBO_Rule</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Sales Rep cannot edit --></errorMessage>
+        <name>Sales_Rep_Validation</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Installation Date is Mandatory if not installed yet. --></errorMessage>
+        <name>Validation_on_Installation_Date</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Please Fill this field. --></errorMessage>
+        <name>Validation_on_PPRLin_DraftinRCAMandatory</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Please Fillll this field. --></errorMessage>
+        <name>Validation_on_PPRLin_DrawingRCAMandatory</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Please Fill this field. --></errorMessage>
+        <name>Validation_on_PPRLin_LogistiRCAMandatory</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Please Fill this field. --></errorMessage>
+        <name>Validation_on_PPRLin_ManufacRCAMandatory</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Please Fill this field. --></errorMessage>
+        <name>Validation_on_PPRLin_OfferTRCAMandatory</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Please Fill this field. --></errorMessage>
+        <name>Validation_on_PPRLin_OthersRCAMandatory</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Please Fill this field. --></errorMessage>
+        <name>Validation_on_PPRLin_PurchasRCAMandatory</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Please Fill this field. --></errorMessage>
+        <name>Validation_on_PPRLin_QualitQRCAMandatory</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Please Fill this field. --></errorMessage>
+        <name>Validation_on_PPRLin_QualityRCAMandatory</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Please Fill this field. --></errorMessage>
+        <name>Validation_on_PPRLin_SalesBRCAMandatory</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Please Fill this field. --></errorMessage>
+        <name>Validation_on_PPRLin_SalesRCAMandatory</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Please Fill this field. --></errorMessage>
+        <name>Validation_on_PPRLin_TSSRCAMandatory</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Problem Detection Date can not be in future. --></errorMessage>
+        <name>Validation_on_Problem_Detection_Date</name>
+    </validationRules>
+</CustomObjectTranslation>

@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>RestrictPreviousStageMovementForNonAdmin</fullName>
+    <active>true</active>
+    <description>Prevents Non System Admins from moving to a previous stage; only allows moving to next stages.</description>
+    <errorConditionFormula>AND(
+$Profile.Name  &lt;&gt; &quot;System Administrator&quot;,
+ISCHANGED(Status__c),
+CASE(Status__c,
+&quot;Draft&quot;, 1,
+&quot;Submitted&quot;, 2,
+&quot;1st Level Approved&quot;, 3,
+&quot;2nd Level Approved&quot;, 4,
+&quot;3rd Level Approved&quot;, 5,
+&quot;4th Level Approved&quot;, 6,
+0
+) &lt; CASE(PRIORVALUE(Status__c),
+&quot;Draft&quot;, 1,
+&quot;Submitted&quot;, 2,
+&quot;1st Level Approved&quot;, 3,
+&quot;2nd Level Approved&quot;, 4,
+&quot;3rd Level Approved&quot;, 5,
+&quot;4th Level Approved&quot;, 6,
+0
+)
+)</errorConditionFormula>
+    <errorMessage>You do not have the necessary permissions to go back to the previous stage.</errorMessage>
+</ValidationRule>

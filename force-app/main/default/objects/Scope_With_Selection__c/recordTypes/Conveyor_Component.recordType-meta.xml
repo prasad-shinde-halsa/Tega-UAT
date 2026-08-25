@@ -1,0 +1,284 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RecordType xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Conveyor_Component</fullName>
+    <active>true</active>
+    <label>Conveyor Component</label>
+    <picklistValues>
+        <picklist>Item_Category__c</picklist>
+        <values>
+            <fullName>Air Blaster</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>B6</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>B6C</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>B6RE</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>B9S</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>C series</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Centrax</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Ceradisc</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Cerahard Liner</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Ceramic Liner</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Combination Liners</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Cryston</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>D Plough</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>DynaPrime</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>DynaPulp</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>DynaSteel</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>DynaWear</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Easy Adjustable</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Eco Flip</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Engineering Chute</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Filter Press Diaphragm %28Green Dog%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Friflo</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>HDPUL</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Jumbo</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Misc%2E</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Mosaic Liner</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Others</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>PU Cross tension</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>PU Flexi for screen</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>PU Flipflo leg type</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>PU Liner</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>PU V type panel</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>PU birdsbeak</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>PU bolt down</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>PU button type half</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>PU flipflo non leg type</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>PU modular button type</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>PU modular pin %26 Lug</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>PU rapido</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Pensen Smart Liner</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Polyurethane %28PU%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Rubber</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Rubber Cross tension</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Rubber Liner</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Rubber Modular Pin%26Lug</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Rubber Modular button type</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Rubber Panel Cord</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Rubber Panel cord with rider bar</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Rubber Rapido</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Rubber bolt down</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>SB-PM Liner</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Single Wing</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Slipex</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Spillex</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Trommel PU  panel bolt down</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Trommel PU modular panel</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Trommel PU spiral</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Trommel PU spiral reducing pitch</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Trommel Rubber modular panel</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Trommel Rubber panel bolt down</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Trommel Rubber spiral</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Trommel Rubber spiral reducing pitch</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Trommel structure</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Trutrac</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>UHMWPE</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>V Plough</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>UOM__c</picklist>
+        <values>
+            <fullName>Itemized with varied qty</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Set</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+</RecordType>

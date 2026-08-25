@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- Inform in the “Additional Information” field the operating hours per day, month or year --></help>
+    <label><!-- Equipment Availability (%) --></label>
+    <name>Equipment__c</name>
+</CustomFieldTranslation>

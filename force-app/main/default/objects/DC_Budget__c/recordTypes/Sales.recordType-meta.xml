@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RecordType xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Sales</fullName>
+    <active>true</active>
+    <compactLayoutAssignment>Budget_Header</compactLayoutAssignment>
+    <label>Sales</label>
+    <picklistValues>
+        <picklist>Financial_Year__c</picklist>
+        <values>
+            <fullName>2021-22</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>2023-24</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>2024-25</fullName>
+            <default>true</default>
+        </values>
+        <values>
+            <fullName>2025-26</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>2026-27</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>2027-28</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>2028-29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>2029-30</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Status__c</picklist>
+        <values>
+            <fullName>1st Level Approved</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>2nd Level Approved</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>3rd Level Approved</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>4th Level Approved</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Draft</fullName>
+            <default>true</default>
+        </values>
+        <values>
+            <fullName>Submitted</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+</RecordType>

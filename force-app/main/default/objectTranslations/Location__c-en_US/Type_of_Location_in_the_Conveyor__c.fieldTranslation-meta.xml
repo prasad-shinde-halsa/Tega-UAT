@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- To identify at what location of the conveyor the product is installed --></help>
+    <label><!-- Type of Location in the Conveyor --></label>
+    <name>Type_of_Location_in_the_Conveyor__c</name>
+    <picklistValues>
+        <masterLabel>CARRYING SIDE</masterLabel>
+        <translation><!-- CARRYING SIDE --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>HEAD END</masterLabel>
+        <translation><!-- HEAD END --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>LOADING POINT</masterLabel>
+        <translation><!-- LOADING POINT --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>RETURN SIDE</masterLabel>
+        <translation><!-- RETURN SIDE --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>TAIL END</masterLabel>
+        <translation><!-- TAIL END --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

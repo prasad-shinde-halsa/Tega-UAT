@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Lost to Competitor --></label>
+    <name>Lost_to_Competitors__c</name>
+    <picklistValues>
+        <masterLabel>ABC Rubber Products</masterLabel>
+        <translation><!-- ABC Rubber Products --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>AKW</masterLabel>
+        <translation><!-- AKW --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>BMD ENGINEERING SOLUTIONS</masterLabel>
+        <translation><!-- BMD ENGINEERING SOLUTIONS --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Bhajjanka spark</masterLabel>
+        <translation><!-- Bhajjanka spark --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Cavex – Weir Minerals</masterLabel>
+        <translation><!-- Cavex – Weir Minerals --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Champion</masterLabel>
+        <translation><!-- Champion --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Elastochem</masterLabel>
+        <translation><!-- Elastochem --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Elastomers</masterLabel>
+        <translation><!-- Elastomers --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Elecmetal</masterLabel>
+        <translation><!-- Elecmetal --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Eurogama</masterLabel>
+        <translation><!-- Eurogama --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>FL Smidth</masterLabel>
+        <translation><!-- FL Smidth --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Flexco</masterLabel>
+        <translation><!-- Flexco --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Fukasa</masterLabel>
+        <translation><!-- Fukasa --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Jyoti Cero</masterLabel>
+        <translation><!-- Jyoti Cero --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Kaveri</masterLabel>
+        <translation><!-- Kaveri --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Krebs – FL Smidth</masterLabel>
+        <translation><!-- Krebs – FL Smidth --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Martin Engineering</masterLabel>
+        <translation><!-- Martin Engineering --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Metso</masterLabel>
+        <translation><!-- Metso --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Metso Minerals</masterLabel>
+        <translation><!-- Metso Minerals --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Multo-tech</masterLabel>
+        <translation><!-- Multo-tech --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>None</masterLabel>
+        <translation><!-- None --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Others</masterLabel>
+        <translation><!-- Others --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Power Red</masterLabel>
+        <translation><!-- Power Red --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Premier Rubber Mills</masterLabel>
+        <translation><!-- Premier Rubber Mills --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Runwell Conveyor</masterLabel>
+        <translation><!-- Runwell Conveyor --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Sadguru Polymers</masterLabel>
+        <translation><!-- Sadguru Polymers --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Sakar Rubber</masterLabel>
+        <translation><!-- Sakar Rubber --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Schenck Process</masterLabel>
+        <translation><!-- Schenck Process --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Screen Ex</masterLabel>
+        <translation><!-- Screen Ex --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Sigma</masterLabel>
+        <translation><!-- Sigma --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Sunshine Rubbers</masterLabel>
+        <translation><!-- Sunshine Rubbers --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Swagat Urethane</masterLabel>
+        <translation><!-- Swagat Urethane --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Swagath</masterLabel>
+        <translation><!-- Swagath --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Syno Tech</masterLabel>
+        <translation><!-- Syno Tech --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Thejo Engineering Limited</masterLabel>
+        <translation><!-- Thejo Engineering Limited --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Trelleborg AB</masterLabel>
+        <translation><!-- Trelleborg AB --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>WINTECH INDUSTRIAL TOOLS &amp; MACHINERIES</masterLabel>
+        <translation><!-- WINTECH INDUSTRIAL TOOLS &amp; MACHINERIES --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Waidhan Rubber</masterLabel>
+        <translation><!-- Waidhan Rubber --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Weir Group</masterLabel>
+        <translation><!-- Weir Group --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Weir Minerals</masterLabel>
+        <translation><!-- Weir Minerals --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

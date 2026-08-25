@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Part_List__c</fullName>
+    <deleteConstraint>SetNull</deleteConstraint>
+    <label>Part List</label>
+    <lookupFilter>
+        <active>true</active>
+        <errorMessage>Part List&apos;s Customer should be same as Budget&apos;s Customer</errorMessage>
+        <filterItems>
+            <field>$Source.Customer__c</field>
+            <operation>equals</operation>
+            <valueField>Part_List__c.Customer__c</valueField>
+        </filterItems>
+        <infoMessage>Part List&apos;s Customer should be same as Budget&apos;s Customer</infoMessage>
+        <isOptional>false</isOptional>
+    </lookupFilter>
+    <referenceTo>Part_List__c</referenceTo>
+    <relationshipName>Budget</relationshipName>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Lookup</type>
+</CustomField>

@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Blind_Panel_Fixing_Type__c</fullName>
+    <label>Blind Panel Fixing Type</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Boltdown</fullName>
+                <default>false</default>
+                <label>Boltdown</label>
+            </value>
+            <value>
+                <fullName>Button</fullName>
+                <default>false</default>
+                <label>Button</label>
+            </value>
+            <value>
+                <fullName>Bird Beak</fullName>
+                <default>false</default>
+                <label>Bird Beak</label>
+            </value>
+            <value>
+                <fullName>Pin and Sleeve</fullName>
+                <default>false</default>
+                <label>Pin and Sleeve</label>
+            </value>
+            <value>
+                <fullName>Cross Tension</fullName>
+                <default>false</default>
+                <label>Cross Tension</label>
+            </value>
+            <value>
+                <fullName>Modular Integrated Lug Panels</fullName>
+                <default>false</default>
+                <label>Modular Integrated Lug Panels</label>
+            </value>
+            <value>
+                <fullName>V-Type Fixing</fullName>
+                <default>false</default>
+                <label>V-Type Fixing</label>
+            </value>
+            <value>
+                <fullName>Trell Step</fullName>
+                <default>false</default>
+                <label>Trell Step</label>
+            </value>
+            <value>
+                <fullName>Integrated Pin and Lug</fullName>
+                <default>false</default>
+                <label>Integrated Pin and Lug</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

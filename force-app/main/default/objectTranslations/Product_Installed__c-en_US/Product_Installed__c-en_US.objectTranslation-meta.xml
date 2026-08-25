@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Product Installed</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Product Installed</value>
+    </caseValues>
+    <layouts>
+        <layout>Belt tracker roller</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- Fields --></label>
+            <section>Fields</section>
+        </sections>
+        <sections>
+            <label><!-- Operating Parameters --></label>
+            <section>Operating Parameters</section>
+        </sections>
+        <sections>
+            <label><!-- System Information --></label>
+            <section>System Information</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>CeraDisc</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- Fields --></label>
+            <section>Fields</section>
+        </sections>
+        <sections>
+            <label><!-- Operating Parameter --></label>
+            <section>Operating Parameter</section>
+        </sections>
+        <sections>
+            <label><!-- System Information --></label>
+            <section>System Information</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Ceramic Pully Lagging</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- Fields --></label>
+            <section>Fields</section>
+        </sections>
+        <sections>
+            <label><!-- Operating Parameter --></label>
+            <section>Operating Parameter</section>
+        </sections>
+        <sections>
+            <label><!-- System Information --></label>
+            <section>System Information</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Hosch Scraper</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- Fields --></label>
+            <section>Fields</section>
+        </sections>
+        <sections>
+            <label><!-- Operating Parameter --></label>
+            <section>Operating Parameter</section>
+        </sections>
+        <sections>
+            <label><!-- System Information --></label>
+            <section>System Information</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Impact Pad Without Frame/Impact Bed System</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- Fields --></label>
+            <section>Fields</section>
+        </sections>
+        <sections>
+            <label><!-- Operating Parameter --></label>
+            <section>Operating Parameter</section>
+        </sections>
+        <sections>
+            <label><!-- System Information --></label>
+            <section>System Information</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Skirt Sealing System</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- Operating Parameter --></label>
+            <section>Operating Parameter</section>
+        </sections>
+        <sections>
+            <label><!-- System Information --></label>
+            <section>System Information</section>
+        </sections>
+    </layouts>
+    <recordTypes>
+        <label><!-- Belt Track Roller --></label>
+        <name>Belt_tracker_roller</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- CeraDisc --></label>
+        <name>CeraDisc</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- Ceramic Pulley Lagging --></label>
+        <name>Ceramic_Pully_Lagging</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- Hosch Scraper --></label>
+        <name>Hosch_Scraper</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- Impact Bed System --></label>
+        <name>Impact_Pad_Without_Frame_Impact_Bed_System</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- Skirt Sealing System --></label>
+        <name>Skirt_Sealing_System</name>
+    </recordTypes>
+    <startsWith>Consonant</startsWith>
+</CustomObjectTranslation>

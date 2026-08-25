@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- Minimum temperature of the handled material. --></help>
+    <label><!-- Temperature Min (°C) --></label>
+    <name>Min__c</name>
+</CustomFieldTranslation>

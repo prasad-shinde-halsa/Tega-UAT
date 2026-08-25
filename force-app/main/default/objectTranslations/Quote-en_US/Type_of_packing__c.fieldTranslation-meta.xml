@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Type of packing --></label>
+    <name>Type_of_packing__c</name>
+    <picklistValues>
+        <masterLabel>International standard</masterLabel>
+        <translation><!-- International standard --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>No restriction</masterLabel>
+        <translation><!-- No restriction --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

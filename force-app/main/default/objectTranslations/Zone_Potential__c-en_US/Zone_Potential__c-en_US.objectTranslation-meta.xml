@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Sale Potential</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Sale Potential</value>
+    </caseValues>
+    <layouts>
+        <layout>Zone Potential Layout</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+    </layouts>
+    <recordTypes>
+        <label><!-- Conveyor Component --></label>
+        <name>Conveyor_Component</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- Hydrocyclone --></label>
+        <name>Hydrocyclone</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- Mill --></label>
+        <name>Mill</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- Screen --></label>
+        <name>Screen</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- Trommel --></label>
+        <name>Trommel</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- Wear Component --></label>
+        <name>Wear_Component</name>
+    </recordTypes>
+    <startsWith>Consonant</startsWith>
+</CustomObjectTranslation>

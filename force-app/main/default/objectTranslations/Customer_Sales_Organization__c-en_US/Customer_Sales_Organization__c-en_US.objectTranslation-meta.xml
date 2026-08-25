@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Customer Branch Assignment</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Customer Branch Assignment</value>
+    </caseValues>
+    <layouts>
+        <layout>Customer Sales Organization Layout</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+    </layouts>
+    <quickActions>
+        <label><!-- Cancel Branch Assignment --></label>
+        <name>Cancel_Branch_Assignment</name>
+    </quickActions>
+    <quickActions>
+        <label><!-- Enable/Disable Customer Branch Assignment --></label>
+        <name>Enable_Disable_Customer_Branch_Assignment</name>
+    </quickActions>
+    <startsWith>Consonant</startsWith>
+    <validationRules>
+        <errorMessage><!-- Cannot create record with this Company as it already exists --></errorMessage>
+        <name>CheckDuplicateCSO</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Cannot create new Customer Branch Assignment from Opportunity. Please create from Customer Record only --></errorMessage>
+        <name>Check_CreatedFromAccount</name>
+    </validationRules>
+</CustomObjectTranslation>

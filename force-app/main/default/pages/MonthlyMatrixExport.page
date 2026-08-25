@@ -1,0 +1,84 @@
+<apex:page controller="MatrixExcelExportController" contentType="application/vnd.ms-excel#Monthly_Matrix_Report.xls" cache="true">
+    <html xmlns:x="urn:schemas-microsoft-com:office:excel">
+        <head>
+            <meta http-equiv="Content-Type" content="application/vnd.ms-excel; charset=UTF-8" />
+            <style>
+                body, table, th, td {
+                    font-family: Calibri, sans-serif;
+                    font-weight: bold;
+                }
+                table {
+                    border-collapse: collapse;
+                    width: 82%;
+                }
+                th, td {
+                    border: 1px solid #000;
+                    padding: 8px;
+                    text-align: center;
+                    font-size: 18px;
+                }
+                th {
+                    background-color: #04468a;
+                    color: #ffffff;
+                }
+                .header {
+                    font-size: 25px;
+                    font-weight: bold;
+                    text-align: center;
+                    background-color: #d9e1f2;
+                    padding: 10px;
+                }
+                .sub-header {
+                    font-size: 20px;
+                    background-color: #f2f2f2;
+                    text-align: left;
+                    padding-left: 10px;
+                    font-weight: bold;
+                }
+                .column-header {
+                    background-color: #003366;
+                    color: white;
+                    font-weight: bold;
+                    font-size: 18px;
+                }
+            </style>
+        </head>
+        <body>
+            <table>
+                <tr>
+                    <td colspan="7" class="header">Monthly Matrix Report</td>
+                </tr>
+                <tr class="sub-header">
+                    <td colspan="7">
+                        Filtered FY: {!fy} &nbsp;&nbsp;&nbsp;
+                        Filtered Order Type: {!orderType} &nbsp;&nbsp;&nbsp;
+                        Filtered Month: {!month} &nbsp;&nbsp;&nbsp;
+                        Level 1: {!level1} &nbsp;&nbsp;&nbsp;
+                        Level 2: {!level2} &nbsp;&nbsp;&nbsp;
+                        Currency: {!userCurrency}
+                    </td>
+                </tr>
+                <tr class="column-header">
+                    <th>PMG</th>
+                    <th>Monthly Order Received</th>
+                    <th>Budgeted Order</th>
+                    <th>YTD Actual Order Received</th>
+                    <th>YTD Budgeted Order</th>
+                    <th>Forecast - Next 3 months (MIS)</th>
+                    <th>Forecast - Next 3 months (Budget)</th>
+                </tr>
+                <apex:repeat value="{!visibleMatrix}" var="row">
+                    <tr>
+                        <td>{!row.pmg}</td>
+                        <td>{!row.monthlyReceived}</td>
+                        <td>{!row.budgetedOrder}</td>
+                        <td>{!row.ytdActual}</td>
+                        <td>{!row.ytdBudget}</td>
+                        <td>{!row.forecastMIS}</td>
+                        <td>{!row.forecastBudget}</td>
+                    </tr>
+                </apex:repeat>
+            </table>
+        </body>
+    </html>
+</apex:page>

@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Same_Record_Type_as_Opportunity</fullName>
+    <active>true</active>
+    <errorConditionFormula>RecordType.Name &lt;&gt; Opportunity__r.RecordType.Name</errorConditionFormula>
+    <errorMessage>PRF Record Type should match Child Opportunity&apos;s Record Type</errorMessage>
+</ValidationRule>

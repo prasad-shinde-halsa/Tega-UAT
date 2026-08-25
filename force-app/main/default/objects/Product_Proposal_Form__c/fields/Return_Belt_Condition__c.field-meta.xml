@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Return_Belt_Condition__c</fullName>
+    <label>Return Belt Condition</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>MultiselectPicklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Skew/mis-aligned belt joint</fullName>
+                <default>false</default>
+                <label>Skew/mis-aligned belt joint</label>
+            </value>
+            <value>
+                <fullName>Wrapped carry back mat. at return belt</fullName>
+                <default>false</default>
+                <label>Wrapped carry back mat. at return belt</label>
+            </value>
+            <value>
+                <fullName>Uneven belt thickness</fullName>
+                <default>false</default>
+                <label>Uneven belt thickness</label>
+            </value>
+            <value>
+                <fullName>Belt edge damage</fullName>
+                <default>false</default>
+                <label>Belt edge damage</label>
+            </value>
+            <value>
+                <fullName>Groove in belt top cover</fullName>
+                <default>false</default>
+                <label>Groove in belt top cover</label>
+            </value>
+            <value>
+                <fullName>Damaged belt splice</fullName>
+                <default>false</default>
+                <label>Damaged belt splice</label>
+            </value>
+            <value>
+                <fullName>Patchy belt top cover</fullName>
+                <default>false</default>
+                <label>Patchy belt top cover</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+    <visibleLines>4</visibleLines>
+</CustomField>

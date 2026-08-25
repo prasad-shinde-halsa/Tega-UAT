@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Rubber_Block_Size__c</fullName>
+    <label>Rubber Block Size</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <controllingField>Product_Sub_Type__c</controllingField>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Rubber Block 150x200x25</fullName>
+                <default>false</default>
+                <label>Rubber Block 150x200x25</label>
+            </value>
+            <value>
+                <fullName>Rubber Block 125x150x25</fullName>
+                <default>false</default>
+                <label>Rubber Block 125x150x25</label>
+            </value>
+            <value>
+                <fullName>Rubber Block 125x150x25/15</fullName>
+                <default>false</default>
+                <label>Rubber Block 125x150x25/15</label>
+            </value>
+            <value>
+                <fullName>Rubber Block 150x200x32/22</fullName>
+                <default>false</default>
+                <label>Rubber Block 150x200x32/22</label>
+            </value>
+            <value>
+                <fullName>Rubber Block 150x200x32</fullName>
+                <default>false</default>
+                <label>Rubber Block 150x200x32</label>
+            </value>
+            <value>
+                <fullName>Rubber Block 170x200x20</fullName>
+                <default>false</default>
+                <label>Rubber Block 170x200x20</label>
+            </value>
+            <value>
+                <fullName>Rubber Block 200x200x20</fullName>
+                <default>false</default>
+                <label>Rubber Block 200x200x20</label>
+            </value>
+            <value>
+                <fullName>Rubber Block 220x200x20</fullName>
+                <default>false</default>
+                <label>Rubber Block 220x200x20</label>
+            </value>
+            <value>
+                <fullName>Rubber Block 205x200x20</fullName>
+                <default>false</default>
+                <label>Rubber Block 205x200x20</label>
+            </value>
+            <value>
+                <fullName>Rubber Block 200x90x20</fullName>
+                <default>false</default>
+                <label>Rubber Block 200x90x20</label>
+            </value>
+            <value>
+                <fullName>Rubber Block 500X112X14/20</fullName>
+                <default>false</default>
+                <label>Rubber Block 500X112X14/20</label>
+            </value>
+            <value>
+                <fullName>Rubber Block 500X170X15/20</fullName>
+                <default>false</default>
+                <label>Rubber Block 500X170X15/20</label>
+            </value>
+            <value>
+                <fullName>Rubber Block 500X170X15/30</fullName>
+                <default>false</default>
+                <label>Rubber Block 500X170X15/30</label>
+            </value>
+            <value>
+                <fullName>Rubber Block 150x265x32</fullName>
+                <default>false</default>
+                <label>Rubber Block 150x265x32</label>
+            </value>
+            <value>
+                <fullName>Rubber Block 150x265x25</fullName>
+                <default>false</default>
+                <label>Rubber Block 150x265x25</label>
+            </value>
+        </valueSetDefinition>
+        <valueSettings>
+            <controllingFieldValue>Spill ex Model 150x200x25</controllingFieldValue>
+            <valueName>Rubber Block 150x200x25</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Baby Spillex Model 125x150x25</controllingFieldValue>
+            <valueName>Rubber Block 125x150x25</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Baby Spillex Model 125x150x25/15</controllingFieldValue>
+            <valueName>Rubber Block 125x150x25/15</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Baby Spillex Model 125x150x25/15</controllingFieldValue>
+            <valueName>Rubber Block 150x200x32</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Spillex Model 150x200x32/22</controllingFieldValue>
+            <valueName>Rubber Block 150x200x32/22</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Eco Flip Model 170x200x20</controllingFieldValue>
+            <valueName>Rubber Block 170x200x20</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Eco Flip Model 200x200x20</controllingFieldValue>
+            <valueName>Rubber Block 200x200x20</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Eco Flip Model 220x200x20</controllingFieldValue>
+            <valueName>Rubber Block 220x200x20</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Tru Seal Model 205x200x20</controllingFieldValue>
+            <valueName>Rubber Block 205x200x20</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Easy Seal Model 200x90x20</controllingFieldValue>
+            <valueName>Rubber Block 200x90x20</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Single Wing Seal Model 500x112X14/20</controllingFieldValue>
+            <valueName>Rubber Block 500X112X14/20</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Single Wing Seal Model 500x170X15/20</controllingFieldValue>
+            <valueName>Rubber Block 500X170X15/20</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Single Wing Seal Model 500x170X15/30</controllingFieldValue>
+            <valueName>Rubber Block 500X170X15/30</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Spillex Model 150x265x32</controllingFieldValue>
+            <valueName>Rubber Block 150x265x32</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Spillex Model 150x265x25</controllingFieldValue>
+            <controllingFieldValue>Spillex Model 150x265x20</controllingFieldValue>
+            <valueName>Rubber Block 150x265x25</valueName>
+        </valueSettings>
+    </valueSet>
+</CustomField>

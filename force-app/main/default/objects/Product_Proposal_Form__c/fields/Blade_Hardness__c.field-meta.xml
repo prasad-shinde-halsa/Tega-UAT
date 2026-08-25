@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Blade_Hardness__c</fullName>
+    <label>Blade Hardness</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <controllingField>Product_Sub_Type__c</controllingField>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>HR</fullName>
+                <default>false</default>
+                <label>HR</label>
+            </value>
+            <value>
+                <fullName>NR</fullName>
+                <default>false</default>
+                <label>NR</label>
+            </value>
+            <value>
+                <fullName>SS SKIRT</fullName>
+                <default>false</default>
+                <label>SS SKIRT</label>
+            </value>
+            <value>
+                <fullName>NR SKIRT</fullName>
+                <default>false</default>
+                <label>NR SKIRT</label>
+            </value>
+        </valueSetDefinition>
+        <valueSettings>
+            <controllingFieldValue>Primary Scraper ( HD Series)</controllingFieldValue>
+            <controllingFieldValue>Primary Scraper ( B9S)</controllingFieldValue>
+            <controllingFieldValue>Primary Scraper ( B9SV)</controllingFieldValue>
+            <controllingFieldValue>Primary Scraper ( B9SVT)</controllingFieldValue>
+            <controllingFieldValue>Primary Scraper (HDPU-L)</controllingFieldValue>
+            <controllingFieldValue>Primary Scraper (HDPU-S)</controllingFieldValue>
+            <valueName>HR</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Primary Scraper ( HD Series)</controllingFieldValue>
+            <controllingFieldValue>Primary Scraper ( B9S)</controllingFieldValue>
+            <controllingFieldValue>Primary Scraper ( B9SV)</controllingFieldValue>
+            <controllingFieldValue>Primary Scraper ( B9SVT)</controllingFieldValue>
+            <controllingFieldValue>Primary Scraper (HDPU-L)</controllingFieldValue>
+            <controllingFieldValue>Primary Scraper (HDPU-S)</controllingFieldValue>
+            <valueName>NR</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Secondary Scraper ( B6 Series with Single EM)</controllingFieldValue>
+            <controllingFieldValue>Secondary Scraper ( B6 Series with Parallel EM)</controllingFieldValue>
+            <controllingFieldValue>Secondary Scraper ( B6 Series with reversing adaptar and Parallel EM)</controllingFieldValue>
+            <valueName>SS SKIRT</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Secondary Scraper ( B6 Series with Single EM)</controllingFieldValue>
+            <controllingFieldValue>Secondary Scraper ( B6 Series with Parallel EM)</controllingFieldValue>
+            <controllingFieldValue>Secondary Scraper ( B6 Series with reversing adaptar and Parallel EM)</controllingFieldValue>
+            <valueName>NR SKIRT</valueName>
+        </valueSettings>
+    </valueSet>
+</CustomField>

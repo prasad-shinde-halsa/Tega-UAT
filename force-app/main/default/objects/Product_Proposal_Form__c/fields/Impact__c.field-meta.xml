@@ -1,0 +1,244 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Impact__c</fullName>
+    <label>Impact Pad Size</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <controllingField>Product_Sub_Type__c</controllingField>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>I Pad H Type 75x100x1300</fullName>
+                <default>false</default>
+                <label>I Pad H Type 75x100x1300</label>
+            </value>
+            <value>
+                <fullName>I Pad H Type 55x100x1300</fullName>
+                <default>false</default>
+                <label>I Pad H Type 55x100x1300</label>
+            </value>
+            <value>
+                <fullName>I Pad H Type 75x100x1500</fullName>
+                <default>false</default>
+                <label>I Pad H Type 75x100x1500</label>
+            </value>
+            <value>
+                <fullName>I Pad H Type 55x100x1500</fullName>
+                <default>false</default>
+                <label>I Pad H Type 55x100x1500</label>
+            </value>
+            <value>
+                <fullName>I Pad T Type 75x100x1400</fullName>
+                <default>false</default>
+                <label>I Pad T Type 75x100x1400</label>
+            </value>
+            <value>
+                <fullName>I Pad T Type 75x100x1220</fullName>
+                <default>false</default>
+                <label>I Pad T Type 75x100x1220</label>
+            </value>
+            <value>
+                <fullName>I Pad T Type 75x100x1560</fullName>
+                <default>false</default>
+                <label>I Pad T Type 75x100x1560</label>
+            </value>
+            <value>
+                <fullName>I Pad T Type 55x100x1220</fullName>
+                <default>false</default>
+                <label>I Pad T Type 55x100x1220</label>
+            </value>
+            <value>
+                <fullName>I Pad T Type 55x100x1560</fullName>
+                <default>false</default>
+                <label>I Pad T Type 55x100x1560</label>
+            </value>
+            <value>
+                <fullName>I Pad T Type 100x100x1220</fullName>
+                <default>false</default>
+                <label>I Pad T Type 100x100x1220</label>
+            </value>
+            <value>
+                <fullName>I Pad T Type 100x100x1560</fullName>
+                <default>false</default>
+                <label>I Pad T Type 100x100x1560</label>
+            </value>
+            <value>
+                <fullName>I Pad P Type 75x100x1300</fullName>
+                <default>false</default>
+                <label>I Pad P Type 75x100x1300</label>
+            </value>
+            <value>
+                <fullName>I Pad P Type 55x100x1300</fullName>
+                <default>false</default>
+                <label>I Pad P Type 55x100x1300</label>
+            </value>
+            <value>
+                <fullName>I Pad P Type 75x100x1500</fullName>
+                <default>false</default>
+                <label>I Pad P Type 75x100x1500</label>
+            </value>
+            <value>
+                <fullName>I Pad R Type 75x100x1220</fullName>
+                <default>false</default>
+                <label>I Pad R Type 75x100x1220</label>
+            </value>
+            <value>
+                <fullName>I Pad R Type 75x100x1560</fullName>
+                <default>false</default>
+                <label>I Pad R Type 75x100x1560</label>
+            </value>
+            <value>
+                <fullName>I Pad R Type 55x100x1220</fullName>
+                <default>false</default>
+                <label>I Pad R Type 55x100x1220</label>
+            </value>
+            <value>
+                <fullName>I Pad R Type 55x100x1560</fullName>
+                <default>false</default>
+                <label>I Pad R Type 55x100x1560</label>
+            </value>
+            <value>
+                <fullName>I Pad 100x100x1220</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>I Pad 100x100x1220</label>
+            </value>
+            <value>
+                <fullName>I Pad 100x100x1560</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>I Pad 100x100x1560</label>
+            </value>
+            <value>
+                <fullName>I Pad 55x100x1220</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>I Pad 55x100x1220</label>
+            </value>
+            <value>
+                <fullName>I Pad 55x100x1300</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>I Pad 55x100x1300</label>
+            </value>
+            <value>
+                <fullName>I Pad 55x100x1500</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>I Pad 55x100x1500</label>
+            </value>
+            <value>
+                <fullName>I Pad 55x100x1560</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>I Pad 55x100x1560</label>
+            </value>
+            <value>
+                <fullName>I Pad 75x100x1220</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>I Pad 75x100x1220</label>
+            </value>
+            <value>
+                <fullName>I Pad 75x100x1300</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>I Pad 75x100x1300</label>
+            </value>
+            <value>
+                <fullName>I Pad 75x100x1400</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>I Pad 75x100x1400</label>
+            </value>
+            <value>
+                <fullName>I Pad 75x100x1500</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>I Pad 75x100x1500</label>
+            </value>
+            <value>
+                <fullName>I Pad 75x100x1560</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>I Pad 75x100x1560</label>
+            </value>
+        </valueSetDefinition>
+        <valueSettings>
+            <controllingFieldValue>R Type</controllingFieldValue>
+            <valueName>I Pad R Type 75x100x1220</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>R Type</controllingFieldValue>
+            <valueName>I Pad R Type 75x100x1560</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>R Type</controllingFieldValue>
+            <valueName>I Pad R Type 55x100x1220</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>R Type</controllingFieldValue>
+            <valueName>I Pad R Type 55x100x1560</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>H Type</controllingFieldValue>
+            <valueName>I Pad H Type 75x100x1300</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>H Type</controllingFieldValue>
+            <valueName>I Pad H Type 55x100x1300</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>H Type</controllingFieldValue>
+            <valueName>I Pad H Type 75x100x1500</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>H Type</controllingFieldValue>
+            <valueName>I Pad H Type 55x100x1500</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>T Type</controllingFieldValue>
+            <valueName>I Pad T Type 75x100x1400</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>T Type</controllingFieldValue>
+            <valueName>I Pad T Type 75x100x1220</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>T Type</controllingFieldValue>
+            <valueName>I Pad T Type 75x100x1560</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>T Type</controllingFieldValue>
+            <valueName>I Pad T Type 55x100x1220</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>T Type</controllingFieldValue>
+            <valueName>I Pad T Type 55x100x1560</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>T Type</controllingFieldValue>
+            <valueName>I Pad T Type 100x100x1220</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>T Type</controllingFieldValue>
+            <valueName>I Pad T Type 100x100x1560</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>P Type</controllingFieldValue>
+            <valueName>I Pad P Type 75x100x1300</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>P Type</controllingFieldValue>
+            <valueName>I Pad P Type 55x100x1300</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>P Type</controllingFieldValue>
+            <valueName>I Pad P Type 75x100x1500</valueName>
+        </valueSettings>
+    </valueSet>
+</CustomField>

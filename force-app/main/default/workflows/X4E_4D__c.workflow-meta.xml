@@ -1,0 +1,406 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Workflow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <alerts>
+        <fullName>ASO_Approval_4E_4D_Dics_10</fullName>
+        <description>ASO Approval 4E/4D Dics % &gt;10</description>
+        <protected>false</protected>
+        <recipients>
+            <recipient>mehul.mohanka@tegaindustries.com</recipient>
+            <type>user</type>
+        </recipients>
+        <recipients>
+            <field>Global_Sales_Head__c</field>
+            <type>userLookup</type>
+        </recipients>
+        <recipients>
+            <field>PMG_Head__c</field>
+            <type>userLookup</type>
+        </recipients>
+        <recipients>
+            <field>Regional_Sales_Head__c</field>
+            <type>userLookup</type>
+        </recipients>
+        <senderAddress>salesforce.helpdesk@tegaindustries.com</senderAddress>
+        <senderType>OrgWideEmailAddress</senderType>
+        <template>unfiled$public/Approval_Email_for_Form_4E_4D_v2</template>
+    </alerts>
+    <alerts>
+        <fullName>ASO_Approval_4E_4D_Disc_5_10</fullName>
+        <description>ASO Approval 4E/4D Disc % 5-10</description>
+        <protected>false</protected>
+        <recipients>
+            <field>PMG_Head__c</field>
+            <type>userLookup</type>
+        </recipients>
+        <recipients>
+            <field>Regional_Sales_Head__c</field>
+            <type>userLookup</type>
+        </recipients>
+        <senderAddress>salesforce.helpdesk@tegaindustries.com</senderAddress>
+        <senderType>OrgWideEmailAddress</senderType>
+        <template>unfiled$public/Approval_Email_for_Form_4E_4D_v2</template>
+    </alerts>
+    <alerts>
+        <fullName>ASO_Drawing_Approval_4D_4E</fullName>
+        <description>ASO - Drawing Approval 4D/4E</description>
+        <protected>false</protected>
+        <recipients>
+            <field>PMG_Head__c</field>
+            <type>userLookup</type>
+        </recipients>
+        <senderAddress>salesforce.helpdesk@tegaindustries.com</senderAddress>
+        <senderType>OrgWideEmailAddress</senderType>
+        <template>unfiled$public/Approval_Email_for_Form_4E_4D_v2</template>
+    </alerts>
+    <alerts>
+        <fullName>ASO_Manufacturing_4D</fullName>
+        <description>ASO - Manufacturing 4D</description>
+        <protected>false</protected>
+        <recipients>
+            <recipient>mehul.mohanka@tegaindustries.com</recipient>
+            <type>user</type>
+        </recipients>
+        <recipients>
+            <recipient>shantibhusan.singh@tegaindustries.com</recipient>
+            <type>user</type>
+        </recipients>
+        <recipients>
+            <field>Global_Sales_Head__c</field>
+            <type>userLookup</type>
+        </recipients>
+        <senderAddress>salesforce.helpdesk@tegaindustries.com</senderAddress>
+        <senderType>OrgWideEmailAddress</senderType>
+        <template>unfiled$public/Approval_Email_for_Form_4E_4D_v2</template>
+    </alerts>
+    <alerts>
+        <fullName>ASO_Manufacturing_4E</fullName>
+        <description>ASO - Manufacturing 4E</description>
+        <protected>false</protected>
+        <recipients>
+            <recipient>mehul.mohanka@tegaindustries.com</recipient>
+            <type>user</type>
+        </recipients>
+        <recipients>
+            <field>Global_Sales_Head__c</field>
+            <type>userLookup</type>
+        </recipients>
+        <recipients>
+            <field>PMG_Head__c</field>
+            <type>userLookup</type>
+        </recipients>
+        <senderAddress>salesforce.helpdesk@tegaindustries.com</senderAddress>
+        <senderType>OrgWideEmailAddress</senderType>
+        <template>unfiled$public/Approval_Email_for_Form_4E_4D_v2</template>
+    </alerts>
+    <alerts>
+        <fullName>ASO_Purchase_4D</fullName>
+        <description>ASO - Purchase 4D</description>
+        <protected>false</protected>
+        <recipients>
+            <recipient>shantibhusan.singh@tegaindustries.com</recipient>
+            <type>user</type>
+        </recipients>
+        <recipients>
+            <field>Global_Sales_Head__c</field>
+            <type>userLookup</type>
+        </recipients>
+        <senderAddress>salesforce.helpdesk@tegaindustries.com</senderAddress>
+        <senderType>OrgWideEmailAddress</senderType>
+        <template>unfiled$public/Approval_Email_for_Form_4E_4D_v2</template>
+    </alerts>
+    <alerts>
+        <fullName>ASO_Purchase_4E</fullName>
+        <description>ASO - Purchase 4E</description>
+        <protected>false</protected>
+        <recipients>
+            <field>Global_Sales_Head__c</field>
+            <type>userLookup</type>
+        </recipients>
+        <recipients>
+            <field>PMG_Head__c</field>
+            <type>userLookup</type>
+        </recipients>
+        <senderAddress>salesforce.helpdesk@tegaindustries.com</senderAddress>
+        <senderType>OrgWideEmailAddress</senderType>
+        <template>unfiled$public/Approval_Email_for_Form_4E_4D_v2</template>
+    </alerts>
+    <alerts>
+        <fullName>Approval_Email_for_Form_4E_4D</fullName>
+        <description>Approval Email for Form 4E/4D</description>
+        <protected>false</protected>
+        <recipients>
+            <field>Regional_Sales_Head__c</field>
+            <type>userLookup</type>
+        </recipients>
+        <senderAddress>salesforce.helpdesk@tegaindustries.com</senderAddress>
+        <senderType>OrgWideEmailAddress</senderType>
+        <template>unfiled$public/Approval_Email_for_Form_4E_4D_v2</template>
+    </alerts>
+    <alerts>
+        <fullName>Close_Form_4E_4D_email_alert_to_owner</fullName>
+        <description>Close Form 4E/4D email alert to owner</description>
+        <protected>false</protected>
+        <recipients>
+            <type>creator</type>
+        </recipients>
+        <recipients>
+            <field>LastModifiedById</field>
+            <type>userLookup</type>
+        </recipients>
+        <senderAddress>salesforce.helpdesk@tegaindustries.com</senderAddress>
+        <senderType>OrgWideEmailAddress</senderType>
+        <template>unfiled$public/Form_4E_4D_Closure_Email</template>
+    </alerts>
+    <alerts>
+        <fullName>Losugen_ASO_DWG</fullName>
+        <description>Losugen-ASO DWG</description>
+        <protected>false</protected>
+        <recipients>
+            <recipient>mark@losugen.com</recipient>
+            <type>user</type>
+        </recipients>
+        <senderAddress>salesforce.helpdesk@tegaindustries.com</senderAddress>
+        <senderType>OrgWideEmailAddress</senderType>
+        <template>unfiled$public/Approval_Email_for_Form_4E_4D_v2</template>
+    </alerts>
+    <fieldUpdates>
+        <fullName>ASO_Approval_raised</fullName>
+        <field>Status__c</field>
+        <literalValue>ASO Approval Raised</literalValue>
+        <name>ASO Approval raised</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>ASO_Approved</fullName>
+        <field>Status__c</field>
+        <literalValue>ASO Approved</literalValue>
+        <name>ASO Approved</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>ASO_Approved_losugen</fullName>
+        <field>Status__c</field>
+        <literalValue>ASO Approved</literalValue>
+        <name>ASO Approved</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>ASO_Recalled</fullName>
+        <field>Status__c</field>
+        <literalValue>Draft</literalValue>
+        <name>ASO Recalled</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>ASO_Recalled_losugen</fullName>
+        <field>Status__c</field>
+        <literalValue>Draft</literalValue>
+        <name>ASO Recalled</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>ASO_Rejected</fullName>
+        <field>Status__c</field>
+        <literalValue>Draft</literalValue>
+        <name>ASO Rejected</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>ASO_Rejected_losugen</fullName>
+        <field>Status__c</field>
+        <literalValue>Draft</literalValue>
+        <name>ASO Rejected</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>SO_Discount_Riased</fullName>
+        <field>Status_SO__c</field>
+        <literalValue>Discount Approval Raised</literalValue>
+        <name>SO Discount Riased</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>SO_Discount_Riased_10</fullName>
+        <field>Status_SO__c</field>
+        <literalValue>Discount Approval Raised</literalValue>
+        <name>SO Discount Riased</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>SO_Discount_Riased_5to10</fullName>
+        <field>Status_SO__c</field>
+        <literalValue>Discount Approval Raised</literalValue>
+        <name>SO Discount Riased</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>SO_Status_Approved</fullName>
+        <field>Status_SO__c</field>
+        <literalValue>Discount Approval Approved</literalValue>
+        <name>SO Status Approved</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>SO_Status_Draft</fullName>
+        <field>Status_SO__c</field>
+        <literalValue>Draft</literalValue>
+        <name>SO Status Draft</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Status_ASO</fullName>
+        <field>Status__c</field>
+        <literalValue>ASO Approval Raised</literalValue>
+        <name>Status ASO</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Status_Accepted</fullName>
+        <field>Status__c</field>
+        <literalValue>ASO Approved</literalValue>
+        <name>Status Accepted</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Status_Draft</fullName>
+        <field>Status__c</field>
+        <literalValue>Draft</literalValue>
+        <name>Status Draft</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Status_Draft1</fullName>
+        <field>Status__c</field>
+        <literalValue>Draft</literalValue>
+        <name>Status Draft</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Status_In_Approval</fullName>
+        <field>Status__c</field>
+        <literalValue>Discount Approval Raised</literalValue>
+        <name>Status In Approval</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Status_SO_Draft</fullName>
+        <field>Status_SO__c</field>
+        <literalValue>Draft</literalValue>
+        <name>Status SO Draft</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Status_SO_Short_Delivery_Approved</fullName>
+        <field>Status__c</field>
+        <literalValue>Short Delivery Approval Approved</literalValue>
+        <name>Status SO Short Delivery Approved</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Status_SO_Short_Delivery_Approved_Status</fullName>
+        <field>Status_SO__c</field>
+        <literalValue>Short Delivery Approval Approved</literalValue>
+        <name>Status SO Short Delivery Approved</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Status_SO_Short_Delivery_Raised</fullName>
+        <field>Status__c</field>
+        <literalValue>Short Delivery Approval Raised</literalValue>
+        <name>Status SO Short Delivery Raised</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Status_SO_Short_Delivery_Raised_Status</fullName>
+        <field>Status_SO__c</field>
+        <literalValue>Short Delivery Approval Raised</literalValue>
+        <name>Status SO Short Delivery Raised</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Status_Submit</fullName>
+        <field>Status__c</field>
+        <literalValue>Discount Approval Approved</literalValue>
+        <name>Status Submit</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Update_ASO_Status</fullName>
+        <field>Status__c</field>
+        <literalValue>ASO Approval Raised</literalValue>
+        <name>Update ASO Status</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+</Workflow>

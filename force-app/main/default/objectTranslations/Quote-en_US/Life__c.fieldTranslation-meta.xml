@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Life --></label>
+    <name>Life__c</name>
+    <picklistValues>
+        <masterLabel>Committed shorter than competitor</masterLabel>
+        <translation><!-- Committed shorter than competitor --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Committed shorter than expected</masterLabel>
+        <translation><!-- Committed shorter than expected --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>No commitment</masterLabel>
+        <translation><!-- No commitment --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

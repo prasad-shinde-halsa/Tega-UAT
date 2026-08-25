@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Question_Master__c</fullName>
+    <deleteConstraint>SetNull</deleteConstraint>
+    <label>Question Master</label>
+    <referenceTo>Question_Master__c</referenceTo>
+    <relationshipLabel>PPR Question Answer</relationshipLabel>
+    <relationshipName>PPR_Question_Answer</relationshipName>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Lookup</type>
+</CustomField>

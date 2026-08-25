@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Liner Thick Feed Underflow Launder (mm) --></label>
+    <name>Liner_thick_in_Feed_Underflow_launder__c</name>
+</CustomFieldTranslation>

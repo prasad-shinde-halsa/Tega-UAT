@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- This is equipment identification number. --></help>
+    <label><!-- Equipment Tag/No. --></label>
+    <name>Equipment_tag__c</name>
+</CustomFieldTranslation>

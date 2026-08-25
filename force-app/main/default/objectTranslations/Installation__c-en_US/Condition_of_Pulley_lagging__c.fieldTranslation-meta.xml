@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Condition of Pulley lagging --></label>
+    <name>Condition_of_Pulley_lagging__c</name>
+    <picklistValues>
+        <masterLabel>Ceramic tiles removed-No replacement required</masterLabel>
+        <translation><!-- Ceramic tiles removed-No replacement required --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Lagging sheet removed from edges- Repair required</masterLabel>
+        <translation><!-- Lagging sheet removed from edges- Repair required --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Major damage in rubber/ceramic tiles- needs replacement</masterLabel>
+        <translation><!-- Major damage in rubber/ceramic tiles- needs replacement --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Working fine</masterLabel>
+        <translation><!-- Working fine --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

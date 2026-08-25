@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RecordType xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Hydrocyclone</fullName>
+    <active>true</active>
+    <label>Hydrocyclone</label>
+    <picklistValues>
+        <picklist>Product_Type__c</picklist>
+        <values>
+            <fullName>Cryston</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Polyurethane %28PU%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Rubber</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+</RecordType>

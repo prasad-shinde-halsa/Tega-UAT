@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- Sunset Clause, Cooking Clause, Price Variation  Clause, Exclusivity Clause… --></help>
+    <label><!-- Other Contractual Requirements --></label>
+    <name>Contractual_Requirement__c</name>
+</CustomFieldTranslation>

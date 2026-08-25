@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>PMG_Name__c</fullName>
+    <externalId>false</externalId>
+    <formula>IF ( INCLUDES ( Division__c , &quot;ML&quot; ), &quot;Mill; &quot;,null ) &amp;
+IF ( INCLUDES ( Division__c , &quot;CC&quot; ), &quot;Conveyer Component; &quot;,null ) &amp;
+IF ( INCLUDES ( Division__c , &quot;HC&quot; ), &quot;Hydrocyclone; &quot;,null ) &amp;
+IF ( INCLUDES ( Division__c , &quot;SD&quot; ), &quot;Screen; &quot;,null ) &amp;
+IF ( INCLUDES ( Division__c , &quot;WC&quot; ), &quot;Wear Component; &quot;,null ) &amp;
+IF ( INCLUDES ( Division__c , &quot;HE&quot; ), &quot;Hosch; &quot;,null )</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>PMG Name</label>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

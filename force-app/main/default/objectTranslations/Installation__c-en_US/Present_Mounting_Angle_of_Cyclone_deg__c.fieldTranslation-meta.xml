@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Present Mounting Angle of Cyclone (deg) --></label>
+    <name>Present_Mounting_Angle_of_Cyclone_deg__c</name>
+</CustomFieldTranslation>

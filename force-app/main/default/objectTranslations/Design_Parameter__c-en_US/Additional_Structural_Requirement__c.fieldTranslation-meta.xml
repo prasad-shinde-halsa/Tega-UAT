@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Additional Structural Requirement --></label>
+    <name>Additional_Structural_Requirement__c</name>
+    <picklistValues>
+        <masterLabel>Access platform</masterLabel>
+        <translation><!-- Access platform --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Operating platform</masterLabel>
+        <translation><!-- Operating platform --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Stairs required</masterLabel>
+        <translation><!-- Stairs required --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Underflow Discharge Nozzle Size (mm) --></label>
+    <name>Underflow_Discharge_Nozzle_size__c</name>
+</CustomFieldTranslation>

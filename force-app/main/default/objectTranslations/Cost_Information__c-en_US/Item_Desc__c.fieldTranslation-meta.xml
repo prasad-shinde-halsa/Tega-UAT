@@ -1,0 +1,329 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Item Desc --></label>
+    <name>Item_Desc__c</name>
+    <picklistValues>
+        <masterLabel>Aluminium</masterLabel>
+        <translation><!-- Aluminium --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Any other cost  1</masterLabel>
+        <translation><!-- Any other cost  1 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Any other cost  2</masterLabel>
+        <translation><!-- Any other cost  2 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Any other cost  3</masterLabel>
+        <translation><!-- Any other cost  3 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Any other cost  4</masterLabel>
+        <translation><!-- Any other cost  4 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Casting- T1</masterLabel>
+        <translation><!-- Casting- T1 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Casting- T2</masterLabel>
+        <translation><!-- Casting- T2 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Casting- T6</masterLabel>
+        <translation><!-- Casting- T6 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Ceramic Cylinder 20 mm Dia x 15 mm height</masterLabel>
+        <translation><!-- Ceramic Cylinder 20 mm Dia x 15 mm height --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Ceramic Cylinder 20 mm Dia x 20 mm height</masterLabel>
+        <translation><!-- Ceramic Cylinder 20 mm Dia x 20 mm height --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Ceramic Tiles</masterLabel>
+        <translation><!-- Ceramic Tiles --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Cryston 1</masterLabel>
+        <translation><!-- Cryston 1 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Cryston 2</masterLabel>
+        <translation><!-- Cryston 2 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Cryston 3</masterLabel>
+        <translation><!-- Cryston 3 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Cryston 4</masterLabel>
+        <translation><!-- Cryston 4 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Cryston 5</masterLabel>
+        <translation><!-- Cryston 5 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Cryston 6</masterLabel>
+        <translation><!-- Cryston 6 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Cryston 7</masterLabel>
+        <translation><!-- Cryston 7 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Cryston 8</masterLabel>
+        <translation><!-- Cryston 8 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Electrical &amp; Pneumaic</masterLabel>
+        <translation><!-- Electrical &amp; Pneumaic --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Engg/Design Cost</masterLabel>
+        <translation><!-- Engg/Design Cost --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Freight Cost</masterLabel>
+        <translation><!-- Freight Cost --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Half Locking Ceramic 40x20x25 mm thk</masterLabel>
+        <translation><!-- Half Locking Ceramic 40x20x25 mm thk --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Half Locking Ceramic 40x20x40 mm thk</masterLabel>
+        <translation><!-- Half Locking Ceramic 40x20x40 mm thk --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Hardox</masterLabel>
+        <translation><!-- Hardox --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Hardox 100- 500 BHN</masterLabel>
+        <translation><!-- Hardox 100- 500 BHN --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Hardox 25- 500 BHN</masterLabel>
+        <translation><!-- Hardox 25- 500 BHN --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Hardox 50- 500 BHN</masterLabel>
+        <translation><!-- Hardox 50- 500 BHN --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Hardox 65- 550 BHN</masterLabel>
+        <translation><!-- Hardox 65- 550 BHN --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Hardox 75- 500 BHN</masterLabel>
+        <translation><!-- Hardox 75- 500 BHN --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Hardox 80- 550 BHN</masterLabel>
+        <translation><!-- Hardox 80- 550 BHN --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Hardox 80- 600 BHN</masterLabel>
+        <translation><!-- Hardox 80- 600 BHN --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Hardox-6 500 BHN</masterLabel>
+        <translation><!-- Hardox-6 500 BHN --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Hardware</masterLabel>
+        <translation><!-- Hardware --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Hex Ceramic Tiles 19.05x19.05x12.5 mm thk</masterLabel>
+        <translation><!-- Hex Ceramic Tiles 19.05x19.05x12.5 mm thk --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Hex Ceramic Tiles 19.05x19.05x7 mm thk</masterLabel>
+        <translation><!-- Hex Ceramic Tiles 19.05x19.05x7 mm thk --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Insert</masterLabel>
+        <translation><!-- Insert --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Liner Installation/Supervision Cost</masterLabel>
+        <translation><!-- Liner Installation/Supervision Cost --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Locking Ceramic 40x40x25 mm thk</masterLabel>
+        <translation><!-- Locking Ceramic 40x40x25 mm thk --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Locking Ceramic 40x40x40 mm thk</masterLabel>
+        <translation><!-- Locking Ceramic 40x40x40 mm thk --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>MS-Flat</masterLabel>
+        <translation><!-- MS-Flat --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>MS-Plate</masterLabel>
+        <translation><!-- MS-Plate --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Mould</masterLabel>
+        <translation><!-- Mould --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Mould/Insert Cost</masterLabel>
+        <translation><!-- Mould/Insert Cost --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Other Cost 1</masterLabel>
+        <translation><!-- Other Cost 1 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Other Cost 2</masterLabel>
+        <translation><!-- Other Cost 2 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Other Cost 3</masterLabel>
+        <translation><!-- Other Cost 3 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Other Cost 4</masterLabel>
+        <translation><!-- Other Cost 4 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Other Cost 5</masterLabel>
+        <translation><!-- Other Cost 5 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Others</masterLabel>
+        <translation><!-- Others --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Overflow Pipe for Cyclone</masterLabel>
+        <translation><!-- Overflow Pipe for Cyclone --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>PU for Cyclone</masterLabel>
+        <translation><!-- PU for Cyclone --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>PU-1290</masterLabel>
+        <translation><!-- PU-1290 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>PU-1785</masterLabel>
+        <translation><!-- PU-1785 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>PU-B600</masterLabel>
+        <translation><!-- PU-B600 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>PU-ECP-61</masterLabel>
+        <translation><!-- PU-ECP-61 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>PU-T781</masterLabel>
+        <translation><!-- PU-T781 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Polyurethane Compound</masterLabel>
+        <translation><!-- Polyurethane Compound --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Pressure Gauge</masterLabel>
+        <translation><!-- Pressure Gauge --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Pressure Transmitter</masterLabel>
+        <translation><!-- Pressure Transmitter --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Rubber 102</masterLabel>
+        <translation><!-- Rubber 102 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Rubber 106</masterLabel>
+        <translation><!-- Rubber 106 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Rubber Compound</masterLabel>
+        <translation><!-- Rubber Compound --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Rubber TG-40</masterLabel>
+        <translation><!-- Rubber TG-40 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Rubber TG-50</masterLabel>
+        <translation><!-- Rubber TG-50 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Rubber TG-80</masterLabel>
+        <translation><!-- Rubber TG-80 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Rubber for Cyclone</masterLabel>
+        <translation><!-- Rubber for Cyclone --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Rubber for Radial</masterLabel>
+        <translation><!-- Rubber for Radial --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>SS-Flat</masterLabel>
+        <translation><!-- SS-Flat --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>SS-Plate</masterLabel>
+        <translation><!-- SS-Plate --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Slipoly</masterLabel>
+        <translation><!-- Slipoly --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Square Ceramic 20x20x5 mm thk</masterLabel>
+        <translation><!-- Square Ceramic 20x20x5 mm thk --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Square Ceramic 33x33x15 mm thk</masterLabel>
+        <translation><!-- Square Ceramic 33x33x15 mm thk --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Stainless Steel</masterLabel>
+        <translation><!-- Stainless Steel --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Steel for Cyclone</masterLabel>
+        <translation><!-- Steel for Cyclone --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Steel for Radial</masterLabel>
+        <translation><!-- Steel for Radial --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Structural Steel</masterLabel>
+        <translation><!-- Structural Steel --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>TPU</masterLabel>
+        <translation><!-- TPU --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>UHMWPE</masterLabel>
+        <translation><!-- UHMWPE --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Valve 1</masterLabel>
+        <translation><!-- Valve 1 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Valve 2</masterLabel>
+        <translation><!-- Valve 2 --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

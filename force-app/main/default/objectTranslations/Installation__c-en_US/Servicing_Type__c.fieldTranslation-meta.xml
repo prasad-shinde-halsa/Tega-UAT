@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Servicing Type --></label>
+    <name>Servicing_Type__c</name>
+    <picklistValues>
+        <masterLabel>Adjustment</masterLabel>
+        <translation><!-- Adjustment --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Major servicing by taking scraper outside</masterLabel>
+        <translation><!-- Major servicing by taking scraper outside --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Other</masterLabel>
+        <translation><!-- Other --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Reblading</masterLabel>
+        <translation><!-- Reblading --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Reinstallation/Relocation</masterLabel>
+        <translation><!-- Reinstallation/Relocation --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Spare Replacement</masterLabel>
+        <translation><!-- Spare Replacement --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

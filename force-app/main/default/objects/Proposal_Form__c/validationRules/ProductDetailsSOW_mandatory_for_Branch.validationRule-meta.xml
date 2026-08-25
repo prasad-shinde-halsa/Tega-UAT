@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>ProductDetailsSOW_mandatory_for_Branch</fullName>
+    <active>true</active>
+    <description>“Product Details SOW” is mandatory for Branch to fill up to submit it to PMG.</description>
+    <errorConditionFormula>AND($Profile.Name = &quot;Sales&quot;,
+    Count_Product_Details_SOW__c  = 0,
+    NOT(ISNEW()),
+    ISCHANGED(Status__c))</errorConditionFormula>
+    <errorMessage>“Product Details SOW” is mandatory for Branch to fill up for submitting it to PMG.</errorMessage>
+</ValidationRule>

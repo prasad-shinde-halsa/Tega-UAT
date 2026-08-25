@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>User_Budget__c</fullName>
+    <deleteConstraint>SetNull</deleteConstraint>
+    <label>PMG Specific User Budget</label>
+    <referenceTo>User_Budget__c</referenceTo>
+    <relationshipName>Budget</relationshipName>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Lookup</type>
+</CustomField>

@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Panel Type # --></label>
+    <name>Panel_Type__c</name>
+    <picklistValues>
+        <masterLabel>Anti Clogging</masterLabel>
+        <translation><!-- Anti Clogging --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Cross Tension PU</masterLabel>
+        <translation><!-- Cross Tension PU --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Cross Tension Rubber</masterLabel>
+        <translation><!-- Cross Tension Rubber --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Dual Hardness</masterLabel>
+        <translation><!-- Dual Hardness --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Flexi Panels</masterLabel>
+        <translation><!-- Flexi Panels --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Flipflo with Leg Panels</masterLabel>
+        <translation><!-- Flipflo with Leg Panels --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Flipflo without Leg Panels</masterLabel>
+        <translation><!-- Flipflo without Leg Panels --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Modular Pin and Sleeve Type</masterLabel>
+        <translation><!-- Modular Pin and Sleeve Type --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Panelcord</masterLabel>
+        <translation><!-- Panelcord --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Rapido</masterLabel>
+        <translation><!-- Rapido --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Steel Embedded Bolt Down PU</masterLabel>
+        <translation><!-- Steel Embedded Bolt Down PU --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Steel Embedded Bolt Down Rubber</masterLabel>
+        <translation><!-- Steel Embedded Bolt Down Rubber --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

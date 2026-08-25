@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- MoC of the Hydro Cyclone --></label>
+    <name>MoC_of_the_Hydro_Cyclone__c</name>
+    <picklistValues>
+        <masterLabel>PU</masterLabel>
+        <translation><!-- PU --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>PU and Cryston Liner</masterLabel>
+        <translation><!-- PU and Cryston Liner --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Steel with Cryston Liner</masterLabel>
+        <translation><!-- Steel with Cryston Liner --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Steel with Rubber Liner</masterLabel>
+        <translation><!-- Steel with Rubber Liner --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Steel with Rubber and Cryston Liner</masterLabel>
+        <translation><!-- Steel with Rubber and Cryston Liner --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Jamming area marked in drawing/sketch? --></label>
+    <name>Jamming_area_marked_in_drawing_sketch__c</name>
+</CustomFieldTranslation>

@@ -1,0 +1,499 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GlobalValueSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <customValue>
+        <fullName>CMP00013</fullName>
+        <default>false</default>
+        <label>Adore Fontec</label>
+    </customValue>
+    <customValue>
+        <fullName>CMP00086</fullName>
+        <default>false</default>
+        <label>AIA Engg. Ahmedabad</label>
+    </customValue>
+    <customValue>
+        <fullName>CMP00019</fullName>
+        <default>false</default>
+        <label>Airo Boost</label>
+    </customValue>
+    <customValue>
+        <fullName>CMP00051</fullName>
+        <default>false</default>
+        <label>Ajmani Associates</label>
+    </customValue>
+    <customValue>
+        <fullName>CMP00024</fullName>
+        <default>false</default>
+        <label>AKW</label>
+    </customValue>
+    <customValue>
+        <fullName>CMP00064</fullName>
+        <default>false</default>
+        <label>Appollo</label>
+    </customValue>
+    <customValue>
+        <fullName>CMP00091</fullName>
+        <default>false</default>
+        <label>Arul Rubber Pvt.ltd</label>
+    </customValue>
+    <customValue>
+        <fullName>CMP00022</fullName>
+        <default>false</default>
+        <label>Asha Locker</label>
+    </customValue>
+    <customValue>
+        <fullName>CMP00031</fullName>
+        <default>false</default>
+        <label>Bengal Tools</label>
+    </customValue>
+    <customValue>
+        <fullName>CMP00085</fullName>
+        <default>false</default>
+        <label>BHAJANKA ISPAT PVT LTD</label>
+    </customValue>
+    <customValue>
+        <fullName>CMP00070</fullName>
+        <default>false</default>
+        <label>Bharat Industrial</label>
+    </customValue>
+    <customValue>
+        <fullName>CMP00071</fullName>
+        <default>false</default>
+        <label>Bharat Industrial Limited</label>
+    </customValue>
+    <customValue>
+        <fullName>BMD ENGINEERING SOLUTIONS</fullName>
+        <default>false</default>
+        <label>BMD ENGINEERING SOLUTIONS</label>
+    </customValue>
+    <customValue>
+        <fullName>CMP00020</fullName>
+        <default>false</default>
+        <label>BMH</label>
+    </customValue>
+    <customValue>
+        <fullName>CMP00072</fullName>
+        <default>false</default>
+        <label>Centuri Rubber</label>
+    </customValue>
+    <customValue>
+        <fullName>CMP00030</fullName>
+        <default>false</default>
+        <label>CERTECH / ITALY</label>
+    </customValue>
+    <customValue>
+        <fullName>CMP00077</fullName>
+        <default>false</default>
+        <label>CHANDA &amp; CO (ENGG) PVT LTD</label>
+    </customValue>
+    <customValue>
+        <fullName>CMP00056</fullName>
+        <default>false</default>
+        <label>Chennai Radha</label>
+    </customValue>
+    <customValue>
+        <fullName>CMP00063</fullName>
+        <default>false</default>
+        <label>Cordova Engineers Pvt Ltd</label>
+    </customValue>
+    <customValue>
+        <fullName>CMP00017</fullName>
+        <default>false</default>
+        <label>Cumi</label>
+    </customValue>
+    <customValue>
+        <fullName>CMP00027</fullName>
+        <default>false</default>
+        <label>Customer Itself</label>
+    </customValue>
+    <customValue>
+        <fullName>CMP00049</fullName>
+        <default>false</default>
+        <label>Elastocam</label>
+    </customValue>
+    <customValue>
+        <fullName>CMP00036</fullName>
+        <default>false</default>
+        <label>EUROGAMMA ITALY</label>
+    </customValue>
+    <customValue>
+        <fullName>CMP00016</fullName>
+        <default>false</default>
+        <label>Flexo</label>
+    </customValue>
+    <customValue>
+        <fullName>CMP00083</fullName>
+        <default>false</default>
+        <label>Growth Asia</label>
+    </customValue>
+    <customValue>
+        <fullName>CMP00052</fullName>
+        <default>false</default>
+        <label>Hein Lehmann India Pvt Ltd- Chennai</label>
+    </customValue>
+    <customValue>
+        <fullName>CMP00088</fullName>
+        <default>false</default>
+        <label>HITECH EQUIPMENTS PVT LTD</label>
+    </customValue>
+    <customValue>
+        <fullName>CMP00075</fullName>
+        <default>false</default>
+        <label>I DO NOT KNOW THE CUSTOMER</label>
+    </customValue>
+    <customValue>
+        <fullName>CMP00038</fullName>
+        <default>false</default>
+        <label>Indana Rubber / Kota</label>
+    </customValue>
+    <customValue>
+        <fullName>CMP00096</fullName>
+        <default>false</default>
+        <label>India Fabricators</label>
+    </customValue>
+    <customValue>
+        <fullName>CMP00039</fullName>
+        <default>false</default>
+        <label>INDUS RUBBER</label>
+    </customValue>
+    <customValue>
+        <fullName>CMP00037</fullName>
+        <default>false</default>
+        <label>INNOVATIVE ENGINEERING</label>
+    </customValue>
+    <customValue>
+        <fullName>CMP00065</fullName>
+        <default>false</default>
+        <label>International Combustion Limited</label>
+    </customValue>
+    <customValue>
+        <fullName>CMP00074</fullName>
+        <default>false</default>
+        <label>IYAAN INDUSTRIES</label>
+    </customValue>
+    <customValue>
+        <fullName>CMP00021</fullName>
+        <default>false</default>
+        <label>Jhonson</label>
+    </customValue>
+    <customValue>
+        <fullName>CMP00025</fullName>
+        <default>false</default>
+        <label>Joyti Cerro</label>
+    </customValue>
+    <customValue>
+        <fullName>CMP00003</fullName>
+        <default>false</default>
+        <label>Kaveri</label>
+    </customValue>
+    <customValue>
+        <fullName>CMP00023</fullName>
+        <default>false</default>
+        <label>Krebbs</label>
+    </customValue>
+    <customValue>
+        <fullName>CMP00014</fullName>
+        <default>false</default>
+        <label>L &amp; T Eutectic</label>
+    </customValue>
+    <customValue>
+        <fullName>CMP00062</fullName>
+        <default>false</default>
+        <label>Local party</label>
+    </customValue>
+    <customValue>
+        <fullName>CMP00060</fullName>
+        <default>false</default>
+        <label>Local Thai Rubber manufacturer</label>
+    </customValue>
+    <customValue>
+        <fullName>CMP00033</fullName>
+        <default>false</default>
+        <label>LOCAL VENDOR</label>
+    </customValue>
+    <customValue>
+        <fullName>CMP00015</fullName>
+        <default>false</default>
+        <label>Martin</label>
+    </customValue>
+    <customValue>
+        <fullName>CMP00084</fullName>
+        <default>false</default>
+        <label>ME Elecmetal</label>
+    </customValue>
+    <customValue>
+        <fullName>CMP00093</fullName>
+        <default>false</default>
+        <label>Metallic Supplier</label>
+    </customValue>
+    <customValue>
+        <fullName>CMP00004</fullName>
+        <default>false</default>
+        <label>METSO</label>
+    </customValue>
+    <customValue>
+        <fullName>CMP00061</fullName>
+        <default>false</default>
+        <label>MLS Rubber, Malaysia</label>
+    </customValue>
+    <customValue>
+        <fullName>CMP00018</fullName>
+        <default>false</default>
+        <label>MM Fabricator</label>
+    </customValue>
+    <customValue>
+        <fullName>CMP00005</fullName>
+        <default>false</default>
+        <label>Multotec</label>
+    </customValue>
+    <customValue>
+        <fullName>CMP00034</fullName>
+        <default>false</default>
+        <label>Nai Pu</label>
+    </customValue>
+    <customValue>
+        <fullName>CMP00040</fullName>
+        <default>false</default>
+        <label>ORRISA RUBBER PRODUCT</label>
+    </customValue>
+    <customValue>
+        <fullName>CMP00087</fullName>
+        <default>false</default>
+        <label>Pacific Polymers &amp; Engineering Co.</label>
+    </customValue>
+    <customValue>
+        <fullName>CMP00007</fullName>
+        <default>false</default>
+        <label>Polycorp</label>
+    </customValue>
+    <customValue>
+        <fullName>CMP00042</fullName>
+        <default>false</default>
+        <label>POWERAID (INDIA)PVT. LTD</label>
+    </customValue>
+    <customValue>
+        <fullName>CMP00094</fullName>
+        <default>false</default>
+        <label>Prabhu Rockshape Machinery Pvt.Ltd.</label>
+    </customValue>
+    <customValue>
+        <fullName>CMP00048</fullName>
+        <default>false</default>
+        <label>Pradip Rubber ,Chakulia</label>
+    </customValue>
+    <customValue>
+        <fullName>CMP00054</fullName>
+        <default>false</default>
+        <label>PREMIER RUBBER MILLS</label>
+    </customValue>
+    <customValue>
+        <fullName>CMP00053</fullName>
+        <default>false</default>
+        <label>PT Growth Asia</label>
+    </customValue>
+    <customValue>
+        <fullName>CMP00067</fullName>
+        <default>false</default>
+        <label>Radiant</label>
+    </customValue>
+    <customValue>
+        <fullName>CMP00055</fullName>
+        <default>false</default>
+        <label>Rashmi Rubber (Ahmedabad based)</label>
+    </customValue>
+    <customValue>
+        <fullName>CMP00059</fullName>
+        <default>false</default>
+        <label>Reuters, Thailand</label>
+    </customValue>
+    <customValue>
+        <fullName>CMP00092</fullName>
+        <default>false</default>
+        <label>RFQ Deleted for Value Issue</label>
+    </customValue>
+    <customValue>
+        <fullName>CMP00043</fullName>
+        <default>false</default>
+        <label>ROECHLING</label>
+    </customValue>
+    <customValue>
+        <fullName>CMP00100</fullName>
+        <default>false</default>
+        <label>ROYAL ENTERPRISE</label>
+    </customValue>
+    <customValue>
+        <fullName>CMP00098</fullName>
+        <default>false</default>
+        <label>ROYAL ENTERPRISES</label>
+    </customValue>
+    <customValue>
+        <fullName>CMP00035</fullName>
+        <default>false</default>
+        <label>RUBBER TECH</label>
+    </customValue>
+    <customValue>
+        <fullName>Runwell Conveyor</fullName>
+        <default>false</default>
+        <label>Runwell Conveyor</label>
+    </customValue>
+    <customValue>
+        <fullName>CMP00080</fullName>
+        <default>false</default>
+        <label>Rupraj</label>
+    </customValue>
+    <customValue>
+        <fullName>CMP00097</fullName>
+        <default>false</default>
+        <label>Sadguru</label>
+    </customValue>
+    <customValue>
+        <fullName>CMP00068</fullName>
+        <default>false</default>
+        <label>SAKAR</label>
+    </customValue>
+    <customValue>
+        <fullName>CMP00079</fullName>
+        <default>false</default>
+        <label>Sarada Engineering</label>
+    </customValue>
+    <customValue>
+        <fullName>CMP00082</fullName>
+        <default>false</default>
+        <label>Sarda Engineering</label>
+    </customValue>
+    <customValue>
+        <fullName>CMP00045</fullName>
+        <default>false</default>
+        <label>schenck process</label>
+    </customValue>
+    <customValue>
+        <fullName>CMP00012</fullName>
+        <default>false</default>
+        <label>Scorpio</label>
+    </customValue>
+    <customValue>
+        <fullName>CMP00066</fullName>
+        <default>false</default>
+        <label>Shakti Pack</label>
+    </customValue>
+    <customValue>
+        <fullName>CMP00046</fullName>
+        <default>false</default>
+        <label>Sheetla Polymers / Delhi</label>
+    </customValue>
+    <customValue>
+        <fullName>CMP00057</fullName>
+        <default>false</default>
+        <label>SIGMA WERA RESISTANT PRODUCT pvt ltd</label>
+    </customValue>
+    <customValue>
+        <fullName>CMP00081</fullName>
+        <default>false</default>
+        <label>SRG</label>
+    </customValue>
+    <customValue>
+        <fullName>CMP00050</fullName>
+        <default>false</default>
+        <label>SRG METAL CRAFTS</label>
+    </customValue>
+    <customValue>
+        <fullName>CMP00073</fullName>
+        <default>false</default>
+        <label>Sunshine Rubber</label>
+    </customValue>
+    <customValue>
+        <fullName>CMP00002</fullName>
+        <default>false</default>
+        <label>Swagat</label>
+    </customValue>
+    <customValue>
+        <fullName>CMP00047</fullName>
+        <default>false</default>
+        <label>Synergy</label>
+    </customValue>
+    <customValue>
+        <fullName>CMP00099</fullName>
+        <default>false</default>
+        <label>SYNERGY INDUSTRIAL</label>
+    </customValue>
+    <customValue>
+        <fullName>CMP00058</fullName>
+        <default>false</default>
+        <label>Thai Foundry</label>
+    </customValue>
+    <customValue>
+        <fullName>CMP00001</fullName>
+        <default>false</default>
+        <label>Thejo</label>
+    </customValue>
+    <customValue>
+        <fullName>CMP00032</fullName>
+        <default>false</default>
+        <label>Torquo</label>
+    </customValue>
+    <customValue>
+        <fullName>CMP00076</fullName>
+        <default>false</default>
+        <label>Trelaborg</label>
+    </customValue>
+    <customValue>
+        <fullName>CMP00041</fullName>
+        <default>false</default>
+        <label>Unique Control System</label>
+    </customValue>
+    <customValue>
+        <fullName>CMP00028</fullName>
+        <default>false</default>
+        <label>VAMPOLY INDUSTRIES</label>
+    </customValue>
+    <customValue>
+        <fullName>CMP00044</fullName>
+        <default>false</default>
+        <label>Vargin Hydrotechnic Pvt. Ltd.</label>
+    </customValue>
+    <customValue>
+        <fullName>CMP00006</fullName>
+        <default>false</default>
+        <label>Wear Minerals</label>
+    </customValue>
+    <customValue>
+        <fullName>CMP00029</fullName>
+        <default>false</default>
+        <label>Weartech</label>
+    </customValue>
+    <customValue>
+        <fullName>CMP00026</fullName>
+        <default>false</default>
+        <label>Weir Minerals</label>
+    </customValue>
+    <customValue>
+        <fullName>WINTECH INDUSTRIAL TOOLS &amp; MACHINERIES</fullName>
+        <default>false</default>
+        <label>WINTECH INDUSTRIAL TOOLS &amp; MACHINERIES</label>
+    </customValue>
+    <customValue>
+        <fullName>CMP00069</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>Torque - Purchase had given enquiry to 3rd party as no other bidder than Thejo</label>
+    </customValue>
+    <customValue>
+        <fullName>CMP00090</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>No competitors</label>
+    </customValue>
+    <customValue>
+        <fullName>CMP00089</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>No loss</label>
+    </customValue>
+    <customValue>
+        <fullName>CMP00078</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>na</label>
+    </customValue>
+    <masterLabel>Competitor</masterLabel>
+    <sorted>true</sorted>
+</GlobalValueSet>

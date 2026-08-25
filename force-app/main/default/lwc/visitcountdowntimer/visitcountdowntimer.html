@@ -1,0 +1,17 @@
+<template>
+    <template if:true={showTimer}>
+        <div class="timer-container">
+            <div class={timerClass}>
+                <lightning-icon icon-name="utility:clock" size="small" class="timer-icon"></lightning-icon>
+                <span class="timer-label">Submit Within:</span>
+                <span class="timer-display">{formattedTime}</span>
+                <template if:true={isExpired}>
+                    <span class="expired-badge">EXPIRED - Visit will not appear in report</span>
+                </template>
+                <template if:false={isExpired}>
+                    <span class="timer-sub">Hours remaining to submit this visit</span>
+                </template>
+            </div>
+        </div>
+    </template>
+</template>

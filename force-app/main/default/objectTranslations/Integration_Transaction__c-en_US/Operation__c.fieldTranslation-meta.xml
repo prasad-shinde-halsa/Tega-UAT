@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Operation --></label>
+    <name>Operation__c</name>
+    <picklistValues>
+        <masterLabel>Create Customer</masterLabel>
+        <translation><!-- Create Customer --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Create Offer Spare</masterLabel>
+        <translation><!-- Create Offer Spare --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Create SO-BOM</masterLabel>
+        <translation><!-- Create SO-BOM --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Create part list</masterLabel>
+        <translation><!-- Create part list --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Get SO</masterLabel>
+        <translation><!-- Get SO --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

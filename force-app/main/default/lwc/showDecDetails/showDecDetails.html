@@ -1,0 +1,219 @@
+<template>
+    <lightning-spinner if:true={isLoading} size="large" alternative-text="Loading...">
+        
+    </lightning-spinner>
+    <header class="slds-modal__header slds-grid slds-grid_vertical-align-center" style="background-color: rgb(1, 68, 134);">
+        <!-- Title centered -->
+        <h2 class="slds-text-heading_medium slds-hyphenate slds-col slds-align_absolute-center"
+            style="font-weight: bold; font-size: 1.2em; color: rgb(255, 255, 255);">
+            DEC Details(Figures are in Thousand (000))
+        </h2>
+    </header>
+    <div class="slds-grid slds-wrap slds-p-around_medium" style="margin-top: 10px; border: auto;">
+        <div class="slds-col slds-size_1-of-1 slds-medium-size_1-of-3 slds-p-horizontal_small" style="border: auto;">
+            <lightning-input type="search" label="Search By Customer" placeholder="Enter search term ..."
+                onchange={handleSearch} class="neon-input" value={searchTerm}>
+            </lightning-input>
+        </div>
+        <div class="slds-col slds-size_1-of-1 slds-medium-size_1-of-3 slds-p-horizontal_small" style="border: auto;">
+            <lightning-input type="search" label="Search By PMG" placeholder="Enter search term ..."
+                onchange={handleSearchPMG} class="neon-input" value={searchTermPMG}>
+            </lightning-input>
+        </div>
+        <div class="slds-col slds-size_1-of-1 slds-medium-size_1-of-3 slds-p-horizontal_small" style="border: auto;">
+            <lightning-combobox label="Search By Order Type" value={selectedOrderType} options={OrderTypeOptions}
+                onchange={handleOrderTypeChange} class="neon-combobox">
+            </lightning-combobox>
+        </div>
+    </div>
+    <template if:false={showTable}>
+        <header class="slds-modal__header" style="height: auto; background-color: rgb(1, 68, 134);">
+            <h2 class="slds-text-heading_medium slds-hyphenate custom-header-title"
+                style="font-weight: bold; font-size: 1.2em; color: rgb(255, 255, 255);">
+                No Details Found</h2>
+        </header>
+    </template>
+    <template if:true={showTable}>
+        <div class="slds-table_edit_container slds-is-relative" style="overflow-y:auto; max-height: 500px;">
+            <table
+                class="slds-table slds-table_cell-buffer slds-table_bordered slds-table_resizable-cols slds-no-row-hover slds-max-medium-table_stacked">
+                <thead style="position: sticky; top: 0; z-index: 1;">
+                    <tr class="slds-line-height_reset">
+                        <th scope="col" style=" background-color: rgb(1, 68, 134);">
+                            <div class="slds-truncate" title="Sl. No"
+                                style="padding-top: 1em; padding-bottom: 1em; font-size: 15px; color: white; text-align: center;">
+                                Sl. No
+                            </div>
+                        </th>
+                        <th scope="col" style="background-color: rgb(1, 68, 134);">
+                            <div class="slds-truncate" title="Name"
+                                style="padding-top: 1em; padding-bottom: 1em; font-size: 15px; color: white; text-align: center;">
+                                Name
+                            </div>
+                        </th>
+                        <th scope="col" style=" background-color: rgb(1, 68, 134);">
+                            <div class="slds-truncate" title="PMG"
+                                style="padding-top: 1em; padding-bottom: 1em; font-size: 15px; color: white; text-align: center;">
+                                PMG</div>
+                        </th>
+                        <th scope="col" style=" background-color: rgb(1, 68, 134);">
+                            <div class="slds-truncate" title="Product Group"
+                                style="padding-top: 1em; padding-bottom: 1em; font-size: 15px; color: white; text-align: center;">
+                                Product Group</div>
+                        </th>
+                        <th scope="col" style=" background-color: rgb(1, 68, 134);">
+                            <div class="slds-truncate" title="Application Type"
+                                style="padding-top: 1em; padding-bottom: 1em; font-size: 15px; color: white; text-align: center;">
+                                Application Type</div>
+                        </th>
+                        <th scope="col" style=" background-color: rgb(1, 68, 134);">
+                            <div class="slds-truncate" title="Order Type"
+                                style="padding-top: 1em; padding-bottom: 1em; font-size: 15px; color: white; text-align: center;">
+                                Order Type</div>
+                        </th>
+
+                        <th scope="col" style=" background-color: rgb(1, 68, 134);">
+                            <div class="slds-truncate" title="Customer"
+                                style="padding-top: 1em; padding-bottom: 1em; font-size: 15px; color: white; text-align: center;">
+                                Customer</div>
+                        </th>
+                        <th scope="col" style=" background-color: rgb(1, 68, 134);">
+                            <div class="slds-truncate" title="Part List"
+                                style="padding-top: 1em; padding-bottom: 1em; font-size: 15px; color: white; text-align: center;">
+                                Part List</div>
+                        </th>
+                        <th scope="col" style=" background-color: rgb(1, 68, 134);">
+                            <div class="slds-truncate" title="Product Name"
+                                style="padding-top: 1em; padding-bottom: 1em; font-size: 15px; color: white; text-align: center;">
+                                Product Name</div>
+                        </th>
+                        <th scope="col" style=" background-color: rgb(1, 68, 134);">
+                            <div class="slds-truncate" title="Description"
+                                style="padding-top: 1em; padding-bottom: 1em; font-size: 15px; color: white; text-align: center;">
+                                Description</div>
+                        </th>
+                        <th scope="col" style=" background-color: rgb(1, 68, 134);">
+                            <div class="slds-truncate" title="DEC Order"
+                                style="padding-top: 1em; padding-bottom: 1em; font-size: 15px; color: white; text-align: center;">
+                                DEC Order</div>
+                        </th>
+                        
+                        <th scope="col" style=" background-color: rgb(1, 68, 134);">
+                            <div class="slds-truncate" title="Total Order"
+                                style="padding-top: 1em; padding-bottom: 1em; font-size: 15px; color: white; text-align: center;">
+                                Total Order</div>
+                        </th>
+                        <th scope="col" style=" background-color: rgb(1, 68, 134);">
+                            <div class="slds-truncate" title="DEC Sales"
+                                style="padding-top: 1em; padding-bottom: 1em; font-size: 15px; color: white; text-align: center;">
+                                DEC Sales</div>
+                        </th>
+                        <th scope="col" style=" background-color: rgb(1, 68, 134);">
+                            <div class="slds-truncate" title="Total Sales"
+                                style="padding-top: 1em; padding-bottom: 1em; font-size: 15px; color: white; text-align: center;">
+                                Total Sales</div>
+                        </th>
+    
+                    </tr>
+                </thead>
+                <tbody>
+                    <template for:each={budgetLineItemsWithIndex} for:item="record">
+                        <tr key={record.Id} class={record.rowClass}>
+                            <td data-label="Sl. No">
+                                <div class="slds-truncate" style="font-weight: bold; text-wrap: wrap; text-align: center;">
+                                    {record.serialNumber}
+                                </div>
+                            </td>
+                            <td data-label="Name">
+                                <div class="slds-truncate"
+                                    style="font-weight: bold; text-wrap: wrap; text-align: center;">
+                                    {record.Name}
+                                </div>
+                            </td>
+                            <td data-label="PMG">
+                                <div class="slds-truncate" title={record.PMG_Master}
+                                    style="font-weight: bold; text-wrap: wrap; text-align: center;">
+                                    {record.PMG_Master}
+                                </div>
+                            </td>
+                            <td data-label="Product Group">
+                                <div class="slds-truncate" title={record.PG_Master}
+                                    style="font-weight: bold; text-wrap: wrap; text-align: center;">
+                                    {record.PG_Master}
+                                </div>
+                            </td>
+                            <td data-label="Application Type">
+                                <div class="slds-truncate" title={record.Application_Type_Master}
+                                    style="font-weight: bold; text-wrap: wrap; text-align: center;">
+                                    {record.Application_Type_Master}
+                                </div>
+                            </td>
+                             <!-- Order Type -->
+                             <td data-label="Order Type">
+                                <div class="slds-truncate" title={record.Order_Type__c}
+                                    style="font-weight: bold; text-wrap: wrap; text-align: center;">
+                                    {record.Order_Type__c}
+                                </div>
+                            </td>
+
+                            <td data-label="Customer">
+                                <div class="slds-truncate" title={record.Customer__r.Name}
+                                    style="font-weight: bold; text-wrap: wrap; text-align: center;">
+                                    {record.Customer__r.Name}
+                                </div>
+                            </td>
+                            <td data-label="Part List">
+                                <div class="slds-truncate" title={record.Part_List}
+                                    style="font-weight: bold; text-wrap: wrap; text-align: center;">
+                                    {record.Part_List}
+                                </div>
+                            </td>
+                            <td data-label="Product Name">
+                                <div class="slds-truncate" title={record.Product_Name}
+                                    style="font-weight: bold; text-wrap: wrap; text-align: center;">
+                                    {record.Product_Name}
+                                </div>
+                            </td>
+                            <td data-label="Product Name">
+                                <div class="slds-truncate" title={record.Product_Name}
+                                    style="font-weight: bold; text-wrap: wrap; text-align: center;">
+                                    {record.Description__c}
+                                </div>
+                            </td>
+                            <td data-label="DEC Order">
+                               
+                                <input type="text" class="slds-input" value={record.Dec_Order__c} data-id={record.Id}
+                                data-field="Dec_Order__c" onchange={handleInlineEdit} disabled={record.isDisabled}
+                                style="text-align: center; font-weight: bold;" />
+                            </td>
+                            <td data-label="Total Order">
+                                <div class="slds-truncate" title={record.Total_Order__c}
+                                    style="font-weight: bold; text-wrap: wrap; text-align: center;">
+                                    {record.Total_Order__c}
+                                </div>
+                            </td>
+                            <td data-label="DEC Sales">
+                                
+                                <input type="text" class="slds-input" value={record.Dec_Sales__c} data-id={record.Id}
+                                    data-field="Dec_Sales__c" onchange={handleInlineEdit} disabled={record.isDisabled}
+                                    style="text-align: center; font-weight: bold;" />
+                            </td>
+
+                            <td data-label="Total Sales">
+                                <div class="slds-truncate" title={record.Total_Sales__c}
+                                    style="font-weight: bold; text-wrap: wrap; text-align: center;">
+                                    {record.Total_Sales__c}
+                                </div>
+                            </td>
+                        </tr>
+                    </template>
+                </tbody>
+    
+            </table>
+        </div>
+        <div style="margin-top: 1em; text-align: center;" if:true={showButtons}>
+            <lightning-button label="Save" variant="brand" onclick={handleSave} ></lightning-button>
+            <lightning-button label="Cancel" variant="neutral" onclick={handleCancel} class="slds-m-left_small"></lightning-button>
+        </div>
+    </template>
+</template>

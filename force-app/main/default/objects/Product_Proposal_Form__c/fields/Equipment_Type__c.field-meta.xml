@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Equipment_Type__c</fullName>
+    <label>Equipment Type</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Bunker</fullName>
+                <default>false</default>
+                <label>Bunker</label>
+            </value>
+            <value>
+                <fullName>BOOM CONVEYOR</fullName>
+                <default>false</default>
+                <label>BOOM CONVEYOR</label>
+            </value>
+            <value>
+                <fullName>STACKER RECLAIMER</fullName>
+                <default>false</default>
+                <label>STACKER RECLAIMER</label>
+            </value>
+            <value>
+                <fullName>REVERSIBLE CONVEYOR</fullName>
+                <default>false</default>
+                <label>REVERSIBLE CONVEYOR</label>
+            </value>
+            <value>
+                <fullName>UNIDIRECTIONAL CONVEYOR</fullName>
+                <default>false</default>
+                <label>UNIDIRECTIONAL CONVEYOR</label>
+            </value>
+            <value>
+                <fullName>BELT FEEDER</fullName>
+                <default>false</default>
+                <label>BELT FEEDER</label>
+            </value>
+            <value>
+                <fullName>FIXED TRIPPER</fullName>
+                <default>false</default>
+                <label>FIXED TRIPPER</label>
+            </value>
+            <value>
+                <fullName>TRAVELLING TRIPPER</fullName>
+                <default>false</default>
+                <label>TRAVELLING TRIPPER</label>
+            </value>
+            <value>
+                <fullName>SHUTTLE CONVEYOR</fullName>
+                <default>false</default>
+                <label>SHUTTLE CONVEYOR</label>
+            </value>
+            <value>
+                <fullName>OTHERS</fullName>
+                <default>false</default>
+                <label>OTHERS</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

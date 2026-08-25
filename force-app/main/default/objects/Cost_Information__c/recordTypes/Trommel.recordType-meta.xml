@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RecordType xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Trommel</fullName>
+    <active>true</active>
+    <label>Trommel</label>
+    <picklistValues>
+        <picklist>Item_Desc__c</picklist>
+        <values>
+            <fullName>Any other cost  1</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Any other cost  2</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Hardox-6 500 BHN</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Hardware</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Insert</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>MS-Flat</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>MS-Plate</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Mould</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Others</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>PU-1290</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>PU-1785</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>PU-B600</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>PU-ECP-61</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>PU-T781</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Rubber 102</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Rubber 106</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Rubber TG-40</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Rubber TG-50</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Rubber TG-80</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>SS-Flat</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>SS-Plate</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>TPU</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+</RecordType>

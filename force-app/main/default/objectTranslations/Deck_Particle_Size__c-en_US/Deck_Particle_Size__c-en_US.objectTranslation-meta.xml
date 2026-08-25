@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Particle Size Distribution Per Deck</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Deck Particle Size Distribution</value>
+    </caseValues>
+    <layouts>
+        <layout>Deck Particle Size Layout</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- System Information --></label>
+            <section>System Information</section>
+        </sections>
+    </layouts>
+    <recordTypes>
+        <label><!-- Upper Deck (it will have three types of PSD: FD, OS, US) --></label>
+        <name>Deck_1</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- Lower Deck/Decks (it will have two types of PSD: OS, US) --></label>
+        <name>Others</name>
+    </recordTypes>
+    <startsWith>Consonant</startsWith>
+</CustomObjectTranslation>

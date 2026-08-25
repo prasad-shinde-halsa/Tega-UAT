@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Product_Catagory_v2__c</fullName>
+    <externalId>false</externalId>
+    <formula>IF( CONTAINS( L2_Prod_Name__c , &apos;FEH&apos;) , &apos;FEH&apos;, IF( CONTAINS(L2_Prod_Name__c , &apos;DEH&apos;) , &apos;DEH&apos;, IF( CONTAINS(L2_Prod_Name__c , &apos;SHELL&apos;), &apos;SHELL&apos;, IF(CONTAINS(L2_Prod_Name__c , &apos;SPARE&apos;), &apos;SPARE&apos;, IF( CONTAINS(L2_Prod_Name__c , &apos;PNL&apos;) , &apos;PNL&apos;, IF( CONTAINS(L2_Prod_Name__c , &apos;SFB&apos;) , &apos;SFB&apos;, 
+IF( CONTAINS(L2_Prod_Name__c , &apos;MFB&apos;) , &apos;MFB&apos;, &apos;None&apos;) ) ) ) ) ) )</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>Product Catagory v2</label>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

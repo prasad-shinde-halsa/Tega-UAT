@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Number of Blind Panels Along Length --></label>
+    <name>Number_of_Blind_Panels_Along_Length__c</name>
+</CustomFieldTranslation>

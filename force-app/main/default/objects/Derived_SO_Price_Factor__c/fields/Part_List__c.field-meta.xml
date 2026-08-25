@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Part_List__c</fullName>
+    <deleteConstraint>SetNull</deleteConstraint>
+    <label>Part List</label>
+    <referenceTo>Part_List__c</referenceTo>
+    <relationshipLabel>Derived SO Price Factors</relationshipLabel>
+    <relationshipName>Derived_SO_Price_Factors</relationshipName>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Lookup</type>
+</CustomField>

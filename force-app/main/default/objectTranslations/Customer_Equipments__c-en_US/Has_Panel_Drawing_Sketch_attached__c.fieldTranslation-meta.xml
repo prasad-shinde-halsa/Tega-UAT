@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- The same must be uploaded in the “Files” section in the Related Tab. --></help>
+    <label><!-- Panel Drawing/Sketch # --></label>
+    <name>Has_Panel_Drawing_Sketch_attached__c</name>
+</CustomFieldTranslation>

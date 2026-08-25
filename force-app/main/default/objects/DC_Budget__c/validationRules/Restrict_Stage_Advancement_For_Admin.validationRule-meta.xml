@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Restrict_Stage_Advancement_For_Admin</fullName>
+    <active>false</active>
+    <description>Prevents System Admins from moving to a next stage; only allows moving to previous stages.</description>
+    <errorConditionFormula>AND(
+    $Profile.Name = &quot;System Administrator&quot;,
+    ISCHANGED(Status__c),
+    CASE(Status__c,
+        &quot;Draft&quot;, 1,
+        &quot;Submitted&quot;, 2,
+        &quot;1st Level Approved&quot;, 3,
+        &quot;2nd Level Approved&quot;, 4,
+        &quot;3rd Level Approved&quot;, 5,
+        &quot;4th Level Approved&quot;, 6,
+        0
+    ) &gt; CASE(PRIORVALUE(Status__c),
+        &quot;Draft&quot;, 1,
+        &quot;Submitted&quot;, 2,
+        &quot;1st Level Approved&quot;, 3,
+        &quot;2nd Level Approved&quot;, 4,
+        &quot;3rd Level Approved&quot;, 5,
+        &quot;4th Level Approved&quot;, 6,
+        0
+    )
+)</errorConditionFormula>
+    <errorMessage>You can only move to a previous stage.</errorMessage>
+</ValidationRule>

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- Order Expected Stage &amp; Month Update Start Date --></help>
+    <label><!-- MIS Edit Start Date --></label>
+    <name>MIS_Edit_Start_Date__c</name>
+</CustomFieldTranslation>

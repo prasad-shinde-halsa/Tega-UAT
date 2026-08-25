@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- Competitor information and customer expectations --></help>
+    <label><!-- Scenario: Competitors &amp; Cust Expectation --></label>
+    <name>Describe_Scenario__c</name>
+</CustomFieldTranslation>

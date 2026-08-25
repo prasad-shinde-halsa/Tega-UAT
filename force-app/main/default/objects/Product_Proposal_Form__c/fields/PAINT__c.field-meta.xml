@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>PAINT__c</fullName>
+    <label>PAINT</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>POWDER COATED DFT 80 MICRON</fullName>
+                <default>false</default>
+                <label>POWDER COATED DFT 80 MICRON</label>
+            </value>
+            <value>
+                <fullName>PAINT DFT 50 MICRON</fullName>
+                <default>false</default>
+                <label>PAINT DFT 50 MICRON</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

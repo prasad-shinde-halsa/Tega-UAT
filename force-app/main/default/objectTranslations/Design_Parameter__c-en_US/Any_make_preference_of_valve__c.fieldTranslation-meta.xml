@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- Check preference, if any --></help>
+    <label><!-- Indicate Valve --></label>
+    <name>Any_make_preference_of_valve__c</name>
+</CustomFieldTranslation>

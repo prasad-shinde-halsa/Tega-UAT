@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Condition_of_Pulley_lagging__c</fullName>
+    <label>Condition of Pulley lagging</label>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Lagging sheet removed from edges- Repair required</fullName>
+                <default>false</default>
+                <label>Lagging sheet removed from edges- Repair required</label>
+            </value>
+            <value>
+                <fullName>Ceramic tiles removed-No replacement required</fullName>
+                <default>false</default>
+                <label>Ceramic tiles removed-No replacement required</label>
+            </value>
+            <value>
+                <fullName>Major damage in rubber/ceramic tiles- needs replacement</fullName>
+                <default>false</default>
+                <label>Major damage in rubber/ceramic tiles- needs replacement</label>
+            </value>
+            <value>
+                <fullName>Working fine</fullName>
+                <default>false</default>
+                <label>Working fine</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

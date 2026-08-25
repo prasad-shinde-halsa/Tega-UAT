@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Total_Order__c</fullName>
+    <formula>Apr_Order__c + May_Order__c + Jun_Order__c + Jul_Order__c + Aug_Order__c + Sep_Order__c + Oct_Order__c + Nov_Order__c + Dec_Order__c + Jan_Order__c + Feb_Order__c + Mar_Order__c</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>Total Order</label>
+    <precision>18</precision>
+    <required>false</required>
+    <scale>2</scale>
+    <trackTrending>false</trackTrending>
+    <type>Currency</type>
+</CustomField>

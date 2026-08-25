@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Carrier Tube condition --></label>
+    <name>Carrier_Tube_condition__c</name>
+    <picklistValues>
+        <masterLabel>Bending observed-replacement required</masterLabel>
+        <translation><!-- Bending observed-replacement required --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Corrosion took place-replacement required</masterLabel>
+        <translation><!-- Corrosion took place-replacement required --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Not suitable-upgradation</masterLabel>
+        <translation><!-- Not suitable-upgradation --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Ok-in good condition</masterLabel>
+        <translation><!-- Ok-in good condition --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

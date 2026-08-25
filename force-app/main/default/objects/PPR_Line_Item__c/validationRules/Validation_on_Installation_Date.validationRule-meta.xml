@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Validation_on_Installation_Date</fullName>
+    <active>true</active>
+    <errorConditionFormula>AND (if(Installed__c,false,true),  ISNULL(Installation_date__c) )</errorConditionFormula>
+    <errorMessage>Installation Date is Mandatory if not installed yet.</errorMessage>
+</ValidationRule>

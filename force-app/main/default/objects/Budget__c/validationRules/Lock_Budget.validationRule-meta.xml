@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Lock_Budget</fullName>
+    <active>true</active>
+    <errorConditionFormula>(User_Budget__r.Approver__r.Id &lt;&gt;  LastModifiedBy.Id ) &amp;&amp; 
+( ISPICKVAL(User_Budget__r.Status__c, &apos;Submitted&apos;) )</errorConditionFormula>
+    <errorMessage>Only approver can edit Budget at this time</errorMessage>
+</ValidationRule>

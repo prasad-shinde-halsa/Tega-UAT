@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Molycop Referral</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Molycop Referrals</value>
+    </caseValues>
+    <layouts>
+        <layout>Molycop Referral Layout</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- MolyCop Sync Response --></label>
+            <section>MolyCop Sync Response</section>
+        </sections>
+    </layouts>
+    <quickActions>
+        <label><!-- Submit Referral Information --></label>
+        <name>Submit_Referral_Information</name>
+    </quickActions>
+    <startsWith>Consonant</startsWith>
+    <validationRules>
+        <errorMessage><!-- You cannot edit any Submitted record --></errorMessage>
+        <name>Restrict_Record_Edition_After_Submit</name>
+    </validationRules>
+</CustomObjectTranslation>

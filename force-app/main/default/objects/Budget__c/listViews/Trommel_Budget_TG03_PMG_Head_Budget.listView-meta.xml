@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Trommel_Budget_TG03_PMG_Head_Budget</fullName>
+    <filterScope>Queue</filterScope>
+    <label>Trommel-Budget-TG03-PMG Head</label>
+    <queue>Trommel_Budget_TG03_PMG_Head</queue>
+    <sharedTo>
+        <allInternalUsers></allInternalUsers>
+    </sharedTo>
+</ListView>

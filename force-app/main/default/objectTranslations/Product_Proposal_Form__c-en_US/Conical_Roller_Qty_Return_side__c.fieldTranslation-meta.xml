@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Conical Roller Qty (Return side) --></label>
+    <name>Conical_Roller_Qty_Return_side__c</name>
+</CustomFieldTranslation>

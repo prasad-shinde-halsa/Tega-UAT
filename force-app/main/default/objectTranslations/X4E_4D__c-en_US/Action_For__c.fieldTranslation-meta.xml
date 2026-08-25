@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Action For --></label>
+    <name>Action_For__c</name>
+    <picklistValues>
+        <masterLabel>Drawing</masterLabel>
+        <translation><!-- Drawing --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Manufacturing</masterLabel>
+        <translation><!-- Manufacturing --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Purchase</masterLabel>
+        <translation><!-- Purchase --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

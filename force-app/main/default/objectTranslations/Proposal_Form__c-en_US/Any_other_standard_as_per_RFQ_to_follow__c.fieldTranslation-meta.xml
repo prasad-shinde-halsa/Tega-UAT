@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Any other standard as per RFQ to follow --></label>
+    <name>Any_other_standard_as_per_RFQ_to_follow__c</name>
+</CustomFieldTranslation>

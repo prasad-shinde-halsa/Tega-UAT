@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- pH Value of the Slurry --></label>
+    <name>pH_Value_of_the_Slurry__c</name>
+</CustomFieldTranslation>

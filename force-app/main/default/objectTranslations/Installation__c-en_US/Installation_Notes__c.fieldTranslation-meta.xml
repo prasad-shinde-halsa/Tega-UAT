@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Installation Notes (Hosch) --></label>
+    <name>Installation_Notes__c</name>
+    <picklistValues>
+        <masterLabel>Back plate modification of the discharge chute done</masterLabel>
+        <translation><!-- Back plate modification of the discharge chute done --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Belt condition is not good</masterLabel>
+        <translation><!-- Belt condition is not good --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Belt flapping present</masterLabel>
+        <translation><!-- Belt flapping present --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Damaged belt joint</masterLabel>
+        <translation><!-- Damaged belt joint --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Damaged pulley lagging-head/Snub pulley</masterLabel>
+        <translation><!-- Damaged pulley lagging-head/Snub pulley --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Eccentric movement of pulley (Head/Snub)</masterLabel>
+        <translation><!-- Eccentric movement of pulley (Head/Snub) --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Excessive belt sway</masterLabel>
+        <translation><!-- Excessive belt sway --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Minor modification done in the scraper during installation</masterLabel>
+        <translation><!-- Minor modification done in the scraper during installation --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Minor modification required of the scraper-to be done</masterLabel>
+        <translation><!-- Minor modification required of the scraper-to be done --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

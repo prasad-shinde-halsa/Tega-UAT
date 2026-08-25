@@ -1,0 +1,205 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Failure Category --></label>
+    <name>Failure_Category__c</name>
+    <picklistValues>
+        <masterLabel>Aluminium Track Worn Out</masterLabel>
+        <translation><!-- Aluminium Track Worn Out --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Aluminium Track channel-gap smal</masterLabel>
+        <translation><!-- Aluminium Track channel-gap smal --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Blade Holder( Element ) Breakage</masterLabel>
+        <translation><!-- Blade Holder( Element ) Breakage --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Bolt Breakage</masterLabel>
+        <translation><!-- Bolt Breakage --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Bolt Head and Clamp Block Mismatching</masterLabel>
+        <translation><!-- Bolt Head and Clamp Block Mismatching --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Bouncing of Material</masterLabel>
+        <translation><!-- Bouncing of Material --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Bucker Up Frame Cracking/ Failure</masterLabel>
+        <translation><!-- Bucker Up Frame Cracking/ Failure --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Casting Breakage / Crack / Faster Wear</masterLabel>
+        <translation><!-- Casting Breakage / Crack / Faster Wear --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Chute/Hopper</masterLabel>
+        <translation><!-- Chute/Hopper --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Damage of Spindle</masterLabel>
+        <translation><!-- Damage of Spindle --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>De-bonding</masterLabel>
+        <translation><!-- De-bonding --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>De-bonding of ceramic lagging from the pulley surface</masterLabel>
+        <translation><!-- De-bonding of ceramic lagging from the pulley surface --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>De-bonding of ceramic tiles from the ceramic lagging sheet</masterLabel>
+        <translation><!-- De-bonding of ceramic tiles from the ceramic lagging sheet --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>De-lamination</masterLabel>
+        <translation><!-- De-lamination --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Delayed Supply</masterLabel>
+        <translation><!-- Delayed Supply --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Dimensional Problem</masterLabel>
+        <translation><!-- Dimensional Problem --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Dimensional/ Fitment Problem</masterLabel>
+        <translation><!-- Dimensional/ Fitment Problem --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Dimensional/Fitment</masterLabel>
+        <translation><!-- Dimensional/Fitment --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Dimensional/Fitment problem</masterLabel>
+        <translation><!-- Dimensional/Fitment problem --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>FLIP FLO Screen problem</masterLabel>
+        <translation><!-- FLIP FLO Screen problem --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Fast wear/Damage of Blades</masterLabel>
+        <translation><!-- Fast wear/Damage of Blades --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Fast wear/Damage of Spillex rubber blocks</masterLabel>
+        <translation><!-- Fast wear/Damage of Spillex rubber blocks --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Faster wear/De-bonding of UHMWPE/poor life</masterLabel>
+        <translation><!-- Faster wear/De-bonding of UHMWPE/poor life --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Finishing Problem</masterLabel>
+        <translation><!-- Finishing Problem --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Fitment Problem</masterLabel>
+        <translation><!-- Fitment Problem --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Hardox Crack &amp; Faster Wear</masterLabel>
+        <translation><!-- Hardox Crack &amp; Faster Wear --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Housing/seal failed or came out of the-Belt Tracking System</masterLabel>
+        <translation><!-- Housing/seal failed or came out of the-Belt Tracking System --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Installation Failure</masterLabel>
+        <translation><!-- Installation Failure --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Jaming of Belt Tracking System</masterLabel>
+        <translation><!-- Jaming of Belt Tracking System --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Jamming of Material</masterLabel>
+        <translation><!-- Jamming of Material --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Leakage  from cyclone parts</masterLabel>
+        <translation><!-- Leakage  from cyclone parts --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Low Life of Panel</masterLabel>
+        <translation><!-- Low Life of Panel --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Low Screening Efficiency</masterLabel>
+        <translation><!-- Low Screening Efficiency --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Packaging Complaint</masterLabel>
+        <translation><!-- Packaging Complaint --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Poor Life of Liner / Faster Wear</masterLabel>
+        <translation><!-- Poor Life of Liner / Faster Wear --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Poor Life of Rubber / Faster Wear</masterLabel>
+        <translation><!-- Poor Life of Rubber / Faster Wear --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Poor Life of liner</masterLabel>
+        <translation><!-- Poor Life of liner --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Premature wear out/Poor life of lagging-Belt Tracking System</masterLabel>
+        <translation><!-- Premature wear out/Poor life of lagging-Belt Tracking System --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Problem in Backing plate of Spill-ex</masterLabel>
+        <translation><!-- Problem in Backing plate of Spill-ex --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Problem in Elastomount</masterLabel>
+        <translation><!-- Problem in Elastomount --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Product Failure</masterLabel>
+        <translation><!-- Product Failure --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Product Performance Problem</masterLabel>
+        <translation><!-- Product Performance Problem --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Sagging of Panels</masterLabel>
+        <translation><!-- Sagging of Panels --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Short Supply</masterLabel>
+        <translation><!-- Short Supply --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Side Plate Cracking</masterLabel>
+        <translation><!-- Side Plate Cracking --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Trommel Structure and Panel problem</masterLabel>
+        <translation><!-- Trommel Structure and Panel problem --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Under Cutting of Panels</masterLabel>
+        <translation><!-- Under Cutting of Panels --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Wearing out of Liners due to Abrasion</masterLabel>
+        <translation><!-- Wearing out of Liners due to Abrasion --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Wearing out of Liners due to Impact</masterLabel>
+        <translation><!-- Wearing out of Liners due to Impact --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Wrong Supply</masterLabel>
+        <translation><!-- Wrong Supply --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

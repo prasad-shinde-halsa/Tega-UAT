@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Parent Earlier Tagged --></label>
+    <name>Parent_Earlier_Tagged__c</name>
+    <relationshipLabel><!-- Offers (Parent Earlier Tagged) --></relationshipLabel>
+</CustomFieldTranslation>

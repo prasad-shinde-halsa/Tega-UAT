@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Material Handled --></label>
+    <name>Material_Handled__c</name>
+    <picklistValues>
+        <masterLabel>Aggregate</masterLabel>
+        <translation><!-- Aggregate --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Alumina</masterLabel>
+        <translation><!-- Alumina --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Bauxite Ore</masterLabel>
+        <translation><!-- Bauxite Ore --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Betonite, 100 mesh</masterLabel>
+        <translation><!-- Betonite, 100 mesh --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Cement, Clinker</masterLabel>
+        <translation><!-- Cement, Clinker --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Cement, Portland</masterLabel>
+        <translation><!-- Cement, Portland --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Chrome Ore</masterLabel>
+        <translation><!-- Chrome Ore --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Coal, Antracite sized</masterLabel>
+        <translation><!-- Coal, Antracite sized --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Coal, Bituminous ROM</masterLabel>
+        <translation><!-- Coal, Bituminous ROM --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Coal, Clean</masterLabel>
+        <translation><!-- Coal, Clean --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Coal, Lignite</masterLabel>
+        <translation><!-- Coal, Lignite --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Coal, Powder river Basin</masterLabel>
+        <translation><!-- Coal, Powder river Basin --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Coke</masterLabel>
+        <translation><!-- Coke --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Coke Breeze</masterLabel>
+        <translation><!-- Coke Breeze --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Coke, Petroleum</masterLabel>
+        <translation><!-- Coke, Petroleum --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Copper Ore</masterLabel>
+        <translation><!-- Copper Ore --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Dolomite</masterLabel>
+        <translation><!-- Dolomite --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Earth, ROM Dry</masterLabel>
+        <translation><!-- Earth, ROM Dry --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Earth, Wet with Clay</masterLabel>
+        <translation><!-- Earth, Wet with Clay --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Fines</masterLabel>
+        <translation><!-- Fines --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Flyash</masterLabel>
+        <translation><!-- Flyash --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Gold Ore</masterLabel>
+        <translation><!-- Gold Ore --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Granite</masterLabel>
+        <translation><!-- Granite --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Gravel, Bank Run</masterLabel>
+        <translation><!-- Gravel, Bank Run --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Gravel, Pebbles</masterLabel>
+        <translation><!-- Gravel, Pebbles --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Gypsum</masterLabel>
+        <translation><!-- Gypsum --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Iron Ore</masterLabel>
+        <translation><!-- Iron Ore --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Iron Ore Pellets</masterLabel>
+        <translation><!-- Iron Ore Pellets --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Lime, Hydrated</masterLabel>
+        <translation><!-- Lime, Hydrated --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Limestone, Crushed</masterLabel>
+        <translation><!-- Limestone, Crushed --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Molybdenum Ore</masterLabel>
+        <translation><!-- Molybdenum Ore --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Ore</masterLabel>
+        <translation><!-- Ore --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Others</masterLabel>
+        <translation><!-- Others --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Overburden</masterLabel>
+        <translation><!-- Overburden --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Phosphate, Rock</masterLabel>
+        <translation><!-- Phosphate, Rock --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Phosphate, Rock, Pulverized</masterLabel>
+        <translation><!-- Phosphate, Rock, Pulverized --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Quartz</masterLabel>
+        <translation><!-- Quartz --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Sand, Dry Bank</masterLabel>
+        <translation><!-- Sand, Dry Bank --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Sand, Foundry</masterLabel>
+        <translation><!-- Sand, Foundry --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Sinter</masterLabel>
+        <translation><!-- Sinter --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Slag BF Granular Dry</masterLabel>
+        <translation><!-- Slag BF Granular Dry --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Slag BF Granular Wet</masterLabel>
+        <translation><!-- Slag BF Granular Wet --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Zinc Ore</masterLabel>
+        <translation><!-- Zinc Ore --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

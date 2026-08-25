@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Validation_on_PPRLin_LogistiRCAMandatory</fullName>
+    <active>true</active>
+    <errorConditionFormula>AND(Logistics__c=true, (LEN(Logistics_RCA__c)=0))</errorConditionFormula>
+    <errorDisplayField>Logistics_RCA__c</errorDisplayField>
+    <errorMessage>Please Fill this field.</errorMessage>
+</ValidationRule>

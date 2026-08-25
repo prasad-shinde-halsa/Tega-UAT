@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Discharge To --></label>
+    <name>Discharge_To__c</name>
+    <picklistValues>
+        <masterLabel>Belt Weigh Feeder</masterLabel>
+        <translation><!-- Belt Weigh Feeder --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Bunker</masterLabel>
+        <translation><!-- Bunker --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Conveyor Belt</masterLabel>
+        <translation><!-- Conveyor Belt --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Crusher</masterLabel>
+        <translation><!-- Crusher --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Dumper Truck</masterLabel>
+        <translation><!-- Dumper Truck --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Feeder</masterLabel>
+        <translation><!-- Feeder --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Hopper</masterLabel>
+        <translation><!-- Hopper --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Launder</masterLabel>
+        <translation><!-- Launder --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Mill</masterLabel>
+        <translation><!-- Mill --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Mill Chute</masterLabel>
+        <translation><!-- Mill Chute --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Misc Equipment</masterLabel>
+        <translation><!-- Misc Equipment --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Plough Feeder</masterLabel>
+        <translation><!-- Plough Feeder --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Rotary Feeder</masterLabel>
+        <translation><!-- Rotary Feeder --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Screen</masterLabel>
+        <translation><!-- Screen --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Silo</masterLabel>
+        <translation><!-- Silo --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Tank</masterLabel>
+        <translation><!-- Tank --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Transfer chute</masterLabel>
+        <translation><!-- Transfer chute --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Vib Screen</masterLabel>
+        <translation><!-- Vib Screen --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Vibro Feeder</masterLabel>
+        <translation><!-- Vibro Feeder --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Restrict_PMG_User_Edit</fullName>
+    <active>false</active>
+    <description>Restrict PMG User Edit on the PMG Approved Budgets</description>
+    <errorConditionFormula>AND(
+$Profile.Name = &quot;PMG&quot;,
+NOT(ISNEW()),
+RecordType.DeveloperName = &quot;Sales&quot;,
+OR(
+AND(ISCHANGED(Status__c),
+NOT(ISPICKVAL(Status__c,&quot;3rd Level Approved&quot;)),
+ISPICKVAL(PRIORVALUE(Status__c),&quot;2nd Level Approved&quot;)
+),
+AND(
+NOT(ISCHANGED(Status__c)),
+ISPICKVAL(Status__c,&quot;2nd Level Approved&quot;)
+)
+)
+)</errorConditionFormula>
+    <errorMessage>You do not have necessary permissions to edit the Budget.</errorMessage>
+</ValidationRule>

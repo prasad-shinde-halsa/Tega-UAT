@@ -1,0 +1,39 @@
+<template>
+    <lightning-card title="Update Exchange Rates" icon-name="standard:currency">
+        
+        <div class="slds-p-around_medium">
+            <lightning-combobox
+                label="Select Financial Year"
+                value={selectedFinancialYear}
+                options={financialYearOptions}
+                onchange={handleFinancialYearChange}
+                required>
+            </lightning-combobox>
+        </div>
+
+        <template if:true={currencyOptions.length}>
+            <div class="slds-p-around_medium">
+                <lightning-dual-listbox
+                    name="currencies"
+                    label="Select Currencies"
+                    source-label="Available Currencies"
+                    selected-label="Selected Currencies"
+                    options={currencyOptions}
+                    value={selectedCurrencies}
+                    onchange={handleCurrencySelection}
+                    required>
+                </lightning-dual-listbox>
+            </div>
+        </template>
+
+        <div class="slds-m-top_medium slds-text-align_center">
+            <lightning-button
+                label="UpdateRateExchange"
+                variant="brand"
+                onclick={runBatch}
+                class="slds-m-top_medium">
+            </lightning-button>
+        </div>
+
+    </lightning-card>
+</template>

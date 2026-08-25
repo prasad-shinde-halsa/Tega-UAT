@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Deck</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Deck</value>
+    </caseValues>
+    <layouts>
+        <layout>Deck Layout</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- Information about the Panels --></label>
+            <section>Information about the Panels</section>
+        </sections>
+    </layouts>
+    <startsWith>Consonant</startsWith>
+    <validationRules>
+        <errorMessage><!-- Please fill this field to save the record --></errorMessage>
+        <name>Mandatory_Material_Field</name>
+    </validationRules>
+</CustomObjectTranslation>

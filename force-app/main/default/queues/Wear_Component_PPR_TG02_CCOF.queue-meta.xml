@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Queue xmlns="http://soap.sforce.com/2006/04/metadata">
+    <doesIncludeBosses>true</doesIncludeBosses>
+    <doesSendEmailToMembers>false</doesSendEmailToMembers>
+    <name>Wear Component-PPR-TG02-CCOF</name>
+    <queueMembers>
+        <users>
+            <user>prantik.nandy@tegaindustries.com</user>
+            <user>pmg.wearcomponent@tega.com.prd</user>
+        </users>
+    </queueMembers>
+    <queueSobject>
+        <sobjectType>PPR_Line_Item__c</sobjectType>
+    </queueSobject>
+    <queueSobject>
+        <sobjectType>Task</sobjectType>
+    </queueSobject>
+</Queue>

@@ -1,0 +1,231 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Material_Handled__c</fullName>
+    <label>Material Handled</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>MultiselectPicklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Aggregate</fullName>
+                <default>false</default>
+                <label>Aggregate</label>
+            </value>
+            <value>
+                <fullName>Alumina</fullName>
+                <default>false</default>
+                <label>Alumina</label>
+            </value>
+            <value>
+                <fullName>Betonite, 100 mesh</fullName>
+                <default>false</default>
+                <label>Betonite, 100 mesh</label>
+            </value>
+            <value>
+                <fullName>Cement, Clinker</fullName>
+                <default>false</default>
+                <label>Cement, Clinker</label>
+            </value>
+            <value>
+                <fullName>Cement, Portland</fullName>
+                <default>false</default>
+                <label>Cement, Portland</label>
+            </value>
+            <value>
+                <fullName>Coal, Antracite sized</fullName>
+                <default>false</default>
+                <label>Coal, Antracite sized</label>
+            </value>
+            <value>
+                <fullName>Coal, Bituminous ROM</fullName>
+                <default>false</default>
+                <label>Coal, Bituminous ROM</label>
+            </value>
+            <value>
+                <fullName>Coal, Clean</fullName>
+                <default>false</default>
+                <label>Coal, Clean</label>
+            </value>
+            <value>
+                <fullName>Coal, Lignite</fullName>
+                <default>false</default>
+                <label>Coal, Lignite</label>
+            </value>
+            <value>
+                <fullName>Coal, Powder river Basin</fullName>
+                <default>false</default>
+                <label>Coal, Powder river Basin</label>
+            </value>
+            <value>
+                <fullName>Coke, Petroleum</fullName>
+                <default>false</default>
+                <label>Coke, Petroleum</label>
+            </value>
+            <value>
+                <fullName>Coke Breeze</fullName>
+                <default>false</default>
+                <label>Coke Breeze</label>
+            </value>
+            <value>
+                <fullName>Copper Ore</fullName>
+                <default>false</default>
+                <label>Copper Ore</label>
+            </value>
+            <value>
+                <fullName>Dolomite</fullName>
+                <default>false</default>
+                <label>Dolomite</label>
+            </value>
+            <value>
+                <fullName>Earth, ROM Dry</fullName>
+                <default>false</default>
+                <label>Earth, ROM Dry</label>
+            </value>
+            <value>
+                <fullName>Earth, Wet with Clay</fullName>
+                <default>false</default>
+                <label>Earth, Wet with Clay</label>
+            </value>
+            <value>
+                <fullName>Flyash</fullName>
+                <default>false</default>
+                <label>Flyash</label>
+            </value>
+            <value>
+                <fullName>Granite</fullName>
+                <default>false</default>
+                <label>Granite</label>
+            </value>
+            <value>
+                <fullName>Gravel, Bank Run</fullName>
+                <default>false</default>
+                <label>Gravel, Bank Run</label>
+            </value>
+            <value>
+                <fullName>Gravel, Pebbles</fullName>
+                <default>false</default>
+                <label>Gravel, Pebbles</label>
+            </value>
+            <value>
+                <fullName>Gypsum</fullName>
+                <default>false</default>
+                <label>Gypsum</label>
+            </value>
+            <value>
+                <fullName>Gold Ore</fullName>
+                <default>false</default>
+                <label>Gold Ore</label>
+            </value>
+            <value>
+                <fullName>Iron Ore</fullName>
+                <default>false</default>
+                <label>Iron Ore</label>
+            </value>
+            <value>
+                <fullName>Iron Ore Pellets</fullName>
+                <default>false</default>
+                <label>Iron Ore Pellets</label>
+            </value>
+            <value>
+                <fullName>Lime, Hydrated</fullName>
+                <default>false</default>
+                <label>Lime, Hydrated</label>
+            </value>
+            <value>
+                <fullName>Limestone, Crushed</fullName>
+                <default>false</default>
+                <label>Limestone, Crushed</label>
+            </value>
+            <value>
+                <fullName>Molybdenum Ore</fullName>
+                <default>false</default>
+                <label>Molybdenum Ore</label>
+            </value>
+            <value>
+                <fullName>Overburden</fullName>
+                <default>false</default>
+                <label>Overburden</label>
+            </value>
+            <value>
+                <fullName>Phosphate, Rock</fullName>
+                <default>false</default>
+                <label>Phosphate, Rock</label>
+            </value>
+            <value>
+                <fullName>Phosphate, Rock, Pulverized</fullName>
+                <default>false</default>
+                <label>Phosphate, Rock, Pulverized</label>
+            </value>
+            <value>
+                <fullName>Quartz</fullName>
+                <default>false</default>
+                <label>Quartz</label>
+            </value>
+            <value>
+                <fullName>Sand, Dry Bank</fullName>
+                <default>false</default>
+                <label>Sand, Dry Bank</label>
+            </value>
+            <value>
+                <fullName>Sand, Foundry</fullName>
+                <default>false</default>
+                <label>Sand, Foundry</label>
+            </value>
+            <value>
+                <fullName>Slag BF Granular Dry</fullName>
+                <default>false</default>
+                <label>Slag BF Granular Dry</label>
+            </value>
+            <value>
+                <fullName>Slag BF Granular Wet</fullName>
+                <default>false</default>
+                <label>Slag BF Granular Wet</label>
+            </value>
+            <value>
+                <fullName>Zinc Ore</fullName>
+                <default>false</default>
+                <label>Zinc Ore</label>
+            </value>
+            <value>
+                <fullName>Chrome Ore</fullName>
+                <default>false</default>
+                <label>Chrome Ore</label>
+            </value>
+            <value>
+                <fullName>Bauxite Ore</fullName>
+                <default>false</default>
+                <label>Bauxite Ore</label>
+            </value>
+            <value>
+                <fullName>Others</fullName>
+                <default>false</default>
+                <label>Others</label>
+            </value>
+            <value>
+                <fullName>Ore</fullName>
+                <default>false</default>
+                <label>Ore</label>
+            </value>
+            <value>
+                <fullName>Sinter</fullName>
+                <default>false</default>
+                <label>Sinter</label>
+            </value>
+            <value>
+                <fullName>Coke</fullName>
+                <default>false</default>
+                <label>Coke</label>
+            </value>
+            <value>
+                <fullName>Fines</fullName>
+                <default>false</default>
+                <label>Fines</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+    <visibleLines>5</visibleLines>
+</CustomField>

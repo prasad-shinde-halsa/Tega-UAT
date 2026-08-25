@@ -1,0 +1,293 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Equipment Type --></label>
+    <name>Equipment_Type__c</name>
+    <picklistValues>
+        <masterLabel>AG Mill</masterLabel>
+        <translation><!-- AG Mill --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>BELT FEEDER</masterLabel>
+        <translation><!-- BELT FEEDER --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>BF Weigh Hopper</masterLabel>
+        <translation><!-- BF Weigh Hopper --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>BOOM CONVEYOR</masterLabel>
+        <translation><!-- BOOM CONVEYOR --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Ball Mill</masterLabel>
+        <translation><!-- Ball Mill --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Bin</masterLabel>
+        <translation><!-- Bin --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Bunker</masterLabel>
+        <translation><!-- Bunker --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Ceramic Spares of cyclone</masterLabel>
+        <translation><!-- Ceramic Spares of cyclone --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Clamp Pad</masterLabel>
+        <translation><!-- Clamp Pad --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Conveyor Discharge Chute</masterLabel>
+        <translation><!-- Conveyor Discharge Chute --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Conveyor Transfer Chute</masterLabel>
+        <translation><!-- Conveyor Transfer Chute --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Cyclo-cluster</masterLabel>
+        <translation><!-- Cyclo-cluster --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Cyclone Cluster</masterLabel>
+        <translation><!-- Cyclone Cluster --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Cyclone Manifold</masterLabel>
+        <translation><!-- Cyclone Manifold --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Cyclone Mushroom</masterLabel>
+        <translation><!-- Cyclone Mushroom --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Cyclone Test Rig</masterLabel>
+        <translation><!-- Cyclone Test Rig --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Dewatering Screen</masterLabel>
+        <translation><!-- Dewatering Screen --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Distributor/Manifold</masterLabel>
+        <translation><!-- Distributor/Manifold --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Dumper Truck</masterLabel>
+        <translation><!-- Dumper Truck --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>FIXED TRIPPER</masterLabel>
+        <translation><!-- FIXED TRIPPER --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Feed pipe.</masterLabel>
+        <translation><!-- Feed pipe. --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Feed spool</masterLabel>
+        <translation><!-- Feed spool --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Feeder</masterLabel>
+        <translation><!-- Feeder --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Flipflo Screen</masterLabel>
+        <translation><!-- Flipflo Screen --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Hopper</masterLabel>
+        <translation><!-- Hopper --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Hydrocyclone</masterLabel>
+        <translation><!-- Hydrocyclone --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Launder</masterLabel>
+        <translation><!-- Launder --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Mill Chute</masterLabel>
+        <translation><!-- Mill Chute --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Mill Feed Chute</masterLabel>
+        <translation><!-- Mill Feed Chute --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Misc. Equipment</masterLabel>
+        <translation><!-- Misc. Equipment --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>OTHERS</masterLabel>
+        <translation><!-- OTHERS --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Other Dry Circuit Applications</masterLabel>
+        <translation><!-- Other Dry Circuit Applications --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Other Wet Circuit Applications</masterLabel>
+        <translation><!-- Other Wet Circuit Applications --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Overflow Vessel</masterLabel>
+        <translation><!-- Overflow Vessel --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Overflow pipe</masterLabel>
+        <translation><!-- Overflow pipe --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>PU Spares of cyclone</masterLabel>
+        <translation><!-- PU Spares of cyclone --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Pressure Instrument for cyclone</masterLabel>
+        <translation><!-- Pressure Instrument for cyclone --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Primary Ball Mill Trommel</masterLabel>
+        <translation><!-- Primary Ball Mill Trommel --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Primary Screen</masterLabel>
+        <translation><!-- Primary Screen --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>REVERSIBLE CONVEYOR</masterLabel>
+        <translation><!-- REVERSIBLE CONVEYOR --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Reinforce/ Casing of Cyclone</masterLabel>
+        <translation><!-- Reinforce/ Casing of Cyclone --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Rod Mill</masterLabel>
+        <translation><!-- Rod Mill --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Rubber Spares of cyclone</masterLabel>
+        <translation><!-- Rubber Spares of cyclone --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>SAG Mill</masterLabel>
+        <translation><!-- SAG Mill --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>SAG Mill Trommel</masterLabel>
+        <translation><!-- SAG Mill Trommel --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>SHUTTLE CONVEYOR</masterLabel>
+        <translation><!-- SHUTTLE CONVEYOR --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>STACKER RECLAIMER</masterLabel>
+        <translation><!-- STACKER RECLAIMER --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Screen I/S Discharge Chute</masterLabel>
+        <translation><!-- Screen I/S Discharge Chute --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Screen O/S Discharge Chute</masterLabel>
+        <translation><!-- Screen O/S Discharge Chute --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Screen U/S Discharge Chute</masterLabel>
+        <translation><!-- Screen U/S Discharge Chute --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Scrubber</masterLabel>
+        <translation><!-- Scrubber --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Scrubber Discharge Trommel</masterLabel>
+        <translation><!-- Scrubber Discharge Trommel --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Secondary Ball Mill Trommel</masterLabel>
+        <translation><!-- Secondary Ball Mill Trommel --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Secondary Screen</masterLabel>
+        <translation><!-- Secondary Screen --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Self-Driven Trommel</masterLabel>
+        <translation><!-- Self-Driven Trommel --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Silo</masterLabel>
+        <translation><!-- Silo --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Silo/Bunker</masterLabel>
+        <translation><!-- Silo/Bunker --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Spare Hardware of cyclone</masterLabel>
+        <translation><!-- Spare Hardware of cyclone --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Spare Insert of cyclone</masterLabel>
+        <translation><!-- Spare Insert of cyclone --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Spare liner of cyclone</masterLabel>
+        <translation><!-- Spare liner of cyclone --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Storage Hopper</masterLabel>
+        <translation><!-- Storage Hopper --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Support and Structure for cyclone</masterLabel>
+        <translation><!-- Support and Structure for cyclone --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>TRAVELLING TRIPPER</masterLabel>
+        <translation><!-- TRAVELLING TRIPPER --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Tertiary Screen</masterLabel>
+        <translation><!-- Tertiary Screen --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Transfer chute</masterLabel>
+        <translation><!-- Transfer chute --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Truck/WT Dumper Hopper</masterLabel>
+        <translation><!-- Truck/WT Dumper Hopper --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>UNIDIRECTIONAL CONVEYOR</masterLabel>
+        <translation><!-- UNIDIRECTIONAL CONVEYOR --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Underflow Vessel</masterLabel>
+        <translation><!-- Underflow Vessel --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Underflow pipe</masterLabel>
+        <translation><!-- Underflow pipe --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Vibro Feeder</masterLabel>
+        <translation><!-- Vibro Feeder --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>WT Dumper Hopper</masterLabel>
+        <translation><!-- WT Dumper Hopper --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>WT Side Beam/Clamp Pad</masterLabel>
+        <translation><!-- WT Side Beam/Clamp Pad --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

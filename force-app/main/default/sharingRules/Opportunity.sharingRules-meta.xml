@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<SharingRules xmlns="http://soap.sforce.com/2006/04/metadata">
+    <sharingCriteriaRules>
+        <fullName>Conveyer_Component_PMG</fullName>
+        <accessLevel>Edit</accessLevel>
+        <label>Conveyer Component PMG</label>
+        <sharedTo>
+            <group>PMG_Conveyor_Component</group>
+        </sharedTo>
+        <criteriaItems>
+            <field>RecordTypeId</field>
+            <operation>equals</operation>
+            <value>Conveyor Component</value>
+        </criteriaItems>
+        <includeRecordsOwnedByAll>true</includeRecordsOwnedByAll>
+    </sharingCriteriaRules>
+    <sharingCriteriaRules>
+        <fullName>Hydrocyclone_PMG</fullName>
+        <accessLevel>Edit</accessLevel>
+        <label>Hydrocyclone PMG</label>
+        <sharedTo>
+            <group>PMG_Hydrocyclone</group>
+        </sharedTo>
+        <criteriaItems>
+            <field>RecordTypeId</field>
+            <operation>equals</operation>
+            <value>Hydrocyclone</value>
+        </criteriaItems>
+        <includeRecordsOwnedByAll>true</includeRecordsOwnedByAll>
+    </sharingCriteriaRules>
+    <sharingCriteriaRules>
+        <fullName>Mill_PMG</fullName>
+        <accessLevel>Edit</accessLevel>
+        <label>Mill PMG</label>
+        <sharedTo>
+            <group>PMG_Mill</group>
+        </sharedTo>
+        <criteriaItems>
+            <field>RecordTypeId</field>
+            <operation>equals</operation>
+            <value>Mill</value>
+        </criteriaItems>
+        <includeRecordsOwnedByAll>true</includeRecordsOwnedByAll>
+    </sharingCriteriaRules>
+    <sharingCriteriaRules>
+        <fullName>Screen_PMG</fullName>
+        <accessLevel>Edit</accessLevel>
+        <label>Screen PMG</label>
+        <sharedTo>
+            <group>PMG_Screen</group>
+        </sharedTo>
+        <criteriaItems>
+            <field>RecordTypeId</field>
+            <operation>equals</operation>
+            <value>Screen</value>
+        </criteriaItems>
+        <includeRecordsOwnedByAll>true</includeRecordsOwnedByAll>
+    </sharingCriteriaRules>
+    <sharingCriteriaRules>
+        <fullName>Trommel_PMG</fullName>
+        <accessLevel>Edit</accessLevel>
+        <label>Trommel PMG</label>
+        <sharedTo>
+            <group>PMG_Trommel</group>
+        </sharedTo>
+        <criteriaItems>
+            <field>RecordTypeId</field>
+            <operation>equals</operation>
+            <value>Trommel</value>
+        </criteriaItems>
+        <includeRecordsOwnedByAll>true</includeRecordsOwnedByAll>
+    </sharingCriteriaRules>
+    <sharingCriteriaRules>
+        <fullName>Wear_Component_PMG</fullName>
+        <accessLevel>Edit</accessLevel>
+        <label>Wear Component PMG</label>
+        <sharedTo>
+            <group>PMG_Wear_Component</group>
+        </sharedTo>
+        <criteriaItems>
+            <field>RecordTypeId</field>
+            <operation>equals</operation>
+            <value>Wear Component</value>
+        </criteriaItems>
+        <includeRecordsOwnedByAll>true</includeRecordsOwnedByAll>
+    </sharingCriteriaRules>
+</SharingRules>

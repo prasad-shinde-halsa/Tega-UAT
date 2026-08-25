@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Approval Status --></label>
+    <name>Approval_Status__c</name>
+    <picklistValues>
+        <masterLabel>Delivery SLA Accepted</masterLabel>
+        <translation><!-- Delivery SLA Accepted --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Delivery SLA Rejected</masterLabel>
+        <translation><!-- Delivery SLA Rejected --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Draft</masterLabel>
+        <translation><!-- Draft --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Pending for Price Approval</masterLabel>
+        <translation><!-- Pending for Price Approval --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Pending for SLA Approval</masterLabel>
+        <translation><!-- Pending for SLA Approval --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Price Accepted</masterLabel>
+        <translation><!-- Price Accepted --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Price Rejected</masterLabel>
+        <translation><!-- Price Rejected --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Submitted</masterLabel>
+        <translation><!-- Submitted --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Operation__c</fullName>
+    <label>Operation</label>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Create Customer</fullName>
+                <default>false</default>
+                <label>Create Customer</label>
+            </value>
+            <value>
+                <fullName>Create part list</fullName>
+                <default>false</default>
+                <label>Create part list</label>
+            </value>
+            <value>
+                <fullName>Get SO</fullName>
+                <default>false</default>
+                <label>Get SO</label>
+            </value>
+            <value>
+                <fullName>Create Offer Spare</fullName>
+                <default>false</default>
+                <label>Create Offer Spare</label>
+            </value>
+            <value>
+                <fullName>Create SO-BOM</fullName>
+                <default>false</default>
+                <label>Create SO-BOM</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

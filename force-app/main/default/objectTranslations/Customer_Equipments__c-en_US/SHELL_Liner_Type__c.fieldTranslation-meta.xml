@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- SHELL Liner Type --></label>
+    <name>SHELL_Liner_Type__c</name>
+    <picklistValues>
+        <masterLabel>DynaPrime</masterLabel>
+        <translation><!-- DynaPrime --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Magnetic</masterLabel>
+        <translation><!-- Magnetic --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>PM</masterLabel>
+        <translation><!-- PM --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Rubber</masterLabel>
+        <translation><!-- Rubber --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Steel</masterLabel>
+        <translation><!-- Steel --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

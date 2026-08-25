@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Total_Installation__c</fullName>
+    <label>Total Installation (%)</label>
+    <summarizedField>Budget_Line_Item_Installation__c.Total_Installation__c</summarizedField>
+    <summaryForeignKey>Budget_Line_Item_Installation__c.Budget_Installation_Per_Zone__c</summaryForeignKey>
+    <summaryOperation>sum</summaryOperation>
+    <trackTrending>false</trackTrending>
+    <type>Summary</type>
+</CustomField>

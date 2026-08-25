@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>SBO_Rule</fullName>
+    <active>true</active>
+    <errorConditionFormula>ISCHANGED(Preferred_Shipment_Mode_for_FRO__c) &amp;&amp;  $Permission.SBO_Custom_Permission</errorConditionFormula>
+    <errorDisplayField>Preferred_Shipment_Mode_for_FRO__c</errorDisplayField>
+    <errorMessage>SBO cannot edit this field</errorMessage>
+</ValidationRule>

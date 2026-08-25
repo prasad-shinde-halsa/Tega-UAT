@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Currency_Same_As_Budget__c</fullName>
+    <formula>IF( TEXT(CurrencyIsoCode)  =  TEXT(Budget__r.CurrencyIsoCode)  , true, false)</formula>
+    <label>Currency Same As Budget</label>
+    <trackTrending>false</trackTrending>
+    <type>Checkbox</type>
+</CustomField>

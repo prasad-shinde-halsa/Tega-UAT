@@ -1,0 +1,181 @@
+<apex:page controller="MonthlyMatrixExportController" renderAs="pdf" applyBodyTag="false" applyHtmlTag="false" showHeader="false" sidebar="false" standardStylesheets="false">
+    <html>
+        <head>
+            <title>MIS_Report_{!exportFileName}</title>
+            <style>
+                @page {
+                    size: A4 landscape;
+                    margin: 1cm;
+                }
+                
+                body {
+                    font-family: Arial, sans-serif;
+                    font-size: 9pt;
+                }
+                
+                table {
+                    border-collapse: collapse;
+                    width: 100%;
+                }
+                
+                .header-main {
+                    background-color: #014486;
+                    color: white;
+                    font-weight: bold;
+                    font-size: 16pt;
+                    text-align: center;
+                    padding: 12px;
+                    margin-bottom: 10px;
+                }
+                
+                .filter-section {
+                    margin-bottom: 15px;
+                    padding: 10px;
+                    background-color: #f0f0f0;
+                    border: 1px solid #ccc;
+                    font-size: 9pt;
+                }
+                
+                .filter-item {
+                    display: inline-block;
+                    margin-right: 15px;
+                }
+                
+                .group-header {
+                    text-align: center;
+                    padding: 6px;
+                    border: 1px solid #5a8fc4;
+                    font-size: 8pt;
+                    text-transform: uppercase;
+                    font-weight: bold;
+                }
+                
+                .group-monthly { background-color: #00326E; color: #a8d4f5; }
+                .group-ytd { background-color: #00503C; color: #a8f5d4; }
+                .group-forecast { background-color: #502800; color: #f5d4a8; }
+                
+                .column-header {
+                    background-color: #014486;
+                    color: white;
+                    text-align: center;
+                    padding: 5px;
+                    border: 1px solid #5a8fc4;
+                    font-size: 7pt;
+                    font-weight: bold;
+                }
+                
+                .column-header-highlight { background-color: #013770; color: #ffe080; }
+                .column-header-ytd { background-color: #005A46; }
+                .column-header-ytd-highlight { background-color: #004B3A; color: #ffe080; }
+                .column-header-forecast { background-color: #4B2800; }
+                .column-header-forecast-highlight { background-color: #5A3200; color: #ffe080; }
+                
+                .pmg-cell {
+                    font-weight: bold;
+                    background-color: #e9f5f3;
+                    font-size: 8pt;
+                    text-align: center;
+                    padding: 6px;
+                    border: 1px solid #ccc;
+                }
+                
+                .data-cell {
+                    font-weight: bold;
+                    text-align: center;
+                    padding: 6px;
+                    border: 1px solid #ccc;
+                    font-size: 7pt;
+                }
+                
+                .data-monthly { background-color: #f0f4ff; }
+                .data-achievement { background-color: #fffbe6; color: #7a5a00; }
+                .data-ytd { background-color: #f0fff8; }
+                .data-forecast { background-color: #fff8f0; }
+                .data-full-year { background-color: #fff3d6; color: #5a3500; }
+                
+                .total-label {
+                    background-color: #0e2a45;
+                    color: #ffd700;
+                    text-transform: uppercase;
+                    text-align: center;
+                    padding: 6px;
+                    border: 1px solid #5a8fc4;
+                    font-weight: bold;
+                }
+                
+                .total-monthly { background-color: #1e3a6e; color: #a8d4f5; text-align: center; padding: 6px; border: 1px solid #5a8fc4; font-weight: bold; }
+                .total-ytd { background-color: #0e3d2a; color: #a8f5d4; text-align: center; padding: 6px; border: 1px solid #5a8fc4; font-weight: bold; }
+                .total-forecast { background-color: #3d1e00; color: #f5d4a8; text-align: center; padding: 6px; border: 1px solid #5a8fc4; font-weight: bold; }
+                .total-full-year { background-color: #4a2800; color: #ffd700; text-align: center; padding: 6px; border: 1px solid #5a8fc4; font-weight: bold; }
+                .total-dash { background-color: #1a2e50; color: #888; text-align: center; padding: 6px; border: 1px solid #5a8fc4; }
+            </style>
+        </head>
+        <body>
+            <div class="header-main">MIS Report</div>
+            
+            <div class="filter-section">
+                <span class="filter-item"><b>FY:</b> {!fy}</span>
+                <span class="filter-item"><b>Quarter:</b> {!quarter}</span>
+                <span class="filter-item"><b>Month:</b> {!monthName}</span>
+                <span class="filter-item"><b>Order Type:</b> {!orderType}</span>
+                <span class="filter-item"><b>Level 1:</b> {!level1}</span>
+                <span class="filter-item"><b>Level 2:</b> {!level2}</span>
+            </div>
+            
+            <table>
+                <thead>
+                    <tr>
+                        <th rowspan="2" class="column-header" style="vertical-align: middle; width: 10%;">PMG</th>
+                        <th colspan="3" class="group-header group-monthly">{!periodLabel}</th>
+                        <th colspan="3" class="group-header group-ytd">YEAR TO DATE (YTD)</th>
+                        <th colspan="3" class="group-header group-forecast">FORECAST</th>
+                    </tr>
+                    <tr>
+                        <th class="column-header" style="width: 9%;">Budgeted Order</th>
+                        <th class="column-header" style="width: 9%;">Order Received</th>
+                        <th class="column-header column-header-highlight" style="width: 9%;">% Achievement</th>
+                        <th class="column-header column-header-ytd" style="width: 9%;">YTD Budgeted Order</th>
+                        <th class="column-header column-header-ytd" style="width: 9%;">YTD Actual Order Received</th>
+                        <th class="column-header column-header-ytd-highlight" style="width: 9%;">YTD % Achievement</th>
+                        <th class="column-header column-header-forecast" style="width: 9%;">Next 3 months (Budget)</th>
+                        <th class="column-header column-header-forecast" style="width: 9%;">Forecast - Next 3 months (MIS)</th>
+                        <th class="column-header column-header-forecast-highlight" style="width: 9%;">Full Year Forecast</th>
+                    </tr>
+                </thead>
+                
+                <tbody>
+                    <apex:repeat value="{!exportData}" var="row">
+                        <tr>
+                            <td class="pmg-cell">{!row.pmg}</td>
+                            <td class="data-cell data-monthly">USD {!row.budgetedOrder}</td>
+                            <td class="data-cell data-monthly">USD {!row.monthlyReceived}</td>
+                            <td class="data-cell data-achievement">{!row.achievement}</td>
+                            <td class="data-cell data-ytd">USD {!row.ytdBudget}</td>
+                            <td class="data-cell data-ytd">USD {!row.ytdActual}</td>
+                            <td class="data-cell data-achievement">{!row.ytdAchievement}</td>
+                            <td class="data-cell data-forecast">USD {!row.forecastBudget}</td>
+                            <td class="data-cell data-forecast">USD {!row.forecastMIS}</td>
+                            <td class="data-cell data-full-year">USD {!row.fullYearForecast}</td>
+                        </tr>
+                    </apex:repeat>
+                </tbody>
+                
+                <tfoot>
+                    <tr style="height: 10px;"><td colspan="10" style="border: none;"></td></tr>
+                    <tr>
+                        <td class="total-label">TOTAL</td>
+                        <td class="total-monthly">USD {!totals.budgetedOrder}</td>
+                        <td class="total-monthly">USD {!totals.monthlyReceived}</td>
+                        <td class="total-monthly">{!totals.achievement}%</td>
+                        <td class="total-ytd">USD {!totals.ytdBudget}</td>
+                        <td class="total-ytd">USD {!totals.ytdActual}</td>
+                        <td class="total-ytd">{!totals.ytdAchievement}%</td>
+                        <td class="total-forecast">USD {!totals.forecastBudget}</td>
+                        <td class="total-forecast">USD {!totals.forecastMIS}</td>
+                        <td class="total-full-year">USD {!totals.fullYearForecast}</td>
+                    </tr>
+                </tfoot>
+            </table>
+        </body>
+    </html>
+</apex:page>

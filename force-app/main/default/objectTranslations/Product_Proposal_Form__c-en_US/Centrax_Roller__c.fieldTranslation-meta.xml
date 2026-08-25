@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Centrax-Roller --></label>
+    <name>Centrax_Roller__c</name>
+    <picklistValues>
+        <masterLabel>Conical roller</masterLabel>
+        <translation><!-- Conical roller --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Middle roller</masterLabel>
+        <translation><!-- Middle roller --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

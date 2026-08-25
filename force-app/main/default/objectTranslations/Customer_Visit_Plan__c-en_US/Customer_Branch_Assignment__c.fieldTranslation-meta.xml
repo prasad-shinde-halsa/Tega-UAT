@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- New Customer Branch Assignment creations are not allowed from here. For new Assignment go to Customer Screen --></help>
+    <label><!-- Customer Branch Assignment --></label>
+    <name>Customer_Branch_Assignment__c</name>
+    <relationshipLabel><!-- Customer Visit Plans --></relationshipLabel>
+</CustomFieldTranslation>

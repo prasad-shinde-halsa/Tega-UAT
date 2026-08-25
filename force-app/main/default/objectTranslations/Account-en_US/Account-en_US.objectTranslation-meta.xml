@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Customer</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Customers</value>
+    </caseValues>
+    <layouts>
+        <layout>Account Layout</layout>
+        <sections>
+            <label><!-- Industry Information --></label>
+            <section>Industry Information</section>
+        </sections>
+    </layouts>
+    <quickActions>
+        <label><!-- Add Relationship --></label>
+        <name>Add_Relationship</name>
+    </quickActions>
+    <quickActions>
+        <label><!-- Change Status --></label>
+        <name>Change_Status</name>
+    </quickActions>
+    <quickActions>
+        <label><!-- Child Account --></label>
+        <name>Child_Account</name>
+    </quickActions>
+    <quickActions>
+        <label><!-- Create Customer Visit --></label>
+        <name>Create_Customer_Visit</name>
+    </quickActions>
+    <quickActions>
+        <label><!-- Create Customer Visit Plan --></label>
+        <name>Create_Customer_Visit_Plan</name>
+    </quickActions>
+    <quickActions>
+        <label><!-- Branch Assignment --></label>
+        <name>New_Customer_Sales_Org</name>
+    </quickActions>
+    <quickActions>
+        <label><!-- Send Request --></label>
+        <name>Send_request_to_SAP</name>
+    </quickActions>
+    <quickActions>
+        <label><!-- Sync with SAP --></label>
+        <name>Sync_with_SAP</name>
+    </quickActions>
+    <startsWith>Vowel</startsWith>
+</CustomObjectTranslation>

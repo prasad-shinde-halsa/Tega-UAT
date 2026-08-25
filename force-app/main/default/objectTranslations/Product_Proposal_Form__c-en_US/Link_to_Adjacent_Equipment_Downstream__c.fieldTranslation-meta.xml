@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Link to Adjacent Equipment Downstream --></label>
+    <name>Link_to_Adjacent_Equipment_Downstream__c</name>
+    <relationshipLabel><!-- Product Proposal Form (Link to Adjacent Equipment Downstream) --></relationshipLabel>
+</CustomFieldTranslation>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Mill_PPR_TS01_CCQL_PPR_Line_Item1</fullName>
+    <filterScope>Queue</filterScope>
+    <label>Mill-PPR-TS01-CCQL</label>
+    <queue>Mill_PPR_TS01_CCQL</queue>
+    <sharedTo>
+        <allInternalUsers></allInternalUsers>
+    </sharedTo>
+</ListView>

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Cluster Type --></label>
+    <name>Cluster_type__c</name>
+    <picklistValues>
+        <masterLabel>Manifold</masterLabel>
+        <translation><!-- Manifold --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Mushroom</masterLabel>
+        <translation><!-- Mushroom --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Other</masterLabel>
+        <translation><!-- Other --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Radial</masterLabel>
+        <translation><!-- Radial --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

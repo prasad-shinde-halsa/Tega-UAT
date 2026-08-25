@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Cyclone_Underflow_goes_to__c</fullName>
+    <label>Cyclone Underflow goes to</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>AG mill</fullName>
+                <default>false</default>
+                <label>AG mill</label>
+            </value>
+            <value>
+                <fullName>SAG mill</fullName>
+                <default>false</default>
+                <label>SAG mill</label>
+            </value>
+            <value>
+                <fullName>Ball Mill</fullName>
+                <default>false</default>
+                <label>Ball Mill</label>
+            </value>
+            <value>
+                <fullName>Rod Mill</fullName>
+                <default>false</default>
+                <label>Rod Mill</label>
+            </value>
+            <value>
+                <fullName>Screen</fullName>
+                <default>false</default>
+                <label>Screen</label>
+            </value>
+            <value>
+                <fullName>Tank</fullName>
+                <default>false</default>
+                <label>Tank</label>
+            </value>
+            <value>
+                <fullName>Thickness</fullName>
+                <default>false</default>
+                <label>Thickness</label>
+            </value>
+            <value>
+                <fullName>Filtering</fullName>
+                <default>false</default>
+                <label>Filtering</label>
+            </value>
+            <value>
+                <fullName>Flotation Cell</fullName>
+                <default>false</default>
+                <label>Flotation Cell</label>
+            </value>
+            <value>
+                <fullName>Spiral</fullName>
+                <default>false</default>
+                <label>Spiral</label>
+            </value>
+            <value>
+                <fullName>Magnetic Separator</fullName>
+                <default>false</default>
+                <label>Magnetic Separator</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

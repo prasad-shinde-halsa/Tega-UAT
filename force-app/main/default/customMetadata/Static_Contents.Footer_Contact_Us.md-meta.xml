@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomMetadata xmlns="http://soap.sforce.com/2006/04/metadata" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+    <label>Footer Contact Us</label>
+    <protected>false</protected>
+    <values>
+        <field>Content__c</field>
+        <value xsi:type="xsd:string">POSTAL ADDRESS: 147, Block &apos;G&apos;, New Alipore, Kolkata, India - 700053
+PH NO: 91-33-478-3356/3512,
+FAX: 91-33-478-3694
+E-MAIL: somnath.bhattacharjee@tegaindustries.com</value>
+    </values>
+</CustomMetadata>

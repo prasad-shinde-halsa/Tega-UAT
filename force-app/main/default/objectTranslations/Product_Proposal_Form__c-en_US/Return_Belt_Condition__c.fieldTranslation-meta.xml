@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Return Belt Condition --></label>
+    <name>Return_Belt_Condition__c</name>
+    <picklistValues>
+        <masterLabel>Belt edge damage</masterLabel>
+        <translation><!-- Belt edge damage --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Damaged belt splice</masterLabel>
+        <translation><!-- Damaged belt splice --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Groove in belt top cover</masterLabel>
+        <translation><!-- Groove in belt top cover --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Patchy belt top cover</masterLabel>
+        <translation><!-- Patchy belt top cover --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Skew/mis-aligned belt joint</masterLabel>
+        <translation><!-- Skew/mis-aligned belt joint --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Uneven belt thickness</masterLabel>
+        <translation><!-- Uneven belt thickness --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Wrapped carry back mat. at return belt</masterLabel>
+        <translation><!-- Wrapped carry back mat. at return belt --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Competitor Product Condition --></label>
+    <name>Competitor_Product_Condition__c</name>
+    <picklistValues>
+        <masterLabel>Customer prefers product of competitor</masterLabel>
+        <translation><!-- Customer prefers product of competitor --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Product not working-Customer not happy</masterLabel>
+        <translation><!-- Product not working-Customer not happy --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Product working-Customer happy</masterLabel>
+        <translation><!-- Product working-Customer happy --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Product working-Customer not happy</masterLabel>
+        <translation><!-- Product working-Customer not happy --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

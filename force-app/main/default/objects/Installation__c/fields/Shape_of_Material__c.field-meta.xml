@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Shape_of_Material__c</fullName>
+    <label>Shape of Material</label>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Round</fullName>
+                <default>false</default>
+                <label>Round</label>
+            </value>
+            <value>
+                <fullName>Flaky</fullName>
+                <default>false</default>
+                <label>Flaky</label>
+            </value>
+            <value>
+                <fullName>Angular</fullName>
+                <default>false</default>
+                <label>Angular</label>
+            </value>
+            <value>
+                <fullName>Others</fullName>
+                <default>false</default>
+                <label>Others</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

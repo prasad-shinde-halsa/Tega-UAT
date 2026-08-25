@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Ball Size 7 (mm) --></label>
+    <name>Ball_Size_7_mm__c</name>
+</CustomFieldTranslation>

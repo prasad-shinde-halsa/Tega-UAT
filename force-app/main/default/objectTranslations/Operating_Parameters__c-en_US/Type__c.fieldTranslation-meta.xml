@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Type --></label>
+    <name>Type__c</name>
+    <picklistValues>
+        <masterLabel>Autogenous</masterLabel>
+        <translation><!-- Autogenous --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Ball</masterLabel>
+        <translation><!-- Ball --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Cylpebs</masterLabel>
+        <translation><!-- Cylpebs --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Rod</masterLabel>
+        <translation><!-- Rod --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

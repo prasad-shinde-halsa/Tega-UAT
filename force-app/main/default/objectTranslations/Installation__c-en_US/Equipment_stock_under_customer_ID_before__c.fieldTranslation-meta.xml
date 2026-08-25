@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Equipment stock under customer ID/before --></label>
+    <name>Equipment_stock_under_customer_ID_before__c</name>
+</CustomFieldTranslation>

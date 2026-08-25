@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Type --></label>
+    <name>Type__c</name>
+    <picklistValues>
+        <masterLabel>Feed Particle Size Distribuition</masterLabel>
+        <translation><!-- Feed Particle Size Distribuition --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Overflow Particle Size Distribution</masterLabel>
+        <translation><!-- Overflow Particle Size Distribution --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Oversize Particle Distribution</masterLabel>
+        <translation><!-- Oversize Particle Distribution --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Product Particle Size Distribuition</masterLabel>
+        <translation><!-- Product Particle Size Distribuition --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Underflow Particle Size Distribution</masterLabel>
+        <translation><!-- Underflow Particle Size Distribution --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Undersize Particle Distribution</masterLabel>
+        <translation><!-- Undersize Particle Distribution --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

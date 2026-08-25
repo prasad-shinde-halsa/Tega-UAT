@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Discharge Lip Dia of the Trommel (mm) --></label>
+    <name>Discharge_Lip_Dia_of_the_Trommel_mm__c</name>
+</CustomFieldTranslation>

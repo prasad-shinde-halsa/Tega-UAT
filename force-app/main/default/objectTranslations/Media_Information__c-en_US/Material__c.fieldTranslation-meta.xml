@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Material --></label>
+    <name>Material__c</name>
+    <picklistValues>
+        <masterLabel>Cast Iron</masterLabel>
+        <translation><!-- Cast Iron --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Chrome-moly</masterLabel>
+        <translation><!-- Chrome-moly --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Flint</masterLabel>
+        <translation><!-- Flint --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Forged</masterLabel>
+        <translation><!-- Forged --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>High Chrome</masterLabel>
+        <translation><!-- High Chrome --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Low Carbon</masterLabel>
+        <translation><!-- Low Carbon --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Other</masterLabel>
+        <translation><!-- Other --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

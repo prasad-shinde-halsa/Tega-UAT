@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Disallow_Approved_Form_Creation</fullName>
+    <active>true</active>
+    <errorConditionFormula>AND(ISPICKVAL( Status_SO__c , &quot;Draft&quot;),OR(RecordType.Name = &quot;Approved 4D&quot;,RecordType.Name = &quot;Approved 4E&quot;))</errorConditionFormula>
+    <errorMessage>Only 4E or 4D types are allowed</errorMessage>
+</ValidationRule>

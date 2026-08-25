@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Part_List__c</fullName>
+    <label>Part List</label>
+    <referenceTo>Part_List__c</referenceTo>
+    <relationshipLabel>Sales Organizations Part List</relationshipLabel>
+    <relationshipName>Sales_Organizations_Part_List</relationshipName>
+    <relationshipOrder>0</relationshipOrder>
+    <reparentableMasterDetail>false</reparentableMasterDetail>
+    <trackTrending>false</trackTrending>
+    <type>MasterDetail</type>
+    <writeRequiresMasterRead>false</writeRequiresMasterRead>
+</CustomField>

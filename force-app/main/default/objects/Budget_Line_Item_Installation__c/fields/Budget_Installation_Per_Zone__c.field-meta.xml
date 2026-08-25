@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Budget_Installation_Per_Zone__c</fullName>
+    <label>Budget Installation Per Zone</label>
+    <referenceTo>Budget_Installation_Per_Zone__c</referenceTo>
+    <relationshipLabel>Budget Line Item Installations</relationshipLabel>
+    <relationshipName>Budget_Line_Item_Installations</relationshipName>
+    <relationshipOrder>0</relationshipOrder>
+    <reparentableMasterDetail>false</reparentableMasterDetail>
+    <trackTrending>false</trackTrending>
+    <type>MasterDetail</type>
+    <writeRequiresMasterRead>false</writeRequiresMasterRead>
+</CustomField>

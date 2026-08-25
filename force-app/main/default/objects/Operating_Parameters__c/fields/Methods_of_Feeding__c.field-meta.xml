@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Methods_of_Feeding__c</fullName>
+    <label>Methods of Feeding #</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Conveyor Discharge</fullName>
+                <default>false</default>
+                <label>Conveyor Discharge</label>
+            </value>
+            <value>
+                <fullName>VIB. Screen Discharge</fullName>
+                <default>false</default>
+                <label>VIB. Screen Discharge</label>
+            </value>
+            <value>
+                <fullName>Silo/Bunker/Bin/Hpper</fullName>
+                <default>false</default>
+                <label>Silo/Bunker/Bin/Hpper</label>
+            </value>
+            <value>
+                <fullName>Crusher Discharge</fullName>
+                <default>false</default>
+                <label>Crusher Discharge</label>
+            </value>
+            <value>
+                <fullName>VIB Feeder/Scalper</fullName>
+                <default>false</default>
+                <label>VIB Feeder/Scalper</label>
+            </value>
+            <value>
+                <fullName>Mill Feed/Discharge</fullName>
+                <default>false</default>
+                <label>Mill Feed/Discharge</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

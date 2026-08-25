@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>SO_Price_Factor</fullName>
+    <active>false</active>
+    <errorConditionFormula>ISBLANK(SO_Price_Factor__c)</errorConditionFormula>
+    <errorMessage>SO Price Factor Field cannot be empty. Put &apos;0&apos; as minimum value.</errorMessage>
+</ValidationRule>

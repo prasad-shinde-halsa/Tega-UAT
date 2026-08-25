@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Type --></label>
+    <name>Type__c</name>
+    <picklistValues>
+        <masterLabel>A1</masterLabel>
+        <translation><!-- A1 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>B6</masterLabel>
+        <translation><!-- B6 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>B6C</masterLabel>
+        <translation><!-- B6C --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>B6C-RE</masterLabel>
+        <translation><!-- B6C-RE --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>B9S</masterLabel>
+        <translation><!-- B9S --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>B9S-T</masterLabel>
+        <translation><!-- B9S-T --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>B9S-V</masterLabel>
+        <translation><!-- B9S-V --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>C1</masterLabel>
+        <translation><!-- C1 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>C2</masterLabel>
+        <translation><!-- C2 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>C3L</masterLabel>
+        <translation><!-- C3L --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>CENTRAX</masterLabel>
+        <translation><!-- CENTRAX --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>CERADISC</masterLabel>
+        <translation><!-- CERADISC --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>CT2</masterLabel>
+        <translation><!-- CT2 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>CT3</masterLabel>
+        <translation><!-- CT3 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>D-PLOUGH</masterLabel>
+        <translation><!-- D-PLOUGH --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>D2</masterLabel>
+        <translation><!-- D2 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>ECO-FLIP SEAL</masterLabel>
+        <translation><!-- ECO-FLIP SEAL --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>FRIFLO</masterLabel>
+        <translation><!-- FRIFLO --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>HD01</masterLabel>
+        <translation><!-- HD01 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>HD02</masterLabel>
+        <translation><!-- HD02 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>HDPUL</masterLabel>
+        <translation><!-- HDPUL --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>HDPUL-BABY</masterLabel>
+        <translation><!-- HDPUL-BABY --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>IMPACT BARS</masterLabel>
+        <translation><!-- IMPACT BARS --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>JUMBO</masterLabel>
+        <translation><!-- JUMBO --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>SINGLE WING</masterLabel>
+        <translation><!-- SINGLE WING --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>SLIP-EX</masterLabel>
+        <translation><!-- SLIP-EX --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>SPILL-EX</masterLabel>
+        <translation><!-- SPILL-EX --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>TEGA TRACKER ROLLER</masterLabel>
+        <translation><!-- TEGA TRACKER ROLLER --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>V-PLOUGH</masterLabel>
+        <translation><!-- V-PLOUGH --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

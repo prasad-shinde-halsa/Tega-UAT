@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Drawing Change Request --></label>
+    <name>Drawing_Change_Request__c</name>
+    <relationshipLabel><!-- Drawing Change Request Lines --></relationshipLabel>
+</CustomFieldTranslation>

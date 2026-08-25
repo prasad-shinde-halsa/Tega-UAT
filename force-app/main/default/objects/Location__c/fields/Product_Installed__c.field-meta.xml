@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Product_Installed__c</fullName>
+    <label>Product Installed</label>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>MultiselectPicklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Skirt Sealing System</fullName>
+                <default>false</default>
+                <label>Skirt Sealing System</label>
+            </value>
+            <value>
+                <fullName>Impact Bed System</fullName>
+                <default>false</default>
+                <label>Impact Bed System</label>
+            </value>
+            <value>
+                <fullName>Belt Tracker Roller</fullName>
+                <default>false</default>
+                <label>Belt Tracker Roller</label>
+            </value>
+            <value>
+                <fullName>Ceramic Pulley Lagging</fullName>
+                <default>false</default>
+                <label>Ceramic Pulley Lagging</label>
+            </value>
+            <value>
+                <fullName>CeraDisk</fullName>
+                <default>false</default>
+                <label>CeraDisk</label>
+            </value>
+            <value>
+                <fullName>Hosch Scraper</fullName>
+                <default>false</default>
+                <label>Hosch Scraper</label>
+            </value>
+            <value>
+                <fullName>Impact Pad Without Frame</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Impact Pad Without Frame</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+    <visibleLines>4</visibleLines>
+</CustomField>

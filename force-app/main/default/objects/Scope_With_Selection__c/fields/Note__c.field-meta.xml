@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Note__c</fullName>
+    <defaultValue>&apos;The lifter bars are fastened to the mill by means of clamp block (which can slide into the grooves provided at the underside of the lifter bars), cup washers, rubber sealing, bolts and nuts. The fastening system is leak proof and designed to utilize rubber flexibility to the maximum extent for extended life.&apos;</defaultValue>
+    <label>Note</label>
+    <length>32768</length>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>LongTextArea</type>
+    <visibleLines>3</visibleLines>
+</CustomField>

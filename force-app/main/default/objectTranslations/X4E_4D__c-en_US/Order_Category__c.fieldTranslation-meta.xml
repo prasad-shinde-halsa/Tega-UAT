@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Order Type # --></label>
+    <name>Order_Category__c</name>
+    <picklistValues>
+        <masterLabel>Competitor Conversion</masterLabel>
+        <translation><!-- Competitor Conversion --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Project</masterLabel>
+        <translation><!-- Project --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Spare</masterLabel>
+        <translation><!-- Spare --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Spare + Modification</masterLabel>
+        <translation><!-- Spare + Modification --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Steel Conversion</masterLabel>
+        <translation><!-- Steel Conversion --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

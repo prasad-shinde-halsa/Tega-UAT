@@ -1,0 +1,123 @@
+<apex:page standardController="Cost_Information_sheet__c" extensions="CIS_Line_Controller" lightningStylesheets="true" docType="HTML-5.0">
+    <apex:slds >
+        <apex:form id="frm">
+            <table align="center" style="width: 60%;">
+                <tr>
+                    <td colspan="1">
+                        <apex:pageBlock id="pgblk4">
+                            <div width ="50%" align="center">
+                                <br/>
+                                <apex:outputPanel >
+                                    <center>
+                                        <div>
+                                            <h1 style="font-size:2em">
+                                                <b>Cost Information Sheet Line Items</b><br/>
+                                            </h1>
+                                        </div>
+                                    </center>
+                                    <br/>
+                                    <apex:outputPanel >
+                                        <div width ="auto" align="center">
+                                            <table >
+                                                <tr>
+                                                    <td style="text-align:center"><b>Proposal Form:&nbsp;&nbsp;</b><apex:outputField value="{!cis.Proposal_Form__c}" style="font-weight: bold;"/></td>
+                                                    <td style="text-align:center"><b>Cost Information Sheet:&nbsp;&nbsp;</b><apex:outputField value="{!cis.Name}" style="font-weight: bold;"/></td>
+                                                    <!--td style="text-align:center"><b>Record Type:&nbsp;&nbsp;</b><apex:outputField value="{!cis.Record_Type__c}" style="font-weight: bold;"/></td-->
+                                                </tr>
+                                            </table>
+                                        </div>
+                                    </apex:outputPanel>
+                                </apex:outputPanel>
+                            </div>
+                        </apex:pageBlock>
+                        <br />
+                        <apex:pageBlock id="pb4">
+                            <table width="60%" align="center">
+                                <tr>
+                                    <td>
+                                        <table class="slds-table slds-table_cell-buffer slds-table_bordered slds-cell-wrap">
+                                            <tr>
+                                                <center>
+                                                    <div>
+                                                        <h1 style="font-size:2em">
+                                                            <b>Existed Line Items</b><br/>
+                                                        </h1>
+                                                    </div>
+                                                </center>
+                                                <br/>
+                                                <thead style="background-color:#DCDCDC; font-size: large;">
+                                                    <td><b>Item Description</b></td>
+                                                    <td><b>Rate/Kg</b></td>
+                                                    <td><b>Total Weight (kg)</b></td>
+                                                </thead>
+                                            </tr>
+                                            <apex:repeat value="{!existingCISLineItems}" var="existingCIS">
+                                                <tr>
+                                                    <td><apex:outputField value="{!existingCIS.Item_Desc__c}" /></td>
+                                                    <td><apex:outputField value="{!existingCIS.Rate_Kg__c}" /></td>
+                                                    <td><apex:outputField value="{!existingCIS.Total_Weight__c}" /></td>
+                                                </tr>
+                                            </apex:repeat>
+                                        </table>
+                                    </td>
+                                </tr>
+                            </table>
+                        </apex:pageBlock>
+                        <apex:pageBlock id="pb">
+                            <apex:pageMessages />
+                            <table width="60%" align="center">
+                                <tr> 
+                                    <td>
+                                        <table class="slds-table slds-table_cell-buffer slds-table_bordered slds-cell-wrap">
+                                            <tr>
+                                                <thead style="background-color:#DCDCDC; font-size: large;">
+                                                    <td><b>Sr No.</b></td>
+                                                    <td><b>Item Description</b></td>
+                                                    <td><b>Rate/Kg</b></td>
+                                                    <td><b>Total Weight (kg)</b></td>
+                                                    <td><b>Remarks</b></td>
+                                                    <td><b>Add</b></td>
+                                                    <td><b>Remove</b></td>
+                                                </thead>
+                                            </tr>
+                                            <apex:variable value="{!1}" var="rowIndex"/>
+                                            <apex:repeat value="{!cislineList}" var="cisl">
+                                                <tr>
+                                                    <td>
+                                                        <apex:outputText value="{0}" style="text-align:center;">                
+                                                            <apex:param value="{!rowIndex}" />
+                                                        </apex:outputText>
+                                                    </td>
+                                                    <td><apex:inputField value="{!cisl.Item_Desc__c}" /></td>
+                                                    <td><apex:inputField value="{!cisl.Rate_Kg__c}" /></td>
+                                                    <td><apex:inputField value="{!cisl.Total_Weight__c}" /></td>
+                                                    <td><apex:inputField value="{!cisl.Remarks__c}" /></td>                                                    
+                                                    <td>
+                                                        <apex:commandButton value="+" action="{!addNewRow}" styleClass="slds-button slds-button_brand" immediate="true" reRender="pb"/>
+                                                    </td>
+                                                    <td>
+                                                        <apex:commandButton value="-" action="{!removeRow}" styleClass="slds-button slds-button_destructive" immediate="true" reRender="pb">
+                                                            <apex:param name="rowIndex" value="{!rowIndex}" assignTo="{!rowIndex}"/>
+                                                        </apex:commandButton>
+                                                    </td>
+                                                </tr>
+                                                <apex:variable var="rowIndex" value="{!rowIndex+1}" />
+                                            </apex:repeat>
+                                        </table>
+                                        <br/><br/>
+                                        <br/><br/>
+                                        <center> 
+                                            <apex:commandButton value="Save" action="{!save}" styleClass="slds-button slds-button_brand" reRender="pb"/>
+                                            <apex:commandButton value="Cancel" action="{!cancel}" styleClass="slds-button slds-button_destructive" immediate="true" html-formnovalidate="formnovalidate"/>
+                                        </center>
+                                        <br/>
+                                    </td>
+                                </tr>
+                            </table>
+                        </apex:pageBlock>
+                    </td>
+                </tr>
+            </table>
+        </apex:form>
+    </apex:slds>
+</apex:page>

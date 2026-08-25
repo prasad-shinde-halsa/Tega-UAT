@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Condition of roller bearing --></label>
+    <name>Condition_of_roller_bearing__c</name>
+    <picklistValues>
+        <masterLabel>Bearing damaged/roller seized-needs replacement</masterLabel>
+        <translation><!-- Bearing damaged/roller seized-needs replacement --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Working fine</masterLabel>
+        <translation><!-- Working fine --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

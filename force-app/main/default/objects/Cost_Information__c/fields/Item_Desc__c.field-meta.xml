@@ -1,0 +1,420 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Item_Desc__c</fullName>
+    <label>Item Desc</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Rubber 102</fullName>
+                <default>false</default>
+                <label>Rubber 102</label>
+            </value>
+            <value>
+                <fullName>Rubber 106</fullName>
+                <default>false</default>
+                <label>Rubber 106</label>
+            </value>
+            <value>
+                <fullName>Aluminium</fullName>
+                <default>false</default>
+                <label>Aluminium</label>
+            </value>
+            <value>
+                <fullName>Structural Steel</fullName>
+                <default>false</default>
+                <label>Structural Steel</label>
+            </value>
+            <value>
+                <fullName>Stainless Steel</fullName>
+                <default>false</default>
+                <label>Stainless Steel</label>
+            </value>
+            <value>
+                <fullName>Hardox 25- 500 BHN</fullName>
+                <default>false</default>
+                <label>Hardox 25- 500 BHN</label>
+            </value>
+            <value>
+                <fullName>Hardox 50- 500 BHN</fullName>
+                <default>false</default>
+                <label>Hardox 50- 500 BHN</label>
+            </value>
+            <value>
+                <fullName>Hardox 75- 500 BHN</fullName>
+                <default>false</default>
+                <label>Hardox 75- 500 BHN</label>
+            </value>
+            <value>
+                <fullName>Hardox 100- 500 BHN</fullName>
+                <default>false</default>
+                <label>Hardox 100- 500 BHN</label>
+            </value>
+            <value>
+                <fullName>Hardox 65- 550 BHN</fullName>
+                <default>false</default>
+                <label>Hardox 65- 550 BHN</label>
+            </value>
+            <value>
+                <fullName>Hardox 80- 550 BHN</fullName>
+                <default>false</default>
+                <label>Hardox 80- 550 BHN</label>
+            </value>
+            <value>
+                <fullName>Hardox 80- 600 BHN</fullName>
+                <default>false</default>
+                <label>Hardox 80- 600 BHN</label>
+            </value>
+            <value>
+                <fullName>Casting- T1</fullName>
+                <default>false</default>
+                <label>Casting- T1</label>
+            </value>
+            <value>
+                <fullName>Casting- T2</fullName>
+                <default>false</default>
+                <label>Casting- T2</label>
+            </value>
+            <value>
+                <fullName>Casting- T6</fullName>
+                <default>false</default>
+                <label>Casting- T6</label>
+            </value>
+            <value>
+                <fullName>Hardware</fullName>
+                <default>false</default>
+                <label>Hardware</label>
+            </value>
+            <value>
+                <fullName>Rubber TG-40</fullName>
+                <default>false</default>
+                <label>Rubber TG-40</label>
+            </value>
+            <value>
+                <fullName>Rubber TG-50</fullName>
+                <default>false</default>
+                <label>Rubber TG-50</label>
+            </value>
+            <value>
+                <fullName>Rubber TG-80</fullName>
+                <default>false</default>
+                <label>Rubber TG-80</label>
+            </value>
+            <value>
+                <fullName>TPU</fullName>
+                <default>false</default>
+                <label>TPU</label>
+            </value>
+            <value>
+                <fullName>PU-1785</fullName>
+                <default>false</default>
+                <label>PU-1785</label>
+            </value>
+            <value>
+                <fullName>PU-T781</fullName>
+                <default>false</default>
+                <label>PU-T781</label>
+            </value>
+            <value>
+                <fullName>PU-B600</fullName>
+                <default>false</default>
+                <label>PU-B600</label>
+            </value>
+            <value>
+                <fullName>PU-1290</fullName>
+                <default>false</default>
+                <label>PU-1290</label>
+            </value>
+            <value>
+                <fullName>PU-ECP-61</fullName>
+                <default>false</default>
+                <label>PU-ECP-61</label>
+            </value>
+            <value>
+                <fullName>MS-Plate</fullName>
+                <default>false</default>
+                <label>MS-Plate</label>
+            </value>
+            <value>
+                <fullName>MS-Flat</fullName>
+                <default>false</default>
+                <label>MS-Flat</label>
+            </value>
+            <value>
+                <fullName>SS-Plate</fullName>
+                <default>false</default>
+                <label>SS-Plate</label>
+            </value>
+            <value>
+                <fullName>SS-Flat</fullName>
+                <default>false</default>
+                <label>SS-Flat</label>
+            </value>
+            <value>
+                <fullName>Hardox-6 500 BHN</fullName>
+                <default>false</default>
+                <label>Hardox-6 500 BHN</label>
+            </value>
+            <value>
+                <fullName>Mould</fullName>
+                <default>false</default>
+                <label>Mould</label>
+            </value>
+            <value>
+                <fullName>Insert</fullName>
+                <default>false</default>
+                <label>Insert</label>
+            </value>
+            <value>
+                <fullName>Others</fullName>
+                <default>false</default>
+                <label>Others</label>
+            </value>
+            <value>
+                <fullName>Rubber Compound</fullName>
+                <default>false</default>
+                <label>Rubber Compound</label>
+            </value>
+            <value>
+                <fullName>Polyurethane Compound</fullName>
+                <default>false</default>
+                <label>Polyurethane Compound</label>
+            </value>
+            <value>
+                <fullName>Hardox</fullName>
+                <default>false</default>
+                <label>Hardox</label>
+            </value>
+            <value>
+                <fullName>Locking Ceramic 40x40x25 mm thk</fullName>
+                <default>false</default>
+                <label>Locking Ceramic 40x40x25 mm thk</label>
+            </value>
+            <value>
+                <fullName>Half Locking Ceramic 40x20x25 mm thk</fullName>
+                <default>false</default>
+                <label>Half Locking Ceramic 40x20x25 mm thk</label>
+            </value>
+            <value>
+                <fullName>Locking Ceramic 40x40x40 mm thk</fullName>
+                <default>false</default>
+                <label>Locking Ceramic 40x40x40 mm thk</label>
+            </value>
+            <value>
+                <fullName>Half Locking Ceramic 40x20x40 mm thk</fullName>
+                <default>false</default>
+                <label>Half Locking Ceramic 40x20x40 mm thk</label>
+            </value>
+            <value>
+                <fullName>Hex Ceramic Tiles 19.05x19.05x12.5 mm thk</fullName>
+                <default>false</default>
+                <label>Hex Ceramic Tiles 19.05x19.05x12.5 mm thk</label>
+            </value>
+            <value>
+                <fullName>Hex Ceramic Tiles 19.05x19.05x7 mm thk</fullName>
+                <default>false</default>
+                <label>Hex Ceramic Tiles 19.05x19.05x7 mm thk</label>
+            </value>
+            <value>
+                <fullName>Ceramic Cylinder 20 mm Dia x 20 mm height</fullName>
+                <default>false</default>
+                <label>Ceramic Cylinder 20 mm Dia x 20 mm height</label>
+            </value>
+            <value>
+                <fullName>Ceramic Cylinder 20 mm Dia x 15 mm height</fullName>
+                <default>false</default>
+                <label>Ceramic Cylinder 20 mm Dia x 15 mm height</label>
+            </value>
+            <value>
+                <fullName>Square Ceramic 20x20x5 mm thk</fullName>
+                <default>false</default>
+                <label>Square Ceramic 20x20x5 mm thk</label>
+            </value>
+            <value>
+                <fullName>Square Ceramic 33x33x15 mm thk</fullName>
+                <default>false</default>
+                <label>Square Ceramic 33x33x15 mm thk</label>
+            </value>
+            <value>
+                <fullName>Ceramic Tiles</fullName>
+                <default>false</default>
+                <label>Ceramic Tiles</label>
+            </value>
+            <value>
+                <fullName>UHMWPE</fullName>
+                <default>false</default>
+                <label>UHMWPE</label>
+            </value>
+            <value>
+                <fullName>Slipoly</fullName>
+                <default>false</default>
+                <label>Slipoly</label>
+            </value>
+            <value>
+                <fullName>Mould/Insert Cost</fullName>
+                <default>false</default>
+                <label>Mould/Insert Cost</label>
+            </value>
+            <value>
+                <fullName>Engg/Design Cost</fullName>
+                <default>false</default>
+                <label>Engg/Design Cost</label>
+            </value>
+            <value>
+                <fullName>Liner Installation/Supervision Cost</fullName>
+                <default>false</default>
+                <label>Liner Installation/Supervision Cost</label>
+            </value>
+            <value>
+                <fullName>Other Cost 1</fullName>
+                <default>false</default>
+                <label>Other Cost 1</label>
+            </value>
+            <value>
+                <fullName>Other Cost 2</fullName>
+                <default>false</default>
+                <label>Other Cost 2</label>
+            </value>
+            <value>
+                <fullName>Other Cost 3</fullName>
+                <default>false</default>
+                <label>Other Cost 3</label>
+            </value>
+            <value>
+                <fullName>Other Cost 4</fullName>
+                <default>false</default>
+                <label>Other Cost 4</label>
+            </value>
+            <value>
+                <fullName>Other Cost 5</fullName>
+                <default>false</default>
+                <label>Other Cost 5</label>
+            </value>
+            <value>
+                <fullName>Rubber for Radial</fullName>
+                <default>false</default>
+                <label>Rubber for Radial</label>
+            </value>
+            <value>
+                <fullName>Steel for Radial</fullName>
+                <default>false</default>
+                <label>Steel for Radial</label>
+            </value>
+            <value>
+                <fullName>Valve 1</fullName>
+                <default>false</default>
+                <label>Valve 1</label>
+            </value>
+            <value>
+                <fullName>Valve 2</fullName>
+                <default>false</default>
+                <label>Valve 2</label>
+            </value>
+            <value>
+                <fullName>Rubber for Cyclone</fullName>
+                <default>false</default>
+                <label>Rubber for Cyclone</label>
+            </value>
+            <value>
+                <fullName>PU for Cyclone</fullName>
+                <default>false</default>
+                <label>PU for Cyclone</label>
+            </value>
+            <value>
+                <fullName>Steel for Cyclone</fullName>
+                <default>false</default>
+                <label>Steel for Cyclone</label>
+            </value>
+            <value>
+                <fullName>Overflow Pipe for Cyclone</fullName>
+                <default>false</default>
+                <label>Overflow Pipe for Cyclone</label>
+            </value>
+            <value>
+                <fullName>Cryston 1</fullName>
+                <default>false</default>
+                <label>Cryston 1</label>
+            </value>
+            <value>
+                <fullName>Cryston 2</fullName>
+                <default>false</default>
+                <label>Cryston 2</label>
+            </value>
+            <value>
+                <fullName>Cryston 3</fullName>
+                <default>false</default>
+                <label>Cryston 3</label>
+            </value>
+            <value>
+                <fullName>Cryston 4</fullName>
+                <default>false</default>
+                <label>Cryston 4</label>
+            </value>
+            <value>
+                <fullName>Cryston 5</fullName>
+                <default>false</default>
+                <label>Cryston 5</label>
+            </value>
+            <value>
+                <fullName>Cryston 6</fullName>
+                <default>false</default>
+                <label>Cryston 6</label>
+            </value>
+            <value>
+                <fullName>Cryston 7</fullName>
+                <default>false</default>
+                <label>Cryston 7</label>
+            </value>
+            <value>
+                <fullName>Cryston 8</fullName>
+                <default>false</default>
+                <label>Cryston 8</label>
+            </value>
+            <value>
+                <fullName>Electrical &amp; Pneumaic</fullName>
+                <default>false</default>
+                <label>Electrical &amp; Pneumaic</label>
+            </value>
+            <value>
+                <fullName>Pressure Gauge</fullName>
+                <default>false</default>
+                <label>Pressure Gauge</label>
+            </value>
+            <value>
+                <fullName>Pressure Transmitter</fullName>
+                <default>false</default>
+                <label>Pressure Transmitter</label>
+            </value>
+            <value>
+                <fullName>Freight Cost</fullName>
+                <default>false</default>
+                <label>Freight Cost</label>
+            </value>
+            <value>
+                <fullName>Any other cost  1</fullName>
+                <default>false</default>
+                <label>Any other cost  1</label>
+            </value>
+            <value>
+                <fullName>Any other cost  2</fullName>
+                <default>false</default>
+                <label>Any other cost  2</label>
+            </value>
+            <value>
+                <fullName>Any other cost  3</fullName>
+                <default>false</default>
+                <label>Any other cost  3</label>
+            </value>
+            <value>
+                <fullName>Any other cost  4</fullName>
+                <default>false</default>
+                <label>Any other cost  4</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Equipment_has_been_installed_at__c</fullName>
+    <deleteConstraint>SetNull</deleteConstraint>
+    <label>Equipment has been installed at</label>
+    <referenceTo>Customer_Equipments__c</referenceTo>
+    <relationshipLabel>Customer Inventories Lines(Stocks)</relationshipLabel>
+    <relationshipName>Customer_Inventories_Lines_Stocks</relationshipName>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Lookup</type>
+</CustomField>

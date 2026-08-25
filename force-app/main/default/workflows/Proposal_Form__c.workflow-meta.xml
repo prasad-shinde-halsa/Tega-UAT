@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Workflow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <alerts>
+        <fullName>Create_Offer_Email</fullName>
+        <ccEmails>updatecustomerfromemail@1eawa5vv3t19s2btflkra0psw8dxja9zw49czzbioqj91d44no.5g-2ugxseay.ind23.apex.salesforce.com</ccEmails>
+        <description>Create Offer Email</description>
+        <protected>false</protected>
+        <senderType>CurrentUser</senderType>
+        <template>unfiled$public/Offer_Creating_from_Close_PRF</template>
+    </alerts>
+    <alerts>
+        <fullName>Email_to_owner_that_Proposal_form_is_closed</fullName>
+        <description>Email to owner that Proposal form is closed</description>
+        <protected>false</protected>
+        <recipients>
+            <type>creator</type>
+        </recipients>
+        <recipients>
+            <field>LastModifiedById</field>
+            <type>userLookup</type>
+        </recipients>
+        <senderAddress>salesforce.helpdesk@tegaindustries.com</senderAddress>
+        <senderType>OrgWideEmailAddress</senderType>
+        <template>unfiled$public/Proposal_Form_closed_email_to_owner</template>
+    </alerts>
+    <alerts>
+        <fullName>Submission_Email_to_Approver</fullName>
+        <description>Submission Email to Approver</description>
+        <protected>false</protected>
+        <recipients>
+            <type>creator</type>
+        </recipients>
+        <recipients>
+            <field>PMG_Head__c</field>
+            <type>userLookup</type>
+        </recipients>
+        <senderAddress>salesforce.helpdesk@tegaindustries.com</senderAddress>
+        <senderType>OrgWideEmailAddress</senderType>
+        <template>unfiled$public/On_Proposal_Form_Submitted_to_PMG_Email_Template</template>
+    </alerts>
+    <fieldUpdates>
+        <fullName>Status_submitted_to_pmg</fullName>
+        <field>Status__c</field>
+        <literalValue>Submitted to PMG</literalValue>
+        <name>Status submitted to pmg</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Update_Status_to_Rejected</fullName>
+        <field>Status__c</field>
+        <literalValue>Rejected</literalValue>
+        <name>Update Status to Rejected</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Updated_Status_to_Submitted</fullName>
+        <field>Status__c</field>
+        <literalValue>Submitted to PMG</literalValue>
+        <name>Update Status to Submitted</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Updatess_Status_to_Approved</fullName>
+        <field>Status__c</field>
+        <literalValue>Approved</literalValue>
+        <name>Update Status to Approved</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+</Workflow>

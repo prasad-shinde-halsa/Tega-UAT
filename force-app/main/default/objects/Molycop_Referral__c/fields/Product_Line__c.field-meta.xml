@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Product_Line__c</fullName>
+    <label>Product Line</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Grinding Media</fullName>
+                <default>false</default>
+                <label>Grinding Media</label>
+            </value>
+            <value>
+                <fullName>Bolts</fullName>
+                <default>false</default>
+                <label>Bolts</label>
+            </value>
+            <value>
+                <fullName>Chemicals</fullName>
+                <default>false</default>
+                <label>Chemicals</label>
+            </value>
+            <value>
+                <fullName>Smart Instrumentation</fullName>
+                <default>false</default>
+                <label>Smart Instrumentation</label>
+            </value>
+            <value>
+                <fullName>MillSlicer</fullName>
+                <default>false</default>
+                <label>MillSlicer</label>
+            </value>
+            <value>
+                <fullName>LTM Level Probe</fullName>
+                <default>false</default>
+                <label>LTM Level Probe</label>
+            </value>
+            <value>
+                <fullName>Cynoprobe</fullName>
+                <default>false</default>
+                <label>Cynoprobe</label>
+            </value>
+            <value>
+                <fullName>C2 Meter</fullName>
+                <default>false</default>
+                <label>C2 Meter</label>
+            </value>
+            <value>
+                <fullName>Process Characterisation</fullName>
+                <default>false</default>
+                <label>Process Characterisation</label>
+            </value>
+            <value>
+                <fullName>OreVia</fullName>
+                <default>false</default>
+                <label>OreVia</label>
+            </value>
+            <value>
+                <fullName>Analytics</fullName>
+                <default>false</default>
+                <label>Analytics</label>
+            </value>
+            <value>
+                <fullName>Molycop VIP</fullName>
+                <default>false</default>
+                <label>Molycop VIP</label>
+            </value>
+            <value>
+                <fullName>Molycop Tools</fullName>
+                <default>false</default>
+                <label>Molycop Tools</label>
+            </value>
+            <value>
+                <fullName>Mineral Analysis Services</fullName>
+                <default>false</default>
+                <label>Mineral Analysis Services</label>
+            </value>
+            <value>
+                <fullName>Smart Process Control</fullName>
+                <default>false</default>
+                <label>Smart Process Control</label>
+            </value>
+            <value>
+                <fullName>Consulting and Training</fullName>
+                <default>false</default>
+                <label>Consulting and Training</label>
+            </value>
+            <value>
+                <fullName>Rail Wheels</fullName>
+                <default>false</default>
+                <label>Rail Wheels</label>
+            </value>
+            <value>
+                <fullName>Axles</fullName>
+                <default>false</default>
+                <label>Axles</label>
+            </value>
+            <value>
+                <fullName>Track Wheels and Gear Blanks</fullName>
+                <default>false</default>
+                <label>Track Wheels and Gear Blanks</label>
+            </value>
+            <value>
+                <fullName>Anode Pins</fullName>
+                <default>false</default>
+                <label>Anode Pins</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

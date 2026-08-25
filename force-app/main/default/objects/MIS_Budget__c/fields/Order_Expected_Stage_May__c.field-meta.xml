@@ -1,0 +1,200 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Order_Expected_Stage_May__c</fullName>
+    <description>This field will showcase the stage of the May month Order</description>
+    <label>Order Expected Stage (May)</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <controllingField>Order_Type__c</controllingField>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>No work done</fullName>
+                <default>false</default>
+                <label>No work done</label>
+            </value>
+            <value>
+                <fullName>Indent</fullName>
+                <default>false</default>
+                <label>Indent</label>
+            </value>
+            <value>
+                <fullName>Enquiry</fullName>
+                <default>false</default>
+                <label>Enquiry</label>
+            </value>
+            <value>
+                <fullName>Offer</fullName>
+                <default>false</default>
+                <label>Offer</label>
+            </value>
+            <value>
+                <fullName>Presentation and data collection</fullName>
+                <default>false</default>
+                <label>Presentation and data collection</label>
+            </value>
+            <value>
+                <fullName>Mapping pain point</fullName>
+                <default>false</default>
+                <label>Mapping pain point</label>
+            </value>
+            <value>
+                <fullName>Presentation of solution</fullName>
+                <default>false</default>
+                <label>Presentation of solution</label>
+            </value>
+            <value>
+                <fullName>Follow up on presentation</fullName>
+                <default>false</default>
+                <label>Follow up on presentation</label>
+            </value>
+            <value>
+                <fullName>Generation of RFQ</fullName>
+                <default>false</default>
+                <label>Generation of RFQ</label>
+            </value>
+            <value>
+                <fullName>Installation of trial order</fullName>
+                <default>false</default>
+                <label>Installation of trial order</label>
+            </value>
+            <value>
+                <fullName>Completion of trial order</fullName>
+                <default>false</default>
+                <label>Completion of trial order</label>
+            </value>
+            <value>
+                <fullName>Contact initiation (Consultant / OEM)</fullName>
+                <default>false</default>
+                <label>Contact initiation (Consultant / OEM)</label>
+            </value>
+            <value>
+                <fullName>Product presentation (Consultant / OEM / End customer)</fullName>
+                <default>false</default>
+                <label>Product presentation (Consultant / OEM / End customer)</label>
+            </value>
+            <value>
+                <fullName>Specification incorporation</fullName>
+                <default>false</default>
+                <label>Specification incorporation</label>
+            </value>
+            <value>
+                <fullName>Tender / RFQ</fullName>
+                <default>false</default>
+                <label>Tender / RFQ</label>
+            </value>
+            <value>
+                <fullName>Offer submission</fullName>
+                <default>false</default>
+                <label>Offer submission</label>
+            </value>
+            <value>
+                <fullName>Negotiation</fullName>
+                <default>false</default>
+                <label>Negotiation</label>
+            </value>
+            <value>
+                <fullName>Order</fullName>
+                <default>false</default>
+                <label>Order</label>
+            </value>
+            <value>
+                <fullName>Lost</fullName>
+                <default>false</default>
+                <label>Lost</label>
+            </value>
+        </valueSetDefinition>
+        <valueSettings>
+            <controllingFieldValue>E-Spares</controllingFieldValue>
+            <controllingFieldValue>P-Project</controllingFieldValue>
+            <controllingFieldValue>C-Conversion</controllingFieldValue>
+            <controllingFieldValue>S-Service</controllingFieldValue>
+            <valueName>No work done</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>E-Spares</controllingFieldValue>
+            <controllingFieldValue>S-Service</controllingFieldValue>
+            <valueName>Indent</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>E-Spares</controllingFieldValue>
+            <controllingFieldValue>S-Service</controllingFieldValue>
+            <valueName>Enquiry</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>E-Spares</controllingFieldValue>
+            <controllingFieldValue>P-Project</controllingFieldValue>
+            <controllingFieldValue>S-Service</controllingFieldValue>
+            <valueName>Offer</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>E-Spares</controllingFieldValue>
+            <controllingFieldValue>P-Project</controllingFieldValue>
+            <controllingFieldValue>C-Conversion</controllingFieldValue>
+            <controllingFieldValue>S-Service</controllingFieldValue>
+            <valueName>Negotiation</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>E-Spares</controllingFieldValue>
+            <controllingFieldValue>P-Project</controllingFieldValue>
+            <controllingFieldValue>C-Conversion</controllingFieldValue>
+            <controllingFieldValue>S-Service</controllingFieldValue>
+            <valueName>Order</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>E-Spares</controllingFieldValue>
+            <controllingFieldValue>P-Project</controllingFieldValue>
+            <controllingFieldValue>C-Conversion</controllingFieldValue>
+            <controllingFieldValue>S-Service</controllingFieldValue>
+            <valueName>Lost</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>P-Project</controllingFieldValue>
+            <valueName>Contact initiation (Consultant / OEM)</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>P-Project</controllingFieldValue>
+            <valueName>Product presentation (Consultant / OEM / End customer)</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>P-Project</controllingFieldValue>
+            <valueName>Specification incorporation</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>P-Project</controllingFieldValue>
+            <valueName>Tender / RFQ</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>C-Conversion</controllingFieldValue>
+            <valueName>Presentation and data collection</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>C-Conversion</controllingFieldValue>
+            <valueName>Mapping pain point</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>C-Conversion</controllingFieldValue>
+            <valueName>Presentation of solution</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>C-Conversion</controllingFieldValue>
+            <valueName>Follow up on presentation</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>C-Conversion</controllingFieldValue>
+            <valueName>Generation of RFQ</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>C-Conversion</controllingFieldValue>
+            <valueName>Installation of trial order</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>C-Conversion</controllingFieldValue>
+            <valueName>Completion of trial order</valueName>
+        </valueSettings>
+    </valueSet>
+</CustomField>

@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Product Line --></label>
+    <name>Product_Line__c</name>
+    <picklistValues>
+        <masterLabel>Analytics</masterLabel>
+        <translation><!-- Analytics --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Anode Pins</masterLabel>
+        <translation><!-- Anode Pins --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Axles</masterLabel>
+        <translation><!-- Axles --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Bolts</masterLabel>
+        <translation><!-- Bolts --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>C2 Meter</masterLabel>
+        <translation><!-- C2 Meter --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Chemicals</masterLabel>
+        <translation><!-- Chemicals --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Consulting and Training</masterLabel>
+        <translation><!-- Consulting and Training --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Cynoprobe</masterLabel>
+        <translation><!-- Cynoprobe --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Grinding Media</masterLabel>
+        <translation><!-- Grinding Media --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>LTM Level Probe</masterLabel>
+        <translation><!-- LTM Level Probe --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>MillSlicer</masterLabel>
+        <translation><!-- MillSlicer --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Mineral Analysis Services</masterLabel>
+        <translation><!-- Mineral Analysis Services --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Molycop Tools</masterLabel>
+        <translation><!-- Molycop Tools --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Molycop VIP</masterLabel>
+        <translation><!-- Molycop VIP --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>OreVia</masterLabel>
+        <translation><!-- OreVia --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Process Characterisation</masterLabel>
+        <translation><!-- Process Characterisation --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Rail Wheels</masterLabel>
+        <translation><!-- Rail Wheels --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Smart Instrumentation</masterLabel>
+        <translation><!-- Smart Instrumentation --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Smart Process Control</masterLabel>
+        <translation><!-- Smart Process Control --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Track Wheels and Gear Blanks</masterLabel>
+        <translation><!-- Track Wheels and Gear Blanks --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

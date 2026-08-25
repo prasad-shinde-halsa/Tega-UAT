@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Tega/Hosch Product Condition --></label>
+    <name>Tega_Hosch_Product_Condition__c</name>
+    <picklistValues>
+        <masterLabel>In working condition-No replacement required</masterLabel>
+        <translation><!-- In working condition-No replacement required --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>In working condition-Normal replacement required</masterLabel>
+        <translation><!-- In working condition-Normal replacement required --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Not working-replacement required</masterLabel>
+        <translation><!-- Not working-replacement required --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Periodic service not done</masterLabel>
+        <translation><!-- Periodic service not done --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Product disengaged intentionally</masterLabel>
+        <translation><!-- Product disengaged intentionally --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

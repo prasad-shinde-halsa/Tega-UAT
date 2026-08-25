@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Is_PMG_Label_Approved__c</fullName>
+    <defaultValue>false</defaultValue>
+    <description>This flag is used to identify the BLI that is approved by PMG label.</description>
+    <label>Is PMG Label Approved</label>
+    <trackTrending>false</trackTrending>
+    <type>Checkbox</type>
+</CustomField>

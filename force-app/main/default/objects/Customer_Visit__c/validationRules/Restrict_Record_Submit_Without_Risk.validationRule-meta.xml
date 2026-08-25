@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Restrict_Record_Submit_Without_Risk</fullName>
+    <active>true</active>
+    <description>This validation rule will prevent the users to submit any records without having any Risk Factor value.</description>
+    <errorConditionFormula>AND(
+NOT(ISNEW()),
+ISBLANK(TEXT(Customer_Risk_Factor__c)),
+ISCHANGED(Status__c),
+ISPICKVAL(Status__c,&apos;Submitted&apos;)
+)</errorConditionFormula>
+    <errorMessage>Please specify the risk factor before submitting the record.</errorMessage>
+</ValidationRule>

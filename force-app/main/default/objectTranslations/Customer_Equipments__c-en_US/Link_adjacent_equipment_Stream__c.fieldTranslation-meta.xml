@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Link adjacent equipment - Stream 1 --></label>
+    <name>Link_adjacent_equipment_Stream__c</name>
+    <picklistValues>
+        <masterLabel>Downstream</masterLabel>
+        <translation><!-- Downstream --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>None</masterLabel>
+        <translation><!-- None --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Upstream</masterLabel>
+        <translation><!-- Upstream --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

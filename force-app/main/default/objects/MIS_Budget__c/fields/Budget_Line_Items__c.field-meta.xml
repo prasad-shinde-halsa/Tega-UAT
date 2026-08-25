@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Budget_Line_Items__c</fullName>
+    <label>Budget Line Items</label>
+    <referenceTo>DC_Budget_Line_Items__c</referenceTo>
+    <relationshipLabel>MIS Budgets</relationshipLabel>
+    <relationshipName>MIS_Budgets</relationshipName>
+    <relationshipOrder>0</relationshipOrder>
+    <reparentableMasterDetail>false</reparentableMasterDetail>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>MasterDetail</type>
+    <writeRequiresMasterRead>false</writeRequiresMasterRead>
+</CustomField>

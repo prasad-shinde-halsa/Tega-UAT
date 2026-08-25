@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>SO_Line_Item__c</fullName>
+    <deleteConstraint>SetNull</deleteConstraint>
+    <label>SO Line Item</label>
+    <referenceTo>OrderItem</referenceTo>
+    <relationshipLabel>PPR Product Relationships</relationshipLabel>
+    <relationshipName>PPR_Product_Relationships</relationshipName>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Lookup</type>
+</CustomField>

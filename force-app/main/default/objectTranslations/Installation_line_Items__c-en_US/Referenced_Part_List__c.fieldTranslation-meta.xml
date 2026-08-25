@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Referenced Part List --></label>
+    <name>Referenced_Part_List__c</name>
+    <relationshipLabel><!-- Installation line Items --></relationshipLabel>
+</CustomFieldTranslation>

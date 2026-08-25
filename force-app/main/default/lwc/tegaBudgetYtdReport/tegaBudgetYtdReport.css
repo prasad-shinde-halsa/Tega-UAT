@@ -1,0 +1,46 @@
+.neon-input {
+    background-color: #d9f5f8;
+    color: #070707;
+    border: 2px solid #0026ff;
+    border-radius: 5px;
+    padding: 10px;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+    box-shadow: 0 0 20px rgba(1, 31, 255, 0.7);
+    font-weight: bold;
+    outline: none;
+}
+
+.neon-input:hover {
+    border-color: #048d21;
+    box-shadow: 0 0 20px rgba(17, 255, 0, 0.7);
+}
+
+.neon-input:focus {
+    border-color: #048d21;
+    box-shadow: 0 0 20px rgba(17, 255, 0, 0.9);
+}
+
+.neon-combobox {
+    background-color: #d9f5f8;
+    color: #070707;
+    border: 2px solid #0026ff;
+    border-radius: 5px;
+    padding: 10px;
+    transition: border-color 0.3s ease;
+    box-shadow: 0 0 20px rgba(1, 31, 255, 0.7);
+    font-weight: bold;
+}
+
+.neon-combobox:hover {
+    border-color: #048d21;
+    box-shadow: 0 0 20px rgba(17, 255, 0, 0.7);
+}
+
+.neon-combobox .slds-form-element__label {
+    color: #030303 !important;
+}
+
+/* Data row hover effect */
+.data-row:hover td {
+    filter: brightness(0.95);
+}

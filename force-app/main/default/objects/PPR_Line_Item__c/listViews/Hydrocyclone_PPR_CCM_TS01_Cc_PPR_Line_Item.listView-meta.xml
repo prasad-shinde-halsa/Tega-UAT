@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Hydrocyclone_PPR_CCM_TS01_Cc_PPR_Line_Item</fullName>
+    <filterScope>Queue</filterScope>
+    <label>Hydrocyclone-PPR-CCM-TS01-Cc</label>
+    <queue>Hydrocyclone_PPR_CCM_TS01_Cc</queue>
+    <sharedTo>
+        <allInternalUsers></allInternalUsers>
+    </sharedTo>
+</ListView>

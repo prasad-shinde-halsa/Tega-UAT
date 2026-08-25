@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Ore Type --></label>
+    <name>Ore_Type__c</name>
+    <picklistValues>
+        <masterLabel>Chromium</masterLabel>
+        <translation><!-- Chromium --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Copper</masterLabel>
+        <translation><!-- Copper --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Gold</masterLabel>
+        <translation><!-- Gold --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Iron</masterLabel>
+        <translation><!-- Iron --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Lead</masterLabel>
+        <translation><!-- Lead --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Magnesium</masterLabel>
+        <translation><!-- Magnesium --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Other</masterLabel>
+        <translation><!-- Other --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Silver</masterLabel>
+        <translation><!-- Silver --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Zinc</masterLabel>
+        <translation><!-- Zinc --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

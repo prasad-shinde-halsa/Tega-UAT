@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Status__c</fullName>
+    <label>Status</label>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Submit to Department</fullName>
+                <default>false</default>
+                <label>Submit to Department</label>
+            </value>
+            <value>
+                <fullName>Request pending with MD</fullName>
+                <default>false</default>
+                <label>Request pending with MD</label>
+            </value>
+            <value>
+                <fullName>Request pending with QH</fullName>
+                <default>false</default>
+                <label>Request pending with QH</label>
+            </value>
+            <value>
+                <fullName>Approved by MD</fullName>
+                <default>false</default>
+                <label>Approved by MD</label>
+            </value>
+            <value>
+                <fullName>Approved by QH</fullName>
+                <default>false</default>
+                <label>Approved by QH</label>
+            </value>
+            <value>
+                <fullName>New</fullName>
+                <default>true</default>
+                <label>New</label>
+            </value>
+            <value>
+                <fullName>Rejected</fullName>
+                <default>false</default>
+                <label>Rejected</label>
+            </value>
+            <value>
+                <fullName>Request Pending With CCM</fullName>
+                <default>false</default>
+                <label>Request Pending With CCM</label>
+            </value>
+            <value>
+                <fullName>Approved by CCM</fullName>
+                <default>false</default>
+                <label>Approved by CCM</label>
+            </value>
+            <value>
+                <fullName>Closed</fullName>
+                <default>false</default>
+                <label>Closed</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

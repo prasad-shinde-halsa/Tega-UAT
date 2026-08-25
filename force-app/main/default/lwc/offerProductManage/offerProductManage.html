@@ -1,0 +1,317 @@
+<template>
+    <lightning-card>
+        <!-- Header -->
+        <div slot="title" class="card-header">
+            <lightning-icon icon-name="standard:product" size="small" class="header-icon"></lightning-icon>
+            <h2 class="slds-text-heading_medium">Offer Products</h2>
+        </div>
+
+        <!-- Error Messages -->
+        <template if:true={currencyMismatchError}>
+            <div class="error-banner">
+                <lightning-icon icon-name="utility:error" variant="inverse" size="small"></lightning-icon>
+                <span>{currencyMismatchError}</span>
+            </div>
+        </template>
+
+        <template if:true={zeroBTPError}>
+            <div class="warning-banner">
+                <lightning-icon icon-name="utility:warning" variant="inverse" size="small"></lightning-icon>
+                <span>{zeroBTPError}</span>
+            </div>
+        </template>
+
+        <!-- Search Section -->
+        <div class="search-section slds-p-around_medium">
+            <h3 class="section-title">Search Product by Part List or Product Type</h3>
+            
+            <div class="slds-grid slds-gutters slds-wrap">
+                <!-- Part List Search -->
+                <div class="slds-col slds-size_1-of-1 slds-medium-size_1-of-4">
+                    <template if:true={partlistnumber}>
+                        <lightning-input
+                            label="Part Lists"
+                            value={searchKeyword}
+                            placeholder="Search Part List...."
+                            onchange={handleSearchKeywordChange}>
+                        </lightning-input>
+                    </template>
+                    <template if:false={partlistnumber}>
+                        <lightning-output-field
+                            field-name="Part_List__c"
+                            variant="label-inline">
+                        </lightning-output-field>
+                    </template>
+                </div>
+
+                <!-- Product Type -->
+                <div class="slds-col slds-size_1-of-1 slds-medium-size_1-of-4">
+                    <lightning-combobox
+                        label="Product Type"
+                        value={picksel}
+                        placeholder="Select Product Type"
+                        options={productTypeOptions}
+                        onchange={handleProductTypeChange}>
+                    </lightning-combobox>
+                </div>
+
+                <!-- Search Button -->
+                <div class="slds-col slds-size_1-of-1 slds-medium-size_1-of-4 slds-align-middle">
+                    <lightning-button
+                        variant="brand"
+                        label="Search"
+                        icon-name="utility:search"
+                        onclick={handleSearch}
+                        class="search-button">
+                    </lightning-button>
+                </div>
+
+                <!-- Currency Display -->
+                <div class="slds-col slds-size_1-of-1 slds-medium-size_1-of-4">
+                    <div class="currency-display">
+                        <span class="slds-text-body_small slds-text-color_weak">Currency:</span>
+                        <span class="slds-text-heading_small">{offCurrency}</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Summary Bar -->
+        <div class="summary-bar">
+            <div class="summary-item">
+                <lightning-input
+                    type="checkbox"
+                    label="Full Set"
+                    checked={fullSet}
+                    onchange={handleFullSetChange}>
+                </lightning-input>
+                <lightning-input
+                    type="number"
+                    label="Qty"
+                    value={fullSetQuantity}
+                    disabled={disableFullSetQty}
+                    onchange={handleFullSetQtyChange}
+                    class="qty-input">
+                </lightning-input>
+            </div>
+
+            <div class="summary-stats">
+                <div class="stat-card">
+                    <span class="stat-label">Total BTP Price</span>
+                    <span class="stat-value">{formattedTotalBTP}</span>
+                </div>
+                <div class="stat-card">
+                    <span class="stat-label">Total Sales Price</span>
+                    <span class="stat-value">{formattedTotalSales}</span>
+                </div>
+                <div class="stat-card stat-card-highlight">
+                    <span class="stat-label">Overall Sales %</span>
+                    <span class="stat-value">{formattedTotalSalesPercent}%</span>
+                </div>
+            </div>
+        </div>
+
+        <!-- Product Table -->
+        <div class="table-container">
+            <table class="modern-table">
+                <thead>
+                    <tr>
+                        <th class="column-sno">S.No</th>
+                        <th class="column-name">Product Name</th>
+                        <th class="column-desc">Description</th>
+                        
+                        <!-- Dynamic L2 Headers -->
+                        <template for:each={headers} for:item="header">
+                            <th key={header.Name} class="column-header">
+                                <div class="header-checkbox">
+                                    <lightning-input
+                                        type="checkbox"
+                                        label={header.Name}
+                                        checked={header.isSelected}
+                                        data-name={header.Name}
+                                        onchange={handleHeaderCheckboxChange}>
+                                    </lightning-input>
+                                </div>
+                                <div class="header-qty">
+                                    <lightning-input
+                                        type="number"
+                                        label="Qty"
+                                        value={header.value}
+                                        disabled={disableHeader}
+                                        data-name={header.Name}
+                                        onchange={handleHeaderQtyChange}
+                                        class="header-qty-input">
+                                    </lightning-input>
+                                </div>
+                            </th>
+                        </template>
+
+                        <th class="column-total">Total</th>
+                        <th class="column-custom">Custom Qty</th>
+                        <th class="column-btp">BTP</th>
+                        
+                        <th class="column-margin">
+                            <div>Margin (%)</div>
+                            <lightning-input
+                                type="number"
+                                value={marginAllVal}
+                                onchange={handleMarginAllChange}
+                                class="global-margin-input">
+                            </lightning-input>
+                        </th>
+                        
+                        <th class="column-sales">My Sales Price</th>
+                        <th class="column-last-sale">Last Sale Price</th>
+                        <th class="column-last-date">Last SO Date</th>
+                        <th class="column-fixed">Fixed Contract</th>
+                    </tr>
+                </thead>
+
+                <tbody>
+                    <template for:each={records} for:item="record" for:index="index">
+                        <tr key={record.Product_L3__c} class="product-row">
+                            <td>{record.rowNumber}</td>
+                            <td class="product-name">{record.Product_L3__r.Name}</td>
+                            <td>{record.Product_L3__r.Description}</td>
+                            
+                            <!-- Dynamic L2 Quantities -->
+                            <template for:each={record.product2Quantities} for:item="qty">
+                                <td key={qty} lwc:dom="manual"></td>
+                            </template>
+
+                            <td class="total-qty">{record.level2customQuantity}</td>
+                            
+                            <td>
+                                <lightning-input
+                                    type="number"
+                                    value={record.customQuantity}
+                                    data-index={index}
+                                    onchange={handleCustomQtyChange}
+                                    variant="label-hidden">
+                                </lightning-input>
+                            </td>
+
+                            <td class="btp-cell">
+                                <div class="btp-value">
+                                    <lightning-formatted-number
+                                        value={record.btpPrice}
+                                        format-style="decimal"
+                                        minimum-fraction-digits="2"
+                                        maximum-fraction-digits="2">
+                                    </lightning-formatted-number>
+                                </div>
+                                <template if:true={record.error}>
+                                    <lightning-icon
+                                        icon-name="utility:warning"
+                                        variant="error"
+                                        size="x-small"
+                                        alternative-text={record.error}
+                                        title={record.error}>
+                                    </lightning-icon>
+                                </template>
+                            </td>
+
+                            <td>
+                                <lightning-input
+                                    type="number"
+                                    value={record.margin}
+                                    disabled={record.inputDisable}
+                                    data-index={index}
+                                    onchange={handleMarginChange}
+                                    variant="label-hidden">
+                                </lightning-input>
+                            </td>
+
+                            <td class="sales-price">
+                                <lightning-formatted-number
+                                    value={record.mySalesPrice}
+                                    format-style="decimal"
+                                    minimum-fraction-digits="2"
+                                    maximum-fraction-digits="2">
+                                </lightning-formatted-number>
+                            </td>
+
+                            <td class="last-sale-price">
+                                <lightning-formatted-number
+                                    value={record.SAP_Price}
+                                    format-style="decimal"
+                                    minimum-fraction-digits="2"
+                                    maximum-fraction-digits="2">
+                                </lightning-formatted-number>
+                            </td>
+
+                            <td>{record.SAP_Date}</td>
+
+                            <td class="fixed-indicator">
+                                <template if:true={record.isFixedBTP}>
+                                    <lightning-badge label="✓" class="fixed-badge"></lightning-badge>
+                                </template>
+                            </td>
+                        </tr>
+                    </template>
+                </tbody>
+            </table>
+        </div>
+
+        <!-- Footer Actions -->
+        <div slot="footer" class="footer-actions">
+            <lightning-button
+                variant="neutral"
+                label="Cancel"
+                onclick={handleCancel}
+                disabled={isButtonDisabled}>
+            </lightning-button>
+            <lightning-button
+                variant="brand"
+                label="Save"
+                onclick={handleSave}
+                disabled={isButtonDisabled}>
+            </lightning-button>
+            <lightning-button
+                variant="brand"
+                label="Save and Close"
+                onclick={handleSaveAndClose}
+                disabled={isButtonDisabled}
+                class="primary-action">
+            </lightning-button>
+        </div>
+
+        <!-- Spinner -->
+        <template if:true={isLoading}>
+            <lightning-spinner
+                alternative-text="Loading"
+                variant="brand"
+                size="large">
+            </lightning-spinner>
+        </template>
+
+        <!-- Confirmation Dialog -->
+        <template if:true={showConfirmDialog}>
+            <section role="dialog" class="slds-modal slds-fade-in-open">
+                <div class="slds-modal__container">
+                    <header class="slds-modal__header">
+                        <h2 class="slds-text-heading_medium">Confirmation</h2>
+                    </header>
+                    <div class="slds-modal__content slds-p-around_medium">
+                        <p class="slds-text-align_center slds-text-body_regular">
+                            There are line items in this offer which will be sent for Underquote/Delivery SLA approval when you Finalize this offer.
+                        </p>
+                    </div>
+                    <footer class="slds-modal__footer">
+                        <lightning-button
+                            variant="neutral"
+                            label="No"
+                            onclick={handleConfirmNo}>
+                        </lightning-button>
+                        <lightning-button
+                            variant="brand"
+                            label="Yes"
+                            onclick={handleConfirmYes}>
+                        </lightning-button>
+                    </footer>
+                </div>
+            </section>
+            <div class="slds-backdrop slds-backdrop_open"></div>
+        </template>
+    </lightning-card>
+</template>

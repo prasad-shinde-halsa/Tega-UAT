@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Same_Record_Type_as_PRF</fullName>
+    <active>false</active>
+    <errorConditionFormula>RecordType.Name &lt;&gt; Proposal_Form__r.RecordType.Name</errorConditionFormula>
+    <errorMessage>Record type of PRF &amp; Scope of Supply should be same</errorMessage>
+</ValidationRule>

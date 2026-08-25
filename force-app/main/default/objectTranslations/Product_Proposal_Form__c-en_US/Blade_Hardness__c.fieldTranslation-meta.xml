@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Blade Hardness --></label>
+    <name>Blade_Hardness__c</name>
+    <picklistValues>
+        <masterLabel>HR</masterLabel>
+        <translation><!-- HR --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>NR</masterLabel>
+        <translation><!-- NR --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>NR SKIRT</masterLabel>
+        <translation><!-- NR SKIRT --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>SS SKIRT</masterLabel>
+        <translation><!-- SS SKIRT --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

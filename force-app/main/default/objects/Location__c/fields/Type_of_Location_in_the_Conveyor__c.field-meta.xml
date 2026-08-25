@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Type_of_Location_in_the_Conveyor__c</fullName>
+    <description>To identify at what location of the conveyor the product is installed</description>
+    <inlineHelpText>To identify at what location of the conveyor the product is installed</inlineHelpText>
+    <label>Type of Location in the Conveyor</label>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Loading Point</fullName>
+                <default>false</default>
+                <label>LOADING POINT</label>
+            </value>
+            <value>
+                <fullName>HEAD END</fullName>
+                <default>false</default>
+                <label>HEAD END</label>
+            </value>
+            <value>
+                <fullName>TAIL END</fullName>
+                <default>false</default>
+                <label>TAIL END</label>
+            </value>
+            <value>
+                <fullName>CARRYING SIDE</fullName>
+                <default>false</default>
+                <label>CARRYING SIDE</label>
+            </value>
+            <value>
+                <fullName>RETURN SIDE</fullName>
+                <default>false</default>
+                <label>RETURN SIDE</label>
+            </value>
+            <value>
+                <fullName>Conveyor Belt Section</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Conveyor Belt Section</label>
+            </value>
+            <value>
+                <fullName>Transfer Zone</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Transfer Zone</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

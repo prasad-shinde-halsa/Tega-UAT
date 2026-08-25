@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- PAINT --></label>
+    <name>PAINT__c</name>
+    <picklistValues>
+        <masterLabel>PAINT DFT 50 MICRON</masterLabel>
+        <translation><!-- PAINT DFT 50 MICRON --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>POWDER COATED DFT 80 MICRON</masterLabel>
+        <translation><!-- POWDER COATED DFT 80 MICRON --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

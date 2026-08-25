@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Size of container --></label>
+    <name>Size_of_container__c</name>
+    <picklistValues>
+        <masterLabel>20 ft.</masterLabel>
+        <translation><!-- 20 ft. --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>40 ft.</masterLabel>
+        <translation><!-- 40 ft. --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

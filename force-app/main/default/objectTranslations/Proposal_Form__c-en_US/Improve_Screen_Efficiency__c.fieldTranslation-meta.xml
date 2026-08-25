@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- Inform desired open area. Note: Existing open area should be captured in OP form (OP &gt; Deck) --></help>
+    <label><!-- Improve Screen Efficiency? --></label>
+    <name>Improve_Screen_Efficiency__c</name>
+</CustomFieldTranslation>

@@ -1,0 +1,1724 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<FlexiPage xmlns="http://soap.sforce.com/2006/04/metadata">
+    <flexiPageRegions>
+        <itemInstances>
+            <componentInstance>
+                <componentInstanceProperties>
+                    <name>collapsed</name>
+                    <value>false</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>enableActionsConfiguration</name>
+                    <value>false</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>enableActionsInNative</name>
+                    <value>false</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>hideChatterActions</name>
+                    <value>false</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>numVisibleActions</name>
+                    <value>3</value>
+                </componentInstanceProperties>
+                <componentName>force:highlightsPanel</componentName>
+                <identifier>force_highlightsPanel</identifier>
+            </componentInstance>
+        </itemInstances>
+        <mode>Replace</mode>
+        <name>header</name>
+        <type>Region</type>
+    </flexiPageRegions>
+    <flexiPageRegions>
+        <itemInstances>
+            <componentInstance>
+                <componentInstanceProperties>
+                    <name>relatedListComponentOverride</name>
+                    <value>NONE</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>rowsToDisplay</name>
+                    <value>10</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>showActionBar</name>
+                    <value>true</value>
+                </componentInstanceProperties>
+                <componentName>force:relatedListContainer</componentName>
+                <identifier>force_relatedListContainer</identifier>
+            </componentInstance>
+        </itemInstances>
+        <mode>Replace</mode>
+        <name>relatedTabContent</name>
+        <type>Facet</type>
+    </flexiPageRegions>
+    <flexiPageRegions>
+        <itemInstances>
+            <fieldInstance>
+                <fieldInstanceProperties>
+                    <name>uiBehavior</name>
+                    <value>readonly</value>
+                </fieldInstanceProperties>
+                <fieldItem>Record.Name</fieldItem>
+                <identifier>RecordNameField</identifier>
+            </fieldInstance>
+        </itemInstances>
+        <itemInstances>
+            <fieldInstance>
+                <fieldInstanceProperties>
+                    <name>uiBehavior</name>
+                    <value>none</value>
+                </fieldInstanceProperties>
+                <fieldItem>Record.Product_Type__c</fieldItem>
+                <identifier>RecordProduct_Type_cField</identifier>
+            </fieldInstance>
+        </itemInstances>
+        <itemInstances>
+            <fieldInstance>
+                <fieldInstanceProperties>
+                    <name>uiBehavior</name>
+                    <value>none</value>
+                </fieldInstanceProperties>
+                <fieldItem>Record.Description__c</fieldItem>
+                <identifier>RecordDescription_cField</identifier>
+            </fieldInstance>
+        </itemInstances>
+        <itemInstances>
+            <fieldInstance>
+                <fieldInstanceProperties>
+                    <name>uiBehavior</name>
+                    <value>none</value>
+                </fieldInstanceProperties>
+                <fieldItem>Record.Section_Rubber_Block__c</fieldItem>
+                <identifier>RecordSection_Rubber_Block_cField</identifier>
+                <visibilityRule>
+                    <booleanFilter>1 OR 2</booleanFilter>
+                    <criteria>
+                        <leftValue>{!Record.Product_Type__c}</leftValue>
+                        <operator>EQUAL</operator>
+                        <rightValue>Side Skirt Sealing</rightValue>
+                    </criteria>
+                    <criteria>
+                        <leftValue>{!Record.Product_Type__c}</leftValue>
+                        <operator>EQUAL</operator>
+                        <rightValue>Rear Skirt Sealing</rightValue>
+                    </criteria>
+                </visibilityRule>
+            </fieldInstance>
+        </itemInstances>
+        <itemInstances>
+            <fieldInstance>
+                <fieldInstanceProperties>
+                    <name>uiBehavior</name>
+                    <value>none</value>
+                </fieldInstanceProperties>
+                <fieldItem>Record.Rubber_Block_Quantity__c</fieldItem>
+                <identifier>RecordRubber_Block_Quantity_cField</identifier>
+                <visibilityRule>
+                    <booleanFilter>1 OR 2</booleanFilter>
+                    <criteria>
+                        <leftValue>{!Record.Product_Type__c}</leftValue>
+                        <operator>EQUAL</operator>
+                        <rightValue>Side Skirt Sealing</rightValue>
+                    </criteria>
+                    <criteria>
+                        <leftValue>{!Record.Product_Type__c}</leftValue>
+                        <operator>EQUAL</operator>
+                        <rightValue>Rear Skirt Sealing</rightValue>
+                    </criteria>
+                </visibilityRule>
+            </fieldInstance>
+        </itemInstances>
+        <itemInstances>
+            <fieldInstance>
+                <fieldInstanceProperties>
+                    <name>uiBehavior</name>
+                    <value>none</value>
+                </fieldInstanceProperties>
+                <fieldItem>Record.Section_Backing_Plate__c</fieldItem>
+                <identifier>RecordSection_Backing_Plate_cField</identifier>
+                <visibilityRule>
+                    <booleanFilter>1 OR 2</booleanFilter>
+                    <criteria>
+                        <leftValue>{!Record.Product_Type__c}</leftValue>
+                        <operator>EQUAL</operator>
+                        <rightValue>Side Skirt Sealing</rightValue>
+                    </criteria>
+                    <criteria>
+                        <leftValue>{!Record.Product_Type__c}</leftValue>
+                        <operator>EQUAL</operator>
+                        <rightValue>Rear Skirt Sealing</rightValue>
+                    </criteria>
+                </visibilityRule>
+            </fieldInstance>
+        </itemInstances>
+        <itemInstances>
+            <fieldInstance>
+                <fieldInstanceProperties>
+                    <name>uiBehavior</name>
+                    <value>none</value>
+                </fieldInstanceProperties>
+                <fieldItem>Record.Backing_Plate_MOC__c</fieldItem>
+                <identifier>RecordBacking_Plate_MOC_cField</identifier>
+                <visibilityRule>
+                    <booleanFilter>1 OR 2</booleanFilter>
+                    <criteria>
+                        <leftValue>{!Record.Product_Type__c}</leftValue>
+                        <operator>EQUAL</operator>
+                        <rightValue>Side Skirt Sealing</rightValue>
+                    </criteria>
+                    <criteria>
+                        <leftValue>{!Record.Product_Type__c}</leftValue>
+                        <operator>EQUAL</operator>
+                        <rightValue>Rear Skirt Sealing</rightValue>
+                    </criteria>
+                </visibilityRule>
+            </fieldInstance>
+        </itemInstances>
+        <itemInstances>
+            <fieldInstance>
+                <fieldInstanceProperties>
+                    <name>uiBehavior</name>
+                    <value>none</value>
+                </fieldInstanceProperties>
+                <fieldItem>Record.Backing_Plate_Painting__c</fieldItem>
+                <identifier>RecordBacking_Plate_Painting_cField</identifier>
+                <visibilityRule>
+                    <booleanFilter>1 OR 2</booleanFilter>
+                    <criteria>
+                        <leftValue>{!Record.Product_Type__c}</leftValue>
+                        <operator>EQUAL</operator>
+                        <rightValue>Side Skirt Sealing</rightValue>
+                    </criteria>
+                    <criteria>
+                        <leftValue>{!Record.Product_Type__c}</leftValue>
+                        <operator>EQUAL</operator>
+                        <rightValue>Rear Skirt Sealing</rightValue>
+                    </criteria>
+                </visibilityRule>
+            </fieldInstance>
+        </itemInstances>
+        <itemInstances>
+            <fieldInstance>
+                <fieldInstanceProperties>
+                    <name>uiBehavior</name>
+                    <value>none</value>
+                </fieldInstanceProperties>
+                <fieldItem>Record.Section_Blade__c</fieldItem>
+                <identifier>RecordSection_Blade_cField</identifier>
+                <visibilityRule>
+                    <criteria>
+                        <leftValue>{!Record.Product_Type__c}</leftValue>
+                        <operator>EQUAL</operator>
+                        <rightValue>Belt Scrapers</rightValue>
+                    </criteria>
+                </visibilityRule>
+            </fieldInstance>
+        </itemInstances>
+        <itemInstances>
+            <fieldInstance>
+                <fieldInstanceProperties>
+                    <name>uiBehavior</name>
+                    <value>none</value>
+                </fieldInstanceProperties>
+                <fieldItem>Record.Blade_Hardness__c</fieldItem>
+                <identifier>RecordBlade_Hardness_cField</identifier>
+                <visibilityRule>
+                    <criteria>
+                        <leftValue>{!Record.Product_Type__c}</leftValue>
+                        <operator>EQUAL</operator>
+                        <rightValue>Belt Scrapers</rightValue>
+                    </criteria>
+                </visibilityRule>
+            </fieldInstance>
+        </itemInstances>
+        <itemInstances>
+            <fieldInstance>
+                <fieldInstanceProperties>
+                    <name>uiBehavior</name>
+                    <value>none</value>
+                </fieldInstanceProperties>
+                <fieldItem>Record.Element_Hardness__c</fieldItem>
+                <identifier>RecordElement_Hardness_cField</identifier>
+                <visibilityRule>
+                    <criteria>
+                        <leftValue>{!Record.Product_Type__c}</leftValue>
+                        <operator>EQUAL</operator>
+                        <rightValue>Belt Scrapers</rightValue>
+                    </criteria>
+                </visibilityRule>
+            </fieldInstance>
+        </itemInstances>
+        <itemInstances>
+            <fieldInstance>
+                <fieldInstanceProperties>
+                    <name>uiBehavior</name>
+                    <value>none</value>
+                </fieldInstanceProperties>
+                <fieldItem>Record.Element_Type__c</fieldItem>
+                <identifier>RecordElement_Type_cField</identifier>
+                <visibilityRule>
+                    <criteria>
+                        <leftValue>{!Record.Product_Type__c}</leftValue>
+                        <operator>EQUAL</operator>
+                        <rightValue>Belt Scrapers</rightValue>
+                    </criteria>
+                </visibilityRule>
+            </fieldInstance>
+        </itemInstances>
+        <itemInstances>
+            <fieldInstance>
+                <fieldInstanceProperties>
+                    <name>uiBehavior</name>
+                    <value>none</value>
+                </fieldInstanceProperties>
+                <fieldItem>Record.Serrated_Clamp_with_HW_MOC__c</fieldItem>
+                <identifier>RecordSerrated_Clamp_with_HW_MOC_cField</identifier>
+                <visibilityRule>
+                    <booleanFilter>1 OR 2</booleanFilter>
+                    <criteria>
+                        <leftValue>{!Record.Product_Type__c}</leftValue>
+                        <operator>EQUAL</operator>
+                        <rightValue>Side Skirt Sealing</rightValue>
+                    </criteria>
+                    <criteria>
+                        <leftValue>{!Record.Product_Type__c}</leftValue>
+                        <operator>EQUAL</operator>
+                        <rightValue>Rear Skirt Sealing</rightValue>
+                    </criteria>
+                </visibilityRule>
+            </fieldInstance>
+        </itemInstances>
+        <itemInstances>
+            <fieldInstance>
+                <fieldInstanceProperties>
+                    <name>uiBehavior</name>
+                    <value>none</value>
+                </fieldInstanceProperties>
+                <fieldItem>Record.Serrated_Clamp_with_HW_Quantity__c</fieldItem>
+                <identifier>RecordSerrated_Clamp_with_HW_Quantity_cField</identifier>
+                <visibilityRule>
+                    <booleanFilter>1 AND 2</booleanFilter>
+                    <criteria>
+                        <leftValue>{!Record.Product_Type__c}</leftValue>
+                        <operator>EQUAL</operator>
+                        <rightValue>Side Skirt Sealing</rightValue>
+                    </criteria>
+                    <criteria>
+                        <leftValue>{!Record.Product_Type__c}</leftValue>
+                        <operator>EQUAL</operator>
+                        <rightValue>Rear Skirt Sealing</rightValue>
+                    </criteria>
+                </visibilityRule>
+            </fieldInstance>
+        </itemInstances>
+        <itemInstances>
+            <fieldInstance>
+                <fieldInstanceProperties>
+                    <name>uiBehavior</name>
+                    <value>none</value>
+                </fieldInstanceProperties>
+                <fieldItem>Record.Belt_Width_mm__c</fieldItem>
+                <identifier>RecordBelt_Width_mm_cField</identifier>
+                <visibilityRule>
+                    <criteria>
+                        <leftValue>{!Record.Product_Type__c}</leftValue>
+                        <operator>EQUAL</operator>
+                        <rightValue>Belt Scrapers</rightValue>
+                    </criteria>
+                </visibilityRule>
+            </fieldInstance>
+        </itemInstances>
+        <itemInstances>
+            <fieldInstance>
+                <fieldInstanceProperties>
+                    <name>uiBehavior</name>
+                    <value>none</value>
+                </fieldInstanceProperties>
+                <fieldItem>Record.Spring_Tensioner__c</fieldItem>
+                <identifier>RecordSpring_Tensioner_cField</identifier>
+                <visibilityRule>
+                    <criteria>
+                        <leftValue>{!Record.Product_Type__c}</leftValue>
+                        <operator>EQUAL</operator>
+                        <rightValue>Belt Scrapers</rightValue>
+                    </criteria>
+                </visibilityRule>
+            </fieldInstance>
+        </itemInstances>
+        <itemInstances>
+            <fieldInstance>
+                <fieldInstanceProperties>
+                    <name>uiBehavior</name>
+                    <value>none</value>
+                </fieldInstanceProperties>
+                <fieldItem>Record.VP_Frame_with_End_Tube__c</fieldItem>
+                <identifier>RecordVP_Frame_with_End_Tube_cField</identifier>
+                <visibilityRule>
+                    <criteria>
+                        <leftValue>{!Record.Product_Type__c}</leftValue>
+                        <operator>EQUAL</operator>
+                        <rightValue>Belt Scrapers</rightValue>
+                    </criteria>
+                </visibilityRule>
+            </fieldInstance>
+        </itemInstances>
+        <itemInstances>
+            <fieldInstance>
+                <fieldInstanceProperties>
+                    <name>uiBehavior</name>
+                    <value>none</value>
+                </fieldInstanceProperties>
+                <fieldItem>Record.Section_Elastomount__c</fieldItem>
+                <identifier>RecordSection_Elastomount_cField</identifier>
+                <visibilityRule>
+                    <criteria>
+                        <leftValue>{!Record.Product_Type__c}</leftValue>
+                        <operator>EQUAL</operator>
+                        <rightValue>Belt Scrapers</rightValue>
+                    </criteria>
+                </visibilityRule>
+            </fieldInstance>
+        </itemInstances>
+        <itemInstances>
+            <fieldInstance>
+                <fieldInstanceProperties>
+                    <name>uiBehavior</name>
+                    <value>none</value>
+                </fieldInstanceProperties>
+                <fieldItem>Record.Elastomount_Quantity__c</fieldItem>
+                <identifier>RecordElastomount_Quantity_cField</identifier>
+                <visibilityRule>
+                    <criteria>
+                        <leftValue>{!Record.Product_Type__c}</leftValue>
+                        <operator>EQUAL</operator>
+                        <rightValue>Belt Scrapers</rightValue>
+                    </criteria>
+                </visibilityRule>
+            </fieldInstance>
+        </itemInstances>
+        <itemInstances>
+            <fieldInstance>
+                <fieldInstanceProperties>
+                    <name>uiBehavior</name>
+                    <value>none</value>
+                </fieldInstanceProperties>
+                <fieldItem>Record.Section_Wing_Roller__c</fieldItem>
+                <identifier>RecordSection_Wing_Roller_cField</identifier>
+                <visibilityRule>
+                    <booleanFilter>1 AND 2</booleanFilter>
+                    <criteria>
+                        <leftValue>{!Record.Product_Type__c}</leftValue>
+                        <operator>EQUAL</operator>
+                        <rightValue>Belt Tracker Roller</rightValue>
+                    </criteria>
+                    <criteria>
+                        <leftValue>{!Record.Product_Sub_Type__c}</leftValue>
+                        <operator>EQUAL</operator>
+                        <rightValue>Belt Tracker Model TTT</rightValue>
+                    </criteria>
+                </visibilityRule>
+            </fieldInstance>
+        </itemInstances>
+        <itemInstances>
+            <fieldInstance>
+                <fieldInstanceProperties>
+                    <name>uiBehavior</name>
+                    <value>none</value>
+                </fieldInstanceProperties>
+                <fieldItem>Record.Wing_Roller_Quantity__c</fieldItem>
+                <identifier>RecordWing_Roller_Quantity_cField</identifier>
+                <visibilityRule>
+                    <booleanFilter>1 AND 2</booleanFilter>
+                    <criteria>
+                        <leftValue>{!Record.Product_Type__c}</leftValue>
+                        <operator>EQUAL</operator>
+                        <rightValue>Belt Tracker Roller</rightValue>
+                    </criteria>
+                    <criteria>
+                        <leftValue>{!Record.Product_Sub_Type__c}</leftValue>
+                        <operator>EQUAL</operator>
+                        <rightValue>Belt Tracker Model TTT</rightValue>
+                    </criteria>
+                </visibilityRule>
+            </fieldInstance>
+        </itemInstances>
+        <itemInstances>
+            <fieldInstance>
+                <fieldInstanceProperties>
+                    <name>uiBehavior</name>
+                    <value>none</value>
+                </fieldInstanceProperties>
+                <fieldItem>Record.Central_Roller_Belt_Width__c</fieldItem>
+                <identifier>RecordCentral_Roller_Belt_Width_cField</identifier>
+                <visibilityRule>
+                    <booleanFilter>1 AND( 2 OR 3 OR 4 OR 5 OR 6 OR 7 OR 8 OR 9)</booleanFilter>
+                    <criteria>
+                        <leftValue>{!Record.Product_Type__c}</leftValue>
+                        <operator>EQUAL</operator>
+                        <rightValue>Belt Tracker Roller</rightValue>
+                    </criteria>
+                    <criteria>
+                        <leftValue>{!Record.Product_Sub_Type__c}</leftValue>
+                        <operator>EQUAL</operator>
+                        <rightValue>Belt Tracker Model TTDR</rightValue>
+                    </criteria>
+                    <criteria>
+                        <leftValue>{!Record.Product_Sub_Type__c}</leftValue>
+                        <operator>EQUAL</operator>
+                        <rightValue>Belt Tracker Model TTVR</rightValue>
+                    </criteria>
+                    <criteria>
+                        <leftValue>{!Record.Product_Sub_Type__c}</leftValue>
+                        <operator>EQUAL</operator>
+                        <rightValue>CentralX SO  Series</rightValue>
+                    </criteria>
+                    <criteria>
+                        <leftValue>{!Record.Product_Sub_Type__c}</leftValue>
+                        <operator>EQUAL</operator>
+                        <rightValue>CentraX S series</rightValue>
+                    </criteria>
+                    <criteria>
+                        <leftValue>{!Record.Product_Sub_Type__c}</leftValue>
+                        <operator>EQUAL</operator>
+                        <rightValue>CentraX SKO series</rightValue>
+                    </criteria>
+                    <criteria>
+                        <leftValue>{!Record.Product_Sub_Type__c}</leftValue>
+                        <operator>EQUAL</operator>
+                        <rightValue>CentraX SK Series</rightValue>
+                    </criteria>
+                    <criteria>
+                        <leftValue>{!Record.Product_Sub_Type__c}</leftValue>
+                        <operator>EQUAL</operator>
+                        <rightValue>CertraX SO-VR</rightValue>
+                    </criteria>
+                    <criteria>
+                        <leftValue>{!Record.Product_Sub_Type__c}</leftValue>
+                        <operator>EQUAL</operator>
+                        <rightValue>CertraX SKO-VR</rightValue>
+                    </criteria>
+                </visibilityRule>
+            </fieldInstance>
+        </itemInstances>
+        <itemInstances>
+            <fieldInstance>
+                <fieldInstanceProperties>
+                    <name>uiBehavior</name>
+                    <value>none</value>
+                </fieldInstanceProperties>
+                <fieldItem>Record.Section_Conical_Roller__c</fieldItem>
+                <identifier>RecordSection_Conical_Roller_cField</identifier>
+                <visibilityRule>
+                    <booleanFilter>1 AND (2 OR 3 OR 4 OR 5 OR 6 OR 7)</booleanFilter>
+                    <criteria>
+                        <leftValue>{!Record.Product_Type__c}</leftValue>
+                        <operator>EQUAL</operator>
+                        <rightValue>Belt Tracker Roller</rightValue>
+                    </criteria>
+                    <criteria>
+                        <leftValue>{!Record.Product_Sub_Type__c}</leftValue>
+                        <operator>EQUAL</operator>
+                        <rightValue>CentralX SO  Series</rightValue>
+                    </criteria>
+                    <criteria>
+                        <leftValue>{!Record.Product_Sub_Type__c}</leftValue>
+                        <operator>EQUAL</operator>
+                        <rightValue>CentraX S series</rightValue>
+                    </criteria>
+                    <criteria>
+                        <leftValue>{!Record.Product_Sub_Type__c}</leftValue>
+                        <operator>EQUAL</operator>
+                        <rightValue>CentraX SK Series</rightValue>
+                    </criteria>
+                    <criteria>
+                        <leftValue>{!Record.Product_Sub_Type__c}</leftValue>
+                        <operator>EQUAL</operator>
+                        <rightValue>CentraX SKO series</rightValue>
+                    </criteria>
+                    <criteria>
+                        <leftValue>{!Record.Product_Sub_Type__c}</leftValue>
+                        <operator>EQUAL</operator>
+                        <rightValue>CertraX SO-VR</rightValue>
+                    </criteria>
+                    <criteria>
+                        <leftValue>{!Record.Product_Sub_Type__c}</leftValue>
+                        <operator>EQUAL</operator>
+                        <rightValue>CertraX SKO-VR</rightValue>
+                    </criteria>
+                </visibilityRule>
+            </fieldInstance>
+        </itemInstances>
+        <itemInstances>
+            <fieldInstance>
+                <fieldInstanceProperties>
+                    <name>uiBehavior</name>
+                    <value>none</value>
+                </fieldInstanceProperties>
+                <fieldItem>Record.Conical_Roller_Quantity__c</fieldItem>
+                <identifier>RecordConical_Roller_Quantity_cField</identifier>
+                <visibilityRule>
+                    <booleanFilter>1 AND (2 OR 3 OR 4 OR 5 OR 6 OR 7)</booleanFilter>
+                    <criteria>
+                        <leftValue>{!Record.Product_Type__c}</leftValue>
+                        <operator>EQUAL</operator>
+                        <rightValue>Belt Tracker Roller</rightValue>
+                    </criteria>
+                    <criteria>
+                        <leftValue>{!Record.Product_Sub_Type__c}</leftValue>
+                        <operator>EQUAL</operator>
+                        <rightValue>CentralX SO  Series</rightValue>
+                    </criteria>
+                    <criteria>
+                        <leftValue>{!Record.Product_Sub_Type__c}</leftValue>
+                        <operator>EQUAL</operator>
+                        <rightValue>CentraX S series</rightValue>
+                    </criteria>
+                    <criteria>
+                        <leftValue>{!Record.Product_Sub_Type__c}</leftValue>
+                        <operator>EQUAL</operator>
+                        <rightValue>CentraX SK Series</rightValue>
+                    </criteria>
+                    <criteria>
+                        <leftValue>{!Record.Product_Sub_Type__c}</leftValue>
+                        <operator>EQUAL</operator>
+                        <rightValue>CentraX SKO series</rightValue>
+                    </criteria>
+                    <criteria>
+                        <leftValue>{!Record.Product_Sub_Type__c}</leftValue>
+                        <operator>EQUAL</operator>
+                        <rightValue>CertraX SO-VR</rightValue>
+                    </criteria>
+                    <criteria>
+                        <leftValue>{!Record.Product_Sub_Type__c}</leftValue>
+                        <operator>EQUAL</operator>
+                        <rightValue>CertraX SKO-VR</rightValue>
+                    </criteria>
+                </visibilityRule>
+            </fieldInstance>
+        </itemInstances>
+        <itemInstances>
+            <fieldInstance>
+                <fieldInstanceProperties>
+                    <name>uiBehavior</name>
+                    <value>none</value>
+                </fieldInstanceProperties>
+                <fieldItem>Record.Bottom_Bearing_Belt_Width__c</fieldItem>
+                <identifier>RecordBottom_Bearing_Belt_Width_cField</identifier>
+                <visibilityRule>
+                    <booleanFilter>1 AND (2 OR 3 OR 4 OR 5 OR 6 OR 7)</booleanFilter>
+                    <criteria>
+                        <leftValue>{!Record.Product_Type__c}</leftValue>
+                        <operator>EQUAL</operator>
+                        <rightValue>Belt Tracker Roller</rightValue>
+                    </criteria>
+                    <criteria>
+                        <leftValue>{!Record.Product_Sub_Type__c}</leftValue>
+                        <operator>EQUAL</operator>
+                        <rightValue>CentralX SO  Series</rightValue>
+                    </criteria>
+                    <criteria>
+                        <leftValue>{!Record.Product_Sub_Type__c}</leftValue>
+                        <operator>EQUAL</operator>
+                        <rightValue>CentraX S series</rightValue>
+                    </criteria>
+                    <criteria>
+                        <leftValue>{!Record.Product_Sub_Type__c}</leftValue>
+                        <operator>EQUAL</operator>
+                        <rightValue>CentraX SK Series</rightValue>
+                    </criteria>
+                    <criteria>
+                        <leftValue>{!Record.Product_Sub_Type__c}</leftValue>
+                        <operator>EQUAL</operator>
+                        <rightValue>CentraX SKO series</rightValue>
+                    </criteria>
+                    <criteria>
+                        <leftValue>{!Record.Product_Sub_Type__c}</leftValue>
+                        <operator>EQUAL</operator>
+                        <rightValue>CertraX SO-VR</rightValue>
+                    </criteria>
+                    <criteria>
+                        <leftValue>{!Record.Product_Sub_Type__c}</leftValue>
+                        <operator>EQUAL</operator>
+                        <rightValue>CertraX SKO-VR</rightValue>
+                    </criteria>
+                </visibilityRule>
+            </fieldInstance>
+        </itemInstances>
+        <itemInstances>
+            <fieldInstance>
+                <fieldInstanceProperties>
+                    <name>uiBehavior</name>
+                    <value>none</value>
+                </fieldInstanceProperties>
+                <fieldItem>Record.Impact__c</fieldItem>
+                <identifier>RecordImpact_cField</identifier>
+                <visibilityRule>
+                    <booleanFilter>1 OR 2</booleanFilter>
+                    <criteria>
+                        <leftValue>{!Record.Product_Type__c}</leftValue>
+                        <operator>EQUAL</operator>
+                        <rightValue>Impact Pad Without Frame</rightValue>
+                    </criteria>
+                    <criteria>
+                        <leftValue>{!Record.Product_Type__c}</leftValue>
+                        <operator>EQUAL</operator>
+                        <rightValue>Impact Bed System</rightValue>
+                    </criteria>
+                </visibilityRule>
+            </fieldInstance>
+        </itemInstances>
+        <itemInstances>
+            <fieldInstance>
+                <fieldInstanceProperties>
+                    <name>uiBehavior</name>
+                    <value>none</value>
+                </fieldInstanceProperties>
+                <fieldItem>Record.Impact_Pad_Quantity__c</fieldItem>
+                <identifier>RecordImpact_Pad_Quantity_cField</identifier>
+                <visibilityRule>
+                    <booleanFilter>(1 OR 2) AND 3</booleanFilter>
+                    <criteria>
+                        <leftValue>{!Record.Product_Type__c}</leftValue>
+                        <operator>EQUAL</operator>
+                        <rightValue>Impact Pad Without Frame</rightValue>
+                    </criteria>
+                    <criteria>
+                        <leftValue>{!Record.Product_Type__c}</leftValue>
+                        <operator>EQUAL</operator>
+                        <rightValue>Impact Bed System</rightValue>
+                    </criteria>
+                    <criteria>
+                        <leftValue>{!Record.Customized_Quantity__c}</leftValue>
+                        <operator>EQUAL</operator>
+                        <rightValue>false</rightValue>
+                    </criteria>
+                </visibilityRule>
+            </fieldInstance>
+        </itemInstances>
+        <itemInstances>
+            <fieldInstance>
+                <fieldInstanceProperties>
+                    <name>uiBehavior</name>
+                    <value>none</value>
+                </fieldInstanceProperties>
+                <fieldItem>Record.Clamp_Quantity__c</fieldItem>
+                <identifier>RecordClamp_Quantity_cField</identifier>
+                <visibilityRule>
+                    <booleanFilter>(1 OR 2) AND 3</booleanFilter>
+                    <criteria>
+                        <leftValue>{!Record.Product_Type__c}</leftValue>
+                        <operator>EQUAL</operator>
+                        <rightValue>Impact Pad Without Frame</rightValue>
+                    </criteria>
+                    <criteria>
+                        <leftValue>{!Record.Product_Type__c}</leftValue>
+                        <operator>EQUAL</operator>
+                        <rightValue>Impact Bed System</rightValue>
+                    </criteria>
+                    <criteria>
+                        <leftValue>{!Record.Customized_Quantity__c}</leftValue>
+                        <operator>EQUAL</operator>
+                        <rightValue>true</rightValue>
+                    </criteria>
+                </visibilityRule>
+            </fieldInstance>
+        </itemInstances>
+        <itemInstances>
+            <fieldInstance>
+                <fieldInstanceProperties>
+                    <name>uiBehavior</name>
+                    <value>none</value>
+                </fieldInstanceProperties>
+                <fieldItem>Record.Frame_Quantity__c</fieldItem>
+                <identifier>RecordFrame_Quantity_cField</identifier>
+                <visibilityRule>
+                    <booleanFilter>(1 OR 2) AND 3</booleanFilter>
+                    <criteria>
+                        <leftValue>{!Record.Product_Type__c}</leftValue>
+                        <operator>EQUAL</operator>
+                        <rightValue>Impact Pad Without Frame</rightValue>
+                    </criteria>
+                    <criteria>
+                        <leftValue>{!Record.Product_Type__c}</leftValue>
+                        <operator>EQUAL</operator>
+                        <rightValue>Impact Bed System</rightValue>
+                    </criteria>
+                    <criteria>
+                        <leftValue>{!Record.Customized_Quantity__c}</leftValue>
+                        <operator>EQUAL</operator>
+                        <rightValue>true</rightValue>
+                    </criteria>
+                </visibilityRule>
+            </fieldInstance>
+        </itemInstances>
+        <name>Facet-2312e776-d6e4-41ef-bc22-83ce57fdd367</name>
+        <type>Facet</type>
+    </flexiPageRegions>
+    <flexiPageRegions>
+        <itemInstances>
+            <fieldInstance>
+                <fieldInstanceProperties>
+                    <name>uiBehavior</name>
+                    <value>required</value>
+                </fieldInstanceProperties>
+                <fieldItem>Record.Proposal_Form__c</fieldItem>
+                <identifier>RecordProposal_Form_cField</identifier>
+            </fieldInstance>
+        </itemInstances>
+        <itemInstances>
+            <fieldInstance>
+                <fieldInstanceProperties>
+                    <name>uiBehavior</name>
+                    <value>none</value>
+                </fieldInstanceProperties>
+                <fieldItem>Record.Product_Sub_Type__c</fieldItem>
+                <identifier>RecordProduct_Sub_Type_cField</identifier>
+            </fieldInstance>
+        </itemInstances>
+        <itemInstances>
+            <fieldInstance>
+                <fieldInstanceProperties>
+                    <name>uiBehavior</name>
+                    <value>none</value>
+                </fieldInstanceProperties>
+                <fieldItem>Record.Quantity__c</fieldItem>
+                <identifier>RecordQuantity_cField</identifier>
+                <visibilityRule>
+                    <criteria>
+                        <leftValue>{!Record.RecordType.Name}</leftValue>
+                        <operator>NE</operator>
+                        <rightValue>Conveyor Component</rightValue>
+                    </criteria>
+                </visibilityRule>
+            </fieldInstance>
+        </itemInstances>
+        <itemInstances>
+            <fieldInstance>
+                <fieldInstanceProperties>
+                    <name>uiBehavior</name>
+                    <value>none</value>
+                </fieldInstanceProperties>
+                <fieldItem>Record.Rubber_Block_Size__c</fieldItem>
+                <identifier>RecordRubber_Block_Size_cField</identifier>
+                <visibilityRule>
+                    <booleanFilter>1 OR 2</booleanFilter>
+                    <criteria>
+                        <leftValue>{!Record.Product_Type__c}</leftValue>
+                        <operator>EQUAL</operator>
+                        <rightValue>Side Skirt Sealing</rightValue>
+                    </criteria>
+                    <criteria>
+                        <leftValue>{!Record.Product_Type__c}</leftValue>
+                        <operator>EQUAL</operator>
+                        <rightValue>Rear Skirt Sealing</rightValue>
+                    </criteria>
+                </visibilityRule>
+            </fieldInstance>
+        </itemInstances>
+        <itemInstances>
+            <fieldInstance>
+                <fieldInstanceProperties>
+                    <name>uiBehavior</name>
+                    <value>none</value>
+                </fieldInstanceProperties>
+                <fieldItem>Record.Rubber_Block_Hardness__c</fieldItem>
+                <identifier>RecordRubber_Block_Hardness_cField</identifier>
+                <visibilityRule>
+                    <booleanFilter>1 OR 2</booleanFilter>
+                    <criteria>
+                        <leftValue>{!Record.Product_Type__c}</leftValue>
+                        <operator>EQUAL</operator>
+                        <rightValue>Side Skirt Sealing</rightValue>
+                    </criteria>
+                    <criteria>
+                        <leftValue>{!Record.Product_Type__c}</leftValue>
+                        <operator>EQUAL</operator>
+                        <rightValue>Rear Skirt Sealing</rightValue>
+                    </criteria>
+                </visibilityRule>
+            </fieldInstance>
+        </itemInstances>
+        <itemInstances>
+            <fieldInstance>
+                <fieldInstanceProperties>
+                    <name>uiBehavior</name>
+                    <value>none</value>
+                </fieldInstanceProperties>
+                <fieldItem>Record.Backing_Plate_Thickness__c</fieldItem>
+                <identifier>RecordBacking_Plate_Thickness_cField</identifier>
+                <visibilityRule>
+                    <booleanFilter>1 OR 2</booleanFilter>
+                    <criteria>
+                        <leftValue>{!Record.Product_Type__c}</leftValue>
+                        <operator>EQUAL</operator>
+                        <rightValue>Side Skirt Sealing</rightValue>
+                    </criteria>
+                    <criteria>
+                        <leftValue>{!Record.Product_Type__c}</leftValue>
+                        <operator>EQUAL</operator>
+                        <rightValue>Rear Skirt Sealing</rightValue>
+                    </criteria>
+                </visibilityRule>
+            </fieldInstance>
+        </itemInstances>
+        <itemInstances>
+            <fieldInstance>
+                <fieldInstanceProperties>
+                    <name>uiBehavior</name>
+                    <value>none</value>
+                </fieldInstanceProperties>
+                <fieldItem>Record.Backing_Plate_Length__c</fieldItem>
+                <identifier>RecordBacking_Plate_Length_cField</identifier>
+                <visibilityRule>
+                    <booleanFilter>1 OR 2</booleanFilter>
+                    <criteria>
+                        <leftValue>{!Record.Product_Type__c}</leftValue>
+                        <operator>EQUAL</operator>
+                        <rightValue>Side Skirt Sealing</rightValue>
+                    </criteria>
+                    <criteria>
+                        <leftValue>{!Record.Product_Type__c}</leftValue>
+                        <operator>EQUAL</operator>
+                        <rightValue>Rear Skirt Sealing</rightValue>
+                    </criteria>
+                </visibilityRule>
+            </fieldInstance>
+        </itemInstances>
+        <itemInstances>
+            <fieldInstance>
+                <fieldInstanceProperties>
+                    <name>uiBehavior</name>
+                    <value>none</value>
+                </fieldInstanceProperties>
+                <fieldItem>Record.Backing_Plate_Quantity__c</fieldItem>
+                <identifier>RecordBacking_Plate_Quantity_cField</identifier>
+                <visibilityRule>
+                    <booleanFilter>1 OR 2</booleanFilter>
+                    <criteria>
+                        <leftValue>{!Record.Product_Type__c}</leftValue>
+                        <operator>EQUAL</operator>
+                        <rightValue>Side Skirt Sealing</rightValue>
+                    </criteria>
+                    <criteria>
+                        <leftValue>{!Record.Product_Type__c}</leftValue>
+                        <operator>EQUAL</operator>
+                        <rightValue>Rear Skirt Sealing</rightValue>
+                    </criteria>
+                </visibilityRule>
+            </fieldInstance>
+        </itemInstances>
+        <itemInstances>
+            <fieldInstance>
+                <fieldInstanceProperties>
+                    <name>uiBehavior</name>
+                    <value>none</value>
+                </fieldInstanceProperties>
+                <fieldItem>Record.Blade_Size__c</fieldItem>
+                <identifier>RecordBlade_Size_cField</identifier>
+                <visibilityRule>
+                    <criteria>
+                        <leftValue>{!Record.Product_Type__c}</leftValue>
+                        <operator>EQUAL</operator>
+                        <rightValue>Belt Scrapers</rightValue>
+                    </criteria>
+                </visibilityRule>
+            </fieldInstance>
+        </itemInstances>
+        <itemInstances>
+            <fieldInstance>
+                <fieldInstanceProperties>
+                    <name>uiBehavior</name>
+                    <value>none</value>
+                </fieldInstanceProperties>
+                <fieldItem>Record.Blade_Quantity__c</fieldItem>
+                <identifier>RecordBlade_Quantity_cField</identifier>
+                <visibilityRule>
+                    <criteria>
+                        <leftValue>{!Record.Product_Type__c}</leftValue>
+                        <operator>EQUAL</operator>
+                        <rightValue>Belt Scrapers</rightValue>
+                    </criteria>
+                </visibilityRule>
+            </fieldInstance>
+        </itemInstances>
+        <itemInstances>
+            <fieldInstance>
+                <fieldInstanceProperties>
+                    <name>uiBehavior</name>
+                    <value>none</value>
+                </fieldInstanceProperties>
+                <fieldItem>Record.Element_Quantity__c</fieldItem>
+                <identifier>RecordElement_Quantity_cField</identifier>
+                <visibilityRule>
+                    <criteria>
+                        <leftValue>{!Record.Product_Type__c}</leftValue>
+                        <operator>EQUAL</operator>
+                        <rightValue>Belt Scrapers</rightValue>
+                    </criteria>
+                </visibilityRule>
+            </fieldInstance>
+        </itemInstances>
+        <itemInstances>
+            <fieldInstance>
+                <fieldInstanceProperties>
+                    <name>uiBehavior</name>
+                    <value>none</value>
+                </fieldInstanceProperties>
+                <fieldItem>Record.Serrated_Clamp_with_Hardware__c</fieldItem>
+                <identifier>RecordSerrated_Clamp_with_Hardware_cField</identifier>
+                <visibilityRule>
+                    <booleanFilter>1 OR 2</booleanFilter>
+                    <criteria>
+                        <leftValue>{!Record.Product_Type__c}</leftValue>
+                        <operator>EQUAL</operator>
+                        <rightValue>Side Skirt Sealing</rightValue>
+                    </criteria>
+                    <criteria>
+                        <leftValue>{!Record.Product_Type__c}</leftValue>
+                        <operator>EQUAL</operator>
+                        <rightValue>Rear Skirt Sealing</rightValue>
+                    </criteria>
+                </visibilityRule>
+            </fieldInstance>
+        </itemInstances>
+        <itemInstances>
+            <fieldInstance>
+                <fieldInstanceProperties>
+                    <name>uiBehavior</name>
+                    <value>none</value>
+                </fieldInstanceProperties>
+                <fieldItem>Record.Serrated_Clamp_with_HW_Painting__c</fieldItem>
+                <identifier>RecordSerrated_Clamp_with_HW_Painting_cField</identifier>
+                <visibilityRule>
+                    <booleanFilter>1 OR 2</booleanFilter>
+                    <criteria>
+                        <leftValue>{!Record.Product_Type__c}</leftValue>
+                        <operator>EQUAL</operator>
+                        <rightValue>Side Skirt Sealing</rightValue>
+                    </criteria>
+                    <criteria>
+                        <leftValue>{!Record.Product_Type__c}</leftValue>
+                        <operator>EQUAL</operator>
+                        <rightValue>Rear Skirt Sealing</rightValue>
+                    </criteria>
+                </visibilityRule>
+            </fieldInstance>
+        </itemInstances>
+        <itemInstances>
+            <fieldInstance>
+                <fieldInstanceProperties>
+                    <name>uiBehavior</name>
+                    <value>none</value>
+                </fieldInstanceProperties>
+                <fieldItem>Record.Section_Carrier_Tube__c</fieldItem>
+                <identifier>RecordSection_Carrier_Tube_cField</identifier>
+                <visibilityRule>
+                    <criteria>
+                        <leftValue>{!Record.Product_Type__c}</leftValue>
+                        <operator>EQUAL</operator>
+                        <rightValue>Belt Scrapers</rightValue>
+                    </criteria>
+                </visibilityRule>
+            </fieldInstance>
+        </itemInstances>
+        <itemInstances>
+            <fieldInstance>
+                <fieldInstanceProperties>
+                    <name>uiBehavior</name>
+                    <value>none</value>
+                </fieldInstanceProperties>
+                <fieldItem>Record.Carrier_Tube_Type__c</fieldItem>
+                <identifier>RecordCarrier_Tube_Type_cField</identifier>
+                <visibilityRule>
+                    <criteria>
+                        <leftValue>{!Record.Product_Type__c}</leftValue>
+                        <operator>EQUAL</operator>
+                        <rightValue>Belt Scrapers</rightValue>
+                    </criteria>
+                </visibilityRule>
+            </fieldInstance>
+        </itemInstances>
+        <itemInstances>
+            <fieldInstance>
+                <fieldInstanceProperties>
+                    <name>uiBehavior</name>
+                    <value>none</value>
+                </fieldInstanceProperties>
+                <fieldItem>Record.Reversing_Adaptar__c</fieldItem>
+                <identifier>RecordReversing_Adaptar_cField</identifier>
+                <visibilityRule>
+                    <criteria>
+                        <leftValue>{!Record.Product_Type__c}</leftValue>
+                        <operator>EQUAL</operator>
+                        <rightValue>Belt Scrapers</rightValue>
+                    </criteria>
+                </visibilityRule>
+            </fieldInstance>
+        </itemInstances>
+        <itemInstances>
+            <fieldInstance>
+                <fieldInstanceProperties>
+                    <name>uiBehavior</name>
+                    <value>none</value>
+                </fieldInstanceProperties>
+                <fieldItem>Record.Carrier_Tube_Quantity__c</fieldItem>
+                <identifier>RecordCarrier_Tube_Quantity_cField</identifier>
+                <visibilityRule>
+                    <criteria>
+                        <leftValue>{!Record.Product_Type__c}</leftValue>
+                        <operator>EQUAL</operator>
+                        <rightValue>Belt Scrapers</rightValue>
+                    </criteria>
+                </visibilityRule>
+            </fieldInstance>
+        </itemInstances>
+        <itemInstances>
+            <fieldInstance>
+                <fieldInstanceProperties>
+                    <name>uiBehavior</name>
+                    <value>none</value>
+                </fieldInstanceProperties>
+                <fieldItem>Record.Elastomount_Type__c</fieldItem>
+                <identifier>RecordElastomount_Type_cField</identifier>
+                <visibilityRule>
+                    <criteria>
+                        <leftValue>{!Record.Product_Type__c}</leftValue>
+                        <operator>EQUAL</operator>
+                        <rightValue>Belt Scrapers</rightValue>
+                    </criteria>
+                </visibilityRule>
+            </fieldInstance>
+        </itemInstances>
+        <itemInstances>
+            <fieldInstance>
+                <fieldInstanceProperties>
+                    <name>uiBehavior</name>
+                    <value>none</value>
+                </fieldInstanceProperties>
+                <fieldItem>Record.Elastomount_Size__c</fieldItem>
+                <identifier>RecordElastomount_Size_cField</identifier>
+                <visibilityRule>
+                    <criteria>
+                        <leftValue>{!Record.Product_Type__c}</leftValue>
+                        <operator>EQUAL</operator>
+                        <rightValue>Belt Scrapers</rightValue>
+                    </criteria>
+                </visibilityRule>
+            </fieldInstance>
+        </itemInstances>
+        <itemInstances>
+            <fieldInstance>
+                <fieldInstanceProperties>
+                    <name>uiBehavior</name>
+                    <value>none</value>
+                </fieldInstanceProperties>
+                <fieldItem>Record.Wing_Roller_Belt_Width__c</fieldItem>
+                <identifier>RecordWing_Roller_Belt_Width_cField</identifier>
+                <visibilityRule>
+                    <booleanFilter>1 AND 2</booleanFilter>
+                    <criteria>
+                        <leftValue>{!Record.Product_Type__c}</leftValue>
+                        <operator>EQUAL</operator>
+                        <rightValue>Belt Tracker Roller</rightValue>
+                    </criteria>
+                    <criteria>
+                        <leftValue>{!Record.Product_Sub_Type__c}</leftValue>
+                        <operator>EQUAL</operator>
+                        <rightValue>Belt Tracker Model TTT</rightValue>
+                    </criteria>
+                </visibilityRule>
+            </fieldInstance>
+        </itemInstances>
+        <itemInstances>
+            <fieldInstance>
+                <fieldInstanceProperties>
+                    <name>uiBehavior</name>
+                    <value>none</value>
+                </fieldInstanceProperties>
+                <fieldItem>Record.Section_Central_Roller__c</fieldItem>
+                <identifier>RecordSection_Central_Roller_cField</identifier>
+                <visibilityRule>
+                    <booleanFilter>1 AND (2 OR 3 OR 4 OR 5 OR 6 OR 7 OR 8 OR 9)</booleanFilter>
+                    <criteria>
+                        <leftValue>{!Record.Product_Type__c}</leftValue>
+                        <operator>EQUAL</operator>
+                        <rightValue>Belt Tracker Roller</rightValue>
+                    </criteria>
+                    <criteria>
+                        <leftValue>{!Record.Product_Sub_Type__c}</leftValue>
+                        <operator>EQUAL</operator>
+                        <rightValue>Belt Tracker Model TTDR</rightValue>
+                    </criteria>
+                    <criteria>
+                        <leftValue>{!Record.Product_Sub_Type__c}</leftValue>
+                        <operator>EQUAL</operator>
+                        <rightValue>Belt Tracker Model TTVR</rightValue>
+                    </criteria>
+                    <criteria>
+                        <leftValue>{!Record.Product_Sub_Type__c}</leftValue>
+                        <operator>EQUAL</operator>
+                        <rightValue>CentralX SO  Series</rightValue>
+                    </criteria>
+                    <criteria>
+                        <leftValue>{!Record.Product_Sub_Type__c}</leftValue>
+                        <operator>EQUAL</operator>
+                        <rightValue>CentraX S series</rightValue>
+                    </criteria>
+                    <criteria>
+                        <leftValue>{!Record.Product_Sub_Type__c}</leftValue>
+                        <operator>EQUAL</operator>
+                        <rightValue>CentraX SK Series</rightValue>
+                    </criteria>
+                    <criteria>
+                        <leftValue>{!Record.Product_Sub_Type__c}</leftValue>
+                        <operator>EQUAL</operator>
+                        <rightValue>CentraX SKO series</rightValue>
+                    </criteria>
+                    <criteria>
+                        <leftValue>{!Record.Product_Sub_Type__c}</leftValue>
+                        <operator>EQUAL</operator>
+                        <rightValue>CertraX SO-VR</rightValue>
+                    </criteria>
+                    <criteria>
+                        <leftValue>{!Record.Product_Sub_Type__c}</leftValue>
+                        <operator>EQUAL</operator>
+                        <rightValue>CertraX SKO-VR</rightValue>
+                    </criteria>
+                </visibilityRule>
+            </fieldInstance>
+        </itemInstances>
+        <itemInstances>
+            <fieldInstance>
+                <fieldInstanceProperties>
+                    <name>uiBehavior</name>
+                    <value>none</value>
+                </fieldInstanceProperties>
+                <fieldItem>Record.Central_Roller_Quantity__c</fieldItem>
+                <identifier>RecordCentral_Roller_Quantity_cField</identifier>
+                <visibilityRule>
+                    <booleanFilter>1 AND( 2 OR 3 OR 4 OR 5 OR 6 OR 7 OR 8 OR 9)</booleanFilter>
+                    <criteria>
+                        <leftValue>{!Record.Product_Type__c}</leftValue>
+                        <operator>EQUAL</operator>
+                        <rightValue>Belt Tracker Roller</rightValue>
+                    </criteria>
+                    <criteria>
+                        <leftValue>{!Record.Product_Sub_Type__c}</leftValue>
+                        <operator>EQUAL</operator>
+                        <rightValue>Belt Tracker Model TTDR</rightValue>
+                    </criteria>
+                    <criteria>
+                        <leftValue>{!Record.Product_Sub_Type__c}</leftValue>
+                        <operator>EQUAL</operator>
+                        <rightValue>Belt Tracker Model TTVR</rightValue>
+                    </criteria>
+                    <criteria>
+                        <leftValue>{!Record.Product_Sub_Type__c}</leftValue>
+                        <operator>EQUAL</operator>
+                        <rightValue>CentralX SO  Series</rightValue>
+                    </criteria>
+                    <criteria>
+                        <leftValue>{!Record.Product_Sub_Type__c}</leftValue>
+                        <operator>EQUAL</operator>
+                        <rightValue>CentraX S series</rightValue>
+                    </criteria>
+                    <criteria>
+                        <leftValue>{!Record.Product_Sub_Type__c}</leftValue>
+                        <operator>EQUAL</operator>
+                        <rightValue>CentraX SK Series</rightValue>
+                    </criteria>
+                    <criteria>
+                        <leftValue>{!Record.Product_Sub_Type__c}</leftValue>
+                        <operator>EQUAL</operator>
+                        <rightValue>CentraX SKO series</rightValue>
+                    </criteria>
+                    <criteria>
+                        <leftValue>{!Record.Product_Sub_Type__c}</leftValue>
+                        <operator>EQUAL</operator>
+                        <rightValue>CertraX SO-VR</rightValue>
+                    </criteria>
+                    <criteria>
+                        <leftValue>{!Record.Product_Sub_Type__c}</leftValue>
+                        <operator>EQUAL</operator>
+                        <rightValue>CertraX SKO-VR</rightValue>
+                    </criteria>
+                </visibilityRule>
+            </fieldInstance>
+        </itemInstances>
+        <itemInstances>
+            <fieldInstance>
+                <fieldInstanceProperties>
+                    <name>uiBehavior</name>
+                    <value>none</value>
+                </fieldInstanceProperties>
+                <fieldItem>Record.Conical_Roller_Belt_Width__c</fieldItem>
+                <identifier>RecordConical_Roller_Belt_Width_cField</identifier>
+                <visibilityRule>
+                    <booleanFilter>1 AND (2 OR 3 OR 4 OR 5 OR 6 OR 7)</booleanFilter>
+                    <criteria>
+                        <leftValue>{!Record.Product_Type__c}</leftValue>
+                        <operator>EQUAL</operator>
+                        <rightValue>Belt Tracker Roller</rightValue>
+                    </criteria>
+                    <criteria>
+                        <leftValue>{!Record.Product_Sub_Type__c}</leftValue>
+                        <operator>EQUAL</operator>
+                        <rightValue>CentralX SO  Series</rightValue>
+                    </criteria>
+                    <criteria>
+                        <leftValue>{!Record.Product_Sub_Type__c}</leftValue>
+                        <operator>EQUAL</operator>
+                        <rightValue>CentraX S series</rightValue>
+                    </criteria>
+                    <criteria>
+                        <leftValue>{!Record.Product_Sub_Type__c}</leftValue>
+                        <operator>EQUAL</operator>
+                        <rightValue>CentraX SK Series</rightValue>
+                    </criteria>
+                    <criteria>
+                        <leftValue>{!Record.Product_Sub_Type__c}</leftValue>
+                        <operator>EQUAL</operator>
+                        <rightValue>CentraX SKO series</rightValue>
+                    </criteria>
+                    <criteria>
+                        <leftValue>{!Record.Product_Sub_Type__c}</leftValue>
+                        <operator>EQUAL</operator>
+                        <rightValue>CertraX SO-VR</rightValue>
+                    </criteria>
+                    <criteria>
+                        <leftValue>{!Record.Product_Sub_Type__c}</leftValue>
+                        <operator>EQUAL</operator>
+                        <rightValue>CertraX SKO-VR</rightValue>
+                    </criteria>
+                </visibilityRule>
+            </fieldInstance>
+        </itemInstances>
+        <itemInstances>
+            <fieldInstance>
+                <fieldInstanceProperties>
+                    <name>uiBehavior</name>
+                    <value>none</value>
+                </fieldInstanceProperties>
+                <fieldItem>Record.Section_Bottom_Bearing__c</fieldItem>
+                <identifier>RecordSection_Bottom_Bearing_cField</identifier>
+                <visibilityRule>
+                    <booleanFilter>1 AND (2 OR 3 OR 4 OR 5 OR 6 OR 7)</booleanFilter>
+                    <criteria>
+                        <leftValue>{!Record.Product_Type__c}</leftValue>
+                        <operator>EQUAL</operator>
+                        <rightValue>Belt Tracker Roller</rightValue>
+                    </criteria>
+                    <criteria>
+                        <leftValue>{!Record.Product_Sub_Type__c}</leftValue>
+                        <operator>EQUAL</operator>
+                        <rightValue>CentralX SO  Series</rightValue>
+                    </criteria>
+                    <criteria>
+                        <leftValue>{!Record.Product_Sub_Type__c}</leftValue>
+                        <operator>EQUAL</operator>
+                        <rightValue>CentraX S series</rightValue>
+                    </criteria>
+                    <criteria>
+                        <leftValue>{!Record.Product_Sub_Type__c}</leftValue>
+                        <operator>EQUAL</operator>
+                        <rightValue>CentraX SK Series</rightValue>
+                    </criteria>
+                    <criteria>
+                        <leftValue>{!Record.Product_Sub_Type__c}</leftValue>
+                        <operator>EQUAL</operator>
+                        <rightValue>CentraX SKO series</rightValue>
+                    </criteria>
+                    <criteria>
+                        <leftValue>{!Record.Product_Sub_Type__c}</leftValue>
+                        <operator>EQUAL</operator>
+                        <rightValue>CertraX SO-VR</rightValue>
+                    </criteria>
+                    <criteria>
+                        <leftValue>{!Record.Product_Sub_Type__c}</leftValue>
+                        <operator>EQUAL</operator>
+                        <rightValue>CertraX SKO-VR</rightValue>
+                    </criteria>
+                </visibilityRule>
+            </fieldInstance>
+        </itemInstances>
+        <itemInstances>
+            <fieldInstance>
+                <fieldInstanceProperties>
+                    <name>uiBehavior</name>
+                    <value>none</value>
+                </fieldInstanceProperties>
+                <fieldItem>Record.Bottom_Bearing_Quantity__c</fieldItem>
+                <identifier>RecordBottom_Bearing_Quantity_cField</identifier>
+                <visibilityRule>
+                    <booleanFilter>1 AND (2 OR 3 OR 4 OR 5 OR 6 OR 7)</booleanFilter>
+                    <criteria>
+                        <leftValue>{!Record.Product_Type__c}</leftValue>
+                        <operator>EQUAL</operator>
+                        <rightValue>Belt Tracker Roller</rightValue>
+                    </criteria>
+                    <criteria>
+                        <leftValue>{!Record.Product_Sub_Type__c}</leftValue>
+                        <operator>EQUAL</operator>
+                        <rightValue>CentralX SO  Series</rightValue>
+                    </criteria>
+                    <criteria>
+                        <leftValue>{!Record.Product_Sub_Type__c}</leftValue>
+                        <operator>EQUAL</operator>
+                        <rightValue>CentraX S series</rightValue>
+                    </criteria>
+                    <criteria>
+                        <leftValue>{!Record.Product_Sub_Type__c}</leftValue>
+                        <operator>EQUAL</operator>
+                        <rightValue>CentraX SK Series</rightValue>
+                    </criteria>
+                    <criteria>
+                        <leftValue>{!Record.Product_Sub_Type__c}</leftValue>
+                        <operator>EQUAL</operator>
+                        <rightValue>CentraX SKO series</rightValue>
+                    </criteria>
+                    <criteria>
+                        <leftValue>{!Record.Product_Sub_Type__c}</leftValue>
+                        <operator>EQUAL</operator>
+                        <rightValue>CertraX SO-VR</rightValue>
+                    </criteria>
+                    <criteria>
+                        <leftValue>{!Record.Product_Sub_Type__c}</leftValue>
+                        <operator>EQUAL</operator>
+                        <rightValue>CertraX SKO-VR</rightValue>
+                    </criteria>
+                </visibilityRule>
+            </fieldInstance>
+        </itemInstances>
+        <itemInstances>
+            <fieldInstance>
+                <fieldInstanceProperties>
+                    <name>uiBehavior</name>
+                    <value>none</value>
+                </fieldInstanceProperties>
+                <fieldItem>Record.Customized_Quantity__c</fieldItem>
+                <identifier>RecordCustomized_Quantity_cField</identifier>
+                <visibilityRule>
+                    <booleanFilter>1 OR 2</booleanFilter>
+                    <criteria>
+                        <leftValue>{!Record.Product_Type__c}</leftValue>
+                        <operator>EQUAL</operator>
+                        <rightValue>Impact Pad Without Frame</rightValue>
+                    </criteria>
+                    <criteria>
+                        <leftValue>{!Record.Product_Type__c}</leftValue>
+                        <operator>EQUAL</operator>
+                        <rightValue>Impact Bed System</rightValue>
+                    </criteria>
+                </visibilityRule>
+            </fieldInstance>
+        </itemInstances>
+        <itemInstances>
+            <fieldInstance>
+                <fieldInstanceProperties>
+                    <name>uiBehavior</name>
+                    <value>none</value>
+                </fieldInstanceProperties>
+                <fieldItem>Record.Section_Acessories_Customized_Qties__c</fieldItem>
+                <identifier>RecordSection_Acessories_Customized_Qties_cField</identifier>
+                <visibilityRule>
+                    <booleanFilter>1 OR 2</booleanFilter>
+                    <criteria>
+                        <leftValue>{!Record.Product_Type__c}</leftValue>
+                        <operator>EQUAL</operator>
+                        <rightValue>Impact Pad Without Frame</rightValue>
+                    </criteria>
+                    <criteria>
+                        <leftValue>{!Record.Product_Type__c}</leftValue>
+                        <operator>EQUAL</operator>
+                        <rightValue>Impact Bed System</rightValue>
+                    </criteria>
+                </visibilityRule>
+            </fieldInstance>
+        </itemInstances>
+        <itemInstances>
+            <fieldInstance>
+                <fieldInstanceProperties>
+                    <name>uiBehavior</name>
+                    <value>none</value>
+                </fieldInstanceProperties>
+                <fieldItem>Record.Hardware_Quantity__c</fieldItem>
+                <identifier>RecordHardware_Quantity_cField</identifier>
+                <visibilityRule>
+                    <booleanFilter>(1 OR 2) AND 3</booleanFilter>
+                    <criteria>
+                        <leftValue>{!Record.Product_Type__c}</leftValue>
+                        <operator>EQUAL</operator>
+                        <rightValue>Impact Pad Without Frame</rightValue>
+                    </criteria>
+                    <criteria>
+                        <leftValue>{!Record.Product_Type__c}</leftValue>
+                        <operator>EQUAL</operator>
+                        <rightValue>Impact Bed System</rightValue>
+                    </criteria>
+                    <criteria>
+                        <leftValue>{!Record.Customized_Quantity__c}</leftValue>
+                        <operator>EQUAL</operator>
+                        <rightValue>true</rightValue>
+                    </criteria>
+                </visibilityRule>
+            </fieldInstance>
+        </itemInstances>
+        <itemInstances>
+            <fieldInstance>
+                <fieldInstanceProperties>
+                    <name>uiBehavior</name>
+                    <value>none</value>
+                </fieldInstanceProperties>
+                <fieldItem>Record.Ceramic_Pulley_Lagging_Quantity__c</fieldItem>
+                <identifier>RecordCeramic_Pulley_Lagging_Quantity_cField</identifier>
+                <visibilityRule>
+                    <criteria>
+                        <leftValue>{!Record.Product_Type__c}</leftValue>
+                        <operator>EQUAL</operator>
+                        <rightValue>Ceramic Pulley Lagging</rightValue>
+                    </criteria>
+                </visibilityRule>
+            </fieldInstance>
+        </itemInstances>
+        <name>Facet-cf438642-e47b-43f2-9b1f-483ad17490ac</name>
+        <type>Facet</type>
+    </flexiPageRegions>
+    <flexiPageRegions>
+        <itemInstances>
+            <componentInstance>
+                <componentInstanceProperties>
+                    <name>body</name>
+                    <value>Facet-2312e776-d6e4-41ef-bc22-83ce57fdd367</value>
+                </componentInstanceProperties>
+                <componentName>flexipage:column</componentName>
+                <identifier>flexipage_column</identifier>
+            </componentInstance>
+        </itemInstances>
+        <itemInstances>
+            <componentInstance>
+                <componentInstanceProperties>
+                    <name>body</name>
+                    <value>Facet-cf438642-e47b-43f2-9b1f-483ad17490ac</value>
+                </componentInstanceProperties>
+                <componentName>flexipage:column</componentName>
+                <identifier>flexipage_column2</identifier>
+            </componentInstance>
+        </itemInstances>
+        <name>Facet-9a53bf61-8902-4288-bbd1-92f853c4ca85</name>
+        <type>Facet</type>
+    </flexiPageRegions>
+    <flexiPageRegions>
+        <itemInstances>
+            <fieldInstance>
+                <fieldInstanceProperties>
+                    <name>uiBehavior</name>
+                    <value>readonly</value>
+                </fieldInstanceProperties>
+                <fieldItem>Record.CreatedById</fieldItem>
+                <identifier>RecordCreatedByIdField</identifier>
+            </fieldInstance>
+        </itemInstances>
+        <name>Facet-9e8889c1-f4c9-4de1-817e-47d49429d8f9</name>
+        <type>Facet</type>
+    </flexiPageRegions>
+    <flexiPageRegions>
+        <itemInstances>
+            <fieldInstance>
+                <fieldInstanceProperties>
+                    <name>uiBehavior</name>
+                    <value>readonly</value>
+                </fieldInstanceProperties>
+                <fieldItem>Record.LastModifiedById</fieldItem>
+                <identifier>RecordLastModifiedByIdField</identifier>
+            </fieldInstance>
+        </itemInstances>
+        <name>Facet-218f2116-c25d-4c46-b707-d8f50b1247f5</name>
+        <type>Facet</type>
+    </flexiPageRegions>
+    <flexiPageRegions>
+        <itemInstances>
+            <componentInstance>
+                <componentInstanceProperties>
+                    <name>body</name>
+                    <value>Facet-9e8889c1-f4c9-4de1-817e-47d49429d8f9</value>
+                </componentInstanceProperties>
+                <componentName>flexipage:column</componentName>
+                <identifier>flexipage_column3</identifier>
+            </componentInstance>
+        </itemInstances>
+        <itemInstances>
+            <componentInstance>
+                <componentInstanceProperties>
+                    <name>body</name>
+                    <value>Facet-218f2116-c25d-4c46-b707-d8f50b1247f5</value>
+                </componentInstanceProperties>
+                <componentName>flexipage:column</componentName>
+                <identifier>flexipage_column4</identifier>
+            </componentInstance>
+        </itemInstances>
+        <name>Facet-3bfcd31d-d9c7-4d83-b291-40103c1bef8f</name>
+        <type>Facet</type>
+    </flexiPageRegions>
+    <flexiPageRegions>
+        <itemInstances>
+            <componentInstance>
+                <componentInstanceProperties>
+                    <name>columns</name>
+                    <value>Facet-9a53bf61-8902-4288-bbd1-92f853c4ca85</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>horizontalAlignment</name>
+                    <value>false</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>label</name>
+                    <value>Information</value>
+                </componentInstanceProperties>
+                <componentName>flexipage:fieldSection</componentName>
+                <identifier>flexipage_fieldSection</identifier>
+            </componentInstance>
+        </itemInstances>
+        <itemInstances>
+            <componentInstance>
+                <componentName>force:recordDetailPanelMobile</componentName>
+                <identifier>force_recordDetailPanelMobile</identifier>
+            </componentInstance>
+        </itemInstances>
+        <itemInstances>
+            <componentInstance>
+                <componentInstanceProperties>
+                    <name>columns</name>
+                    <value>Facet-3bfcd31d-d9c7-4d83-b291-40103c1bef8f</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>horizontalAlignment</name>
+                    <value>false</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>label</name>
+                    <value>System Information</value>
+                </componentInstanceProperties>
+                <componentName>flexipage:fieldSection</componentName>
+                <identifier>flexipage_fieldSection2</identifier>
+            </componentInstance>
+        </itemInstances>
+        <mode>Replace</mode>
+        <name>detailTabContent</name>
+        <type>Facet</type>
+    </flexiPageRegions>
+    <flexiPageRegions>
+        <itemInstances>
+            <componentInstance>
+                <componentInstanceProperties>
+                    <name>body</name>
+                    <value>relatedTabContent</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>title</name>
+                    <value>Standard.Tab.relatedLists</value>
+                </componentInstanceProperties>
+                <componentName>flexipage:tab</componentName>
+                <identifier>relatedListsTab</identifier>
+            </componentInstance>
+        </itemInstances>
+        <itemInstances>
+            <componentInstance>
+                <componentInstanceProperties>
+                    <name>active</name>
+                    <value>true</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>body</name>
+                    <value>detailTabContent</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>title</name>
+                    <value>Standard.Tab.detail</value>
+                </componentInstanceProperties>
+                <componentName>flexipage:tab</componentName>
+                <identifier>detailTab</identifier>
+            </componentInstance>
+        </itemInstances>
+        <mode>Replace</mode>
+        <name>maintabs</name>
+        <type>Facet</type>
+    </flexiPageRegions>
+    <flexiPageRegions>
+        <itemInstances>
+            <componentInstance>
+                <componentInstanceProperties>
+                    <name>tabs</name>
+                    <value>maintabs</value>
+                </componentInstanceProperties>
+                <componentName>flexipage:tabset</componentName>
+                <identifier>flexipage_tabset</identifier>
+            </componentInstance>
+        </itemInstances>
+        <mode>Replace</mode>
+        <name>main</name>
+        <type>Region</type>
+    </flexiPageRegions>
+    <flexiPageRegions>
+        <itemInstances>
+            <componentInstance>
+                <componentInstanceProperties>
+                    <name>showLegacyActivityComposer</name>
+                    <value>false</value>
+                </componentInstanceProperties>
+                <componentName>runtime_sales_activities:activityPanel</componentName>
+                <identifier>runtime_sales_activities_activityPanel</identifier>
+            </componentInstance>
+        </itemInstances>
+        <mode>Replace</mode>
+        <name>activityTabContent</name>
+        <type>Facet</type>
+    </flexiPageRegions>
+    <flexiPageRegions>
+        <itemInstances>
+            <componentInstance>
+                <componentInstanceProperties>
+                    <name>active</name>
+                    <value>true</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>body</name>
+                    <value>activityTabContent</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>title</name>
+                    <value>Standard.Tab.activity</value>
+                </componentInstanceProperties>
+                <componentName>flexipage:tab</componentName>
+                <identifier>activityTab</identifier>
+            </componentInstance>
+        </itemInstances>
+        <mode>Replace</mode>
+        <name>sidebartabs</name>
+        <type>Facet</type>
+    </flexiPageRegions>
+    <flexiPageRegions>
+        <itemInstances>
+            <componentInstance>
+                <componentInstanceProperties>
+                    <name>tabs</name>
+                    <value>sidebartabs</value>
+                </componentInstanceProperties>
+                <componentName>flexipage:tabset</componentName>
+                <identifier>flexipage_tabset2</identifier>
+            </componentInstance>
+        </itemInstances>
+        <mode>Replace</mode>
+        <name>sidebar</name>
+        <type>Region</type>
+    </flexiPageRegions>
+    <masterLabel>Product Detail SOW Record Page</masterLabel>
+    <parentFlexiPage>flexipage__default_rec_L</parentFlexiPage>
+    <sobjectType>Product_Proposal_Form__c</sobjectType>
+    <template>
+        <name>flexipage:recordHomeTemplateDesktop</name>
+    </template>
+    <type>RecordPage</type>
+</FlexiPage>

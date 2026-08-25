@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Element_Type_2__c</fullName>
+    <label>Element Type 2</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Long Version -NR</fullName>
+                <default>false</default>
+                <label>Long Version -NR</label>
+            </value>
+            <value>
+                <fullName>Short Version- NR</fullName>
+                <default>false</default>
+                <label>Short Version- NR</label>
+            </value>
+            <value>
+                <fullName>Long Version -HR</fullName>
+                <default>false</default>
+                <label>Long Version -HR</label>
+            </value>
+            <value>
+                <fullName>Short Version- HR</fullName>
+                <default>false</default>
+                <label>Short Version- HR</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

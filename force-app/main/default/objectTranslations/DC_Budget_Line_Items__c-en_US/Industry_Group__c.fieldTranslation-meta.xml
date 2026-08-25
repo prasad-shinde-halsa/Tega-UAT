@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Industry Group --></label>
+    <name>Industry_Group__c</name>
+    <picklistValues>
+        <masterLabel>Agent</masterLabel>
+        <translation><!-- Agent --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Aluminium</masterLabel>
+        <translation><!-- Aluminium --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Cement</masterLabel>
+        <translation><!-- Cement --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Ceramic</masterLabel>
+        <translation><!-- Ceramic --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Chemical</masterLabel>
+        <translation><!-- Chemical --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Clay</masterLabel>
+        <translation><!-- Clay --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Coal</masterLabel>
+        <translation><!-- Coal --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Coke</masterLabel>
+        <translation><!-- Coke --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Copper</masterLabel>
+        <translation><!-- Copper --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Dealer</masterLabel>
+        <translation><!-- Dealer --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Diamond</masterLabel>
+        <translation><!-- Diamond --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Fertilizer</masterLabel>
+        <translation><!-- Fertilizer --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Glass</masterLabel>
+        <translation><!-- Glass --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Gold</masterLabel>
+        <translation><!-- Gold --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Granite</masterLabel>
+        <translation><!-- Granite --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Graphite</masterLabel>
+        <translation><!-- Graphite --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Group Company</masterLabel>
+        <translation><!-- Group Company --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Industry 0001</masterLabel>
+        <translation><!-- Industry 0001 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Industry 0002</masterLabel>
+        <translation><!-- Industry 0002 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Industry 0003</masterLabel>
+        <translation><!-- Industry 0003 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Iron Ore</masterLabel>
+        <translation><!-- Iron Ore --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Lead</masterLabel>
+        <translation><!-- Lead --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Limestone</masterLabel>
+        <translation><!-- Limestone --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>MSMED</masterLabel>
+        <translation><!-- MSMED --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Manganese</masterLabel>
+        <translation><!-- Manganese --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Nickel</masterLabel>
+        <translation><!-- Nickel --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>OEM/Consultant</masterLabel>
+        <translation><!-- OEM/Consultant --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Others</masterLabel>
+        <translation><!-- Others --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Paper</masterLabel>
+        <translation><!-- Paper --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Petroleum</masterLabel>
+        <translation><!-- Petroleum --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Phosphate</masterLabel>
+        <translation><!-- Phosphate --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Platinum</masterLabel>
+        <translation><!-- Platinum --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Plywood</masterLabel>
+        <translation><!-- Plywood --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Port</masterLabel>
+        <translation><!-- Port --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Power</masterLabel>
+        <translation><!-- Power --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Silver</masterLabel>
+        <translation><!-- Silver --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Slurry Pump</masterLabel>
+        <translation><!-- Slurry Pump --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Steel</masterLabel>
+        <translation><!-- Steel --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Sugar</masterLabel>
+        <translation><!-- Sugar --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Tungsten</masterLabel>
+        <translation><!-- Tungsten --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Uranium</masterLabel>
+        <translation><!-- Uranium --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Zinc</masterLabel>
+        <translation><!-- Zinc --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

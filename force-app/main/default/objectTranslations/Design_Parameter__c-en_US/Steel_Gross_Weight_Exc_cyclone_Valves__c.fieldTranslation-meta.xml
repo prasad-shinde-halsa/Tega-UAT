@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Steel Gross Weight(Exc cyclone &amp; Valves) --></label>
+    <name>Steel_Gross_Weight_Exc_cyclone_Valves__c</name>
+</CustomFieldTranslation>

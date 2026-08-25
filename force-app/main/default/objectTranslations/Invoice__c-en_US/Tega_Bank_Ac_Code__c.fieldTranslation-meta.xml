@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Tega Bank Ac Code --></label>
+    <name>Tega_Bank_Ac_Code__c</name>
+</CustomFieldTranslation>

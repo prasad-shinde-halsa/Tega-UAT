@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Converted_sub_type_Mandatory_Check</fullName>
+    <active>true</active>
+    <errorConditionFormula>AND(ISPICKVAL( Conversion__c , &apos;Converted Potential&apos;),ISBLANK( TEXT( Conversion_sub_type__c ) ))</errorConditionFormula>
+    <errorDisplayField>Conversion_sub_type__c</errorDisplayField>
+    <errorMessage>Please fill this field</errorMessage>
+</ValidationRule>

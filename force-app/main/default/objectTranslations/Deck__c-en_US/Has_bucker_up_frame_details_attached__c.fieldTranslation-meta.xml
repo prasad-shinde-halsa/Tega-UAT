@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Bucker Up Frame Details --></label>
+    <name>Has_bucker_up_frame_details_attached__c</name>
+</CustomFieldTranslation>

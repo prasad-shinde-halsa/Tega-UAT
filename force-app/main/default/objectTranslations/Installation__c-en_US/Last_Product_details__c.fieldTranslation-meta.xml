@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Last Product details --></label>
+    <name>Last_Product_details__c</name>
+    <picklistValues>
+        <masterLabel>Competitor’s Product</masterLabel>
+        <translation><!-- Competitor’s Product --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Hosch’s Product</masterLabel>
+        <translation><!-- Hosch’s Product --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>No product</masterLabel>
+        <translation><!-- No product --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Tega’s Product</masterLabel>
+        <translation><!-- Tega’s Product --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

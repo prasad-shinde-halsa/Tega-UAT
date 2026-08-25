@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Trommel_PPR_TS01_CCOF_PPR_Line_Item2</fullName>
+    <filterScope>Queue</filterScope>
+    <label>Trommel-PPR-TS01-CCOF</label>
+    <queue>Trommel_PPR_TS01_CCOF</queue>
+    <sharedTo>
+        <allInternalUsers></allInternalUsers>
+    </sharedTo>
+</ListView>

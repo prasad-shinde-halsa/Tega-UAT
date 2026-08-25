@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Bottom Bearing Belt Width --></label>
+    <name>Bottom_Bearing_Belt_Width__c</name>
+    <picklistValues>
+        <masterLabel>1000</masterLabel>
+        <translation><!-- 1000 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>1200</masterLabel>
+        <translation><!-- 1200 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>1400</masterLabel>
+        <translation><!-- 1400 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>1600</masterLabel>
+        <translation><!-- 1600 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>1800</masterLabel>
+        <translation><!-- 1800 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>2000</masterLabel>
+        <translation><!-- 2000 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>2200</masterLabel>
+        <translation><!-- 2200 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>600</masterLabel>
+        <translation><!-- 600 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>650</masterLabel>
+        <translation><!-- 650 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>800</masterLabel>
+        <translation><!-- 800 --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

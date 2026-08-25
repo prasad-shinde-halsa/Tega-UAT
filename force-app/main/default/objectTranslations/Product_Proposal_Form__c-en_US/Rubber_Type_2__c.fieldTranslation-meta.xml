@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Rubber Type 2 --></label>
+    <name>Rubber_Type_2__c</name>
+    <picklistValues>
+        <masterLabel>FRAS</masterLabel>
+        <translation><!-- FRAS --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Normal</masterLabel>
+        <translation><!-- Normal --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>OGR</masterLabel>
+        <translation><!-- OGR --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

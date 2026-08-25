@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Quantity_Rule_SWS</fullName>
+    <active>true</active>
+    <errorConditionFormula>AND(NOT(ISBLANK(Quantity__c)),ISBLANK( Unit_of_Measure_on_Quantity__c ))</errorConditionFormula>
+    <errorDisplayField>Unit_of_Measure_on_Quantity__c</errorDisplayField>
+    <errorMessage>Please fill this field to save the record</errorMessage>
+</ValidationRule>

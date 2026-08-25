@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Flow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <apiVersion>57.0</apiVersion>
+    <areMetricsLoggedToDataCloud>false</areMetricsLoggedToDataCloud>
+    <assignments>
+        <name>Copy_1_of_Update_Values</name>
+        <label>Copy 1 of Update Values</label>
+        <locationX>314</locationX>
+        <locationY>611</locationY>
+        <assignmentItems>
+            <assignToReference>$Record.Actual_Value_INR__c</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <elementReference>$Record.Actual_Value__c</elementReference>
+            </value>
+        </assignmentItems>
+        <assignmentItems>
+            <assignToReference>$Record.Expected_Value_INR__c</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <elementReference>$Record.Expected_Value__c</elementReference>
+            </value>
+        </assignmentItems>
+    </assignments>
+    <assignments>
+        <name>Update_Values</name>
+        <label>Update Values</label>
+        <locationX>50</locationX>
+        <locationY>611</locationY>
+        <assignmentItems>
+            <assignToReference>$Record.Actual_Value_INR__c</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <elementReference>INR_Actual_Value</elementReference>
+            </value>
+        </assignmentItems>
+        <assignmentItems>
+            <assignToReference>$Record.Expected_Value_INR__c</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <elementReference>INR_Expected_Value</elementReference>
+            </value>
+        </assignmentItems>
+    </assignments>
+    <decisions>
+        <name>Check_Fields</name>
+        <label>Check Fields</label>
+        <locationX>534</locationX>
+        <locationY>287</locationY>
+        <defaultConnectorLabel>Default Outcome</defaultConnectorLabel>
+        <rules>
+            <name>Expected_Actual_Value_Changed</name>
+            <conditionLogic>or</conditionLogic>
+            <conditions>
+                <leftValueReference>$Record.Actual_Value__c</leftValueReference>
+                <operator>IsChanged</operator>
+                <rightValue>
+                    <booleanValue>true</booleanValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>$Record.Expected_Value__c</leftValueReference>
+                <operator>IsChanged</operator>
+                <rightValue>
+                    <booleanValue>true</booleanValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Custom_Exchange_Rate</targetReference>
+            </connector>
+            <label>Expected &amp; Actual Value Changed</label>
+        </rules>
+    </decisions>
+    <decisions>
+        <name>Check_record_exists</name>
+        <label>Check record exists</label>
+        <locationX>314</locationX>
+        <locationY>503</locationY>
+        <defaultConnectorLabel>Default Outcome</defaultConnectorLabel>
+        <rules>
+            <name>Exists_and_Not_INR</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>Custom_Exchange_Rate.Id</leftValueReference>
+                <operator>IsNull</operator>
+                <rightValue>
+                    <booleanValue>false</booleanValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Update_Values</targetReference>
+            </connector>
+            <label>Exists and Not INR</label>
+        </rules>
+        <rules>
+            <name>INR_Currency</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>$Record.L2_Budget_Line_Item__r.CurrencyIsoCode</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>INR</stringValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Copy_1_of_Update_Values</targetReference>
+            </connector>
+            <label>INR Currency</label>
+        </rules>
+    </decisions>
+    <environments>Default</environments>
+    <formulas>
+        <name>INR_Actual_Value</name>
+        <dataType>Number</dataType>
+        <expression>{!$Record.Actual_Value__c} * {!Custom_Exchange_Rate.Converted_to_INR__c}</expression>
+        <scale>2</scale>
+    </formulas>
+    <formulas>
+        <name>INR_Expected_Value</name>
+        <dataType>Number</dataType>
+        <expression>{!$Record.Expected_Value__c} * {!Custom_Exchange_Rate.Converted_to_INR__c}</expression>
+        <scale>2</scale>
+    </formulas>
+    <interviewLabel>Monthly Budget Detail : Before Trigger {!$Flow.CurrentDateTime}</interviewLabel>
+    <label>Monthly Budget Detail : Before Trigger</label>
+    <processMetadataValues>
+        <name>BuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>CanvasMode</name>
+        <value>
+            <stringValue>AUTO_LAYOUT_CANVAS</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>OriginBuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processType>AutoLaunchedFlow</processType>
+    <recordLookups>
+        <name>Custom_Exchange_Rate</name>
+        <label>Custom Exchange Rate</label>
+        <locationX>314</locationX>
+        <locationY>395</locationY>
+        <assignNullValuesIfNoRecordsFound>false</assignNullValuesIfNoRecordsFound>
+        <connector>
+            <targetReference>Check_record_exists</targetReference>
+        </connector>
+        <filterLogic>and</filterLogic>
+        <filters>
+            <field>Name</field>
+            <operator>EqualTo</operator>
+            <value>
+                <elementReference>$Record.L2_Budget_Line_Item__r.CurrencyIsoCode</elementReference>
+            </value>
+        </filters>
+        <getFirstRecordOnly>true</getFirstRecordOnly>
+        <object>Custom_Exchange_Rate__c</object>
+        <storeOutputAutomatically>true</storeOutputAutomatically>
+    </recordLookups>
+    <start>
+        <locationX>408</locationX>
+        <locationY>0</locationY>
+        <connector>
+            <targetReference>Check_Fields</targetReference>
+        </connector>
+        <object>Monthly_Budget_Detail__c</object>
+        <recordTriggerType>Update</recordTriggerType>
+        <triggerType>RecordBeforeSave</triggerType>
+    </start>
+    <status>Active</status>
+</Flow>

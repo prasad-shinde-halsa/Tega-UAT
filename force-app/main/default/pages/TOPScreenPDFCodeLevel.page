@@ -1,0 +1,492 @@
+<apex:page standardController="Quote"
+           extensions="Ctrl_Quote_PartList_ProductLevel"
+           renderAs="pdf"
+           showHeader="false"
+           sidebar="false"
+           standardStylesheets="false"
+           applyHtmlTag="false"
+           applyBodyTag="false">
+
+<html>
+<head>
+    <style>
+
+        @page {
+            size: A4 portrait;
+            margin: 15px;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            font-size: 9px;
+            color: #000000;
+        }
+
+        .logoHeader {
+            width: 100%;
+            border-collapse: collapse;
+            margin-bottom: 15px;
+        }
+
+        .logoCell {
+            width: 30%;
+            vertical-align: top;
+            border: none;
+            padding: 0;
+        }
+
+        .logoCell img {
+            width: 180px;
+            height: auto;
+            display: block;
+        }
+
+        .companyTagline {
+            width: 70%;
+            vertical-align: top;
+            border: none;
+            padding-left: 15px;
+        }
+
+        .taglineText {
+            font-size: 18px;
+            color: #666666;
+            letter-spacing: 2px;
+            font-weight: normal;
+            margin: 0;
+            padding-top: 10px;
+        }
+
+        .decorativeLine {
+            height: 3px;
+            background: linear-gradient(to right, #0066cc 0%, #0066cc 60%, #ff9900 60%, #ff9900 100%);
+            margin-top: 5px;
+            width: 60%;
+        }
+
+        .headerSection {
+            width: 100%;
+            margin-top: 20px;
+            margin-bottom: 15px;
+            border-collapse: collapse;
+        }
+
+        .headerLeft {
+            width: 50%;
+            vertical-align: top;
+            padding: 0;
+        }
+
+        .headerRight {
+            width: 50%;
+            vertical-align: top;
+            padding: 0;
+            text-align: right;
+        }
+
+        .headerRow {
+            margin-bottom: 4px;
+            font-size: 9px;
+        }
+
+        .headerLabel {
+            font-weight: bold;
+            display: inline-block;
+            min-width: 120px;
+        }
+
+        .headerValue {
+            display: inline-block;
+        }
+
+        .sectionTitle {
+            font-weight: bold;
+            text-decoration: underline;
+            font-size: 10px;
+            margin-top: 15px;
+            margin-bottom: 8px;
+        }
+
+        .mainTable {
+            width: 100%;
+            border-collapse: collapse;
+            margin-bottom: 10px;
+        }
+
+        .mainTable th {
+            border: 1px solid #000;
+            background-color: #ffffff;
+            padding: 5px 3px;
+            text-align: center;
+            font-weight: bold;
+            font-size: 8px;
+        }
+
+        .mainTable td {
+    border: 1px solid #000;
+    padding: 4px 3px;
+    vertical-align: middle;
+    font-size: 8px;
+    text-align: center;
+}
+
+        .textCenter { text-align: center; }
+        .textRight  { text-align: right; }
+        .textLeft   { text-align: left; }
+
+        .wrapText {
+            word-wrap: break-word;
+            white-space: normal;
+        }
+
+        .itemNoCol     { width: 5%; }
+        .qtyCol        { width: 8%; }
+        .partNumberCol { width: 37%; }
+        .productNameCol{ width: 20%; }
+        .priceEachCol  { width: 15%; }
+        .priceTotalCol { width: 15%; }
+
+        .totalSection {
+            width: 100%;
+            margin-top: 15px;
+            text-align: right;
+        }
+
+        .grandTotalRow {
+            font-weight: bold;
+            font-size: 9px;
+            margin-bottom: 3px;
+        }
+
+        .totalLabel {
+            display: inline-block;
+            min-width: 180px;
+            text-align: right;
+            padding-right: 10px;
+        }
+
+        .totalValue {
+            display: inline-block;
+            min-width: 120px;
+            text-align: left;
+            border: 1px solid #000;
+            padding: 3px 5px;
+        }
+
+        .amountInWords {
+            font-weight: bold;
+            font-size: 8px;
+            margin-top: 3px;
+        }
+
+        .pageBreak {
+            page-break-after: always;
+        }
+
+    </style>
+</head>
+
+<body>
+
+<!-- ===================================== -->
+<!-- PAGE 1: PRODUCT LEVEL (L1) TABLE     -->
+<!-- ===================================== -->
+
+<!-- Logo -->
+<table class="logoHeader">
+    <tr>
+        <td class="logoCell">
+            <img src="{!URLFOR($Resource.TegaLogo)}" alt="Tega Logo"/>
+        </td>
+        <td class="companyTagline">
+            <div class="taglineText"></div>
+            <div class="decorativeLine"></div>
+        </td>
+    </tr>
+</table>
+
+<!-- Header -->
+<table class="headerSection">
+    <tr>
+        <td class="headerLeft">
+            <div class="headerRow">
+                <span class="headerLabel">Customer :</span>
+                <span class="headerValue">{!PL.Customer_Name__c}</span>
+            </div>
+            <div class="headerRow">
+                <span class="headerLabel">Branch :</span>
+                <span class="headerValue">{!QuoteRecord.Branch__r.Name}</span>
+            </div>
+            <div class="headerRow">
+                <span class="headerLabel">Part List &amp; Rev No :</span>
+                <span class="headerValue">{!PL.Name} {!Quote.Part_List__r.Version_Number_Component__c}</span>
+            </div>
+            <div class="headerRow">
+                <span class="headerLabel">Enquiry No. :</span>
+                <span class="headerValue">{!QuoteRecord.Enquiry_Number__c}</span>
+            </div>
+            <div class="headerRow">
+                <span class="headerLabel">Description :</span>
+                <span class="headerValue">{!PL.Description__c}</span>
+            </div>
+            <div class="headerRow">
+                <span class="headerLabel">Destination:</span>
+                <span class="headerValue">{!Quote.Port__c}</span>
+            </div>
+        </td>
+        <td class="headerRight">
+            <div class="headerRow">
+                <span class="headerLabel">Issued :</span>
+                <span class="headerValue">
+                    <apex:outputText value="{0,date,MMM dd, yyyy}">
+                        <apex:param value="{!TODAY()}"/>
+                    </apex:outputText>
+                </span>
+            </div>
+            <div class="headerRow">
+                <span class="headerLabel">SAP Offer No. :</span>
+                <span class="headerValue">{!Quote.SAP_Offer_Id__c}</span>
+            </div>
+            <div class="headerRow">
+                <span class="headerLabel">Quote No. :</span>
+                <span class="headerValue">{!QuoteRecord.QuoteNumber}</span>
+            </div>
+            <div class="headerRow">
+                <span class="headerLabel">Validity :</span>
+                <span class="headerValue">
+                    <apex:outputText value="{0,date,MMM dd, yyyy}">
+                        <apex:param value="{!QuoteRecord.Quotation_Validity__c}"/>
+                    </apex:outputText>
+                </span>
+            </div>
+            <div class="headerRow">
+                <span class="headerLabel">Currency :</span>
+                <span class="headerValue">{!QuoteRecord.CurrencyIsoCode}</span>
+            </div>
+            <div class="headerRow">
+                <span class="headerLabel">Delivery Schedule (In weeks ):</span>
+                <span class="headerValue">{!QuoteRecord.Delivery_Schedule__c}</span>
+            </div>
+        </td>
+    </tr>
+</table>
+
+<div class="sectionTitle">Product Description: Product Level (L1)</div>
+
+<table class="mainTable">
+    <thead>
+        <tr>
+            <th rowspan="2" class="itemNoCol">Item<br/>No.</th>
+            <th rowspan="2" class="qtyCol">Qty</th>
+            <th colspan="2">Product Level Components</th>
+            <th colspan="2">Price ({!QuoteRecord.CurrencyIsoCode})</th>
+        </tr>
+        <tr>
+            <th class="partNumberCol">Part Number (Description)</th>
+            <th class="productNameCol">Tega Part Number</th>
+            <th class="priceEachCol">Each</th>
+            <th class="priceTotalCol">Total</th>
+        </tr>
+    </thead>
+    <tbody>
+    <!-- Single "Full Set" summary row — one row for the entire part list -->
+    <apex:repeat value="{!filterList}" var="item">
+    <apex:outputPanel layout="none" rendered="{!item.productLevelQuantity > 0}">
+        <tr>
+            <td class="textCenter">1</td>
+            <td class="textCenter">1</td>
+
+            <td class="textLeft">Full Set</td>
+
+            <td class="textLeft">{!PL.Name}</td>
+
+            <td class="textRight">
+                <apex:outputText value="{0, number, ###,##0.00}">
+                    <apex:param value="{!item.productLevelTotal}"/>
+                </apex:outputText>
+            </td>
+
+            <td class="textRight">
+                <apex:outputText value="{0, number, ###,##0.00}">
+                    <apex:param value="{!item.productLevelTotal}"/>
+                </apex:outputText>
+            </td>
+        </tr>
+    </apex:outputPanel>
+</apex:repeat>
+</tbody>
+</table>
+
+<div class="totalSection">
+    <div class="grandTotalRow">
+        <span class="totalLabel">Total Value of Quotation</span>
+        <span class="totalValue">
+            {!QuoteRecord.CurrencyIsoCode}&#160;
+            <apex:outputText value="{0, number, ###,##0.00}">
+                <apex:param value="{!FLOOR(productLevelGrandTotal)}"/>
+            </apex:outputText>
+        </span>
+    </div>
+    <div class="amountInWords">
+        <span class="totalLabel">Amount In Words: AUD {!ProductLevelAmountInWords}</span>
+    </div>
+</div>
+
+
+<!-- ===================================== -->
+<!-- PAGE 2: CUSTOM TABLE                  -->
+<!-- ===================================== -->
+
+<!-- Count custom items to conditionally render page 2 -->
+<apex:variable value="{!0}" var="customCount"/>
+<apex:repeat value="{!filterList}" var="item">
+    <apex:outputPanel rendered="{!item.customQuantity > 0}">
+        <apex:variable value="{!customCount + 1}" var="customCount"/>
+    </apex:outputPanel>
+</apex:repeat>
+
+<apex:outputPanel rendered="{!customCount > 0}">
+
+    <div class="pageBreak"></div>
+
+    <!-- Logo -->
+    <table class="logoHeader">
+        <tr>
+            <td class="logoCell">
+                <img src="{!URLFOR($Resource.TegaLogo)}" alt="Tega Logo"/>
+            </td>
+            <td class="companyTagline">
+                <div class="taglineText"></div>
+                <div class="decorativeLine"></div>
+            </td>
+        </tr>
+    </table>
+
+    <!-- Header -->
+    <table class="headerSection">
+    <tr>
+        <td class="headerLeft">
+            <div class="headerRow">
+                <span class="headerLabel">Customer :</span>
+                <span class="headerValue">{!PL.Customer_Name__c}</span>
+            </div>
+            <div class="headerRow">
+                <span class="headerLabel">Branch :</span>
+                <span class="headerValue">{!QuoteRecord.Branch__r.Name}</span>
+            </div>
+            <div class="headerRow">
+                <span class="headerLabel">Part List &amp; Rev No :</span>
+                <span class="headerValue">{!PL.Name} {!Quote.Part_List__r.Version_Number_Component__c}</span>
+            </div>
+            <div class="headerRow">
+                <span class="headerLabel">Enquiry No. :</span>
+                <span class="headerValue">{!QuoteRecord.Enquiry_Number__c}</span>
+            </div>
+            <div class="headerRow">
+                <span class="headerLabel">Description :</span>
+                <span class="headerValue">{!PL.Description__c}</span>
+            </div>
+            <div class="headerRow">
+                <span class="headerLabel">Destination:</span>
+                <span class="headerValue">{!Quote.Port__c}</span>
+            </div>
+        </td>
+        <td class="headerRight">
+            <div class="headerRow">
+                <span class="headerLabel">Issued :</span>
+                <span class="headerValue">
+                    <apex:outputText value="{0,date,MMM dd, yyyy}">
+                        <apex:param value="{!TODAY()}"/>
+                    </apex:outputText>
+                </span>
+            </div>
+            <div class="headerRow">
+                <span class="headerLabel">SAP Offer No. :</span>
+                <span class="headerValue">{!Quote.SAP_Offer_Id__c}</span>
+            </div>
+            <div class="headerRow">
+                <span class="headerLabel">Quote No. :</span>
+                <span class="headerValue">{!QuoteRecord.QuoteNumber}</span>
+            </div>
+            <div class="headerRow">
+                <span class="headerLabel">Validity :</span>
+                <span class="headerValue">
+                    <apex:outputText value="{0,date,MMM dd, yyyy}">
+                        <apex:param value="{!QuoteRecord.Quotation_Validity__c}"/>
+                    </apex:outputText>
+                </span>
+            </div>
+            <div class="headerRow">
+                <span class="headerLabel">Currency :</span>
+                <span class="headerValue">{!QuoteRecord.CurrencyIsoCode}</span>
+            </div>
+            <div class="headerRow">
+                <span class="headerLabel">Delivery Schedule (In weeks ):</span>
+                <span class="headerValue">{!QuoteRecord.Delivery_Schedule__c}</span>
+            </div>
+        </td>
+    </tr>
+</table>
+
+    <div class="sectionTitle">Product Description: CUSTOM</div>
+
+    <table class="mainTable">
+        <thead>
+            <tr>
+                <th rowspan="2" class="itemNoCol">Item<br/>No.</th>
+                <th rowspan="2" class="qtyCol">Qty</th>
+                <th colspan="2">Custom Components</th>
+                <th colspan="2">Price ({!QuoteRecord.CurrencyIsoCode})</th>
+            </tr>
+            <tr>
+                <th class="partNumberCol">Part Number (Description)</th>
+                <th class="productNameCol">Product Name</th>
+                <th class="priceEachCol">Each</th>
+                <th class="priceTotalCol">Total</th>
+            </tr>
+        </thead>
+        <tbody>
+    <apex:variable value="{!0}" var="custNum"/>
+    <apex:repeat value="{!filterList}" var="item">
+        <tr style="{!IF(item.customQuantity > 0, '', 'display:none;')}">
+            <apex:variable value="{!custNum+1}" var="custNum"/>
+            <td class="textCenter">{!custNum}</td>
+            <td class="textCenter">{!FLOOR(item.customQuantity)}</td>
+            <td class="textLeft wrapText">{!item.itemDescription}</td>
+            <td class="textLeft wrapText">{!item.productName}</td>
+            <td class="textRight">
+                <apex:outputText value="{0, number, ###,##0.00}">
+                    <apex:param value="{!item.unitPrice}"/>
+                </apex:outputText>
+            </td>
+            <td class="textRight">
+                <apex:outputText value="{0, number, ###,##0.00}">
+                    <apex:param value="{!item.customTotal}"/>
+                </apex:outputText>
+            </td>
+        </tr>
+    </apex:repeat>
+</tbody>
+    </table>
+
+    <div class="totalSection">
+        <div class="grandTotalRow">
+            <span class="totalLabel">Total Value of Quotation</span>
+            <span class="totalValue">
+                {!QuoteRecord.CurrencyIsoCode}&#160;
+                <apex:outputText value="{0, number, ###,##0.00}">
+                    <apex:param value="{!FLOOR(customGrandTotal)}"/>
+                </apex:outputText>
+            </span>
+        </div>
+        <div class="amountInWords">
+            <span class="totalLabel">Amount In Words: AUD {!CustomAmountInWords}</span>
+        </div>
+    </div>
+
+</apex:outputPanel>
+
+</body>
+</html>
+
+</apex:page>

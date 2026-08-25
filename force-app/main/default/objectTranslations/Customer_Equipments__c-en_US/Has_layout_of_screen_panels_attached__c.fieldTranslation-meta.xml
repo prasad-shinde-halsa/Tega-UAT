@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- The same must be uploaded in the “Files” section in the Related Tab. --></help>
+    <label><!-- Layout of Screen Panels # --></label>
+    <name>Has_layout_of_screen_panels_attached__c</name>
+</CustomFieldTranslation>

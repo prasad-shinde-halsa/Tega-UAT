@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Transportation at destination --></label>
+    <name>Transportation_at_destination__c</name>
+    <picklistValues>
+        <masterLabel>Open side truck</masterLabel>
+        <translation><!-- Open side truck --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Regular truck</masterLabel>
+        <translation><!-- Regular truck --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

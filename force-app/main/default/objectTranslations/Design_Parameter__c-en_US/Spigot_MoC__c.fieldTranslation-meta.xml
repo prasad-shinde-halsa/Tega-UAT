@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Spigot MoC --></label>
+    <name>Spigot_MoC__c</name>
+    <picklistValues>
+        <masterLabel>Ceramic</masterLabel>
+        <translation><!-- Ceramic --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Cryston</masterLabel>
+        <translation><!-- Cryston --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>PU</masterLabel>
+        <translation><!-- PU --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Rubber</masterLabel>
+        <translation><!-- Rubber --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

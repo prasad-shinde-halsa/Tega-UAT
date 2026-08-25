@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>MIS Budget</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>MIS Budgets</value>
+    </caseValues>
+    <layouts>
+        <layout>MIS Budget Layout</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- Expected Order Value --></label>
+            <section>Expected Order Value</section>
+        </sections>
+        <sections>
+            <label><!-- MIS Details --></label>
+            <section>MIS Details</section>
+        </sections>
+    </layouts>
+    <startsWith>Consonant</startsWith>
+</CustomObjectTranslation>

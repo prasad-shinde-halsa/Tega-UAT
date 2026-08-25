@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CompactLayout xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Budget_Header</fullName>
+    <fields>Name</fields>
+    <fields>Financial_Year__c</fields>
+    <fields>Branch__c</fields>
+    <fields>Company__c</fields>
+    <fields>CurrencyIsoCode</fields>
+    <fields>Total_Order_in_Thousand__c</fields>
+    <fields>Total_Sales_in_Thousand__c</fields>
+    <fields>OwnerId</fields>
+    <fields>RecordTypeId</fields>
+    <label>Budget Header</label>
+</CompactLayout>

@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Design Parameter</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Design Parameters</value>
+    </caseValues>
+    <layouts>
+        <layout>Design Parameter Layout</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Trommel Design Parameter Layout</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- Flange Interface to Trommel --></label>
+            <section>Flange Interface to Trommel</section>
+        </sections>
+        <sections>
+            <label><!-- Panel --></label>
+            <section>Panel</section>
+        </sections>
+        <sections>
+            <label><!-- Spiral --></label>
+            <section>Spiral</section>
+        </sections>
+        <sections>
+            <label><!-- System Information --></label>
+            <section>System Information</section>
+        </sections>
+        <sections>
+            <label><!-- Trommel --></label>
+            <section>Trommel</section>
+        </sections>
+    </layouts>
+    <recordTypes>
+        <label><!-- Hydrocyclone --></label>
+        <name>Hydrocyclone</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- Trommel --></label>
+        <name>Trommel</name>
+    </recordTypes>
+    <startsWith>Consonant</startsWith>
+</CustomObjectTranslation>

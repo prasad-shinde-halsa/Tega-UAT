@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Backing Plate Thickness --></label>
+    <name>Backing_Plate_Thickness__c</name>
+    <picklistValues>
+        <masterLabel>10mm</masterLabel>
+        <translation><!-- 10mm --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>2mm</masterLabel>
+        <translation><!-- 2mm --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>3mm</masterLabel>
+        <translation><!-- 3mm --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>5mm</masterLabel>
+        <translation><!-- 5mm --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>7.5mm</masterLabel>
+        <translation><!-- 7.5mm --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

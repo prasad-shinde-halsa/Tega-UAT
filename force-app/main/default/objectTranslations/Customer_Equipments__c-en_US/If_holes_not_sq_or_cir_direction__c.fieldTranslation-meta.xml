@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- If Holes not Sq or Cir, Direction # --></label>
+    <name>If_holes_not_sq_or_cir_direction__c</name>
+    <picklistValues>
+        <masterLabel>Across the flow</masterLabel>
+        <translation><!-- Across the flow --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Along</masterLabel>
+        <translation><!-- Along --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

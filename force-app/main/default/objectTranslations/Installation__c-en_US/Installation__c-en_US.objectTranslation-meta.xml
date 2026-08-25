@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Installation Report</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Installation Reports</value>
+    </caseValues>
+    <fieldSets>
+        <label><!-- CC Field Set --></label>
+        <name>CC_Field_Set</name>
+    </fieldSets>
+    <fieldSets>
+        <label><!-- NonCC Field Set --></label>
+        <name>Installation_Field_Set</name>
+    </fieldSets>
+    <layouts>
+        <layout>Conveyor Component Installation Layout</layout>
+        <sections>
+            <label><!-- Contractor Details --></label>
+            <section>Contractor Details</section>
+        </sections>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- Product Details --></label>
+            <section>Product Details</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Hydrocyclone Installation Layout</layout>
+        <sections>
+            <label><!-- Contractor&apos;s Information --></label>
+            <section>Contractor&apos;s Information</section>
+        </sections>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- Operating Parameters --></label>
+            <section>Operating Parameters</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Installation Layout</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Mill Installation Layout</layout>
+        <sections>
+            <label><!-- Contractor&apos;s Information --></label>
+            <section>Contractor&apos;s Information</section>
+        </sections>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- Operating Parameters --></label>
+            <section>Operating Parameters</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Screen Installation Layout</layout>
+        <sections>
+            <label><!-- Contractor&apos;s Information --></label>
+            <section>Contractor&apos;s Information</section>
+        </sections>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- Operating Parameters --></label>
+            <section>Operating Parameters</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Trommel Installation Layout</layout>
+        <sections>
+            <label><!-- Contractor&apos;s Information --></label>
+            <section>Contractor&apos;s Information</section>
+        </sections>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- Operating Parameters --></label>
+            <section>Operating Parameters</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Wear Component Installation Layout</layout>
+        <sections>
+            <label><!-- Contractor&apos;s Information --></label>
+            <section>Contractor&apos;s Information</section>
+        </sections>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- Operating Parameters --></label>
+            <section>Operating Parameters</section>
+        </sections>
+    </layouts>
+    <quickActions>
+        <label><!-- Close --></label>
+        <name>Close</name>
+    </quickActions>
+    <quickActions>
+        <label><!-- Create Installation Lineitems --></label>
+        <name>Create_Installation_Lineitems</name>
+    </quickActions>
+    <quickActions>
+        <label><!-- Select Product (L2) --></label>
+        <name>Select_Product_L2</name>
+    </quickActions>
+    <quickActions>
+        <label><!-- Submit to PMG --></label>
+        <name>Submit_to_PMG</name>
+    </quickActions>
+    <recordTypes>
+        <label><!-- Conveyor Component --></label>
+        <name>Conveyor_Component</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- Hydrocyclone --></label>
+        <name>Hydrocyclone</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- Mill --></label>
+        <name>Mill</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- Screen --></label>
+        <name>Screen</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- Trommel --></label>
+        <name>Trommel</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- Wear Component --></label>
+        <name>Wear_Component</name>
+    </recordTypes>
+    <startsWith>Consonant</startsWith>
+    <validationRules>
+        <errorMessage><!-- Please enter a valid Installation Date. It must be today or in the past. --></errorMessage>
+        <name>Installation_Date_cannot_be_in_future</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- You don&apos;t have necessary permissions to edit the submitted or closed record. --></errorMessage>
+        <name>Restrict_Record_Edit_After_Submit</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Record type of Installation and Customer Equipment should be same --></errorMessage>
+        <name>Same_Record_Type_Installation</name>
+    </validationRules>
+    <webLinks>
+        <label><!-- Create_Installation_PDF --></label>
+        <name>Create_Installation_PDF</name>
+    </webLinks>
+</CustomObjectTranslation>

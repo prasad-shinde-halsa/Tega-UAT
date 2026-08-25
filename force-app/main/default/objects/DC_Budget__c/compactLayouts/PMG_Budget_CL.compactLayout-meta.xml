@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CompactLayout xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>PMG_Budget_CL</fullName>
+    <fields>Name</fields>
+    <fields>Financial_Year__c</fields>
+    <fields>Branch__c</fields>
+    <fields>Company__c</fields>
+    <fields>CurrencyIsoCode</fields>
+    <fields>OwnerId</fields>
+    <fields>PMG_assigned_Sales_User__c</fields>
+    <fields>RecordTypeId</fields>
+    <label>PMG Budget CL</label>
+</CompactLayout>

@@ -1,0 +1,155 @@
+<template>
+    <lightning-spinner if:true={isLoading} size="large" alternative-text="Loading...">
+
+    </lightning-spinner>
+    <div class="slds-grid slds-grid_vertical-align-center ">
+
+        <!-- Left spacer -->
+        <div class="slds-col slds-size_1-of-3"></div>
+
+        <!-- Center: Header -->
+        <div class="slds-col slds-size_1-of-3 slds-text-align_center">
+            <h1 class="slds-text-heading_medium" style="font-weight: bold; color: rgb(244, 232, 232)"> Budget vs Monthly
+                Report Entry Status
+            </h1>
+        </div>
+
+    </div>
+    <div class="slds-grid slds-wrap slds-p-around_medium" style="margin-top: 10px; border: auto;">
+
+        <div class="slds-col slds-size_1-of-1 slds-medium-size_1-of-4 slds-p-horizontal_small" style="border: auto;">
+            <lightning-combobox label="Select FY" value={selectedFY} options={financialYearOptions}
+                onchange={handleFYChange} class="neon-combobox">
+            </lightning-combobox>
+        </div>
+        <div class="slds-col slds-size_1-of-1 slds-medium-size_1-of-4 slds-p-horizontal_small" style="border: auto;">
+            <lightning-combobox label="Select Month" value={selectedMonth} options={monthOptions}
+                onchange={handleMonthChange} class="neon-combobox">
+            </lightning-combobox>
+        </div>
+        <div class="slds-col slds-size_1-of-1 slds-medium-size_1-of-4 slds-p-horizontal_small" style="border: auto;">
+            <lightning-combobox label="Select Company" value={selectedCompany} options={companyOptions}
+                onchange={handleCompanyChange} class="neon-combobox">
+            </lightning-combobox>
+        </div>
+        <div class="slds-col slds-size_1-of-1 slds-medium-size_1-of-4 slds-p-horizontal_small" style="border: auto;">
+            <lightning-combobox label="Select Branch" value={selectedBranch} options={branchOptions}
+                onchange={handleBranchChange} class="neon-combobox">
+            </lightning-combobox>
+        </div>
+    </div>
+    <template if:false={showTable}>
+        <header class="slds-modal__header" style="height: auto; background-color: rgb(1, 68, 134);">
+            <h2 class="slds-text-heading_medium slds-hyphenate custom-header-title"
+                style="font-weight: bold; font-size: 1.2em; color: rgb(255, 255, 255);">
+                No Details Found</h2>
+        </header>
+    </template>
+    <template if:true={showTable}>
+        <div class="slds-table_edit_container slds-is-relative"
+            style="overflow-y:scroll;">
+            <table
+                class="slds-table slds-table_cell-buffer slds-table_bordered slds-table_resizable-cols slds-no-row-hover slds-max-medium-table_stacked custom-table">
+                <thead style="position: sticky; top: 0; z-index: 1;">
+                    <tr class="slds-line-height_reset">
+                        <th scope="col" style="background-color: rgb(1, 68, 134);">
+                            <div class="slds-truncate" title="Sl. No"
+                                style="padding-top: 1em; padding-bottom: 1em; font-size: 15px; color: white; text-align: center;">
+                                Sl. No
+                            </div>
+                        </th>
+                        <th scope="col" style="background-color: rgb(1, 68, 134);">
+                            <div class="slds-truncate" title="View Budget"
+                                style="padding-top: 1em; padding-bottom: 1em; font-size: 15px; color: white; text-align: center;">
+                                View Budget
+                            </div>
+                        </th>
+                        <th scope="col" style="background-color: rgb(1, 68, 134);">
+                            <div class="slds-truncate" title="View Budget"
+                                style="padding-top: 1em; padding-bottom: 1em; font-size: 15px; color: white; text-align: center;">
+                                Budget Branch Name
+                            </div>
+                        </th>
+                        <th scope="col" style="background-color: rgb(1, 68, 134);">
+                            <div class="slds-truncate" title="View Budget"
+                                style="padding-top: 1em; padding-bottom: 1em; font-size: 15px; color: white; text-align: center;">
+                                Budget Employee Name
+                            </div>
+                        </th>
+                        <th scope="col" style="background-color: rgb(1, 68, 134);">
+                            <div class="slds-truncate" title="View Budget"
+                                style="padding-top: 1em; padding-bottom: 1em; font-size: 15px; color: white; text-align: center;">
+                                MR Branch Name
+                            </div>
+                        </th>
+                        <th scope="col" style="background-color: rgb(1, 68, 134);">
+                            <div class="slds-truncate" title="View Budget"
+                                style="padding-top: 1em; padding-bottom: 1em; font-size: 15px; color: white; text-align: center;">
+                                MR Employee Name
+                            </div>
+                        </th>
+                        <th scope="col" style="background-color: rgb(1, 68, 134);">
+                            <div class="slds-truncate" title="View Budget"
+                                style="padding-top: 1em; padding-bottom: 1em; font-size: 15px; color: white; text-align: center;">
+                                View Monthly Report
+                            </div>
+                        </th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <template for:each={budgetData} for:item="row">
+                        <tr key={row.id}>
+                            <td data-label="Sl. No">
+                                <div class="slds-truncate"
+                                    style="font-weight: bold; text-wrap: wrap; text-align: center;">
+                                    {row.slNo}
+                                </div>
+                            </td>
+                            <td style="text-align: center;">
+                                <a href={row.viewBudgetLink} target="_blank">
+                                    <lightning-icon icon-name="utility:preview" size="small" alternative-text="View"
+                                        class="slds-m-left_xx-small"></lightning-icon>
+                                </a>
+                            </td>
+                            <td data-label="Budget Branch Name">
+                                <div class="slds-truncate"
+                                    style="font-weight: bold; text-wrap: wrap; text-align: center;">
+                                    {row.branchName}
+                                </div>
+                            </td>
+                            <td data-label="Budget Employee Name">
+                                <div class="slds-truncate"
+                                    style="font-weight: bold; text-wrap: wrap; text-align: center;">
+                                    {row.employeeName}
+                                </div>
+                            </td>
+                            <td data-label="MR Branch Name">
+                                <div class="slds-truncate"
+                                    style="font-weight: bold; text-wrap: wrap; text-align: center;">
+                                    {row.mrBranchName}
+                                </div>
+                            </td>
+                            <td data-label="MR Employee Name">
+                                <div class="slds-truncate"
+                                    style="font-weight: bold; text-wrap: wrap; text-align: center;">
+                                    <strong>{row.mrEmployeeName}</strong>
+                                </div>
+                            </td>
+                            <td style="text-align: center;">
+                                <template if:true={row.showMR}>
+                                    <a href={row.viewMRLink} target="_blank">
+                                        <lightning-icon icon-name="utility:preview" size="small" alternative-text="View"
+                                            class="slds-m-left_xx-small"></lightning-icon>
+                                    </a>
+                                </template>
+                                <template if:false={row.showMR}>
+                                    <strong>--</strong>
+                                </template>
+                            </td>
+                        </tr>
+                    </template>
+                </tbody>
+            </table>
+        </div>
+    </template>
+</template>

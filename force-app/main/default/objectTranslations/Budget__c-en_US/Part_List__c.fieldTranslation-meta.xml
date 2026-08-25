@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Part List --></label>
+    <lookupFilter>
+        <errorMessage><!-- Part List&apos;s Customer should be same as Budget&apos;s Customer --></errorMessage>
+        <informationalMessage><!-- Part List&apos;s Customer should be same as Budget&apos;s Customer --></informationalMessage>
+    </lookupFilter>
+    <name>Part_List__c</name>
+    <relationshipLabel><!-- Budget lines --></relationshipLabel>
+</CustomFieldTranslation>

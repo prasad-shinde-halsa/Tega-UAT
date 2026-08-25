@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RecordType xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Skirt_Sealing_System</fullName>
+    <active>true</active>
+    <label>Skirt Sealing System</label>
+    <picklistValues>
+        <picklist>Belt_Run_Back__c</picklist>
+        <values>
+            <fullName>No</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Yes</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Crowning_of_Pulley__c</picklist>
+        <values>
+            <fullName>No</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Yes</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Return_Belt_Condition__c</picklist>
+        <values>
+            <fullName>Belt edge damage</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Damaged belt splice</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Groove in belt top cover</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Patchy belt top cover</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Skew%2Fmis-aligned belt joint</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Uneven belt thickness</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Wrapped carry back mat%2E at return belt</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Type__c</picklist>
+        <values>
+            <fullName>ECO-FLIP SEAL</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>SINGLE WING</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>SPILL-EX</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Type_of_Pulley__c</picklist>
+        <values>
+            <fullName>Magnetic</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Non-Magnetic</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+</RecordType>

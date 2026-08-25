@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RecordType xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Hydrocyclone</fullName>
+    <active>true</active>
+    <label>Hydrocyclone</label>
+    <picklistValues>
+        <picklist>Item_Desc__c</picklist>
+        <values>
+            <fullName>Any other cost  1</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Any other cost  2</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Any other cost  3</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Any other cost  4</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Cryston 1</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Cryston 2</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Cryston 3</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Cryston 4</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Cryston 5</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Cryston 6</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Cryston 7</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Cryston 8</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Electrical %26 Pneumaic</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Freight Cost</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Hardware</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Overflow Pipe for Cyclone</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>PU for Cyclone</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Pressure Gauge</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Pressure Transmitter</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Rubber for Cyclone</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Rubber for Radial</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Steel for Cyclone</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Steel for Radial</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Valve 1</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Valve 2</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+</RecordType>

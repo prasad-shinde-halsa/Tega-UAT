@@ -1,0 +1,418 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Equipment_Type__c</fullName>
+    <label>Equipment Type</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Bunker</fullName>
+                <default>false</default>
+                <label>Bunker</label>
+            </value>
+            <value>
+                <fullName>BOOM CONVEYOR</fullName>
+                <default>false</default>
+                <label>BOOM CONVEYOR</label>
+            </value>
+            <value>
+                <fullName>STACKER RECLAIMER</fullName>
+                <default>false</default>
+                <label>STACKER RECLAIMER</label>
+            </value>
+            <value>
+                <fullName>REVERSIBLE CONVEYOR</fullName>
+                <default>false</default>
+                <label>REVERSIBLE CONVEYOR</label>
+            </value>
+            <value>
+                <fullName>UNIDIRECTIONAL CONVEYOR</fullName>
+                <default>false</default>
+                <label>UNIDIRECTIONAL CONVEYOR</label>
+            </value>
+            <value>
+                <fullName>BELT FEEDER</fullName>
+                <default>false</default>
+                <label>BELT FEEDER</label>
+            </value>
+            <value>
+                <fullName>FIXED TRIPPER</fullName>
+                <default>false</default>
+                <label>FIXED TRIPPER</label>
+            </value>
+            <value>
+                <fullName>TRAVELLING TRIPPER</fullName>
+                <default>false</default>
+                <label>TRAVELLING TRIPPER</label>
+            </value>
+            <value>
+                <fullName>SHUTTLE CONVEYOR</fullName>
+                <default>false</default>
+                <label>SHUTTLE CONVEYOR</label>
+            </value>
+            <value>
+                <fullName>OTHERS</fullName>
+                <default>false</default>
+                <label>OTHERS</label>
+            </value>
+            <value>
+                <fullName>Ball Mill</fullName>
+                <default>false</default>
+                <label>Ball Mill</label>
+            </value>
+            <value>
+                <fullName>Rod Mill</fullName>
+                <default>false</default>
+                <label>Rod Mill</label>
+            </value>
+            <value>
+                <fullName>SAG Mill</fullName>
+                <default>false</default>
+                <label>SAG Mill</label>
+            </value>
+            <value>
+                <fullName>AG Mill</fullName>
+                <default>false</default>
+                <label>AG Mill</label>
+            </value>
+            <value>
+                <fullName>Scrubber</fullName>
+                <default>false</default>
+                <label>Scrubber</label>
+            </value>
+            <value>
+                <fullName>Misc. Equipment</fullName>
+                <default>false</default>
+                <label>Misc. Equipment</label>
+            </value>
+            <value>
+                <fullName>Launder</fullName>
+                <default>false</default>
+                <label>Launder</label>
+            </value>
+            <value>
+                <fullName>Conveyor Transfer Chute</fullName>
+                <default>false</default>
+                <label>Conveyor Transfer Chute</label>
+            </value>
+            <value>
+                <fullName>Conveyor Discharge Chute</fullName>
+                <default>false</default>
+                <label>Conveyor Discharge Chute</label>
+            </value>
+            <value>
+                <fullName>Screen O/S Discharge Chute</fullName>
+                <default>false</default>
+                <label>Screen O/S Discharge Chute</label>
+            </value>
+            <value>
+                <fullName>Screen I/S Discharge Chute</fullName>
+                <default>false</default>
+                <label>Screen I/S Discharge Chute</label>
+            </value>
+            <value>
+                <fullName>Screen U/S Discharge Chute</fullName>
+                <default>false</default>
+                <label>Screen U/S Discharge Chute</label>
+            </value>
+            <value>
+                <fullName>Vibro Feeder</fullName>
+                <default>false</default>
+                <label>Vibro Feeder</label>
+            </value>
+            <value>
+                <fullName>BF Weigh Hopper</fullName>
+                <default>false</default>
+                <label>BF Weigh Hopper</label>
+            </value>
+            <value>
+                <fullName>Truck/WT Dumper Hopper</fullName>
+                <default>false</default>
+                <label>Truck/WT Dumper Hopper</label>
+            </value>
+            <value>
+                <fullName>Mill Feed Chute</fullName>
+                <default>false</default>
+                <label>Mill Feed Chute</label>
+            </value>
+            <value>
+                <fullName>WT Side Beam/Clamp Pad</fullName>
+                <default>false</default>
+                <label>WT Side Beam/Clamp Pad</label>
+            </value>
+            <value>
+                <fullName>Storage Hopper</fullName>
+                <default>false</default>
+                <label>Storage Hopper</label>
+            </value>
+            <value>
+                <fullName>Bin</fullName>
+                <default>false</default>
+                <label>Bin</label>
+            </value>
+            <value>
+                <fullName>Silo</fullName>
+                <default>false</default>
+                <label>Silo</label>
+            </value>
+            <value>
+                <fullName>Clamp Pad</fullName>
+                <default>false</default>
+                <label>Clamp Pad</label>
+            </value>
+            <value>
+                <fullName>Dumper Truck</fullName>
+                <default>false</default>
+                <label>Dumper Truck</label>
+            </value>
+            <value>
+                <fullName>Feeder</fullName>
+                <default>false</default>
+                <label>Feeder</label>
+            </value>
+            <value>
+                <fullName>Hopper</fullName>
+                <default>false</default>
+                <label>Hopper</label>
+            </value>
+            <value>
+                <fullName>Mill Chute</fullName>
+                <default>false</default>
+                <label>Mill Chute</label>
+            </value>
+            <value>
+                <fullName>Silo/Bunker</fullName>
+                <default>false</default>
+                <label>Silo/Bunker</label>
+            </value>
+            <value>
+                <fullName>Transfer chute</fullName>
+                <default>false</default>
+                <label>Transfer chute</label>
+            </value>
+            <value>
+                <fullName>Other Dry Circuit Applications</fullName>
+                <default>false</default>
+                <label>Other Dry Circuit Applications</label>
+            </value>
+            <value>
+                <fullName>Other Wet Circuit Applications</fullName>
+                <default>false</default>
+                <label>Other Wet Circuit Applications</label>
+            </value>
+            <value>
+                <fullName>WT Dumper Hopper</fullName>
+                <default>false</default>
+                <label>WT Dumper Hopper</label>
+            </value>
+            <value>
+                <fullName>Primary Screen</fullName>
+                <default>false</default>
+                <label>Primary Screen</label>
+            </value>
+            <value>
+                <fullName>Secondary Screen</fullName>
+                <default>false</default>
+                <label>Secondary Screen</label>
+            </value>
+            <value>
+                <fullName>Tertiary Screen</fullName>
+                <default>false</default>
+                <label>Tertiary Screen</label>
+            </value>
+            <value>
+                <fullName>Dewatering Screen</fullName>
+                <default>false</default>
+                <label>Dewatering Screen</label>
+            </value>
+            <value>
+                <fullName>Flipflo Screen</fullName>
+                <default>false</default>
+                <label>Flipflo Screen</label>
+            </value>
+            <value>
+                <fullName>Primary Ball Mill Trommel</fullName>
+                <default>false</default>
+                <label>Primary Ball Mill Trommel</label>
+            </value>
+            <value>
+                <fullName>Secondary Ball Mill Trommel</fullName>
+                <default>false</default>
+                <label>Secondary Ball Mill Trommel</label>
+            </value>
+            <value>
+                <fullName>SAG Mill Trommel</fullName>
+                <default>false</default>
+                <label>SAG Mill Trommel</label>
+            </value>
+            <value>
+                <fullName>Scrubber Discharge Trommel</fullName>
+                <default>false</default>
+                <label>Scrubber Discharge Trommel</label>
+            </value>
+            <value>
+                <fullName>Self-Driven Trommel</fullName>
+                <default>false</default>
+                <label>Self-Driven Trommel</label>
+            </value>
+            <value>
+                <fullName>Hydrocyclone</fullName>
+                <default>false</default>
+                <label>Hydrocyclone</label>
+            </value>
+            <value>
+                <fullName>Cyclone Cluster</fullName>
+                <default>false</default>
+                <label>Cyclone Cluster</label>
+            </value>
+            <value>
+                <fullName>Cyclone Manifold</fullName>
+                <default>false</default>
+                <label>Cyclone Manifold</label>
+            </value>
+            <value>
+                <fullName>Cyclone Test Rig</fullName>
+                <default>false</default>
+                <label>Cyclone Test Rig</label>
+            </value>
+            <value>
+                <fullName>Cyclo-cluster</fullName>
+                <default>false</default>
+                <label>Cyclo-cluster</label>
+            </value>
+            <value>
+                <fullName>Cyclone Mushroom</fullName>
+                <default>false</default>
+                <label>Cyclone Mushroom</label>
+            </value>
+            <value>
+                <fullName>Distributor/Manifold</fullName>
+                <default>false</default>
+                <label>Distributor/Manifold</label>
+            </value>
+            <value>
+                <fullName>Overflow Vessel</fullName>
+                <default>false</default>
+                <label>Overflow Vessel</label>
+            </value>
+            <value>
+                <fullName>Underflow Vessel</fullName>
+                <default>false</default>
+                <label>Underflow Vessel</label>
+            </value>
+            <value>
+                <fullName>Feed pipe.</fullName>
+                <default>false</default>
+                <label>Feed pipe.</label>
+            </value>
+            <value>
+                <fullName>Feed spool</fullName>
+                <default>false</default>
+                <label>Feed spool</label>
+            </value>
+            <value>
+                <fullName>Overflow pipe</fullName>
+                <default>false</default>
+                <label>Overflow pipe</label>
+            </value>
+            <value>
+                <fullName>Underflow pipe</fullName>
+                <default>false</default>
+                <label>Underflow pipe</label>
+            </value>
+            <value>
+                <fullName>Spare liner of cyclone</fullName>
+                <default>false</default>
+                <label>Spare liner of cyclone</label>
+            </value>
+            <value>
+                <fullName>Spare Insert of cyclone</fullName>
+                <default>false</default>
+                <label>Spare Insert of cyclone</label>
+            </value>
+            <value>
+                <fullName>Spare Hardware of cyclone</fullName>
+                <default>false</default>
+                <label>Spare Hardware of cyclone</label>
+            </value>
+            <value>
+                <fullName>Pressure Instrument for cyclone</fullName>
+                <default>false</default>
+                <label>Pressure Instrument for cyclone</label>
+            </value>
+            <value>
+                <fullName>Reinforce/ Casing of Cyclone</fullName>
+                <default>false</default>
+                <label>Reinforce/ Casing of Cyclone</label>
+            </value>
+            <value>
+                <fullName>Support and Structure for cyclone</fullName>
+                <default>false</default>
+                <label>Support and Structure for cyclone</label>
+            </value>
+            <value>
+                <fullName>Ceramic Spares of cyclone</fullName>
+                <default>false</default>
+                <label>Ceramic Spares of cyclone</label>
+            </value>
+            <value>
+                <fullName>Rubber Spares of cyclone</fullName>
+                <default>false</default>
+                <label>Rubber Spares of cyclone</label>
+            </value>
+            <value>
+                <fullName>PU Spares of cyclone</fullName>
+                <default>false</default>
+                <label>PU Spares of cyclone</label>
+            </value>
+            <value>
+                <fullName>Batch Mill</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Batch Mill</label>
+            </value>
+            <value>
+                <fullName>Crusher</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Crusher</label>
+            </value>
+            <value>
+                <fullName>PbM</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>PbM</label>
+            </value>
+            <value>
+                <fullName>Screen</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Screen</label>
+            </value>
+            <value>
+                <fullName>Tank</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Tank</label>
+            </value>
+            <value>
+                <fullName>Trommel</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Trommel</label>
+            </value>
+            <value>
+                <fullName>Vib Screen</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Vib Screen</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

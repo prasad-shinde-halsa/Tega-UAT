@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Type of Discharge --></label>
+    <name>Type_of_Discharge_mm__c</name>
+    <picklistValues>
+        <masterLabel>End Peripheral</masterLabel>
+        <translation><!-- End Peripheral --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Grate</masterLabel>
+        <translation><!-- Grate --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Overflow</masterLabel>
+        <translation><!-- Overflow --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

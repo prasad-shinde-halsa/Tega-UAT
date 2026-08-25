@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Zone Identification For Budget</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Zone Identification For Budget</value>
+    </caseValues>
+    <layouts>
+        <layout>Zone Identification For Budget Layout</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- System Information --></label>
+            <section>System Information</section>
+        </sections>
+    </layouts>
+    <quickActions>
+        <label><!-- Calculate Budget --></label>
+        <name>Calculate_Budget</name>
+    </quickActions>
+    <quickActions>
+        <label><!-- Create Budget Line Item --></label>
+        <name>Create_Budget_Line_Item</name>
+    </quickActions>
+    <startsWith>Consonant</startsWith>
+    <validationRules>
+        <errorMessage><!-- Part List of Budget &amp; Zone Identification For Budget should be same --></errorMessage>
+        <name>Same_PartList_Validation</name>
+    </validationRules>
+</CustomObjectTranslation>

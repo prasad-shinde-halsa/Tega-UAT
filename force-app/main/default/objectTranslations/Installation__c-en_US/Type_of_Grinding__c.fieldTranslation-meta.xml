@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Type of Grinding --></label>
+    <name>Type_of_Grinding__c</name>
+    <picklistValues>
+        <masterLabel>Dry</masterLabel>
+        <translation><!-- Dry --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Wet</masterLabel>
+        <translation><!-- Wet --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

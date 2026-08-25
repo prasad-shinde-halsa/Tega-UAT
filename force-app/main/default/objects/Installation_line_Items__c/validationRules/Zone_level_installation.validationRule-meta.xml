@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Zone_level_installation</fullName>
+    <active>false</active>
+    <errorConditionFormula>IF(AND(Installation_at_L2_Level__c = true,   ISPICKVAL( Zone_Level_Installation__c , &apos;&apos;)  ), true, false)</errorConditionFormula>
+    <errorMessage>If Installation at zone is select, please select the L2 level.</errorMessage>
+</ValidationRule>

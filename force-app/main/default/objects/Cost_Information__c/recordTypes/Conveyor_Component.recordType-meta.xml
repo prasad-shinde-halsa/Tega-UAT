@@ -1,0 +1,333 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RecordType xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Conveyor_Component</fullName>
+    <active>true</active>
+    <label>Conveyor Component</label>
+    <picklistValues>
+        <picklist>Item_Desc__c</picklist>
+        <values>
+            <fullName>Aluminium</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Any other cost  1</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Any other cost  2</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Any other cost  3</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Any other cost  4</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Casting- T1</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Casting- T2</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Casting- T6</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Ceramic Cylinder 20 mm Dia x 15 mm height</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Ceramic Cylinder 20 mm Dia x 20 mm height</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Ceramic Tiles</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Cryston 1</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Cryston 2</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Cryston 3</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Cryston 4</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Cryston 5</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Cryston 6</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Cryston 7</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Cryston 8</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Electrical %26 Pneumaic</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Engg%2FDesign Cost</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Freight Cost</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Half Locking Ceramic 40x20x25 mm thk</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Half Locking Ceramic 40x20x40 mm thk</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Hardox</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Hardox 100- 500 BHN</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Hardox 25- 500 BHN</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Hardox 50- 500 BHN</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Hardox 65- 550 BHN</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Hardox 75- 500 BHN</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Hardox 80- 550 BHN</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Hardox 80- 600 BHN</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Hardox-6 500 BHN</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Hardware</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Hex Ceramic Tiles 19%2E05x19%2E05x12%2E5 mm thk</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Hex Ceramic Tiles 19%2E05x19%2E05x7 mm thk</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Insert</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Liner Installation%2FSupervision Cost</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Locking Ceramic 40x40x25 mm thk</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Locking Ceramic 40x40x40 mm thk</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>MS-Flat</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>MS-Plate</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Mould</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Mould%2FInsert Cost</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Other Cost 1</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Other Cost 2</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Other Cost 3</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Other Cost 4</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Other Cost 5</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Others</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Overflow Pipe for Cyclone</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>PU for Cyclone</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>PU-1290</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>PU-1785</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>PU-B600</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>PU-ECP-61</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>PU-T781</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Polyurethane Compound</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Pressure Gauge</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Pressure Transmitter</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Rubber 102</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Rubber 106</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Rubber Compound</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Rubber TG-40</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Rubber TG-50</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Rubber TG-80</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Rubber for Cyclone</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Rubber for Radial</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>SS-Flat</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>SS-Plate</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Slipoly</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Square Ceramic 20x20x5 mm thk</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Square Ceramic 33x33x15 mm thk</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Stainless Steel</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Steel for Cyclone</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Steel for Radial</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Structural Steel</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>TPU</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>UHMWPE</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Valve 1</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Valve 2</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+</RecordType>

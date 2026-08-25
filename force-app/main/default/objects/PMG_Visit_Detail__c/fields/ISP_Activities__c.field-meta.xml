@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>ISP_Activities__c</fullName>
+    <label>ISP Activities</label>
+    <required>true</required>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <controllingField>Platform__c</controllingField>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>New Contact Initial Visits</fullName>
+                <default>false</default>
+                <label>New Contact Initial Visits</label>
+            </value>
+            <value>
+                <fullName>New Enquiry Generation</fullName>
+                <default>false</default>
+                <label>New Enquiry Generation</label>
+            </value>
+            <value>
+                <fullName>New Enquiry First Visit (DA)</fullName>
+                <default>false</default>
+                <label>New Enquiry First Visit (DA)</label>
+            </value>
+            <value>
+                <fullName>New Enquiry Closing Visit (PA)</fullName>
+                <default>false</default>
+                <label>New Enquiry Closing Visit (PA)</label>
+            </value>
+            <value>
+                <fullName>TSS Site Visit/ Presentation</fullName>
+                <default>false</default>
+                <label>TSS Site Visit/ Presentation</label>
+            </value>
+            <value>
+                <fullName>PMG Site Visit/ Presentation</fullName>
+                <default>false</default>
+                <label>PMG Site Visit/ Presentation</label>
+            </value>
+            <value>
+                <fullName>New Enquiry Data Collection/ Questionnaire</fullName>
+                <default>false</default>
+                <label>New Enquiry Data Collection/ Questionnaire</label>
+            </value>
+            <value>
+                <fullName>Contact Map Creation</fullName>
+                <default>false</default>
+                <label>Contact Map Creation</label>
+            </value>
+            <value>
+                <fullName>Service Support Visit (Wear Measurement)</fullName>
+                <default>false</default>
+                <label>Service Support Visit (Wear Measurement)</label>
+            </value>
+            <value>
+                <fullName>Service Support Visit (Inventory)</fullName>
+                <default>false</default>
+                <label>Service Support Visit (Inventory)</label>
+            </value>
+            <value>
+                <fullName>Service Support Visit (Installation)</fullName>
+                <default>false</default>
+                <label>Service Support Visit (Installation)</label>
+            </value>
+            <value>
+                <fullName>Scanning Visit</fullName>
+                <default>false</default>
+                <label>Scanning Visit</label>
+            </value>
+            <value>
+                <fullName>PMG Cheat Sheet Filled Up</fullName>
+                <default>false</default>
+                <label>PMG Cheat Sheet Filled Up</label>
+            </value>
+            <value>
+                <fullName>Long Terms Contract Introduction</fullName>
+                <default>false</default>
+                <label>Long Terms Contract Introduction</label>
+            </value>
+            <value>
+                <fullName>PMG Site Visit</fullName>
+                <default>false</default>
+                <label>PMG Site Visit</label>
+            </value>
+            <value>
+                <fullName>Senior Exec Visit</fullName>
+                <default>false</default>
+                <label>Senior Exec Visit</label>
+            </value>
+        </valueSetDefinition>
+        <valueSettings>
+            <controllingFieldValue>Marketing</controllingFieldValue>
+            <valueName>New Contact Initial Visits</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Working</controllingFieldValue>
+            <valueName>New Enquiry Generation</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Working</controllingFieldValue>
+            <valueName>New Enquiry First Visit (DA)</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Working</controllingFieldValue>
+            <valueName>New Enquiry Closing Visit (PA)</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Working</controllingFieldValue>
+            <valueName>TSS Site Visit/ Presentation</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Working</controllingFieldValue>
+            <valueName>PMG Site Visit/ Presentation</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Working</controllingFieldValue>
+            <valueName>New Enquiry Data Collection/ Questionnaire</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Working</controllingFieldValue>
+            <valueName>Contact Map Creation</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Working</controllingFieldValue>
+            <controllingFieldValue>Buying</controllingFieldValue>
+            <valueName>PMG Cheat Sheet Filled Up</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Buying</controllingFieldValue>
+            <valueName>Service Support Visit (Wear Measurement)</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Buying</controllingFieldValue>
+            <valueName>Service Support Visit (Inventory)</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Buying</controllingFieldValue>
+            <valueName>Service Support Visit (Installation)</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Buying</controllingFieldValue>
+            <valueName>Scanning Visit</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Buying</controllingFieldValue>
+            <valueName>Long Terms Contract Introduction</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Buying</controllingFieldValue>
+            <valueName>PMG Site Visit</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Buying</controllingFieldValue>
+            <valueName>Senior Exec Visit</valueName>
+        </valueSettings>
+    </valueSet>
+</CustomField>

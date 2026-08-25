@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Lock_Record</fullName>
+    <active>true</active>
+    <errorConditionFormula>AND
+(
+ISPICKVAL( PRIORVALUE(Status__c),&apos;Closed&apos;),
+NOT(ISCHANGED(DC_Budget_Line_Items__c)),
+$Profile.Name &lt;&gt; &apos;System Administrator&apos;
+)</errorConditionFormula>
+    <errorMessage>PRF Closed. To edit this PRF, please raise an offer revision request</errorMessage>
+</ValidationRule>

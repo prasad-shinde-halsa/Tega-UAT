@@ -1,0 +1,34 @@
+<template>
+    <lightning-card if:false={cloneSuccess}  >
+        <h1 style="font-size: 1.5em; padding-left: 15px;">Please click on confirm to clone this Budget</h1>
+        <div class="slds-p-horizontal_medium slds-p-vertical_small">
+            <lightning-button 
+                label="Confirm"
+                variant="brand"
+                onclick={handleFullDataClone}>
+            </lightning-button>
+            <!-- <lightning-button 
+                label="Required Data Clone"
+                variant="neutral"
+                class="slds-m-left_small"
+                onclick={handleRequiredDataClone}>
+            </lightning-button> -->
+        </div>
+
+        <p style="color: red; margin-left: 10px; font-size: 16px;" if:true={errorMessagePara}>{errorMessage}</p>
+    </lightning-card>
+
+    <lightning-card if:true={cloneSuccess} >
+        <h1 style="font-size: 1.5em; padding-left: 15px; color: green;">Budget has been cloned</h1>
+        <div class="slds-p-horizontal_medium slds-p-vertical_small">
+            <lightning-button
+            label="Open Cloned Budget"
+            variant="brand"
+            onclick={handleRedirection}
+            >
+        </lightning-button>
+
+
+        </div>
+    </lightning-card>
+</template>

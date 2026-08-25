@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Impact Pad Size --></label>
+    <name>Impact__c</name>
+    <picklistValues>
+        <masterLabel>I Pad H Type 55x100x1300</masterLabel>
+        <translation><!-- I Pad H Type 55x100x1300 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>I Pad H Type 55x100x1500</masterLabel>
+        <translation><!-- I Pad H Type 55x100x1500 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>I Pad H Type 75x100x1300</masterLabel>
+        <translation><!-- I Pad H Type 75x100x1300 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>I Pad H Type 75x100x1500</masterLabel>
+        <translation><!-- I Pad H Type 75x100x1500 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>I Pad P Type 55x100x1300</masterLabel>
+        <translation><!-- I Pad P Type 55x100x1300 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>I Pad P Type 75x100x1300</masterLabel>
+        <translation><!-- I Pad P Type 75x100x1300 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>I Pad P Type 75x100x1500</masterLabel>
+        <translation><!-- I Pad P Type 75x100x1500 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>I Pad R Type 55x100x1220</masterLabel>
+        <translation><!-- I Pad R Type 55x100x1220 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>I Pad R Type 55x100x1560</masterLabel>
+        <translation><!-- I Pad R Type 55x100x1560 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>I Pad R Type 75x100x1220</masterLabel>
+        <translation><!-- I Pad R Type 75x100x1220 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>I Pad R Type 75x100x1560</masterLabel>
+        <translation><!-- I Pad R Type 75x100x1560 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>I Pad T Type 100x100x1220</masterLabel>
+        <translation><!-- I Pad T Type 100x100x1220 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>I Pad T Type 100x100x1560</masterLabel>
+        <translation><!-- I Pad T Type 100x100x1560 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>I Pad T Type 55x100x1220</masterLabel>
+        <translation><!-- I Pad T Type 55x100x1220 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>I Pad T Type 55x100x1560</masterLabel>
+        <translation><!-- I Pad T Type 55x100x1560 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>I Pad T Type 75x100x1220</masterLabel>
+        <translation><!-- I Pad T Type 75x100x1220 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>I Pad T Type 75x100x1400</masterLabel>
+        <translation><!-- I Pad T Type 75x100x1400 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>I Pad T Type 75x100x1560</masterLabel>
+        <translation><!-- I Pad T Type 75x100x1560 --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

@@ -1,0 +1,813 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Item_Type__c</fullName>
+    <label>Item Type</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <controllingField>Items__c</controllingField>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>HR</fullName>
+                <default>false</default>
+                <label>HR</label>
+            </value>
+            <value>
+                <fullName>NR</fullName>
+                <default>false</default>
+                <label>NR</label>
+            </value>
+            <value>
+                <fullName>Belt Width 450</fullName>
+                <default>false</default>
+                <label>Belt Width 450</label>
+            </value>
+            <value>
+                <fullName>Belt Width 500</fullName>
+                <default>false</default>
+                <label>Belt Width 500</label>
+            </value>
+            <value>
+                <fullName>Belt Width 600</fullName>
+                <default>false</default>
+                <label>Belt Width 600</label>
+            </value>
+            <value>
+                <fullName>Belt Width 650</fullName>
+                <default>false</default>
+                <label>Belt Width 650</label>
+            </value>
+            <value>
+                <fullName>Belt Width 800</fullName>
+                <default>false</default>
+                <label>Belt Width 800</label>
+            </value>
+            <value>
+                <fullName>Belt Width 1000</fullName>
+                <default>false</default>
+                <label>Belt Width 1000</label>
+            </value>
+            <value>
+                <fullName>Belt Width 1200</fullName>
+                <default>false</default>
+                <label>Belt Width 1200</label>
+            </value>
+            <value>
+                <fullName>Belt Width 1400</fullName>
+                <default>false</default>
+                <label>Belt Width 1400</label>
+            </value>
+            <value>
+                <fullName>Belt Width 1600</fullName>
+                <default>false</default>
+                <label>Belt Width 1600</label>
+            </value>
+            <value>
+                <fullName>Belt Width 1800</fullName>
+                <default>false</default>
+                <label>Belt Width 1800</label>
+            </value>
+            <value>
+                <fullName>Belt Width 2000</fullName>
+                <default>false</default>
+                <label>Belt Width 2000</label>
+            </value>
+            <value>
+                <fullName>Belt Width 2200</fullName>
+                <default>false</default>
+                <label>Belt Width 2200</label>
+            </value>
+            <value>
+                <fullName>Belt Width 2400</fullName>
+                <default>false</default>
+                <label>Belt Width 2400</label>
+            </value>
+            <value>
+                <fullName>Belt Width 2600</fullName>
+                <default>false</default>
+                <label>Belt Width 2600</label>
+            </value>
+            <value>
+                <fullName>Belt Width 2800</fullName>
+                <default>false</default>
+                <label>Belt Width 2800</label>
+            </value>
+            <value>
+                <fullName>Belt Width 3000</fullName>
+                <default>false</default>
+                <label>Belt Width 3000</label>
+            </value>
+            <value>
+                <fullName>Single piece</fullName>
+                <default>false</default>
+                <label>Single piece</label>
+            </value>
+            <value>
+                <fullName>3 piece</fullName>
+                <default>false</default>
+                <label>3 piece</label>
+            </value>
+            <value>
+                <fullName>Size A</fullName>
+                <default>false</default>
+                <label>Size A</label>
+            </value>
+            <value>
+                <fullName>Size B</fullName>
+                <default>false</default>
+                <label>Size B</label>
+            </value>
+            <value>
+                <fullName>Size C</fullName>
+                <default>false</default>
+                <label>Size C</label>
+            </value>
+            <value>
+                <fullName>Size D</fullName>
+                <default>false</default>
+                <label>Size D</label>
+            </value>
+            <value>
+                <fullName>Size E</fullName>
+                <default>false</default>
+                <label>Size E</label>
+            </value>
+            <value>
+                <fullName>Type A</fullName>
+                <default>false</default>
+                <label>Type A</label>
+            </value>
+            <value>
+                <fullName>Type B</fullName>
+                <default>false</default>
+                <label>Type B</label>
+            </value>
+            <value>
+                <fullName>SS SKIRT</fullName>
+                <default>false</default>
+                <label>SS SKIRT</label>
+            </value>
+            <value>
+                <fullName>NR SKIRT</fullName>
+                <default>false</default>
+                <label>NR SKIRT</label>
+            </value>
+            <value>
+                <fullName>REA2</fullName>
+                <default>false</default>
+                <label>REA2</label>
+            </value>
+            <value>
+                <fullName>REA3</fullName>
+                <default>false</default>
+                <label>REA3</label>
+            </value>
+            <value>
+                <fullName>Straight tube</fullName>
+                <default>false</default>
+                <label>Straight tube</label>
+            </value>
+            <value>
+                <fullName>With Offset</fullName>
+                <default>false</default>
+                <label>With Offset</label>
+            </value>
+            <value>
+                <fullName>NR Grade</fullName>
+                <default>false</default>
+                <label>NR Grade</label>
+            </value>
+            <value>
+                <fullName>HR Grade</fullName>
+                <default>false</default>
+                <label>HR Grade</label>
+            </value>
+            <value>
+                <fullName>SK Grade</fullName>
+                <default>false</default>
+                <label>SK Grade</label>
+            </value>
+            <value>
+                <fullName>SHT Grade</fullName>
+                <default>false</default>
+                <label>SHT Grade</label>
+            </value>
+            <value>
+                <fullName>FRAS Grade</fullName>
+                <default>false</default>
+                <label>FRAS Grade</label>
+            </value>
+            <value>
+                <fullName>OGR Grade</fullName>
+                <default>false</default>
+                <label>OGR Grade</label>
+            </value>
+            <value>
+                <fullName>2mm</fullName>
+                <default>false</default>
+                <label>2mm</label>
+            </value>
+            <value>
+                <fullName>3mm</fullName>
+                <default>false</default>
+                <label>3mm</label>
+            </value>
+            <value>
+                <fullName>5mm</fullName>
+                <default>false</default>
+                <label>5mm</label>
+            </value>
+            <value>
+                <fullName>Mild Steel</fullName>
+                <default>false</default>
+                <label>Mild Steel</label>
+            </value>
+            <value>
+                <fullName>SS Steel</fullName>
+                <default>false</default>
+                <label>SS Steel</label>
+            </value>
+            <value>
+                <fullName>Powder coated</fullName>
+                <default>false</default>
+                <label>Powder coated</label>
+            </value>
+            <value>
+                <fullName>Electroplating ( upto 8 DFT)</fullName>
+                <default>false</default>
+                <label>Electroplating ( upto 8 DFT)</label>
+            </value>
+            <value>
+                <fullName>Paint</fullName>
+                <default>false</default>
+                <label>Paint</label>
+            </value>
+            <value>
+                <fullName>450 mm</fullName>
+                <default>false</default>
+                <label>450 mm</label>
+            </value>
+            <value>
+                <fullName>600 mm</fullName>
+                <default>false</default>
+                <label>600 mm</label>
+            </value>
+            <value>
+                <fullName>750 mm</fullName>
+                <default>false</default>
+                <label>750 mm</label>
+            </value>
+            <value>
+                <fullName>900 mm</fullName>
+                <default>false</default>
+                <label>900 mm</label>
+            </value>
+            <value>
+                <fullName>1050 mm</fullName>
+                <default>false</default>
+                <label>1050 mm</label>
+            </value>
+            <value>
+                <fullName>1200 mm</fullName>
+                <default>false</default>
+                <label>1200 mm</label>
+            </value>
+            <value>
+                <fullName>1350 mm</fullName>
+                <default>false</default>
+                <label>1350 mm</label>
+            </value>
+            <value>
+                <fullName>1500 mm</fullName>
+                <default>false</default>
+                <label>1500 mm</label>
+            </value>
+            <value>
+                <fullName>500 mm</fullName>
+                <default>false</default>
+                <label>500 mm</label>
+            </value>
+            <value>
+                <fullName>625 mm</fullName>
+                <default>false</default>
+                <label>625 mm</label>
+            </value>
+            <value>
+                <fullName>875 mm</fullName>
+                <default>false</default>
+                <label>875 mm</label>
+            </value>
+            <value>
+                <fullName>1000 mm</fullName>
+                <default>false</default>
+                <label>1000 mm</label>
+            </value>
+        </valueSetDefinition>
+        <valueSettings>
+            <controllingFieldValue>Conical Roller CentraX SKO series</controllingFieldValue>
+            <controllingFieldValue>Bottom Bearing CentraX SKO series</controllingFieldValue>
+            <controllingFieldValue>Central Roller CertraX SKO-VR</controllingFieldValue>
+            <controllingFieldValue>Conical Roller CertraX SKO-VR</controllingFieldValue>
+            <controllingFieldValue>Bottom Bearing CertraX SKO-VR</controllingFieldValue>
+            <controllingFieldValue>WING ROLLER TTT</controllingFieldValue>
+            <controllingFieldValue>Central Roller TTVR</controllingFieldValue>
+            <controllingFieldValue>Carrier tube</controllingFieldValue>
+            <controllingFieldValue>Central Roller CentraX SK series</controllingFieldValue>
+            <controllingFieldValue>Conical Roller CentraX SK series</controllingFieldValue>
+            <controllingFieldValue>Bottom Bearing CentraX SK series</controllingFieldValue>
+            <controllingFieldValue>Central Roller CentraX SKO series</controllingFieldValue>
+            <valueName>Belt Width 600</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Conical Roller CentraX SKO series</controllingFieldValue>
+            <controllingFieldValue>Bottom Bearing CentraX SKO series</controllingFieldValue>
+            <controllingFieldValue>Central Roller CertraX SKO-VR</controllingFieldValue>
+            <controllingFieldValue>Conical Roller CertraX SKO-VR</controllingFieldValue>
+            <controllingFieldValue>Bottom Bearing CertraX SKO-VR</controllingFieldValue>
+            <controllingFieldValue>WING ROLLER TTT</controllingFieldValue>
+            <controllingFieldValue>Central Roller TTVR</controllingFieldValue>
+            <controllingFieldValue>Carrier tube</controllingFieldValue>
+            <controllingFieldValue>Central Roller CentraX SK series</controllingFieldValue>
+            <controllingFieldValue>Conical Roller CentraX SK series</controllingFieldValue>
+            <controllingFieldValue>Bottom Bearing CentraX SK series</controllingFieldValue>
+            <controllingFieldValue>Central Roller CentraX SKO series</controllingFieldValue>
+            <valueName>Belt Width 650</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Conical Roller CentraX SKO series</controllingFieldValue>
+            <controllingFieldValue>Bottom Bearing CentraX SKO series</controllingFieldValue>
+            <controllingFieldValue>Central Roller CertraX SKO-VR</controllingFieldValue>
+            <controllingFieldValue>Conical Roller CertraX SKO-VR</controllingFieldValue>
+            <controllingFieldValue>Bottom Bearing CertraX SKO-VR</controllingFieldValue>
+            <controllingFieldValue>WING ROLLER TTT</controllingFieldValue>
+            <controllingFieldValue>Central Roller TTVR</controllingFieldValue>
+            <controllingFieldValue>Carrier tube</controllingFieldValue>
+            <controllingFieldValue>Central Roller CentraX SK series</controllingFieldValue>
+            <controllingFieldValue>Conical Roller CentraX SK series</controllingFieldValue>
+            <controllingFieldValue>Bottom Bearing CentraX SK series</controllingFieldValue>
+            <controllingFieldValue>Central Roller CentraX SKO series</controllingFieldValue>
+            <valueName>Belt Width 800</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Conical Roller CentraX SKO series</controllingFieldValue>
+            <controllingFieldValue>Bottom Bearing CentraX SKO series</controllingFieldValue>
+            <controllingFieldValue>Central Roller CertraX SKO-VR</controllingFieldValue>
+            <controllingFieldValue>Conical Roller CertraX SKO-VR</controllingFieldValue>
+            <controllingFieldValue>Bottom Bearing CertraX SKO-VR</controllingFieldValue>
+            <controllingFieldValue>WING ROLLER TTT</controllingFieldValue>
+            <controllingFieldValue>Central Roller TTVR</controllingFieldValue>
+            <controllingFieldValue>Carrier tube</controllingFieldValue>
+            <controllingFieldValue>Central Roller CentraX SK series</controllingFieldValue>
+            <controllingFieldValue>Conical Roller CentraX SK series</controllingFieldValue>
+            <controllingFieldValue>Bottom Bearing CentraX SK series</controllingFieldValue>
+            <controllingFieldValue>Central Roller CentraX SKO series</controllingFieldValue>
+            <valueName>Belt Width 1000</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Central Roller CertraX SO-VR</controllingFieldValue>
+            <controllingFieldValue>Conical Roller CertraX SO-VR</controllingFieldValue>
+            <controllingFieldValue>Bottom Bearing CertraX SO-VR</controllingFieldValue>
+            <controllingFieldValue>WING ROLLER TTT</controllingFieldValue>
+            <controllingFieldValue>Central Roller TTVR</controllingFieldValue>
+            <controllingFieldValue>Carrier tube</controllingFieldValue>
+            <controllingFieldValue>Central Roller CerntraX SO  series</controllingFieldValue>
+            <controllingFieldValue>Conical Roller CerntraX SO  series</controllingFieldValue>
+            <controllingFieldValue>Bottom Bearing CerntraX SO  series</controllingFieldValue>
+            <controllingFieldValue>Central Roller CentraX S series</controllingFieldValue>
+            <controllingFieldValue>Conical Roller CentraX S series</controllingFieldValue>
+            <controllingFieldValue>Bottom Bearing CentraX S series</controllingFieldValue>
+            <valueName>Belt Width 1200</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Central Roller CertraX SO-VR</controllingFieldValue>
+            <controllingFieldValue>Conical Roller CertraX SO-VR</controllingFieldValue>
+            <controllingFieldValue>Bottom Bearing CertraX SO-VR</controllingFieldValue>
+            <controllingFieldValue>WING ROLLER TTT</controllingFieldValue>
+            <controllingFieldValue>Central Roller TTDR</controllingFieldValue>
+            <controllingFieldValue>Central Roller TTVR</controllingFieldValue>
+            <controllingFieldValue>Carrier tube</controllingFieldValue>
+            <controllingFieldValue>Central Roller CerntraX SO  series</controllingFieldValue>
+            <controllingFieldValue>Conical Roller CerntraX SO  series</controllingFieldValue>
+            <controllingFieldValue>Bottom Bearing CerntraX SO  series</controllingFieldValue>
+            <controllingFieldValue>Central Roller CentraX S series</controllingFieldValue>
+            <controllingFieldValue>Conical Roller CentraX S series</controllingFieldValue>
+            <controllingFieldValue>Bottom Bearing CentraX S series</controllingFieldValue>
+            <valueName>Belt Width 1400</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Central Roller CertraX SO-VR</controllingFieldValue>
+            <controllingFieldValue>Conical Roller CertraX SO-VR</controllingFieldValue>
+            <controllingFieldValue>Bottom Bearing CertraX SO-VR</controllingFieldValue>
+            <controllingFieldValue>WING ROLLER TTT</controllingFieldValue>
+            <controllingFieldValue>Central Roller TTDR</controllingFieldValue>
+            <controllingFieldValue>Central Roller TTVR</controllingFieldValue>
+            <controllingFieldValue>Carrier tube</controllingFieldValue>
+            <controllingFieldValue>Central Roller CerntraX SO  series</controllingFieldValue>
+            <controllingFieldValue>Conical Roller CerntraX SO  series</controllingFieldValue>
+            <controllingFieldValue>Bottom Bearing CerntraX SO  series</controllingFieldValue>
+            <controllingFieldValue>Central Roller CentraX S series</controllingFieldValue>
+            <controllingFieldValue>Conical Roller CentraX S series</controllingFieldValue>
+            <controllingFieldValue>Bottom Bearing CentraX S series</controllingFieldValue>
+            <valueName>Belt Width 1600</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Central Roller CertraX SO-VR</controllingFieldValue>
+            <controllingFieldValue>Conical Roller CertraX SO-VR</controllingFieldValue>
+            <controllingFieldValue>Bottom Bearing CertraX SO-VR</controllingFieldValue>
+            <controllingFieldValue>WING ROLLER TTT</controllingFieldValue>
+            <controllingFieldValue>Central Roller TTDR</controllingFieldValue>
+            <controllingFieldValue>Central Roller TTVR</controllingFieldValue>
+            <controllingFieldValue>Carrier tube</controllingFieldValue>
+            <controllingFieldValue>Central Roller CerntraX SO  series</controllingFieldValue>
+            <controllingFieldValue>Conical Roller CerntraX SO  series</controllingFieldValue>
+            <controllingFieldValue>Bottom Bearing CerntraX SO  series</controllingFieldValue>
+            <controllingFieldValue>Central Roller CentraX S series</controllingFieldValue>
+            <controllingFieldValue>Conical Roller CentraX S series</controllingFieldValue>
+            <controllingFieldValue>Bottom Bearing CentraX S series</controllingFieldValue>
+            <valueName>Belt Width 1800</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Central Roller CertraX SO-VR</controllingFieldValue>
+            <controllingFieldValue>Conical Roller CertraX SO-VR</controllingFieldValue>
+            <controllingFieldValue>Bottom Bearing CertraX SO-VR</controllingFieldValue>
+            <controllingFieldValue>WING ROLLER TTT</controllingFieldValue>
+            <controllingFieldValue>Central Roller TTDR</controllingFieldValue>
+            <controllingFieldValue>Central Roller TTVR</controllingFieldValue>
+            <controllingFieldValue>Carrier tube</controllingFieldValue>
+            <controllingFieldValue>Central Roller CerntraX SO  series</controllingFieldValue>
+            <controllingFieldValue>Conical Roller CerntraX SO  series</controllingFieldValue>
+            <controllingFieldValue>Bottom Bearing CerntraX SO  series</controllingFieldValue>
+            <controllingFieldValue>Central Roller CentraX S series</controllingFieldValue>
+            <controllingFieldValue>Conical Roller CentraX S series</controllingFieldValue>
+            <controllingFieldValue>Bottom Bearing CentraX S series</controllingFieldValue>
+            <valueName>Belt Width 2000</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Central Roller CertraX SO-VR</controllingFieldValue>
+            <controllingFieldValue>Conical Roller CertraX SO-VR</controllingFieldValue>
+            <controllingFieldValue>Bottom Bearing CertraX SO-VR</controllingFieldValue>
+            <controllingFieldValue>WING ROLLER TTT</controllingFieldValue>
+            <controllingFieldValue>Central Roller TTDR</controllingFieldValue>
+            <controllingFieldValue>Central Roller TTVR</controllingFieldValue>
+            <controllingFieldValue>Carrier tube</controllingFieldValue>
+            <controllingFieldValue>Central Roller CerntraX SO  series</controllingFieldValue>
+            <controllingFieldValue>Conical Roller CerntraX SO  series</controllingFieldValue>
+            <controllingFieldValue>Bottom Bearing CerntraX SO  series</controllingFieldValue>
+            <controllingFieldValue>Central Roller CentraX S series</controllingFieldValue>
+            <controllingFieldValue>Conical Roller CentraX S series</controllingFieldValue>
+            <controllingFieldValue>Bottom Bearing CentraX S series</controllingFieldValue>
+            <valueName>Belt Width 2200</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>WING ROLLER TTT</controllingFieldValue>
+            <controllingFieldValue>Central Roller TTVR</controllingFieldValue>
+            <controllingFieldValue>Carrier tube</controllingFieldValue>
+            <valueName>Belt Width 450</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>WING ROLLER TTT</controllingFieldValue>
+            <controllingFieldValue>Central Roller TTVR</controllingFieldValue>
+            <controllingFieldValue>Carrier tube</controllingFieldValue>
+            <valueName>Belt Width 500</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>WING ROLLER TTT</controllingFieldValue>
+            <controllingFieldValue>Central Roller TTDR</controllingFieldValue>
+            <controllingFieldValue>Central Roller TTVR</controllingFieldValue>
+            <controllingFieldValue>Carrier tube</controllingFieldValue>
+            <valueName>Belt Width 2400</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>WING ROLLER TTT</controllingFieldValue>
+            <controllingFieldValue>Central Roller TTDR</controllingFieldValue>
+            <controllingFieldValue>Central Roller TTVR</controllingFieldValue>
+            <controllingFieldValue>Carrier tube</controllingFieldValue>
+            <valueName>Belt Width 2600</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>WING ROLLER TTT</controllingFieldValue>
+            <controllingFieldValue>Central Roller TTDR</controllingFieldValue>
+            <controllingFieldValue>Central Roller TTVR</controllingFieldValue>
+            <controllingFieldValue>Carrier tube</controllingFieldValue>
+            <valueName>Belt Width 2800</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>WING ROLLER TTT</controllingFieldValue>
+            <controllingFieldValue>Central Roller TTDR</controllingFieldValue>
+            <controllingFieldValue>Central Roller TTVR</controllingFieldValue>
+            <controllingFieldValue>Carrier tube</controllingFieldValue>
+            <valueName>Belt Width 3000</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>HDPU-S Blade</controllingFieldValue>
+            <controllingFieldValue>B9S Blade-300 MM</controllingFieldValue>
+            <controllingFieldValue>B9S Blade-150MM</controllingFieldValue>
+            <controllingFieldValue>B9SV Blade-200 MM</controllingFieldValue>
+            <controllingFieldValue>B9SV Blade-100 MM</controllingFieldValue>
+            <controllingFieldValue>HDPU-L Blade</controllingFieldValue>
+            <controllingFieldValue>Element LV</controllingFieldValue>
+            <controllingFieldValue>Element SV</controllingFieldValue>
+            <controllingFieldValue>PU-200</controllingFieldValue>
+            <controllingFieldValue>PU-100</controllingFieldValue>
+            <valueName>HR</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>HDPU-S Blade</controllingFieldValue>
+            <controllingFieldValue>B9S Blade-300 MM</controllingFieldValue>
+            <controllingFieldValue>B9S Blade-150MM</controllingFieldValue>
+            <controllingFieldValue>B9SV Blade-200 MM</controllingFieldValue>
+            <controllingFieldValue>B9SV Blade-100 MM</controllingFieldValue>
+            <controllingFieldValue>HDPU-L Blade</controllingFieldValue>
+            <controllingFieldValue>Element LV</controllingFieldValue>
+            <controllingFieldValue>Element SV</controllingFieldValue>
+            <controllingFieldValue>PU-200</controllingFieldValue>
+            <controllingFieldValue>PU-100</controllingFieldValue>
+            <valueName>NR</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>X3-120 Blade with 10 mm tip</controllingFieldValue>
+            <controllingFieldValue>X3-240 Blade with 10 mm tip</controllingFieldValue>
+            <controllingFieldValue>Z-120 Blade with 10 mm tip</controllingFieldValue>
+            <controllingFieldValue>Z-240 Blade with 10 mm tip</controllingFieldValue>
+            <controllingFieldValue>V-120 Blade with 10 mm tip</controllingFieldValue>
+            <controllingFieldValue>V-240 Blade with 10 mm tip</controllingFieldValue>
+            <controllingFieldValue>X3-120 Blade with 20 mm tip</controllingFieldValue>
+            <controllingFieldValue>X3-240 Blade with 20 mm tip</controllingFieldValue>
+            <controllingFieldValue>Z-120 Blade with 20 mm tip</controllingFieldValue>
+            <controllingFieldValue>Z-240 Blade with 20 mm tip</controllingFieldValue>
+            <controllingFieldValue>V-120 Blade with 20 mm tip</controllingFieldValue>
+            <controllingFieldValue>V-240 Blade with 20 mm tip</controllingFieldValue>
+            <valueName>SS SKIRT</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>X3-120 Blade with 10 mm tip</controllingFieldValue>
+            <controllingFieldValue>X3-240 Blade with 10 mm tip</controllingFieldValue>
+            <controllingFieldValue>Z-120 Blade with 10 mm tip</controllingFieldValue>
+            <controllingFieldValue>Z-240 Blade with 10 mm tip</controllingFieldValue>
+            <controllingFieldValue>V-120 Blade with 10 mm tip</controllingFieldValue>
+            <controllingFieldValue>V-240 Blade with 10 mm tip</controllingFieldValue>
+            <controllingFieldValue>X3-120 Blade with 20 mm tip</controllingFieldValue>
+            <controllingFieldValue>X3-240 Blade with 20 mm tip</controllingFieldValue>
+            <controllingFieldValue>Z-120 Blade with 20 mm tip</controllingFieldValue>
+            <controllingFieldValue>Z-240 Blade with 20 mm tip</controllingFieldValue>
+            <controllingFieldValue>V-120 Blade with 20 mm tip</controllingFieldValue>
+            <controllingFieldValue>V-240 Blade with 20 mm tip</controllingFieldValue>
+            <valueName>NR SKIRT</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Carrier tube</controllingFieldValue>
+            <valueName>Single piece</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Carrier tube</controllingFieldValue>
+            <valueName>3 piece</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Normal Elastomount</controllingFieldValue>
+            <controllingFieldValue>Parallel Elastomount</controllingFieldValue>
+            <valueName>Size A</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Normal Elastomount</controllingFieldValue>
+            <controllingFieldValue>Parallel Elastomount</controllingFieldValue>
+            <valueName>Size B</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Normal Elastomount</controllingFieldValue>
+            <controllingFieldValue>Parallel Elastomount</controllingFieldValue>
+            <valueName>Size C</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Normal Elastomount</controllingFieldValue>
+            <controllingFieldValue>Parallel Elastomount</controllingFieldValue>
+            <valueName>Size D</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Normal Elastomount</controllingFieldValue>
+            <controllingFieldValue>Parallel Elastomount</controllingFieldValue>
+            <valueName>Size E</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Spring Tensioner</controllingFieldValue>
+            <valueName>Type A</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Spring Tensioner</controllingFieldValue>
+            <valueName>Type B</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Reversing Adaptar</controllingFieldValue>
+            <valueName>REA2</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Reversing Adaptar</controllingFieldValue>
+            <valueName>REA3</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>VP Frame with End Tube</controllingFieldValue>
+            <valueName>Straight tube</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>VP Frame with End Tube</controllingFieldValue>
+            <valueName>With Offset</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Rubber Block 150x200x25</controllingFieldValue>
+            <controllingFieldValue>Rubber Block 125x150x25</controllingFieldValue>
+            <controllingFieldValue>Rubber Block 125x150x25/15</controllingFieldValue>
+            <controllingFieldValue>Rubber Block 150x200x32/22</controllingFieldValue>
+            <controllingFieldValue>Rubber Block 170x200x20</controllingFieldValue>
+            <controllingFieldValue>Rubber Block 200x200x20</controllingFieldValue>
+            <controllingFieldValue>Rubber Block 205x200x20</controllingFieldValue>
+            <controllingFieldValue>Rubber Block 220x200x20</controllingFieldValue>
+            <controllingFieldValue>Rubber Block 200x90x20</controllingFieldValue>
+            <controllingFieldValue>Rubber Block 500X112X14/20</controllingFieldValue>
+            <controllingFieldValue>Rubber Block 500X170X15/20</controllingFieldValue>
+            <controllingFieldValue>Rubber Block 500X170X15/30</controllingFieldValue>
+            <controllingFieldValue>Rubber Block 150x265x32</controllingFieldValue>
+            <controllingFieldValue>Rubber Block 150x265x25</controllingFieldValue>
+            <controllingFieldValue>Rubber Block 150x300x32</controllingFieldValue>
+            <controllingFieldValue>Rubber Block 150x300x25</controllingFieldValue>
+            <controllingFieldValue>Rubber Block 150x300x20</controllingFieldValue>
+            <valueName>NR Grade</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Rubber Block 150x200x25</controllingFieldValue>
+            <controllingFieldValue>Rubber Block 125x150x25</controllingFieldValue>
+            <controllingFieldValue>Rubber Block 125x150x25/15</controllingFieldValue>
+            <controllingFieldValue>Rubber Block 150x200x32/22</controllingFieldValue>
+            <controllingFieldValue>Rubber Block 170x200x20</controllingFieldValue>
+            <controllingFieldValue>Rubber Block 200x200x20</controllingFieldValue>
+            <controllingFieldValue>Rubber Block 205x200x20</controllingFieldValue>
+            <controllingFieldValue>Rubber Block 220x200x20</controllingFieldValue>
+            <controllingFieldValue>Rubber Block 200x90x20</controllingFieldValue>
+            <controllingFieldValue>Rubber Block 500X112X14/20</controllingFieldValue>
+            <controllingFieldValue>Rubber Block 500X170X15/20</controllingFieldValue>
+            <controllingFieldValue>Rubber Block 500X170X15/30</controllingFieldValue>
+            <controllingFieldValue>Rubber Block 150x265x32</controllingFieldValue>
+            <controllingFieldValue>Rubber Block 150x265x25</controllingFieldValue>
+            <controllingFieldValue>Rubber Block 150x300x32</controllingFieldValue>
+            <controllingFieldValue>Rubber Block 150x300x25</controllingFieldValue>
+            <controllingFieldValue>Rubber Block 150x300x20</controllingFieldValue>
+            <valueName>HR Grade</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Rubber Block 150x200x25</controllingFieldValue>
+            <controllingFieldValue>Rubber Block 125x150x25</controllingFieldValue>
+            <controllingFieldValue>Rubber Block 125x150x25/15</controllingFieldValue>
+            <controllingFieldValue>Rubber Block 150x200x32/22</controllingFieldValue>
+            <controllingFieldValue>Rubber Block 170x200x20</controllingFieldValue>
+            <controllingFieldValue>Rubber Block 200x200x20</controllingFieldValue>
+            <controllingFieldValue>Rubber Block 205x200x20</controllingFieldValue>
+            <controllingFieldValue>Rubber Block 220x200x20</controllingFieldValue>
+            <controllingFieldValue>Rubber Block 200x90x20</controllingFieldValue>
+            <controllingFieldValue>Rubber Block 500X112X14/20</controllingFieldValue>
+            <controllingFieldValue>Rubber Block 500X170X15/20</controllingFieldValue>
+            <controllingFieldValue>Rubber Block 500X170X15/30</controllingFieldValue>
+            <controllingFieldValue>Rubber Block 150x265x32</controllingFieldValue>
+            <controllingFieldValue>Rubber Block 150x265x25</controllingFieldValue>
+            <controllingFieldValue>Rubber Block 150x300x32</controllingFieldValue>
+            <controllingFieldValue>Rubber Block 150x300x25</controllingFieldValue>
+            <controllingFieldValue>Rubber Block 150x300x20</controllingFieldValue>
+            <valueName>SK Grade</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Rubber Block 150x200x25</controllingFieldValue>
+            <controllingFieldValue>Rubber Block 125x150x25</controllingFieldValue>
+            <controllingFieldValue>Rubber Block 125x150x25/15</controllingFieldValue>
+            <controllingFieldValue>Rubber Block 150x200x32/22</controllingFieldValue>
+            <controllingFieldValue>Rubber Block 170x200x20</controllingFieldValue>
+            <controllingFieldValue>Rubber Block 200x200x20</controllingFieldValue>
+            <controllingFieldValue>Rubber Block 205x200x20</controllingFieldValue>
+            <controllingFieldValue>Rubber Block 220x200x20</controllingFieldValue>
+            <controllingFieldValue>Rubber Block 200x90x20</controllingFieldValue>
+            <controllingFieldValue>Rubber Block 500X112X14/20</controllingFieldValue>
+            <controllingFieldValue>Rubber Block 500X170X15/20</controllingFieldValue>
+            <controllingFieldValue>Rubber Block 500X170X15/30</controllingFieldValue>
+            <controllingFieldValue>Rubber Block 150x265x32</controllingFieldValue>
+            <controllingFieldValue>Rubber Block 150x265x25</controllingFieldValue>
+            <controllingFieldValue>Rubber Block 150x300x32</controllingFieldValue>
+            <controllingFieldValue>Rubber Block 150x300x25</controllingFieldValue>
+            <controllingFieldValue>Rubber Block 150x300x20</controllingFieldValue>
+            <valueName>SHT Grade</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Rubber Block 150x200x25</controllingFieldValue>
+            <controllingFieldValue>Rubber Block 125x150x25</controllingFieldValue>
+            <controllingFieldValue>Rubber Block 125x150x25/15</controllingFieldValue>
+            <controllingFieldValue>Rubber Block 150x200x32/22</controllingFieldValue>
+            <controllingFieldValue>Rubber Block 170x200x20</controllingFieldValue>
+            <controllingFieldValue>Rubber Block 200x200x20</controllingFieldValue>
+            <controllingFieldValue>Rubber Block 205x200x20</controllingFieldValue>
+            <controllingFieldValue>Rubber Block 220x200x20</controllingFieldValue>
+            <controllingFieldValue>Rubber Block 200x90x20</controllingFieldValue>
+            <controllingFieldValue>Rubber Block 500X112X14/20</controllingFieldValue>
+            <controllingFieldValue>Rubber Block 500X170X15/20</controllingFieldValue>
+            <controllingFieldValue>Rubber Block 500X170X15/30</controllingFieldValue>
+            <controllingFieldValue>Rubber Block 150x265x32</controllingFieldValue>
+            <controllingFieldValue>Rubber Block 150x265x25</controllingFieldValue>
+            <controllingFieldValue>Rubber Block 150x300x32</controllingFieldValue>
+            <controllingFieldValue>Rubber Block 150x300x25</controllingFieldValue>
+            <controllingFieldValue>Rubber Block 150x300x20</controllingFieldValue>
+            <valueName>FRAS Grade</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Rubber Block 150x200x25</controllingFieldValue>
+            <controllingFieldValue>Rubber Block 125x150x25</controllingFieldValue>
+            <controllingFieldValue>Rubber Block 125x150x25/15</controllingFieldValue>
+            <controllingFieldValue>Rubber Block 150x200x32/22</controllingFieldValue>
+            <controllingFieldValue>Rubber Block 170x200x20</controllingFieldValue>
+            <controllingFieldValue>Rubber Block 200x200x20</controllingFieldValue>
+            <controllingFieldValue>Rubber Block 205x200x20</controllingFieldValue>
+            <controllingFieldValue>Rubber Block 220x200x20</controllingFieldValue>
+            <controllingFieldValue>Rubber Block 200x90x20</controllingFieldValue>
+            <controllingFieldValue>Rubber Block 500X112X14/20</controllingFieldValue>
+            <controllingFieldValue>Rubber Block 500X170X15/20</controllingFieldValue>
+            <controllingFieldValue>Rubber Block 500X170X15/30</controllingFieldValue>
+            <controllingFieldValue>Rubber Block 150x265x32</controllingFieldValue>
+            <controllingFieldValue>Rubber Block 150x265x25</controllingFieldValue>
+            <controllingFieldValue>Rubber Block 150x300x32</controllingFieldValue>
+            <controllingFieldValue>Rubber Block 150x300x25</controllingFieldValue>
+            <controllingFieldValue>Rubber Block 150x300x20</controllingFieldValue>
+            <valueName>OGR Grade</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Serrated Clamp with HW</controllingFieldValue>
+            <controllingFieldValue>BACKING PLATE</controllingFieldValue>
+            <controllingFieldValue>Clamp with Stud</controllingFieldValue>
+            <valueName>Mild Steel</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Serrated Clamp with HW</controllingFieldValue>
+            <controllingFieldValue>BACKING PLATE</controllingFieldValue>
+            <controllingFieldValue>Clamp with Stud</controllingFieldValue>
+            <valueName>SS Steel</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Serrated Clamp with HW</controllingFieldValue>
+            <controllingFieldValue>BACKING PLATE</controllingFieldValue>
+            <controllingFieldValue>Clamp with Stud</controllingFieldValue>
+            <valueName>Powder coated</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Serrated Clamp with HW</controllingFieldValue>
+            <controllingFieldValue>BACKING PLATE</controllingFieldValue>
+            <controllingFieldValue>Clamp with Stud</controllingFieldValue>
+            <valueName>Electroplating ( upto 8 DFT)</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Serrated Clamp with HW</controllingFieldValue>
+            <controllingFieldValue>BACKING PLATE</controllingFieldValue>
+            <controllingFieldValue>Clamp with Stud</controllingFieldValue>
+            <valueName>Paint</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>BACKING PLATE</controllingFieldValue>
+            <valueName>2mm</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>BACKING PLATE</controllingFieldValue>
+            <valueName>3mm</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>BACKING PLATE</controllingFieldValue>
+            <valueName>5mm</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>BACKING PLATE</controllingFieldValue>
+            <valueName>450 mm</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>BACKING PLATE</controllingFieldValue>
+            <valueName>600 mm</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>BACKING PLATE</controllingFieldValue>
+            <valueName>750 mm</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>BACKING PLATE</controllingFieldValue>
+            <valueName>900 mm</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>BACKING PLATE</controllingFieldValue>
+            <valueName>1050 mm</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>BACKING PLATE</controllingFieldValue>
+            <valueName>1200 mm</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>BACKING PLATE</controllingFieldValue>
+            <valueName>1350 mm</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>BACKING PLATE</controllingFieldValue>
+            <valueName>1500 mm</valueName>
+        </valueSettings>
+    </valueSet>
+</CustomField>

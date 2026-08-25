@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Backing_Plate_Thickness__c</fullName>
+    <label>Backing Plate Thickness</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <controllingField>Product_Sub_Type__c</controllingField>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>2mm</fullName>
+                <default>false</default>
+                <label>2mm</label>
+            </value>
+            <value>
+                <fullName>3mm</fullName>
+                <default>false</default>
+                <label>3mm</label>
+            </value>
+            <value>
+                <fullName>5mm</fullName>
+                <default>false</default>
+                <label>5mm</label>
+            </value>
+            <value>
+                <fullName>7.5mm</fullName>
+                <default>false</default>
+                <label>7.5mm</label>
+            </value>
+            <value>
+                <fullName>10mm</fullName>
+                <default>false</default>
+                <label>10mm</label>
+            </value>
+        </valueSetDefinition>
+        <valueSettings>
+            <controllingFieldValue>Spill ex Model 150x200x25</controllingFieldValue>
+            <controllingFieldValue>Baby Spillex Model 125x150x25</controllingFieldValue>
+            <controllingFieldValue>Baby Spillex Model 125x150x25/15</controllingFieldValue>
+            <controllingFieldValue>Spillex Model 150x200x32/22</controllingFieldValue>
+            <controllingFieldValue>Eco Flip Model 170x200x20</controllingFieldValue>
+            <controllingFieldValue>Eco Flip Model 200x200x20</controllingFieldValue>
+            <controllingFieldValue>Eco Flip Model 220x200x20</controllingFieldValue>
+            <controllingFieldValue>Tru Seal Model 205x200x20</controllingFieldValue>
+            <controllingFieldValue>Easy Seal Model 200x90x20</controllingFieldValue>
+            <controllingFieldValue>Spillex Model 150x200x32</controllingFieldValue>
+            <controllingFieldValue>Spillex Model 150x265x32</controllingFieldValue>
+            <controllingFieldValue>Spillex Model 150x265x25</controllingFieldValue>
+            <controllingFieldValue>Spillex Model 150x265x20</controllingFieldValue>
+            <valueName>2mm</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Spill ex Model 150x200x25</controllingFieldValue>
+            <controllingFieldValue>Baby Spillex Model 125x150x25</controllingFieldValue>
+            <controllingFieldValue>Baby Spillex Model 125x150x25/15</controllingFieldValue>
+            <controllingFieldValue>Spillex Model 150x200x32/22</controllingFieldValue>
+            <controllingFieldValue>Eco Flip Model 170x200x20</controllingFieldValue>
+            <controllingFieldValue>Eco Flip Model 200x200x20</controllingFieldValue>
+            <controllingFieldValue>Eco Flip Model 220x200x20</controllingFieldValue>
+            <controllingFieldValue>Tru Seal Model 205x200x20</controllingFieldValue>
+            <controllingFieldValue>Easy Seal Model 200x90x20</controllingFieldValue>
+            <controllingFieldValue>Single Wing Seal Model 500x112X14/20</controllingFieldValue>
+            <controllingFieldValue>Single Wing Seal Model 500x170X15/20</controllingFieldValue>
+            <controllingFieldValue>Single Wing Seal Model 500x170X15/30</controllingFieldValue>
+            <controllingFieldValue>Spillex Model 150x200x32</controllingFieldValue>
+            <controllingFieldValue>Spillex Model 150x265x32</controllingFieldValue>
+            <controllingFieldValue>Spillex Model 150x265x25</controllingFieldValue>
+            <controllingFieldValue>Spillex Model 150x265x20</controllingFieldValue>
+            <controllingFieldValue>Spillex Model 150x300x32</controllingFieldValue>
+            <controllingFieldValue>Spillex Model 150x300x25</controllingFieldValue>
+            <controllingFieldValue>Spillex Model 150x300x20</controllingFieldValue>
+            <valueName>3mm</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Spill ex Model 150x200x25</controllingFieldValue>
+            <controllingFieldValue>Baby Spillex Model 125x150x25</controllingFieldValue>
+            <controllingFieldValue>Baby Spillex Model 125x150x25/15</controllingFieldValue>
+            <controllingFieldValue>Spillex Model 150x200x32/22</controllingFieldValue>
+            <controllingFieldValue>Single Wing Seal Model 500x112X14/20</controllingFieldValue>
+            <controllingFieldValue>Single Wing Seal Model 500x170X15/20</controllingFieldValue>
+            <controllingFieldValue>Single Wing Seal Model 500x170X15/30</controllingFieldValue>
+            <controllingFieldValue>Spillex Model 150x200x32</controllingFieldValue>
+            <controllingFieldValue>Spillex Model 150x265x32</controllingFieldValue>
+            <controllingFieldValue>Spillex Model 150x265x25</controllingFieldValue>
+            <controllingFieldValue>Spillex Model 150x265x20</controllingFieldValue>
+            <controllingFieldValue>Spillex Model 150x300x32</controllingFieldValue>
+            <controllingFieldValue>Spillex Model 150x300x25</controllingFieldValue>
+            <controllingFieldValue>Spillex Model 150x300x20</controllingFieldValue>
+            <valueName>5mm</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Single Wing Seal Model 500x112X14/20</controllingFieldValue>
+            <controllingFieldValue>Single Wing Seal Model 500x170X15/20</controllingFieldValue>
+            <controllingFieldValue>Single Wing Seal Model 500x170X15/30</controllingFieldValue>
+            <valueName>7.5mm</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Single Wing Seal Model 500x112X14/20</controllingFieldValue>
+            <controllingFieldValue>Single Wing Seal Model 500x170X15/20</controllingFieldValue>
+            <controllingFieldValue>Single Wing Seal Model 500x170X15/30</controllingFieldValue>
+            <valueName>10mm</valueName>
+        </valueSettings>
+    </valueSet>
+</CustomField>

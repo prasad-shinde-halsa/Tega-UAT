@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Product Type --></label>
+    <name>Product_Type__c</name>
+    <picklistValues>
+        <masterLabel>Belt Tracker Roller</masterLabel>
+        <translation><!-- Belt Tracker Roller --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>CeraDisc</masterLabel>
+        <translation><!-- CeraDisc --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Ceramic Pulley Lagging</masterLabel>
+        <translation><!-- Ceramic Pulley Lagging --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Hosch Scraper</masterLabel>
+        <translation><!-- Hosch Scraper --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Impact Bed System</masterLabel>
+        <translation><!-- Impact Bed System --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Skirt Sealing System</masterLabel>
+        <translation><!-- Skirt Sealing System --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

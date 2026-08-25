@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Type of Skirt --></label>
+    <name>Type_of_Skirt__c</name>
+    <picklistValues>
+        <masterLabel>NA</masterLabel>
+        <translation><!-- NA --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Polypropelene</masterLabel>
+        <translation><!-- Polypropelene --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Stainless Steel</masterLabel>
+        <translation><!-- Stainless Steel --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

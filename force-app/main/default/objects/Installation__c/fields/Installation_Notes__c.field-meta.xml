@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Installation_Notes__c</fullName>
+    <label>Installation Notes (Hosch)</label>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Back plate modification of the discharge chute done</fullName>
+                <default>false</default>
+                <label>Back plate modification of the discharge chute done</label>
+            </value>
+            <value>
+                <fullName>Belt flapping present</fullName>
+                <default>false</default>
+                <label>Belt flapping present</label>
+            </value>
+            <value>
+                <fullName>Minor modification done in the scraper during installation</fullName>
+                <default>false</default>
+                <label>Minor modification done in the scraper during installation</label>
+            </value>
+            <value>
+                <fullName>Minor modification required of the scraper-to be done</fullName>
+                <default>false</default>
+                <label>Minor modification required of the scraper-to be done</label>
+            </value>
+            <value>
+                <fullName>Damaged pulley lagging-head/Snub pulley</fullName>
+                <default>false</default>
+                <label>Damaged pulley lagging-head/Snub pulley</label>
+            </value>
+            <value>
+                <fullName>Excessive belt sway</fullName>
+                <default>false</default>
+                <label>Excessive belt sway</label>
+            </value>
+            <value>
+                <fullName>Belt condition is not good</fullName>
+                <default>false</default>
+                <label>Belt condition is not good</label>
+            </value>
+            <value>
+                <fullName>Eccentric movement of pulley (Head/Snub)</fullName>
+                <default>false</default>
+                <label>Eccentric movement of pulley (Head/Snub)</label>
+            </value>
+            <value>
+                <fullName>Damaged belt joint</fullName>
+                <default>false</default>
+                <label>Damaged belt joint</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

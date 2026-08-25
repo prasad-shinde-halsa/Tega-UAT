@@ -1,0 +1,1048 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Items__c</fullName>
+    <label>Items</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <controllingField>Product_Sub_Type__c</controllingField>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>B9S Blade-300 MM</fullName>
+                <default>false</default>
+                <label>B9S Blade-300 MM</label>
+            </value>
+            <value>
+                <fullName>B9S Blade-150MM</fullName>
+                <default>false</default>
+                <label>B9S Blade-150MM</label>
+            </value>
+            <value>
+                <fullName>Carrier tube</fullName>
+                <default>false</default>
+                <label>Carrier tube</label>
+            </value>
+            <value>
+                <fullName>Normal Elastomount</fullName>
+                <default>false</default>
+                <label>Normal Elastomount</label>
+            </value>
+            <value>
+                <fullName>Parallel Elastomount</fullName>
+                <default>false</default>
+                <label>Parallel Elastomount</label>
+            </value>
+            <value>
+                <fullName>B9SV Blade-200 MM</fullName>
+                <default>false</default>
+                <label>B9SV Blade-200 MM</label>
+            </value>
+            <value>
+                <fullName>B9SV Blade-100 MM</fullName>
+                <default>false</default>
+                <label>B9SV Blade-100 MM</label>
+            </value>
+            <value>
+                <fullName>HDPU-L Blade</fullName>
+                <default>false</default>
+                <label>HDPU-L Blade</label>
+            </value>
+            <value>
+                <fullName>Spring Tensioner</fullName>
+                <default>false</default>
+                <label>Spring Tensioner</label>
+            </value>
+            <value>
+                <fullName>HDPU-S Blade</fullName>
+                <default>false</default>
+                <label>HDPU-S Blade</label>
+            </value>
+            <value>
+                <fullName>Blade HD01-X3-12N</fullName>
+                <default>false</default>
+                <label>Blade HD01-X3-12N</label>
+            </value>
+            <value>
+                <fullName>Blade HD01-X3-12S</fullName>
+                <default>false</default>
+                <label>Blade HD01-X3-12S</label>
+            </value>
+            <value>
+                <fullName>Blade HD01-X3-20N</fullName>
+                <default>false</default>
+                <label>Blade HD01-X3-20N</label>
+            </value>
+            <value>
+                <fullName>Blade HD01-X3-20S</fullName>
+                <default>false</default>
+                <label>Blade HD01-X3-20S</label>
+            </value>
+            <value>
+                <fullName>Blade HD02-X3-12N</fullName>
+                <default>false</default>
+                <label>Blade HD02-X3-12N</label>
+            </value>
+            <value>
+                <fullName>Blade HD02-X3-12S</fullName>
+                <default>false</default>
+                <label>Blade HD02-X3-12S</label>
+            </value>
+            <value>
+                <fullName>Blade HD02-X3-20N</fullName>
+                <default>false</default>
+                <label>Blade HD02-X3-20N</label>
+            </value>
+            <value>
+                <fullName>Blade HD02-X3-20S</fullName>
+                <default>false</default>
+                <label>Blade HD02-X3-20S</label>
+            </value>
+            <value>
+                <fullName>X3-120 Blade with 10 mm tip</fullName>
+                <default>false</default>
+                <label>X3-120 Blade with 10 mm tip</label>
+            </value>
+            <value>
+                <fullName>X3-240 Blade with 10 mm tip</fullName>
+                <default>false</default>
+                <label>X3-240 Blade with 10 mm tip</label>
+            </value>
+            <value>
+                <fullName>Z-120 Blade with 10 mm tip</fullName>
+                <default>false</default>
+                <label>Z-120 Blade with 10 mm tip</label>
+            </value>
+            <value>
+                <fullName>Z-240 Blade with 10 mm tip</fullName>
+                <default>false</default>
+                <label>Z-240 Blade with 10 mm tip</label>
+            </value>
+            <value>
+                <fullName>V-120 Blade with 10 mm tip</fullName>
+                <default>false</default>
+                <label>V-120 Blade with 10 mm tip</label>
+            </value>
+            <value>
+                <fullName>V-240 Blade with 10 mm tip</fullName>
+                <default>false</default>
+                <label>V-240 Blade with 10 mm tip</label>
+            </value>
+            <value>
+                <fullName>X3-120 Blade with 20 mm tip</fullName>
+                <default>false</default>
+                <label>X3-120 Blade with 20 mm tip</label>
+            </value>
+            <value>
+                <fullName>X3-240 Blade with 20 mm tip</fullName>
+                <default>false</default>
+                <label>X3-240 Blade with 20 mm tip</label>
+            </value>
+            <value>
+                <fullName>Z-120 Blade with 20 mm tip</fullName>
+                <default>false</default>
+                <label>Z-120 Blade with 20 mm tip</label>
+            </value>
+            <value>
+                <fullName>Z-240 Blade with 20 mm tip</fullName>
+                <default>false</default>
+                <label>Z-240 Blade with 20 mm tip</label>
+            </value>
+            <value>
+                <fullName>V-120 Blade with 20 mm tip</fullName>
+                <default>false</default>
+                <label>V-120 Blade with 20 mm tip</label>
+            </value>
+            <value>
+                <fullName>V-240 Blade with 20 mm tip</fullName>
+                <default>false</default>
+                <label>V-240 Blade with 20 mm tip</label>
+            </value>
+            <value>
+                <fullName>Element LV</fullName>
+                <default>false</default>
+                <label>Element LV</label>
+            </value>
+            <value>
+                <fullName>Element SV</fullName>
+                <default>false</default>
+                <label>Element SV</label>
+            </value>
+            <value>
+                <fullName>Reversing Adaptar</fullName>
+                <default>false</default>
+                <label>Reversing Adaptar</label>
+            </value>
+            <value>
+                <fullName>X3-12N Blade</fullName>
+                <default>false</default>
+                <label>X3-12N Blade</label>
+            </value>
+            <value>
+                <fullName>X3-20N Blade</fullName>
+                <default>false</default>
+                <label>X3-20N Blade</label>
+            </value>
+            <value>
+                <fullName>X3-12S Blade</fullName>
+                <default>false</default>
+                <label>X3-12S Blade</label>
+            </value>
+            <value>
+                <fullName>X3-20S Blade</fullName>
+                <default>false</default>
+                <label>X3-20S Blade</label>
+            </value>
+            <value>
+                <fullName>VP Frame with End Tube</fullName>
+                <default>false</default>
+                <label>VP Frame with End Tube</label>
+            </value>
+            <value>
+                <fullName>PU-200</fullName>
+                <default>false</default>
+                <label>PU-200</label>
+            </value>
+            <value>
+                <fullName>PU-100</fullName>
+                <default>false</default>
+                <label>PU-100</label>
+            </value>
+            <value>
+                <fullName>Rubber Block 150x200x25</fullName>
+                <default>false</default>
+                <label>Rubber Block 150x200x25</label>
+            </value>
+            <value>
+                <fullName>Serrated Clamp with HW</fullName>
+                <default>false</default>
+                <label>Serrated Clamp with HW</label>
+            </value>
+            <value>
+                <fullName>Rubber Block 125x150x25</fullName>
+                <default>false</default>
+                <label>Rubber Block 125x150x25</label>
+            </value>
+            <value>
+                <fullName>BACKING PLATE</fullName>
+                <default>false</default>
+                <label>BACKING PLATE</label>
+            </value>
+            <value>
+                <fullName>Rubber Block 125x150x25/15</fullName>
+                <default>false</default>
+                <label>Rubber Block 125x150x25/15</label>
+            </value>
+            <value>
+                <fullName>Rubber Block 150x200x32/22</fullName>
+                <default>false</default>
+                <label>Rubber Block 150x200x32/22</label>
+            </value>
+            <value>
+                <fullName>Rubber Block 170x200x20</fullName>
+                <default>false</default>
+                <label>Rubber Block 170x200x20</label>
+            </value>
+            <value>
+                <fullName>Rubber Block 200x200x20</fullName>
+                <default>false</default>
+                <label>Rubber Block 200x200x20</label>
+            </value>
+            <value>
+                <fullName>Rubber Block 205x200x20</fullName>
+                <default>false</default>
+                <label>Rubber Block 205x200x20</label>
+            </value>
+            <value>
+                <fullName>Rubber Block 220x200x20</fullName>
+                <default>false</default>
+                <label>Rubber Block 220x200x20</label>
+            </value>
+            <value>
+                <fullName>Rubber Block 200x90x20</fullName>
+                <default>false</default>
+                <label>Rubber Block 200x90x20</label>
+            </value>
+            <value>
+                <fullName>Rubber Block 500X112X14/20</fullName>
+                <default>false</default>
+                <label>Rubber Block 500X112X14/20</label>
+            </value>
+            <value>
+                <fullName>Clamp with Stud</fullName>
+                <default>false</default>
+                <label>Clamp with Stud</label>
+            </value>
+            <value>
+                <fullName>Rubber Block 500X170X15/20</fullName>
+                <default>false</default>
+                <label>Rubber Block 500X170X15/20</label>
+            </value>
+            <value>
+                <fullName>Rubber Block 500X170X15/30</fullName>
+                <default>false</default>
+                <label>Rubber Block 500X170X15/30</label>
+            </value>
+            <value>
+                <fullName>Rubber Block 150x265x32</fullName>
+                <default>false</default>
+                <label>Rubber Block 150x265x32</label>
+            </value>
+            <value>
+                <fullName>Rubber Block 150x265x25</fullName>
+                <default>false</default>
+                <label>Rubber Block 150x265x25</label>
+            </value>
+            <value>
+                <fullName>Rubber Block 150x300x32</fullName>
+                <default>false</default>
+                <label>Rubber Block 150x300x32</label>
+            </value>
+            <value>
+                <fullName>Rubber Block 150x300x25</fullName>
+                <default>false</default>
+                <label>Rubber Block 150x300x25</label>
+            </value>
+            <value>
+                <fullName>Rubber Block 150x300x20</fullName>
+                <default>false</default>
+                <label>Rubber Block 150x300x20</label>
+            </value>
+            <value>
+                <fullName>IPAD H TYPE 75X100X1300</fullName>
+                <default>false</default>
+                <label>IPAD H TYPE 75X100X1300</label>
+            </value>
+            <value>
+                <fullName>CLAMP</fullName>
+                <default>false</default>
+                <label>CLAMP</label>
+            </value>
+            <value>
+                <fullName>HARWARE</fullName>
+                <default>false</default>
+                <label>HARWARE</label>
+            </value>
+            <value>
+                <fullName>IPAD H TYPE 55X100X1300</fullName>
+                <default>false</default>
+                <label>IPAD H TYPE 55X100X1300</label>
+            </value>
+            <value>
+                <fullName>I Pad H Type 75x100x1500</fullName>
+                <default>false</default>
+                <label>I Pad H Type 75x100x1500</label>
+            </value>
+            <value>
+                <fullName>I Pad H Type 55x100x1500</fullName>
+                <default>false</default>
+                <label>I Pad H Type 55x100x1500</label>
+            </value>
+            <value>
+                <fullName>I Pad T Type 75x100x1400</fullName>
+                <default>false</default>
+                <label>I Pad T Type 75x100x1400</label>
+            </value>
+            <value>
+                <fullName>I Pad T Type 75x100x1220</fullName>
+                <default>false</default>
+                <label>I Pad T Type 75x100x1220</label>
+            </value>
+            <value>
+                <fullName>I Pad T Type 75x100x1560</fullName>
+                <default>false</default>
+                <label>I Pad T Type 75x100x1560</label>
+            </value>
+            <value>
+                <fullName>I Pad T Type 55x100x1560</fullName>
+                <default>false</default>
+                <label>I Pad T Type 55x100x1560</label>
+            </value>
+            <value>
+                <fullName>I Pad T Type 100x100x1220</fullName>
+                <default>false</default>
+                <label>I Pad T Type 100x100x1220</label>
+            </value>
+            <value>
+                <fullName>I Pad T Type 100x100x1560</fullName>
+                <default>false</default>
+                <label>I Pad T Type 100x100x1560</label>
+            </value>
+            <value>
+                <fullName>I Pad P Type 75x100x1300</fullName>
+                <default>false</default>
+                <label>I Pad P Type 75x100x1300</label>
+            </value>
+            <value>
+                <fullName>I Pad P Type 55x100x1300</fullName>
+                <default>false</default>
+                <label>I Pad P Type 55x100x1300</label>
+            </value>
+            <value>
+                <fullName>I Pad P Type 75x100x1500</fullName>
+                <default>false</default>
+                <label>I Pad P Type 75x100x1500</label>
+            </value>
+            <value>
+                <fullName>I Pad R Type 75x100x1220</fullName>
+                <default>false</default>
+                <label>I Pad R Type 75x100x1220</label>
+            </value>
+            <value>
+                <fullName>I Pad R Type 75x100x1560</fullName>
+                <default>false</default>
+                <label>I Pad R Type 75x100x1560</label>
+            </value>
+            <value>
+                <fullName>I Pad R Type 55x100x1220</fullName>
+                <default>false</default>
+                <label>I Pad R Type 55x100x1220</label>
+            </value>
+            <value>
+                <fullName>I Pad R Type 55x100x1560</fullName>
+                <default>false</default>
+                <label>I Pad R Type 55x100x1560</label>
+            </value>
+            <value>
+                <fullName>Frame</fullName>
+                <default>false</default>
+                <label>Frame</label>
+            </value>
+            <value>
+                <fullName>IMPACT BED WITH I PAD H Type 55x100x1300</fullName>
+                <default>false</default>
+                <label>IMPACT BED WITH I PAD H Type 55x100x1300</label>
+            </value>
+            <value>
+                <fullName>IMPACT BED WITH I PAD H Type 75x100x1500</fullName>
+                <default>false</default>
+                <label>IMPACT BED WITH I PAD H Type 75x100x1500</label>
+            </value>
+            <value>
+                <fullName>IMPACT BED WITH I PAD H Type 55x100x1500</fullName>
+                <default>false</default>
+                <label>IMPACT BED WITH I PAD H Type 55x100x1500</label>
+            </value>
+            <value>
+                <fullName>IMPACT BED WITH I PAD T Type 75x100x1400</fullName>
+                <default>false</default>
+                <label>IMPACT BED WITH I PAD T Type 75x100x1400</label>
+            </value>
+            <value>
+                <fullName>IMPACT BED WITH I PAD T Type 75x100x1220</fullName>
+                <default>false</default>
+                <label>IMPACT BED WITH I PAD T Type 75x100x1220</label>
+            </value>
+            <value>
+                <fullName>IMPACT BED WITH I PAD T Type 75x100x1560</fullName>
+                <default>false</default>
+                <label>IMPACT BED WITH I PAD T Type 75x100x1560</label>
+            </value>
+            <value>
+                <fullName>IMPACT BED WITH I PAD T Type 55x100x1220</fullName>
+                <default>false</default>
+                <label>IMPACT BED WITH I PAD T Type 55x100x1220</label>
+            </value>
+            <value>
+                <fullName>IMPACT BED WITH I PAD T Type 55x100x1560</fullName>
+                <default>false</default>
+                <label>IMPACT BED WITH I PAD T Type 55x100x1560</label>
+            </value>
+            <value>
+                <fullName>IMPACT BED WITH I PAD T Type 100x100x1220</fullName>
+                <default>false</default>
+                <label>IMPACT BED WITH I PAD T Type 100x100x1220</label>
+            </value>
+            <value>
+                <fullName>IMPACT BED WITH I PAD T Type 100x100x1560</fullName>
+                <default>false</default>
+                <label>IMPACT BED WITH I PAD T Type 100x100x1560</label>
+            </value>
+            <value>
+                <fullName>IMPACT BED WITH I PAD P Type 75x100x1300</fullName>
+                <default>false</default>
+                <label>IMPACT BED WITH I PAD P Type 75x100x1300</label>
+            </value>
+            <value>
+                <fullName>IMPACT BED WITH I PAD P Type 55x100x1300</fullName>
+                <default>false</default>
+                <label>IMPACT BED WITH I PAD P Type 55x100x1300</label>
+            </value>
+            <value>
+                <fullName>IMPACT BED WITH I PAD P Type 75x100x1500</fullName>
+                <default>false</default>
+                <label>IMPACT BED WITH I PAD P Type 75x100x1500</label>
+            </value>
+            <value>
+                <fullName>IMPACT BED WITH I PAD R Type 75x100x1220</fullName>
+                <default>false</default>
+                <label>IMPACT BED WITH I PAD R Type 75x100x1220</label>
+            </value>
+            <value>
+                <fullName>IMPACT BED WITH I PAD R Type 55x100x1560</fullName>
+                <default>false</default>
+                <label>IMPACT BED WITH I PAD R Type 55x100x1560</label>
+            </value>
+            <value>
+                <fullName>NO SPARE FOR THIS MODEL</fullName>
+                <default>false</default>
+                <label>NO SPARE FOR THIS MODEL</label>
+            </value>
+            <value>
+                <fullName>WING ROLLER TTT</fullName>
+                <default>false</default>
+                <label>WING ROLLER TTT</label>
+            </value>
+            <value>
+                <fullName>Central Roller TTDR</fullName>
+                <default>false</default>
+                <label>Central Roller TTDR</label>
+            </value>
+            <value>
+                <fullName>Central Roller TTVR</fullName>
+                <default>false</default>
+                <label>Central Roller TTVR</label>
+            </value>
+            <value>
+                <fullName>Central Roller CerntraX SO  series</fullName>
+                <default>false</default>
+                <label>Central Roller CerntraX SO  series</label>
+            </value>
+            <value>
+                <fullName>Conical Roller CerntraX SO  series</fullName>
+                <default>false</default>
+                <label>Conical Roller CerntraX SO  series</label>
+            </value>
+            <value>
+                <fullName>Bottom Bearing CerntraX SO  series</fullName>
+                <default>false</default>
+                <label>Bottom Bearing CerntraX SO  series</label>
+            </value>
+            <value>
+                <fullName>Central Roller CentraX S series</fullName>
+                <default>false</default>
+                <label>Central Roller CentraX S series</label>
+            </value>
+            <value>
+                <fullName>Conical Roller CentraX S series</fullName>
+                <default>false</default>
+                <label>Conical Roller CentraX S series</label>
+            </value>
+            <value>
+                <fullName>Bottom Bearing CentraX S series</fullName>
+                <default>false</default>
+                <label>Bottom Bearing CentraX S series</label>
+            </value>
+            <value>
+                <fullName>Central Roller CentraX SK series</fullName>
+                <default>false</default>
+                <label>Central Roller CentraX SK series</label>
+            </value>
+            <value>
+                <fullName>Conical Roller CentraX SK series</fullName>
+                <default>false</default>
+                <label>Conical Roller CentraX SK series</label>
+            </value>
+            <value>
+                <fullName>Bottom Bearing CentraX SK series</fullName>
+                <default>false</default>
+                <label>Bottom Bearing CentraX SK series</label>
+            </value>
+            <value>
+                <fullName>Central Roller CentraX SKO series</fullName>
+                <default>false</default>
+                <label>Central Roller CentraX SKO series</label>
+            </value>
+            <value>
+                <fullName>Conical Roller CentraX SKO series</fullName>
+                <default>false</default>
+                <label>Conical Roller CentraX SKO series</label>
+            </value>
+            <value>
+                <fullName>Bottom Bearing CentraX SKO series</fullName>
+                <default>false</default>
+                <label>Bottom Bearing CentraX SKO series</label>
+            </value>
+            <value>
+                <fullName>Central Roller CertraX SO-VR</fullName>
+                <default>false</default>
+                <label>Central Roller CertraX SO-VR</label>
+            </value>
+            <value>
+                <fullName>Conical Roller CertraX SO-VR</fullName>
+                <default>false</default>
+                <label>Conical Roller CertraX SO-VR</label>
+            </value>
+            <value>
+                <fullName>Bottom Bearing CertraX SO-VR</fullName>
+                <default>false</default>
+                <label>Bottom Bearing CertraX SO-VR</label>
+            </value>
+            <value>
+                <fullName>Central Roller CertraX SKO-VR</fullName>
+                <default>false</default>
+                <label>Central Roller CertraX SKO-VR</label>
+            </value>
+            <value>
+                <fullName>Conical Roller CertraX SKO-VR</fullName>
+                <default>false</default>
+                <label>Conical Roller CertraX SKO-VR</label>
+            </value>
+            <value>
+                <fullName>Bottom Bearing CertraX SKO-VR</fullName>
+                <default>false</default>
+                <label>Bottom Bearing CertraX SKO-VR</label>
+            </value>
+            <value>
+                <fullName>IPAD H TYPE 55X100X1300</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>IPAD H TYPE 55X100X1300</label>
+            </value>
+            <value>
+                <fullName>IPAD H TYPE 75X100X1300</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>IPAD H TYPE 75X100X1300</label>
+            </value>
+        </valueSetDefinition>
+        <valueSettings>
+            <controllingFieldValue>Primary Scraper ( B9S)</controllingFieldValue>
+            <valueName>B9S Blade-300 MM</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Primary Scraper ( B9S)</controllingFieldValue>
+            <valueName>B9S Blade-150MM</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Primary Scraper ( B9S)</controllingFieldValue>
+            <controllingFieldValue>Primary Scraper ( B9SV)</controllingFieldValue>
+            <controllingFieldValue>Primary Scraper ( B9SVT)</controllingFieldValue>
+            <controllingFieldValue>Primary Scraper (HDPU-L)</controllingFieldValue>
+            <controllingFieldValue>Primary Scraper (HDPU-S)</controllingFieldValue>
+            <controllingFieldValue>Primary Scraper ( HD Series)</controllingFieldValue>
+            <controllingFieldValue>Secondary Scraper ( B6 Series with Single EM)</controllingFieldValue>
+            <controllingFieldValue>Secondary Scraper ( B6 Series with Parallel EM)</controllingFieldValue>
+            <controllingFieldValue>Secondary Scraper ( B6 Series with reversing adaptar and Parallel EM)</controllingFieldValue>
+            <controllingFieldValue>C Series Scraper  C1V</controllingFieldValue>
+            <controllingFieldValue>C Series Scraper  C2</controllingFieldValue>
+            <controllingFieldValue>C Series Scraper  C3</controllingFieldValue>
+            <controllingFieldValue>C Series Scraper  CT</controllingFieldValue>
+            <valueName>Carrier tube</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Primary Scraper ( B9S)</controllingFieldValue>
+            <controllingFieldValue>Primary Scraper ( B9SV)</controllingFieldValue>
+            <controllingFieldValue>Primary Scraper ( B9SVT)</controllingFieldValue>
+            <controllingFieldValue>Secondary Scraper ( B6 Series with Single EM)</controllingFieldValue>
+            <controllingFieldValue>Internal Scraper (VP)</controllingFieldValue>
+            <controllingFieldValue>Internal Scraper (DP)</controllingFieldValue>
+            <valueName>Normal Elastomount</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Primary Scraper ( B9S)</controllingFieldValue>
+            <controllingFieldValue>Primary Scraper ( B9SV)</controllingFieldValue>
+            <controllingFieldValue>Primary Scraper ( B9SVT)</controllingFieldValue>
+            <controllingFieldValue>Secondary Scraper ( B6 Series with Parallel EM)</controllingFieldValue>
+            <controllingFieldValue>Secondary Scraper ( B6 Series with reversing adaptar and Parallel EM)</controllingFieldValue>
+            <controllingFieldValue>C Series Scraper  C1V</controllingFieldValue>
+            <controllingFieldValue>C Series Scraper  C2</controllingFieldValue>
+            <controllingFieldValue>C Series Scraper  C3</controllingFieldValue>
+            <controllingFieldValue>C Series Scraper  CT</controllingFieldValue>
+            <valueName>Parallel Elastomount</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Primary Scraper ( B9SV)</controllingFieldValue>
+            <controllingFieldValue>Primary Scraper ( B9SVT)</controllingFieldValue>
+            <valueName>B9SV Blade-200 MM</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Primary Scraper ( B9SV)</controllingFieldValue>
+            <controllingFieldValue>Primary Scraper ( B9SVT)</controllingFieldValue>
+            <valueName>B9SV Blade-100 MM</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Primary Scraper (HDPU-L)</controllingFieldValue>
+            <controllingFieldValue>Primary Scraper (HDPU-S)</controllingFieldValue>
+            <valueName>HDPU-L Blade</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Primary Scraper (HDPU-L)</controllingFieldValue>
+            <controllingFieldValue>Primary Scraper (HDPU-S)</controllingFieldValue>
+            <controllingFieldValue>Primary Scraper ( HD Series)</controllingFieldValue>
+            <valueName>Spring Tensioner</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Primary Scraper ( HD Series)</controllingFieldValue>
+            <valueName>HDPU-S Blade</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Primary Scraper ( HD Series)</controllingFieldValue>
+            <valueName>Blade HD01-X3-12N</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Primary Scraper ( HD Series)</controllingFieldValue>
+            <valueName>Blade HD01-X3-12S</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Primary Scraper ( HD Series)</controllingFieldValue>
+            <valueName>Blade HD01-X3-20N</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Primary Scraper ( HD Series)</controllingFieldValue>
+            <valueName>Blade HD01-X3-20S</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Primary Scraper ( HD Series)</controllingFieldValue>
+            <valueName>Blade HD02-X3-12N</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Primary Scraper ( HD Series)</controllingFieldValue>
+            <valueName>Blade HD02-X3-12S</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Primary Scraper ( HD Series)</controllingFieldValue>
+            <valueName>Blade HD02-X3-20N</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Primary Scraper ( HD Series)</controllingFieldValue>
+            <valueName>Blade HD02-X3-20S</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Secondary Scraper ( B6 Series with Single EM)</controllingFieldValue>
+            <controllingFieldValue>Secondary Scraper ( B6 Series with Parallel EM)</controllingFieldValue>
+            <controllingFieldValue>Secondary Scraper ( B6 Series with reversing adaptar and Parallel EM)</controllingFieldValue>
+            <valueName>X3-120 Blade with 10 mm tip</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Secondary Scraper ( B6 Series with Single EM)</controllingFieldValue>
+            <controllingFieldValue>Secondary Scraper ( B6 Series with Parallel EM)</controllingFieldValue>
+            <controllingFieldValue>Secondary Scraper ( B6 Series with reversing adaptar and Parallel EM)</controllingFieldValue>
+            <valueName>X3-240 Blade with 10 mm tip</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Secondary Scraper ( B6 Series with Single EM)</controllingFieldValue>
+            <controllingFieldValue>Secondary Scraper ( B6 Series with Parallel EM)</controllingFieldValue>
+            <controllingFieldValue>Secondary Scraper ( B6 Series with reversing adaptar and Parallel EM)</controllingFieldValue>
+            <valueName>Z-120 Blade with 10 mm tip</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Secondary Scraper ( B6 Series with Single EM)</controllingFieldValue>
+            <controllingFieldValue>Secondary Scraper ( B6 Series with Parallel EM)</controllingFieldValue>
+            <controllingFieldValue>Secondary Scraper ( B6 Series with reversing adaptar and Parallel EM)</controllingFieldValue>
+            <valueName>Z-240 Blade with 10 mm tip</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Secondary Scraper ( B6 Series with Single EM)</controllingFieldValue>
+            <controllingFieldValue>Secondary Scraper ( B6 Series with Parallel EM)</controllingFieldValue>
+            <controllingFieldValue>Secondary Scraper ( B6 Series with reversing adaptar and Parallel EM)</controllingFieldValue>
+            <valueName>V-120 Blade with 10 mm tip</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Secondary Scraper ( B6 Series with Single EM)</controllingFieldValue>
+            <controllingFieldValue>Secondary Scraper ( B6 Series with Parallel EM)</controllingFieldValue>
+            <controllingFieldValue>Secondary Scraper ( B6 Series with reversing adaptar and Parallel EM)</controllingFieldValue>
+            <valueName>V-240 Blade with 10 mm tip</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Secondary Scraper ( B6 Series with Single EM)</controllingFieldValue>
+            <controllingFieldValue>Secondary Scraper ( B6 Series with Parallel EM)</controllingFieldValue>
+            <controllingFieldValue>Secondary Scraper ( B6 Series with reversing adaptar and Parallel EM)</controllingFieldValue>
+            <valueName>X3-120 Blade with 20 mm tip</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Secondary Scraper ( B6 Series with Single EM)</controllingFieldValue>
+            <controllingFieldValue>Secondary Scraper ( B6 Series with Parallel EM)</controllingFieldValue>
+            <controllingFieldValue>Secondary Scraper ( B6 Series with reversing adaptar and Parallel EM)</controllingFieldValue>
+            <valueName>X3-240 Blade with 20 mm tip</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Secondary Scraper ( B6 Series with Single EM)</controllingFieldValue>
+            <controllingFieldValue>Secondary Scraper ( B6 Series with Parallel EM)</controllingFieldValue>
+            <controllingFieldValue>Secondary Scraper ( B6 Series with reversing adaptar and Parallel EM)</controllingFieldValue>
+            <valueName>Z-120 Blade with 20 mm tip</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Secondary Scraper ( B6 Series with Single EM)</controllingFieldValue>
+            <controllingFieldValue>Secondary Scraper ( B6 Series with Parallel EM)</controllingFieldValue>
+            <controllingFieldValue>Secondary Scraper ( B6 Series with reversing adaptar and Parallel EM)</controllingFieldValue>
+            <valueName>Z-240 Blade with 20 mm tip</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Secondary Scraper ( B6 Series with Single EM)</controllingFieldValue>
+            <controllingFieldValue>Secondary Scraper ( B6 Series with Parallel EM)</controllingFieldValue>
+            <controllingFieldValue>Secondary Scraper ( B6 Series with reversing adaptar and Parallel EM)</controllingFieldValue>
+            <valueName>V-120 Blade with 20 mm tip</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Secondary Scraper ( B6 Series with Single EM)</controllingFieldValue>
+            <controllingFieldValue>Secondary Scraper ( B6 Series with Parallel EM)</controllingFieldValue>
+            <controllingFieldValue>Secondary Scraper ( B6 Series with reversing adaptar and Parallel EM)</controllingFieldValue>
+            <valueName>V-240 Blade with 20 mm tip</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Secondary Scraper ( B6 Series with Single EM)</controllingFieldValue>
+            <controllingFieldValue>Secondary Scraper ( B6 Series with Parallel EM)</controllingFieldValue>
+            <controllingFieldValue>Secondary Scraper ( B6 Series with reversing adaptar and Parallel EM)</controllingFieldValue>
+            <valueName>Element LV</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Secondary Scraper ( B6 Series with Single EM)</controllingFieldValue>
+            <controllingFieldValue>Secondary Scraper ( B6 Series with Parallel EM)</controllingFieldValue>
+            <controllingFieldValue>Secondary Scraper ( B6 Series with reversing adaptar and Parallel EM)</controllingFieldValue>
+            <valueName>Element SV</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Secondary Scraper ( B6 Series with reversing adaptar and Parallel EM)</controllingFieldValue>
+            <valueName>Reversing Adaptar</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>C Series Scraper  C1V</controllingFieldValue>
+            <controllingFieldValue>C Series Scraper  C2</controllingFieldValue>
+            <controllingFieldValue>C Series Scraper  C3</controllingFieldValue>
+            <controllingFieldValue>C Series Scraper  CT</controllingFieldValue>
+            <valueName>X3-12N Blade</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>C Series Scraper  C1V</controllingFieldValue>
+            <controllingFieldValue>C Series Scraper  C2</controllingFieldValue>
+            <controllingFieldValue>C Series Scraper  C3</controllingFieldValue>
+            <controllingFieldValue>C Series Scraper  CT</controllingFieldValue>
+            <valueName>X3-20N Blade</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>C Series Scraper  C1V</controllingFieldValue>
+            <controllingFieldValue>C Series Scraper  C2</controllingFieldValue>
+            <controllingFieldValue>C Series Scraper  C3</controllingFieldValue>
+            <controllingFieldValue>C Series Scraper  CT</controllingFieldValue>
+            <valueName>X3-12S Blade</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>C Series Scraper  C1V</controllingFieldValue>
+            <controllingFieldValue>C Series Scraper  C2</controllingFieldValue>
+            <controllingFieldValue>C Series Scraper  C3</controllingFieldValue>
+            <controllingFieldValue>C Series Scraper  CT</controllingFieldValue>
+            <valueName>X3-20S Blade</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Internal Scraper (VP)</controllingFieldValue>
+            <controllingFieldValue>Internal Scraper (DP)</controllingFieldValue>
+            <valueName>VP Frame with End Tube</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Internal Scraper (VP)</controllingFieldValue>
+            <controllingFieldValue>Internal Scraper (DP)</controllingFieldValue>
+            <valueName>PU-200</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Internal Scraper (VP)</controllingFieldValue>
+            <controllingFieldValue>Internal Scraper (DP)</controllingFieldValue>
+            <valueName>PU-100</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Spill ex Model 150x200x25</controllingFieldValue>
+            <valueName>Rubber Block 150x200x25</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Spill ex Model 150x200x25</controllingFieldValue>
+            <controllingFieldValue>Baby Spillex Model 125x150x25</controllingFieldValue>
+            <controllingFieldValue>Baby Spillex Model 125x150x25/15</controllingFieldValue>
+            <controllingFieldValue>Spillex Model 150x200x32/22</controllingFieldValue>
+            <controllingFieldValue>Eco Flip Model 170x200x20</controllingFieldValue>
+            <controllingFieldValue>Eco Flip Model 200x200x20</controllingFieldValue>
+            <controllingFieldValue>Eco Flip Model 220x200x20</controllingFieldValue>
+            <controllingFieldValue>Tru Seal Model 205x200x20</controllingFieldValue>
+            <controllingFieldValue>Easy Seal Model 200x90x20</controllingFieldValue>
+            <controllingFieldValue>Spillex Model 150x265x32</controllingFieldValue>
+            <controllingFieldValue>Spillex Model 150x265x25</controllingFieldValue>
+            <controllingFieldValue>Spillex Model 150x265x20</controllingFieldValue>
+            <controllingFieldValue>Spillex Model 150x300x32</controllingFieldValue>
+            <controllingFieldValue>Spillex Model 150x300x25</controllingFieldValue>
+            <controllingFieldValue>Spillex Model 150x300x20</controllingFieldValue>
+            <valueName>Serrated Clamp with HW</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Spill ex Model 150x200x25</controllingFieldValue>
+            <controllingFieldValue>Baby Spillex Model 125x150x25</controllingFieldValue>
+            <controllingFieldValue>Baby Spillex Model 125x150x25/15</controllingFieldValue>
+            <controllingFieldValue>Spillex Model 150x200x32/22</controllingFieldValue>
+            <controllingFieldValue>Eco Flip Model 170x200x20</controllingFieldValue>
+            <controllingFieldValue>Eco Flip Model 200x200x20</controllingFieldValue>
+            <controllingFieldValue>Eco Flip Model 220x200x20</controllingFieldValue>
+            <controllingFieldValue>Tru Seal Model 205x200x20</controllingFieldValue>
+            <controllingFieldValue>Easy Seal Model 200x90x20</controllingFieldValue>
+            <controllingFieldValue>Single Wing Seal Model 500x112X14/20</controllingFieldValue>
+            <controllingFieldValue>Single Wing Seal Model 500x170X15/20</controllingFieldValue>
+            <controllingFieldValue>Single Wing Seal Model 500x170X15/30</controllingFieldValue>
+            <controllingFieldValue>Spillex Model 150x265x32</controllingFieldValue>
+            <controllingFieldValue>Spillex Model 150x265x25</controllingFieldValue>
+            <controllingFieldValue>Spillex Model 150x265x20</controllingFieldValue>
+            <controllingFieldValue>Spillex Model 150x300x32</controllingFieldValue>
+            <controllingFieldValue>Spillex Model 150x300x25</controllingFieldValue>
+            <controllingFieldValue>Spillex Model 150x300x20</controllingFieldValue>
+            <valueName>BACKING PLATE</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Baby Spillex Model 125x150x25</controllingFieldValue>
+            <valueName>Rubber Block 125x150x25</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Baby Spillex Model 125x150x25/15</controllingFieldValue>
+            <valueName>Rubber Block 125x150x25/15</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Spillex Model 150x200x32/22</controllingFieldValue>
+            <valueName>Rubber Block 150x200x32/22</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Eco Flip Model 170x200x20</controllingFieldValue>
+            <valueName>Rubber Block 170x200x20</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Eco Flip Model 200x200x20</controllingFieldValue>
+            <valueName>Rubber Block 200x200x20</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Eco Flip Model 220x200x20</controllingFieldValue>
+            <valueName>Rubber Block 220x200x20</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Tru Seal Model 205x200x20</controllingFieldValue>
+            <valueName>Rubber Block 205x200x20</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Easy Seal Model 200x90x20</controllingFieldValue>
+            <valueName>Rubber Block 200x90x20</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Single Wing Seal Model 500x112X14/20</controllingFieldValue>
+            <valueName>Rubber Block 500X112X14/20</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Single Wing Seal Model 500x112X14/20</controllingFieldValue>
+            <controllingFieldValue>Single Wing Seal Model 500x170X15/20</controllingFieldValue>
+            <controllingFieldValue>Single Wing Seal Model 500x170X15/30</controllingFieldValue>
+            <valueName>Clamp with Stud</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Single Wing Seal Model 500x170X15/20</controllingFieldValue>
+            <valueName>Rubber Block 500X170X15/20</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Single Wing Seal Model 500x170X15/30</controllingFieldValue>
+            <valueName>Rubber Block 500X170X15/30</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Spillex Model 150x265x32</controllingFieldValue>
+            <valueName>Rubber Block 150x265x32</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Spillex Model 150x265x25</controllingFieldValue>
+            <controllingFieldValue>Spillex Model 150x265x20</controllingFieldValue>
+            <valueName>Rubber Block 150x265x25</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Spillex Model 150x300x32</controllingFieldValue>
+            <valueName>Rubber Block 150x300x32</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Spillex Model 150x300x25</controllingFieldValue>
+            <valueName>Rubber Block 150x300x25</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Spillex Model 150x300x20</controllingFieldValue>
+            <valueName>Rubber Block 150x300x20</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Belt Tracker Model TTFR</controllingFieldValue>
+            <valueName>NO SPARE FOR THIS MODEL</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Belt Tracker Model TTT</controllingFieldValue>
+            <valueName>WING ROLLER TTT</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Belt Tracker Model TTDR</controllingFieldValue>
+            <valueName>Central Roller TTDR</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Belt Tracker Model TTVR</controllingFieldValue>
+            <valueName>Central Roller TTVR</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>CentralX SO  Series</controllingFieldValue>
+            <valueName>Central Roller CerntraX SO  series</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>CentralX SO  Series</controllingFieldValue>
+            <valueName>Conical Roller CerntraX SO  series</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>CentralX SO  Series</controllingFieldValue>
+            <valueName>Bottom Bearing CerntraX SO  series</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>CentraX S series</controllingFieldValue>
+            <valueName>Central Roller CentraX S series</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>CentraX S series</controllingFieldValue>
+            <valueName>Conical Roller CentraX S series</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>CentraX S series</controllingFieldValue>
+            <valueName>Bottom Bearing CentraX S series</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>CentraX SK Series</controllingFieldValue>
+            <valueName>Central Roller CentraX SK series</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>CentraX SK Series</controllingFieldValue>
+            <valueName>Conical Roller CentraX SK series</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>CentraX SK Series</controllingFieldValue>
+            <valueName>Bottom Bearing CentraX SK series</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>CentraX SKO series</controllingFieldValue>
+            <valueName>Central Roller CentraX SKO series</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>CentraX SKO series</controllingFieldValue>
+            <valueName>Conical Roller CentraX SKO series</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>CentraX SKO series</controllingFieldValue>
+            <valueName>Bottom Bearing CentraX SKO series</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>CertraX SO-VR</controllingFieldValue>
+            <valueName>Central Roller CertraX SO-VR</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>CertraX SO-VR</controllingFieldValue>
+            <valueName>Conical Roller CertraX SO-VR</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>CertraX SO-VR</controllingFieldValue>
+            <valueName>Bottom Bearing CertraX SO-VR</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>CertraX SKO-VR</controllingFieldValue>
+            <valueName>Central Roller CertraX SKO-VR</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>CertraX SKO-VR</controllingFieldValue>
+            <valueName>Conical Roller CertraX SKO-VR</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>CertraX SKO-VR</controllingFieldValue>
+            <valueName>Bottom Bearing CertraX SKO-VR</valueName>
+        </valueSettings>
+    </valueSet>
+</CustomField>

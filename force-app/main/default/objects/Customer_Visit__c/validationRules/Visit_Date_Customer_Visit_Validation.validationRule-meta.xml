@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Visit_Date_Customer_Visit_Validation</fullName>
+    <active>true</active>
+    <errorConditionFormula>TODAY() &lt; Visit_Date__c || No_of_days__c &gt; $User.No_of_days_for_Customer_Visit__c</errorConditionFormula>
+    <errorDisplayField>Visit_Date__c</errorDisplayField>
+    <errorMessage>Visit date cannot be in Future &amp; should be in range specified for user</errorMessage>
+</ValidationRule>

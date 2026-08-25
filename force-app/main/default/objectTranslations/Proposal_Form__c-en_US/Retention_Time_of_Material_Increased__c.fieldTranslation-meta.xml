@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Retention Time of Material Increased? --></label>
+    <name>Retention_Time_of_Material_Increased__c</name>
+</CustomFieldTranslation>

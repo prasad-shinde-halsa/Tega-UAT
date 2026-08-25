@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>SO_Number_to_be_added</fullName>
+    <booleanFilter>1 OR 2</booleanFilter>
+    <columns>NAME</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>Status_SO__c</field>
+        <operation>equals</operation>
+        <value>Discount Approval Approved</value>
+    </filters>
+    <filters>
+        <field>Status__c</field>
+        <operation>equals</operation>
+        <value>Discount Approval Approved</value>
+    </filters>
+    <label>SO Number to be added</label>
+    <sharedTo>
+        <group>All_PMG</group>
+    </sharedTo>
+</ListView>

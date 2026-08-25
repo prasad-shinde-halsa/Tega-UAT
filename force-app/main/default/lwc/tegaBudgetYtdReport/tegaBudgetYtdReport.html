@@ -1,0 +1,271 @@
+<template>
+    <lightning-spinner if:true={isLoading} size="large" alternative-text="Loading...">
+    </lightning-spinner>
+
+    <div class="slds-grid slds-grid_vertical-align-center">
+        <!-- Left spacer -->
+        <div class="slds-col slds-size_1-of-3"></div>
+
+        <!-- Center: Header -->
+        <div class="slds-col slds-size_1-of-3 slds-text-align_center">
+            <h1 class="slds-text-heading_medium" style="font-weight: bold; color: rgb(244, 232, 232)">MIS Report</h1>
+        </div>
+
+        <!-- Right: Button -->
+        <div class="slds-col slds-size_1-of-3 slds-text-align_right">
+             <lightning-button
+        label="Detailed MIS Data"
+        onclick={handleVisitReports}
+        variant="brand"
+        class="slds-m-right_small">
+    </lightning-button>
+            <lightning-button label="Export to Excel" onclick={exportToExcel} icon-name="utility:download"
+                variant="brand"  class="slds-m-right_small">
+                
+            </lightning-button>
+
+            <lightning-button 
+        label="Export to PDF" 
+        onclick={exportToPDF} 
+        icon-name="utility:pdf_ext"
+        variant="brand">
+    </lightning-button>
+        </div>
+    </div>
+
+    <!-- Filters Row -->
+    <div class="slds-grid slds-wrap slds-p-around_medium" style="margin-top: 10px;">
+
+        <!-- FY Filter -->
+        <div class={getColClass}>
+            <lightning-combobox label="Search By FY" value={selectedFY} options={financialYearOptions}
+                onchange={handleFYChange} class="neon-combobox">
+            </lightning-combobox>
+        </div>
+
+        <!-- Quarter Filter (NEW) -->
+        <div class={getColClass}>
+            <lightning-combobox label="Search By Quarter" value={selectedQuarter} options={quarterOptions}
+                onchange={handleQuarterChange} class="neon-combobox">
+            </lightning-combobox>
+        </div>
+
+        <!-- Month Filter -->
+        <div class={getColClass}>
+            <lightning-combobox label="Search By Month" value={selectedMonth} options={monthOptions}
+                onchange={handleMonthChange} class="neon-combobox">
+            </lightning-combobox>
+        </div>
+
+        <!-- Order Type Filter -->
+        <div class={getColClass}>
+            <lightning-combobox label="Search By Order Type" value={selectedOrderType} options={OrderTypeOptions}
+                onchange={handleOrderTypeChange} class="neon-combobox">
+            </lightning-combobox>
+        </div>
+
+        <!-- Level 1 Filter -->
+        <div class={getColClass}>
+            <lightning-combobox label="Search By Level 1" value={selectedLevel1} options={Level1Options}
+                onchange={handleLevel1Change} class="neon-combobox">
+            </lightning-combobox>
+        </div>
+
+        <!-- Level 2 Filter (conditional) -->
+        <template if:true={showLevel2}>
+            <div class="slds-col slds-size_1-of-1 slds-medium-size_1-of-6 slds-p-horizontal_small">
+                <lightning-combobox label="Search By Level 2" value={selectedLevel2} options={Level2Options}
+                    onchange={handleLevel2Change} class="neon-combobox">
+                </lightning-combobox>
+            </div>
+        </template>
+
+    </div>
+
+    <!-- No Data State -->
+    <template if:false={showTable}>
+        <header class="slds-modal__header" style="height: auto; background-color: rgb(1, 68, 134);">
+            <h2 class="slds-text-heading_medium slds-hyphenate custom-header-title"
+                style="font-weight: bold; font-size: 1.2em; color: rgb(255, 255, 255);">
+                No Details Found</h2>
+        </header>
+    </template>
+
+    <!-- Data Table -->
+    <template if:true={showTable}>
+        <div class="slds-table_edit_container slds-is-relative" style="font-size: 0.95rem;">
+            <div style="overflow-x: auto;">
+                <table class="slds-table slds-table_cell-buffer slds-table_bordered slds-no-row-hover"
+                    style="width: 100%; font-size: 0.9rem; border: 1px solid #d8dde6; min-width: 1200px;">
+                    <thead style="position: sticky; top: 0; z-index: 1;">
+
+                        <!-- Header Group Row -->
+                        <tr>
+                            <th rowspan="2"
+                                style="background-color: rgb(1, 68, 134); color: white; text-align: center; padding: 8px; border: 1px solid #5a8fc4; vertical-align: middle;">
+                                <div style="white-space: normal; word-wrap: break-word; font-size: 0.85rem;">PMG</div>
+                            </th>
+
+                            <!-- Monthly Group -->
+                            <th colspan="3"
+                                style="background-color: rgb(0, 50, 110); color: #a8d4f5; text-align: center; padding: 6px; border: 1px solid #5a8fc4; letter-spacing: 0.05em; font-size: 0.75rem; text-transform: uppercase;">
+                               {monthlyHeaderLabel}
+                            </th>
+
+                            <!-- YTD Group -->
+                            <th colspan="3"
+                                style="background-color: rgb(0, 80, 60); color: #a8f5d4; text-align: center; padding: 6px; border: 1px solid #5a8fc4; letter-spacing: 0.05em; font-size: 0.75rem; text-transform: uppercase;">
+                                Year To Date (YTD)
+                            </th>
+
+                            <!-- Forecast Group -->
+                            <th colspan="3"
+                                style="background-color: rgb(80, 40, 0); color: #f5d4a8; text-align: center; padding: 6px; border: 1px solid #5a8fc4; letter-spacing: 0.05em; font-size: 0.75rem; text-transform: uppercase;">
+                                Forecast
+                            </th>
+                        </tr>
+
+                        <!-- Column Header Row -->
+                        <tr>
+                            <!-- Monthly columns -->
+                            <th style="background-color: rgb(1, 68, 134); color: white; text-align: center; padding: 6px; border: 1px solid #5a8fc4; min-width: 110px;">
+                                <div style="white-space: normal; word-wrap: break-word; font-size: 0.8rem;">Budgeted Order</div>
+                            </th>
+                            <th style="background-color: rgb(1, 68, 134); color: white; text-align: center; padding: 6px; border: 1px solid #5a8fc4; min-width: 110px;">
+                                <div style="white-space: normal; word-wrap: break-word; font-size: 0.8rem;">Order Received</div>
+                            </th>
+                            <th style="background-color: rgb(1, 55, 110); color: #ffe080; text-align: center; padding: 6px; border: 1px solid #5a8fc4; min-width: 90px;">
+                                <div style="white-space: normal; word-wrap: break-word; font-size: 0.8rem;">% Achievement</div>
+                            </th>
+
+                            <!-- YTD columns -->
+                            <th style="background-color: rgb(0, 90, 70); color: white; text-align: center; padding: 6px; border: 1px solid #5a8fc4; min-width: 110px;">
+                                <div style="white-space: normal; word-wrap: break-word; font-size: 0.8rem;">YTD Budgeted Order</div>
+                            </th>
+                            <th style="background-color: rgb(0, 90, 70); color: white; text-align: center; padding: 6px; border: 1px solid #5a8fc4; min-width: 110px;">
+                                <div style="white-space: normal; word-wrap: break-word; font-size: 0.8rem;">YTD Actual Order Received</div>
+                            </th>
+                            <th style="background-color: rgb(0, 75, 58); color: #ffe080; text-align: center; padding: 6px; border: 1px solid #5a8fc4; min-width: 90px;">
+                                <div style="white-space: normal; word-wrap: break-word; font-size: 0.8rem;">YTD % Achievement</div>
+                            </th>
+
+                            <!-- Forecast columns -->
+
+                            <th style="background-color: rgb(75, 40, 0); color: white; text-align: center; padding: 6px; border: 1px solid #5a8fc4; min-width: 110px;">
+                                <div style="white-space: normal; word-wrap: break-word; font-size: 0.8rem;">Next 3 months (Budget)</div>
+                            </th>
+
+                            <th style="background-color: rgb(90, 50, 0); color: white; text-align: center; padding: 6px; border: 1px solid #5a8fc4; min-width: 120px;">
+                                <div style="white-space: normal; word-wrap: break-word; font-size: 0.8rem;">Forecast - Next 3 months (MIS)</div>
+                            </th>
+                            <th style="background-color: rgb(90, 50, 0); color: #ffe080; text-align: center; padding: 6px; border: 1px solid #5a8fc4; min-width: 130px;">
+                                <div style="white-space: normal; word-wrap: break-word; font-size: 0.8rem;">Full Year Forecast</div>
+                                <div style="font-size: 0.65rem; color: #ffc870; font-style: italic; margin-top: 2px;">YTD Actual + Forecast MIS + Remaining Budget</div>
+                            </th>
+                            
+                        </tr>
+                    </thead>
+
+                    <tbody>
+                        <template for:each={visibleMatrix} for:item="row">
+                            <tr key={row.pmg} class="data-row">
+
+                                <!-- PMG Name -->
+                                <td style="font-weight: bold; background-color: #e9f5f3; font-size: 0.9rem; text-align: center; padding: 8px; border: 1px solid #ccc;">
+                                    {row.pmg}
+                                </td>
+
+                                <!-- Budgeted Order (Monthly) -->
+                                <td style="font-weight: bold; text-align: center; padding: 8px; border: 1px solid #ccc; background-color: #f0f4ff;">
+                                    {showCurrecy} {row.budgetedOrder}
+                                </td>
+
+                                <!-- Monthly Order Received -->
+                                <td style="font-weight: bold; text-align: center; padding: 8px; border: 1px solid #ccc; background-color: #f0f4ff;">
+                                    {showCurrecy} {row.monthlyReceived}
+                                </td>
+
+                                <!-- % Achievement -->
+                                <td style="font-weight: bold; text-align: center; padding: 8px; border: 1px solid #ccc; background-color: #fffbe6; color: #7a5a00;">
+                                    {row.achievement}
+                                </td>
+
+                                <!-- YTD Budgeted Order -->
+                                <td style="font-weight: bold; text-align: center; padding: 8px; border: 1px solid #ccc; background-color: #f0fff8;">
+                                    {showCurrecy} {row.ytdBudget}
+                                </td>
+
+                                <!-- YTD Actual Order Received -->
+                                <td style="font-weight: bold; text-align: center; padding: 8px; border: 1px solid #ccc; background-color: #f0fff8;">
+                                    {showCurrecy} {row.ytdActual}
+                                </td>
+
+                                <!-- YTD % Achievement -->
+                                <td style="font-weight: bold; text-align: center; padding: 8px; border: 1px solid #ccc; background-color: #fffbe6; color: #7a5a00;">
+                                    {row.ytdAchievement}
+                                </td>
+
+                                <!-- Next 3 months Budget -->
+                                <td style="font-weight: bold; text-align: center; padding: 8px; border: 1px solid #ccc; background-color: #fff8f0;">
+                                    {showCurrecy} {row.forecastBudget}
+                                </td>
+
+                                <!-- Forecast MIS -->
+                                <td style="font-weight: bold; text-align: center; padding: 8px; border: 1px solid #ccc; background-color: #fff8f0;">
+                                    {showCurrecy} {row.forecastMIS}
+                                </td>
+
+                                <!-- Full Year Forecast -->
+                                <td style="font-weight: bold; text-align: center; padding: 8px; border: 1px solid #ccc; background-color: #fff3d6; color: #5a3500;">
+                                    {showCurrecy} {row.fullYearForecast}
+                                </td>
+
+                                
+
+                            </tr>
+
+                        </template>
+                    </tbody>
+                    <tbody>
+                        <tr>
+                            <td colspan="10" style="padding: 6px; background-color: transparent; border: none;"></td>
+                        </tr>
+                        <tr style="background-color: #1a3a5c; color: white; font-weight: bold; font-size: 0.9rem; border-top: 3px solid #ffd700;">
+                            <td style="text-align: center; padding: 8px; border: 1px solid #5a8fc4; background-color: #0e2a45; color: #ffd700; letter-spacing: 0.05em; text-transform: uppercase;">
+                                TOTAL
+                            </td>
+                            <td style="text-align: center; padding: 8px; border: 1px solid #5a8fc4; background-color: #1e3a6e; color: #a8d4f5;">
+                                {showCurrecy} {totalsRow.budgetedOrder}
+                            </td>
+                            <td style="text-align: center; padding: 8px; border: 1px solid #5a8fc4; background-color: #1e3a6e; color: #a8d4f5;">
+                                {showCurrecy} {totalsRow.monthlyReceived}
+                            </td>
+                            <td style="text-align: center; padding: 8px; border: 1px solid #5a8fc4; background-color: #1e3a6e; color: #a8d4f5;">
+                                {totalsRow.achievement}%
+                            </td>
+                            <td style="text-align: center; padding: 8px; border: 1px solid #5a8fc4; background-color: #0e3d2a; color: #a8f5d4;">
+                                {showCurrecy} {totalsRow.ytdBudget}
+                            </td>
+                            <td style="text-align: center; padding: 8px; border: 1px solid #5a8fc4; background-color: #0e3d2a; color: #a8f5d4;">
+                                {showCurrecy} {totalsRow.ytdActual}
+                            </td>
+                            <td style="text-align: center; padding: 8px; border: 1px solid #5a8fc4; background-color: #0e3d2a; color: #a8f5d4;">
+                                {totalsRow.ytdAchievement}%
+                            </td>
+                            <td style="text-align: center; padding: 8px; border: 1px solid #5a8fc4; background-color: #3d1e00; color: #f5d4a8;">
+                                {showCurrecy} {totalsRow.forecastBudget}
+                            </td>
+                            <td style="text-align: center; padding: 8px; border: 1px solid #5a8fc4; background-color: #3d1e00; color: #f5d4a8;">
+                                {showCurrecy} {totalsRow.forecastMIS}
+                            </td>
+                            <td style="text-align: center; padding: 8px; border: 1px solid #5a8fc4; background-color: #4a2800; color: #ffd700;">
+                                {showCurrecy} {totalsRow.fullYearForecast}
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </template>
+
+</template>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Child_Proposal_Form</fullName>
+    <columns>Parent_Proposal_Form__c</columns>
+    <columns>NAME</columns>
+    <columns>Revision_No__c</columns>
+    <columns>Equipment_Record_Type__c</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>Parent_Proposal_Form__c</field>
+        <operation>notEqual</operation>
+    </filters>
+    <label>Child Proposal Form</label>
+</ListView>

@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Rubber_Block_Hardness__c</fullName>
+    <label>Rubber Block Hardness</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>NR Grade</fullName>
+                <default>false</default>
+                <label>NR Grade</label>
+            </value>
+            <value>
+                <fullName>HR Grade</fullName>
+                <default>false</default>
+                <label>HR Grade</label>
+            </value>
+            <value>
+                <fullName>SK Grade</fullName>
+                <default>false</default>
+                <label>SK Grade</label>
+            </value>
+            <value>
+                <fullName>SHT Grade</fullName>
+                <default>false</default>
+                <label>SHT Grade</label>
+            </value>
+            <value>
+                <fullName>FRAS Grade</fullName>
+                <default>false</default>
+                <label>FRAS Grade</label>
+            </value>
+            <value>
+                <fullName>OGR Grade</fullName>
+                <default>false</default>
+                <label>OGR Grade</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

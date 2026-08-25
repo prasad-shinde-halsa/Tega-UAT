@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RecordType xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Trommel</fullName>
+    <active>true</active>
+    <label>Trommel</label>
+    <picklistValues>
+        <picklist>Product_Type__c</picklist>
+        <values>
+            <fullName>Trommel PU  panel bolt down</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Trommel PU modular panel</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Trommel PU spiral</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Trommel PU spiral reducing pitch</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Trommel Rubber modular panel</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Trommel Rubber panel bolt down</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Trommel Rubber spiral</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Trommel Rubber spiral reducing pitch</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Trommel structure</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+</RecordType>

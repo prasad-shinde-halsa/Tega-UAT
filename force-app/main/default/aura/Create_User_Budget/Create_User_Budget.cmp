@@ -1,0 +1,52 @@
+<aura:component implements="force:appHostable,flexipage:availableForRecordHome,flexipage:availableForAllPageTypes,force:hasRecordId,lightning:actionOverride" access="global" controller="UserBranchClass">
+   
+    <aura:attribute name="companyList" type="List" default="[]"/>
+    <aura:attribute name="branchList" type="List" default="[]"/>
+    <aura:handler name="init" value="{! this }" action="{! c.init }"/>
+    <aura:attribute name="isAllFilled" type="Boolean" default="false" />
+    <aura:attribute name="isCompanyFilled" type="Boolean" default="false" />
+    <aura:attribute name="showConfirmDialog" type="boolean" default="true" />
+    <aura:attribute name="companyValue" type="String"/>
+    <aura:attribute name="branchValue" type="String"/>
+    <aura:attribute name="tenureValue" type="String"/>
+    
+    <aura:attribute name="financialTenureList" type="List" default="[
+    {'label': 'Current FY Year', 'value': 'Current FY Year'},
+    {'label': 'Next FY Year', 'value': 'Next FY Year'},
+    {'label': 'Following FY Year', 'value': 'Following FY Year'},
+    ]"/>
+
+    <aura:if isTrue="{!v.showConfirmDialog}">
+        <!--Modal Box Start-->
+        <div role="dialog" class="slds-modal slds-fade-in-open ">
+            <div class="slds-modal__container" style="width:50% !important;">
+                <!--Modal Box Header Start-->
+                <header class="slds-modal__header">
+                    <h1 class="slds-text-heading--medium">Confirmation</h1>
+                </header>
+                <!--Modal Box Header End-->
+                
+                <!--Modal Box Content Start-->
+                <div class="slds-modal__content slds-p-around--medium">
+                    <lightning:combobox name="Company" label="Company" placeholder="Select Company" options="{! v.companyList }" onchange="{! c.handleChange1 }"/>
+    
+   					<lightning:combobox name="Branch" label="Branch" placeholder="Select Branch" options="{! v.branchList }" onchange="{! c.handleChange2 }"/>
+                    
+                    <lightning:combobox name="Financial Year Tenure" label="Financial Year Tenure" placeholder="Select Tenure" options="{! v.financialTenureList }" onchange="{! c.handleChange3 }"/>
+                </div>
+                <!--Modal Box Content End-->
+                
+                <!--Modal Box Button Start-->
+                <aura:if isTrue="{!v.isAllFilled}">
+                <footer class="slds-modal__footer">
+                    <!--<lightning:button name='No' label='No' onclick='{!c.handleConfirmDialogNo}' /> -->
+                    <lightning:button variant="brand" label="Save" title="Create User Budger" onclick="{! c.handleClick }"/>
+                </footer>
+                </aura:if>
+                <!--Modal Box Button End-->
+            </div>
+        </div>
+        <div class="slds-backdrop slds-backdrop--open"></div>
+    </aura:if>
+    
+</aura:component>

@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Feeding_Arrangement__c</fullName>
+    <label>Feeding Arrangement</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Mill Chute</fullName>
+                <default>false</default>
+                <label>Mill Chute</label>
+            </value>
+            <value>
+                <fullName>Transfer chute</fullName>
+                <default>false</default>
+                <label>Transfer chute</label>
+            </value>
+            <value>
+                <fullName>Silo</fullName>
+                <default>false</default>
+                <label>Silo</label>
+            </value>
+            <value>
+                <fullName>Bunker</fullName>
+                <default>false</default>
+                <label>Bunker</label>
+            </value>
+            <value>
+                <fullName>Hopper</fullName>
+                <default>false</default>
+                <label>Hopper</label>
+            </value>
+            <value>
+                <fullName>Crusher</fullName>
+                <default>false</default>
+                <label>Crusher</label>
+            </value>
+            <value>
+                <fullName>Feeder</fullName>
+                <default>false</default>
+                <label>Feeder</label>
+            </value>
+            <value>
+                <fullName>Vib Screen</fullName>
+                <default>false</default>
+                <label>Vib Screen</label>
+            </value>
+            <value>
+                <fullName>Tank</fullName>
+                <default>false</default>
+                <label>Tank</label>
+            </value>
+            <value>
+                <fullName>Dumper Truck</fullName>
+                <default>false</default>
+                <label>Dumper Truck</label>
+            </value>
+            <value>
+                <fullName>Launder</fullName>
+                <default>false</default>
+                <label>Launder</label>
+            </value>
+            <value>
+                <fullName>Misc Equipment</fullName>
+                <default>false</default>
+                <label>Misc Equipment</label>
+            </value>
+            <value>
+                <fullName>Conveyor Belt</fullName>
+                <default>false</default>
+                <label>Conveyor Belt</label>
+            </value>
+            <value>
+                <fullName>Vib Feeder</fullName>
+                <default>false</default>
+                <label>Vib Feeder</label>
+            </value>
+            <value>
+                <fullName>Truck</fullName>
+                <default>false</default>
+                <label>Truck</label>
+            </value>
+            <value>
+                <fullName>Wagon</fullName>
+                <default>false</default>
+                <label>Wagon</label>
+            </value>
+            <value>
+                <fullName>Shuttle Conveyor Chute</fullName>
+                <default>false</default>
+                <label>Shuttle Conveyor Chute</label>
+            </value>
+            <value>
+                <fullName>Tripper Conveyor Chute</fullName>
+                <default>false</default>
+                <label>Tripper Conveyor Chute</label>
+            </value>
+            <value>
+                <fullName>Conveyor Chute</fullName>
+                <default>false</default>
+                <label>Conveyor Chute</label>
+            </value>
+            <value>
+                <fullName>Vibrating Screen Feeder</fullName>
+                <default>false</default>
+                <label>Vibrating Screen Feeder</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

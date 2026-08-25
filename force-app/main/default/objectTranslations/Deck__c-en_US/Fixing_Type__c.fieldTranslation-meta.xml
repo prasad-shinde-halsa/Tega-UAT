@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Fixing Type --></label>
+    <name>Fixing_Type__c</name>
+    <picklistValues>
+        <masterLabel>Bird Beak</masterLabel>
+        <translation><!-- Bird Beak --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Boltdown</masterLabel>
+        <translation><!-- Boltdown --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Button</masterLabel>
+        <translation><!-- Button --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Cross Tension</masterLabel>
+        <translation><!-- Cross Tension --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Integrated Pin and Lug</masterLabel>
+        <translation><!-- Integrated Pin and Lug --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Modular Integrated Lug Panels</masterLabel>
+        <translation><!-- Modular Integrated Lug Panels --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Pin and Sleeve</masterLabel>
+        <translation><!-- Pin and Sleeve --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Trell Step</masterLabel>
+        <translation><!-- Trell Step --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>V-Type Fixing</masterLabel>
+        <translation><!-- V-Type Fixing --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

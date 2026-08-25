@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>L1 L3 Product</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>L1 L3 Products</value>
+    </caseValues>
+    <layouts>
+        <layout>L1 L3 Product Layout</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+    </layouts>
+    <startsWith>Consonant</startsWith>
+    <validationRules>
+        <errorMessage><!-- L1L3_Code should be combination of &quot;Part List name&quot; +&quot;_&quot;+&quot;L3 Name&quot; --></errorMessage>
+        <name>L1L3_Code_match</name>
+    </validationRules>
+</CustomObjectTranslation>

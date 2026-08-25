@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Dimension Received at Site(if any) --></label>
+    <name>Dimension_Received_at_Site_if_any__c</name>
+</CustomFieldTranslation>

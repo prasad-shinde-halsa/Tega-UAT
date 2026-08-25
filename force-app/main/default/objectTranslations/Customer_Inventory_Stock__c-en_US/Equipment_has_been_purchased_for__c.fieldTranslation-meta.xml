@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Equipment has been purchased for --></label>
+    <name>Equipment_has_been_purchased_for__c</name>
+    <relationshipLabel><!-- Customer Inventories Lines(Stocks) (Equipment has been purchased for) --></relationshipLabel>
+</CustomFieldTranslation>

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- If necessary to increase the trommel size from capacity point of view --></help>
+    <label><!-- Maximum Outside Length (mm) --></label>
+    <name>Maximum_Outside_Length__c</name>
+</CustomFieldTranslation>

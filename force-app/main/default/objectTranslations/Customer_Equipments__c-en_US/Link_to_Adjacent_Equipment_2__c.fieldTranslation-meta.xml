@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- Please remember to link the upstream mill using this feature. If an upstream mill is linked, please view/update the mill details by clicking on the linked equipment. --></help>
+    <label><!-- Link to Adjacent Equipment Downstream --></label>
+    <name>Link_to_Adjacent_Equipment_2__c</name>
+    <relationshipLabel><!-- Customer Equipments (Link Adjustment Equipment 2) --></relationshipLabel>
+</CustomFieldTranslation>

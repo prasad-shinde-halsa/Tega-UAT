@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Department__c</fullName>
+    <label>Department</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Beneficiation Plant</fullName>
+                <default>false</default>
+                <label>Beneficiation Plant</label>
+            </value>
+            <value>
+                <fullName>Blast Furnace</fullName>
+                <default>false</default>
+                <label>Blast Furnace</label>
+            </value>
+            <value>
+                <fullName>Cement Mill</fullName>
+                <default>false</default>
+                <label>Cement Mill</label>
+            </value>
+            <value>
+                <fullName>CHP</fullName>
+                <default>false</default>
+                <label>CHP</label>
+            </value>
+            <value>
+                <fullName>Coal Mill</fullName>
+                <default>false</default>
+                <label>Coal Mill</label>
+            </value>
+            <value>
+                <fullName>CPP</fullName>
+                <default>false</default>
+                <label>CPP</label>
+            </value>
+            <value>
+                <fullName>Crusher</fullName>
+                <default>false</default>
+                <label>Crusher</label>
+            </value>
+            <value>
+                <fullName>Coal Washery</fullName>
+                <default>false</default>
+                <label>Coal Washery</label>
+            </value>
+            <value>
+                <fullName>Coal Handling Plant</fullName>
+                <default>false</default>
+                <label>Coal Handling Plant</label>
+            </value>
+            <value>
+                <fullName>Coal Crusher</fullName>
+                <default>false</default>
+                <label>Coal Crusher</label>
+            </value>
+            <value>
+                <fullName>Coke Oven</fullName>
+                <default>false</default>
+                <label>Coke Oven</label>
+            </value>
+            <value>
+                <fullName>DRI</fullName>
+                <default>false</default>
+                <label>DRI</label>
+            </value>
+            <value>
+                <fullName>Iron Washery</fullName>
+                <default>false</default>
+                <label>Iron Washery</label>
+            </value>
+            <value>
+                <fullName>Kiln</fullName>
+                <default>false</default>
+                <label>Kiln</label>
+            </value>
+            <value>
+                <fullName>MHS</fullName>
+                <default>false</default>
+                <label>MHS</label>
+            </value>
+            <value>
+                <fullName>Mines</fullName>
+                <default>false</default>
+                <label>Mines</label>
+            </value>
+            <value>
+                <fullName>Packing Plant</fullName>
+                <default>false</default>
+                <label>Packing Plant</label>
+            </value>
+            <value>
+                <fullName>Pellet Plant</fullName>
+                <default>false</default>
+                <label>Pellet Plant</label>
+            </value>
+            <value>
+                <fullName>Power Plant</fullName>
+                <default>false</default>
+                <label>Power Plant</label>
+            </value>
+            <value>
+                <fullName>Raw Mill</fullName>
+                <default>false</default>
+                <label>Raw Mill</label>
+            </value>
+            <value>
+                <fullName>RMHS</fullName>
+                <default>false</default>
+                <label>RMHS</label>
+            </value>
+            <value>
+                <fullName>Stacker</fullName>
+                <default>false</default>
+                <label>Stacker</label>
+            </value>
+            <value>
+                <fullName>Sinter Plant</fullName>
+                <default>false</default>
+                <label>Sinter Plant</label>
+            </value>
+            <value>
+                <fullName>Slag Mill</fullName>
+                <default>false</default>
+                <label>Slag Mill</label>
+            </value>
+            <value>
+                <fullName>Wagon Tippler</fullName>
+                <default>false</default>
+                <label>Wagon Tippler</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

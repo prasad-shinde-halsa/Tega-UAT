@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Blade Size 1 --></label>
+    <name>Blade_Size_1__c</name>
+    <picklistValues>
+        <masterLabel>B9S Blade-150MM</masterLabel>
+        <translation><!-- B9S Blade-150MM --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>B9S Blade-300 MM</masterLabel>
+        <translation><!-- B9S Blade-300 MM --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>B9SV Blade-100 MM</masterLabel>
+        <translation><!-- B9SV Blade-100 MM --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>B9SV Blade-200 MM</masterLabel>
+        <translation><!-- B9SV Blade-200 MM --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>HD01-X3-12N</masterLabel>
+        <translation><!-- HD01-X3-12N --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>HD01-X3-12S</masterLabel>
+        <translation><!-- HD01-X3-12S --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>HD01-X3-20N</masterLabel>
+        <translation><!-- HD01-X3-20N --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>HD01-X3-20S</masterLabel>
+        <translation><!-- HD01-X3-20S --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>HD02-X3-12N</masterLabel>
+        <translation><!-- HD02-X3-12N --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>HD02-X3-12S</masterLabel>
+        <translation><!-- HD02-X3-12S --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>HD02-X3-20N</masterLabel>
+        <translation><!-- HD02-X3-20N --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>HD02-X3-20S</masterLabel>
+        <translation><!-- HD02-X3-20S --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>HDPU-L Blade</masterLabel>
+        <translation><!-- HDPU-L Blade --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>HDPU-S Blade</masterLabel>
+        <translation><!-- HDPU-S Blade --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>PU-100-DP</masterLabel>
+        <translation><!-- PU-100-DP --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>PU-100-VP</masterLabel>
+        <translation><!-- PU-100-VP --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>PU-200-DP</masterLabel>
+        <translation><!-- PU-200-DP --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>PU-200-VP</masterLabel>
+        <translation><!-- PU-200-VP --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>V-120 Blade with 10 mm tip</masterLabel>
+        <translation><!-- V-120 Blade with 10 mm tip --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>V-120 Blade with 20 mm tip</masterLabel>
+        <translation><!-- V-120 Blade with 20 mm tip --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>V-240 Blade with 10 mm tip</masterLabel>
+        <translation><!-- V-240 Blade with 10 mm tip --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>V-240 Blade with 20 mm tip</masterLabel>
+        <translation><!-- V-240 Blade with 20 mm tip --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>X3-120 Blade with 10 mm tip</masterLabel>
+        <translation><!-- X3-120 Blade with 10 mm tip --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>X3-120 Blade with 20 mm tip</masterLabel>
+        <translation><!-- X3-120 Blade with 20 mm tip --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>X3-12N Blade</masterLabel>
+        <translation><!-- X3-12N Blade --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>X3-12S Blade</masterLabel>
+        <translation><!-- X3-12S Blade --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>X3-20N Blade</masterLabel>
+        <translation><!-- X3-20N Blade --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>X3-20S Blade</masterLabel>
+        <translation><!-- X3-20S Blade --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>X3-240 Blade with 10 mm tip</masterLabel>
+        <translation><!-- X3-240 Blade with 10 mm tip --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>X3-240 Blade with 20 mm tip</masterLabel>
+        <translation><!-- X3-240 Blade with 20 mm tip --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Z-120 Blade with 10 mm tip</masterLabel>
+        <translation><!-- Z-120 Blade with 10 mm tip --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Z-120 Blade with 20 mm tip</masterLabel>
+        <translation><!-- Z-120 Blade with 20 mm tip --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Z-240 Blade with 10 mm tip</masterLabel>
+        <translation><!-- Z-240 Blade with 10 mm tip --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Z-240 Blade with 20 mm tip</masterLabel>
+        <translation><!-- Z-240 Blade with 20 mm tip --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

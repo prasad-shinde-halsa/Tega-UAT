@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomMetadata xmlns="http://soap.sforce.com/2006/04/metadata" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+    <label>2026-2027</label>
+    <protected>false</protected>
+    <values>
+        <field>Active_Financial_Year__c</field>
+        <value xsi:type="xsd:string">2026-27</value>
+    </values>
+    <values>
+        <field>Active__c</field>
+        <value xsi:type="xsd:boolean">true</value>
+    </values>
+    <values>
+        <field>Clone_from_previous_FN__c</field>
+        <value xsi:type="xsd:boolean">true</value>
+    </values>
+    <values>
+        <field>MIS_Edit_End_Date__c</field>
+        <value xsi:type="xsd:date">2027-02-28</value>
+    </values>
+    <values>
+        <field>MIS_Edit_Start_Date__c</field>
+        <value xsi:type="xsd:date">2026-04-01</value>
+    </values>
+    <values>
+        <field>PMG_Budget_Last_Date__c</field>
+        <value xsi:type="xsd:date">2026-11-30</value>
+    </values>
+    <values>
+        <field>PMG_Budget_Start_Date__c</field>
+        <value xsi:type="xsd:date">2025-11-28</value>
+    </values>
+    <values>
+        <field>Sales_Budget_Last_Date__c</field>
+        <value xsi:type="xsd:date">2027-03-31</value>
+    </values>
+    <values>
+        <field>Sales_Budget_Start_Date__c</field>
+        <value xsi:type="xsd:date">2026-04-01</value>
+    </values>
+</CustomMetadata>

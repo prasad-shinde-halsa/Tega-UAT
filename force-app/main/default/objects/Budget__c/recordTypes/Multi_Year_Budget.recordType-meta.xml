@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RecordType xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Multi_Year_Budget</fullName>
+    <active>true</active>
+    <label>Multi Year Budget</label>
+    <picklistValues>
+        <picklist>Budget_For_Financial_Year__c</picklist>
+        <values>
+            <fullName>Current FY Year</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Following FY Year</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Next FY Year</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Budget_for_Years__c</picklist>
+        <values>
+            <fullName>1</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>2</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>3</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>4</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>5</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>PMG__c</picklist>
+        <values>
+            <fullName>Conveyor Component</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Hydrocyclone</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Mill</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Screen</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Trommel</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Wear Component</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+</RecordType>

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Particle Size Distribution --></label>
+    <name>Particle_Size_Distribution__c</name>
+    <relationshipLabel><!-- Particle Size Distribution Line Items --></relationshipLabel>
+</CustomFieldTranslation>

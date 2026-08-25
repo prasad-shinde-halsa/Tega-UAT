@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Different_Record_Type_OP_PSD</fullName>
+    <active>true</active>
+    <errorConditionFormula>Operating_Parameters__r.RecordType.Name &lt;&gt; RecordType.Name</errorConditionFormula>
+    <errorMessage>Record Type of this record and related Operating Parameter should be same.</errorMessage>
+</ValidationRule>

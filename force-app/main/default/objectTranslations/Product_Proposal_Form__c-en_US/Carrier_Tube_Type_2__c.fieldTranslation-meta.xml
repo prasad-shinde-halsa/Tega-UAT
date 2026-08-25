@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Carrier Tube Type 2 --></label>
+    <name>Carrier_Tube_Type_2__c</name>
+    <picklistValues>
+        <masterLabel>3 Piece</masterLabel>
+        <translation><!-- 3 Piece --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Single</masterLabel>
+        <translation><!-- Single --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

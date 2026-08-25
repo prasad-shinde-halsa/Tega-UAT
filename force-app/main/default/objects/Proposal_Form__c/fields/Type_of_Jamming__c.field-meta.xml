@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Type_of_Jamming__c</fullName>
+    <label>Type of Jamming</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Arching</fullName>
+                <default>false</default>
+                <label>Arching</label>
+            </value>
+            <value>
+                <fullName>Bridging</fullName>
+                <default>false</default>
+                <label>Bridging</label>
+            </value>
+            <value>
+                <fullName>Funneling</fullName>
+                <default>false</default>
+                <label>Funneling</label>
+            </value>
+            <value>
+                <fullName>Ratholing</fullName>
+                <default>false</default>
+                <label>Ratholing</label>
+            </value>
+            <value>
+                <fullName>Build-up</fullName>
+                <default>false</default>
+                <label>Build-up</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

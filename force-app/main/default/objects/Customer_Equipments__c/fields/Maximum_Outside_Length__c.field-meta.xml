@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Maximum_Outside_Length__c</fullName>
+    <description>If necessary to increase the trommel size from capacity point of view</description>
+    <externalId>false</externalId>
+    <inlineHelpText>If necessary to increase the trommel size from capacity point of view</inlineHelpText>
+    <label>Maximum Outside Length (mm)</label>
+    <precision>18</precision>
+    <required>false</required>
+    <scale>2</scale>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Number</type>
+    <unique>false</unique>
+</CustomField>

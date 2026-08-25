@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Record_lock_on_Status_Submitted_to_PMG</fullName>
+    <active>false</active>
+    <errorConditionFormula>ISPICKVAL( PRIORVALUE(Status__c) , &apos;Submitted to PMG&apos;)</errorConditionFormula>
+    <errorMessage>Cannot edit this record when Status is &apos;Submitted to PMG&apos;</errorMessage>
+</ValidationRule>

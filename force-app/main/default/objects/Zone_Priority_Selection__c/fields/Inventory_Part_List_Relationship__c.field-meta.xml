@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Inventory_Part_List_Relationship__c</fullName>
+    <label>Inventory Part List Relationship</label>
+    <referenceTo>Inventory_Score_Relationship__c</referenceTo>
+    <relationshipLabel>Zone Priority Selections</relationshipLabel>
+    <relationshipName>Zone_Priority_Selections</relationshipName>
+    <relationshipOrder>0</relationshipOrder>
+    <reparentableMasterDetail>false</reparentableMasterDetail>
+    <trackTrending>false</trackTrending>
+    <type>MasterDetail</type>
+    <writeRequiresMasterRead>false</writeRequiresMasterRead>
+</CustomField>

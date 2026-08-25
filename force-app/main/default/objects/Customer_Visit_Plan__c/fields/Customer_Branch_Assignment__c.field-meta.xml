@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Customer_Branch_Assignment__c</fullName>
+    <deleteConstraint>Restrict</deleteConstraint>
+    <inlineHelpText>New Customer Branch Assignment creations are not allowed from here. For new Assignment go to Customer Screen</inlineHelpText>
+    <label>Customer Branch Assignment</label>
+    <lookupFilter>
+        <active>true</active>
+        <filterItems>
+            <field>$Source.Customer__c</field>
+            <operation>equals</operation>
+            <valueField>Customer_Sales_Organization__c.Customer__c</valueField>
+        </filterItems>
+        <isOptional>false</isOptional>
+    </lookupFilter>
+    <referenceTo>Customer_Sales_Organization__c</referenceTo>
+    <relationshipLabel>Customer Visit Plans</relationshipLabel>
+    <relationshipName>Customer_Visit_Plans</relationshipName>
+    <required>false</required>
+    <trackFeedHistory>true</trackFeedHistory>
+    <trackTrending>false</trackTrending>
+    <type>Lookup</type>
+</CustomField>
