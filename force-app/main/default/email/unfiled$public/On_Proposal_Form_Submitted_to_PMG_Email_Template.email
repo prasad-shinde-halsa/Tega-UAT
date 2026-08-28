@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+
+<section>
+        <h3>Dear {!Proposal_Form__c.PMG_Head__c},</h3>
+        <h3>A Proposal Form : {!Proposal_Form__c.Name} has been Submitted by {!Proposal_Form__c.LastModifiedBy}.
+<h3 id="Content" > <a href="{!ApprovalRequest.External_URL}">Approval Link</a></h3><br/> 
+<h3>Details are given below.</h3>
+
+<h4>Company: {!Proposal_Form__c.Company_Name__c}</h4>
+<h4> Branch: {!Proposal_Form__c.Branch_Name__c}</h4>
+<h4>Customer: {!Proposal_Form__c.Customer_Opp__c}</h4>
+<h4>PMG: {!Proposal_Form__c.RecordType}</h4>
+<h4>Order Type: {!Proposal_Form__c.Type__c}</h4>
+&nbsp;
+
+<h3 style="color:rgb(203,38,19)">This is a system generated mail. Please do not reply.</h3>
+        
+</section>
+</html>

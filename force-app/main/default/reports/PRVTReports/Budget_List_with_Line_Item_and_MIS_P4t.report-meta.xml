@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <columns>
+        <field>DC_Budget__c.Budget_Line_Items__r.MIS_Budgets__r$Name</field>
+    </columns>
+    <columns>
+        <field>DC_Budget__c$Name</field>
+    </columns>
+    <columns>
+        <aggregateTypes>Sum</aggregateTypes>
+        <field>DC_Budget__c.Budget_Line_Items__r$Jul_Order_Actual__c</field>
+    </columns>
+    <currency>INR</currency>
+    <filter>
+        <booleanFilter>1 AND 2</booleanFilter>
+        <criteriaItems>
+            <column>DC_Budget__c.Budget_Line_Items__r$Jul_Order_Actual__c</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>greaterThan</operator>
+            <value>0</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>DC_Budget__c.Budget_Line_Items__r.MIS_Budgets__r$Order_Expected_Stage_Jul__c</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>notEqual</operator>
+            <value>Order</value>
+        </criteriaItems>
+        <language>en_US</language>
+    </filter>
+    <format>Summary</format>
+    <groupingsDown>
+        <dateGranularity>Day</dateGranularity>
+        <field>DC_Budget__c.Budget_Line_Items__r$Name</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsDown>
+    <name>Budget List with Line Item and MIS</name>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>Budget_List_With_Budget_Line_Item_and_MIS__c</reportType>
+    <scope>organization</scope>
+    <showDetails>true</showDetails>
+    <showGrandTotal>true</showGrandTotal>
+    <showSubTotals>true</showSubTotals>
+    <sortColumn>DC_Budget__c.Budget_Line_Items__r.MIS_Budgets__r$Name</sortColumn>
+    <sortOrder>Desc</sortOrder>
+    <timeFrameFilter>
+        <dateColumn>DC_Budget__c$CreatedDate</dateColumn>
+        <interval>INTERVAL_CURFY</interval>
+    </timeFrameFilter>
+</Report>

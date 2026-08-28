@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+<section>
+<h3 id="Content">A Form {!X4E_4D__c.RecordType} has been submitted by {!X4E_4D__c.CreatedBy} for your Approval.!!!</h3>
+
+<h3 id="Content" > <a href="{!ApprovalRequest.External_URL}">Approval Link</a></h3>
+
+<h4 id="Content">4E/4D Number: {!X4E_4D__c.Name}</h4>
+<h4 id="Content">Discount Percentage: {!X4E_4D__c.Discount_Percentage__c} </h4>
+<h4 id="Content">End Customer PO Value: {!X4E_4D__c.End_Customer_PO_Value__c}&nbsp;{!X4E_4D__c.X4E_4D_Currency__c}</h4>
+<h4 id="Content">PMG: {!X4E_4D__c.PMG__c}</h4>
+<h4 id="Content">Requesting User Comment: {!ApprovalRequest.Comments}</h4>
+&nbsp;
+<h3 id="Salutation" style="color:rgb(203,38,19)">This is a system generated mail. Please do not reply.</h3>
+</section>
+</html>

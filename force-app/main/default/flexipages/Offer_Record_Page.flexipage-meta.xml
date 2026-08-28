@@ -305,13 +305,6 @@
                 </fieldInstanceProperties>
                 <fieldItem>Record.Part_List__c</fieldItem>
                 <identifier>RecordPart_List_cField</identifier>
-                <visibilityRule>
-                    <criteria>
-                        <leftValue>{!$User.Profile.Name}</leftValue>
-                        <operator>CONTAINS</operator>
-                        <rightValue>admin</rightValue>
-                    </criteria>
-                </visibilityRule>
             </fieldInstance>
         </itemInstances>
         <itemInstances>

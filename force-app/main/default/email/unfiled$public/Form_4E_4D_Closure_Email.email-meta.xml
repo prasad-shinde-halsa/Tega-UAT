@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <description>After closing this mail will sent to owner</description>
+    <encodingKey>UTF-8</encodingKey>
+    <name>Form 4E/4D Closure Email</name>
+    <style>none</style>
+    <subject>Form {!X4E_4D__c.RecordType} : {!X4E_4D__c.Name} has been closed</subject>
+    <textOnly>Dear {!X4E_4D__c.Created_User__c}, Form {!X4E_4D__c.RecordType}: {!X4E_4D__c.Name} has been Closed by {!X4E_4D__c.LastModifiedBy} Customer Name: {!X4E_4D__c.Customer_Name__c} PMG: {!X4E_4D__c.PMG__c} PO Number: {!X4E_4D__c.PO_No__c} SAP SO Number: {!X4E_4D__c.SAP_SO_Number__c}  End Customer PO Value: {!X4E_4D__c.End_Customer_PO_Value__c} {!X4E_4D__c.X4E_4D_Currency__c} This is a system generated mail. Please do not reply.</textOnly>
+    <type>custom</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>
