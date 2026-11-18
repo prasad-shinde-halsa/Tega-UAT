@@ -220,7 +220,27 @@ public with sharing class CreateProductAndOfferLine implements Queueable, Databa
 				System.debug('pbEntryListCustomExist==>>'+pbEntryList);    
                 debugList.add('pbEntryListCustomExist==>>'+string.valueOf(pbEntryList)+'Line 215 *');
                 if(pbEntryList.size() > 0 ){
-                    Database.insert(pbEntryList, false);
+                    //Database.insert(pbEntryList, false);
+                    List<Database.SaveResult> pbSaveResults = Database.insert(pbEntryList, false);
+
+                    // Full dump of ALL save results, no truncation
+                    debugList.add('pbSaveResults FULL==>>' + JSON.serialize(pbSaveResults) + ' Line 215 *');
+
+                    // Per-record failure tracking (unchanged logic, just full error detail now)
+                    for(Integer idx = 0; idx < pbSaveResults.size(); idx++){
+                        if(!pbSaveResults[idx].isSuccess()){
+                            PricebookEntry failedPbe = pbEntryList[idx];
+                            String failMsg = 'PBE INSERT FAILED for Product2Id=' + failedPbe.Product2Id 
+                                            + ', Pricebook2Id=' + failedPbe.Pricebook2Id 
+                                            + ', Currency=' + failedPbe.CurrencyIsoCode;
+
+                            // JSON.serialize on getErrors() avoids the 20-item "..." cutoff
+                            failMsg += ' | Errors: ' + JSON.serialize(pbSaveResults[idx].getErrors());
+
+                            System.debug(failMsg);
+                            debugList.add(failMsg + ' *');
+                        }
+                    }
                 }
                 
 

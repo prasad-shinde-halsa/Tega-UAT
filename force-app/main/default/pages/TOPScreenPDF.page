@@ -390,7 +390,7 @@
                 </span>
             </div>
             <div class="amountInWords">
-                <span class="totalLabel">Amount In Words: AUD {!FullSetAmountInWords}</span>
+                <span class="totalLabel">Amount In Words: {!Quote.CurrencyIsoCode} {!FullSetAmountInWords}</span>
             </div>
         </div>
     </apex:outputPanel>
@@ -449,7 +449,7 @@
                 </span>
             </div>
             <div class="amountInWords">
-                <span class="totalLabel">Amount In Words: AUD {!FEHAmountInWords}</span>
+                <span class="totalLabel">Amount In Words: {!Quote.CurrencyIsoCode} {!FEHAmountInWords}</span>
             </div>
         </div>
     </apex:outputPanel>
@@ -508,7 +508,7 @@
                 </span>
             </div>
             <div class="amountInWords">
-                <span class="totalLabel">Amount In Words: AUD {!DEHAmountInWords}</span>
+                <span class="totalLabel">Amount In Words: {!Quote.CurrencyIsoCode} {!DEHAmountInWords}</span>
             </div>
         </div>
     </apex:outputPanel>
@@ -567,7 +567,7 @@
                 </span>
             </div>
             <div class="amountInWords">
-                <span class="totalLabel">Amount In Words: AUD {!ShellAmountInWords}</span>
+                <span class="totalLabel">Amount In Words: {!Quote.CurrencyIsoCode} {!ShellAmountInWords}</span>
             </div>
         </div>
     </apex:outputPanel>
@@ -626,7 +626,7 @@
                 </span>
             </div>
             <div class="amountInWords">
-                <span class="totalLabel">Amount In Words: AUD {!SpareAmountInWords}</span>
+                <span class="totalLabel">Amount In Words: {!Quote.CurrencyIsoCode} {!SpareAmountInWords}</span>
             </div>
         </div>
     </apex:outputPanel>
@@ -694,7 +694,7 @@
                 </span>
             </div>
             <div class="amountInWords">
-                <span class="totalLabel">Amount In Words: AUD {!CustomAmountInWords}</span>
+                <span class="totalLabel">Amount In Words: {!Quote.CurrencyIsoCode} {!CustomAmountInWords}</span>
             </div>
         </div>
     </apex:outputPanel>

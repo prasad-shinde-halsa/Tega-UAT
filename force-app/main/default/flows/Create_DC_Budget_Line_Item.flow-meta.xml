@@ -1690,7 +1690,7 @@
             <name>Is_PMG_User</name>
             <conditionLogic>and</conditionLogic>
             <conditions>
-                <leftValueReference>Get_Logged_In_User.Profile.Name</leftValueReference>
+                <leftValueReference>$Profile.Name</leftValueReference>
                 <operator>EqualTo</operator>
                 <rightValue>
                     <stringValue>PMG</stringValue>
@@ -1854,7 +1854,7 @@ Added Financial Year checking</description>
         <locationY>187</locationY>
         <assignNullValuesIfNoRecordsFound>false</assignNullValuesIfNoRecordsFound>
         <connector>
-            <targetReference>Get_Logged_In_User</targetReference>
+            <targetReference>DC_Budget_status</targetReference>
         </connector>
         <faultConnector>
             <targetReference>Custom_error_screen</targetReference>
@@ -1977,30 +1977,6 @@ OR
         </filters>
         <getFirstRecordOnly>true</getFirstRecordOnly>
         <object>DC_Budget_Line_Items__c</object>
-        <storeOutputAutomatically>true</storeOutputAutomatically>
-    </recordLookups>
-    <recordLookups>
-        <name>Get_Logged_In_User</name>
-        <label>Get Logged In User</label>
-        <locationX>527</locationX>
-        <locationY>339</locationY>
-        <assignNullValuesIfNoRecordsFound>false</assignNullValuesIfNoRecordsFound>
-        <connector>
-            <targetReference>DC_Budget_status</targetReference>
-        </connector>
-        <faultConnector>
-            <targetReference>Custom_error_screen</targetReference>
-        </faultConnector>
-        <filterLogic>and</filterLogic>
-        <filters>
-            <field>Id</field>
-            <operator>EqualTo</operator>
-            <value>
-                <elementReference>$User.Id</elementReference>
-            </value>
-        </filters>
-        <getFirstRecordOnly>true</getFirstRecordOnly>
-        <object>User</object>
         <storeOutputAutomatically>true</storeOutputAutomatically>
     </recordLookups>
     <recordLookups>
@@ -2132,17 +2108,17 @@ OR
         </faultConnector>
         <filterLogic>and</filterLogic>
         <filters>
-            <field>PMG_Approver_ID__c</field>
-            <operator>EqualTo</operator>
-            <value>
-                <elementReference>Get_Logged_In_User.Id</elementReference>
-            </value>
-        </filters>
-        <filters>
             <field>User_Role__c</field>
             <operator>EqualTo</operator>
             <value>
                 <stringValue>PMG Head</stringValue>
+            </value>
+        </filters>
+        <filters>
+            <field>PMG_Approver_ID__c</field>
+            <operator>EqualTo</operator>
+            <value>
+                <elementReference>$User.Id</elementReference>
             </value>
         </filters>
         <getFirstRecordOnly>false</getFirstRecordOnly>

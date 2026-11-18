@@ -93,12 +93,17 @@
         </columns>
         <columns>
             <checkedByDefault>false</checkedByDefault>
-            <field>Flag_To__c</field>
+            <field>Branch_Name__c</field>
             <table>Customer_Visit__c</table>
         </columns>
         <columns>
             <checkedByDefault>false</checkedByDefault>
-            <field>Order_Type__c</field>
+            <field>Customer_Code__c</field>
+            <table>Customer_Visit__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <field>Customer_Regional_Manager__c</field>
             <table>Customer_Visit__c</table>
         </columns>
         <masterLabel>Customer Visits</masterLabel>

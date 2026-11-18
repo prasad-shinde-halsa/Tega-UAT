@@ -9,30 +9,14 @@
     <navType>Console</navType>
     <tabs>standard-ApprovalsHome</tabs>
     <tabs>Budget_Report_Segregation__c</tabs>
-    <tabs>Sales_Organization_Product__c</tabs>
-    <tabs>L2_L3_product__c</tabs>
-    <tabs>SAP_data_Sync__c</tabs>
-    <tabs>TOP_Field_Staging__c</tabs>
-    <tabs>Molycop_Referral__c</tabs>
+    <tabs>Item_Weight__c</tabs>
     <uiType>Lightning</uiType>
     <workspaceConfig>
         <mappings>
             <tab>Budget_Report_Segregation__c</tab>
         </mappings>
         <mappings>
-            <tab>L2_L3_product__c</tab>
-        </mappings>
-        <mappings>
-            <tab>Molycop_Referral__c</tab>
-        </mappings>
-        <mappings>
-            <tab>SAP_data_Sync__c</tab>
-        </mappings>
-        <mappings>
-            <tab>Sales_Organization_Product__c</tab>
-        </mappings>
-        <mappings>
-            <tab>TOP_Field_Staging__c</tab>
+            <tab>Item_Weight__c</tab>
         </mappings>
         <mappings>
             <tab>standard-ApprovalsHome</tab>

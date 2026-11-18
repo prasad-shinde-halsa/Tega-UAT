@@ -34,10 +34,6 @@
                 <behavior>Readonly</behavior>
                 <field>L3_Product_Description__c</field>
             </layoutItems>
-            <layoutItems>
-                <behavior>Readonly</behavior>
-                <field>Part_List_Id__c</field>
-            </layoutItems>
         </layoutColumns>
         <layoutColumns/>
         <style>TwoColumnsTopToBottom</style>

@@ -16,8 +16,4 @@
         </sections>
     </layouts>
     <startsWith>Consonant</startsWith>
-    <validationRules>
-        <errorMessage><!-- Please choose a Contact that is related to the Customer. --></errorMessage>
-        <name>Restrict_Wrong_Contact_Association</name>
-    </validationRules>
 </CustomObjectTranslation>

@@ -161,7 +161,12 @@
     </nameField>
     <pluralLabel>Scope of Supply</pluralLabel>
     <recordTypeTrackHistory>false</recordTypeTrackHistory>
-    <searchLayouts></searchLayouts>
+    <searchLayouts>
+        <searchResultsAdditionalFields>Quantity__c</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>Unit_Price_Quoted__c</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>Total_Price_Quoted__c</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>CURRENCY_ISO_CODE</searchResultsAdditionalFields>
+    </searchLayouts>
     <sharingModel>ControlledByParent</sharingModel>
     <visibility>Public</visibility>
 </CustomObject>

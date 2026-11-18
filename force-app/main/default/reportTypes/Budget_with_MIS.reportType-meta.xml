@@ -164,41 +164,6 @@
             <field>Total_Sales__c</field>
             <table>DC_Budget__c</table>
         </columns>
-        <columns>
-            <checkedByDefault>false</checkedByDefault>
-            <field>Exchange_Rate_In_USD__c</field>
-            <table>DC_Budget__c</table>
-        </columns>
-        <columns>
-            <checkedByDefault>false</checkedByDefault>
-            <field>Original_Exchange_Rate__c</field>
-            <table>DC_Budget__c</table>
-        </columns>
-        <columns>
-            <checkedByDefault>false</checkedByDefault>
-            <field>Total_Order_In_INR_Value__c</field>
-            <table>DC_Budget__c</table>
-        </columns>
-        <columns>
-            <checkedByDefault>false</checkedByDefault>
-            <field>Total_Sales_In_INR_Value__c</field>
-            <table>DC_Budget__c</table>
-        </columns>
-        <columns>
-            <checkedByDefault>false</checkedByDefault>
-            <field>Total_Order_In_USD__c</field>
-            <table>DC_Budget__c</table>
-        </columns>
-        <columns>
-            <checkedByDefault>false</checkedByDefault>
-            <field>Total_Sales_In_USD__c</field>
-            <table>DC_Budget__c</table>
-        </columns>
-        <columns>
-            <checkedByDefault>false</checkedByDefault>
-            <field>Exchange_Rate_In_INR__c</field>
-            <table>DC_Budget__c</table>
-        </columns>
         <masterLabel>Budget List</masterLabel>
     </sections>
     <sections>
@@ -999,12 +964,7 @@
         </columns>
         <columns>
             <checkedByDefault>false</checkedByDefault>
-            <field>Exchange_Rate_In_USD__c</field>
-            <table>DC_Budget__c.Budget_Line_Items__r</table>
-        </columns>
-        <columns>
-            <checkedByDefault>false</checkedByDefault>
-            <field>Exchange_Rate_In_INR__c</field>
+            <field>Total_Order_MULTI_1000__c</field>
             <table>DC_Budget__c.Budget_Line_Items__r</table>
         </columns>
         <columns>
@@ -1014,7 +974,7 @@
         </columns>
         <columns>
             <checkedByDefault>false</checkedByDefault>
-            <field>Currency_Same_As_Budget__c</field>
+            <field>Total_Order_In_USD__c</field>
             <table>DC_Budget__c.Budget_Line_Items__r</table>
         </columns>
         <masterLabel>Budget Line Items</masterLabel>

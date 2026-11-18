@@ -1,4 +1,3 @@
-<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <Package xmlns="http://soap.sforce.com/2006/04/metadata">
     <types>
         <members>*</members>
@@ -7,6 +6,10 @@
     <types>
         <members>*</members>
         <name>AIApplicationConfig</name>
+    </types>
+    <types>
+        <members>*</members>
+        <name>AccountPlanObjMeasCalcDef</name>
     </types>
     <types>
         <members>*</members>
@@ -78,19 +81,11 @@
     </types>
     <types>
         <members>*</members>
-        <name>ApplicationSubtypeDefinition</name>
-    </types>
-    <types>
-        <members>*</members>
         <name>ApprovalProcess</name>
     </types>
     <types>
         <members>*</members>
         <name>AssignmentRules</name>
-    </types>
-    <types>
-        <members>*</members>
-        <name>Audience</name>
     </types>
     <types>
         <members>*</members>
@@ -122,11 +117,7 @@
     </types>
     <types>
         <members>*</members>
-        <name>BusinessProcessTypeDefinition</name>
-    </types>
-    <types>
-        <members>*</members>
-        <name>CMSConnectSource</name>
+        <name>BusinessProcess</name>
     </types>
     <types>
         <members>*</members>
@@ -143,6 +134,10 @@
     <types>
         <members>*</members>
         <name>CanvasMetadata</name>
+    </types>
+    <types>
+        <members>*</members>
+        <name>CaseSubjectParticle</name>
     </types>
     <types>
         <members>*</members>
@@ -166,19 +161,15 @@
     </types>
     <types>
         <members>*</members>
+        <name>ChatterExtension</name>
+    </types>
+    <types>
+        <members>*</members>
         <name>CleanDataService</name>
     </types>
     <types>
         <members>*</members>
         <name>Community</name>
-    </types>
-    <types>
-        <members>*</members>
-        <name>CommunityTemplateDefinition</name>
-    </types>
-    <types>
-        <members>*</members>
-        <name>CommunityThemeDefinition</name>
     </types>
     <types>
         <members>*</members>
@@ -207,6 +198,10 @@
     <types>
         <members>*</members>
         <name>CustomApplicationComponent</name>
+    </types>
+    <types>
+        <members>*</members>
+        <name>CustomFeedFilter</name>
     </types>
     <types>
         <members>*</members>
@@ -302,10 +297,6 @@
     </types>
     <types>
         <members>*</members>
-        <name>DigitalExperienceConfig</name>
-    </types>
-    <types>
-        <members>*</members>
         <name>Document</name>
     </types>
     <types>
@@ -342,11 +333,7 @@
     </types>
     <types>
         <members>*</members>
-        <name>EntitlementProcess</name>
-    </types>
-    <types>
-        <members>*</members>
-        <name>EntitlementTemplate</name>
+        <name>EnablementProgramDefinition</name>
     </types>
     <types>
         <members>*</members>
@@ -356,22 +343,10 @@
         <members>*</members>
         <name>EventRelayConfig</name>
     </types>
-   
+  
     <types>
         <members>*</members>
         <name>ExperiencePropertyTypeBundle</name>
-    </types>
-    <types>
-        <members>*</members>
-        <name>ExplainabilityActionDefinition</name>
-    </types>
-    <types>
-        <members>*</members>
-        <name>ExplainabilityActionVersion</name>
-    </types>
-    <types>
-        <members>*</members>
-        <name>ExplainabilityMsgTemplate</name>
     </types>
     <types>
         <members>*</members>
@@ -380,10 +355,6 @@
     <types>
         <members>*</members>
         <name>ExpressionSetDefinitionVersion</name>
-    </types>
-    <types>
-        <members>*</members>
-        <name>ExpressionSetMessageToken</name>
     </types>
     <types>
         <members>*</members>
@@ -439,6 +410,10 @@
     </types>
     <types>
         <members>*</members>
+        <name>ExtlClntAppOauthSecuritySettings</name>
+    </types>
+    <types>
+        <members>*</members>
         <name>ExtlClntAppOauthSettings</name>
     </types>
     <types>
@@ -467,11 +442,43 @@
     </types>
     <types>
         <members>*</members>
+        <name>FlowCategory</name>
+    </types>
+    <types>
+        <members>*</members>
         <name>FlowDefinition</name>
     </types>
     <types>
         <members>*</members>
         <name>FlowTest</name>
+    </types>
+    <types>
+        <members>*</members>
+        <name>FlowValueMap</name>
+    </types>
+    <types>
+        <members>*</members>
+        <name>ForecastingFilter</name>
+    </types>
+    <types>
+        <members>*</members>
+        <name>ForecastingFilterCondition</name>
+    </types>
+    <types>
+        <members>*</members>
+        <name>ForecastingGroup</name>
+    </types>
+    <types>
+        <members>*</members>
+        <name>ForecastingSourceDefinition</name>
+    </types>
+    <types>
+        <members>*</members>
+        <name>ForecastingType</name>
+    </types>
+    <types>
+        <members>*</members>
+        <name>ForecastingTypeSource</name>
     </types>
     <types>
         <members>*</members>
@@ -519,10 +526,6 @@
     </types>
     <types>
         <members>*</members>
-        <name>KeywordList</name>
-    </types>
-    <types>
-        <members>*</members>
         <name>Layout</name>
     </types>
     <types>
@@ -532,6 +535,10 @@
     <types>
         <members>*</members>
         <name>Letterhead</name>
+    </types>
+    <types>
+        <members>*</members>
+        <name>LightningBolt</name>
     </types>
     <types>
         <members>*</members>
@@ -583,27 +590,7 @@
     </types>
     <types>
         <members>*</members>
-        <name>MilestoneType</name>
-    </types>
-    <types>
-        <members>*</members>
-        <name>MobSecurityCertPinConfig</name>
-    </types>
-    <types>
-        <members>*</members>
         <name>MobileApplicationDetail</name>
-    </types>
-    <types>
-        <members>*</members>
-        <name>MobileSecurityAssignment</name>
-    </types>
-    <types>
-        <members>*</members>
-        <name>MobileSecurityPolicy</name>
-    </types>
-    <types>
-        <members>*</members>
-        <name>ModerationRule</name>
     </types>
     <types>
         <members>*</members>
@@ -616,14 +603,6 @@
     <types>
         <members>*</members>
         <name>NamedCredential</name>
-    </types>
-    <types>
-        <members>*</members>
-        <name>NavigationMenu</name>
-    </types>
-    <types>
-        <members>*</members>
-        <name>Network</name>
     </types>
     <types>
         <members>*</members>
@@ -659,7 +638,7 @@
     </types>
     <types>
         <members>*</members>
-        <name>PersonAccountOwnerPowerUser</name>
+        <name>PermissionSetLicenseDefinition</name>
     </types>
     <types>
         <members>*</members>
@@ -683,11 +662,19 @@
     </types>
     <types>
         <members>*</members>
-        <name>PortalDelegablePermissionSet</name>
+        <name>PostTemplate</name>
     </types>
     <types>
         <members>*</members>
         <name>ProcessFlowMigration</name>
+    </types>
+    <types>
+        <members>*</members>
+        <name>ProductSpecificationRecType</name>
+    </types>
+    <types>
+        <members>*</members>
+        <name>ProductSpecificationType</name>
     </types>
     <types>
         <members>*</members>
@@ -715,10 +702,6 @@
     </types>
     <types>
         <members>*</members>
-        <name>RecAlrtDataSrcExpSetDef</name>
-    </types>
-    <types>
-        <members>*</members>
         <name>RecommendationStrategy</name>
     </types>
     <types>
@@ -727,19 +710,11 @@
     </types>
     <types>
         <members>*</members>
-        <name>RecordAlertCategory</name>
-    </types>
-    <types>
-        <members>*</members>
-        <name>RecordAlertDataSource</name>
-    </types>
-    <types>
-        <members>*</members>
-        <name>RecordAlertTemplate</name>
-    </types>
-    <types>
-        <members>*</members>
         <name>RedirectWhitelistUrl</name>
+    </types>
+    <types>
+        <members>*</members>
+        <name>RelationshipGraphDefinition</name>
     </types>
     <types>
         <members>*</members>
@@ -752,6 +727,10 @@
     <types>
         <members>*</members>
         <name>ReportType</name>
+    </types>
+    <types>
+        <members>*</members>
+        <name>RestrictionRule</name>
     </types>
     <types>
         <members>*</members>
@@ -783,10 +762,6 @@
     </types>
     <types>
         <members>*</members>
-        <name>SharingSet</name>
-    </types>
-    <types>
-        <members>*</members>
         <name>SiteDotCom</name>
     </types>
     <types>
@@ -797,7 +772,7 @@
         <members>*</members>
         <name>StandardValueSetTranslation</name>
     </types>
- 
+   
     <types>
         <members>*</members>
         <name>StaticResource</name>
@@ -806,10 +781,30 @@
         <members>*</members>
         <name>SynonymDictionary</name>
     </types>
-  
+
     <types>
         <members>*</members>
-        <name>TimelineObjectDefinition</name>
+        <name>Territory2</name>
+    </types>
+    <types>
+        <members>*</members>
+        <name>Territory2Model</name>
+    </types>
+    <types>
+        <members>*</members>
+        <name>Territory2Rule</name>
+    </types>
+    <types>
+        <members>*</members>
+        <name>Territory2Type</name>
+    </types>
+    <types>
+        <members>*</members>
+        <name>TopicsForObjects</name>
+    </types>
+    <types>
+        <members>*</members>
+        <name>Translations</name>
     </types>
     <types>
         <members>*</members>
@@ -821,11 +816,11 @@
     </types>
     <types>
         <members>*</members>
-        <name>UserCriteria</name>
+        <name>UserProvisioningConfig</name>
     </types>
     <types>
         <members>*</members>
-        <name>UserProvisioningConfig</name>
+        <name>ValidationRule</name>
     </types>
     <types>
         <members>*</members>
@@ -835,5 +830,9 @@
         <members>*</members>
         <name>Workflow</name>
     </types>
-    <version>65.0</version>
+    <types>
+        <members>*</members>
+        <name>WorkflowRule</name>
+    </types>
+    <version>66.0</version>
 </Package>

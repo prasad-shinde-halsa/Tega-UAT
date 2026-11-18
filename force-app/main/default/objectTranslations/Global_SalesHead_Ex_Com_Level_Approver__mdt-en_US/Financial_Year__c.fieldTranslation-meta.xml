@@ -14,4 +14,8 @@
         <masterLabel>2025-26</masterLabel>
         <translation><!-- 2025-26 --></translation>
     </picklistValues>
+    <picklistValues>
+        <masterLabel>2026-27</masterLabel>
+        <translation><!-- 2026-27 --></translation>
+    </picklistValues>
 </CustomFieldTranslation>

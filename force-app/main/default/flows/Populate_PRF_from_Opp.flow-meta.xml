@@ -5,10 +5,10 @@
     <decisions>
         <name>Check_Opportunity_Order_type_is_Blank_or_not</name>
         <label>Check Opportunity Order type is Blank or not</label>
-        <locationX>806</locationX>
-        <locationY>344</locationY>
+        <locationX>248</locationX>
+        <locationY>323</locationY>
         <defaultConnector>
-            <targetReference>Update_Proposal_form_0</targetReference>
+            <targetReference>type_conversion_check</targetReference>
         </defaultConnector>
         <defaultConnectorLabel>Default Outcome</defaultConnectorLabel>
         <rules>
@@ -34,6 +34,32 @@
             <label>if blank</label>
         </rules>
     </decisions>
+    <decisions>
+        <name>type_conversion_check</name>
+        <label>type conversion check</label>
+        <locationX>446</locationX>
+        <locationY>431</locationY>
+        <defaultConnector>
+            <targetReference>Copy_2_of_Update_Proposal_form</targetReference>
+        </defaultConnector>
+        <defaultConnectorLabel>Default Outcome</defaultConnectorLabel>
+        <rules>
+            <name>type_is_conversion</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>$Record.Opportunity__r.Order_Type__c</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>Conversion</stringValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Update_Proposal_form_0</targetReference>
+            </connector>
+            <label>type is conversion</label>
+        </rules>
+    </decisions>
+    <description>decision element added and conversion sub type added for type conversion</description>
     <environments>Default</environments>
     <interviewLabel>Populate PRF from Opp {!$Flow.CurrentDateTime}</interviewLabel>
     <label>Populate PRF from Opp</label>
@@ -46,7 +72,7 @@
     <processMetadataValues>
         <name>CanvasMode</name>
         <value>
-            <stringValue>FREE_FORM_CANVAS</stringValue>
+            <stringValue>AUTO_LAYOUT_CANVAS</stringValue>
         </value>
     </processMetadataValues>
     <processMetadataValues>
@@ -57,10 +83,53 @@
     </processMetadataValues>
     <processType>AutoLaunchedFlow</processType>
     <recordUpdates>
+        <name>Copy_2_of_Update_Proposal_form</name>
+        <label>Copy 2 of Update Proposal form</label>
+        <locationX>578</locationX>
+        <locationY>539</locationY>
+        <inputAssignments>
+            <field>CurrencyIsoCode</field>
+            <value>
+                <elementReference>$Record.Opportunity__r.CurrencyIsoCode</elementReference>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>Customer_Name__c</field>
+            <value>
+                <elementReference>$Record.Opportunity__r.AccountId</elementReference>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>Dispatch_Mode__c</field>
+            <value>
+                <elementReference>$Record.Opportunity__r.Dispatch_Mode__c</elementReference>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>Incoterm_City__c</field>
+            <value>
+                <elementReference>$Record.Opportunity__r.Incoterm_City__c</elementReference>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>Incoterms__c</field>
+            <value>
+                <elementReference>$Record.Opportunity__r.Incoterm__c</elementReference>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>Type__c</field>
+            <value>
+                <elementReference>$Record.Opportunity__r.Order_Type__c</elementReference>
+            </value>
+        </inputAssignments>
+        <inputReference>$Record</inputReference>
+    </recordUpdates>
+    <recordUpdates>
         <name>Update_Opportunity</name>
         <label>Update Opportunity</label>
-        <locationX>669</locationX>
-        <locationY>515</locationY>
+        <locationX>50</locationX>
+        <locationY>431</locationY>
         <connector>
             <targetReference>Update_Proposal_form_0_0</targetReference>
         </connector>
@@ -83,8 +152,20 @@
     <recordUpdates>
         <name>Update_Proposal_form_0</name>
         <label>Update Proposal form</label>
-        <locationX>966</locationX>
-        <locationY>523</locationY>
+        <locationX>314</locationX>
+        <locationY>539</locationY>
+        <inputAssignments>
+            <field>Conversion__c</field>
+            <value>
+                <elementReference>$Record.Opportunity__r.Conversion__c</elementReference>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>Conversion_sub_type__c</field>
+            <value>
+                <elementReference>$Record.Opportunity__r.Conversion_sub_type__c</elementReference>
+            </value>
+        </inputAssignments>
         <inputAssignments>
             <field>CurrencyIsoCode</field>
             <value>
@@ -126,8 +207,8 @@
     <recordUpdates>
         <name>Update_Proposal_form_0_0</name>
         <label>Update Proposal form</label>
-        <locationX>511</locationX>
-        <locationY>636</locationY>
+        <locationX>50</locationX>
+        <locationY>539</locationY>
         <inputAssignments>
             <field>CurrencyIsoCode</field>
             <value>
@@ -167,8 +248,8 @@
         <inputReference>$Record</inputReference>
     </recordUpdates>
     <start>
-        <locationX>435</locationX>
-        <locationY>77</locationY>
+        <locationX>122</locationX>
+        <locationY>0</locationY>
         <connector>
             <targetReference>Check_Opportunity_Order_type_is_Blank_or_not</targetReference>
         </connector>
@@ -184,5 +265,5 @@
         <recordTriggerType>Create</recordTriggerType>
         <triggerType>RecordAfterSave</triggerType>
     </start>
-    <status>Active</status>
+    <status>Obsolete</status>
 </Flow>

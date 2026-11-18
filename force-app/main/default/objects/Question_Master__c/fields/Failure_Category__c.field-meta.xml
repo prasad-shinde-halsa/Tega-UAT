@@ -120,11 +120,6 @@
                 <label>FLIP FLO Screen problem</label>
             </value>
             <value>
-                <fullName>Dimensional/ Fitment Problem</fullName>
-                <default>false</default>
-                <label>Dimensional/ Fitment Problem</label>
-            </value>
-            <value>
                 <fullName>Trommel Structure and Panel problem</fullName>
                 <default>false</default>
                 <label>Trommel Structure and Panel problem</label>
@@ -165,9 +160,9 @@
                 <label>Product Failure</label>
             </value>
             <value>
-                <fullName>Dimensional/Fitment problem</fullName>
+                <fullName>Dimensional/Fitment Problem</fullName>
                 <default>false</default>
-                <label>Dimensional/Fitment problem</label>
+                <label>Dimensional/Fitment Problem</label>
             </value>
             <value>
                 <fullName>Finishing Problem</fullName>
@@ -213,11 +208,6 @@
                 <fullName>De-bonding of ceramic lagging from the pulley surface</fullName>
                 <default>false</default>
                 <label>De-bonding of ceramic lagging from the pulley surface</label>
-            </value>
-            <value>
-                <fullName>Dimensional/Fitment</fullName>
-                <default>false</default>
-                <label>Dimensional/Fitment</label>
             </value>
             <value>
                 <fullName>Blade Holder( Element ) Breakage</fullName>

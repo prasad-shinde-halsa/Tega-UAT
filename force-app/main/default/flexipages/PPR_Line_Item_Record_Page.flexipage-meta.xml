@@ -9,7 +9,7 @@
                         <valueListItems>
                             <value>PPR_Line_Item__c.Submit_to_CCM</value>
                             <visibilityRule>
-                                <booleanFilter>(1 OR 2 OR 3 OR 4) AND 5</booleanFilter>
+                                <booleanFilter>(1 OR 2 OR 3 OR 4) AND 5 AND 6</booleanFilter>
                                 <criteria>
                                     <leftValue>{!$User.Profile.Name}</leftValue>
                                     <operator>EQUAL</operator>
@@ -34,6 +34,11 @@
                                     <leftValue>{!Record.Is_Customer_Branch_Assignment__c}</leftValue>
                                     <operator>EQUAL</operator>
                                     <rightValue>true</rightValue>
+                                </criteria>
+                                <criteria>
+                                    <leftValue>{!Record.Status__c}</leftValue>
+                                    <operator>EQUAL</operator>
+                                    <rightValue>New</rightValue>
                                 </criteria>
                             </visibilityRule>
                         </valueListItems>
@@ -155,10 +160,16 @@
                         <valueListItems>
                             <value>PPR_Line_Item__c.Product_Selection</value>
                             <visibilityRule>
+                                <booleanFilter>1 AND 2</booleanFilter>
                                 <criteria>
                                     <leftValue>{!Record.Is_Customer_Branch_Assignment__c}</leftValue>
                                     <operator>EQUAL</operator>
                                     <rightValue>true</rightValue>
+                                </criteria>
+                                <criteria>
+                                    <leftValue>{!Record.Status__c}</leftValue>
+                                    <operator>EQUAL</operator>
+                                    <rightValue>New</rightValue>
                                 </criteria>
                             </visibilityRule>
                         </valueListItems>
@@ -181,10 +192,16 @@
                         <valueListItems>
                             <value>PPR_Line_Item__c.Edit_Customer_Branch_Assignment</value>
                             <visibilityRule>
+                                <booleanFilter>1 AND 2</booleanFilter>
                                 <criteria>
                                     <leftValue>{!Record.Is_Customer_Branch_Assignment__c}</leftValue>
                                     <operator>EQUAL</operator>
                                     <rightValue>true</rightValue>
+                                </criteria>
+                                <criteria>
+                                    <leftValue>{!Record.Status__c}</leftValue>
+                                    <operator>EQUAL</operator>
+                                    <rightValue>New</rightValue>
                                 </criteria>
                             </visibilityRule>
                         </valueListItems>
@@ -204,6 +221,10 @@
                 </componentInstanceProperties>
                 <componentInstanceProperties>
                     <name>hideChatterActions</name>
+                    <value>false</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>hideSlackAction</name>
                     <value>false</value>
                 </componentInstanceProperties>
                 <componentInstanceProperties>
@@ -272,10 +293,20 @@
             <fieldInstance>
                 <fieldInstanceProperties>
                     <name>uiBehavior</name>
-                    <value>readonly</value>
+                    <value>required</value>
                 </fieldInstanceProperties>
                 <fieldItem>Record.PMG__c</fieldItem>
                 <identifier>RecordPMG_cField</identifier>
+            </fieldInstance>
+        </itemInstances>
+        <itemInstances>
+            <fieldInstance>
+                <fieldInstanceProperties>
+                    <name>uiBehavior</name>
+                    <value>none</value>
+                </fieldInstanceProperties>
+                <fieldItem>Record.Region__c</fieldItem>
+                <identifier>RecordRegion__cField</identifier>
             </fieldInstance>
         </itemInstances>
         <name>Facet-0c6dd9b6-e6ad-4d78-82c4-4e4b60e60ba4</name>
@@ -1712,7 +1743,7 @@
                 </componentInstanceProperties>
                 <componentInstanceProperties>
                     <name>relatedListComponentOverride</name>
-                    <value>ADVGRID</value>
+                    <value>NONE</value>
                 </componentInstanceProperties>
                 <componentInstanceProperties>
                     <name>rowsToDisplay</name>

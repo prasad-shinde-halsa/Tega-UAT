@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Prevent_Customer_Currency_Edit</fullName>
+    <active>true</active>
+    <errorConditionFormula>AND(
+    $Profile.Name &lt;&gt; &quot;System Administrator&quot;,
+    OR(
+        ISCHANGED(Customer__c),
+        ISCHANGED(CurrencyIsoCode)
+    )
+)</errorConditionFormula>
+    <errorMessage>Customer and Currency cannot be modified. Only System Administrators can update these fields.</errorMessage>
+</ValidationRule>

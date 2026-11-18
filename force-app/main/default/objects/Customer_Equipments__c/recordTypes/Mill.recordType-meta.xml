@@ -345,6 +345,10 @@
             <default>true</default>
         </values>
         <values>
+            <fullName>Pebble Mill</fullName>
+            <default>false</default>
+        </values>
+        <values>
             <fullName>Rod Mill</fullName>
             <default>false</default>
         </values>

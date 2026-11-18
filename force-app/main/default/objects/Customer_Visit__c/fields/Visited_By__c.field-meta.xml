@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Visited_By__c</fullName>
+    <deleteConstraint>SetNull</deleteConstraint>
+    <description>User who performed/logged the visit. Auto-populated with the creator on insert (flow Customer_Visit_Set_Visited_By). Used by the &quot;User With No Visit&quot; report so it matches &quot;Visit days compliance&quot; (Created By) instead of Send To.</description>
+    <inlineHelpText>Automatically set to the user who created the visit.</inlineHelpText>
+    <label>Visited By</label>
+    <referenceTo>User</referenceTo>
+    <relationshipName>Visited_By_Visits</relationshipName>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Lookup</type>
+</CustomField>

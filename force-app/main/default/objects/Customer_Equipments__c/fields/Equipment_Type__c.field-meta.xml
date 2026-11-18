@@ -372,6 +372,11 @@
                 <label>PU Spares of cyclone</label>
             </value>
             <value>
+                <fullName>Pebble Mill</fullName>
+                <default>false</default>
+                <label>Pebble Mill</label>
+            </value>
+            <value>
                 <fullName>Batch Mill</fullName>
                 <default>false</default>
                 <isActive>false</isActive>

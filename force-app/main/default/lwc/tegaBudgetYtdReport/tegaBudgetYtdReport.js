@@ -369,6 +369,9 @@ export default class TegaBudgetYtdReport extends LightningElement {
             return `${short}, ${year}`;
         });
 
+        // NEW: short month codes only (no year) — for Proposal_Form__c picklist matching
+        const forecastShortMonthsOnly = forecastMonths.map(m => monthFieldMap[m]);
+
         const allFiscalMonthPrefixes = ['Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec', 'Jan', 'Feb', 'Mar'];
 
         for (const pmg of this.PMG_CATEGORIES) {
@@ -377,6 +380,7 @@ export default class TegaBudgetYtdReport extends LightningElement {
             let ytdActual = 0;
             let ytdBudget = 0;
             let forecastMIS = 0;
+            let forecastMIS2 = 0;
             let forecastBudget = 0;
             let fullYearBudget = 0;
 
@@ -469,7 +473,18 @@ export default class TegaBudgetYtdReport extends LightningElement {
                     }
 
                     // FORECAST MIS
+
+                    
                     const misList = line.MIS_Budgets__r || [];
+
+                    if (pmg === 'Mill') {  // limit noise — just log for one PMG while debugging
+        console.log('FY:', this.selectedFY, '| Looking for:', forecastShortMonthTexts);
+        misList.forEach(mis => {
+            console.log('Jul field raw value:', JSON.stringify(mis.Order_Expected_Month_Jul__c));
+            console.log('Aug field raw value:', JSON.stringify(mis.Order_Expected_Month_Aug__c));
+            console.log('Sep field raw value:', JSON.stringify(mis.Order_Expected_Month_Sep__c));
+        });
+    }
                     misList.forEach(mis => {
                         Object.entries(expectedMonthFields).forEach(([short, expectedMonthField]) => {
                             const expectedText = mis[expectedMonthField]?.trim();
@@ -479,6 +494,23 @@ export default class TegaBudgetYtdReport extends LightningElement {
                             }
                         });
                     });
+
+
+                    // NEW: Forecast - Next 3 months (MIS)-2, from Proposal_Form__c
+                    const proposalList = line.Proposal_Form__r || [];
+                                        
+                    if (pmg === 'Mill' && proposalList.length > 0) {
+                        console.log('Proposal list for line', line.Id, JSON.stringify(proposalList));
+                        console.log('Looking for months:', forecastShortMonthsOnly);
+                    }
+                    proposalList.forEach(proposal => {
+                        const expectedMonth = proposal.Order_Expected_Month__c?.trim();
+                        if (forecastShortMonthsOnly.includes(expectedMonth)) {
+                            const value = proposal.Total_Price_Quoted__c/1000 || 0;
+                            forecastMIS2 += value * conversionRate;
+                        }
+                    });
+                   
                 });
             });
 
@@ -489,8 +521,8 @@ export default class TegaBudgetYtdReport extends LightningElement {
 
             // Full Year Forecast = YTD Actual + Forecast MIS + Remaining Budget
             const remainingBudget = fullYearBudget - ytdBudget;
-            const fullYearForecastRaw = ytdActual + forecastMIS + (remainingBudget > 0 ? remainingBudget : 0);
-
+            //const fullYearForecastRaw = ytdActual + forecastMIS + (remainingBudget > 0 ? remainingBudget : 0);
+            const fullYearForecastRaw = ytdActual + forecastMIS2 + (remainingBudget > 0 ? remainingBudget : 0);
 
             console.log('PMG RAW VALUES =>', {
                 pmg: pmg,
@@ -504,10 +536,11 @@ export default class TegaBudgetYtdReport extends LightningElement {
 
                 forecastBudget: forecastBudget,
                 forecastMIS: forecastMIS,
+                forecastMIS2: forecastMIS2,
                 fullYearBudget: fullYearBudget,
                 remainingBudget: fullYearBudget - ytdBudget,
                 fullYearForecast:
-                    ytdActual + forecastMIS + ((fullYearBudget - ytdBudget) > 0 ? (fullYearBudget - ytdBudget) : 0)
+                    ytdActual + forecastMIS2 + ((fullYearBudget - ytdBudget) > 0 ? (fullYearBudget - ytdBudget) : 0)
             });
 
             matrix.push({
@@ -527,6 +560,8 @@ export default class TegaBudgetYtdReport extends LightningElement {
                     this.formatToDisplay(ytdBudget)
                 ),
                 forecastMIS: this.formatToDisplay(forecastMIS),
+                forecastMIS2: this.formatToDisplay(forecastMIS2),
+                fullYearBudget: this.formatToDisplay(fullYearBudget),
                 fullYearForecast: this.formatToDisplay(fullYearForecastRaw),
                 forecastBudget: this.formatToDisplay(forecastBudget)
             });
@@ -535,7 +570,7 @@ export default class TegaBudgetYtdReport extends LightningElement {
         this.visibleMatrix = matrix;
 
 
-        const sumFields = ['budgetedOrder', 'monthlyReceived', 'ytdBudget', 'ytdActual', 'forecastMIS', 'fullYearForecast', 'forecastBudget'];
+        const sumFields = ['budgetedOrder', 'monthlyReceived', 'ytdBudget', 'ytdActual', 'forecastMIS','forecastMIS2', 'fullYearBudget','fullYearForecast', 'forecastBudget'];
         let totals = {};
 
 
@@ -544,20 +579,36 @@ export default class TegaBudgetYtdReport extends LightningElement {
             totals[field] = this.formatToDisplay(sum / 1000);
         });
 
+        //added
+        const totalBudgetRaw = this.reverseFormat(totals.budgetedOrder);
+        const totalActualRaw = this.reverseFormat(totals.monthlyReceived);
+        totals.achievement = totalBudgetRaw > 0
+            ? ((totalActualRaw / totalBudgetRaw) * 100).toFixed(2) + ' %'
+            : '0.00 %';
 
-        const totalAchievement = matrix.reduce((acc, row) => {
-            const percentValue = parseFloat(row.achievement.replace('%', '').trim()) || 0;
-            return acc + percentValue;
-        }, 0);
-        totals.achievement = totalAchievement.toFixed(2);
-
-        const totalYtdAchievement = matrix.reduce((acc, row) => {
-            const percentValue = parseFloat(row.ytdAchievement.replace('%', '').trim()) || 0;
-            return acc + percentValue;
-        }, 0);
-        totals.ytdAchievement = totalYtdAchievement.toFixed(2);
+        const totalYtdBudgetRaw = this.reverseFormat(totals.ytdBudget);
+        const totalYtdActualRaw = this.reverseFormat(totals.ytdActual);
+        totals.ytdAchievement = totalYtdBudgetRaw > 0
+            ? ((totalYtdActualRaw / totalYtdBudgetRaw) * 100).toFixed(2) + ' %'
+            : '0.00 %';
 
         this.totalsRow = totals;
+        // today end
+
+
+        // const totalAchievement = matrix.reduce((acc, row) => {
+        //     const percentValue = parseFloat(row.achievement.replace('%', '').trim()) || 0;
+        //     return acc + percentValue;
+        // }, 0);
+        // totals.achievement = totalAchievement.toFixed(2);
+
+        // const totalYtdAchievement = matrix.reduce((acc, row) => {
+        //     const percentValue = parseFloat(row.ytdAchievement.replace('%', '').trim()) || 0;
+        //     return acc + percentValue;
+        // }, 0);
+        // totals.ytdAchievement = totalYtdAchievement.toFixed(2);
+
+        // this.totalsRow = totals;
 
         this.showTable = true;
         this.isLoading = false;

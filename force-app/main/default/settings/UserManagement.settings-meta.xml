@@ -6,8 +6,8 @@
     <enableEnhancedPermsetMgmt>false</enableEnhancedPermsetMgmt>
     <enableEnhancedProfileMgmt>false</enableEnhancedProfileMgmt>
     <enableEnhcUiUserAccessPolicies>false</enableEnhcUiUserAccessPolicies>
-    <enableNewProfileUI>false</enableNewProfileUI>
-    <enableProfileFiltering>false</enableProfileFiltering>
+    <enableNewProfileUI>true</enableNewProfileUI>
+    <enableProfileFiltering>true</enableProfileFiltering>
     <enableRestrictEmailDomains>false</enableRestrictEmailDomains>
     <enableScrambleUserData>false</enableScrambleUserData>
     <enableUserSelfDeactivate>false</enableUserSelfDeactivate>

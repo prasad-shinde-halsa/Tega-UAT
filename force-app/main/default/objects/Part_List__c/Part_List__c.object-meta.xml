@@ -166,12 +166,10 @@
     </nameField>
     <pluralLabel>Part Lists</pluralLabel>
     <searchLayouts>
+        <searchResultsAdditionalFields>Part_List_Revision_Number__c</searchResultsAdditionalFields>
         <searchResultsAdditionalFields>Customer__c</searchResultsAdditionalFields>
-        <searchResultsAdditionalFields>Version_Number_Component__c</searchResultsAdditionalFields>
-        <searchResultsAdditionalFields>Active__c</searchResultsAdditionalFields>
         <searchResultsAdditionalFields>CURRENCY_ISO_CODE</searchResultsAdditionalFields>
         <searchResultsAdditionalFields>LAST_UPDATE</searchResultsAdditionalFields>
-        <searchResultsAdditionalFields>CREATED_DATE</searchResultsAdditionalFields>
     </searchLayouts>
     <sharingModel>ControlledByParent</sharingModel>
     <visibility>Public</visibility>

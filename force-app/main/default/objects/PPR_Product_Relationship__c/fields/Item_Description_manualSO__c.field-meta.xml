@@ -3,7 +3,7 @@
     <fullName>Item_Description_manualSO__c</fullName>
     <externalId>false</externalId>
     <label>Item Description</label>
-    <length>255</length>
+    <length>199</length>
     <required>false</required>
     <trackTrending>false</trackTrending>
     <type>Text</type>

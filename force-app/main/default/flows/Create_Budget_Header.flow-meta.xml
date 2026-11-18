@@ -37,29 +37,6 @@
         </connector>
     </assignments>
     <assignments>
-        <name>Assign_Start_date_and_End_Date</name>
-        <label>Assign Start date and End Date</label>
-        <locationX>1195</locationX>
-        <locationY>329</locationY>
-        <assignmentItems>
-            <assignToReference>FYStartDate</assignToReference>
-            <operator>Assign</operator>
-            <value>
-                <elementReference>FormulaForFYStartDate</elementReference>
-            </value>
-        </assignmentItems>
-        <assignmentItems>
-            <assignToReference>FYEndDate</assignToReference>
-            <operator>Assign</operator>
-            <value>
-                <elementReference>FormulaForFYEndDate</elementReference>
-            </value>
-        </assignmentItems>
-        <connector>
-            <targetReference>Get_Dated_Conversion_Rate</targetReference>
-        </connector>
-    </assignments>
-    <assignments>
         <name>Assign_Values_for_BLI</name>
         <label>Assign Values for BLI</label>
         <locationX>1395</locationX>
@@ -413,19 +390,6 @@
             <targetReference>Create_Budget</targetReference>
         </connector>
     </assignments>
-    <assignments>
-        <name>Test</name>
-        <label>Test</label>
-        <locationX>835</locationX>
-        <locationY>428</locationY>
-        <assignmentItems>
-            <assignToReference>TestValue</assignToReference>
-            <operator>Assign</operator>
-            <value>
-                <elementReference>Get_Dated_Conversion_Rate.ConversionRate</elementReference>
-            </value>
-        </assignmentItems>
-    </assignments>
     <decisions>
         <name>check_if_there_s_already_a_duplicate_record_has_been_created</name>
         <label>check if there&apos;s already a duplicate record has been created</label>
@@ -547,28 +511,12 @@
     </decisions>
     <description>Adding Fault Message
 2-Add short order
-Introduce Active in metadata
-Added Conversion rate</description>
+Introduce Active checkbox in meta data</description>
     <environments>Default</environments>
     <formulas>
         <name>dateRange</name>
         <dataType>Boolean</dataType>
         <expression>IF( (TODAY()&lt;={!Get_Active_FY_Year.Sales_Budget_Last_Date__c}),True, False)</expression>
-    </formulas>
-    <formulas>
-        <name>FormulaForFYEndDate</name>
-        <dataType>Date</dataType>
-        <expression>DATE(VALUE(LEFT({!Get_Active_FY_Year.Active_Financial_Year__c},4)) + 1, 3, 31)</expression>
-    </formulas>
-    <formulas>
-        <name>FormulaForFYStartDate</name>
-        <dataType>Date</dataType>
-        <expression>DATE(VALUE(LEFT({!Get_Active_FY_Year.Active_Financial_Year__c},4)), 4, 1)</expression>
-    </formulas>
-    <formulas>
-        <name>FormulaToConvertDate</name>
-        <dataType>Date</dataType>
-        <expression>DATE(1900, 1, 1)</expression>
     </formulas>
     <formulas>
         <name>today_formula</name>
@@ -639,11 +587,11 @@ Added Conversion rate</description>
     <recordLookups>
         <name>Get_Active_FY_Year</name>
         <label>Get Active FY Year</label>
-        <locationX>1367</locationX>
-        <locationY>455</locationY>
+        <locationX>1363</locationX>
+        <locationY>462</locationY>
         <assignNullValuesIfNoRecordsFound>false</assignNullValuesIfNoRecordsFound>
         <connector>
-            <targetReference>Assign_Start_date_and_End_Date</targetReference>
+            <targetReference>PMG_Record_Type</targetReference>
         </connector>
         <faultConnector>
             <targetReference>Fault_Message_Screen</targetReference>
@@ -700,48 +648,6 @@ Added Conversion rate</description>
         </faultConnector>
         <getFirstRecordOnly>false</getFirstRecordOnly>
         <object>Sales_Org_Branch_Relationship__c</object>
-        <storeOutputAutomatically>true</storeOutputAutomatically>
-    </recordLookups>
-    <recordLookups>
-        <name>Get_Dated_Conversion_Rate</name>
-        <label>Get Dated Conversion Rate</label>
-        <locationX>1024</locationX>
-        <locationY>329</locationY>
-        <assignNullValuesIfNoRecordsFound>false</assignNullValuesIfNoRecordsFound>
-        <connector>
-            <targetReference>Test</targetReference>
-        </connector>
-        <filterLogic>and</filterLogic>
-        <filters>
-            <field>StartDate</field>
-            <operator>LessThan</operator>
-            <value>
-                <elementReference>FYEndDate</elementReference>
-            </value>
-        </filters>
-        <filters>
-            <field>NextStartDate</field>
-            <operator>GreaterThan</operator>
-            <value>
-                <elementReference>FYStartDate</elementReference>
-            </value>
-        </filters>
-        <filters>
-            <field>StartDate</field>
-            <operator>GreaterThanOrEqualTo</operator>
-            <value>
-                <elementReference>FormulaToConvertDate</elementReference>
-            </value>
-        </filters>
-        <filters>
-            <field>IsoCode</field>
-            <operator>EqualTo</operator>
-            <value>
-                <stringValue>USD</stringValue>
-            </value>
-        </filters>
-        <getFirstRecordOnly>true</getFirstRecordOnly>
-        <object>DatedConversionRate</object>
         <storeOutputAutomatically>true</storeOutputAutomatically>
     </recordLookups>
     <recordLookups>
@@ -875,8 +781,8 @@ Added Conversion rate</description>
     <recordLookups>
         <name>PMG_Record_Type</name>
         <label>PMG Record Type</label>
-        <locationX>1327</locationX>
-        <locationY>606</locationY>
+        <locationX>1362</locationX>
+        <locationY>590</locationY>
         <assignNullValuesIfNoRecordsFound>false</assignNullValuesIfNoRecordsFound>
         <connector>
             <targetReference>Sales_Record_Type</targetReference>
@@ -1272,7 +1178,7 @@ Added Conversion rate</description>
             <targetReference>Get_Customer_Branch_Associations</targetReference>
         </connector>
     </start>
-    <status>Draft</status>
+    <status>Active</status>
     <variables>
         <name>branchVAR</name>
         <dataType>String</dataType>
@@ -1289,20 +1195,6 @@ Added Conversion rate</description>
         <objectType>DC_Budget_Line_Items__c</objectType>
     </variables>
     <variables>
-        <name>FYEndDate</name>
-        <dataType>Date</dataType>
-        <isCollection>false</isCollection>
-        <isInput>false</isInput>
-        <isOutput>false</isOutput>
-    </variables>
-    <variables>
-        <name>FYStartDate</name>
-        <dataType>Date</dataType>
-        <isCollection>false</isCollection>
-        <isInput>false</isInput>
-        <isOutput>false</isOutput>
-    </variables>
-    <variables>
         <name>NewBudget</name>
         <dataType>SObject</dataType>
         <isCollection>false</isCollection>
@@ -1317,12 +1209,5 @@ Added Conversion rate</description>
         <isInput>false</isInput>
         <isOutput>false</isOutput>
         <objectType>DC_Budget_Line_Items__c</objectType>
-    </variables>
-    <variables>
-        <name>TestValue</name>
-        <dataType>String</dataType>
-        <isCollection>false</isCollection>
-        <isInput>false</isInput>
-        <isOutput>false</isOutput>
     </variables>
 </Flow>

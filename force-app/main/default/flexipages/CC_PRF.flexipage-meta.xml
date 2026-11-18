@@ -347,30 +347,6 @@
                 <identifier>RecordOwner_Name__cField</identifier>
             </fieldInstance>
         </itemInstances>
-        <itemInstances>
-            <fieldInstance>
-                <fieldItem>Record.Exchange_Rate_In_USD__c</fieldItem>
-                <identifier>RecordExchange_Rate_In_USD__cField</identifier>
-            </fieldInstance>
-        </itemInstances>
-        <itemInstances>
-            <fieldInstance>
-                <fieldItem>Record.Exchange_Rate_In_INR__c</fieldItem>
-                <identifier>RecordExchange_Rate_In_INR__cField</identifier>
-            </fieldInstance>
-        </itemInstances>
-        <itemInstances>
-            <fieldInstance>
-                <fieldItem>Record.Financial_Year2__c</fieldItem>
-                <identifier>RecordFinancial_Year2__cField</identifier>
-            </fieldInstance>
-        </itemInstances>
-        <itemInstances>
-            <fieldInstance>
-                <fieldItem>Record.Is_Cloned_PRF__c</fieldItem>
-                <identifier>RecordIs_Cloned_PRF__cField</identifier>
-            </fieldInstance>
-        </itemInstances>
         <name>Facet-d6a3e8d9-f8a7-43e1-a4be-c550a163d0e8</name>
         <type>Facet</type>
     </flexiPageRegions>

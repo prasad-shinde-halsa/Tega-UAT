@@ -114,6 +114,8 @@ export default class ShowMISDetails extends LightningElement {
         if (data) {
             console.log('📌 Picklist Data:', JSON.stringify(data));
             this.AUGOrderStageData = data;
+            // Picklist may arrive after line items on first load (not cached yet) - rebuild row options
+            this.reapplyRowState();
         } else if (error) {
             console.error('❌ Error loading picklist values:', error);
         }
@@ -138,7 +140,7 @@ export default class ShowMISDetails extends LightningElement {
      //subham deb
      @wire(getMisDateRange, {FNyear: '$budgetFY'})
      getData({error, data}){
-         if(data){
+         if(data && data.length > 0){
              console.log('misRange::: ', JSON.stringify(data))
              let startDate = new Date(data[0].MIS_Edit_Start_Date__c);
              let endDate = new Date(data[0].MIS_Edit_End_Date__c)
@@ -148,11 +150,27 @@ export default class ShowMISDetails extends LightningElement {
                  this.canEditMis = true;
                  console.log('if true mis edit')
              }
+             // MIS window may resolve after line items were loaded - recompute disable flags
+             this.reapplyRowState();
          }
-         else{
+         else if(error){
              console.error(error)
          }
      }
+
+    // Re-derive per-row options and editability once late-arriving wire data is available
+    reapplyRowState() {
+        if (!this.allBudgetLineItems || this.allBudgetLineItems.length === 0) {
+            return;
+        }
+        this.budgetLineItems = this.allBudgetLineItems.map(item => ({
+            ...item,
+            Order_Stage_Options: this.getOrderExpectedStageOptions(item.Order_Type__c),
+            Order_Month_Options: this.setOrderExpectedMonthOptions(item.Order_Type__c)
+        }));
+        this.CheckisEditable(); // also syncs allBudgetLineItems
+        this.filterResults();   // re-apply any active search/filter
+    }
 
 
     connectedCallback() {

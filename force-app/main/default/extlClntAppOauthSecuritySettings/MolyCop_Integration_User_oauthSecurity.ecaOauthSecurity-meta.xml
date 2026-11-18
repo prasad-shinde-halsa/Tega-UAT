@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ExtlClntAppOauthSecuritySettings xmlns="http://soap.sforce.com/2006/04/metadata">
+    <externalClientApplication>MolyCop_Integration_User</externalClientApplication>
+    <label>MolyCop_Integration_User_oauthSecurity</label>
+</ExtlClntAppOauthSecuritySettings>

@@ -48,4 +48,36 @@
         <name>Sync_with_SAP</name>
     </quickActions>
     <startsWith>Vowel</startsWith>
+    <validationRules>
+        <errorMessage><!-- Cannot fill &quot;Bill to Customer&quot; if &quot;Use same account for Bill to Customer&quot; checkbox is checked --></errorMessage>
+        <name>Is_Bill_to_Customer_checked</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Cannot fill &quot;Install to Customer&quot; if &quot;Use same account for Install to Customer&quot; checkbox is checked --></errorMessage>
+        <name>Is_Install_to_Customer_checked</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Cannot fill &quot;Ship to Customer&quot; if &quot;Use same account for Ship to Customer&quot; checkbox is checked --></errorMessage>
+        <name>Is_Ship_to_Customer_checked</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Cannot edit records when Status is equal to &quot;Pending At SAP&quot; --></errorMessage>
+        <name>Is_Status_Pending_At_SAP</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Cannot Edit Record when Status is &quot;Approval Pending With Regional Sales Head&quot; --></errorMessage>
+        <name>Status_Submitted_to_Regional_Manager</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Enter Valid Phone No. --></errorMessage>
+        <name>Valid_Phone_no</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Please Enter Valid Mobile No. --></errorMessage>
+        <name>Validation_Mobile_No</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Please Enter Valid Telephone No. --></errorMessage>
+        <name>Validation_telephone_No</name>
+    </validationRules>
 </CustomObjectTranslation>

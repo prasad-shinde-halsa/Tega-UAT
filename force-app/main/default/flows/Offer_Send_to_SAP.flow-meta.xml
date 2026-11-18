@@ -5,8 +5,8 @@
     <decisions>
         <name>Check_if_Status_Approved</name>
         <label>Check if Status Approved</label>
-        <locationX>536</locationX>
-        <locationY>290</locationY>
+        <locationX>578</locationX>
+        <locationY>242</locationY>
         <defaultConnector>
             <targetReference>notapproved</targetReference>
         </defaultConnector>
@@ -26,6 +26,13 @@
                 <operator>EqualTo</operator>
                 <rightValue>
                     <stringValue>Price Accepted</stringValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>Get_Records_1.SAP_Offer_Id__c</leftValueReference>
+                <operator>IsNull</operator>
+                <rightValue>
+                    <booleanValue>true</booleanValue>
                 </rightValue>
             </conditions>
             <connector>
@@ -62,7 +69,7 @@
     <processMetadataValues>
         <name>CanvasMode</name>
         <value>
-            <stringValue>FREE_FORM_CANVAS</stringValue>
+            <stringValue>AUTO_LAYOUT_CANVAS</stringValue>
         </value>
     </processMetadataValues>
     <processMetadataValues>
@@ -75,8 +82,8 @@
     <recordCreates>
         <name>Integration_Transaction</name>
         <label>Integration Transaction</label>
-        <locationX>272</locationX>
-        <locationY>506</locationY>
+        <locationX>50</locationX>
+        <locationY>458</locationY>
         <connector>
             <targetReference>Send_to_SAP</targetReference>
         </connector>
@@ -113,13 +120,14 @@
     <recordLookups>
         <name>Get_Records_1</name>
         <label>Get Records 1</label>
-        <locationX>536</locationX>
-        <locationY>182</locationY>
+        <locationX>578</locationX>
+        <locationY>134</locationY>
         <assignNullValuesIfNoRecordsFound>false</assignNullValuesIfNoRecordsFound>
         <connector>
             <targetReference>Check_if_Status_Approved</targetReference>
         </connector>
         <faultConnector>
+            <isGoTo>true</isGoTo>
             <targetReference>Fault_message_screen</targetReference>
         </faultConnector>
         <filterLogic>and</filterLogic>
@@ -137,12 +145,13 @@
     <recordUpdates>
         <name>Update_Offer</name>
         <label>Update Offer</label>
-        <locationX>272</locationX>
-        <locationY>398</locationY>
+        <locationX>50</locationX>
+        <locationY>350</locationY>
         <connector>
             <targetReference>Integration_Transaction</targetReference>
         </connector>
         <faultConnector>
+            <isGoTo>true</isGoTo>
             <targetReference>Fault_message_screen</targetReference>
         </faultConnector>
         <filterLogic>and</filterLogic>
@@ -164,8 +173,8 @@
     <screens>
         <name>Fault_message_screen</name>
         <label>Fault message screen</label>
-        <locationX>140</locationX>
-        <locationY>229</locationY>
+        <locationX>314</locationX>
+        <locationY>566</locationY>
         <allowBack>true</allowBack>
         <allowFinish>true</allowFinish>
         <allowPause>true</allowPause>
@@ -188,8 +197,8 @@
     <screens>
         <name>notapproved</name>
         <label>notapproved</label>
-        <locationX>800</locationX>
-        <locationY>398</locationY>
+        <locationX>1106</locationX>
+        <locationY>350</locationY>
         <allowBack>false</allowBack>
         <allowFinish>true</allowFinish>
         <allowPause>false</allowPause>
@@ -213,8 +222,8 @@
     <screens>
         <name>presentoffer</name>
         <label>presentoffer</label>
-        <locationX>536</locationX>
-        <locationY>398</locationY>
+        <locationX>842</locationX>
+        <locationY>350</locationY>
         <allowBack>false</allowBack>
         <allowFinish>true</allowFinish>
         <allowPause>false</allowPause>
@@ -238,8 +247,8 @@
     <screens>
         <name>Send_to_SAP</name>
         <label>Send to SAP</label>
-        <locationX>272</locationX>
-        <locationY>614</locationY>
+        <locationX>50</locationX>
+        <locationY>566</locationY>
         <allowBack>false</allowBack>
         <allowFinish>true</allowFinish>
         <allowPause>false</allowPause>
@@ -261,8 +270,8 @@
         <showHeader>false</showHeader>
     </screens>
     <start>
-        <locationX>410</locationX>
-        <locationY>48</locationY>
+        <locationX>452</locationX>
+        <locationY>0</locationY>
         <connector>
             <targetReference>Get_Records_1</targetReference>
         </connector>

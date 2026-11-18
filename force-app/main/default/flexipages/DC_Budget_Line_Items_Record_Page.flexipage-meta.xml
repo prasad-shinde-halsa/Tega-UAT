@@ -232,14 +232,8 @@
         </itemInstances>
         <itemInstances>
             <fieldInstance>
-                <fieldItem>Record.Exchange_Rate_In_USD__c</fieldItem>
-                <identifier>RecordExchange_Rate_In_USD__cField</identifier>
-            </fieldInstance>
-        </itemInstances>
-        <itemInstances>
-            <fieldInstance>
-                <fieldItem>Record.Exchange_Rate_In_INR__c</fieldItem>
-                <identifier>RecordExchange_Rate_In_INR__cField</identifier>
+                <fieldItem>Record.Total_Order_MULTI_1000__c</fieldItem>
+                <identifier>RecordTotal_Order_MULTI_1000__cField</identifier>
             </fieldInstance>
         </itemInstances>
         <itemInstances>
@@ -250,8 +244,8 @@
         </itemInstances>
         <itemInstances>
             <fieldInstance>
-                <fieldItem>Record.Currency_Same_As_Budget__c</fieldItem>
-                <identifier>RecordCurrency_Same_As_Budget__cField</identifier>
+                <fieldItem>Record.Total_Order_In_USD__c</fieldItem>
+                <identifier>RecordTotal_Order_In_USD__cField</identifier>
             </fieldInstance>
         </itemInstances>
         <name>Facet-71d3cef3-5ce5-4c38-af85-4c4e2baa5c42</name>

@@ -155,7 +155,7 @@
     <externalSharingModel>ControlledByParent</externalSharingModel>
     <label>L1 L3 Product</label>
     <nameField>
-        <displayFormat>L1L2-{00000000}</displayFormat>
+        <displayFormat>L1L3-{0000000000}</displayFormat>
         <label>L1 L3 Product Name</label>
         <trackHistory>false</trackHistory>
         <type>AutoNumber</type>

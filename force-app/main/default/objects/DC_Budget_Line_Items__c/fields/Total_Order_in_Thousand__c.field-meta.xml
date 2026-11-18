@@ -15,7 +15,7 @@
   BLANKVALUE(Jan_Order__c, 0) +
   BLANKVALUE(Feb_Order__c, 0) +
   BLANKVALUE(Mar_Order__c, 0)
-) * 1000</formula>
+)</formula>
     <label>Total Order in Thousand</label>
     <precision>18</precision>
     <required>false</required>

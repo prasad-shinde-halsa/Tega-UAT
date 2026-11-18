@@ -15,9 +15,9 @@
                 <label>Mill</label>
             </value>
             <value>
-                <fullName>HydroCyclone</fullName>
+                <fullName>Hydrocyclone</fullName>
                 <default>false</default>
-                <label>HydroCyclone</label>
+                <label>Hydrocyclone</label>
             </value>
             <value>
                 <fullName>Trommel</fullName>

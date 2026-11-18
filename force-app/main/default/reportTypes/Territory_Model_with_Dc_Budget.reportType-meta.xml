@@ -1152,12 +1152,7 @@
         </columns>
         <columns>
             <checkedByDefault>false</checkedByDefault>
-            <field>Exchange_Rate_In_USD__c</field>
-            <table>Territory2Model.Territory2s.UserTerritory2Associations.DC_Budget_Line_Items__r</table>
-        </columns>
-        <columns>
-            <checkedByDefault>false</checkedByDefault>
-            <field>Exchange_Rate_In_INR__c</field>
+            <field>Total_Order_MULTI_1000__c</field>
             <table>Territory2Model.Territory2s.UserTerritory2Associations.DC_Budget_Line_Items__r</table>
         </columns>
         <columns>
@@ -1167,7 +1162,7 @@
         </columns>
         <columns>
             <checkedByDefault>false</checkedByDefault>
-            <field>Currency_Same_As_Budget__c</field>
+            <field>Total_Order_In_USD__c</field>
             <table>Territory2Model.Territory2s.UserTerritory2Associations.DC_Budget_Line_Items__r</table>
         </columns>
         <masterLabel>Budget Line Items</masterLabel>

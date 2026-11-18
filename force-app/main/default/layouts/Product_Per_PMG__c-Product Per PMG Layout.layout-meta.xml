@@ -48,10 +48,6 @@
                 <behavior>Edit</behavior>
                 <field>Financial_Year__c</field>
             </layoutItems>
-            <layoutItems>
-                <behavior>Edit</behavior>
-                <field>Selected_FY__c</field>
-            </layoutItems>
         </layoutColumns>
         <layoutColumns>
             <layoutItems>

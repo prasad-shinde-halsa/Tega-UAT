@@ -37,13 +37,7 @@
                             helper.showToast("Error", "Error", labels.missing);
                         } else if (result === "MISMATCH") {
                             helper.showToast("Error", "Error", labels.mismatch);
-                        } else if (result === "DIV_MISSING") {
-                            helper.showToast("Error", "Error", labels.divMissing);
-                        } 
-                        else if (result === "DIV_NOT_MATCHING") {
-                            helper.showToast("Error", "Error", labels.divnotMatching);
-                        } 
-                        else if (result === "MATCH") {
+                        } else if (result === "MATCH") {
                             helper.callFinalize(component, labels);
                         }
                     } else {

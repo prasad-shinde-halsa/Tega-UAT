@@ -67,10 +67,6 @@
         <fields>ORDERS.TOTAL_AMOUNT</fields>
         <relatedList>Order.Sales_Org__c</relatedList>
     </relatedLists>
-    <relatedLists>
-        <fields>NAME</fields>
-        <relatedList>L1_L3_Product__c.Sales_Organization__c</relatedList>
-    </relatedLists>
     <showEmailCheckbox>false</showEmailCheckbox>
     <showHighlightsPanel>false</showHighlightsPanel>
     <showInteractionLogPanel>false</showInteractionLogPanel>

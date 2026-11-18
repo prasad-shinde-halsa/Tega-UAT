@@ -852,12 +852,22 @@
         </columns>
         <columns>
             <checkedByDefault>false</checkedByDefault>
+            <field>Created_Date__c</field>
+            <table>Quote</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
             <field>Total_Price_formula__c</field>
             <table>Quote</table>
         </columns>
         <columns>
             <checkedByDefault>false</checkedByDefault>
-            <field>settingType__c</field>
+            <field>Show_FEH_Button__c</field>
+            <table>Quote</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <field>Show_FULLSet_Button__c</field>
             <table>Quote</table>
         </columns>
         <masterLabel>Offers</masterLabel>
@@ -1056,11 +1066,6 @@
         <columns>
             <checkedByDefault>false</checkedByDefault>
             <field>Product_Description__c</field>
-            <table>Quote.QuoteLineItems</table>
-        </columns>
-        <columns>
-            <checkedByDefault>false</checkedByDefault>
-            <field>settingType__c</field>
             <table>Quote.QuoteLineItems</table>
         </columns>
         <masterLabel>Offer Line Items</masterLabel>

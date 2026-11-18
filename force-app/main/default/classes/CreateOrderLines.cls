@@ -80,21 +80,7 @@ public with sharing class CreateOrderLines implements Queueable, Database.allows
                     String authorizationHeaderMet = 'BASIC ' + EncodingUtil.base64Encode(metheaderValue);
                     zmatMaster.inputHttpHeaders_x = new Map<String,String>();
                     zmatMaster.inputHttpHeaders_x.put('Authorization', authorizationHeaderMet);
-                    
-                    /*
-                    // Log codes being sent to SAP
-                    try{
-                        metResponse = zmatMaster.ZmatMastM('',objMet,'');
-                    }catch(System.CalloutException ce){
-                        it.Status__c = 'fail';
-                        it.Error__c = 'Class Name : CreateOrderLines \r\n SAP ZMAT_MAST_M returned no content \r\n Product Codes: [' 
-                            + String.join(productCodeList, ',') + '] \r\n Error: ' + ce.getMessage();
-                        update it;
-                        delete odr;
-                        if(isNew){ delete pb; }
-                        return;
-                    } */
-                    
+
                     metResponse = zmatMaster.ZmatMastM('',objMet,'');
                     System.debug('Product metResponse-->>'+metResponse);
                     it.Response__c +='\r\n\n Product Response: \r\n'+String.valueOf(metResponse);    

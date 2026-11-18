@@ -16,8 +16,4 @@
         </sections>
     </layouts>
     <startsWith>Consonant</startsWith>
-    <validationRules>
-        <errorMessage><!-- L1L3_Code should be combination of &quot;Part List name&quot; +&quot;_&quot;+&quot;L3 Name&quot; --></errorMessage>
-        <name>L1L3_Code_match</name>
-    </validationRules>
 </CustomObjectTranslation>

@@ -2,7 +2,7 @@
 <CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
     <fullName>Motor_Power_Kwh__c</fullName>
     <externalId>false</externalId>
-    <label>Motor Power (Kwh)</label>
+    <label>Motor Power (kW)</label>
     <precision>18</precision>
     <required>false</required>
     <scale>2</scale>

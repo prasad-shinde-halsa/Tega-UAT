@@ -328,7 +328,7 @@
         </span>
     </div>
     <div class="amountInWords">
-        <span class="totalLabel">Amount In Words: AUD {!ProductLevelAmountInWords}</span>
+        <span class="totalLabel">Amount In Words: {!Quote.CurrencyIsoCode} {!ProductLevelAmountInWords}</span>
     </div>
 </div>
 
@@ -480,7 +480,7 @@
             </span>
         </div>
         <div class="amountInWords">
-            <span class="totalLabel">Amount In Words: AUD {!CustomAmountInWords}</span>
+            <span class="totalLabel">Amount In Words: {!Quote.CurrencyIsoCode} {!CustomAmountInWords}</span>
         </div>
     </div>
 

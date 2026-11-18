@@ -1,0 +1,1148 @@
+/*
+ * Dark theme. Every class carries the mis- prefix because Lightning's global CSS
+ * leaks into components and defines generic names such as .stage.
+ * Lightning base components are themed through SLDS styling hooks set on :host.
+ */
+:host {
+    --mis-bg: #0a0f1c;
+    --mis-bg-glow-1: rgba(79, 140, 255, 0.16);
+    --mis-bg-glow-2: rgba(139, 92, 246, 0.14);
+    --mis-surface: rgba(19, 27, 46, 0.82);
+    --mis-surface-solid: #131b2e;
+    --mis-surface-2: #182340;
+    --mis-line: rgba(148, 163, 199, 0.16);
+    --mis-line-strong: rgba(148, 163, 199, 0.28);
+    --mis-ink: #e7ecf6;
+    --mis-ink-soft: #c3cde2;
+    --mis-muted: #8794b0;
+    --mis-brand: #4f8cff;
+    --mis-brand-2: #8b5cf6;
+    --mis-brand-soft: rgba(79, 140, 255, 0.14);
+    --mis-gradient: linear-gradient(135deg, #4f8cff 0%, #8b5cf6 100%);
+    --mis-lost-soft: rgba(244, 63, 94, 0.16);
+    --mis-outside: #fbbf24;
+    --mis-radius: 14px;
+    --mis-shadow: 0 10px 30px rgba(0, 0, 0, 0.35);
+
+    /* Inputs and comboboxes */
+    --slds-c-input-color-background: rgba(255, 255, 255, 0.04);
+    --slds-c-input-color-background-focus: rgba(255, 255, 255, 0.07);
+    --slds-c-input-color-border: var(--mis-line-strong);
+    --slds-c-input-color-border-focus: var(--mis-brand);
+    --slds-c-input-text-color: var(--mis-ink);
+    --slds-c-input-text-color-focus: var(--mis-ink);
+    --slds-c-input-radius-border: 10px;
+    --slds-c-input-shadow-focus: 0 0 0 3px rgba(79, 140, 255, 0.3);
+
+    /* Buttons */
+    --slds-c-button-radius-border: 10px;
+    --slds-c-button-text-color: var(--mis-ink);
+    --slds-c-button-text-color-hover: #ffffff;
+    --slds-c-button-neutral-color-background: rgba(255, 255, 255, 0.06);
+    --slds-c-button-neutral-color-background-hover: rgba(255, 255, 255, 0.12);
+    --slds-c-button-neutral-color-background-active: rgba(255, 255, 255, 0.16);
+    --slds-c-button-neutral-color-border: var(--mis-line-strong);
+    --slds-c-button-neutral-color-border-hover: var(--mis-brand);
+    --slds-c-button-brand-color-background: var(--mis-brand);
+    --slds-c-button-brand-color-background-hover: #3b7bf0;
+    --slds-c-button-brand-color-border: var(--mis-brand);
+    --slds-c-button-brand-color-border-hover: #3b7bf0;
+    --slds-c-button-brand-text-color: #ffffff;
+    --slds-c-button-brand-text-color-hover: #ffffff;
+
+    /* Icons and toggles */
+    --slds-c-icon-color-foreground-default: var(--mis-ink-soft);
+    --slds-c-checkbox-toggle-color-background: rgba(255, 255, 255, 0.12);
+    --slds-c-checkbox-toggle-color-border: var(--mis-line-strong);
+    --slds-c-checkbox-toggle-color-background-checked: var(--mis-brand);
+    --slds-c-checkbox-toggle-color-border-checked: var(--mis-brand);
+
+    display: block;
+}
+
+.mis-page {
+    position: relative;
+    min-height: 100%;
+    padding: 16px;
+    color: var(--mis-ink);
+    background:
+        radial-gradient(900px 400px at 0% 0%, var(--mis-bg-glow-1), transparent 60%),
+        radial-gradient(800px 380px at 100% 0%, var(--mis-bg-glow-2), transparent 60%),
+        var(--mis-bg);
+    font-size: 13px;
+    border-radius: 18px;
+}
+
+/* ---------- Header ---------- */
+
+.mis-page-header {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    gap: 14px;
+    padding: 18px 20px;
+    margin-bottom: 14px;
+    background: linear-gradient(135deg, rgba(79, 140, 255, 0.18), rgba(139, 92, 246, 0.18)), var(--mis-surface);
+    border: 1px solid var(--mis-line);
+    border-radius: var(--mis-radius);
+    box-shadow: var(--mis-shadow);
+    backdrop-filter: blur(10px);
+}
+
+.mis-title-block {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+}
+
+.mis-title-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 46px;
+    height: 46px;
+    background: var(--mis-gradient);
+    border-radius: 12px;
+    box-shadow: 0 6px 18px rgba(79, 140, 255, 0.45);
+}
+
+.mis-title {
+    margin: 0;
+    font-size: 22px;
+    font-weight: 800;
+    line-height: 1.15;
+    letter-spacing: -0.01em;
+    color: transparent;
+    background: linear-gradient(90deg, #ffffff, #c7d6ff);
+    -webkit-background-clip: text;
+    background-clip: text;
+}
+
+.mis-subtitle {
+    margin: 4px 0 0;
+    font-size: 12px;
+    color: var(--mis-muted);
+}
+
+.mis-header-actions {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 10px;
+}
+
+.mis-year-picker {
+    min-width: 150px;
+}
+
+/* ---------- Cards ---------- */
+
+.mis-card {
+    padding: 16px 18px;
+    margin-bottom: 14px;
+    background: var(--mis-surface);
+    border: 1px solid var(--mis-line);
+    border-radius: var(--mis-radius);
+    box-shadow: var(--mis-shadow);
+    backdrop-filter: blur(10px);
+}
+
+/*
+ * Cards use backdrop-filter, which makes each one its own stacking context, so later cards
+ * would paint over an open dropdown. The header and filters sit on higher layers so their
+ * dropdowns always open above the key figures and the table.
+ */
+.mis-page-header {
+    position: relative;
+    z-index: 30;
+}
+
+.mis-card-filters {
+    position: relative;
+    z-index: 20;
+}
+
+.mis-card-head {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    gap: 10px;
+    margin-bottom: 14px;
+}
+
+.mis-card-title {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    margin: 0;
+    font-size: 15px;
+    font-weight: 700;
+    color: var(--mis-ink);
+}
+
+.mis-card-note {
+    font-size: 12px;
+    color: var(--mis-muted);
+}
+
+.mis-filter-count {
+    padding: 3px 10px;
+    font-size: 11px;
+    font-weight: 700;
+    color: #bcd2ff;
+    background: var(--mis-brand-soft);
+    border: 1px solid rgba(79, 140, 255, 0.35);
+    border-radius: 999px;
+}
+
+.mis-card-head-actions {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+/* ---------- Filters ---------- */
+
+.mis-filter-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 12px 14px;
+    margin-bottom: 14px;
+}
+
+.mis-field {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    min-width: 0;
+}
+
+.mis-field-inline {
+    flex-direction: row;
+    align-items: center;
+    gap: 10px;
+}
+
+.mis-field-inline lightning-combobox {
+    flex: 1 1 auto;
+}
+
+.mis-field-label {
+    font-size: 11px;
+    font-weight: 700;
+    color: var(--mis-muted);
+    text-transform: uppercase;
+    letter-spacing: 0.06em;
+    white-space: nowrap;
+}
+
+.mis-span-2 {
+    grid-column: span 2;
+}
+
+.mis-chip-row {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    gap: 8px 14px;
+    padding: 10px 0;
+    border-top: 1px solid var(--mis-line);
+}
+
+.mis-chip-label {
+    flex: 0 0 120px;
+    padding-top: 5px;
+    font-size: 11px;
+    font-weight: 700;
+    color: var(--mis-muted);
+    text-transform: uppercase;
+    letter-spacing: 0.06em;
+}
+
+.mis-chips {
+    display: flex;
+    flex: 1 1 400px;
+    flex-wrap: wrap;
+    gap: 7px;
+}
+
+.mis-chip,
+.mis-chip-clear {
+    padding: 4px 12px;
+    font: inherit;
+    font-size: 12px;
+    color: var(--mis-ink-soft);
+    background: rgba(255, 255, 255, 0.04);
+    border: 1px solid var(--mis-line-strong);
+    border-radius: 999px;
+    cursor: pointer;
+    transition: background 0.15s, border-color 0.15s, color 0.15s, box-shadow 0.15s, transform 0.15s;
+}
+
+.mis-chip:hover {
+    color: #fff;
+    border-color: var(--mis-brand);
+    transform: translateY(-1px);
+}
+
+.mis-chip-selected {
+    color: #fff;
+    background: var(--mis-gradient);
+    border-color: transparent;
+    box-shadow: 0 4px 14px rgba(79, 140, 255, 0.4);
+}
+
+.mis-chip-selected.mis-stage {
+    padding: 4px 12px;
+    border: 1px solid currentColor;
+    box-shadow: 0 0 0 1px currentColor, 0 4px 14px rgba(0, 0, 0, 0.35);
+}
+
+.mis-chip-count {
+    padding: 0 6px;
+    margin-left: 5px;
+    font-size: 10px;
+    font-weight: 700;
+    background: rgba(255, 255, 255, 0.12);
+    border-radius: 999px;
+}
+
+.mis-chip-clear {
+    color: #9dbcff;
+    background: transparent;
+    border-color: transparent;
+}
+
+.mis-chip-clear:hover {
+    color: #fff;
+}
+
+.mis-option-row {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 10px 26px;
+    padding-top: 12px;
+    border-top: 1px solid var(--mis-line);
+}
+
+.mis-toggle {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.mis-toggle-label {
+    font-weight: 600;
+    color: var(--mis-ink-soft);
+}
+
+.mis-display-options {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px 18px;
+    margin-left: auto;
+}
+
+.mis-compact {
+    min-width: 220px;
+}
+
+.mis-alert {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    padding: 12px 16px;
+    margin-bottom: 14px;
+    font-weight: 700;
+    color: #ffd5dc;
+    background: var(--mis-lost-soft);
+    border: 1px solid rgba(244, 63, 94, 0.45);
+    border-radius: 12px;
+}
+
+/* ---------- KPIs ---------- */
+
+.mis-kpis {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+    gap: 12px;
+    margin-bottom: 14px;
+}
+
+.mis-kpi {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+    padding: 14px 16px;
+    overflow: hidden;
+    background: var(--mis-surface);
+    border: 1px solid var(--mis-line);
+    border-radius: var(--mis-radius);
+    box-shadow: var(--mis-shadow);
+    transition: transform 0.15s, border-color 0.15s;
+}
+
+.mis-kpi::before {
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    height: 3px;
+    content: "";
+    background: var(--mis-gradient);
+}
+
+.mis-kpi:hover {
+    border-color: var(--mis-line-strong);
+    transform: translateY(-2px);
+}
+
+.mis-kpi-open::before {
+    background: linear-gradient(90deg, #f59e0b, #fbbf24);
+}
+
+.mis-kpi-won::before {
+    background: linear-gradient(90deg, #16a34a, #4ade80);
+}
+
+.mis-kpi-lost::before {
+    background: linear-gradient(90deg, #e11d48, #fb7185);
+}
+
+.mis-kpi-label {
+    font-size: 11px;
+    font-weight: 700;
+    color: var(--mis-muted);
+    text-transform: uppercase;
+    letter-spacing: 0.06em;
+}
+
+.mis-kpi-value {
+    font-size: 24px;
+    font-weight: 800;
+    color: #fff;
+    letter-spacing: -0.01em;
+    font-variant-numeric: tabular-nums;
+}
+
+.mis-kpi-won .mis-kpi-value {
+    color: #4ade80;
+}
+
+.mis-kpi-lost .mis-kpi-value {
+    color: #fb7185;
+}
+
+.mis-kpi-open .mis-kpi-value {
+    color: #fbbf24;
+}
+
+.mis-kpi-hint {
+    font-size: 11px;
+    color: var(--mis-muted);
+}
+
+/* ---------- Table ---------- */
+
+.mis-table-toolbar {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    gap: 10px;
+    margin-bottom: 12px;
+}
+
+.mis-rows-message {
+    font-weight: 700;
+    color: var(--mis-ink);
+}
+
+.mis-pager {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 10px;
+    margin-left: auto;
+}
+
+.mis-page-size {
+    width: 140px;
+}
+
+.mis-page-label {
+    padding: 4px 10px;
+    font-size: 12px;
+    color: var(--mis-ink-soft);
+    background: rgba(255, 255, 255, 0.05);
+    border-radius: 999px;
+}
+
+.mis-table-scroll {
+    max-height: 65vh;
+    overflow: auto;
+    background: var(--mis-surface-solid);
+    border: 1px solid var(--mis-line);
+    border-radius: 12px;
+    scrollbar-color: #33446d transparent;
+}
+
+.mis-table-scroll.short {
+    max-height: 520px;
+}
+
+.mis-grid {
+    width: 100%;
+    border-collapse: separate;
+    border-spacing: 0;
+    font-size: 12px;
+}
+
+.mis-grid th {
+    position: sticky;
+    top: 0;
+    z-index: 1;
+    padding: 0;
+    font-size: 11px;
+    font-weight: 700;
+    color: #aebbd6;
+    text-align: left;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    white-space: nowrap;
+    background: #172242;
+    border-bottom: 1px solid var(--mis-line-strong);
+}
+
+.mis-grid th:not(.mis-sortable) {
+    padding: 10px 12px;
+}
+
+.mis-th-button {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    width: 100%;
+    padding: 10px 12px;
+    font: inherit;
+    color: inherit;
+    text-align: inherit;
+    text-transform: inherit;
+    letter-spacing: inherit;
+    background: transparent;
+    border: 0;
+    cursor: pointer;
+    transition: color 0.15s, background 0.15s;
+}
+
+.mis-th-button:hover {
+    color: #fff;
+    background: rgba(255, 255, 255, 0.05);
+}
+
+.mis-sorted .mis-th-button {
+    color: #fff;
+    background: linear-gradient(180deg, rgba(79, 140, 255, 0.28), rgba(79, 140, 255, 0.12));
+    box-shadow: inset 0 -2px 0 var(--mis-brand);
+}
+
+.mis-num .mis-th-button {
+    justify-content: flex-end;
+}
+
+.mis-sort-icon {
+    font-size: 9px;
+    color: var(--mis-brand);
+}
+
+.mis-grid td {
+    padding: 9px 12px;
+    color: var(--mis-ink-soft);
+    vertical-align: top;
+    border-bottom: 1px solid var(--mis-line);
+}
+
+.mis-data-row:nth-child(even) td {
+    background: rgba(255, 255, 255, 0.018);
+}
+
+.mis-data-row:hover td {
+    color: #fff;
+    background: rgba(79, 140, 255, 0.09);
+}
+
+.mis-outside-row td:first-child {
+    box-shadow: inset 3px 0 0 var(--mis-outside);
+}
+
+.mis-num {
+    text-align: right;
+    white-space: nowrap;
+    font-variant-numeric: tabular-nums;
+}
+
+.mis-grid th.mis-num {
+    text-align: right;
+}
+
+.mis-nowrap {
+    white-space: nowrap;
+}
+
+.mis-strong {
+    font-weight: 700;
+    color: var(--mis-ink);
+}
+
+.mis-muted {
+    color: var(--mis-muted);
+}
+
+.mis-won {
+    font-weight: 700;
+    color: #4ade80;
+}
+
+.mis-lost {
+    font-weight: 700;
+    color: #fb7185;
+}
+
+td.mis-wrap-sm,
+td.mis-wrap-md,
+td.mis-wrap-lg {
+    white-space: normal;
+    word-break: break-word;
+}
+
+.mis-wrap-sm {
+    min-width: 120px;
+    max-width: 170px;
+}
+
+.mis-wrap-md {
+    min-width: 160px;
+    max-width: 250px;
+}
+
+.mis-wrap-lg {
+    min-width: 180px;
+    max-width: 320px;
+}
+
+.mis-badge {
+    display: inline-block;
+    padding: 2px 9px;
+    font-size: 10px;
+    font-weight: 800;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    border-radius: 999px;
+}
+
+.mis-badge-budget {
+    color: #9dc0ff;
+    background: rgba(79, 140, 255, 0.15);
+    border: 1px solid rgba(79, 140, 255, 0.35);
+}
+
+.mis-badge-outside {
+    color: #fcd34d;
+    background: rgba(251, 191, 36, 0.13);
+    border: 1px solid rgba(251, 191, 36, 0.35);
+}
+
+/* ---------- Stage colours ---------- */
+
+.mis-stage {
+    display: inline-block;
+    padding: 3px 9px;
+    font-size: 11px;
+    font-weight: 700;
+    line-height: 1.4;
+    white-space: nowrap;
+    border-radius: 7px;
+}
+
+.mis-stage-none {
+    color: var(--mis-muted);
+    background: rgba(255, 255, 255, 0.06);
+}
+
+.mis-stage-idle {
+    color: #cbd5e1;
+    background: rgba(148, 163, 184, 0.16);
+}
+
+.mis-stage-early {
+    color: #93c5fd;
+    background: rgba(59, 130, 246, 0.18);
+}
+
+.mis-stage-mid {
+    color: #c4b5fd;
+    background: rgba(139, 92, 246, 0.2);
+}
+
+.mis-stage-late {
+    color: #fcd34d;
+    background: rgba(245, 158, 11, 0.18);
+}
+
+.mis-stage-won {
+    color: #bbf7d0;
+    background: rgba(34, 197, 94, 0.22);
+    box-shadow: 0 0 12px rgba(34, 197, 94, 0.25);
+}
+
+.mis-stage-lost {
+    color: #fecdd3;
+    background: rgba(244, 63, 94, 0.22);
+    box-shadow: 0 0 12px rgba(244, 63, 94, 0.22);
+}
+
+/* ---------- Summary ---------- */
+
+.mis-summary-grid {
+    display: grid;
+    grid-template-columns: minmax(340px, 1fr) minmax(440px, 1.4fr);
+    gap: 14px;
+}
+
+@media (max-width: 1100px) {
+    .mis-summary-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+.mis-stage-bars {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
+
+.mis-stage-bar {
+    display: grid;
+    grid-template-columns: minmax(130px, 1.3fr) 2fr 52px 44px minmax(70px, 0.8fr);
+    align-items: center;
+    gap: 10px;
+    padding: 7px 10px;
+    font: inherit;
+    font-size: 12px;
+    color: var(--mis-ink-soft);
+    text-align: left;
+    background: transparent;
+    border: 1px solid transparent;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: background 0.15s, border-color 0.15s;
+}
+
+.mis-stage-bar:hover {
+    background: rgba(255, 255, 255, 0.05);
+}
+
+.mis-stage-bar-selected {
+    background: var(--mis-brand-soft);
+    border-color: rgba(79, 140, 255, 0.55);
+}
+
+.mis-bar-name {
+    font-weight: 700;
+    color: var(--mis-ink);
+}
+
+.mis-bar-track {
+    height: 10px;
+    overflow: hidden;
+    background: rgba(255, 255, 255, 0.06);
+    border-radius: 999px;
+}
+
+.mis-bar-fill {
+    display: block;
+    height: 100%;
+    padding: 0;
+    border-radius: 999px;
+    box-shadow: none;
+}
+
+.mis-bar-fill.mis-stage-early {
+    background: linear-gradient(90deg, #2563eb, #60a5fa);
+}
+
+.mis-bar-fill.mis-stage-mid {
+    background: linear-gradient(90deg, #7c3aed, #a78bfa);
+}
+
+.mis-bar-fill.mis-stage-late {
+    background: linear-gradient(90deg, #d97706, #fbbf24);
+}
+
+.mis-bar-fill.mis-stage-won {
+    background: linear-gradient(90deg, #16a34a, #4ade80);
+}
+
+.mis-bar-fill.mis-stage-lost {
+    background: linear-gradient(90deg, #e11d48, #fb7185);
+}
+
+.mis-bar-fill.mis-stage-idle,
+.mis-bar-fill.mis-stage-none {
+    background: linear-gradient(90deg, #475569, #94a3b8);
+}
+
+.mis-bar-count,
+.mis-bar-share,
+.mis-bar-amount {
+    text-align: right;
+    font-variant-numeric: tabular-nums;
+}
+
+.mis-bar-count {
+    font-weight: 700;
+    color: var(--mis-ink);
+}
+
+.mis-bar-share {
+    color: var(--mis-muted);
+}
+
+.mis-group-by {
+    min-width: 260px;
+}
+
+/* ---------- YTD Report ---------- */
+
+/* Two header rows: the whole thead sticks, so the rows never overlap. */
+.mis-ytd-grid thead {
+    position: sticky;
+    top: 0;
+    z-index: 2;
+}
+
+.mis-ytd-grid th {
+    position: static;
+    text-align: center;
+}
+
+.mis-ytd-grid th.mis-ytd-sub {
+    padding: 8px 10px;
+    font-size: 10px;
+    white-space: normal;
+    min-width: 110px;
+    text-align: right;
+}
+
+.mis-ytd-pmg-head {
+    min-width: 150px;
+    vertical-align: middle;
+}
+
+.mis-ytd-grid th.mis-ytd-group {
+    padding: 9px 10px;
+    font-size: 11px;
+    letter-spacing: 0.1em;
+    text-align: center;
+}
+
+.mis-ytd-group-month {
+    color: #9dc0ff;
+    box-shadow: inset 0 -3px 0 #4f8cff;
+}
+
+.mis-ytd-group-ytd {
+    color: #86efac;
+    box-shadow: inset 0 -3px 0 #22c55e;
+}
+
+.mis-ytd-group-forecast {
+    color: #fcd34d;
+    box-shadow: inset 0 -3px 0 #f59e0b;
+}
+
+.mis-ytd-note {
+    display: block;
+    margin-top: 3px;
+    font-size: 9px;
+    font-style: italic;
+    font-weight: 500;
+    color: #fbbf24;
+    text-transform: none;
+    letter-spacing: 0;
+}
+
+.mis-ytd-grid td {
+    padding: 11px 12px;
+    vertical-align: middle;
+}
+
+.mis-ytd-total td {
+    position: sticky;
+    bottom: 0;
+    padding: 12px;
+    font-weight: 800;
+    color: #fff;
+    background: #1a2750;
+    border-top: 2px solid #fbbf24;
+}
+
+.mis-ytd-total td:first-child {
+    color: #fbbf24;
+    letter-spacing: 0.1em;
+}
+
+.mis-pct {
+    display: inline-block;
+    padding: 2px 8px;
+    font-size: 11px;
+    font-weight: 800;
+    border-radius: 6px;
+}
+
+.mis-pct-good {
+    color: #bbf7d0;
+    background: rgba(34, 197, 94, 0.2);
+}
+
+.mis-pct-warn {
+    color: #fde68a;
+    background: rgba(245, 158, 11, 0.2);
+}
+
+.mis-pct-bad {
+    color: #fecdd3;
+    background: rgba(244, 63, 94, 0.2);
+}
+
+.mis-ytd-bar {
+    display: block;
+    height: 4px;
+    margin-top: 6px;
+    overflow: hidden;
+    background: rgba(255, 255, 255, 0.08);
+    border-radius: 999px;
+}
+
+.mis-ytd-bar-fill {
+    display: block;
+    height: 100%;
+    background: linear-gradient(90deg, #16a34a, #4ade80);
+    border-radius: 999px;
+}
+
+/* ---------- Empty ---------- */
+
+.mis-empty {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 8px;
+    padding: 40px 16px;
+    color: var(--mis-muted);
+}
+
+/* ---------- History modal ---------- */
+
+/* Close (×) button: dark icon on a light round button, visible on any background. */
+.mis-modal-close {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 34px;
+    height: 34px;
+    --slds-c-icon-color-foreground-default: #0a0f1c;
+    background: #e7ecf6;
+    border: 1px solid rgba(10, 15, 28, 0.15);
+    border-radius: 50%;
+    box-shadow: 0 4px 14px rgba(0, 0, 0, 0.45);
+    transition: background 0.15s, transform 0.15s;
+}
+
+.mis-modal-close:hover,
+.mis-modal-close:focus {
+    background: #ffffff;
+    transform: scale(1.06);
+}
+
+.slds-modal__header,
+.slds-modal__content,
+.slds-modal__footer {
+    color: var(--mis-ink);
+    background: var(--mis-surface-solid);
+    border-color: var(--mis-line);
+}
+
+.slds-modal__header {
+    background: linear-gradient(135deg, rgba(79, 140, 255, 0.22), rgba(139, 92, 246, 0.22)), var(--mis-surface-solid);
+    border-bottom: 1px solid var(--mis-line);
+    border-radius: 16px 16px 0 0;
+}
+
+.slds-modal__footer {
+    border-top: 1px solid var(--mis-line);
+    border-radius: 0 0 16px 16px;
+}
+
+.slds-modal__title {
+    font-weight: 800;
+    color: #fff;
+}
+
+.slds-backdrop_open {
+    background: rgba(3, 6, 15, 0.72);
+    backdrop-filter: blur(3px);
+}
+
+.mis-modal-subtitle {
+    margin-top: 4px;
+    color: var(--mis-muted);
+}
+
+.mis-detail-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 10px 18px;
+    padding: 14px 16px;
+    margin: 0 0 18px;
+    background: var(--mis-surface-2);
+    border: 1px solid var(--mis-line);
+    border-radius: 12px;
+}
+
+.mis-detail dt {
+    font-size: 10px;
+    font-weight: 700;
+    color: var(--mis-muted);
+    text-transform: uppercase;
+    letter-spacing: 0.06em;
+}
+
+.mis-detail dd {
+    margin: 2px 0 0;
+    color: var(--mis-ink);
+    word-break: break-word;
+}
+
+.mis-timeline-title {
+    margin: 0 0 12px;
+    font-size: 14px;
+    font-weight: 700;
+    color: #fff;
+}
+
+.mis-timeline {
+    position: relative;
+    padding-left: 22px;
+    margin: 0;
+    list-style: none;
+}
+
+.mis-timeline::before {
+    position: absolute;
+    top: 6px;
+    bottom: 6px;
+    left: 7px;
+    width: 2px;
+    content: "";
+    background: linear-gradient(180deg, var(--mis-brand), var(--mis-brand-2));
+    opacity: 0.6;
+}
+
+.mis-timeline-item {
+    position: relative;
+    padding: 0 0 16px 8px;
+}
+
+.mis-timeline-dot {
+    position: absolute;
+    top: 6px;
+    left: -20px;
+    width: 12px;
+    height: 12px;
+    background: var(--mis-gradient);
+    border: 2px solid var(--mis-surface-solid);
+    border-radius: 50%;
+    box-shadow: 0 0 0 3px rgba(79, 140, 255, 0.25);
+}
+
+.mis-timeline-head {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 10px;
+}
+
+.mis-timeline-month {
+    font-weight: 800;
+    color: #fff;
+}
+
+.mis-timeline-meta {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 4px 18px;
+    margin-top: 4px;
+    font-size: 12px;
+    color: var(--mis-muted);
+}
+
+.mis-timeline-meta strong {
+    color: var(--mis-ink);
+}
+
+.mis-timeline-remark {
+    padding: 8px 12px;
+    margin: 8px 0 0;
+    color: #fde68a;
+    background: rgba(251, 191, 36, 0.08);
+    border-left: 3px solid #fbbf24;
+    border-radius: 6px;
+}
+
+/* ---------- Loader ---------- */
+
+.mis-loading-overlay {
+    position: fixed;
+    inset: 0;
+    z-index: 9000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: rgba(5, 9, 20, 0.6);
+    backdrop-filter: blur(4px);
+    cursor: wait;
+}
+
+/* Spinner only, in a round glowing bubble. */
+.mis-loading-bubble {
+    position: relative;
+    width: 84px;
+    height: 84px;
+    background: radial-gradient(circle at 30% 30%, #1e2b4d, var(--mis-surface-solid) 70%);
+    border: 1px solid var(--mis-line-strong);
+    border-radius: 50%;
+    box-shadow: 0 16px 40px rgba(0, 0, 0, 0.55), 0 0 0 6px rgba(79, 140, 255, 0.12), 0 0 30px rgba(79, 140, 255, 0.35);
+}
+
+.mis-assistive {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    clip: rect(0 0 0 0);
+}
+
+@media (max-width: 640px) {
+    .mis-span-2 {
+        grid-column: auto;
+    }
+
+    .mis-chip-label {
+        flex-basis: 100%;
+    }
+}

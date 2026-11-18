@@ -378,8 +378,8 @@
     <decisions>
         <name>Check_if_there_s_any_open_task_for_this_logged_in_user</name>
         <label>Check if there&apos;s any open task for this logged in user</label>
-        <locationX>2222</locationX>
-        <locationY>738</locationY>
+        <locationX>2236</locationX>
+        <locationY>671</locationY>
         <defaultConnector>
             <targetReference>Approval_screen</targetReference>
         </defaultConnector>
@@ -428,8 +428,8 @@
     <decisions>
         <name>DC_Budget_status</name>
         <label>DC Budget status</label>
-        <locationX>2003</locationX>
-        <locationY>498</locationY>
+        <locationX>2153</locationX>
+        <locationY>375</locationY>
         <defaultConnector>
             <targetReference>Get_task</targetReference>
         </defaultConnector>
@@ -535,7 +535,7 @@
             <label>if status 3rd Level Approved</label>
         </rules>
     </decisions>
-    <description>Adding Fault Message</description>
+    <description>Id mismatch issue</description>
     <environments>Default</environments>
     <interviewLabel>Approval status change {!$Flow.CurrentDateTime}</interviewLabel>
     <label>Approval status change</label>
@@ -645,8 +645,8 @@
     <recordLookups>
         <name>Get_All_Budget_Line_Item</name>
         <label>Get All Budget Line Item</label>
-        <locationX>2007</locationX>
-        <locationY>736</locationY>
+        <locationX>2097</locationX>
+        <locationY>601</locationY>
         <assignNullValuesIfNoRecordsFound>false</assignNullValuesIfNoRecordsFound>
         <connector>
             <targetReference>Next_level_status</targetReference>
@@ -769,8 +769,8 @@
     <recordLookups>
         <name>Get_task</name>
         <label>Get task</label>
-        <locationX>2230</locationX>
-        <locationY>502</locationY>
+        <locationX>2405</locationX>
+        <locationY>431</locationY>
         <assignNullValuesIfNoRecordsFound>false</assignNullValuesIfNoRecordsFound>
         <connector>
             <targetReference>Check_if_there_s_any_open_task_for_this_logged_in_user</targetReference>
@@ -781,7 +781,7 @@
         <filterLogic>and</filterLogic>
         <filters>
             <field>OwnerId</field>
-            <operator>EqualTo</operator>
+            <operator>Contains</operator>
             <value>
                 <elementReference>Get_Logged_In_User.Id</elementReference>
             </value>
@@ -929,8 +929,8 @@
     <screens>
         <name>Approval_screen</name>
         <label>Approval screen</label>
-        <locationX>2439</locationX>
-        <locationY>733</locationY>
+        <locationX>2541</locationX>
+        <locationY>737</locationY>
         <allowBack>true</allowBack>
         <allowFinish>true</allowFinish>
         <allowPause>true</allowPause>
@@ -1037,7 +1037,7 @@
             <targetReference>Get_DC_budget</targetReference>
         </connector>
     </start>
-    <status>Active</status>
+    <status>Obsolete</status>
     <variables>
         <name>CollectionofBudgetlineitemsforstatusupdate</name>
         <dataType>SObject</dataType>

@@ -39,8 +39,8 @@
         <inputParameters>
             <name>emailSubject</name>
             <value>
+                <elementReference>EmailSubject</elementReference>
                 <inputConfiguratorMode>Resource</inputConfiguratorMode>
-                <stringValue>4E/4D Form Has Been Submitted</stringValue>
             </value>
         </inputParameters>
         <inputParameters>
@@ -200,8 +200,13 @@
             <label>SO</label>
         </rules>
     </decisions>
-    <description>corrected latest flow</description>
+    <description>TEMPLATE MODIFED TO NEW IN BULLET -- correction of spell words done 2 correctly</description>
     <environments>Default</environments>
+    <formulas>
+        <name>EmailSubject</name>
+        <dataType>String</dataType>
+        <expression>&quot;4E/4D Form &quot; &amp; {!$Record.Name} &amp; &quot; has been submitted&quot;</expression>
+    </formulas>
     <interviewLabel>Send Email On Approval ASO/SO {!$Flow.CurrentDateTime}</interviewLabel>
     <label>Send Email On Approval ASO/SO</label>
     <processMetadataValues>
@@ -265,7 +270,7 @@
             <field>User_Type__c</field>
             <operator>EqualTo</operator>
             <value>
-                <stringValue>PMG Head</stringValue>
+                <stringValue>SBO</stringValue>
             </value>
         </filters>
         <filters>
@@ -285,7 +290,7 @@
         <connector>
             <targetReference>Get_PRF_details</targetReference>
         </connector>
-        <filterLogic>((3 AND 1) AND (5 OR 6)) OR ((4 AND 2) AND (7 OR 8))</filterLogic>
+        <filterLogic>((3 AND 1) AND (5 OR 6 OR 8)) OR ((4 AND 2) AND (7 OR 9 ) )</filterLogic>
         <filters>
             <field>Status__c</field>
             <operator>IsChanged</operator>
@@ -332,14 +337,21 @@
             <field>Status_SO__c</field>
             <operator>EqualTo</operator>
             <value>
-                <stringValue>Closed</stringValue>
+                <stringValue>Discount Approval Approved</stringValue>
+            </value>
+        </filters>
+        <filters>
+            <field>Status__c</field>
+            <operator>EqualTo</operator>
+            <value>
+                <stringValue>No Discount Approval Needed</stringValue>
             </value>
         </filters>
         <filters>
             <field>Status_SO__c</field>
             <operator>EqualTo</operator>
             <value>
-                <stringValue>Discount Approval Approved</stringValue>
+                <stringValue>No Discount Approval Needed</stringValue>
             </value>
         </filters>
         <object>X4E_4D__c</object>
@@ -350,6 +362,6 @@
     <textTemplates>
         <name>EmailBody</name>
         <isViewedAsPlainText>false</isViewedAsPlainText>
-        <text>&lt;p&gt;&lt;span style=&quot;font-size: 16px;&quot;&gt;Dear {!Get_user_email.User__r.Name},&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;br&gt;&lt;/p&gt;&lt;p&gt;&lt;span style=&quot;font-size: 16px;&quot;&gt;A Form {!$Record.RecordType.Name}: {!$Record.PO_No__c}has been submitted by {!$Record.CreatedBy.Name} with SAP Offer Number: {!$Record.SF_Offer__r.Name} for PMG {!$Record.PMG__c} and Customer Name : {!$Record.Customer_Name__c}.&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;br&gt;&lt;/p&gt;&lt;p&gt;&lt;span style=&quot;font-size: 16px;&quot;&gt;Thank you!&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;br&gt;&lt;/p&gt;&lt;p&gt;&lt;strong style=&quot;color: rgb(255, 101, 101); font-size: 16px;&quot;&gt;This is a system generated mail. Please do not reply.&lt;/strong&gt;&lt;/p&gt;&lt;p&gt;&lt;br&gt;&lt;/p&gt;</text>
+        <text>&lt;p&gt;&lt;span style=&quot;font-size: 16px;&quot;&gt;Dear &lt;/span&gt;&lt;span style=&quot;font-size: 16px; background-color: rgb(255, 255, 255);&quot;&gt;{!Get_user_email.User__r.FirstName} &lt;/span&gt;&lt;span style=&quot;font-size: 16px;&quot;&gt;{!Get_user_email.User__r.LastName},&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;br&gt;&lt;/p&gt;&lt;p&gt;&lt;span style=&quot;font-size: 16px;&quot;&gt;A Form {!$Record.RecordType.Name}: &lt;/span&gt;&lt;span style=&quot;font-size: 16px; background-color: rgb(255, 255, 255);&quot;&gt;{!$Record.Name}&lt;/span&gt;&lt;span style=&quot;font-size: 16px;&quot;&gt; has been submitted by {!Get_PRF_details.CreatedBy.FirstName} {!Get_PRF_details.CreatedBy.LastName} with following details:&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;br&gt;&lt;/p&gt;&lt;ol&gt;&lt;li&gt;&lt;span style=&quot;color: rgb(31, 73, 125); font-family: &amp;quot;Times New Roman&amp;quot;; font-size: 7pt;&quot;&gt;&amp;nbsp;&lt;/span&gt;&lt;span style=&quot;color: rgb(33, 33, 33); font-family: &amp;quot;Times New Roman&amp;quot;, serif; font-size: 16px;&quot;&gt;SAP Offer Number: {!$Record.SF_Offer__r.Name}&lt;/span&gt;&lt;/li&gt;&lt;li&gt;&lt;span style=&quot;color: rgb(33, 33, 33); font-family: &amp;quot;Times New Roman&amp;quot;, serif; font-size: 16px;&quot;&gt;PMG: &lt;/span&gt;&lt;span style=&quot;font-size: 16px; background-color: rgb(255, 255, 255);&quot;&gt;{!$Record.PMG__c}&lt;/span&gt;&lt;/li&gt;&lt;li&gt;&lt;span style=&quot;font-size: 16px; font-family: &amp;quot;Times New Roman&amp;quot;, serif; color: rgb(33, 33, 33);&quot;&gt;Customer Name: &lt;/span&gt;&lt;span style=&quot;font-size: 16px; background-color: rgb(255, 255, 255);&quot;&gt;{!$Record.Customer_Name__c}&lt;/span&gt;&lt;/li&gt;&lt;li&gt;&lt;span style=&quot;font-size: 14.6667px; font-family: Calibri, sans-serif; color: rgb(31, 73, 125);&quot;&gt;Type: {!$Record.Category__c}&lt;/span&gt;&lt;/li&gt;&lt;li&gt;&lt;span style=&quot;font-size: 16px; font-family: &amp;quot;Times New Roman&amp;quot;, serif; color: rgb(33, 33, 33);&quot;&gt;PO Number: {!$Record.PO_No__c}&lt;/span&gt;&lt;/li&gt;&lt;li&gt;&lt;span style=&quot;font-size: 16px; font-family: &amp;quot;Times New Roman&amp;quot;, serif; color: rgb(33, 33, 33);&quot;&gt;PO Date: {!$Record.PO_Date__c}&lt;/span&gt;&lt;/li&gt;&lt;li&gt;&lt;span style=&quot;font-size: 16px; font-family: &amp;quot;Times New Roman&amp;quot;, serif; color: rgb(33, 33, 33);&quot;&gt;PO Delivery Date: {!$Record.PO_Delv_Date__c}&lt;/span&gt;&lt;/li&gt;&lt;li&gt;&lt;span style=&quot;font-size: 16px; font-family: &amp;quot;Times New Roman&amp;quot;, serif; color: rgb(33, 33, 33);&quot;&gt;Delivery Term: {!$Record.Delv_Terms__c}&lt;/span&gt;&lt;/li&gt;&lt;/ol&gt;&lt;p&gt;&lt;br&gt;&lt;/p&gt;&lt;p&gt;&lt;span style=&quot;font-size: 16px;&quot;&gt;Thank you!&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;br&gt;&lt;/p&gt;&lt;p&gt;&lt;strong style=&quot;font-size: 16px; color: rgb(255, 101, 101);&quot;&gt;This is a system generated mail. Please do not reply.&lt;/strong&gt;&lt;/p&gt;</text>
     </textTemplates>
 </Flow>

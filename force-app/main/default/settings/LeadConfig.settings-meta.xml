@@ -4,7 +4,7 @@
     <doesHideOpportunityInConvertLeadWindow>true</doesHideOpportunityInConvertLeadWindow>
     <doesPreserveLeadStatus>false</doesPreserveLeadStatus>
     <doesSelectNoOpportunityOnConvertLead>true</doesSelectNoOpportunityOnConvertLead>
-    <doesTrackHistory>true</doesTrackHistory>
+    <doesTrackHistory>false</doesTrackHistory>
     <enableConversionsOnMobile>true</enableConversionsOnMobile>
     <enableOrgWideMergeAndDelete>false</enableOrgWideMergeAndDelete>
     <shouldLeadConvertRequireValidation>true</shouldLeadConvertRequireValidation>

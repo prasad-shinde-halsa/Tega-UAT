@@ -2,40 +2,7 @@
 <Flow xmlns="http://soap.sforce.com/2006/04/metadata">
     <apiVersion>60.0</apiVersion>
     <areMetricsLoggedToDataCloud>false</areMetricsLoggedToDataCloud>
-    <assignments>
-        <name>Assignment_value_to_record</name>
-        <label>Assignment value to record</label>
-        <locationX>974</locationX>
-        <locationY>479</locationY>
-        <assignmentItems>
-            <assignToReference>$Record.Consingee__c</assignToReference>
-            <operator>Assign</operator>
-            <value>
-                <elementReference>$Record.SF_Offer__r.Customer_offr__r.Name</elementReference>
-            </value>
-        </assignmentItems>
-        <assignmentItems>
-            <assignToReference>$Record.PMG_Head__c</assignToReference>
-            <operator>Assign</operator>
-            <value>
-                <elementReference>$Record.SF_Offer__r.PMG_Head__c</elementReference>
-            </value>
-        </assignmentItems>
-        <assignmentItems>
-            <assignToReference>$Record.Purchaser__c</assignToReference>
-            <operator>Assign</operator>
-            <value>
-                <elementReference>$Record.SF_Offer__r.Customer_offr__r.Name</elementReference>
-            </value>
-        </assignmentItems>
-        <assignmentItems>
-            <assignToReference>$Record.Regional_Sales_Head__c</assignToReference>
-            <operator>Assign</operator>
-            <value>
-                <elementReference>$Record.SF_Offer__r.Regional_Sales_Head__c</elementReference>
-            </value>
-        </assignmentItems>
-    </assignments>
+    <description>Now taking PMG from User Mapping and Regional manager from Customer direct</description>
     <environments>Default</environments>
     <interviewLabel>Autofill Purchaser and Consignee {!$Flow.CurrentDateTime}</interviewLabel>
     <label>Autofill Purchaser and Consignee</label>
@@ -48,7 +15,7 @@
     <processMetadataValues>
         <name>CanvasMode</name>
         <value>
-            <stringValue>FREE_FORM_CANVAS</stringValue>
+            <stringValue>AUTO_LAYOUT_CANVAS</stringValue>
         </value>
     </processMetadataValues>
     <processMetadataValues>
@@ -58,11 +25,74 @@
         </value>
     </processMetadataValues>
     <processType>AutoLaunchedFlow</processType>
+    <recordLookups>
+        <name>Get_CustomerRegional_Manger</name>
+        <label>Get CustomerRegional Manger</label>
+        <locationX>176</locationX>
+        <locationY>323</locationY>
+        <assignNullValuesIfNoRecordsFound>false</assignNullValuesIfNoRecordsFound>
+        <connector>
+            <targetReference>Get_PMG_from_user_mapping</targetReference>
+        </connector>
+        <filterLogic>and</filterLogic>
+        <filters>
+            <field>Id</field>
+            <operator>EqualTo</operator>
+            <value>
+                <elementReference>$Record.SF_Offer__r.AccountId</elementReference>
+            </value>
+        </filters>
+        <getFirstRecordOnly>true</getFirstRecordOnly>
+        <object>Account</object>
+        <storeOutputAutomatically>true</storeOutputAutomatically>
+    </recordLookups>
+    <recordLookups>
+        <name>Get_PMG_from_user_mapping</name>
+        <label>Get PMG from user mapping</label>
+        <locationX>176</locationX>
+        <locationY>431</locationY>
+        <assignNullValuesIfNoRecordsFound>false</assignNullValuesIfNoRecordsFound>
+        <connector>
+            <targetReference>Update_Form_4E_4D</targetReference>
+        </connector>
+        <filterLogic>and</filterLogic>
+        <filters>
+            <field>Company_as_Text__c</field>
+            <operator>EqualTo</operator>
+            <value>
+                <elementReference>$Record.Company__c</elementReference>
+            </value>
+        </filters>
+        <filters>
+            <field>PMG__c</field>
+            <operator>EqualTo</operator>
+            <value>
+                <elementReference>$Record.PMG__c</elementReference>
+            </value>
+        </filters>
+        <filters>
+            <field>Object_Name__c</field>
+            <operator>EqualTo</operator>
+            <value>
+                <stringValue>Quote</stringValue>
+            </value>
+        </filters>
+        <filters>
+            <field>User_Type__c</field>
+            <operator>EqualTo</operator>
+            <value>
+                <stringValue>PMG Head</stringValue>
+            </value>
+        </filters>
+        <getFirstRecordOnly>true</getFirstRecordOnly>
+        <object>User_Mappings__c</object>
+        <storeOutputAutomatically>true</storeOutputAutomatically>
+    </recordLookups>
     <recordUpdates>
-        <name>update_Form</name>
-        <label>update Form</label>
-        <locationX>656</locationX>
-        <locationY>370</locationY>
+        <name>Update_Form_4E_4D</name>
+        <label>Update Form 4E/4D</label>
+        <locationX>176</locationX>
+        <locationY>539</locationY>
         <inputAssignments>
             <field>Consingee__c</field>
             <value>
@@ -72,7 +102,7 @@
         <inputAssignments>
             <field>PMG_Head__c</field>
             <value>
-                <elementReference>$Record.SF_Offer__r.PMG_Head__c</elementReference>
+                <elementReference>Get_PMG_from_user_mapping.User__c</elementReference>
             </value>
         </inputAssignments>
         <inputAssignments>
@@ -84,16 +114,16 @@
         <inputAssignments>
             <field>Regional_Sales_Head__c</field>
             <value>
-                <elementReference>$Record.SF_Offer__r.Regional_Sales_Head__c</elementReference>
+                <elementReference>Get_CustomerRegional_Manger.Regional_Manager__c</elementReference>
             </value>
         </inputAssignments>
         <inputReference>$Record</inputReference>
     </recordUpdates>
     <start>
-        <locationX>530</locationX>
-        <locationY>48</locationY>
+        <locationX>50</locationX>
+        <locationY>0</locationY>
         <connector>
-            <targetReference>Assignment_value_to_record</targetReference>
+            <targetReference>Get_CustomerRegional_Manger</targetReference>
         </connector>
         <filterLogic>and</filterLogic>
         <filters>
@@ -105,7 +135,7 @@
         </filters>
         <object>X4E_4D__c</object>
         <recordTriggerType>CreateAndUpdate</recordTriggerType>
-        <triggerType>RecordBeforeSave</triggerType>
+        <triggerType>RecordAfterSave</triggerType>
     </start>
-    <status>Draft</status>
+    <status>Active</status>
 </Flow>

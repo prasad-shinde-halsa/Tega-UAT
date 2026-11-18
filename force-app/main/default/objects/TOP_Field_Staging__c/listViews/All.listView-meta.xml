@@ -4,23 +4,19 @@
     <columns>NAME</columns>
     <columns>Status__c</columns>
     <columns>Error_Log__c</columns>
-    <columns>salesOrgId__c</columns>
-    <columns>Direct_Quoted_Exchange_Rate__c</columns>
-    <columns>L1L3_CurrencyIsoCode__c</columns>
-    <columns>Last_Sales_Date__c</columns>
-    <columns>Last_Sales_Price__c</columns>
-    <columns>Net_Weight__c</columns>
-    <columns>Order_Number__c</columns>
-    <columns>partList_CurrencyIsoCode__c</columns>
     <columns>partListName__c</columns>
     <columns>partListRevisionNo__c</columns>
-    <columns>Price__c</columns>
     <columns>product2Name__c</columns>
+    <columns>Direct_Quoted_Exchange_Rate__c</columns>
+    <columns>partList_CurrencyIsoCode__c</columns>
+    <columns>Net_Weight__c</columns>
+    <columns>CREATED_DATE</columns>
+    <columns>Price__c</columns>
     <filterScope>Everything</filterScope>
     <filters>
-        <field>Status__c</field>
+        <field>partListName__c</field>
         <operation>equals</operation>
-        <value>Error</value>
+        <value>PLM-00790-01</value>
     </filters>
     <label>All</label>
 </ListView>

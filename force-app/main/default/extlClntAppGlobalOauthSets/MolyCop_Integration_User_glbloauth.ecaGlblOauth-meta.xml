@@ -27,18 +27,18 @@ NbFozgTVqh0TUP5DF+re6nGyX2BRB48qNdKFonPZj22GK757UkdtuLTh0DHGWUuz
 iwLwUy+S0hzM7GgK/TThKPXP9ugzApaBM73cp15T9Hm4BjSIIt0js8rE2Q1JbfpK
 CduE19+sof1u8949oYFquOoUQZFu2XX3SkSfU6gy3rYxDE9QpdJn+M2hJgJNgH3M
 aGgkRAEYX6mjs8WhdLiz1e5amEPJucjAncAbwlJcZrzKbw==</certificate>
-    <consumerKey>3MVG9CP2Kv.52YFuG5QFk66eIX8ZItfCO77OB6M2vkQZd5K8J5y14V1ToQWdksr2dmFzC5XYKjklWvxp20V1Q</consumerKey>
+    <consumerKey>3MVG9CP2Kv.52YFutUWig7_ixaIWIAFpPqySkAYv8Wu9BOJk0NR399yPwQVoFEqFTr_iFrRO0vhF0w5xVl1CY</consumerKey>
     <externalClientApplication>MolyCop_Integration_User</externalClientApplication>
     <isClientCredentialsFlowEnabled>false</isClientCredentialsFlowEnabled>
     <isCodeCredFlowEnabled>false</isCodeCredFlowEnabled>
     <isCodeCredPostOnly>false</isCodeCredPostOnly>
     <isConsumerSecretOptional>false</isConsumerSecretOptional>
     <isDeviceFlowEnabled>false</isDeviceFlowEnabled>
-    <isEnforceRefreshTokenTTL>false</isEnforceRefreshTokenTTL>
+    <isEnforceRefreshTokenTTL>true</isEnforceRefreshTokenTTL>
     <isIntrospectAllTokens>false</isIntrospectAllTokens>
     <isNamedUserJwtEnabled>false</isNamedUserJwtEnabled>
     <isPkceRequired>true</isPkceRequired>
-    <isRefreshTokenRotationEnabled>false</isRefreshTokenRotationEnabled>
+    <isRefreshTokenRotationEnabled>true</isRefreshTokenRotationEnabled>
     <isSecretRequiredForRefreshToken>true</isSecretRequiredForRefreshToken>
     <isSecretRequiredForTokenExchange>true</isSecretRequiredForTokenExchange>
     <isTokenExchangeEnabled>false</isTokenExchangeEnabled>

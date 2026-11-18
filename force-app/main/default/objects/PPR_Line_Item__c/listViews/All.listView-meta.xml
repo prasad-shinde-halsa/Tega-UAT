@@ -2,6 +2,7 @@
 <ListView xmlns="http://soap.sforce.com/2006/04/metadata">
     <fullName>All</fullName>
     <columns>NAME</columns>
+    <columns>Region__c</columns>
     <columns>CREATEDBY_USER</columns>
     <columns>CREATED_DATE</columns>
     <columns>Submit_On__c</columns>

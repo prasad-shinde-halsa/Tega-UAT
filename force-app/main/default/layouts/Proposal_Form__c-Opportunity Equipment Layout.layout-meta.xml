@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Layout xmlns="http://soap.sforce.com/2006/04/metadata">
-    <excludeButtons>OpenSlackRecordChannel</excludeButtons>
     <layoutSections>
         <customLabel>false</customLabel>
         <detailHeading>false</detailHeading>
@@ -20,7 +19,7 @@
                 <field>Customer_Equipment__c</field>
             </layoutItems>
             <layoutItems>
-                <behavior>Edit</behavior>
+                <behavior>Required</behavior>
                 <field>Type__c</field>
             </layoutItems>
             <layoutItems>
@@ -142,6 +141,10 @@
             <layoutItems>
                 <behavior>Edit</behavior>
                 <field>Existing_Solution_of_Solving_Jamming__c</field>
+            </layoutItems>
+            <layoutItems>
+                <behavior>Edit</behavior>
+                <field>Financial_Year2__c</field>
             </layoutItems>
             <layoutItems>
                 <behavior>Edit</behavior>
@@ -403,22 +406,6 @@
                 <behavior>Readonly</behavior>
                 <field>Customer_Code__c</field>
             </layoutItems>
-            <layoutItems>
-                <behavior>Readonly</behavior>
-                <field>Exchange_Rate_In_USD__c</field>
-            </layoutItems>
-            <layoutItems>
-                <behavior>Readonly</behavior>
-                <field>Exchange_Rate_In_INR__c</field>
-            </layoutItems>
-            <layoutItems>
-                <behavior>Edit</behavior>
-                <field>Financial_Year2__c</field>
-            </layoutItems>
-            <layoutItems>
-                <behavior>Edit</behavior>
-                <field>Is_Cloned_PRF__c</field>
-            </layoutItems>
         </layoutColumns>
         <layoutColumns>
             <layoutItems>
@@ -564,11 +551,6 @@
             <actionType>QuickAction</actionType>
             <sortOrder>20</sortOrder>
         </platformActionListItems>
-        <platformActionListItems>
-            <actionName>Proposal_Form__c.Clone_Proposal_Form</actionName>
-            <actionType>QuickAction</actionType>
-            <sortOrder>21</sortOrder>
-        </platformActionListItems>
     </platformActionList>
     <quickActionList>
         <quickActionListItems>
@@ -604,6 +586,9 @@
         <relatedList>Proposal_Form__c.Parent_Proposal_Form__c</relatedList>
     </relatedLists>
     <relatedLists>
+        <relatedList>RelatedEntityHistoryList</relatedList>
+    </relatedLists>
+    <relatedLists>
         <fields>QUOTE.NAME</fields>
         <fields>OPPORTUNITY.NAME</fields>
         <fields>QUOTE.ISSYNCING</fields>
@@ -615,8 +600,8 @@
     <relatedLists>
         <fields>CreatedDate</fields>
         <fields>StepStatus</fields>
-        <fields>OriginalActor</fields>
         <fields>Actor</fields>
+        <fields>OriginalActor</fields>
         <fields>Comments</fields>
         <relatedList>RelatedProcessHistoryList</relatedList>
     </relatedLists>

@@ -41,6 +41,10 @@
         <name>Restrict_Record_Submit_Without_Risk</name>
     </validationRules>
     <validationRules>
+        <errorMessage><!-- You cannot submit the record without Customer Branch Assignment --></errorMessage>
+        <name>Restrict_Users_Without_Branch</name>
+    </validationRules>
+    <validationRules>
         <errorMessage><!-- Visit date cannot be in Future &amp; should be in range specified for user --></errorMessage>
         <name>Visit_Date_Customer_Visit_Validation</name>
     </validationRules>

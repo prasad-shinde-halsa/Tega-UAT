@@ -4,10 +4,10 @@
     <description>This connected app will be used to integrate PPR Module with Tega Salesforce</description>
     <label>PPR Salesforce Tega Integration</label>
     <oauthConfig>
-        <callbackUrl>https://test.salesforce.com/services/oauth2/success</callbackUrl>
-        <consumerKey>3MVG9CP2Kv.52YFurGOwC0BCkz0emvtg9U.RhZ73INS19J6aCTbXajFvMUtqodGK75OFHiGNYugGrQQCP28l2</consumerKey>
+        <callbackUrl>https://login.salesforce.com/services/oauth2/success</callbackUrl>
+        <consumerKey>3MVG9CP2Kv.52YFurGOwC0BCkz0UxFbStEz7g9Lv5WCqrRJi0sLfH7e9n3CUPl5awuX0WWPV4sZoGCjvDIz8j</consumerKey>
         <isAdminApproved>true</isAdminApproved>
-        <isClientCredentialEnabled>true</isClientCredentialEnabled>
+        <isClientCredentialEnabled>false</isClientCredentialEnabled>
         <isCodeCredentialEnabled>false</isCodeCredentialEnabled>
         <isCodeCredentialPostOnly>false</isCodeCredentialPostOnly>
         <isConsumerSecretOptional>false</isConsumerSecretOptional>

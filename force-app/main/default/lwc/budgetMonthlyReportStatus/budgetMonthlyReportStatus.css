@@ -1,0 +1,130 @@
+.page {
+    background: #fff;
+    color: #000;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 11px;
+}
+
+.filters {
+    background: #d6d6d6;
+    border: 1px solid #555;
+    padding: 12px;
+    margin-bottom: 12px;
+}
+
+.filter-row {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px 12px;
+    margin-bottom: 8px;
+}
+
+.filter {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.filter span {
+    min-width: 56px;
+}
+
+.filter-row .filter + .filter span {
+    min-width: 0;
+}
+
+select {
+    height: 20px;
+    min-width: 72px;
+    max-width: 100%;
+    font: inherit;
+    background: #fff;
+    border: 1px solid #1b5f9e;
+}
+
+select.wide {
+    width: 220px;
+}
+
+.attachment-button {
+    padding: 4px 8px;
+    font: inherit;
+    font-size: 12px;
+    color: #000;
+    background: #efefef;
+    border: 1px solid #fff;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+.attachment-button:hover {
+    background: #fff;
+}
+
+.attachments {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+    padding: 8px 12px;
+    margin-bottom: 12px;
+    border: 1px solid #555;
+    background: #f3f3f3;
+}
+
+.table-wrap {
+    position: relative;
+    min-height: 120px;
+    overflow-x: auto;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    text-align: center;
+}
+
+th {
+    padding: 4px 8px;
+    color: #fff;
+    font-weight: 700;
+    background: #2c93cc;
+    border: 1px solid #000;
+    white-space: nowrap;
+}
+
+th.serial {
+    width: 48px;
+}
+
+td {
+    padding: 2px 8px;
+    border: 1px solid #000;
+    background: #fff;
+}
+
+tbody tr:nth-child(odd) td {
+    background: #e8f1fd;
+}
+
+.view {
+    padding: 0;
+    font: inherit;
+    color: #0b4fb3;
+    background: none;
+    border: 0;
+    cursor: pointer;
+}
+
+.view:hover {
+    text-decoration: underline;
+}
+
+.message {
+    padding: 12px;
+    text-align: center;
+}
+
+.error {
+    color: #ba0517;
+    font-weight: 700;
+}

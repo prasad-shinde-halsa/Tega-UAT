@@ -2,7 +2,7 @@
 <CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
     <fullName>Power_draw__c</fullName>
     <externalId>false</externalId>
-    <label>Power Draw (Kwh)</label>
+    <label>Power Draw (kW)</label>
     <precision>18</precision>
     <required>false</required>
     <scale>2</scale>

@@ -596,26 +596,27 @@
                 <identifier>RecordDiscount_Percentage__cField</identifier>
             </fieldInstance>
         </itemInstances>
+        <name>Facet-7d862c74-7758-484e-a51a-98f79e325da4</name>
+        <type>Facet</type>
+    </flexiPageRegions>
+    <flexiPageRegions>
         <itemInstances>
             <fieldInstance>
                 <fieldInstanceProperties>
                     <name>uiBehavior</name>
                     <value>none</value>
                 </fieldInstanceProperties>
-                <fieldItem>Record.X4E_4D_Currency__c</fieldItem>
-                <identifier>RecordX4E_4D_Currency__cField</identifier>
+                <fieldItem>Record.CurrencyIsoCode</fieldItem>
+                <identifier>RecordCurrencyIsoCodeField</identifier>
+                <visibilityRule>
+                    <criteria>
+                        <leftValue>{!$User.Profile.Name}</leftValue>
+                        <operator>EQUAL</operator>
+                        <rightValue>System Administrator</rightValue>
+                    </criteria>
+                </visibilityRule>
             </fieldInstance>
         </itemInstances>
-        <itemInstances>
-            <fieldInstance>
-                <fieldItem>Record.Opportunity__c</fieldItem>
-                <identifier>RecordOpportunity__cField</identifier>
-            </fieldInstance>
-        </itemInstances>
-        <name>Facet-7d862c74-7758-484e-a51a-98f79e325da4</name>
-        <type>Facet</type>
-    </flexiPageRegions>
-    <flexiPageRegions>
         <itemInstances>
             <fieldInstance>
                 <fieldInstanceProperties>
@@ -908,6 +909,23 @@
                 </fieldInstanceProperties>
                 <fieldItem>Record.Budgeted_Order_Month__c</fieldItem>
                 <identifier>RecordBudgeted_Order_Month_cField</identifier>
+            </fieldInstance>
+        </itemInstances>
+        <itemInstances>
+            <fieldInstance>
+                <fieldInstanceProperties>
+                    <name>uiBehavior</name>
+                    <value>none</value>
+                </fieldInstanceProperties>
+                <fieldItem>Record.Closed_Date__c</fieldItem>
+                <identifier>RecordClosed_Date_cField</identifier>
+                <visibilityRule>
+                    <criteria>
+                        <leftValue>{!$User.Profile.Name}</leftValue>
+                        <operator>EQUAL</operator>
+                        <rightValue>System Administrator</rightValue>
+                    </criteria>
+                </visibilityRule>
             </fieldInstance>
         </itemInstances>
         <name>Facet-38fc2916-b7f2-4d25-a651-76b7f1d73ecf</name>

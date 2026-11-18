@@ -110,7 +110,7 @@
         <language>en_US</language>
         <protected>false</protected>
         <shortDescription>NevigateURL</shortDescription>
-        <value>https://tegaindustrieslimited--uatfc.sandbox.lightning.force.com/lightning/r/Customer_Visit__c/</value>
+        <value>https://tegaindustrieslimited.lightning.force.com/lightning/r/Customer_Visit__c/</value>
     </labels>
     <labels>
         <fullName>No_Spare_W_O_Full_Set</fullName>
@@ -620,19 +620,5 @@
         <protected>true</protected>
         <shortDescription>Value Label</shortDescription>
         <value>Value</value>
-    </labels>
-    <labels>
-        <fullName>Department_Missing_Error</fullName>
-        <language>en_US</language>
-        <protected>false</protected>
-        <shortDescription>Division_Missing_Error</shortDescription>
-        <value>Division is missing. Please contact Admin.</value>
-    </labels>
-    <labels>
-        <fullName>Department_NotMatching_Error</fullName>
-        <language>en_US</language>
-        <protected>false</protected>
-        <shortDescription>Division_NotMatching_Error</shortDescription>
-        <value>Division is not matching. Please contact admin.</value>
     </labels>
 </CustomLabels>

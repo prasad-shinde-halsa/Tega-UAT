@@ -3,6 +3,7 @@
     <excludeButtons>ChangeOwnerOne</excludeButtons>
     <excludeButtons>ChangeRecordType</excludeButtons>
     <excludeButtons>CreateOrder</excludeButtons>
+    <excludeButtons>GenerateKnowledge</excludeButtons>
     <excludeButtons>OpenSlackRecordChannel</excludeButtons>
     <layoutSections>
         <customLabel>false</customLabel>
@@ -126,6 +127,14 @@
                 <behavior>Readonly</behavior>
                 <field>Total_Price_formula__c</field>
             </layoutItems>
+            <layoutItems>
+                <behavior>Readonly</behavior>
+                <field>Show_FEH_Button__c</field>
+            </layoutItems>
+            <layoutItems>
+                <behavior>Readonly</behavior>
+                <field>Show_FULLSet_Button__c</field>
+            </layoutItems>
         </layoutColumns>
         <layoutColumns>
             <layoutItems>
@@ -209,10 +218,6 @@
                 <field>End_Date__c</field>
             </layoutItems>
             <layoutItems>
-                <behavior>Edit</behavior>
-                <field>Part_List__c</field>
-            </layoutItems>
-            <layoutItems>
                 <behavior>Readonly</behavior>
                 <field>Part_List_Revision_No__c</field>
             </layoutItems>
@@ -252,10 +257,6 @@
             <layoutItems>
                 <behavior>Edit</behavior>
                 <field>Technical_Specification__c</field>
-            </layoutItems>
-            <layoutItems>
-                <behavior>Edit</behavior>
-                <field>settingType__c</field>
             </layoutItems>
         </layoutColumns>
         <style>OneColumn</style>
@@ -620,6 +621,9 @@
             </layoutItem>
         </relatedContentItems>
     </relatedContent>
+    <relatedLists>
+        <relatedList>RelatedEntityHistoryList</relatedList>
+    </relatedLists>
     <relatedLists>
         <fields>QUOTE_LI.PRODUCT2</fields>
         <fields>Product_Description__c</fields>

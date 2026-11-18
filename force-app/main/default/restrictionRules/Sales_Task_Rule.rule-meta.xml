@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RestrictionRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <active>true</active>
+    <description>Users who are  Sales Rep should only see Sales Tasks</description>
+    <enforcementType>Restrict</enforcementType>
+    <masterLabel>Sales Task Rule</masterLabel>
+    <recordFilter>Department_Formula__c=&apos;Sales&apos;</recordFilter>
+    <targetEntity>Task</targetEntity>
+    <userCriteria>$Permission.Sales_Custom_Permission=true</userCriteria>
+    <version>1</version>
+</RestrictionRule>

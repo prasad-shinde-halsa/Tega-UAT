@@ -116,9 +116,49 @@
         <label><!-- Update Offer --></label>
         <name>Update_Offer</name>
     </quickActions>
-    <quickActions>
-        <label><!-- Update Offer LWC --></label>
-        <name>Update_Offer_LWC</name>
-    </quickActions>
     <startsWith>Consonant</startsWith>
+    <validationRules>
+        <errorMessage><!-- Can not modify as offer is Approved. --></errorMessage>
+        <name>Approved_Offer_Validation</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Unable to edit Blocked offer. --></errorMessage>
+        <name>Block_Offer_Validation</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Please fill Type field in related Opportunity first --></errorMessage>
+        <name>If_Opp_Type_is_filled</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Loss Reason Is LIfe then LIfe Values SHould not be blank --></errorMessage>
+        <name>Life_Should_not_be_blank</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Please Fill Long Delivery --></errorMessage>
+        <name>Long_Delivery</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Offer validity not more than 180 Days. --></errorMessage>
+        <name>Offer_Validity_Range</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Port cannot be blank when Incoterms is &quot;CIF&quot; --></errorMessage>
+        <name>Port_Offer_Validation</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Loss Reason is Scope then Scope value should not be blank --></errorMessage>
+        <name>Scope_Should_not_be_blank</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Loss Reason is Service then Values should not be blank --></errorMessage>
+        <name>Service_Should_not_be_Blank</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Status is finalized you can not change any other field except SAP Offer ID. --></errorMessage>
+        <name>Status_Finalized_All_fields_Lock</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Cannot edit this record when SAP Offer Id has a value. --></errorMessage>
+        <name>Validation_to_prevent_changes</name>
+    </validationRules>
 </CustomObjectTranslation>

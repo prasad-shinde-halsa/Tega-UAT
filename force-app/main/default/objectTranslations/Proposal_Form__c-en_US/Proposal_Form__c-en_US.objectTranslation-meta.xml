@@ -30,10 +30,6 @@
         </sections>
     </layouts>
     <quickActions>
-        <label><!-- Clone Proposal Form --></label>
-        <name>Clone_Proposal_Form</name>
-    </quickActions>
-    <quickActions>
         <label><!-- Close PRF --></label>
         <name>Close_PRF</name>
     </quickActions>
@@ -126,8 +122,4 @@
         <errorMessage><!-- PRF Record Type should match Child Opportunity&apos;s Record Type --></errorMessage>
         <name>Same_Record_Type_as_Opportunity</name>
     </validationRules>
-    <webLinks>
-        <label><!-- Clone2 --></label>
-        <name>Clone2</name>
-    </webLinks>
 </CustomObjectTranslation>

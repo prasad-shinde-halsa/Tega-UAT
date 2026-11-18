@@ -1,7 +1,7 @@
 trigger OfferTriggering on Quote (after insert, after update) {
     if (Trigger.isAfter && (Trigger.isInsert || Trigger.isUpdate)) {
 
-        Budget_FY_year_Config__mdt budgetConfig = [SELECT MIS_Edit_Start_Date__c, MIS_Edit_End_Date__c FROM Budget_FY_year_Config__mdt WHERE Active__c = TRUE LIMIT 1];
+        Budget_FY_year_Config__mdt budgetConfig = [SELECT MIS_Edit_Start_Date__c, MIS_Edit_End_Date__c FROM Budget_FY_year_Config__mdt LIMIT 1];
 
         List<MIS_Budget__c> newMISRecords = new List<MIS_Budget__c>();
         List<MIS_Budget__c> updateMisRecord = new List<MIS_Budget__c>();
@@ -42,7 +42,7 @@ trigger OfferTriggering on Quote (after insert, after update) {
          newMIS.Budget_Line_Items__c = allNewQuotes[0].DC_Budget_Line_Items__c;
          newMIS.Mis_Monthly_Report__c = budgetConfig.MIS_Edit_Start_Date__c; // Add this line
 
-		 
+
          Date lostDate = allNewQuotes[0].Lost_Date__c;
          Integer lostDateYear  = lostDate.year();
          Integer lostMonth = lostDate.month();

@@ -11,8 +11,7 @@ global class UpdateCustomerFromEmail implements Messaging.InboundEmailHandler  {
         Messaging.InboundEmailResult result = new Messaging.InboundEmailresult();    
         String subToCompare = email.subject;                                   
         String accid1=subToCompare.substringAfterLast(':');
-         List<String> oppTypeList=subToCompare.split(':');
-        String oppType=oppTypeList.size()>2? oppTypeList[1]: oppTypeList[0];
+        String oppType=subToCompare.substringBefore(':');
         String accid= accid1.trim();  
         String emailBody = email.plainTextBody;
         // String custCode1 = emailBody.substringAfterLast(':');

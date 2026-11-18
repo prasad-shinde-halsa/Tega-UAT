@@ -24,4 +24,8 @@
         <name>Sync_with_SAP</name>
     </quickActions>
     <startsWith>Consonant</startsWith>
+    <validationRules>
+        <errorMessage><!-- Customer and Currency cannot be modified. Only System Administrators can update these fields. --></errorMessage>
+        <name>Prevent_Customer_Currency_Edit</name>
+    </validationRules>
 </CustomObjectTranslation>

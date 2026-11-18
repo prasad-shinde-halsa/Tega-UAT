@@ -7,7 +7,6 @@
     <type>MultiselectPicklist</type>
     <valueSet>
         <controllingField>PMG__c</controllingField>
-        <restricted>true</restricted>
         <valueSetDefinition>
             <sorted>false</sorted>
             <value>
@@ -121,9 +120,9 @@
                 <label>FLIP FLO Screen problem</label>
             </value>
             <value>
-                <fullName>Dimensional/ Fitment Problem</fullName>
+                <fullName>Dimensional/Fitment Problem</fullName>
                 <default>false</default>
-                <label>Dimensional/ Fitment Problem</label>
+                <label>Dimensional/Fitment Problem</label>
             </value>
             <value>
                 <fullName>Trommel Structure and Panel problem</fullName>
@@ -241,9 +240,9 @@
                 <label>Poor Life of Liner / Faster Wear</label>
             </value>
             <value>
-                <fullName>Leakage from cyclone parts</fullName>
+                <fullName>Leakage from Cyclone Parts</fullName>
                 <default>false</default>
-                <label>Leakage from cyclone parts</label>
+                <label>Leakage from Cyclone Parts</label>
             </value>
             <value>
                 <fullName>Dimensional Problem</fullName>
@@ -368,7 +367,7 @@
             <controllingFieldValue>Trommel</controllingFieldValue>
             <controllingFieldValue>Wear Component</controllingFieldValue>
             <controllingFieldValue>Conveyor Component</controllingFieldValue>
-            <valueName>Dimensional/ Fitment Problem</valueName>
+            <valueName>Dimensional/Fitment Problem</valueName>
         </valueSettings>
         <valueSettings>
             <controllingFieldValue>Trommel</controllingFieldValue>
@@ -376,8 +375,15 @@
         </valueSettings>
         <valueSettings>
             <controllingFieldValue>Hydrocyclone</controllingFieldValue>
-            <controllingFieldValue>Wear Component</controllingFieldValue>
-            <valueName>Poor Life of liner</valueName>
+            <valueName>Poor Life of Liner / Faster Wear</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Hydrocyclone</controllingFieldValue>
+            <valueName>Leakage from Cyclone Parts</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Hydrocyclone</controllingFieldValue>
+            <valueName>Dimensional Problem</valueName>
         </valueSettings>
         <valueSettings>
             <controllingFieldValue>Wear Component</controllingFieldValue>
@@ -390,6 +396,10 @@
         <valueSettings>
             <controllingFieldValue>Wear Component</controllingFieldValue>
             <valueName>Wearing out of Liners due to Abrasion</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Wear Component</controllingFieldValue>
+            <valueName>Poor Life of liner</valueName>
         </valueSettings>
         <valueSettings>
             <controllingFieldValue>Wear Component</controllingFieldValue>

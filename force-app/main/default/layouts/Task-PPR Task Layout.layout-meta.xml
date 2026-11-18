@@ -9,7 +9,7 @@
         <layoutColumns>
             <layoutItems>
                 <behavior>Edit</behavior>
-                <field>CAPA_Points__c</field>
+                <field>WhoId</field>
             </layoutItems>
             <layoutItems>
                 <behavior>Required</behavior>
@@ -18,16 +18,12 @@
         </layoutColumns>
         <layoutColumns>
             <layoutItems>
-                <behavior>Required</behavior>
-                <field>OwnerId</field>
-            </layoutItems>
-            <layoutItems>
                 <behavior>Edit</behavior>
                 <field>ActivityDate</field>
             </layoutItems>
             <layoutItems>
                 <behavior>Edit</behavior>
-                <field>PPR_Line_Item__c</field>
+                <field>WhatId</field>
             </layoutItems>
         </layoutColumns>
         <style>TwoColumnsTopToBottom</style>
@@ -47,13 +43,21 @@
                 <field>Department_Name__c</field>
             </layoutItems>
             <layoutItems>
+                <behavior>Edit</behavior>
+                <field>CAPA_Points__c</field>
+            </layoutItems>
+            <layoutItems>
                 <emptySpace>true</emptySpace>
             </layoutItems>
         </layoutColumns>
         <layoutColumns>
             <layoutItems>
                 <behavior>Edit</behavior>
-                <field>WhatId</field>
+                <field>PPR_Line_Item__c</field>
+            </layoutItems>
+            <layoutItems>
+                <behavior>Required</behavior>
+                <field>OwnerId</field>
             </layoutItems>
         </layoutColumns>
         <style>TwoColumnsLeftToRight</style>
@@ -150,10 +154,6 @@
         <editHeading>true</editHeading>
         <label>Other Information</label>
         <layoutColumns>
-            <layoutItems>
-                <behavior>Edit</behavior>
-                <field>WhoId</field>
-            </layoutItems>
             <layoutItems>
                 <behavior>Edit</behavior>
                 <field>IsReminderSet</field>

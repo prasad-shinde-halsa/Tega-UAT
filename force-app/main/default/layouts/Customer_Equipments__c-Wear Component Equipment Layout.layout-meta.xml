@@ -269,11 +269,11 @@
     </relatedLists>
     <relatedLists>
         <fields>NAME</fields>
-        <fields>Version_Number_Component__c</fields>
-        <fields>Description__c</fields>
-        <fields>Active__c</fields>
+        <fields>BOM__c</fields>
         <fields>Delivery_Req__c</fields>
+        <fields>Zone_Priority__c</fields>
         <fields>OBJECT_ID</fields>
+        <fields>Description__c</fields>
         <relatedList>Part_List__c.Customer_Equipment__c</relatedList>
     </relatedLists>
     <relatedLists>

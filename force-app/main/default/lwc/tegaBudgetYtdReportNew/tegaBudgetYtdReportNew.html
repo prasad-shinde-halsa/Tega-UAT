@@ -1,0 +1,219 @@
+<template>
+    <div class="report-shell">
+
+        <template if:true={isLoading}>
+            <div class="report-loading">
+                <lightning-spinner alternative-text="Loading budget data" size="medium"></lightning-spinner>
+            </div>
+        </template>
+
+        <!-- Header -->
+        <header class="report-header">
+            <div class="header-text">
+                <h1 class="report-title">Budget vs. actuals</h1>
+                <p class="report-subtitle">
+                    FY {selectedFY} &middot; figures in {showCurrecy} thousands
+                </p>
+            </div>
+            <div class="header-actions">
+                <button class="btn btn-ghost" type="button" onclick={handleVisitReports}>
+                    <lightning-icon icon-name="utility:open_folder" size="x-small" class="btn-icon"></lightning-icon>
+                    Visit reports
+                </button>
+                <button class="btn btn-outline" type="button" onclick={exportToExcel}>
+                    <lightning-icon icon-name="utility:table" size="x-small" class="btn-icon"></lightning-icon>
+                    Excel
+                </button>
+                <button class="btn btn-primary" type="button" onclick={exportToPDF}>
+                    <lightning-icon icon-name="utility:file" size="x-small" class="btn-icon btn-icon-inverse"></lightning-icon>
+                    PDF
+                </button>
+            </div>
+        </header>
+
+        <!-- Filters -->
+        <section class="filter-bar" aria-label="Report filters">
+            <div class="filter-field">
+                <lightning-combobox
+                    label="Financial year"
+                    value={selectedFY}
+                    options={financialYearOptions}
+                    onchange={handleFYChange}
+                    class="filter-input">
+                </lightning-combobox>
+            </div>
+
+            <div class="filter-field">
+                <lightning-combobox
+                    label="Quarter"
+                    value={selectedQuarter}
+                    options={quarterOptions}
+                    onchange={handleQuarterChange}
+                    class="filter-input">
+                </lightning-combobox>
+            </div>
+
+            <div class="filter-field">
+                <lightning-combobox
+                    label="Month"
+                    value={selectedMonth}
+                    options={monthOptions}
+                    onchange={handleMonthChange}
+                    disabled={selectedQuarter}
+                    class="filter-input">
+                </lightning-combobox>
+            </div>
+
+            <div class="filter-field">
+                <lightning-combobox
+                    label="Order type"
+                    value={selectedOrderType}
+                    options={OrderTypeOptions}
+                    onchange={handleOrderTypeChange}
+                    class="filter-input">
+                </lightning-combobox>
+            </div>
+
+            <div class="filter-field">
+                <lightning-combobox
+                    label="Region"
+                    value={selectedLevel1}
+                    options={Level1Options}
+                    onchange={handleLevel1Change}
+                    class="filter-input">
+                </lightning-combobox>
+            </div>
+
+            <template if:true={showLevel2}>
+                <div class="filter-field">
+                    <lightning-combobox
+                        label="Sub-region"
+                        value={selectedLevel2}
+                        options={Level2Options}
+                        onchange={handleLevel2Change}
+                        class="filter-input">
+                    </lightning-combobox>
+                </div>
+            </template>
+        </section>
+
+        <!-- KPI summary -->
+        <section class="kpi-strip" aria-label="Summary totals">
+            <div class="kpi-card">
+                <p class="kpi-label">{monthlyHeaderLabel} &mdash; budget vs. received</p>
+                <div class="kpi-figures">
+                    <span class="kpi-figure">{totalsRow.monthlyReceived}</span>
+                    <span class="kpi-figure-sep">of</span>
+                    <span class="kpi-figure kpi-figure-muted">{totalsRow.budgetedOrder}</span>
+                </div>
+                <span class={totalsAchievementBadgeClass}>{totalsRow.achievement}</span>
+            </div>
+
+            <div class="kpi-card">
+                <p class="kpi-label">Year to date &mdash; budget vs. actual</p>
+                <div class="kpi-figures">
+                    <span class="kpi-figure">{totalsRow.ytdActual}</span>
+                    <span class="kpi-figure-sep">of</span>
+                    <span class="kpi-figure kpi-figure-muted">{totalsRow.ytdBudget}</span>
+                </div>
+                <span class={totalsYtdAchievementBadgeClass}>{totalsRow.ytdAchievement}</span>
+            </div>
+
+            <div class="kpi-card">
+                <p class="kpi-label">Next 3 months &mdash; budget vs. forecast</p>
+                <div class="kpi-figures">
+                    <span class="kpi-figure">{totalsRow.forecastMIS}</span>
+                    <span class="kpi-figure-sep">of</span>
+                    <span class="kpi-figure kpi-figure-muted">{totalsRow.forecastBudget}</span>
+                </div>
+            </div>
+
+            <div class="kpi-card">
+                <p class="kpi-label">Full year &mdash; budget vs. forecast</p>
+                <div class="kpi-figures">
+                    <span class="kpi-figure">{totalsRow.fullYearForecast}</span>
+                    <span class="kpi-figure-sep">of</span>
+                    <span class="kpi-figure kpi-figure-muted">{totalsRow.fullYearBudget}</span>
+                </div>
+            </div>
+        </section>
+
+        <!-- Data table -->
+        <section class="table-section" aria-label="Budget by product group">
+            <div class="table-section-head">
+                <h2 class="table-title">By product group</h2>
+                <p class="table-caption">{monthlyHeaderLabel} snapshot for the selected filters</p>
+            </div>
+
+            <template if:true={showTable}>
+                <div class="table-scroll">
+                    <table class="budget-table">
+                        <thead>
+                            <tr>
+                                <th scope="col" class="col-pmg">Product group</th>
+                                <th scope="col" class="col-num">Budget</th>
+                                <th scope="col" class="col-num">Received</th>
+                                <th scope="col" class="col-num">Achieved</th>
+                                <th scope="col" class="col-num col-divider">YTD budget</th>
+                                <th scope="col" class="col-num">YTD actual</th>
+                                <th scope="col" class="col-num">YTD achieved</th>
+                                <th scope="col" class="col-num col-divider">Next 3mo budget</th>
+                                <th scope="col" class="col-num">Next 3mo forecast</th>
+                                <th scope="col" class="col-num col-divider">Full year budget</th>
+                                <th scope="col" class="col-num">Full year forecast</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <template for:each={visibleMatrix} for:item="row">
+                                <tr key={row.pmg} class="data-row">
+                                    <th scope="row" class="col-pmg">{row.pmg}</th>
+                                    <td class="col-num">{row.budgetedOrder}</td>
+                                    <td class="col-num">{row.monthlyReceived}</td>
+                                    <td class="col-num">
+                                        <span class={row.achievementClass}>{row.achievement}</span>
+                                    </td>
+                                    <td class="col-num col-divider">{row.ytdBudget}</td>
+                                    <td class="col-num">{row.ytdActual}</td>
+                                    <td class="col-num">
+                                        <span class={row.ytdAchievementClass}>{row.ytdAchievement}</span>
+                                    </td>
+                                    <td class="col-num col-divider">{row.forecastBudget}</td>
+                                    <td class="col-num">{row.forecastMIS2}</td>
+                                    <td class="col-num col-divider">{row.fullYearBudget}</td>
+                                    <td class="col-num">{row.fullYearForecast}</td>
+                                </tr>
+                            </template>
+                        </tbody>
+                        <tfoot>
+                            <tr class="totals-row">
+                                <th scope="row" class="col-pmg">Total</th>
+                                <td class="col-num">{totalsRow.budgetedOrder}</td>
+                                <td class="col-num">{totalsRow.monthlyReceived}</td>
+                                <td class="col-num">
+                                    <span class={totalsAchievementBadgeClass}>{totalsRow.achievement}</span>
+                                </td>
+                                <td class="col-num col-divider">{totalsRow.ytdBudget}</td>
+                                <td class="col-num">{totalsRow.ytdActual}</td>
+                                <td class="col-num">
+                                    <span class={totalsYtdAchievementBadgeClass}>{totalsRow.ytdAchievement}</span>
+                                </td>
+                                <td class="col-num col-divider">{totalsRow.forecastBudget}</td>
+                                <td class="col-num">{totalsRow.forecastMIS}</td>
+                                <td class="col-num col-divider">{totalsRow.fullYearBudget}</td>
+                                <td class="col-num">{totalsRow.fullYearForecast}</td>
+                            </tr>
+                        </tfoot>
+                    </table>
+                </div>
+            </template>
+
+            <template if:false={showTable}>
+                <div class="empty-state">
+                    <lightning-icon icon-name="utility:filterList" size="small" class="empty-icon"></lightning-icon>
+                    <p class="empty-title">No budget lines match these filters</p>
+                    <p class="empty-copy">Try a different month, order type, or a wider region.</p>
+                </div>
+            </template>
+        </section>
+    </div>
+</template>

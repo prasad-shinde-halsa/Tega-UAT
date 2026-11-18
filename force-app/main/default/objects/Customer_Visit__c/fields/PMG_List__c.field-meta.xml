@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>PMG_List__c</fullName>
+    <description>PMGs on this visit. A visit-level field so the PMG dashboard filter limits visits instead of only the joined PMG rows.</description>
+    <externalId>false</externalId>
+    <formula>IF(PMG_Count_Mill__c &gt; 0, &quot;Mill; &quot;, &quot;&quot;) &amp;
+IF(PMG_Count_Screen__c &gt; 0, &quot;Screen; &quot;, &quot;&quot;) &amp;
+IF(PMG_Count_Conveyor__c &gt; 0, &quot;Conveyor Component; &quot;, &quot;&quot;) &amp;
+IF(PMG_Count_Hydrocyclone__c &gt; 0, &quot;Hydrocyclone; &quot;, &quot;&quot;) &amp;
+IF(PMG_Count_Trommel__c &gt; 0, &quot;Trommel; &quot;, &quot;&quot;) &amp;
+IF(PMG_Count_Wear__c &gt; 0, &quot;Wear Component; &quot;, &quot;&quot;)</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>PMG List</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

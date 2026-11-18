@@ -32,7 +32,7 @@
     </values>
     <values>
         <field>PMG__c</field>
-        <value xsi:type="xsd:string">Pump</value>
+        <value xsi:type="xsd:string">Tega Pump</value>
     </values>
     <values>
         <field>PMG_code__c</field>

@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- In case SAP SO Number is not available then fill up SO Number manually --></help>
     <label><!-- Sales Order Number --></label>
     <name>Sales_Order_Number_text__c</name>
 </CustomFieldTranslation>

@@ -521,11 +521,6 @@
             <field>Created_User__c</field>
             <table>X4E_4D__c</table>
         </columns>
-        <columns>
-            <checkedByDefault>false</checkedByDefault>
-            <field>Opportunity__c</field>
-            <table>X4E_4D__c</table>
-        </columns>
         <masterLabel>Form 4E/4D</masterLabel>
     </sections>
 </ReportType>

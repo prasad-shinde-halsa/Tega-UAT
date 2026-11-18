@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>PMG_Mappings_FY_2026_27</fullName>
+    <columns>MasterLabel</columns>
+    <columns>DeveloperName</columns>
+    <columns>PMG__c</columns>
+    <columns>Object_Name__c</columns>
+    <columns>PMG_Approver_Name__c</columns>
+    <columns>PMG_Head_ID__c</columns>
+    <columns>PMG_Head_Name__c</columns>
+    <columns>PMG_code__c</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>Financial_Year__c</field>
+        <operation>equals</operation>
+        <value>2026-27</value>
+    </filters>
+    <label>PMG Mappings_FY 2026-27</label>
+    <language>en_US</language>
+</ListView>

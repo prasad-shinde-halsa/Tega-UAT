@@ -10,15 +10,9 @@
             <operation>equals</operation>
             <valueField>Part_List__c.Customer__c</valueField>
         </filterItems>
-        <filterItems>
-            <field>Part_List__c.Active__c</field>
-            <operation>equals</operation>
-            <value>True</value>
-        </filterItems>
         <isOptional>false</isOptional>
     </lookupFilter>
     <referenceTo>Part_List__c</referenceTo>
-    <relationshipLabel>Installation Reports</relationshipLabel>
     <relationshipName>Installations</relationshipName>
     <required>false</required>
     <trackTrending>false</trackTrending>

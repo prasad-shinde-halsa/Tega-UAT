@@ -1,6 +1,48 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <SharingRules xmlns="http://soap.sforce.com/2006/04/metadata">
     <sharingCriteriaRules>
+        <fullName>Share_AUSTRALIA</fullName>
+        <accessLevel>Read</accessLevel>
+        <label>Share AUSTRALIA</label>
+        <sharedTo>
+            <group>Australia_PPR_Access</group>
+        </sharedTo>
+        <criteriaItems>
+            <field>Region_From_Cus_Com__c</field>
+            <operation>equals</operation>
+            <value>AUSTRALIA</value>
+        </criteriaItems>
+        <includeRecordsOwnedByAll>true</includeRecordsOwnedByAll>
+    </sharingCriteriaRules>
+    <sharingCriteriaRules>
+        <fullName>Share_CC_record_to_cc_pmg</fullName>
+        <accessLevel>Edit</accessLevel>
+        <label>Share CC record to cc pmg</label>
+        <sharedTo>
+            <group>PMG_Conveyor_Component</group>
+        </sharedTo>
+        <criteriaItems>
+            <field>PMG__c</field>
+            <operation>equals</operation>
+            <value>Conveyor Component</value>
+        </criteriaItems>
+        <includeRecordsOwnedByAll>true</includeRecordsOwnedByAll>
+    </sharingCriteriaRules>
+    <sharingCriteriaRules>
+        <fullName>Share_Hydrocyclone_record_to_Hydrocyclone_pmg</fullName>
+        <accessLevel>Edit</accessLevel>
+        <label>Share Hydrocyclone record to Hydrocyclone pmg</label>
+        <sharedTo>
+            <group>PMG_Hydrocyclone</group>
+        </sharedTo>
+        <criteriaItems>
+            <field>PMG__c</field>
+            <operation>equals</operation>
+            <value>Hydrocyclone</value>
+        </criteriaItems>
+        <includeRecordsOwnedByAll>true</includeRecordsOwnedByAll>
+    </sharingCriteriaRules>
+    <sharingCriteriaRules>
         <fullName>Share_Mill_record_to_mill_pmg</fullName>
         <accessLevel>Edit</accessLevel>
         <label>Share Mill record to mill pmg</label>
@@ -11,6 +53,48 @@
             <field>PMG__c</field>
             <operation>equals</operation>
             <value>Mill</value>
+        </criteriaItems>
+        <includeRecordsOwnedByAll>true</includeRecordsOwnedByAll>
+    </sharingCriteriaRules>
+    <sharingCriteriaRules>
+        <fullName>Share_Screen_record_to_Screen_pmg</fullName>
+        <accessLevel>Edit</accessLevel>
+        <label>Share Screen record to Screen pmg</label>
+        <sharedTo>
+            <group>PMG_Screen</group>
+        </sharedTo>
+        <criteriaItems>
+            <field>PMG__c</field>
+            <operation>equals</operation>
+            <value>Screen</value>
+        </criteriaItems>
+        <includeRecordsOwnedByAll>true</includeRecordsOwnedByAll>
+    </sharingCriteriaRules>
+    <sharingCriteriaRules>
+        <fullName>Share_Tormmel_record_to_tormmel_pmg</fullName>
+        <accessLevel>Edit</accessLevel>
+        <label>Share Tormmel record to tormmel pmg</label>
+        <sharedTo>
+            <group>PMG_Trommel</group>
+        </sharedTo>
+        <criteriaItems>
+            <field>PMG__c</field>
+            <operation>equals</operation>
+            <value>Trommel</value>
+        </criteriaItems>
+        <includeRecordsOwnedByAll>true</includeRecordsOwnedByAll>
+    </sharingCriteriaRules>
+    <sharingCriteriaRules>
+        <fullName>Share_WC_record_to_wc_pmg</fullName>
+        <accessLevel>Edit</accessLevel>
+        <label>Share WC record to wc pmg</label>
+        <sharedTo>
+            <group>PMG_Wear_Component</group>
+        </sharedTo>
+        <criteriaItems>
+            <field>PMG__c</field>
+            <operation>equals</operation>
+            <value>Wear Component</value>
         </criteriaItems>
         <includeRecordsOwnedByAll>true</includeRecordsOwnedByAll>
     </sharingCriteriaRules>

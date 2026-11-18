@@ -16,11 +16,11 @@
     </values>
     <values>
         <field>MIS_Edit_End_Date__c</field>
-        <value xsi:type="xsd:date">2027-10-10</value>
+        <value xsi:type="xsd:date">2025-10-10</value>
     </values>
     <values>
         <field>MIS_Edit_Start_Date__c</field>
-        <value xsi:type="xsd:date">2026-08-01</value>
+        <value xsi:type="xsd:date">2025-09-04</value>
     </values>
     <values>
         <field>PMG_Budget_Last_Date__c</field>

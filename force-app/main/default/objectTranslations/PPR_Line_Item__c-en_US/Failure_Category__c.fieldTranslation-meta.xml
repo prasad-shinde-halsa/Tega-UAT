@@ -67,8 +67,8 @@
         <translation><!-- Dimensional Problem --></translation>
     </picklistValues>
     <picklistValues>
-        <masterLabel>Dimensional/ Fitment Problem</masterLabel>
-        <translation><!-- Dimensional/ Fitment Problem --></translation>
+        <masterLabel>Dimensional/Fitment Problem</masterLabel>
+        <translation><!-- Dimensional/Fitment Problem --></translation>
     </picklistValues>
     <picklistValues>
         <masterLabel>FLIP FLO Screen problem</masterLabel>
@@ -115,8 +115,8 @@
         <translation><!-- Jamming of Material --></translation>
     </picklistValues>
     <picklistValues>
-        <masterLabel>Leakage from cyclone parts</masterLabel>
-        <translation><!-- Leakage from cyclone parts --></translation>
+        <masterLabel>Leakage from Cyclone Parts</masterLabel>
+        <translation><!-- Leakage from Cyclone Parts --></translation>
     </picklistValues>
     <picklistValues>
         <masterLabel>Low Life of Panel</masterLabel>

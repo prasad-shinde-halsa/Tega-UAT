@@ -71,7 +71,22 @@
         <visible>true</visible>
     </applicationVisibilities>
     <applicationVisibilities>
+        <application>standard__ExpressionSetConsole</application>
+        <default>false</default>
+        <visible>true</visible>
+    </applicationVisibilities>
+    <applicationVisibilities>
         <application>standard__FlowsApp</application>
+        <default>false</default>
+        <visible>true</visible>
+    </applicationVisibilities>
+    <applicationVisibilities>
+        <application>standard__IndustriesEcm</application>
+        <default>false</default>
+        <visible>true</visible>
+    </applicationVisibilities>
+    <applicationVisibilities>
+        <application>standard__IndustriesEpc</application>
         <default>false</default>
         <visible>true</visible>
     </applicationVisibilities>
@@ -153,10 +168,6 @@
         <enabled>false</enabled>
     </classAccesses>
     <classAccesses>
-        <apexClass>BudgetLineItemToBRSegregationBatch</apexClass>
-        <enabled>false</enabled>
-    </classAccesses>
-    <classAccesses>
         <apexClass>BudgetLineItemTriggerHandler</apexClass>
         <enabled>false</enabled>
     </classAccesses>
@@ -166,6 +177,22 @@
     </classAccesses>
     <classAccesses>
         <apexClass>BudgetLineItemTriggerTest</apexClass>
+        <enabled>false</enabled>
+    </classAccesses>
+    <classAccesses>
+        <apexClass>BudgetMonthlyReportController</apexClass>
+        <enabled>false</enabled>
+    </classAccesses>
+    <classAccesses>
+        <apexClass>BudgetMonthlyReportControllerTest</apexClass>
+        <enabled>false</enabled>
+    </classAccesses>
+    <classAccesses>
+        <apexClass>BudgetStageTrackerController</apexClass>
+        <enabled>false</enabled>
+    </classAccesses>
+    <classAccesses>
+        <apexClass>BudgetStageTrackerControllerTest</apexClass>
         <enabled>false</enabled>
     </classAccesses>
     <classAccesses>
@@ -194,10 +221,6 @@
     </classAccesses>
     <classAccesses>
         <apexClass>CalculateScoreController</apexClass>
-        <enabled>false</enabled>
-    </classAccesses>
-    <classAccesses>
-        <apexClass>CloneProposalFormController</apexClass>
         <enabled>false</enabled>
     </classAccesses>
     <classAccesses>
@@ -322,10 +345,6 @@
     </classAccesses>
     <classAccesses>
         <apexClass>CreateNonSpareOfferTestMock</apexClass>
-        <enabled>false</enabled>
-    </classAccesses>
-    <classAccesses>
-        <apexClass>CreateOfferLineControlerTest</apexClass>
         <enabled>false</enabled>
     </classAccesses>
     <classAccesses>
@@ -473,6 +492,14 @@
         <enabled>false</enabled>
     </classAccesses>
     <classAccesses>
+        <apexClass>DetailedMISDataController</apexClass>
+        <enabled>false</enabled>
+    </classAccesses>
+    <classAccesses>
+        <apexClass>DetailedMISDataControllerTest</apexClass>
+        <enabled>false</enabled>
+    </classAccesses>
+    <classAccesses>
         <apexClass>DismantleApexController</apexClass>
         <enabled>false</enabled>
     </classAccesses>
@@ -569,10 +596,6 @@
         <enabled>false</enabled>
     </classAccesses>
     <classAccesses>
-        <apexClass>MISDataDumpController</apexClass>
-        <enabled>false</enabled>
-    </classAccesses>
-    <classAccesses>
         <apexClass>MISEntryStatusController</apexClass>
         <enabled>false</enabled>
     </classAccesses>
@@ -634,10 +657,6 @@
     </classAccesses>
     <classAccesses>
         <apexClass>NonSparesServiceNewV2</apexClass>
-        <enabled>false</enabled>
-    </classAccesses>
-    <classAccesses>
-        <apexClass>OfferLinePrintController</apexClass>
         <enabled>false</enabled>
     </classAccesses>
     <classAccesses>
@@ -809,27 +828,11 @@
         <enabled>false</enabled>
     </classAccesses>
     <classAccesses>
-        <apexClass>ProductDataRetriever</apexClass>
-        <enabled>false</enabled>
-    </classAccesses>
-    <classAccesses>
-        <apexClass>ProductDataRetrieverAPI</apexClass>
-        <enabled>false</enabled>
-    </classAccesses>
-    <classAccesses>
         <apexClass>ProductDataRetrieverAPI2</apexClass>
         <enabled>false</enabled>
     </classAccesses>
     <classAccesses>
         <apexClass>ProductDataRetrieverAPI2Test</apexClass>
-        <enabled>false</enabled>
-    </classAccesses>
-    <classAccesses>
-        <apexClass>ProductDataRetrieverAPITest</apexClass>
-        <enabled>false</enabled>
-    </classAccesses>
-    <classAccesses>
-        <apexClass>ProductDataStagingProcessor</apexClass>
         <enabled>false</enabled>
     </classAccesses>
     <classAccesses>
@@ -917,19 +920,7 @@
         <enabled>false</enabled>
     </classAccesses>
     <classAccesses>
-        <apexClass>SAPDataSyncSOAPService</apexClass>
-        <enabled>false</enabled>
-    </classAccesses>
-    <classAccesses>
         <apexClass>SAPOrderWebServiceV2</apexClass>
-        <enabled>false</enabled>
-    </classAccesses>
-    <classAccesses>
-        <apexClass>SalesOrgDataRestService</apexClass>
-        <enabled>false</enabled>
-    </classAccesses>
-    <classAccesses>
-        <apexClass>SalesOrgDataRestServiceTest</apexClass>
         <enabled>false</enabled>
     </classAccesses>
     <classAccesses>
@@ -969,6 +960,10 @@
         <enabled>false</enabled>
     </classAccesses>
     <classAccesses>
+        <apexClass>TOPFieldstagingTest</apexClass>
+        <enabled>false</enabled>
+    </classAccesses>
+    <classAccesses>
         <apexClass>TegaCustomReportController</apexClass>
         <enabled>false</enabled>
     </classAccesses>
@@ -993,7 +988,7 @@
         <enabled>false</enabled>
     </classAccesses>
     <classAccesses>
-        <apexClass>TestDataFactory</apexClass>
+        <apexClass>TestEmailService</apexClass>
         <enabled>false</enabled>
     </classAccesses>
     <classAccesses>
@@ -1006,18 +1001,6 @@
     </classAccesses>
     <classAccesses>
         <apexClass>Test_L2L3ProducTriggertHelper</apexClass>
-        <enabled>false</enabled>
-    </classAccesses>
-    <classAccesses>
-        <apexClass>TopExcellPrintController</apexClass>
-        <enabled>false</enabled>
-    </classAccesses>
-    <classAccesses>
-        <apexClass>TopFieldStagingProcessor</apexClass>
-        <enabled>false</enabled>
-    </classAccesses>
-    <classAccesses>
-        <apexClass>TopFieldStagingProcessor2</apexClass>
         <enabled>false</enabled>
     </classAccesses>
     <classAccesses>
@@ -1054,10 +1037,6 @@
     </classAccesses>
     <classAccesses>
         <apexClass>UpdateExchangeRateLWCControllerTest</apexClass>
-        <enabled>false</enabled>
-    </classAccesses>
-    <classAccesses>
-        <apexClass>UpdateL1L3CodeBatch</apexClass>
         <enabled>false</enabled>
     </classAccesses>
     <classAccesses>
@@ -1169,21 +1148,6 @@
         <enabled>false</enabled>
     </classAccesses>
     <custom>false</custom>
-    <fieldPermissions>
-        <editable>false</editable>
-        <field>API_Field_Configuration__mdt.Display_Order__c</field>
-        <readable>false</readable>
-    </fieldPermissions>
-    <fieldPermissions>
-        <editable>false</editable>
-        <field>API_Field_Configuration__mdt.Field_Label__c</field>
-        <readable>false</readable>
-    </fieldPermissions>
-    <fieldPermissions>
-        <editable>false</editable>
-        <field>API_Field_Configuration__mdt.Is_Active__c</field>
-        <readable>false</readable>
-    </fieldPermissions>
     <fieldPermissions>
         <editable>false</editable>
         <field>Account.Account__c</field>
@@ -3215,11 +3179,6 @@
         <readable>false</readable>
     </fieldPermissions>
     <fieldPermissions>
-        <editable>false</editable>
-        <field>Customer_Visit_Contact__c.Customer_Visit_Account_ID__c</field>
-        <readable>true</readable>
-    </fieldPermissions>
-    <fieldPermissions>
         <editable>true</editable>
         <field>Customer_Visit_Plan__c.Customer_Branch_Assignment__c</field>
         <readable>true</readable>
@@ -3238,6 +3197,11 @@
         <editable>false</editable>
         <field>Customer_Visit_Plan__c.No_of_days__c</field>
         <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>Customer_Visit__c.Branch_Name__c</field>
+        <readable>true</readable>
     </fieldPermissions>
     <fieldPermissions>
         <editable>true</editable>
@@ -3260,6 +3224,16 @@
         <readable>true</readable>
     </fieldPermissions>
     <fieldPermissions>
+        <editable>false</editable>
+        <field>Customer_Visit__c.Customer_Code__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>Customer_Visit__c.Customer_Regional_Manager__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
         <editable>true</editable>
         <field>Customer_Visit__c.Customer_Risk_Factor__c</field>
         <readable>true</readable>
@@ -3268,11 +3242,6 @@
         <editable>false</editable>
         <field>Customer_Visit__c.Customer_Visit_Plan__c</field>
         <readable>false</readable>
-    </fieldPermissions>
-    <fieldPermissions>
-        <editable>true</editable>
-        <field>Customer_Visit__c.Flag_To__c</field>
-        <readable>true</readable>
     </fieldPermissions>
     <fieldPermissions>
         <editable>false</editable>
@@ -3301,8 +3270,38 @@
     </fieldPermissions>
     <fieldPermissions>
         <editable>false</editable>
-        <field>Customer_Visit__c.Order_Type__c</field>
-        <readable>true</readable>
+        <field>Customer_Visit__c.PMG_Count_Conveyor__c</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>Customer_Visit__c.PMG_Count_Hydrocyclone__c</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>Customer_Visit__c.PMG_Count_Mill__c</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>Customer_Visit__c.PMG_Count_Screen__c</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>Customer_Visit__c.PMG_Count_Trommel__c</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>Customer_Visit__c.PMG_Count_Wear__c</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>Customer_Visit__c.PMG_List__c</field>
+        <readable>false</readable>
     </fieldPermissions>
     <fieldPermissions>
         <editable>false</editable>
@@ -3332,6 +3331,11 @@
     <fieldPermissions>
         <editable>false</editable>
         <field>Customer_Visit__c.Status__c</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>Customer_Visit__c.Visited_By__c</field>
         <readable>false</readable>
     </fieldPermissions>
     <fieldPermissions>
@@ -4061,6 +4065,11 @@
     </fieldPermissions>
     <fieldPermissions>
         <editable>false</editable>
+        <field>DC_Budget_Line_Items__c.Total_Order_In_USD__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
         <field>DC_Budget_Line_Items__c.Total_Order_Lost_In_INR__c</field>
         <readable>false</readable>
     </fieldPermissions>
@@ -4068,6 +4077,11 @@
         <editable>false</editable>
         <field>DC_Budget_Line_Items__c.Total_Order_Lost__c</field>
         <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>DC_Budget_Line_Items__c.Total_Order_MULTI_1000__c</field>
+        <readable>true</readable>
     </fieldPermissions>
     <fieldPermissions>
         <editable>false</editable>
@@ -4203,11 +4217,6 @@
         <editable>false</editable>
         <field>DC_Budget__c.Total_Order_In_INR__c</field>
         <readable>false</readable>
-    </fieldPermissions>
-    <fieldPermissions>
-        <editable>false</editable>
-        <field>DC_Budget__c.Total_Order_In_USD__c</field>
-        <readable>true</readable>
     </fieldPermissions>
     <fieldPermissions>
         <editable>false</editable>
@@ -7241,6 +7250,11 @@
     </fieldPermissions>
     <fieldPermissions>
         <editable>true</editable>
+        <field>L1_L3_Product__c.L1L3_Code__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
         <field>L1_L3_Product__c.Last_Sales_Date__c</field>
         <readable>true</readable>
     </fieldPermissions>
@@ -7270,16 +7284,6 @@
         <readable>true</readable>
     </fieldPermissions>
     <fieldPermissions>
-        <editable>false</editable>
-        <field>L1_L3_Product__c.Part_List_Name__c</field>
-        <readable>true</readable>
-    </fieldPermissions>
-    <fieldPermissions>
-        <editable>false</editable>
-        <field>L1_L3_Product__c.Product_L3_Name__c</field>
-        <readable>true</readable>
-    </fieldPermissions>
-    <fieldPermissions>
         <editable>true</editable>
         <field>L1_L3_Product__c.Product_del__c</field>
         <readable>true</readable>
@@ -7295,18 +7299,8 @@
         <readable>true</readable>
     </fieldPermissions>
     <fieldPermissions>
-        <editable>false</editable>
-        <field>L1_L3_Product__c.Sales_Org_Name__c</field>
-        <readable>true</readable>
-    </fieldPermissions>
-    <fieldPermissions>
         <editable>true</editable>
         <field>L1_L3_Product__c.Sales_Organization__c</field>
-        <readable>true</readable>
-    </fieldPermissions>
-    <fieldPermissions>
-        <editable>false</editable>
-        <field>L1_L3_Product__c.code_formula__c</field>
         <readable>true</readable>
     </fieldPermissions>
     <fieldPermissions>
@@ -7446,21 +7440,6 @@
     </fieldPermissions>
     <fieldPermissions>
         <editable>false</editable>
-        <field>L2_L3_product__c.Part_List_Currency__c</field>
-        <readable>true</readable>
-    </fieldPermissions>
-    <fieldPermissions>
-        <editable>false</editable>
-        <field>L2_L3_product__c.Part_List_Id__c</field>
-        <readable>true</readable>
-    </fieldPermissions>
-    <fieldPermissions>
-        <editable>false</editable>
-        <field>L2_L3_product__c.Part_List_Name__c</field>
-        <readable>true</readable>
-    </fieldPermissions>
-    <fieldPermissions>
-        <editable>false</editable>
         <field>L2_L3_product__c.Part_List_No__c</field>
         <readable>false</readable>
     </fieldPermissions>
@@ -7488,11 +7467,6 @@
         <editable>false</editable>
         <field>L2_L3_product__c.Product_L2__c</field>
         <readable>false</readable>
-    </fieldPermissions>
-    <fieldPermissions>
-        <editable>false</editable>
-        <field>L2_L3_product__c.Product_L3_Id__c</field>
-        <readable>true</readable>
     </fieldPermissions>
     <fieldPermissions>
         <editable>false</editable>
@@ -7545,24 +7519,24 @@
         <readable>false</readable>
     </fieldPermissions>
     <fieldPermissions>
-        <editable>true</editable>
+        <editable>false</editable>
         <field>Lead.Molycop_Reference_Salesforce_ID__c</field>
-        <readable>true</readable>
+        <readable>false</readable>
     </fieldPermissions>
     <fieldPermissions>
-        <editable>true</editable>
+        <editable>false</editable>
         <field>Lead.Molycop_Sales_Reps_Email__c</field>
-        <readable>true</readable>
+        <readable>false</readable>
     </fieldPermissions>
     <fieldPermissions>
-        <editable>true</editable>
+        <editable>false</editable>
         <field>Lead.Molycop_Sales_Reps_Name__c</field>
-        <readable>true</readable>
+        <readable>false</readable>
     </fieldPermissions>
     <fieldPermissions>
-        <editable>true</editable>
+        <editable>false</editable>
         <field>Lead.Molycop_Sales_Reps_Phone__c</field>
-        <readable>true</readable>
+        <readable>false</readable>
     </fieldPermissions>
     <fieldPermissions>
         <editable>false</editable>
@@ -8170,84 +8144,84 @@
         <readable>false</readable>
     </fieldPermissions>
     <fieldPermissions>
-        <editable>true</editable>
+        <editable>false</editable>
         <field>Molycop_Referral__c.Company__c</field>
-        <readable>true</readable>
+        <readable>false</readable>
     </fieldPermissions>
     <fieldPermissions>
-        <editable>true</editable>
+        <editable>false</editable>
         <field>Molycop_Referral__c.Country__c</field>
-        <readable>true</readable>
+        <readable>false</readable>
     </fieldPermissions>
     <fieldPermissions>
-        <editable>true</editable>
+        <editable>false</editable>
         <field>Molycop_Referral__c.Description__c</field>
-        <readable>true</readable>
+        <readable>false</readable>
     </fieldPermissions>
     <fieldPermissions>
-        <editable>true</editable>
+        <editable>false</editable>
         <field>Molycop_Referral__c.Email_Address__c</field>
-        <readable>true</readable>
+        <readable>false</readable>
     </fieldPermissions>
     <fieldPermissions>
-        <editable>true</editable>
+        <editable>false</editable>
         <field>Molycop_Referral__c.Error_Message__c</field>
-        <readable>true</readable>
+        <readable>false</readable>
     </fieldPermissions>
     <fieldPermissions>
-        <editable>true</editable>
+        <editable>false</editable>
         <field>Molycop_Referral__c.First_Name__c</field>
-        <readable>true</readable>
+        <readable>false</readable>
     </fieldPermissions>
     <fieldPermissions>
-        <editable>true</editable>
+        <editable>false</editable>
         <field>Molycop_Referral__c.Last_Name__c</field>
-        <readable>true</readable>
+        <readable>false</readable>
     </fieldPermissions>
     <fieldPermissions>
-        <editable>true</editable>
+        <editable>false</editable>
         <field>Molycop_Referral__c.Mobile_Phone__c</field>
-        <readable>true</readable>
+        <readable>false</readable>
     </fieldPermissions>
     <fieldPermissions>
-        <editable>true</editable>
+        <editable>false</editable>
         <field>Molycop_Referral__c.Molycop_Lead_ID__c</field>
-        <readable>true</readable>
+        <readable>false</readable>
     </fieldPermissions>
     <fieldPermissions>
-        <editable>true</editable>
+        <editable>false</editable>
         <field>Molycop_Referral__c.Product_Line__c</field>
-        <readable>true</readable>
+        <readable>false</readable>
     </fieldPermissions>
     <fieldPermissions>
-        <editable>true</editable>
+        <editable>false</editable>
         <field>Molycop_Referral__c.Status__c</field>
-        <readable>true</readable>
+        <readable>false</readable>
     </fieldPermissions>
     <fieldPermissions>
-        <editable>true</editable>
+        <editable>false</editable>
         <field>Molycop_Referral__c.Sync_Date_Time__c</field>
-        <readable>true</readable>
+        <readable>false</readable>
     </fieldPermissions>
     <fieldPermissions>
-        <editable>true</editable>
+        <editable>false</editable>
         <field>Molycop_Referral__c.Sync_Status__c</field>
-        <readable>true</readable>
+        <readable>false</readable>
     </fieldPermissions>
     <fieldPermissions>
-        <editable>true</editable>
+        <editable>false</editable>
         <field>Molycop_Referral__c.Tega_Sales_Rep_s_Email__c</field>
-        <readable>true</readable>
+        <readable>false</readable>
     </fieldPermissions>
     <fieldPermissions>
-        <editable>true</editable>
+        <editable>false</editable>
         <field>Molycop_Referral__c.Tega_Sales_Rep_s_Name__c</field>
-        <readable>true</readable>
+        <readable>false</readable>
     </fieldPermissions>
     <fieldPermissions>
-        <editable>true</editable>
+        <editable>false</editable>
         <field>Molycop_Referral__c.Tega_Sales_Rep_s_Phone__c</field>
-        <readable>true</readable>
+        <readable>false</readable>
     </fieldPermissions>
     <fieldPermissions>
         <editable>false</editable>
@@ -9381,7 +9355,7 @@
     </fieldPermissions>
     <fieldPermissions>
         <editable>false</editable>
-        <field>Opportunity.Opportunity_Number__c</field>
+        <field>Opportunity.Opp_Number__c</field>
         <readable>true</readable>
     </fieldPermissions>
     <fieldPermissions>
@@ -10012,7 +9986,7 @@
     <fieldPermissions>
         <editable>false</editable>
         <field>PPR_Line_Item__c.Is_Customer_Branch_Assignment__c</field>
-        <readable>false</readable>
+        <readable>true</readable>
     </fieldPermissions>
     <fieldPermissions>
         <editable>false</editable>
@@ -10123,6 +10097,16 @@
         <editable>false</editable>
         <field>PPR_Line_Item__c.Reason_for_Recommendation__c</field>
         <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>PPR_Line_Item__c.Region_From_Cus_Com__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>PPR_Line_Item__c.Region__c</field>
+        <readable>true</readable>
     </fieldPermissions>
     <fieldPermissions>
         <editable>false</editable>
@@ -10361,6 +10345,11 @@
     </fieldPermissions>
     <fieldPermissions>
         <editable>false</editable>
+        <field>Part_List__c.Delivery_SLA_Weeks__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
         <field>Part_List__c.Description__c</field>
         <readable>false</readable>
     </fieldPermissions>
@@ -10390,8 +10379,8 @@
         <readable>false</readable>
     </fieldPermissions>
     <fieldPermissions>
-        <editable>true</editable>
-        <field>Part_List__c.PLM_Last_Updated_Date__c</field>
+        <editable>false</editable>
+        <field>Part_List__c.Part_List_Revision_Number__c</field>
         <readable>true</readable>
     </fieldPermissions>
     <fieldPermissions>
@@ -12231,6 +12220,11 @@
     </fieldPermissions>
     <fieldPermissions>
         <editable>false</editable>
+        <field>Proposal_Form__c.Customer_Name_With_Code__c</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
         <field>Proposal_Form__c.Customer_Name__c</field>
         <readable>false</readable>
     </fieldPermissions>
@@ -12332,7 +12326,7 @@
     <fieldPermissions>
         <editable>false</editable>
         <field>Proposal_Form__c.Financial_Year__c</field>
-        <readable>false</readable>
+        <readable>true</readable>
     </fieldPermissions>
     <fieldPermissions>
         <editable>false</editable>
@@ -12418,11 +12412,6 @@
         <editable>false</editable>
         <field>Proposal_Form__c.Instrument_Air__c</field>
         <readable>false</readable>
-    </fieldPermissions>
-    <fieldPermissions>
-        <editable>true</editable>
-        <field>Proposal_Form__c.Is_Cloned_PRF__c</field>
-        <readable>true</readable>
     </fieldPermissions>
     <fieldPermissions>
         <editable>false</editable>
@@ -12686,11 +12675,6 @@
     </fieldPermissions>
     <fieldPermissions>
         <editable>false</editable>
-        <field>Proposal_Form__c.Type__c</field>
-        <readable>false</readable>
-    </fieldPermissions>
-    <fieldPermissions>
-        <editable>false</editable>
         <field>Proposal_Form__c.Type_of_Jamming__c</field>
         <readable>false</readable>
     </fieldPermissions>
@@ -12853,6 +12837,11 @@
         <editable>false</editable>
         <field>Quote.Container_Type__c</field>
         <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>Quote.Created_Date__c</field>
+        <readable>true</readable>
     </fieldPermissions>
     <fieldPermissions>
         <editable>false</editable>
@@ -13171,6 +13160,16 @@
     </fieldPermissions>
     <fieldPermissions>
         <editable>false</editable>
+        <field>Quote.Show_FEH_Button__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>Quote.Show_FULLSet_Button__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
         <field>Quote.Simulations__c</field>
         <readable>false</readable>
     </fieldPermissions>
@@ -13345,6 +13344,11 @@
         <readable>false</readable>
     </fieldPermissions>
     <fieldPermissions>
+        <editable>true</editable>
+        <field>SAP_Last_Sale_Price__c.Part_List__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
         <editable>false</editable>
         <field>SAP_Last_Sale_Price__c.Product_L3__c</field>
         <readable>false</readable>
@@ -13353,21 +13357,6 @@
         <editable>false</editable>
         <field>SAP_Last_Sale_Price__c.Sales_Price__c</field>
         <readable>false</readable>
-    </fieldPermissions>
-    <fieldPermissions>
-        <editable>true</editable>
-        <field>SAP_data_Sync__c.Last_Updated_Date__c</field>
-        <readable>true</readable>
-    </fieldPermissions>
-    <fieldPermissions>
-        <editable>true</editable>
-        <field>SAP_data_Sync__c.Material_Cost__c</field>
-        <readable>true</readable>
-    </fieldPermissions>
-    <fieldPermissions>
-        <editable>true</editable>
-        <field>SAP_data_Sync__c.Material_Name__c</field>
-        <readable>true</readable>
     </fieldPermissions>
     <fieldPermissions>
         <editable>false</editable>
@@ -13398,11 +13387,6 @@
         <editable>false</editable>
         <field>Sales_Org_Last_SAP_SO__c.Last_Sales_Price__c</field>
         <readable>false</readable>
-    </fieldPermissions>
-    <fieldPermissions>
-        <editable>false</editable>
-        <field>Sales_Org_Last_SAP_SO__c.Last_Sales_related_Product__c</field>
-        <readable>true</readable>
     </fieldPermissions>
     <fieldPermissions>
         <editable>false</editable>
@@ -13441,18 +13425,8 @@
     </fieldPermissions>
     <fieldPermissions>
         <editable>false</editable>
-        <field>Sales_Organization_Product__c.Product_L3_Id__c</field>
-        <readable>true</readable>
-    </fieldPermissions>
-    <fieldPermissions>
-        <editable>false</editable>
         <field>Sales_Organization_Product__c.Product__c</field>
         <readable>false</readable>
-    </fieldPermissions>
-    <fieldPermissions>
-        <editable>false</editable>
-        <field>Sales_Organization_Product__c.Sales_Org_Id__c</field>
-        <readable>true</readable>
     </fieldPermissions>
     <fieldPermissions>
         <editable>false</editable>
@@ -13806,6 +13780,11 @@
     </fieldPermissions>
     <fieldPermissions>
         <editable>false</editable>
+        <field>User_Mappings__c.Company_as_Text__c</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
         <field>User_Mappings__c.Object_Name__c</field>
         <readable>false</readable>
     </fieldPermissions>
@@ -14072,6 +14051,11 @@
     <fieldPermissions>
         <editable>false</editable>
         <field>X4E_4D__c.Customer_Inspection__c</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>X4E_4D__c.Customer_Name_With_Code__c</field>
         <readable>false</readable>
     </fieldPermissions>
     <fieldPermissions>
@@ -14773,6 +14757,10 @@
     </flowAccesses>
     <flowAccesses>
         <enabled>false</enabled>
+        <flow>Customer_Visit_Set_Visited_By</flow>
+    </flowAccesses>
+    <flowAccesses>
+        <enabled>false</enabled>
         <flow>Customer_Visits_Plan_Creation_Flow</flow>
     </flowAccesses>
     <flowAccesses>
@@ -14921,15 +14909,7 @@
     </flowAccesses>
     <flowAccesses>
         <enabled>false</enabled>
-        <flow>L1L3_code_automate</flow>
-    </flowAccesses>
-    <flowAccesses>
-        <enabled>false</enabled>
         <flow>L1_L2_Offer_Line_Item_Before_Insert</flow>
-    </flowAccesses>
-    <flowAccesses>
-        <enabled>false</enabled>
-        <flow>L1_L3_Automation</flow>
     </flowAccesses>
     <flowAccesses>
         <enabled>false</enabled>
@@ -15255,9 +15235,14 @@
         <enabled>false</enabled>
         <flow>change_account_status_to_Sync_With_SAP</flow>
     </flowAccesses>
-    <layoutAssignments>
-        <layout>API_Field_Configuration__mdt-API Field Configuration Layout</layout>
-    </layoutAssignments>
+    <flowAccesses>
+        <enabled>false</enabled>
+        <flow>gdgdfg</flow>
+    </flowAccesses>
+    <flowAccesses>
+        <enabled>false</enabled>
+        <flow>remove_BLI_when_clone</flow>
+    </flowAccesses>
     <layoutAssignments>
         <layout>Account-Account Layout</layout>
     </layoutAssignments>
@@ -15347,6 +15332,36 @@
     </layoutAssignments>
     <layoutAssignments>
         <layout>C_Conversion_Stage__mdt-C-Conversion Stage Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>CalcMatrixColumnRange-Decision Matrix Column Range Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>CalcProcStepRelationship-Expression Set Step Relationship Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>CalculationMatrix-Decision Matrix Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>CalculationMatrixColumn-Decision Matrix Column Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>CalculationMatrixRow-Decision Matrix Row Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>CalculationMatrixVersion-Decision Matrix Version Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>CalculationProcedure-Calculation Procedure Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>CalculationProcedureStep-Calculation Procedure Step Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>CalculationProcedureVariable-Calculation Procedure Variable Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>CalculationProcedureVersion-Calculation Procedure Version Layout</layout>
     </layoutAssignments>
     <layoutAssignments>
         <layout>Campaign-Campaign Layout</layout>
@@ -15568,6 +15583,12 @@
         <layout>Event-Event Layout</layout>
     </layoutAssignments>
     <layoutAssignments>
+        <layout>ExpressionSet-Expression Set Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>ExpressionSetVersion-Expression Set Version Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
         <layout>FeedItem-Feed Item Layout</layout>
     </layoutAssignments>
     <layoutAssignments>
@@ -15575,6 +15596,9 @@
     </layoutAssignments>
     <layoutAssignments>
         <layout>Fixed_Contract_Price__c-Fixed Contract Price Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>FlowOrchestrationWorkItem-Orchestration Work Item Layout</layout>
     </layoutAssignments>
     <layoutAssignments>
         <layout>FlowPersonalConfiguration__c-Flow Personal Configuration Layout</layout>
@@ -15992,9 +16016,6 @@
         <layout>SAP_Last_Sale_Price__c-SAP Last Sale Price Layout</layout>
     </layoutAssignments>
     <layoutAssignments>
-        <layout>SAP_data_Sync__c-SAP data Sync Layout</layout>
-    </layoutAssignments>
-    <layoutAssignments>
         <layout>S_Service_Stage__mdt-S-Service Stage Layout</layout>
     </layoutAssignments>
     <layoutAssignments>
@@ -16068,9 +16089,6 @@
         <layout>SharingRecordCollection-Record Collection Layout</layout>
     </layoutAssignments>
     <layoutAssignments>
-        <layout>SiqExchangeConnection-Exchange Connection Layout</layout>
-    </layoutAssignments>
-    <layoutAssignments>
         <layout>SocialPersona-Social Persona Layout</layout>
     </layoutAssignments>
     <layoutAssignments>
@@ -16086,7 +16104,7 @@
         <layout>TOP_Field_Staging__c-TOP Field Staging Layout</layout>
     </layoutAssignments>
     <layoutAssignments>
-        <layout>Task-Task Layout</layout>
+        <layout>Task-PPR Task Layout</layout>
     </layoutAssignments>
     <layoutAssignments>
         <layout>Territory2-Territory Layout</layout>
@@ -16260,14 +16278,6 @@
         <enabled>false</enabled>
     </pageAccesses>
     <pageAccesses>
-        <apexPage>TOPScreenDOC</apexPage>
-        <enabled>false</enabled>
-    </pageAccesses>
-    <pageAccesses>
-        <apexPage>TOPScreenExcel</apexPage>
-        <enabled>false</enabled>
-    </pageAccesses>
-    <pageAccesses>
         <apexPage>TOPScreenPDF</apexPage>
         <enabled>false</enabled>
     </pageAccesses>
@@ -16277,10 +16287,6 @@
     </pageAccesses>
     <pageAccesses>
         <apexPage>TOPScreenPDFCodeWithCust</apexPage>
-        <enabled>false</enabled>
-    </pageAccesses>
-    <pageAccesses>
-        <apexPage>TopExcelPage</apexPage>
         <enabled>false</enabled>
     </pageAccesses>
     <pageAccesses>
@@ -16774,8 +16780,16 @@
         <visibility>Hidden</visibility>
     </tabVisibilities>
     <tabVisibilities>
+        <tab>Budget_Monthly_Report</tab>
+        <visibility>Hidden</visibility>
+    </tabVisibilities>
+    <tabVisibilities>
         <tab>Budget_Report_Segregation__c</tab>
         <visibility>DefaultOn</visibility>
+    </tabVisibilities>
+    <tabVisibilities>
+        <tab>Budget_Stage_Tracker</tab>
+        <visibility>Hidden</visibility>
     </tabVisibilities>
     <tabVisibilities>
         <tab>Budget__c</tab>
@@ -16832,6 +16846,10 @@
     <tabVisibilities>
         <tab>Derived_SO_Price_Factor__c</tab>
         <visibility>DefaultOn</visibility>
+    </tabVisibilities>
+    <tabVisibilities>
+        <tab>Detailed_MIS_Data</tab>
+        <visibility>Hidden</visibility>
     </tabVisibilities>
     <tabVisibilities>
         <tab>Dismantle__c</tab>
@@ -16894,20 +16912,12 @@
         <visibility>Hidden</visibility>
     </tabVisibilities>
     <tabVisibilities>
-        <tab>L2_L3_product__c</tab>
-        <visibility>DefaultOn</visibility>
-    </tabVisibilities>
-    <tabVisibilities>
         <tab>Location__c</tab>
         <visibility>Hidden</visibility>
     </tabVisibilities>
     <tabVisibilities>
         <tab>MIS_Budget__c</tab>
         <visibility>DefaultOn</visibility>
-    </tabVisibilities>
-    <tabVisibilities>
-        <tab>MIS_Data_Dump</tab>
-        <visibility>Hidden</visibility>
     </tabVisibilities>
     <tabVisibilities>
         <tab>MIS_Report</tab>
@@ -16920,6 +16930,10 @@
     <tabVisibilities>
         <tab>MIS_Report_Status_Check</tab>
         <visibility>Hidden</visibility>
+    </tabVisibilities>
+    <tabVisibilities>
+        <tab>MIS_reports_New</tab>
+        <visibility>DefaultOn</visibility>
     </tabVisibilities>
     <tabVisibilities>
         <tab>Molycop_Referral__c</tab>
@@ -16970,6 +16984,10 @@
         <visibility>Hidden</visibility>
     </tabVisibilities>
     <tabVisibilities>
+        <tab>Product_Complaint_Dashboard_Tab</tab>
+        <visibility>DefaultOn</visibility>
+    </tabVisibilities>
+    <tabVisibilities>
         <tab>Product_Per_PMG__c</tab>
         <visibility>Hidden</visibility>
     </tabVisibilities>
@@ -16990,10 +17008,6 @@
         <visibility>DefaultOff</visibility>
     </tabVisibilities>
     <tabVisibilities>
-        <tab>SAP_data_Sync__c</tab>
-        <visibility>DefaultOn</visibility>
-    </tabVisibilities>
-    <tabVisibilities>
         <tab>Sales_Country__c</tab>
         <visibility>Hidden</visibility>
     </tabVisibilities>
@@ -17002,16 +17016,12 @@
         <visibility>Hidden</visibility>
     </tabVisibilities>
     <tabVisibilities>
-        <tab>Sales_Org_Last_SAP_SO__c</tab>
-        <visibility>Hidden</visibility>
-    </tabVisibilities>
-    <tabVisibilities>
         <tab>Sales_Org__c</tab>
         <visibility>Hidden</visibility>
     </tabVisibilities>
     <tabVisibilities>
         <tab>Sales_Organization_Product__c</tab>
-        <visibility>DefaultOn</visibility>
+        <visibility>Hidden</visibility>
     </tabVisibilities>
     <tabVisibilities>
         <tab>Sales_Region__c</tab>

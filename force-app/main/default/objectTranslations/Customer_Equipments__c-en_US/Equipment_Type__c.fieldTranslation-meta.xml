@@ -147,6 +147,10 @@
         <translation><!-- PU Spares of cyclone --></translation>
     </picklistValues>
     <picklistValues>
+        <masterLabel>Pebble Mill</masterLabel>
+        <translation><!-- Pebble Mill --></translation>
+    </picklistValues>
+    <picklistValues>
         <masterLabel>Pressure Instrument for cyclone</masterLabel>
         <translation><!-- Pressure Instrument for cyclone --></translation>
     </picklistValues>

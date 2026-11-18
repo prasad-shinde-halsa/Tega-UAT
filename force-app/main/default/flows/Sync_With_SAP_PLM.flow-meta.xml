@@ -17,7 +17,8 @@
         <inputParameters>
             <name>emailAddresses</name>
             <value>
-                <stringValue>updatecustomerfromemail@1eawa5vv3t19s2btflkra0psw8dxja9zw49czzbioqj91d44no.5g-2ugxseay.ind23.apex.salesforce.com</stringValue>
+                <inputConfiguratorMode>Custom</inputConfiguratorMode>
+                <stringValue>updatecustomerfromemail@2hmj2op5yj3f4623ui8ltv0vy1cgvx6i0buj0dd3ay4e0eo8i1.hf-3q37i2as.ind28s.apex.sandbox.salesforce.com</stringValue>
             </value>
         </inputParameters>
         <inputParameters>
@@ -43,7 +44,7 @@
     </actionCalls>
     <apiVersion>61.0</apiVersion>
     <areMetricsLoggedToDataCloud>false</areMetricsLoggedToDataCloud>
-    <description>Adding Fault Message Screen</description>
+    <description>eMAIL ADDED FROM ES</description>
     <environments>Default</environments>
     <formulas>
         <name>body</name>

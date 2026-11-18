@@ -4,15 +4,9 @@
         <name>Approval_for_Losugen_DWG</name>
         <label>Approval for Losugen DWG</label>
         <locationX>1106</locationX>
-        <locationY>2030</locationY>
+        <locationY>2138</locationY>
         <actionName>submit</actionName>
         <actionType>submit</actionType>
-        <connector>
-            <targetReference>Get_PMG_SBO_Details_from_User_Mapping</targetReference>
-        </connector>
-        <faultConnector>
-            <targetReference>Fault_message_screen</targetReference>
-        </faultConnector>
         <flowTransactionModel>CurrentTransaction</flowTransactionModel>
         <inputParameters>
             <name>objectId</name>
@@ -33,17 +27,10 @@
     <actionCalls>
         <name>ASO_Approval_Process</name>
         <label>ASO Approval Process</label>
-        <locationX>1634</locationX>
-        <locationY>2030</locationY>
+        <locationX>1370</locationX>
+        <locationY>2138</locationY>
         <actionName>submit</actionName>
         <actionType>submit</actionType>
-        <connector>
-            <targetReference>Get_PMG_SBO_Details_from_User_Mapping</targetReference>
-        </connector>
-        <faultConnector>
-            <isGoTo>true</isGoTo>
-            <targetReference>Fault_message_screen</targetReference>
-        </faultConnector>
         <flowTransactionModel>CurrentTransaction</flowTransactionModel>
         <inputParameters>
             <name>processDefinitionNameOrId</name>
@@ -64,17 +51,10 @@
     <actionCalls>
         <name>ASO_Approval_Process_0</name>
         <label>ASO Approval Process</label>
-        <locationX>2954</locationX>
-        <locationY>2030</locationY>
+        <locationX>2162</locationX>
+        <locationY>2138</locationY>
         <actionName>submit</actionName>
         <actionType>submit</actionType>
-        <connector>
-            <targetReference>Get_PMG_SBO_Details_from_User_Mapping</targetReference>
-        </connector>
-        <faultConnector>
-            <isGoTo>true</isGoTo>
-            <targetReference>Fault_message_screen</targetReference>
-        </faultConnector>
         <flowTransactionModel>CurrentTransaction</flowTransactionModel>
         <inputParameters>
             <name>objectId</name>
@@ -95,17 +75,10 @@
     <actionCalls>
         <name>Copy_1_of_Approval_for_Losugen_DWG</name>
         <label>Approval for Losugen (PRC/MFG)</label>
-        <locationX>2426</locationX>
-        <locationY>2030</locationY>
+        <locationX>1898</locationX>
+        <locationY>2138</locationY>
         <actionName>submit</actionName>
         <actionType>submit</actionType>
-        <connector>
-            <targetReference>Get_PMG_SBO_Details_from_User_Mapping</targetReference>
-        </connector>
-        <faultConnector>
-            <isGoTo>true</isGoTo>
-            <targetReference>Fault_message_screen</targetReference>
-        </faultConnector>
         <flowTransactionModel>CurrentTransaction</flowTransactionModel>
         <inputParameters>
             <name>objectId</name>
@@ -126,17 +99,10 @@
     <actionCalls>
         <name>Copy_1_of_Approval_for_Losugen_PRC_MFG</name>
         <label>Copy 1 of Approval for Losugen (PRC/MFG)</label>
-        <locationX>3746</locationX>
-        <locationY>2030</locationY>
+        <locationX>2690</locationX>
+        <locationY>2138</locationY>
         <actionName>submit</actionName>
         <actionType>submit</actionType>
-        <connector>
-            <targetReference>Get_PMG_SBO_Details_from_User_Mapping</targetReference>
-        </connector>
-        <faultConnector>
-            <isGoTo>true</isGoTo>
-            <targetReference>Fault_message_screen</targetReference>
-        </faultConnector>
         <flowTransactionModel>CurrentTransaction</flowTransactionModel>
         <inputParameters>
             <name>objectId</name>
@@ -157,17 +123,10 @@
     <actionCalls>
         <name>Copy_1_of_ASO_Approval_Process</name>
         <label>Copy 1 of ASO Approval Process</label>
-        <locationX>4274</locationX>
-        <locationY>2030</locationY>
+        <locationX>2954</locationX>
+        <locationY>2138</locationY>
         <actionName>submit</actionName>
         <actionType>submit</actionType>
-        <connector>
-            <targetReference>Get_PMG_SBO_Details_from_User_Mapping</targetReference>
-        </connector>
-        <faultConnector>
-            <isGoTo>true</isGoTo>
-            <targetReference>Fault_message_screen</targetReference>
-        </faultConnector>
         <flowTransactionModel>CurrentTransaction</flowTransactionModel>
         <inputParameters>
             <name>objectId</name>
@@ -188,17 +147,10 @@
     <actionCalls>
         <name>Copy_1_of_Copy_1_of_ASO_Approval_Process</name>
         <label>Copy 1 of Copy 1 of ASO Approval Process</label>
-        <locationX>5594</locationX>
-        <locationY>2030</locationY>
+        <locationX>3746</locationX>
+        <locationY>2138</locationY>
         <actionName>submit</actionName>
         <actionType>submit</actionType>
-        <connector>
-            <targetReference>Get_PMG_SBO_Details_from_User_Mapping</targetReference>
-        </connector>
-        <faultConnector>
-            <isGoTo>true</isGoTo>
-            <targetReference>Fault_message_screen</targetReference>
-        </faultConnector>
         <flowTransactionModel>CurrentTransaction</flowTransactionModel>
         <inputParameters>
             <name>objectId</name>
@@ -219,17 +171,10 @@
     <actionCalls>
         <name>Copy_2_of_Approval_for_Losugen_PRC_MFG</name>
         <label>Copy 2 of Approval for Losugen (PRC/MFG)</label>
-        <locationX>5066</locationX>
-        <locationY>2030</locationY>
+        <locationX>3482</locationX>
+        <locationY>2138</locationY>
         <actionName>submit</actionName>
         <actionType>submit</actionType>
-        <connector>
-            <targetReference>Get_PMG_SBO_Details_from_User_Mapping</targetReference>
-        </connector>
-        <faultConnector>
-            <isGoTo>true</isGoTo>
-            <targetReference>Fault_message_screen</targetReference>
-        </faultConnector>
         <flowTransactionModel>CurrentTransaction</flowTransactionModel>
         <inputParameters>
             <name>objectId</name>
@@ -250,17 +195,10 @@
     <actionCalls>
         <name>Copy_2_of_ASO_Approval_Process</name>
         <label>Copy 2 of ASO Approval Process</label>
-        <locationX>6914</locationX>
-        <locationY>2030</locationY>
+        <locationX>4538</locationX>
+        <locationY>2138</locationY>
         <actionName>submit</actionName>
         <actionType>submit</actionType>
-        <connector>
-            <targetReference>Get_PMG_SBO_Details_from_User_Mapping</targetReference>
-        </connector>
-        <faultConnector>
-            <isGoTo>true</isGoTo>
-            <targetReference>Fault_message_screen</targetReference>
-        </faultConnector>
         <flowTransactionModel>CurrentTransaction</flowTransactionModel>
         <inputParameters>
             <name>objectId</name>
@@ -271,7 +209,7 @@
         <inputParameters>
             <name>processDefinitionNameOrId</name>
             <value>
-                <stringValue>ApprovalManufacturing_4D</stringValue>
+                <stringValue>ApprovalManufacturing</stringValue>
             </value>
         </inputParameters>
         <nameSegment>submit</nameSegment>
@@ -281,17 +219,10 @@
     <actionCalls>
         <name>Copy_3_of_Approval_for_Losugen_PRC_MFG</name>
         <label>Copy 3 of Approval for Losugen (PRC/MFG)</label>
-        <locationX>6386</locationX>
-        <locationY>2030</locationY>
+        <locationX>4274</locationX>
+        <locationY>2138</locationY>
         <actionName>submit</actionName>
         <actionType>submit</actionType>
-        <connector>
-            <targetReference>Get_PMG_SBO_Details_from_User_Mapping</targetReference>
-        </connector>
-        <faultConnector>
-            <isGoTo>true</isGoTo>
-            <targetReference>Fault_message_screen</targetReference>
-        </faultConnector>
         <flowTransactionModel>CurrentTransaction</flowTransactionModel>
         <inputParameters>
             <name>objectId</name>
@@ -308,69 +239,6 @@
         <nameSegment>submit</nameSegment>
         <offset>0</offset>
         <storeOutputAutomatically>true</storeOutputAutomatically>
-    </actionCalls>
-    <actionCalls>
-        <name>Send_Email_To_SBO</name>
-        <label>Send Email To SBO</label>
-        <locationX>5132</locationX>
-        <locationY>2738</locationY>
-        <actionName>emailSimple</actionName>
-        <actionType>emailSimple</actionType>
-        <connector>
-            <targetReference>Finish_Screen</targetReference>
-        </connector>
-        <flowTransactionModel>CurrentTransaction</flowTransactionModel>
-        <inputParameters>
-            <name>emailAddresses</name>
-            <value>
-                <elementReference>Get_PMG_SBO_Details_from_User_Mapping.User__r.Email</elementReference>
-            </value>
-        </inputParameters>
-        <inputParameters>
-            <name>senderType</name>
-            <value>
-                <stringValue>OrgWideEmailAddress</stringValue>
-            </value>
-        </inputParameters>
-        <inputParameters>
-            <name>senderAddress</name>
-            <value>
-                <stringValue>salesforce.helpdesk@tegaindustries.com</stringValue>
-            </value>
-        </inputParameters>
-        <inputParameters>
-            <name>composeEmailContent</name>
-            <value>
-                <stringValue>True</stringValue>
-            </value>
-        </inputParameters>
-        <inputParameters>
-            <name>emailSubject</name>
-            <value>
-                <stringValue>4E/4D Form Submission Notification</stringValue>
-            </value>
-        </inputParameters>
-        <inputParameters>
-            <name>emailBody</name>
-            <value>
-                <elementReference>SBOEmailTemplateBody</elementReference>
-            </value>
-        </inputParameters>
-        <inputParameters>
-            <name>sendRichBody</name>
-            <value>
-                <booleanValue>true</booleanValue>
-            </value>
-        </inputParameters>
-        <inputParameters>
-            <name>relatedRecordId</name>
-            <value>
-                <elementReference>X4E_4D.Id</elementReference>
-            </value>
-        </inputParameters>
-        <nameSegment>emailSimple</nameSegment>
-        <offset>0</offset>
-        <versionString>1.0.1</versionString>
     </actionCalls>
     <apiVersion>55.0</apiVersion>
     <areMetricsLoggedToDataCloud>false</areMetricsLoggedToDataCloud>
@@ -393,8 +261,8 @@
     <decisions>
         <name>Check_Approval_Selection</name>
         <label>Check Approval Selection</label>
-        <locationX>1766</locationX>
-        <locationY>1814</locationY>
+        <locationX>1436</locationX>
+        <locationY>1922</locationY>
         <defaultConnector>
             <targetReference>No_Approval_Process</targetReference>
         </defaultConnector>
@@ -418,8 +286,8 @@
     <decisions>
         <name>Check_Approval_Selection_0</name>
         <label>Check Approval Selection</label>
-        <locationX>3086</locationX>
-        <locationY>1814</locationY>
+        <locationX>2228</locationX>
+        <locationY>1922</locationY>
         <defaultConnector>
             <targetReference>No_Approval_Process_0</targetReference>
         </defaultConnector>
@@ -443,8 +311,8 @@
     <decisions>
         <name>Check_Company_Name</name>
         <label>Check Company Name</label>
-        <locationX>1370</locationX>
-        <locationY>1922</locationY>
+        <locationX>1238</locationX>
+        <locationY>2030</locationY>
         <defaultConnector>
             <targetReference>ASO_Approval_Process</targetReference>
         </defaultConnector>
@@ -468,7 +336,7 @@
     <decisions>
         <name>Check_if_4e_4d_created</name>
         <label>Check if 4e/4d created</label>
-        <locationX>8650</locationX>
+        <locationX>4971</locationX>
         <locationY>350</locationY>
         <defaultConnector>
             <targetReference>X4e_4d_line_item_error</targetReference>
@@ -485,7 +353,7 @@
                 </rightValue>
             </conditions>
             <connector>
-                <targetReference>Offer</targetReference>
+                <targetReference>User_Mapping</targetReference>
             </connector>
             <label>Created</label>
         </rules>
@@ -493,8 +361,8 @@
     <decisions>
         <name>Check_Mandatory_Fields</name>
         <label>Check Category</label>
-        <locationX>5132</locationX>
-        <locationY>1598</locationY>
+        <locationX>3515</locationX>
+        <locationY>1706</locationY>
         <defaultConnector>
             <targetReference>Error</targetReference>
         </defaultConnector>
@@ -538,13 +406,6 @@
                     <stringValue>Manufacturing</stringValue>
                 </rightValue>
             </conditions>
-            <conditions>
-                <leftValueReference>X4E_4D.RecordType.Name</leftValueReference>
-                <operator>EqualTo</operator>
-                <rightValue>
-                    <stringValue>4E</stringValue>
-                </rightValue>
-            </conditions>
             <connector>
                 <targetReference>Asking_for_Approval_0</targetReference>
             </connector>
@@ -565,13 +426,6 @@
                 <operator>EqualTo</operator>
                 <rightValue>
                     <stringValue>ASO</stringValue>
-                </rightValue>
-            </conditions>
-            <conditions>
-                <leftValueReference>X4E_4D.RecordType.Name</leftValueReference>
-                <operator>EqualTo</operator>
-                <rightValue>
-                    <stringValue>4E</stringValue>
                 </rightValue>
             </conditions>
             <connector>
@@ -656,8 +510,8 @@
     <decisions>
         <name>Check_Mandatory_Fields_0</name>
         <label>Check Mandatory Fields</label>
-        <locationX>2195</locationX>
-        <locationY>998</locationY>
+        <locationX>1386</locationX>
+        <locationY>1106</locationY>
         <defaultConnector>
             <targetReference>Mandatory_Fields_Error</targetReference>
         </defaultConnector>
@@ -729,7 +583,7 @@
                 </rightValue>
             </conditions>
             <conditions>
-                <leftValueReference>X4E_4D.Total_Value__c</leftValueReference>
+                <leftValueReference>X4E_4D.PO_Value__c</leftValueReference>
                 <operator>IsNull</operator>
                 <rightValue>
                     <booleanValue>false</booleanValue>
@@ -772,8 +626,8 @@
     <decisions>
         <name>Check_Mandatory_Fields_0_0</name>
         <label>Check Mandatory Fields</label>
-        <locationX>2635</locationX>
-        <locationY>998</locationY>
+        <locationX>1826</locationX>
+        <locationY>1106</locationY>
         <defaultConnector>
             <targetReference>Mandatory_Fields_Error_0</targetReference>
         </defaultConnector>
@@ -838,6 +692,13 @@
                 </rightValue>
             </conditions>
             <conditions>
+                <leftValueReference>X4E_4D.PO_Value__c</leftValueReference>
+                <operator>IsNull</operator>
+                <rightValue>
+                    <booleanValue>false</booleanValue>
+                </rightValue>
+            </conditions>
+            <conditions>
                 <leftValueReference>X4E_4D.SF_Offer__c</leftValueReference>
                 <operator>IsNull</operator>
                 <rightValue>
@@ -865,35 +726,10 @@
         </rules>
     </decisions>
     <decisions>
-        <name>Check_offer_type</name>
-        <label>Check offer type</label>
-        <locationX>5676</locationX>
-        <locationY>782</locationY>
-        <defaultConnector>
-            <targetReference>Error_spareOffer</targetReference>
-        </defaultConnector>
-        <defaultConnectorLabel>spare</defaultConnectorLabel>
-        <rules>
-            <name>Non_spare</name>
-            <conditionLogic>and</conditionLogic>
-            <conditions>
-                <leftValueReference>Offer.RecordType.DeveloperName</leftValueReference>
-                <operator>EqualTo</operator>
-                <rightValue>
-                    <stringValue>Offer_Non_Spare</stringValue>
-                </rightValue>
-            </conditions>
-            <connector>
-                <targetReference>Check_Record_Type</targetReference>
-            </connector>
-            <label>Non spare</label>
-        </rules>
-    </decisions>
-    <decisions>
         <name>Check_Record_Type</name>
         <label>Check Record Type</label>
-        <locationX>2591</locationX>
-        <locationY>890</locationY>
+        <locationX>1782</locationX>
+        <locationY>998</locationY>
         <defaultConnectorLabel>Default Outcome</defaultConnectorLabel>
         <rules>
             <name>X4D</name>
@@ -929,8 +765,8 @@
     <decisions>
         <name>Check_User_Fields</name>
         <label>Check User Fields</label>
-        <locationX>7483</locationX>
-        <locationY>566</locationY>
+        <locationX>3820</locationX>
+        <locationY>782</locationY>
         <defaultConnector>
             <targetReference>Missing_User_Error</targetReference>
         </defaultConnector>
@@ -961,8 +797,8 @@
     <decisions>
         <name>Copy_1_of_Check_Approval_Selection</name>
         <label>Copy 1 of Check Approval Selection</label>
-        <locationX>4406</locationX>
-        <locationY>1814</locationY>
+        <locationX>3020</locationX>
+        <locationY>1922</locationY>
         <defaultConnector>
             <targetReference>Copy_1_of_No_Approval_Process</targetReference>
         </defaultConnector>
@@ -971,7 +807,7 @@
             <name>Copy_1_of_Yes_Selection</name>
             <conditionLogic>and</conditionLogic>
             <conditions>
-                <leftValueReference>Copy_1_of_Choose_Yes_No_0</leftValueReference>
+                <leftValueReference>Choose_Yes_No_0</leftValueReference>
                 <operator>EqualTo</operator>
                 <rightValue>
                     <elementReference>Yes_Choice</elementReference>
@@ -986,8 +822,8 @@
     <decisions>
         <name>Copy_1_of_Check_Company_Name</name>
         <label>Copy 1 of Check Company Name</label>
-        <locationX>2690</locationX>
-        <locationY>1922</locationY>
+        <locationX>2030</locationX>
+        <locationY>2030</locationY>
         <defaultConnector>
             <targetReference>ASO_Approval_Process_0</targetReference>
         </defaultConnector>
@@ -1011,8 +847,8 @@
     <decisions>
         <name>Copy_1_of_Copy_1_of_Check_Approval_Selection</name>
         <label>Copy 1 of Copy 1 of Check Approval Selection</label>
-        <locationX>5726</locationX>
-        <locationY>1814</locationY>
+        <locationX>3812</locationX>
+        <locationY>1922</locationY>
         <defaultConnector>
             <targetReference>Copy_1_of_Copy_1_of_No_Approval_Process</targetReference>
         </defaultConnector>
@@ -1021,7 +857,7 @@
             <name>Copy_1_of_Copy_1_of_Yes_Selection</name>
             <conditionLogic>and</conditionLogic>
             <conditions>
-                <leftValueReference>Copy_1_of_Copy_1_of_Choose_Yes_No_0</leftValueReference>
+                <leftValueReference>Choose_Yes_No_0</leftValueReference>
                 <operator>EqualTo</operator>
                 <rightValue>
                     <elementReference>Yes_Choice</elementReference>
@@ -1036,8 +872,8 @@
     <decisions>
         <name>Copy_2_of_Check_Approval_Selection</name>
         <label>Copy 2 of Check Approval Selection</label>
-        <locationX>7046</locationX>
-        <locationY>1814</locationY>
+        <locationX>4604</locationX>
+        <locationY>1922</locationY>
         <defaultConnector>
             <targetReference>Copy_1_of_Copy_1_of_Copy_1_of_No_Approval_Process</targetReference>
         </defaultConnector>
@@ -1046,7 +882,7 @@
             <name>Copy_2_of_Yes_Selection</name>
             <conditionLogic>and</conditionLogic>
             <conditions>
-                <leftValueReference>Copy_2_of_Choose_Yes_No_0</leftValueReference>
+                <leftValueReference>Choose_Yes_No_0</leftValueReference>
                 <operator>EqualTo</operator>
                 <rightValue>
                     <elementReference>Yes_Choice</elementReference>
@@ -1061,8 +897,8 @@
     <decisions>
         <name>Copy_2_of_Check_Company_Name</name>
         <label>Copy 2 of Check Company Name</label>
-        <locationX>4010</locationX>
-        <locationY>1922</locationY>
+        <locationX>2822</locationX>
+        <locationY>2030</locationY>
         <defaultConnector>
             <targetReference>Copy_1_of_ASO_Approval_Process</targetReference>
         </defaultConnector>
@@ -1086,8 +922,8 @@
     <decisions>
         <name>Copy_3_of_Check_Company_Name</name>
         <label>Copy 3 of Check Company Name</label>
-        <locationX>5330</locationX>
-        <locationY>1922</locationY>
+        <locationX>3614</locationX>
+        <locationY>2030</locationY>
         <defaultConnector>
             <targetReference>Copy_1_of_Copy_1_of_ASO_Approval_Process</targetReference>
         </defaultConnector>
@@ -1111,8 +947,8 @@
     <decisions>
         <name>Copy_4_of_Check_Company_Name</name>
         <label>Copy 4 of Check Company Name</label>
-        <locationX>6650</locationX>
-        <locationY>1922</locationY>
+        <locationX>4406</locationX>
+        <locationY>2030</locationY>
         <defaultConnector>
             <targetReference>Copy_2_of_ASO_Approval_Process</targetReference>
         </defaultConnector>
@@ -1136,8 +972,8 @@
     <decisions>
         <name>PO</name>
         <label>PO No &amp; PO Date</label>
-        <locationX>7970</locationX>
-        <locationY>1706</locationY>
+        <locationX>5198</locationX>
+        <locationY>1814</locationY>
         <defaultConnector>
             <targetReference>Error_0</targetReference>
         </defaultConnector>
@@ -1168,8 +1004,8 @@
     <decisions>
         <name>Validation_Rules</name>
         <label>Validation Rules</label>
-        <locationX>2591</locationX>
-        <locationY>1490</locationY>
+        <locationX>1782</locationX>
+        <locationY>1598</locationY>
         <defaultConnector>
             <targetReference>Check_Mandatory_Fields</targetReference>
         </defaultConnector>
@@ -1284,8 +1120,7 @@
             <label>Transit Date Validation</label>
         </rules>
     </decisions>
-    <description>Fixing Bug on decision element 
-date: 13th June 2025</description>
+    <description>Company as Text corrected  with values</description>
     <environments>Default</environments>
     <interviewLabel>4E/4D ASO Drawing Approval {!$Flow.CurrentDateTime}</interviewLabel>
     <label>4E/4D ASO Approval</label>
@@ -1309,60 +1144,35 @@ date: 13th June 2025</description>
     </processMetadataValues>
     <processType>Flow</processType>
     <recordLookups>
-        <name>Get_PMG_SBO_Details_from_User_Mapping</name>
-        <label>Get PMG SBO Details from User Mapping</label>
-        <locationX>5132</locationX>
-        <locationY>2630</locationY>
+        <name>Get_CustomerRegional_Manger</name>
+        <label>Get CustomerRegional Manger</label>
+        <locationX>3820</locationX>
+        <locationY>674</locationY>
         <assignNullValuesIfNoRecordsFound>false</assignNullValuesIfNoRecordsFound>
         <connector>
-            <targetReference>Send_Email_To_SBO</targetReference>
+            <targetReference>Check_User_Fields</targetReference>
         </connector>
         <filterLogic>and</filterLogic>
         <filters>
-            <field>Object_Name__c</field>
+            <field>Id</field>
             <operator>EqualTo</operator>
             <value>
-                <stringValue>X4E_4D__c</stringValue>
-            </value>
-        </filters>
-        <filters>
-            <field>PMG__c</field>
-            <operator>EqualTo</operator>
-            <value>
-                <elementReference>X4E_4D.PMG__c</elementReference>
-            </value>
-        </filters>
-        <filters>
-            <field>User_Type__c</field>
-            <operator>EqualTo</operator>
-            <value>
-                <stringValue>SBO</stringValue>
-            </value>
-        </filters>
-        <filters>
-            <field>Company__c</field>
-            <operator>EqualTo</operator>
-            <value>
-                <elementReference>X4E_4D.Company__c</elementReference>
+                <elementReference>Offer.AccountId</elementReference>
             </value>
         </filters>
         <getFirstRecordOnly>true</getFirstRecordOnly>
-        <object>User_Mappings__c</object>
+        <object>Account</object>
         <storeOutputAutomatically>true</storeOutputAutomatically>
     </recordLookups>
     <recordLookups>
         <name>Offer</name>
         <label>Offer</label>
-        <locationX>7483</locationX>
-        <locationY>458</locationY>
+        <locationX>3820</locationX>
+        <locationY>566</locationY>
         <assignNullValuesIfNoRecordsFound>false</assignNullValuesIfNoRecordsFound>
         <connector>
-            <targetReference>Check_User_Fields</targetReference>
+            <targetReference>Get_CustomerRegional_Manger</targetReference>
         </connector>
-        <faultConnector>
-            <isGoTo>true</isGoTo>
-            <targetReference>Fault_message_screen</targetReference>
-        </faultConnector>
         <filterLogic>and</filterLogic>
         <filters>
             <field>Id</field>
@@ -1376,18 +1186,70 @@ date: 13th June 2025</description>
         <storeOutputAutomatically>true</storeOutputAutomatically>
     </recordLookups>
     <recordLookups>
+        <name>User_Mapping</name>
+        <label>User Mapping</label>
+        <locationX>3820</locationX>
+        <locationY>458</locationY>
+        <assignNullValuesIfNoRecordsFound>false</assignNullValuesIfNoRecordsFound>
+        <connector>
+            <targetReference>Offer</targetReference>
+        </connector>
+        <filterLogic>(1 AND 2 AND 3 AND 6) OR (1 AND 4 AND 5)</filterLogic>
+        <filters>
+            <field>Company_as_Text__c</field>
+            <operator>EqualTo</operator>
+            <value>
+                <elementReference>X4E_4D.Company__c</elementReference>
+            </value>
+        </filters>
+        <filters>
+            <field>PMG__c</field>
+            <operator>EqualTo</operator>
+            <value>
+                <elementReference>X4E_4D.PMG__c</elementReference>
+            </value>
+        </filters>
+        <filters>
+            <field>Object_Name__c</field>
+            <operator>EqualTo</operator>
+            <value>
+                <stringValue>Quote</stringValue>
+            </value>
+        </filters>
+        <filters>
+            <field>Object_Name__c</field>
+            <operator>EqualTo</operator>
+            <value>
+                <stringValue>X4E_4D__c</stringValue>
+            </value>
+        </filters>
+        <filters>
+            <field>User_Type__c</field>
+            <operator>EqualTo</operator>
+            <value>
+                <stringValue>Global Sales Head</stringValue>
+            </value>
+        </filters>
+        <filters>
+            <field>User_Type__c</field>
+            <operator>EqualTo</operator>
+            <value>
+                <stringValue>PMG Head</stringValue>
+            </value>
+        </filters>
+        <getFirstRecordOnly>true</getFirstRecordOnly>
+        <object>User_Mappings__c</object>
+        <storeOutputAutomatically>true</storeOutputAutomatically>
+    </recordLookups>
+    <recordLookups>
         <name>X4E_4D</name>
         <label>4E/4D</label>
-        <locationX>8650</locationX>
+        <locationX>4971</locationX>
         <locationY>134</locationY>
         <assignNullValuesIfNoRecordsFound>false</assignNullValuesIfNoRecordsFound>
         <connector>
             <targetReference>X4e_4d_Line_Items</targetReference>
         </connector>
-        <faultConnector>
-            <isGoTo>true</isGoTo>
-            <targetReference>Fault_message_screen</targetReference>
-        </faultConnector>
         <filterLogic>and</filterLogic>
         <filters>
             <field>Id</field>
@@ -1403,16 +1265,12 @@ date: 13th June 2025</description>
     <recordLookups>
         <name>X4e_4d_Line_Items</name>
         <label>4e/4d Line Items</label>
-        <locationX>8650</locationX>
+        <locationX>4971</locationX>
         <locationY>242</locationY>
         <assignNullValuesIfNoRecordsFound>false</assignNullValuesIfNoRecordsFound>
         <connector>
             <targetReference>Check_if_4e_4d_created</targetReference>
         </connector>
-        <faultConnector>
-            <isGoTo>true</isGoTo>
-            <targetReference>Fault_message_screen</targetReference>
-        </faultConnector>
         <filterLogic>and</filterLogic>
         <filters>
             <field>X4E_4D__c</field>
@@ -1428,14 +1286,8 @@ date: 13th June 2025</description>
     <recordUpdates>
         <name>Update_SO_Status</name>
         <label>Update SO Status</label>
-        <locationX>7706</locationX>
-        <locationY>1814</locationY>
-        <connector>
-            <targetReference>Get_PMG_SBO_Details_from_User_Mapping</targetReference>
-        </connector>
-        <faultConnector>
-            <targetReference>Error_Screen</targetReference>
-        </faultConnector>
+        <locationX>5066</locationX>
+        <locationY>1922</locationY>
         <filterLogic>and</filterLogic>
         <filters>
             <field>Id</field>
@@ -1447,7 +1299,7 @@ date: 13th June 2025</description>
         <inputAssignments>
             <field>Status_SO__c</field>
             <value>
-                <stringValue>No Short Delivery Approval Needed</stringValue>
+                <stringValue>In Process</stringValue>
             </value>
         </inputAssignments>
         <object>X4E_4D__c</object>
@@ -1455,15 +1307,11 @@ date: 13th June 2025</description>
     <recordUpdates>
         <name>Update_User_Fields</name>
         <label>Update User Fields</label>
-        <locationX>5676</locationX>
-        <locationY>674</locationY>
+        <locationX>1782</locationX>
+        <locationY>890</locationY>
         <connector>
-            <targetReference>Check_offer_type</targetReference>
+            <targetReference>Check_Record_Type</targetReference>
         </connector>
-        <faultConnector>
-            <isGoTo>true</isGoTo>
-            <targetReference>Fault_message_screen</targetReference>
-        </faultConnector>
         <filterLogic>and</filterLogic>
         <filters>
             <field>Id</field>
@@ -1475,13 +1323,13 @@ date: 13th June 2025</description>
         <inputAssignments>
             <field>PMG_Head__c</field>
             <value>
-                <elementReference>Offer.PMG_Head__c</elementReference>
+                <elementReference>User_Mapping.User__c</elementReference>
             </value>
         </inputAssignments>
         <inputAssignments>
             <field>Regional_Sales_Head__c</field>
             <value>
-                <elementReference>Offer.Regional_Sales_Head__c</elementReference>
+                <elementReference>Get_CustomerRegional_Manger.Regional_Manager__c</elementReference>
             </value>
         </inputAssignments>
         <object>X4E_4D__c</object>
@@ -1489,8 +1337,8 @@ date: 13th June 2025</description>
     <screens>
         <name>Asking_for_Approval</name>
         <label>Asking for Approval</label>
-        <locationX>1766</locationX>
-        <locationY>1706</locationY>
+        <locationX>1436</locationX>
+        <locationY>1814</locationY>
         <allowBack>false</allowBack>
         <allowFinish>true</allowFinish>
         <allowPause>false</allowPause>
@@ -1535,8 +1383,8 @@ date: 13th June 2025</description>
     <screens>
         <name>Asking_for_Approval_0</name>
         <label>Asking for Approval</label>
-        <locationX>3086</locationX>
-        <locationY>1706</locationY>
+        <locationX>2228</locationX>
+        <locationY>1814</locationY>
         <allowBack>false</allowBack>
         <allowFinish>true</allowFinish>
         <allowPause>false</allowPause>
@@ -1581,8 +1429,8 @@ date: 13th June 2025</description>
     <screens>
         <name>Copy_1_of_Asking_for_Approval</name>
         <label>Copy 1 of Asking for Approval</label>
-        <locationX>4406</locationX>
-        <locationY>1706</locationY>
+        <locationX>3020</locationX>
+        <locationY>1814</locationY>
         <allowBack>false</allowBack>
         <allowFinish>true</allowFinish>
         <allowPause>false</allowPause>
@@ -1627,8 +1475,8 @@ date: 13th June 2025</description>
     <screens>
         <name>Copy_1_of_Copy_1_of_Asking_for_Approval</name>
         <label>Copy 1 of Copy 1 of Asking for Approval</label>
-        <locationX>5726</locationX>
-        <locationY>1706</locationY>
+        <locationX>3812</locationX>
+        <locationY>1814</locationY>
         <allowBack>false</allowBack>
         <allowFinish>true</allowFinish>
         <allowPause>false</allowPause>
@@ -1673,8 +1521,8 @@ date: 13th June 2025</description>
     <screens>
         <name>Copy_1_of_Copy_1_of_Copy_1_of_No_Approval_Process</name>
         <label>Copy 1 of Copy 1 of Copy 1 of No Approval Process</label>
-        <locationX>7442</locationX>
-        <locationY>1922</locationY>
+        <locationX>4802</locationX>
+        <locationY>2030</locationY>
         <allowBack>false</allowBack>
         <allowFinish>true</allowFinish>
         <allowPause>false</allowPause>
@@ -1698,8 +1546,8 @@ date: 13th June 2025</description>
     <screens>
         <name>Copy_1_of_Copy_1_of_No_Approval_Process</name>
         <label>Copy 1 of Copy 1 of No Approval Process</label>
-        <locationX>6122</locationX>
-        <locationY>1922</locationY>
+        <locationX>4010</locationX>
+        <locationY>2030</locationY>
         <allowBack>false</allowBack>
         <allowFinish>true</allowFinish>
         <allowPause>false</allowPause>
@@ -1723,8 +1571,8 @@ date: 13th June 2025</description>
     <screens>
         <name>Copy_1_of_No_Approval_Process</name>
         <label>Copy 1 of No Approval Process</label>
-        <locationX>4802</locationX>
-        <locationY>1922</locationY>
+        <locationX>3218</locationX>
+        <locationY>2030</locationY>
         <allowBack>false</allowBack>
         <allowFinish>true</allowFinish>
         <allowPause>false</allowPause>
@@ -1748,8 +1596,8 @@ date: 13th June 2025</description>
     <screens>
         <name>Copy_2_of_Asking_for_Approval</name>
         <label>Copy 2 of Asking for Approval</label>
-        <locationX>7046</locationX>
-        <locationY>1706</locationY>
+        <locationX>4604</locationX>
+        <locationY>1814</locationY>
         <allowBack>false</allowBack>
         <allowFinish>true</allowFinish>
         <allowPause>false</allowPause>
@@ -1794,8 +1642,8 @@ date: 13th June 2025</description>
     <screens>
         <name>Error</name>
         <label>Error</label>
-        <locationX>8498</locationX>
-        <locationY>1706</locationY>
+        <locationX>5594</locationX>
+        <locationY>1814</locationY>
         <allowBack>false</allowBack>
         <allowFinish>true</allowFinish>
         <allowPause>false</allowPause>
@@ -1819,8 +1667,8 @@ date: 13th June 2025</description>
     <screens>
         <name>Error_0</name>
         <label>Error</label>
-        <locationX>8234</locationX>
-        <locationY>1814</locationY>
+        <locationX>5330</locationX>
+        <locationY>1922</locationY>
         <allowBack>false</allowBack>
         <allowFinish>true</allowFinish>
         <allowPause>false</allowPause>
@@ -1845,7 +1693,7 @@ date: 13th June 2025</description>
         <name>Error_1</name>
         <label>Error_1</label>
         <locationX>50</locationX>
-        <locationY>1598</locationY>
+        <locationY>1706</locationY>
         <allowBack>false</allowBack>
         <allowFinish>true</allowFinish>
         <allowPause>false</allowPause>
@@ -1869,7 +1717,7 @@ date: 13th June 2025</description>
         <name>Error_1_0</name>
         <label>Error_1</label>
         <locationX>314</locationX>
-        <locationY>1598</locationY>
+        <locationY>1706</locationY>
         <allowBack>false</allowBack>
         <allowFinish>true</allowFinish>
         <allowPause>false</allowPause>
@@ -1893,7 +1741,7 @@ date: 13th June 2025</description>
         <name>Error_1_0_0</name>
         <label>Error_1</label>
         <locationX>578</locationX>
-        <locationY>1598</locationY>
+        <locationY>1706</locationY>
         <allowBack>false</allowBack>
         <allowFinish>true</allowFinish>
         <allowPause>false</allowPause>
@@ -1917,7 +1765,7 @@ date: 13th June 2025</description>
         <name>Error_1_0_0_0</name>
         <label>Error_1</label>
         <locationX>842</locationX>
-        <locationY>1598</locationY>
+        <locationY>1706</locationY>
         <allowBack>false</allowBack>
         <allowFinish>true</allowFinish>
         <allowPause>false</allowPause>
@@ -1938,106 +1786,10 @@ date: 13th June 2025</description>
         <showHeader>true</showHeader>
     </screens>
     <screens>
-        <name>Error_Screen</name>
-        <label>Error Screen</label>
-        <locationX>7970</locationX>
-        <locationY>1922</locationY>
-        <allowBack>true</allowBack>
-        <allowFinish>true</allowFinish>
-        <allowPause>true</allowPause>
-        <fields>
-            <name>Display_Error_Message</name>
-            <fieldText>&lt;p style=&quot;text-align: center;&quot;&gt;{!$Flow.FaultMessage}&lt;/p&gt;</fieldText>
-            <fieldType>DisplayText</fieldType>
-            <styleProperties>
-                <verticalAlignment>
-                    <stringValue>top</stringValue>
-                </verticalAlignment>
-                <width>
-                    <stringValue>12</stringValue>
-                </width>
-            </styleProperties>
-        </fields>
-        <showFooter>true</showFooter>
-        <showHeader>true</showHeader>
-    </screens>
-    <screens>
-        <name>Error_spareOffer</name>
-        <label>Error_spareOffer</label>
-        <locationX>8762</locationX>
-        <locationY>890</locationY>
-        <allowBack>true</allowBack>
-        <allowFinish>true</allowFinish>
-        <allowPause>true</allowPause>
-        <fields>
-            <name>Error_spare</name>
-            <fieldText>&lt;p&gt;Can not submit this form&lt;/p&gt;&lt;p&gt;&lt;span style=&quot;color: rgb(244, 5, 5);&quot;&gt;Error spare offer &lt;/span&gt;&lt;strong style=&quot;color: rgb(244, 5, 5);&quot;&gt;{!X4E_4D.Name}&lt;/strong&gt;&lt;/p&gt;&lt;p&gt;Contact with your system administrator with this screen shot for help&lt;/p&gt;</fieldText>
-            <fieldType>DisplayText</fieldType>
-            <styleProperties>
-                <verticalAlignment>
-                    <stringValue>top</stringValue>
-                </verticalAlignment>
-                <width>
-                    <stringValue>12</stringValue>
-                </width>
-            </styleProperties>
-        </fields>
-        <showFooter>true</showFooter>
-        <showHeader>true</showHeader>
-    </screens>
-    <screens>
-        <name>Fault_message_screen</name>
-        <label>Fault message screen</label>
-        <locationX>1370</locationX>
-        <locationY>2138</locationY>
-        <allowBack>true</allowBack>
-        <allowFinish>true</allowFinish>
-        <allowPause>true</allowPause>
-        <fields>
-            <name>fault_message</name>
-            <fieldText>&lt;p style=&quot;text-align: center;&quot;&gt;&lt;span style=&quot;font-size: 16px;&quot;&gt;{!$Flow.FaultMessage}&lt;/span&gt;&lt;/p&gt;</fieldText>
-            <fieldType>DisplayText</fieldType>
-            <styleProperties>
-                <verticalAlignment>
-                    <stringValue>top</stringValue>
-                </verticalAlignment>
-                <width>
-                    <stringValue>12</stringValue>
-                </width>
-            </styleProperties>
-        </fields>
-        <showFooter>false</showFooter>
-        <showHeader>false</showHeader>
-    </screens>
-    <screens>
-        <name>Finish_Screen</name>
-        <label>Finish Screen</label>
-        <locationX>5132</locationX>
-        <locationY>2846</locationY>
-        <allowBack>true</allowBack>
-        <allowFinish>true</allowFinish>
-        <allowPause>true</allowPause>
-        <fields>
-            <name>Submission_Screen</name>
-            <fieldText>&lt;p style=&quot;text-align: center;&quot;&gt;&lt;span style=&quot;font-size: 10pt; font-family: Tahoma, sans-serif;&quot;&gt;Form Submitted Successfully&lt;/span&gt;&lt;/p&gt;</fieldText>
-            <fieldType>DisplayText</fieldType>
-            <styleProperties>
-                <verticalAlignment>
-                    <stringValue>top</stringValue>
-                </verticalAlignment>
-                <width>
-                    <stringValue>12</stringValue>
-                </width>
-            </styleProperties>
-        </fields>
-        <showFooter>true</showFooter>
-        <showHeader>true</showHeader>
-    </screens>
-    <screens>
         <name>Mandatory_Fields_Error</name>
         <label>Mandatory Fields Error</label>
-        <locationX>2283</locationX>
-        <locationY>1106</locationY>
+        <locationX>1474</locationX>
+        <locationY>1214</locationY>
         <allowBack>false</allowBack>
         <allowFinish>true</allowFinish>
         <allowPause>false</allowPause>
@@ -2061,8 +1813,8 @@ date: 13th June 2025</description>
     <screens>
         <name>Mandatory_Fields_Error_0</name>
         <label>Mandatory Fields Error</label>
-        <locationX>2723</locationX>
-        <locationY>1106</locationY>
+        <locationX>1914</locationX>
+        <locationY>1214</locationY>
         <allowBack>false</allowBack>
         <allowFinish>true</allowFinish>
         <allowPause>false</allowPause>
@@ -2086,8 +1838,8 @@ date: 13th June 2025</description>
     <screens>
         <name>Missing_User_Error</name>
         <label>Missing User Error</label>
-        <locationX>9290</locationX>
-        <locationY>674</locationY>
+        <locationX>5858</locationX>
+        <locationY>890</locationY>
         <allowBack>false</allowBack>
         <allowFinish>true</allowFinish>
         <allowPause>false</allowPause>
@@ -2111,8 +1863,8 @@ date: 13th June 2025</description>
     <screens>
         <name>No_Approval_Process</name>
         <label>No Approval Process</label>
-        <locationX>2162</locationX>
-        <locationY>1922</locationY>
+        <locationX>1634</locationX>
+        <locationY>2030</locationY>
         <allowBack>false</allowBack>
         <allowFinish>true</allowFinish>
         <allowPause>false</allowPause>
@@ -2136,8 +1888,8 @@ date: 13th June 2025</description>
     <screens>
         <name>No_Approval_Process_0</name>
         <label>No Approval Process</label>
-        <locationX>3482</locationX>
-        <locationY>1922</locationY>
+        <locationX>2426</locationX>
+        <locationY>2030</locationY>
         <allowBack>false</allowBack>
         <allowFinish>true</allowFinish>
         <allowPause>false</allowPause>
@@ -2161,7 +1913,7 @@ date: 13th June 2025</description>
     <screens>
         <name>X4e_4d_line_item_error</name>
         <label>4e/4d line item error</label>
-        <locationX>9818</locationX>
+        <locationX>6122</locationX>
         <locationY>458</locationY>
         <allowBack>false</allowBack>
         <allowFinish>true</allowFinish>
@@ -2184,18 +1936,13 @@ date: 13th June 2025</description>
         <showHeader>true</showHeader>
     </screens>
     <start>
-        <locationX>8524</locationX>
+        <locationX>4845</locationX>
         <locationY>0</locationY>
         <connector>
             <targetReference>X4E_4D</targetReference>
         </connector>
     </start>
-    <status>Draft</status>
-    <textTemplates>
-        <name>SBOEmailTemplateBody</name>
-        <isViewedAsPlainText>false</isViewedAsPlainText>
-        <text>&lt;p&gt;&lt;span style=&quot;color: rgb(31, 73, 125); font-family: Calibri, sans-serif; font-size: 16pt;&quot;&gt;Dear &lt;/span&gt;&lt;strong style=&quot;color: rgb(31, 73, 125); font-family: Calibri, sans-serif; font-size: 16pt;&quot;&gt;{!Get_PMG_SBO_Details_from_User_Mapping.User__r.Name}&lt;/strong&gt;&lt;span style=&quot;color: rgb(31, 73, 125); font-family: Calibri, sans-serif; font-size: 16pt;&quot;&gt;,&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;span style=&quot;color: rgb(31, 73, 125); font-family: Calibri, sans-serif; font-size: 16pt;&quot;&gt;&amp;nbsp;&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;span style=&quot;color: rgb(31, 73, 125); font-family: Calibri, sans-serif; font-size: 16pt;&quot;&gt;A Form &lt;/span&gt;&lt;strong style=&quot;color: rgb(31, 73, 125); font-family: Calibri, sans-serif; font-size: 16pt;&quot;&gt;{!X4E_4D.RecordType.Name}&lt;/strong&gt;&lt;span style=&quot;color: rgb(31, 73, 125); font-family: Calibri, sans-serif; font-size: 16pt;&quot;&gt; has been submitted by &lt;/span&gt;&lt;strong style=&quot;color: rgb(31, 73, 125); font-family: Calibri, sans-serif; font-size: 16pt;&quot;&gt;{!X4E_4D.CreatedBy.Name}&lt;/strong&gt;&lt;span style=&quot;color: rgb(31, 73, 125); font-family: Calibri, sans-serif; font-size: 16pt;&quot;&gt;.&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;span style=&quot;color: rgb(31, 73, 125); font-family: Calibri, sans-serif; font-size: 16pt;&quot;&gt;&amp;nbsp;&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;span style=&quot;color: rgb(31, 73, 125); font-family: Calibri, sans-serif; font-size: 16pt;&quot;&gt;Form Number: &lt;/span&gt;&lt;strong style=&quot;color: rgb(31, 73, 125); font-family: Calibri, sans-serif; font-size: 16pt;&quot;&gt;{!X4E_4D.Name}&lt;/strong&gt;&lt;/p&gt;&lt;p&gt;&lt;span style=&quot;color: rgb(31, 73, 125); font-family: Calibri, sans-serif; font-size: 16pt;&quot;&gt;PMG: &lt;/span&gt;&lt;strong style=&quot;color: rgb(31, 73, 125); font-family: Calibri, sans-serif; font-size: 16pt;&quot;&gt;{!X4E_4D.PMG__c}&lt;/strong&gt;&lt;/p&gt;&lt;p&gt;&lt;span style=&quot;color: rgb(31, 73, 125); font-family: Calibri, sans-serif; font-size: 16pt;&quot;&gt;Company: &lt;/span&gt;&lt;strong style=&quot;color: rgb(31, 73, 125); font-family: Calibri, sans-serif; font-size: 16pt;&quot;&gt;{!X4E_4D.Company__c}&lt;/strong&gt;&lt;/p&gt;&lt;p&gt;&lt;span style=&quot;color: rgb(31, 73, 125); font-family: Calibri, sans-serif; font-size: 16pt;&quot;&gt;Branch: &lt;/span&gt;&lt;strong style=&quot;color: rgb(31, 73, 125); font-family: Calibri, sans-serif; font-size: 16pt;&quot;&gt;{!X4E_4D.SF_Offer__r.Branch__r.Name}&lt;/strong&gt;&lt;/p&gt;&lt;p&gt;&lt;span style=&quot;color: rgb(31, 73, 125); font-family: Calibri, sans-serif; font-size: 16pt;&quot;&gt;Type: &lt;/span&gt;&lt;strong style=&quot;color: rgb(31, 73, 125); font-family: Calibri, sans-serif; font-size: 16pt;&quot;&gt;ASO / SO&lt;/strong&gt;&lt;/p&gt;</text>
-    </textTemplates>
+    <status>Active</status>
     <variables>
         <name>recordId</name>
         <dataType>String</dataType>

@@ -92,20 +92,21 @@ Desc : this method use to update SapOfferId  in Offer.
                         
                 }
                 
-                
-               if(Offer.Status == 'Finalized' && oldMap.get(offer.Id).get('Status') !=  Offer.Status 
-                   && String.isNotBlank(Offer.Status) && Offer.RecordTypeId == recordTypeId && Offer.Approval_Status__c =='Submitted' ){
+                // status chnages subham
+                if(Offer.Status == 'Finalized' && oldMap.get(offer.Id).get('Status') !=  Offer.Status 
+                   && String.isNotBlank(Offer.Status) && Offer.RecordTypeId == recordTypeId && Offer.Approval_Status__c =='Submitted'
+                   && Offer.Discount_Value__c != null && Offer.Discount_Value__c <= 1 && String.isBlank(Offer.SAP_Offer_Id__c)  ){// condtion modified by Ranjeet
                        offertoUpdate.put(Offer.id, offer);
                        IT.Record_Id__c=offer.Id;
                        IT.Status__c='Draft';
                        IT.Operation__c = 'Create Offer Spare';
                        IT.Request__c = offer.QuoteNumber;
                        insert IT;
-                   } 
+                   }
                    
                 
-                if(Offer.Status == 'Approved' && offer.Approval_Status__c == 'Price Accepted'
-                   && String.isNotBlank(Offer.Status) && Offer.RecordTypeId == recordTypeId && (oldMap.get(offer.Id).get('Approval_Status__c') !=  Offer.Approval_Status__c || oldMap.get(offer.Id).get('Status') !=  Offer.Status) ){
+               else if(Offer.Status == 'Approved' && offer.Approval_Status__c == 'Price Accepted' && String.isBlank(Offer.SAP_Offer_Id__c) //is blanlk added by Ranjeet
+                    && String.isNotBlank(Offer.Status) && Offer.RecordTypeId == recordTypeId && (oldMap.get(offer.Id).get('Approval_Status__c') !=  Offer.Approval_Status__c || oldMap.get(offer.Id).get('Status') !=  Offer.Status) ){
                        offertoUpdate.put(Offer.id, offer);
                        IT.Record_Id__c=offer.Id;
                        IT.Status__c='Draft';

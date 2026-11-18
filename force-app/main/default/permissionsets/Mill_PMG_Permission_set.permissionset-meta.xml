@@ -561,11 +561,6 @@
     </fieldPermissions>
     <fieldPermissions>
         <editable>false</editable>
-        <field>Proposal_Form__c.Type__c</field>
-        <readable>true</readable>
-    </fieldPermissions>
-    <fieldPermissions>
-        <editable>false</editable>
         <field>Proposal_Form__c.Type_of_Jamming__c</field>
         <readable>true</readable>
     </fieldPermissions>

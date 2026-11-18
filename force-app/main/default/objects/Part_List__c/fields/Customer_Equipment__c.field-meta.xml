@@ -3,6 +3,15 @@
     <fullName>Customer_Equipment__c</fullName>
     <deleteConstraint>SetNull</deleteConstraint>
     <label>Customer Equipment</label>
+    <lookupFilter>
+        <active>true</active>
+        <filterItems>
+            <field>Customer_Equipments__c.Customer__c</field>
+            <operation>equals</operation>
+            <valueField>$Source.Customer__c</valueField>
+        </filterItems>
+        <isOptional>false</isOptional>
+    </lookupFilter>
     <referenceTo>Customer_Equipments__c</referenceTo>
     <relationshipLabel>Part Lists</relationshipLabel>
     <relationshipName>Part_Lists</relationshipName>

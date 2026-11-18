@@ -3,7 +3,7 @@
     <fullName>All</fullName>
     <columns>NAME</columns>
     <columns>Product_L3__c</columns>
-    <columns>Sales_Price__c</columns>
+    <columns>Part_List__c</columns>
     <filterScope>Everything</filterScope>
     <label>All</label>
 </ListView>

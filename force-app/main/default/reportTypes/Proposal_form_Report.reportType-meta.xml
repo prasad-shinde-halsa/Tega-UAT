@@ -671,26 +671,6 @@
             <field>BranchName__c</field>
             <table>Proposal_Form__c</table>
         </columns>
-        <columns>
-            <checkedByDefault>false</checkedByDefault>
-            <field>Exchange_Rate_In_USD__c</field>
-            <table>Proposal_Form__c</table>
-        </columns>
-        <columns>
-            <checkedByDefault>false</checkedByDefault>
-            <field>Exchange_Rate_In_INR__c</field>
-            <table>Proposal_Form__c</table>
-        </columns>
-        <columns>
-            <checkedByDefault>false</checkedByDefault>
-            <field>Financial_Year2__c</field>
-            <table>Proposal_Form__c</table>
-        </columns>
-        <columns>
-            <checkedByDefault>false</checkedByDefault>
-            <field>Is_Cloned_PRF__c</field>
-            <table>Proposal_Form__c</table>
-        </columns>
         <masterLabel>Proposal Form</masterLabel>
     </sections>
 </ReportType>

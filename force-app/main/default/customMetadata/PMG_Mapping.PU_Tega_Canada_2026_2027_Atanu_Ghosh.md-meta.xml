@@ -4,7 +4,7 @@
     <protected>false</protected>
     <values>
         <field>Company__c</field>
-        <value xsi:type="xsd:string">Tega - Canada</value>
+        <value xsi:type="xsd:string">Tega Canada</value>
     </values>
     <values>
         <field>Financial_Year__c</field>
@@ -32,7 +32,7 @@
     </values>
     <values>
         <field>PMG__c</field>
-        <value xsi:type="xsd:string">Pump</value>
+        <value xsi:type="xsd:string">Tega Pump</value>
     </values>
     <values>
         <field>PMG_code__c</field>

@@ -28,11 +28,6 @@
                 <default>false</default>
                 <label>Create Offer Spare</label>
             </value>
-            <value>
-                <fullName>Create SO-BOM</fullName>
-                <default>false</default>
-                <label>Create SO-BOM</label>
-            </value>
         </valueSetDefinition>
     </valueSet>
 </CustomField>

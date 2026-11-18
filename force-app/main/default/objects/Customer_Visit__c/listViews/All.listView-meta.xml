@@ -3,6 +3,7 @@
     <fullName>All</fullName>
     <columns>NAME</columns>
     <columns>Customer__c</columns>
+    <columns>Customer_Regional_Manager__c</columns>
     <columns>Visit_Date__c</columns>
     <columns>Number_of_days__c</columns>
     <columns>Customer_Branch_Assignment__c</columns>

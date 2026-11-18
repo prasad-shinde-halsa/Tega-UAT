@@ -96,6 +96,20 @@
         <includeRecordsOwnedByAll>true</includeRecordsOwnedByAll>
     </sharingCriteriaRules>
     <sharingCriteriaRules>
+        <fullName>Budget_Sharing_with_Brazil_Managers</fullName>
+        <accessLevel>Read</accessLevel>
+        <label>Budget Sharing with Brazil Managers</label>
+        <sharedTo>
+            <group>Brazil_Managers</group>
+        </sharedTo>
+        <criteriaItems>
+            <field>Name</field>
+            <operation>contains</operation>
+            <value>Brazil</value>
+        </criteriaItems>
+        <includeRecordsOwnedByAll>true</includeRecordsOwnedByAll>
+    </sharingCriteriaRules>
+    <sharingCriteriaRules>
         <fullName>Budget_Sharing_with_Central_Managers</fullName>
         <accessLevel>Read</accessLevel>
         <label>Budget Sharing with Central Managers</label>
@@ -303,13 +317,13 @@
         <includeRecordsOwnedByAll>true</includeRecordsOwnedByAll>
     </sharingCriteriaRules>
     <sharingCriteriaRules>
-        <fullName>Budget_Sharing_with_Peru_Brazil_Managers</fullName>
+        <fullName>Budget_Sharing_with_Peru_Chile_Managers</fullName>
         <accessLevel>Read</accessLevel>
-        <label>Budget Sharing with Peru- Brazil Managers</label>
+        <label>Budget Sharing with Peru- Chile Managers</label>
         <sharedTo>
             <group>LATAM</group>
         </sharedTo>
-        <booleanFilter>(1 AND 3) OR 2</booleanFilter>
+        <booleanFilter>(1 OR 2) AND 3 AND 4</booleanFilter>
         <criteriaItems>
             <field>Name</field>
             <operation>contains</operation>
@@ -318,12 +332,17 @@
         <criteriaItems>
             <field>Name</field>
             <operation>contains</operation>
-            <value>Brazil</value>
+            <value>Chile</value>
         </criteriaItems>
         <criteriaItems>
             <field>Name</field>
             <operation>notContain</operation>
             <value>Chennai</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Name</field>
+            <operation>notContain</operation>
+            <value>Perumal</value>
         </criteriaItems>
         <includeRecordsOwnedByAll>true</includeRecordsOwnedByAll>
     </sharingCriteriaRules>
@@ -348,7 +367,7 @@
         <sharedTo>
             <group>South_Africa</group>
         </sharedTo>
-        <booleanFilter>1 OR 2 OR 3 OR 4 OR 5 OR 6 OR 7 OR 8 OR 9 OR 10 OR 11 OR 12 OR 13 OR 14 OR 15 OR 16 OR 17 OR 18</booleanFilter>
+        <booleanFilter>(1 OR 2 OR 3 OR 4 OR 5 OR 6 OR 7 OR 8 OR 9 OR 10 OR 11 OR 12 OR 13 OR 14 OR 15 OR 16 OR 17 OR 18)  AND 19</booleanFilter>
         <criteriaItems>
             <field>Name</field>
             <operation>contains</operation>
@@ -439,6 +458,11 @@
             <operation>contains</operation>
             <value>Zimbabwe</value>
         </criteriaItems>
+        <criteriaItems>
+            <field>Name</field>
+            <operation>notContain</operation>
+            <value>North West WA</value>
+        </criteriaItems>
         <includeRecordsOwnedByAll>true</includeRecordsOwnedByAll>
     </sharingCriteriaRules>
     <sharingCriteriaRules>
@@ -493,7 +517,7 @@
         <sharedTo>
             <group>West_Africa</group>
         </sharedTo>
-        <booleanFilter>1 OR 2 OR 3 OR 4 OR 5</booleanFilter>
+        <booleanFilter>(1 OR 2 OR 3 OR 4 OR 5) AND 6</booleanFilter>
         <criteriaItems>
             <field>Name</field>
             <operation>contains</operation>
@@ -518,6 +542,11 @@
             <field>Name</field>
             <operation>contains</operation>
             <value>Morocco</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Name</field>
+            <operation>notContain</operation>
+            <value>Papua New Guinea</value>
         </criteriaItems>
         <includeRecordsOwnedByAll>true</includeRecordsOwnedByAll>
     </sharingCriteriaRules>
@@ -607,17 +636,61 @@
         <includeRecordsOwnedByAll>true</includeRecordsOwnedByAll>
     </sharingCriteriaRules>
     <sharingCriteriaRules>
-        <fullName>Vinay_Grover_Sharing</fullName>
-        <accessLevel>Edit</accessLevel>
-        <label>Vinay Grover Sharing</label>
+        <fullName>PMG_Budget_Sharing</fullName>
+        <accessLevel>Read</accessLevel>
+        <label>PMG Budget Sharing</label>
         <sharedTo>
-            <group>Vinoy</group>
+            <group>All_PMG</group>
         </sharedTo>
         <criteriaItems>
             <field>Name</field>
-            <operation>contains</operation>
-            <value>VINAY GROVER</value>
+            <operation>notEqual</operation>
+            <value>NULL</value>
         </criteriaItems>
         <includeRecordsOwnedByAll>true</includeRecordsOwnedByAll>
     </sharingCriteriaRules>
+    <sharingOwnerRules>
+        <fullName>Australia_Budget_Sharing_with_Assistants</fullName>
+        <accessLevel>Edit</accessLevel>
+        <label>Australia Budget Sharing with Assistants</label>
+        <sharedTo>
+            <group>Australia_Budget_Assistants</group>
+        </sharedTo>
+        <sharedFrom>
+            <group>Australia_Budget_Owners</group>
+        </sharedFrom>
+    </sharingOwnerRules>
+    <sharingOwnerRules>
+        <fullName>BRAZIL_Budget_Sharing_with_Assistants</fullName>
+        <accessLevel>Edit</accessLevel>
+        <label>BRAZIL Budget Sharing with Assistants</label>
+        <sharedTo>
+            <group>BRAZIL_Budget_Assistants</group>
+        </sharedTo>
+        <sharedFrom>
+            <group>BRAZIL_Budget_Owners</group>
+        </sharedFrom>
+    </sharingOwnerRules>
+    <sharingOwnerRules>
+        <fullName>S_Africa_Budget_Sharing_with_Assistants</fullName>
+        <accessLevel>Edit</accessLevel>
+        <label>S Africa Budget Sharing with Assistants</label>
+        <sharedTo>
+            <group>S_Africa_Budget_Assistants</group>
+        </sharedTo>
+        <sharedFrom>
+            <group>S_Africa_Budget_Owners</group>
+        </sharedFrom>
+    </sharingOwnerRules>
+    <sharingOwnerRules>
+        <fullName>USA_Budget_Sharing_with_Assistants</fullName>
+        <accessLevel>Edit</accessLevel>
+        <label>USA Budget Sharing with Assistants</label>
+        <sharedTo>
+            <group>USA_Budget_Assistants</group>
+        </sharedTo>
+        <sharedFrom>
+            <group>USA_Budget_Owners</group>
+        </sharedFrom>
+    </sharingOwnerRules>
 </SharingRules>

@@ -171,6 +171,8 @@
     <searchLayouts>
         <excludedStandardButtons>New</excludedStandardButtons>
         <listViewButtons>New_Customer_Visit</listViewButtons>
+        <searchResultsAdditionalFields>Customer__c</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>Customer_Code__c</searchResultsAdditionalFields>
     </searchLayouts>
     <sharingModel>ControlledByParent</sharingModel>
     <visibility>Public</visibility>

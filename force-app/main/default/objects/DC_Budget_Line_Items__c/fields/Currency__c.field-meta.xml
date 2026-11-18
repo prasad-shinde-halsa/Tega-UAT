@@ -3,7 +3,6 @@
     <fullName>Currency__c</fullName>
     <externalId>false</externalId>
     <formula>TEXT(Budget__r.CurrencyIsoCode)</formula>
-    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
     <label>Currency</label>
     <required>false</required>
     <trackTrending>false</trackTrending>

@@ -3,8 +3,6 @@ import getPicklistValuesLwc from '@salesforce/apex/DcBudgetLWCController.getPick
 import getDCBudgetLineItems from '@salesforce/apex/DcBudgetLWCController.getDCBudgetLineItems';
 import { ShowToastEvent } from 'lightning/platformShowToastEvent';
 import updateBudgetLineItems from '@salesforce/apex/DcBudgetLWCController.updateBudgetLineItems';
-import updateEditedBudgetLineItems from '@salesforce/apex/DcBudgetLWCController.updateEditedBudgetLineItems';
-
 import Id from '@salesforce/user/Id';
 import ProfileName from '@salesforce/schema/User.Profile.Name';
 import { getRecord } from 'lightning/uiRecordApi';
@@ -322,7 +320,7 @@ export default class ShowAprDetails extends LightningElement {
         console.log('completeRecords', JSON.stringify(completeRecords));
 
         // Call Apex to update records
-        updateEditedBudgetLineItems({ budgetLineItems: completeRecords })
+        updateBudgetLineItems({ budgetLineItems: completeRecords })
             .then(() => {
                 this.showToast('Success', 'Records updated successfully.', 'success');
                 this.editedRecords = {}; // Clear edited records

@@ -1320,12 +1320,22 @@
         </columns>
         <columns>
             <checkedByDefault>false</checkedByDefault>
+            <field>Created_Date__c</field>
+            <table>Account.Offers__r</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
             <field>Total_Price_formula__c</field>
             <table>Account.Offers__r</table>
         </columns>
         <columns>
             <checkedByDefault>false</checkedByDefault>
-            <field>settingType__c</field>
+            <field>Show_FEH_Button__c</field>
+            <table>Account.Offers__r</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <field>Show_FULLSet_Button__c</field>
             <table>Account.Offers__r</table>
         </columns>
         <masterLabel>Offers</masterLabel>

@@ -20,16 +20,7 @@ public with sharing class FinalizeOfferController {
     }
 @AuraEnabled
 public static String checkCurrencies(Id quoteId) {
-    Quote q = [SELECT CurrencyIsoCode, Opportunity.CurrencyIsoCode, Opportunity.Account.CurrencyIsoCode,Opportunity.Account.Currency__c,RecordType__c,Division__c,Opportunity_Equipments__c,Opportunity_Equipments__r.RecordTypeId,Opportunity_Equipments__r.RecordType.Name FROM Quote WHERE Id = :quoteId LIMIT 1];
-     
-    if (q.Division__c == null) {
-        return 'DIV_MISSING';
-    }
-
-    if (q.RecordType__c != q.Opportunity_Equipments__r.RecordType.Name ) {
-        return 'DIV_NOT_MATCHING';
-    }
-     
+    Quote q = [SELECT CurrencyIsoCode, Opportunity.CurrencyIsoCode, Opportunity.Account.CurrencyIsoCode,Opportunity.Account.Currency__c FROM Quote WHERE Id = :quoteId LIMIT 1];
     if (q.CurrencyIsoCode == null || q.OpportunityId == null || q.Opportunity.CurrencyIsoCode == null || q.Opportunity.AccountId == null || q.Opportunity.Account.Currency__c == null) {
         return 'MISSING';
     }
@@ -45,9 +36,6 @@ public static Map<String, String> getErrorLabels() {
     labels.put('mismatch', Label.Currency_Mismatch_Error);
     labels.put('genericError', Label.Currency_Generic_Error);
     labels.put('finalizeSuccess', Label.Offer_Finalize_Success);
-    labels.put('divMissing', Label.Department_Missing_Error);
-    labels.put('divnotMatching', Label.Department_NotMatching_Error);
-
     return labels;
 }
 }

@@ -20,7 +20,7 @@ public without Sharing class EmailSender {
     public static void sendEmailFromFlow(List<EmailRequest> requests) {
         System.debug('### Starting sendEmailFromFlow');
 
-        List<OrgWideEmailAddress> orgWideEmails = [SELECT Id, DisplayName, Address FROM OrgWideEmailAddress WHERE Address = 'indiateam+tega@datacolada.com' LIMIT 1];
+        List<OrgWideEmailAddress> orgWideEmails = [SELECT Id, DisplayName, Address FROM OrgWideEmailAddress WHERE Address = 'salesforce.helpdesk@tegaindustries.com' LIMIT 1];
         Id orgWideEmailId = orgWideEmails[0].Id;
         System.debug('### Org-Wide Email ID: ' + orgWideEmailId);
 

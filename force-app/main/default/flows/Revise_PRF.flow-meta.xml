@@ -22,10 +22,6 @@
         </inputParameters>
         <nameSegment>RevisePRF</nameSegment>
         <offset>0</offset>
-        <outputParameters>
-            <assignToReference>resultId</assignToReference>
-            <name>output</name>
-        </outputParameters>
     </actionCalls>
     <apiVersion>55.0</apiVersion>
     <areMetricsLoggedToDataCloud>false</areMetricsLoggedToDataCloud>
@@ -86,7 +82,7 @@
         <allowPause>false</allowPause>
         <fields>
             <name>tYscreen</name>
-            <fieldText>&lt;p style=&quot;text-align: center;&quot;&gt;&lt;strong style=&quot;font-size: 16px;&quot;&gt;Open the &lt;/strong&gt;&lt;a href=&quot;https://tegaindustrieslimited--uatfc.sandbox.lightning.force.com/lightning/r/Proposal_Form__c/{!resultId}/view&quot; rel=&quot;noopener noreferrer&quot; target=&quot;_blank&quot; style=&quot;font-size: 16px;&quot;&gt;&lt;strong&gt;Revise PRF&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;&lt;p style=&quot;text-align: center;&quot;&gt;&lt;span style=&quot;font-size: 16px;&quot;&gt;Thank You&lt;/span&gt;&lt;/p&gt;</fieldText>
+            <fieldText>&lt;p style=&quot;text-align: center;&quot;&gt;&lt;span style=&quot;font-size: 16px;&quot;&gt;Thank You&lt;/span&gt;&lt;/p&gt;</fieldText>
             <fieldType>DisplayText</fieldType>
             <styleProperties>
                 <verticalAlignment>
@@ -114,12 +110,5 @@
         <isCollection>false</isCollection>
         <isInput>true</isInput>
         <isOutput>false</isOutput>
-    </variables>
-    <variables>
-        <name>resultId</name>
-        <dataType>String</dataType>
-        <isCollection>false</isCollection>
-        <isInput>false</isInput>
-        <isOutput>true</isOutput>
     </variables>
 </Flow>

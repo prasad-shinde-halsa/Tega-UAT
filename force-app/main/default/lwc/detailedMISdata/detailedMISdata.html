@@ -1,0 +1,429 @@
+<template>
+    <div class="mis-page">
+        <!-- Header -->
+        <header class="mis-page-header">
+            <div class="mis-title-block">
+                <div class="mis-title-icon">
+                    <lightning-icon icon-name="standard:report" size="medium" alternative-text=""></lightning-icon>
+                </div>
+                <div>
+                    <h1 class="mis-title">Detailed MIS Data</h1>
+                    <p class="mis-subtitle">FY {selectedYear} · {modeLabel} · {figuresLabel}</p>
+                </div>
+            </div>
+            <div class="mis-header-actions">
+                <lightning-combobox class="mis-year-picker" label="Financial Year" variant="label-hidden" value={selectedYear}
+                    options={yearOptions} onchange={handleYearChange} disabled={isLoading}></lightning-combobox>
+                <lightning-button-group>
+                    <lightning-button label="Table" icon-name="utility:table" variant={tableVariant} onclick={handleViewTable}></lightning-button>
+                    <lightning-button label="Summary" icon-name="utility:chart" variant={summaryVariant} onclick={handleViewSummary}></lightning-button>
+                    <lightning-button label="YTD Report" icon-name="utility:trending" variant={ytdVariant} onclick={handleViewYtd}></lightning-button>
+                </lightning-button-group>
+                <lightning-button-icon icon-name="utility:refresh" alternative-text="Reload data" title="Reload data"
+                    onclick={handleReload} disabled={isLoading}></lightning-button-icon>
+                <template lwc:if={isMisView}>
+                    <lightning-button label="Export CSV" icon-name="utility:download" onclick={handleExport} disabled={isLoading}></lightning-button>
+                </template>
+                <template lwc:if={isYtdView}>
+                    <lightning-button label="Export to Excel" icon-name="utility:download" onclick={handleYtdExportExcel} disabled={isLoading}></lightning-button>
+                    <lightning-button label="Export to PDF" icon-name="utility:pdf_ext" onclick={handleYtdExportPdf} disabled={isLoading}></lightning-button>
+                </template>
+            </div>
+        </header>
+
+        <template lwc:if={isMisView}>
+        <!-- Filters -->
+        <section class="mis-card mis-card-filters" aria-label="Filters">
+            <div class="mis-card-head">
+                <h2 class="mis-card-title"><lightning-icon icon-name="utility:filterList" size="x-small" alternative-text=""></lightning-icon> Filters</h2>
+                <div class="mis-card-head-actions">
+                    <span class="mis-filter-count">{activeFilterLabel}</span>
+                    <lightning-button variant="base" label="Clear all" onclick={handleClearAll}></lightning-button>
+                </div>
+            </div>
+
+            <div class="mis-filter-grid">
+                <div class="mis-field mis-span-2"><span class="mis-field-label">Search</span><lightning-input data-id="search" type="search" label="Search" variant="label-hidden" placeholder="Customer, description, part list, remark…"
+                    onchange={handleSearch}></lightning-input></div>
+                <div class="mis-field"><span class="mis-field-label">Budget Type</span><lightning-combobox label="Budget Type" variant="label-hidden" value={budgetType} options={budgetTypeOptions}
+                    data-field="budgetType" onchange={handleFilterChange}></lightning-combobox></div>
+                <div class="mis-field"><span class="mis-field-label">Budget Status</span><lightning-combobox label="Budget Status" variant="label-hidden" value={budgetStatus} options={statusOptions}
+                    data-field="budgetStatus" onchange={handleFilterChange}></lightning-combobox></div>
+                <div class="mis-field"><span class="mis-field-label">Order Type</span><lightning-combobox label="Order Type" variant="label-hidden" value={orderType} options={orderTypeOptions}
+                    data-field="orderType" onchange={handleFilterChange}></lightning-combobox></div>
+                <div class="mis-field"><span class="mis-field-label">Region</span><lightning-combobox label="Region" variant="label-hidden" value={region} options={regionOptions}
+                    data-field="region" onchange={handleFilterChange}></lightning-combobox></div>
+                <div class="mis-field"><span class="mis-field-label">Country</span><lightning-combobox label="Country" variant="label-hidden" value={country} options={countryOptions}
+                    data-field="country" onchange={handleFilterChange}></lightning-combobox></div>
+                <div class="mis-field"><span class="mis-field-label">Branch</span><lightning-combobox label="Branch" variant="label-hidden" value={branch} options={branchOptions}
+                    data-field="branch" onchange={handleFilterChange}></lightning-combobox></div>
+                <div class="mis-field"><span class="mis-field-label">Budget Owner</span><lightning-combobox label="Budget Owner" variant="label-hidden" value={owner} options={ownerOptions}
+                    data-field="owner" onchange={handleFilterChange}></lightning-combobox></div>
+                <div class="mis-field"><span class="mis-field-label">PMG</span><lightning-combobox label="PMG" variant="label-hidden" value={pmg} options={pmgOptions}
+                    data-field="pmg" onchange={handleFilterChange}></lightning-combobox></div>
+                <div class="mis-field"><span class="mis-field-label">Product Group</span><lightning-combobox label="Product Group" variant="label-hidden" value={productGroup} options={productGroupOptions}
+                    data-field="productGroup" onchange={handleFilterChange}></lightning-combobox></div>
+                <div class="mis-field"><span class="mis-field-label">Expected Month</span><lightning-combobox label="Expected Month" variant="label-hidden" value={expectedMonth} options={expectedMonthOptions}
+                    data-field="expectedMonth" onchange={handleFilterChange}></lightning-combobox></div>
+                <div class="mis-field"><span class="mis-field-label">Submitted By</span><lightning-combobox label="Submitted By" variant="label-hidden" value={submittedBy} options={submittedByOptions}
+                    data-field="submittedBy" onchange={handleFilterChange}></lightning-combobox></div>
+            </div>
+
+            <div class="mis-chip-row">
+                <span class="mis-chip-label">Report Month</span>
+                <div class="mis-chips">
+                    <template for:each={reportMonthChips} for:item="chip">
+                        <button key={chip.value} type="button" class={chip.className} aria-pressed={chip.pressed}
+                            data-list="selectedReportMonths" data-value={chip.value} onclick={handleChipToggle}>
+                            {chip.label} <span class="mis-chip-count">{chip.count}</span>
+                        </button>
+                    </template>
+                    <button type="button" class="mis-chip-clear" data-list="selectedReportMonths" onclick={handleClearChips}>All</button>
+                </div>
+            </div>
+            <div class="mis-chip-row">
+                <span class="mis-chip-label">Budget Quarter</span>
+                <div class="mis-chips">
+                    <template for:each={quarterChips} for:item="chip">
+                        <button key={chip.value} type="button" class={chip.className} aria-pressed={chip.pressed}
+                            data-list="selectedQuarters" data-value={chip.value} onclick={handleChipToggle}>{chip.label}</button>
+                    </template>
+                    <button type="button" class="mis-chip-clear" data-list="selectedQuarters" onclick={handleClearChips}>All</button>
+                </div>
+            </div>
+            <div class="mis-chip-row">
+                <span class="mis-chip-label">Stage</span>
+                <div class="mis-chips">
+                    <template for:each={stageChips} for:item="chip">
+                        <button key={chip.value} type="button" class={chip.className} aria-pressed={chip.pressed}
+                            data-list="selectedStages" data-value={chip.value} onclick={handleChipToggle}>{chip.label}</button>
+                    </template>
+                    <button type="button" class="mis-chip-clear" data-list="selectedStages" onclick={handleClearChips}>All</button>
+                </div>
+            </div>
+
+            <div class="mis-option-row">
+                <div class="mis-toggle"><lightning-input type="toggle" label="Latest report only" variant="label-hidden" message-toggle-active="" message-toggle-inactive=""
+                    checked={latestOnly} data-field="latestOnly" onchange={handleToggle}></lightning-input><span class="mis-toggle-label">Latest report only</span></div>
+                <div class="mis-toggle"><lightning-input type="toggle" label="With remarks only" variant="label-hidden" message-toggle-active="" message-toggle-inactive=""
+                    checked={remarksOnly} data-field="remarksOnly" onchange={handleToggle}></lightning-input><span class="mis-toggle-label">With remarks only</span></div>
+                <div class="mis-display-options">
+                    <div class="mis-field mis-field-inline mis-compact"><span class="mis-field-label">Figures in</span><lightning-combobox label="Figures in" variant="label-hidden" value={figures} options={figuresOptions}
+                        data-field="figures" onchange={handleDisplayChange}></lightning-combobox></div>
+                    <div class="mis-field mis-field-inline mis-compact"><span class="mis-field-label">Decimals</span><lightning-combobox label="Decimals" variant="label-hidden" value={decimals} options={decimalOptions}
+                        data-field="decimals" onchange={handleDisplayChange}></lightning-combobox></div>
+                </div>
+            </div>
+        </section>
+
+        </template>
+
+        <p lwc:if={errorMessage} class="mis-alert" role="alert">
+            <lightning-icon icon-name="utility:error" size="x-small" alternative-text="Error"></lightning-icon>
+            {errorMessage}
+        </p>
+
+        <!-- KPIs -->
+        <section lwc:if={isMisView} class="mis-kpis" aria-label="Key figures">
+            <template for:each={kpis} for:item="kpi">
+                <div key={kpi.key} class={kpi.className}>
+                    <span class="mis-kpi-label">{kpi.label}</span>
+                    <span class="mis-kpi-value">{kpi.value}</span>
+                    <span class="mis-kpi-hint">{kpi.hint}</span>
+                </div>
+            </template>
+        </section>
+
+        <!-- Table view -->
+        <template lwc:if={isTableView}>
+            <section class="mis-card">
+                <div lwc:if={hasRows} class="mis-table-toolbar">
+                    <span class="mis-rows-message" role="status">{rowsMessage}</span>
+                    <div class="mis-pager">
+                        <lightning-combobox label="Rows per page" variant="label-hidden" value={pageSize} options={pageSizeOptions}
+                            onchange={handlePageSizeChange} class="mis-page-size"></lightning-combobox>
+                        <span class="mis-page-label">{pageLabel}</span>
+                        <lightning-button label="Back" icon-name="utility:chevronleft" onclick={handleBack} disabled={isBackDisabled}></lightning-button>
+                        <lightning-button label="Next" icon-name="utility:chevronright" icon-position="right" onclick={handleNext} disabled={isNextDisabled}></lightning-button>
+                    </div>
+                </div>
+                <div lwc:if={hasRows} class="mis-table-scroll">
+                    <table class="mis-grid">
+                        <thead>
+                            <tr>
+                                <th scope="col" class="mis-num">#</th>
+                                <template for:each={columns} for:item="column">
+                                    <th key={column.field} scope="col" class={column.className} aria-sort={column.ariaSort}>
+                                        <button type="button" class="mis-th-button" data-field={column.field} onclick={handleSort}>
+                                            {column.label}<span class="mis-sort-icon">{column.sortIcon}</span>
+                                        </button>
+                                    </th>
+                                </template>
+                                <th scope="col"><span class="mis-assistive">History</span></th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <template for:each={pageRows} for:item="row">
+                                <tr key={row.key} class={row.rowClass}>
+                                    <td class="mis-num mis-muted">{row.serial}</td>
+                                    <td class="mis-nowrap mis-strong">{row.reportLabel}</td>
+                                    <td class="mis-wrap-sm" title={row.region}>{row.branch}</td>
+                                    <td class="mis-wrap-md mis-strong" title={row.customer}>{row.customer}</td>
+                                    <td>{row.pmg}</td>
+                                    <td>{row.productGroup}</td>
+                                    <td class="mis-wrap-md" title={row.detail}>{row.detail}</td>
+                                    <td class="mis-nowrap">{row.orderTypeLabel}</td>
+                                    <td><span class={row.typeClass}>{row.typeLabel}</span></td>
+                                    <td class="mis-nowrap">{row.budgetMonthLabel}</td>
+                                    <td class="mis-num">{row.budgetAmount}</td>
+                                    <td><span lwc:if={row.stage} class={row.stageClass}>{row.stage}</span></td>
+                                    <td class="mis-nowrap">{row.expectedMonth}</td>
+                                    <td class="mis-num">{row.expectedValue}</td>
+                                    <td class="mis-wrap-lg" title={row.remarks}>{row.remarks}</td>
+                                    <td class="mis-nowrap">{row.submittedBy}</td>
+                                    <td class="mis-nowrap mis-muted">{row.submittedOnLabel}</td>
+                                    <td>
+                                        <lightning-button-icon icon-name="utility:clock" variant="bare" size="small"
+                                            alternative-text="Stage history" title="Stage history"
+                                            data-key={row.slotKey} onclick={handleOpenHistory}></lightning-button-icon>
+                                    </td>
+                                </tr>
+                            </template>
+                        </tbody>
+                    </table>
+                </div>
+                <div lwc:if={showEmpty} class="mis-empty">
+                    <lightning-icon icon-name="utility:search" size="small" alternative-text=""></lightning-icon>
+                    <p>{emptyMessage}</p>
+                </div>
+            </section>
+        </template>
+
+        <!-- Summary view -->
+        <template lwc:if={isSummaryView}>
+            <div class="mis-summary-grid">
+                <section class="mis-card">
+                    <div class="mis-card-head">
+                        <h2 class="mis-card-title">Stage Funnel</h2>
+                        <span class="mis-card-note">Latest stage per line &amp; budget month · click a stage to filter</span>
+                    </div>
+                    <div class="mis-stage-bars">
+                        <template for:each={stageBars} for:item="bar">
+                            <button key={bar.stage} type="button" class={bar.itemClass} data-stage={bar.stage}
+                                data-selectable={bar.isSelectable} onclick={handleStageBarClick}>
+                                <span class="mis-bar-name">{bar.stage}</span>
+                                <span class="mis-bar-track"><span class={bar.barClass} style={bar.barStyle}></span></span>
+                                <span class="mis-bar-count">{bar.count}</span>
+                                <span class="mis-bar-share">{bar.share}</span>
+                                <span class="mis-bar-amount">{bar.amount}</span>
+                            </button>
+                        </template>
+                    </div>
+                    <div lwc:if={showEmpty} class="mis-empty"><p>{emptyMessage}</p></div>
+                </section>
+
+                <section class="mis-card">
+                    <div class="mis-card-head">
+                        <h2 class="mis-card-title">Breakdown</h2>
+                        <div class="mis-field mis-field-inline mis-group-by"><span class="mis-field-label">Group by</span><lightning-combobox label="Group by" variant="label-hidden" value={groupBy} options={groupByOptions}
+                            data-field="groupBy" onchange={handleDisplayChange}></lightning-combobox></div>
+                    </div>
+                    <div class="mis-table-scroll short">
+                        <table class="mis-grid">
+                            <thead>
+                                <tr>
+                                    <th scope="col">Name</th>
+                                    <th scope="col" class="mis-num">Entries</th>
+                                    <th scope="col" class="mis-num">Lines</th>
+                                    <th scope="col" class="mis-num">Budget Amt</th>
+                                    <th scope="col" class="mis-num">Exp. Value</th>
+                                    <th scope="col" class="mis-num">In Progress</th>
+                                    <th scope="col" class="mis-num">Won</th>
+                                    <th scope="col" class="mis-num">Lost</th>
+                                    <th scope="col" class="mis-num">Win Rate</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <template for:each={groupRows} for:item="group">
+                                    <tr key={group.name} class="mis-data-row">
+                                        <td class="mis-wrap-md mis-strong">{group.name}</td>
+                                        <td class="mis-num">{group.entries}</td>
+                                        <td class="mis-num">{group.lines}</td>
+                                        <td class="mis-num mis-strong">{group.budget}</td>
+                                        <td class="mis-num">{group.expected}</td>
+                                        <td class="mis-num">{group.open}</td>
+                                        <td class="mis-num mis-won">{group.won}</td>
+                                        <td class="mis-num mis-lost">{group.lost}</td>
+                                        <td class="mis-num">{group.winRate}</td>
+                                    </tr>
+                                </template>
+                            </tbody>
+                        </table>
+                    </div>
+                </section>
+            </div>
+        </template>
+
+
+        <!-- YTD Report (PMG matrix, from tegaBudgetYtdReport) -->
+        <template lwc:if={isYtdView}>
+            <section class="mis-card mis-card-filters" aria-label="YTD Report filters">
+                <div class="mis-card-head">
+                    <h2 class="mis-card-title"><lightning-icon icon-name="utility:trending" size="x-small" alternative-text=""></lightning-icon> YTD Report · FY {selectedYear}</h2>
+                    <div class="mis-card-head-actions">
+                        <span class="mis-filter-count">USD · in Millions</span>
+                        <lightning-button variant="base" label="Reset" onclick={handleYtdReset}></lightning-button>
+                    </div>
+                </div>
+                <div class="mis-filter-grid">
+                    <div class="mis-field"><span class="mis-field-label">Quarter</span><lightning-combobox label="Quarter" variant="label-hidden" value={ytdQuarter} options={ytdQuarterOptions}
+                        onchange={handleYtdQuarterChange}></lightning-combobox></div>
+                    <div class="mis-field"><span class="mis-field-label">Month</span><lightning-combobox label="Month" variant="label-hidden" value={ytdMonth} options={ytdMonthOptions}
+                        onchange={handleYtdMonthChange}></lightning-combobox></div>
+                    <div class="mis-field"><span class="mis-field-label">Order Type</span><lightning-combobox label="Order Type" variant="label-hidden" value={ytdOrderType} options={ytdOrderTypeOptions}
+                        onchange={handleYtdOrderTypeChange}></lightning-combobox></div>
+                    <div class="mis-field"><span class="mis-field-label">Level 1</span><lightning-combobox label="Level 1" variant="label-hidden" value={ytdLevel1} options={ytdLevel1Options}
+                        onchange={handleYtdLevel1Change}></lightning-combobox></div>
+                    <div lwc:if={showYtdLevel2} class="mis-field"><span class="mis-field-label">Level 2</span><lightning-combobox label="Level 2" variant="label-hidden" value={ytdLevel2} options={ytdLevel2Options}
+                        onchange={handleYtdLevel2Change}></lightning-combobox></div>
+                </div>
+            </section>
+
+            <section lwc:if={hasYtdRows} class="mis-kpis" aria-label="YTD key figures">
+                <template for:each={ytdKpis} for:item="kpi">
+                    <div key={kpi.key} class={kpi.className}>
+                        <span class="mis-kpi-label">{kpi.label}</span>
+                        <span class="mis-kpi-value">{kpi.value}</span>
+                        <span class="mis-kpi-hint">{kpi.hint}</span>
+                    </div>
+                </template>
+            </section>
+
+            <section class="mis-card">
+                <div lwc:if={hasYtdRows} class="mis-table-scroll">
+                    <table class="mis-grid mis-ytd-grid">
+                        <thead>
+                            <tr>
+                                <th rowspan="2" scope="col" class="mis-ytd-pmg-head">PMG</th>
+                                <th colspan="3" scope="colgroup" class="mis-ytd-group mis-ytd-group-month">{ytdMonthlyHeader}</th>
+                                <th colspan="3" scope="colgroup" class="mis-ytd-group mis-ytd-group-ytd">Year To Date (YTD)</th>
+                                <th colspan="4" scope="colgroup" class="mis-ytd-group mis-ytd-group-forecast">Forecast</th>
+                            </tr>
+                            <tr>
+                                <th scope="col" class="mis-num mis-ytd-sub">Budgeted Order</th>
+                                <th scope="col" class="mis-num mis-ytd-sub">Order Received</th>
+                                <th scope="col" class="mis-num mis-ytd-sub">% Achievement</th>
+                                <th scope="col" class="mis-num mis-ytd-sub">YTD Budgeted Order</th>
+                                <th scope="col" class="mis-num mis-ytd-sub">YTD Actual Order Received</th>
+                                <th scope="col" class="mis-num mis-ytd-sub">YTD % Achievement</th>
+                                <th scope="col" class="mis-num mis-ytd-sub">Next 3 Months (Budget)</th>
+                                <th scope="col" class="mis-num mis-ytd-sub">Forecast - Next 3 Months (MIS)</th>
+                                <th scope="col" class="mis-num mis-ytd-sub">Full Year Budget</th>
+                                <th scope="col" class="mis-num mis-ytd-sub">Full Year Forecast<span class="mis-ytd-note">YTD Actual + Forecast MIS + Remaining Budget</span></th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <template for:each={ytdRows} for:item="row">
+                                <tr key={row.pmg} class="mis-data-row">
+                                    <td class="mis-strong">{row.pmg}</td>
+                                    <td class="mis-num">USD {row.budgetedOrder}</td>
+                                    <td class="mis-num">USD {row.monthlyReceived}</td>
+                                    <td class="mis-num"><span class={row.achievementClass}>{row.achievement}</span></td>
+                                    <td class="mis-num">USD {row.ytdBudget}</td>
+                                    <td class="mis-num">USD {row.ytdActual}</td>
+                                    <td class="mis-num">
+                                        <span class={row.ytdAchievementClass}>{row.ytdAchievement}</span>
+                                        <span class="mis-ytd-bar"><span class="mis-ytd-bar-fill" style={row.ytdBarStyle}></span></span>
+                                    </td>
+                                    <td class="mis-num">USD {row.forecastBudget}</td>
+                                    <td class="mis-num">USD {row.forecastMIS2}</td>
+                                    <td class="mis-num">USD {row.fullYearBudget}</td>
+                                    <td class="mis-num mis-strong">USD {row.fullYearForecast}</td>
+                                </tr>
+                            </template>
+                        </tbody>
+                        <tfoot>
+                            <tr class="mis-ytd-total">
+                                <td>TOTAL</td>
+                                <td class="mis-num">USD {ytdTotals.budgetedOrder}</td>
+                                <td class="mis-num">USD {ytdTotals.monthlyReceived}</td>
+                                <td class="mis-num"><span class={ytdTotals.achievementClass}>{ytdTotals.achievement}</span></td>
+                                <td class="mis-num">USD {ytdTotals.ytdBudget}</td>
+                                <td class="mis-num">USD {ytdTotals.ytdActual}</td>
+                                <td class="mis-num"><span class={ytdTotals.ytdAchievementClass}>{ytdTotals.ytdAchievement}</span></td>
+                                <td class="mis-num">USD {ytdTotals.forecastBudget}</td>
+                                <td class="mis-num">USD {ytdTotals.forecastMIS2}</td>
+                                <td class="mis-num">USD {ytdTotals.fullYearBudget}</td>
+                                <td class="mis-num">USD {ytdTotals.fullYearForecast}</td>
+                            </tr>
+                        </tfoot>
+                    </table>
+                </div>
+                <div lwc:if={showYtdEmpty} class="mis-empty">
+                    <lightning-icon icon-name="utility:search" size="small" alternative-text=""></lightning-icon>
+                    <p>No Details Found</p>
+                </div>
+            </section>
+        </template>
+
+        <!-- Stage history -->
+        <template lwc:if={showHistory}>
+            <section role="dialog" tabindex="-1" aria-modal="true" aria-labelledby="history-title" class="slds-modal slds-fade-in-open slds-modal_medium"
+                onkeydown={handleModalKeydown}>
+                <div class="slds-modal__container">
+                    <button type="button" class="slds-button slds-button_icon slds-modal__close mis-modal-close" title="Close" onclick={handleCloseHistory}>
+                        <lightning-icon icon-name="utility:close" size="x-small" alternative-text="Close"></lightning-icon>
+                    </button>
+                    <div class="slds-modal__header">
+                        <h2 id="history-title" class="slds-modal__title slds-hyphenate">{historyLine.title}</h2>
+                        <p class="mis-modal-subtitle">{historyLine.subtitle}</p>
+                    </div>
+                    <div class="slds-modal__content slds-p-around_medium">
+                        <dl class="mis-detail-grid">
+                            <template for:each={historyLine.details} for:item="detail">
+                                <div key={detail.label} class="mis-detail">
+                                    <dt>{detail.label}</dt>
+                                    <dd>{detail.value}</dd>
+                                </div>
+                            </template>
+                        </dl>
+                        <h3 class="mis-timeline-title">Stage history across monthly reports</h3>
+                        <ol class="mis-timeline">
+                            <template for:each={historyRows} for:item="entry">
+                                <li key={entry.key} class="mis-timeline-item">
+                                    <span class="mis-timeline-dot"></span>
+                                    <div class="timeline-body">
+                                        <div class="mis-timeline-head">
+                                            <span class="mis-timeline-month">{entry.reportLabel}</span>
+                                            <span lwc:if={entry.stage} class={entry.stageClass}>{entry.stage}</span>
+                                            <span class="mis-muted">{entry.misName}</span>
+                                        </div>
+                                        <div class="mis-timeline-meta">
+                                            <span lwc:if={entry.expectedMonth}>Expected: <strong>{entry.expectedMonth}</strong></span>
+                                            <span lwc:if={entry.expectedValue}>Value: <strong>{entry.expectedValue}</strong></span>
+                                            <span>By {entry.submittedBy} on {entry.submittedOnLabel}</span>
+                                        </div>
+                                        <p lwc:if={entry.remarks} class="mis-timeline-remark">{entry.remarks}</p>
+                                    </div>
+                                </li>
+                            </template>
+                        </ol>
+                    </div>
+                    <div class="slds-modal__footer">
+                        <lightning-button label="Close" onclick={handleCloseHistory}></lightning-button>
+                    </div>
+                </div>
+            </section>
+            <div class="slds-backdrop slds-backdrop_open" role="presentation"></div>
+        </template>
+
+        <!-- Loader -->
+        <div lwc:if={isLoading} class="mis-loading-overlay" role="status" aria-live="polite">
+            <div class="mis-loading-bubble">
+                <lightning-spinner alternative-text="Loading MIS data" size="medium" variant="brand"></lightning-spinner>
+            </div>
+        </div>
+
+        <div class="export-anchor"></div>
+    </div>
+</template>

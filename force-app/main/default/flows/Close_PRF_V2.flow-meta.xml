@@ -564,7 +564,7 @@
             <label>Filled</label>
         </rules>
     </decisions>
-    <description>Adding fault message</description>
+    <description>Added order type update for opp</description>
     <dynamicChoiceSets>
         <name>OrderPicList</name>
         <dataType>Picklist</dataType>

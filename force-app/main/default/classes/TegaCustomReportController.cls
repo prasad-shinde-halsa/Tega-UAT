@@ -51,6 +51,11 @@ public with sharing class TegaCustomReportController {
                             Order_Expected_Month_Oct__c,Order_Expected_Month_Sep__c
                             
                             FROM MIS_Budgets__r
+                        ),
+						(
+                            SELECT Id, Name, CurrencyIsoCode,
+                            Order_Expected_Month__c, Total_Price_Quoted__c
+                            FROM Proposal_Form__r
                         )
                         FROM Budget_Line_Items__r
                         WHERE Active_Status__c = true
@@ -83,6 +88,11 @@ public with sharing class TegaCustomReportController {
                             Order_Expected_Month_Oct__c,Order_Expected_Month_Sep__c
                             
                             FROM MIS_Budgets__r
+                        ),
+						(
+                            SELECT Id, Name, CurrencyIsoCode,
+                            Order_Expected_Month__c, Total_Price_Quoted__c
+                            FROM Proposal_Form__r
                         )
                         FROM Budget_Line_Items__r
                         WHERE Active_Status__c = true

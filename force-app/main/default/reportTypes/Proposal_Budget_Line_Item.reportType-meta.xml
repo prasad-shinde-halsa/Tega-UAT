@@ -812,12 +812,7 @@
         </columns>
         <columns>
             <checkedByDefault>false</checkedByDefault>
-            <field>Exchange_Rate_In_USD__c</field>
-            <table>DC_Budget_Line_Items__c</table>
-        </columns>
-        <columns>
-            <checkedByDefault>false</checkedByDefault>
-            <field>Exchange_Rate_In_INR__c</field>
+            <field>Total_Order_MULTI_1000__c</field>
             <table>DC_Budget_Line_Items__c</table>
         </columns>
         <columns>
@@ -827,7 +822,7 @@
         </columns>
         <columns>
             <checkedByDefault>false</checkedByDefault>
-            <field>Currency_Same_As_Budget__c</field>
+            <field>Total_Order_In_USD__c</field>
             <table>DC_Budget_Line_Items__c</table>
         </columns>
         <masterLabel>Budget Line Items</masterLabel>
@@ -1551,26 +1546,6 @@
         <columns>
             <checkedByDefault>false</checkedByDefault>
             <field>BranchName__c</field>
-            <table>DC_Budget_Line_Items__c.Proposal_Form__r</table>
-        </columns>
-        <columns>
-            <checkedByDefault>false</checkedByDefault>
-            <field>Exchange_Rate_In_USD__c</field>
-            <table>DC_Budget_Line_Items__c.Proposal_Form__r</table>
-        </columns>
-        <columns>
-            <checkedByDefault>false</checkedByDefault>
-            <field>Exchange_Rate_In_INR__c</field>
-            <table>DC_Budget_Line_Items__c.Proposal_Form__r</table>
-        </columns>
-        <columns>
-            <checkedByDefault>false</checkedByDefault>
-            <field>Financial_Year2__c</field>
-            <table>DC_Budget_Line_Items__c.Proposal_Form__r</table>
-        </columns>
-        <columns>
-            <checkedByDefault>false</checkedByDefault>
-            <field>Is_Cloned_PRF__c</field>
             <table>DC_Budget_Line_Items__c.Proposal_Form__r</table>
         </columns>
         <masterLabel>Proposal Form</masterLabel>

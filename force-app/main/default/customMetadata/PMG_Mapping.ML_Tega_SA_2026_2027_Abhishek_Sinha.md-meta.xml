@@ -4,7 +4,7 @@
     <protected>false</protected>
     <values>
         <field>Company__c</field>
-        <value xsi:type="xsd:string">Tega - SA</value>
+        <value xsi:type="xsd:string">Tega SA</value>
     </values>
     <values>
         <field>Financial_Year__c</field>
@@ -24,11 +24,11 @@
     </values>
     <values>
         <field>PMG_Head_ID__c</field>
-        <value xsi:nil="true"/>
+        <value xsi:type="xsd:string">005S200000HmpuTIAR</value>
     </values>
     <values>
         <field>PMG_Head_Name__c</field>
-        <value xsi:nil="true"/>
+        <value xsi:type="xsd:string">Sandeep Baranwal</value>
     </values>
     <values>
         <field>PMG__c</field>

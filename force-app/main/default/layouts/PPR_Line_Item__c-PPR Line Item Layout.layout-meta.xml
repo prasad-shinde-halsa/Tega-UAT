@@ -178,6 +178,10 @@
                 <behavior>Edit</behavior>
                 <field>Current_PPR_Status__c</field>
             </layoutItems>
+            <layoutItems>
+                <behavior>Readonly</behavior>
+                <field>Region__c</field>
+            </layoutItems>
         </layoutColumns>
         <layoutColumns>
             <layoutItems>
@@ -332,12 +336,10 @@
     </relatedLists>
     <relatedLists>
         <fields>TASK.SUBJECT</fields>
-        <fields>SI_No__c</fields>
         <fields>CAPA_Points__c</fields>
         <fields>Department_Name__c</fields>
-        <fields>Department_Formula__c</fields>
-        <fields>TASK.DUE_DATE</fields>
         <fields>CORE.USERS.FULL_NAME</fields>
+        <fields>TASK.LAST_UPDATE</fields>
         <relatedList>Activity.PPR_Line_Item__c</relatedList>
     </relatedLists>
     <relatedLists>

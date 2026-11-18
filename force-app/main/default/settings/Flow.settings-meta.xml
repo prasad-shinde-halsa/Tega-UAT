@@ -13,15 +13,14 @@
     <enableFlowFormulasFixEnabled>true</enableFlowFormulasFixEnabled>
     <enableFlowInterviewSharingEnabled>true</enableFlowInterviewSharingEnabled>
     <enableFlowNullPreviousValueFix>false</enableFlowNullPreviousValueFix>
-    <enableFlowPauseEnabled>false</enableFlowPauseEnabled>
+    <enableFlowPauseEnabled>true</enableFlowPauseEnabled>
     <enableFlowReactiveChoiceOptions>false</enableFlowReactiveChoiceOptions>
-    <enableFlowReactiveScreens>false</enableFlowReactiveScreens>
+    <enableFlowReactiveScreens>true</enableFlowReactiveScreens>
     <enableFlowUseApexExceptionEmail>false</enableFlowUseApexExceptionEmail>
     <enableFlowViaRestUsesUserCtxt>true</enableFlowViaRestUsesUserCtxt>
     <enableLightningRuntimeEnabled>true</enableLightningRuntimeEnabled>
     <isApexPluginAccessModifierRespected>true</isApexPluginAccessModifierRespected>
     <isEnhancedFlowListViewVisible>true</isEnhancedFlowListViewVisible>
     <isFlowBlockAccessToSessionIDEnabled>true</isFlowBlockAccessToSessionIDEnabled>
-    <isManageFlowRequiredForAutomationCharts>false</isManageFlowRequiredForAutomationCharts>
-    <isSupportRollbackOnErrorForApexInvocableActionsEnabled>false</isSupportRollbackOnErrorForApexInvocableActionsEnabled>
+    <isManageFlowRequiredForAutomationCharts>true</isManageFlowRequiredForAutomationCharts>
 </FlowSettings>

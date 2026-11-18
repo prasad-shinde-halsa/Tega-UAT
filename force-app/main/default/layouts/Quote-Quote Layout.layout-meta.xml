@@ -4,6 +4,7 @@
     <excludeButtons>ChangeRecordType</excludeButtons>
     <excludeButtons>CreateContract</excludeButtons>
     <excludeButtons>DeepCloneAction</excludeButtons>
+    <excludeButtons>SmartFillEnrich</excludeButtons>
     <layoutSections>
         <customLabel>false</customLabel>
         <detailHeading>false</detailHeading>
@@ -21,22 +22,6 @@
             <layoutItems>
                 <behavior>Readonly</behavior>
                 <field>AccountId</field>
-            </layoutItems>
-            <layoutItems>
-                <behavior>Readonly</behavior>
-                <field>Customer_offr__c</field>
-            </layoutItems>
-            <layoutItems>
-                <behavior>Edit</behavior>
-                <field>Part_List__c</field>
-            </layoutItems>
-            <layoutItems>
-                <behavior>Readonly</behavior>
-                <field>Part_List_Revision_No__c</field>
-            </layoutItems>
-            <layoutItems>
-                <behavior>Edit</behavior>
-                <field>Is_Partlist_Same__c</field>
             </layoutItems>
             <layoutItems>
                 <behavior>Required</behavior>
@@ -85,22 +70,6 @@
             <layoutItems>
                 <behavior>Edit</behavior>
                 <field>SalesGrp__c</field>
-            </layoutItems>
-            <layoutItems>
-                <behavior>Readonly</behavior>
-                <field>Total_Price2__c</field>
-            </layoutItems>
-            <layoutItems>
-                <behavior>Readonly</behavior>
-                <field>RecordType__c</field>
-            </layoutItems>
-            <layoutItems>
-                <behavior>Readonly</behavior>
-                <field>Total_Price_formula__c</field>
-            </layoutItems>
-            <layoutItems>
-                <behavior>Edit</behavior>
-                <field>settingType__c</field>
             </layoutItems>
         </layoutColumns>
         <layoutColumns>
@@ -159,6 +128,10 @@
             <layoutItems>
                 <behavior>Edit</behavior>
                 <field>Check_if_Offer_and_PL_Currency_same__c</field>
+            </layoutItems>
+            <layoutItems>
+                <behavior>Edit</behavior>
+                <field>settingType__c</field>
             </layoutItems>
         </layoutColumns>
         <style>TwoColumnsTopToBottom</style>
@@ -556,16 +529,6 @@
             <actionType>QuickAction</actionType>
             <sortOrder>20</sortOrder>
         </platformActionListItems>
-        <platformActionListItems>
-            <actionName>Download_Excel</actionName>
-            <actionType>CustomButton</actionType>
-            <sortOrder>21</sortOrder>
-        </platformActionListItems>
-        <platformActionListItems>
-            <actionName>Download_PDF</actionName>
-            <actionType>CustomButton</actionType>
-            <sortOrder>22</sortOrder>
-        </platformActionListItems>
     </platformActionList>
     <relatedContent>
         <relatedContentItems>
@@ -674,6 +637,10 @@
         <relatedList>X4E_4D__c.SF_Offer__c</relatedList>
         <sortField>NAME</sortField>
         <sortOrder>Desc</sortOrder>
+    </relatedLists>
+    <relatedLists>
+        <fields>NAME</fields>
+        <relatedList>Scope_With_Selection__c.Offer__c</relatedList>
     </relatedLists>
     <showEmailCheckbox>false</showEmailCheckbox>
     <showRunAssignmentRulesCheckbox>false</showRunAssignmentRulesCheckbox>

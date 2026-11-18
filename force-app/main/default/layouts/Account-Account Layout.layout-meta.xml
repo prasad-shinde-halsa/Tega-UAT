@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Layout xmlns="http://soap.sforce.com/2006/04/metadata">
     <customButtons>New_Opp</customButtons>
-    <excludeButtons>DataDotComCompanyHierarchy</excludeButtons>
+    <excludeButtons>DataDotComAccountInsights</excludeButtons>
+    <excludeButtons>DataDotComClean</excludeButtons>
     <excludeButtons>DisableCustomerPortalAccount</excludeButtons>
     <excludeButtons>DisablePartnerPortalAccount</excludeButtons>
     <excludeButtons>IncludeOffline</excludeButtons>
-    <excludeButtons>OpenSlackRecordChannel</excludeButtons>
     <layoutSections>
         <customLabel>false</customLabel>
         <detailHeading>false</detailHeading>
@@ -323,8 +323,8 @@
         <fields>Customer_Code__c</fields>
         <fields>Company_Code2__c</fields>
         <fields>Sales_Organizations__c</fields>
-        <fields>CREATED_DATE</fields>
         <fields>LAST_UPDATE</fields>
+        <fields>Status__c</fields>
         <relatedList>Customer_Sales_Organization__c.Customer__c</relatedList>
     </relatedLists>
     <relatedLists>
@@ -361,6 +361,15 @@
         <fields>ASSIGNMENT_DATE</fields>
         <fields>ASSOCIATION_CAUSE</fields>
         <relatedList>AccountAssignedTerritory2sRelatedList</relatedList>
+    </relatedLists>
+    <relatedLists>
+        <fields>NAME</fields>
+        <fields>PMG_Master__c</fields>
+        <fields>Part_List__c</fields>
+        <fields>Total_Order__c</fields>
+        <fields>Total_Sales__c</fields>
+        <fields>CREATEDBY_USER</fields>
+        <relatedList>DC_Budget_Line_Items__c.Customer__c</relatedList>
     </relatedLists>
     <relatedLists>
         <relatedList>RelatedFileList</relatedList>
@@ -405,10 +414,6 @@
     <relatedLists>
         <fields>NAME</fields>
         <relatedList>Part_List__c.Customer__c</relatedList>
-    </relatedLists>
-    <relatedLists>
-        <fields>NAME</fields>
-        <relatedList>Budget__c.Customer__c</relatedList>
     </relatedLists>
     <relatedLists>
         <customButtons>Create_New_Customer_Visit</customButtons>

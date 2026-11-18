@@ -81,7 +81,9 @@
             <label>Yes found</label>
         </rules>
     </decisions>
-    <description>adding fault message screen</description>
+    <description>Error fixed for the auto populated  - Customer Branch Assignment and Branch assignment ID in flow
+
+adding fault message screen</description>
     <environments>Default</environments>
     <interviewLabel>Update Opportunity Customer-Branch Assignment {!$Flow.CurrentDateTime}</interviewLabel>
     <label>Update Opportunity&apos;s Customer-Branch Assignment</label>

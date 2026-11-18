@@ -1,123 +1,173 @@
-.slds-table {
+/* ===== Table: fit to screen, no horizontal scroll ===== */
+.slds-table_edit_container {
+    overflow-x: hidden;
     width: 100%;
-    border-collapse: separate; /* Allows spacing between cells */
 }
 
+.slds-table {
+    width: 100%;
+    border-collapse: separate;
+}
+
+@media only screen and (min-width: 601px) {
+    .slds-table_resizable-cols {
+        table-layout: fixed;
+        width: 100%;
+    }
+
+    /* Tighter cells */
+    .slds-table_resizable-cols th,
+    .slds-table_resizable-cols td {
+        padding: 0.25rem 0.15rem !important;
+        white-space: normal;
+        word-wrap: break-word;
+        overflow-wrap: anywhere;
+        text-align: center;
+        vertical-align: middle;
+        font-size: 11px;
+    }
+
+    /* Override inline header styles */
+    .slds-table_resizable-cols th .slds-truncate {
+        font-size: 11px !important;
+        padding-top: 0.5em !important;
+        padding-bottom: 0.5em !important;
+    }
+
+    /* Inline-edit inputs for the month columns */
+    .slds-table_resizable-cols td .slds-input {
+        width: 100%;
+        min-width: 0;
+        padding: 0.1rem 0.1rem !important;
+        font-size: 11px;
+        height: 1.8rem;
+        line-height: 1.2;
+    }
+
+    /* Column widths (total = 100%) */
+    .slds-table_resizable-cols th:nth-child(1)  { width: 3%; }   /* Sl. No */
+    .slds-table_resizable-cols th:nth-child(2)  { width: 6%; }   /* Name */
+    .slds-table_resizable-cols th:nth-child(3)  { width: 5%; }   /* PMG */
+    .slds-table_resizable-cols th:nth-child(4)  { width: 5%; }   /* Product Group */
+    .slds-table_resizable-cols th:nth-child(5)  { width: 5%; }   /* Application Type */
+    .slds-table_resizable-cols th:nth-child(6)  { width: 5%; }   /* Order Type */
+    .slds-table_resizable-cols th:nth-child(7)  { width: 8%; }   /* Customer */
+    .slds-table_resizable-cols th:nth-child(8)  { width: 6%; }   /* Part List */
+    .slds-table_resizable-cols th:nth-child(9)  { width: 7%; }   /* Product Name */
+    .slds-table_resizable-cols th:nth-child(10) { width: 8%; }   /* Description */
+    .slds-table_resizable-cols th:nth-child(n+11):nth-child(-n+22) { width: 3%; } /* APR to MAR */
+    .slds-table_resizable-cols th:nth-child(23) { width: 4%; }   /* Total Order */
+}
+
+/* Remove the big side margins and fixed 150px cap */
 .slds-truncate {
-    max-width: 150px; /* Adjust based on content */
+    max-width: 100% !important;
+    margin-left: 0 !important;
+    margin-right: 0 !important;
     word-wrap: break-word;
     text-align: center;
     overflow: hidden;
-    text-overflow: ellipsis; /* Adds ellipsis for long text */
-    white-space: normal; /* Allows wrapping */
-    margin-left: 20px;
-    margin-right: 30px;
-}
-
-.slds-table_resizable-cols th, 
-.slds-table_resizable-cols td {
-   
-    white-space: normal; /* Allows wrapping */
-    text-align: center;
-    vertical-align: middle; /* Ensures content is vertically aligned */
+    text-overflow: ellipsis;
+    white-space: normal;
 }
 
 .slds-table_resizable-cols th {
     color: white;
     background-color: rgb(3, 3, 159);
-    text-transform: uppercase; /* Makes header text consistent */
+    text-transform: uppercase;
 }
 
+/* ===== Mobile stacking ===== */
 @media only screen and (max-width: 600px) {
     .slds-table_resizable-cols {
-        display: block; /* Stacks the table rows */
+        display: block;
         overflow-x: auto;
     }
 
     .slds-table_resizable-cols th,
     .slds-table_resizable-cols td {
-        display: block; /* Stacks columns for small screens */
+        display: block;
         width: 100%;
-        box-sizing: border-box; /* Includes padding/borders in width */
+        box-sizing: border-box;
     }
 
     .slds-table_resizable-cols thead {
-        display: none; /* Hides header row on mobile */
+        display: none;
     }
 
     .slds-table_resizable-cols tbody tr {
         display: flex;
         flex-direction: column;
-        margin-bottom: 1rem; /* Adds spacing between rows */
-        border: 1px solid #ccc; /* Optional: adds a border for distinction */
+        margin-bottom: 1rem;
+        border: 1px solid #ccc;
     }
 
     .slds-table_resizable-cols tbody td:before {
-        content: attr(data-label); /* Shows the column label */
+        content: attr(data-label);
         font-weight: bold;
         display: block;
-        margin-bottom: 0.5rem; /* Adds spacing for readability */
+        margin-bottom: 0.5rem;
     }
 }
 
-.custom-input{
+/* ===== Inputs and combobox ===== */
+.custom-input {
     font-weight: bold;
 }
+
 .neon-input {
-    background-color: #d9f5f8; /* Light blue background */
-    color: #070707; /* Dark text color */
-    border: 2px solid #0026ff; /* Neon blue border */
-    border-radius: 5px; /* Rounded corners */
-    padding: 10px; /* Padding inside the input */
-    transition: border-color 0.3s ease, box-shadow 0.3s ease; /* Smooth transition for hover effect */
-    box-shadow: 0 0 20px rgba(1, 31, 255, 0.7); /* Neon blue glow */
-    font-weight: bold; /* Bold text */
-    outline: none; /* Remove default outline */
+    background-color: #d9f5f8;
+    color: #070707;
+    border: 2px solid #0026ff;
+    border-radius: 5px;
+    padding: 10px;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+    box-shadow: 0 0 20px rgba(1, 31, 255, 0.7);
+    font-weight: bold;
+    outline: none;
 }
 
-/* Hover effect for the input */
 .neon-input:hover {
-    border-color: #048d21; /* Neon green border on hover */
-    box-shadow: 0 0 20px rgba(17, 255, 0, 0.7); /* Neon green glow on hover */
+    border-color: #048d21;
+    box-shadow: 0 0 20px rgba(17, 255, 0, 0.7);
 }
 
-/* Focus effect for the input */
 .neon-input:focus {
-    border-color: #048d21; /* Neon green border on focus */
-    box-shadow: 0 0 20px rgba(17, 255, 0, 0.9); /* More intense glow on focus */
+    border-color: #048d21;
+    box-shadow: 0 0 20px rgba(17, 255, 0, 0.9);
 }
 
 /* Label style for lightning-input */
 .slds-form-element__label {
-    color: #030303 !important; /* Force black label color */
-    font-weight: bold; /* Bold label */
+    color: #030303 !important;
+    font-weight: bold;
 }
+
 .combobox-container {
     display: flex;
-    flex-direction: column; /* Align items vertically */
-    
+    flex-direction: column;
 }
 
 .neon-combobox {
-    background-color: #d9f5f8; /* Dark background for combobox */
-    color: #070707; /* White text color */
-    border: 2px solid #0026ff; /* Neon border color */
-    border-radius: 5px; /* Rounded corners for combobox */
-    padding: 10px; /* Padding inside combobox */
-    transition: border-color 0.3s ease; /* Smooth transition for hover effect */
+    background-color: #d9f5f8;
+    color: #070707;
+    border: 2px solid #0026ff;
+    border-radius: 5px;
+    padding: 10px;
+    transition: border-color 0.3s ease;
     box-shadow: 0 0 20px rgba(1, 31, 255, 0.7);
     font-weight: bold;
 }
 
-/* Hover effect */
 .neon-combobox:hover {
-    border-color: #048d21; /* Change border color on hover */
-    box-shadow: 0 0 20px rgba(17, 255, 0, 0.7); /* Neon glow effect on hover */
+    border-color: #048d21;
+    box-shadow: 0 0 20px rgba(17, 255, 0, 0.7);
 }
-/* Style for combobox labels */
+
 .neon-combobox .slds-form-element__label {
-    color: #030303 !important; /* Force white label color */
+    color: #030303 !important;
 }
+
 .red-font {
     color: rgb(0, 113, 63);
 }

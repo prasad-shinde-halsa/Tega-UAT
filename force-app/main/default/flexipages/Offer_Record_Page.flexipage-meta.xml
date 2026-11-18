@@ -7,12 +7,9 @@
                     <name>actionNames</name>
                     <valueList>
                         <valueListItems>
-                            <value>Edit</value>
-                        </valueListItems>
-                        <valueListItems>
                             <value>Quote.Update_Offer</value>
                             <visibilityRule>
-                                <booleanFilter>(1 OR 2 OR 6) AND 3 AND 4 AND 5</booleanFilter>
+                                <booleanFilter>(1 OR 2 OR 3) AND NOT(4) AND NOT(5)</booleanFilter>
                                 <criteria>
                                     <leftValue>{!$User.Profile.Name}</leftValue>
                                     <operator>EQUAL</operator>
@@ -24,29 +21,21 @@
                                     <rightValue>Sales</rightValue>
                                 </criteria>
                                 <criteria>
-                                    <leftValue>{!Record.RecordType__c}</leftValue>
-                                    <operator>EQUAL</operator>
-                                    <rightValue>Mill</rightValue>
-                                </criteria>
-                                <criteria>
-                                    <leftValue>{!Record.Opportunity_Equipments__r.Type__c}</leftValue>
-                                    <operator>EQUAL</operator>
-                                    <rightValue>Spares</rightValue>
-                                </criteria>
-                                <criteria>
-                                    <leftValue>{!Record.Opportunity_Equipments__r.Spares__c}</leftValue>
-                                    <operator>EQUAL</operator>
-                                    <rightValue>Spares Without Modification</rightValue>
-                                </criteria>
-                                <criteria>
                                     <leftValue>{!$User.Profile.Name}</leftValue>
                                     <operator>EQUAL</operator>
                                     <rightValue>Regional Manager</rightValue>
                                 </criteria>
+                                <criteria>
+                                    <leftValue>{!Record.Status}</leftValue>
+                                    <operator>EQUAL</operator>
+                                    <rightValue>Finalized</rightValue>
+                                </criteria>
+                                <criteria>
+                                    <leftValue>{!Record.Status}</leftValue>
+                                    <operator>EQUAL</operator>
+                                    <rightValue>Send to SAP</rightValue>
+                                </criteria>
                             </visibilityRule>
-                        </valueListItems>
-                        <valueListItems>
-                            <value>Quote.Update_Offer_LWC</value>
                         </valueListItems>
                         <valueListItems>
                             <value>Quote.Revise_Offer</value>
@@ -55,6 +44,42 @@
                                     <leftValue>{!Record.RecordType.DeveloperName}</leftValue>
                                     <operator>EQUAL</operator>
                                     <rightValue>Offer</rightValue>
+                                </criteria>
+                            </visibilityRule>
+                        </valueListItems>
+                        <valueListItems>
+                            <value>Quote.Finalize_Offer</value>
+                            <visibilityRule>
+                                <booleanFilter>1 AND (2 OR 3 OR 4) AND NOT(5) AND NOT(6)</booleanFilter>
+                                <criteria>
+                                    <leftValue>{!Record.RecordType.DeveloperName}</leftValue>
+                                    <operator>EQUAL</operator>
+                                    <rightValue>Offer</rightValue>
+                                </criteria>
+                                <criteria>
+                                    <leftValue>{!$User.Profile.Name}</leftValue>
+                                    <operator>EQUAL</operator>
+                                    <rightValue>System Administrator</rightValue>
+                                </criteria>
+                                <criteria>
+                                    <leftValue>{!$User.Profile.Name}</leftValue>
+                                    <operator>EQUAL</operator>
+                                    <rightValue>Sales</rightValue>
+                                </criteria>
+                                <criteria>
+                                    <leftValue>{!$User.Profile.Name}</leftValue>
+                                    <operator>EQUAL</operator>
+                                    <rightValue>Regional Manager</rightValue>
+                                </criteria>
+                                <criteria>
+                                    <leftValue>{!Record.Status}</leftValue>
+                                    <operator>EQUAL</operator>
+                                    <rightValue>Finalized</rightValue>
+                                </criteria>
+                                <criteria>
+                                    <leftValue>{!Record.Status}</leftValue>
+                                    <operator>EQUAL</operator>
+                                    <rightValue>Send to SAP</rightValue>
                                 </criteria>
                             </visibilityRule>
                         </valueListItems>
@@ -111,35 +136,7 @@
                             </visibilityRule>
                         </valueListItems>
                         <valueListItems>
-                            <value>Quote.Finalize_Offer</value>
-                            <visibilityRule>
-                                <booleanFilter>1 AND (2 OR 3) AND 4 AND 5</booleanFilter>
-                                <criteria>
-                                    <leftValue>{!Record.RecordType.DeveloperName}</leftValue>
-                                    <operator>EQUAL</operator>
-                                    <rightValue>Offer</rightValue>
-                                </criteria>
-                                <criteria>
-                                    <leftValue>{!$User.Profile.Name}</leftValue>
-                                    <operator>EQUAL</operator>
-                                    <rightValue>System Administrator</rightValue>
-                                </criteria>
-                                <criteria>
-                                    <leftValue>{!$User.Profile.Name}</leftValue>
-                                    <operator>EQUAL</operator>
-                                    <rightValue>Sales</rightValue>
-                                </criteria>
-                                <criteria>
-                                    <leftValue>{!Record.Status}</leftValue>
-                                    <operator>EQUAL</operator>
-                                    <rightValue>PD</rightValue>
-                                </criteria>
-                                <criteria>
-                                    <leftValue>{!Record.Approval_Status__c}</leftValue>
-                                    <operator>EQUAL</operator>
-                                    <rightValue>Draft</rightValue>
-                                </criteria>
-                            </visibilityRule>
+                            <value>CustomButton.Quote.Offer_Generate_PDF</value>
                         </valueListItems>
                         <valueListItems>
                             <value>CustomButton.Quote.Combine_Offer_PDF</value>
@@ -162,16 +159,23 @@
                             </visibilityRule>
                         </valueListItems>
                         <valueListItems>
-                            <value>CustomButton.Quote.Download_PDF_Code_level</value>
+                            <value>Edit</value>
                         </valueListItems>
                         <valueListItems>
-                            <value>CustomButton.Quote.Downlod_PDF_full_set</value>
+                            <value>CustomButton.Quote.Level_1_Part_List_Code_Level</value>
+                            <visibilityRule>
+                                <criteria>
+                                    <leftValue>{!Record.Show_FULLSet_Button__c}</leftValue>
+                                    <operator>EQUAL</operator>
+                                    <rightValue>true</rightValue>
+                                </criteria>
+                            </visibilityRule>
                         </valueListItems>
                         <valueListItems>
-                            <value>CustomButton.Quote.Download_PDF</value>
+                            <value>CustomButton.Quote.Level_2_Set_Code_Level</value>
                         </valueListItems>
                         <valueListItems>
-                            <value>CustomButton.Quote.Level_1_Doc</value>
+                            <value>CustomButton.Quote.Level_3_Material_Code_Level</value>
                         </valueListItems>
                     </valueList>
                 </componentInstanceProperties>
@@ -228,29 +232,6 @@
     </flexiPageRegions>
     <flexiPageRegions>
         <itemInstances>
-            <componentInstance>
-                <componentInstanceProperties>
-                    <name>relatedListComponentOverride</name>
-                    <value>NONE</value>
-                </componentInstanceProperties>
-                <componentInstanceProperties>
-                    <name>rowsToDisplay</name>
-                    <value>10</value>
-                </componentInstanceProperties>
-                <componentInstanceProperties>
-                    <name>showActionBar</name>
-                    <value>true</value>
-                </componentInstanceProperties>
-                <componentName>force:relatedListContainer</componentName>
-                <identifier>force_relatedListContainer</identifier>
-            </componentInstance>
-        </itemInstances>
-        <mode>Replace</mode>
-        <name>relatedListTabContent</name>
-        <type>Facet</type>
-    </flexiPageRegions>
-    <flexiPageRegions>
-        <itemInstances>
             <fieldInstance>
                 <fieldInstanceProperties>
                     <name>uiBehavior</name>
@@ -291,8 +272,8 @@
                 <visibilityRule>
                     <criteria>
                         <leftValue>{!$User.Profile.Name}</leftValue>
-                        <operator>CONTAINS</operator>
-                        <rightValue>admin</rightValue>
+                        <operator>EQUAL</operator>
+                        <rightValue>System Administrator</rightValue>
                     </criteria>
                 </visibilityRule>
             </fieldInstance>
@@ -305,6 +286,28 @@
                 </fieldInstanceProperties>
                 <fieldItem>Record.Part_List__c</fieldItem>
                 <identifier>RecordPart_List_cField</identifier>
+                <visibilityRule>
+                    <criteria>
+                        <leftValue>{!Record.Customer_offr__r.Name}</leftValue>
+                        <operator>NE</operator>
+                    </criteria>
+                </visibilityRule>
+            </fieldInstance>
+        </itemInstances>
+        <itemInstances>
+            <fieldInstance>
+                <fieldInstanceProperties>
+                    <name>uiBehavior</name>
+                    <value>none</value>
+                </fieldInstanceProperties>
+                <fieldItem>Record.Part_List_Revision_No__c</fieldItem>
+                <identifier>RecordPart_List_Revision_No_cField</identifier>
+                <visibilityRule>
+                    <criteria>
+                        <leftValue>{!Record.Customer_offr__r.Name}</leftValue>
+                        <operator>NE</operator>
+                    </criteria>
+                </visibilityRule>
             </fieldInstance>
         </itemInstances>
         <itemInstances>
@@ -431,16 +434,6 @@
             <fieldInstance>
                 <fieldInstanceProperties>
                     <name>uiBehavior</name>
-                    <value>readonly</value>
-                </fieldInstanceProperties>
-                <fieldItem>Record.TotalPrice</fieldItem>
-                <identifier>RecordTotalPriceField</identifier>
-            </fieldInstance>
-        </itemInstances>
-        <itemInstances>
-            <fieldInstance>
-                <fieldInstanceProperties>
-                    <name>uiBehavior</name>
                     <value>none</value>
                 </fieldInstanceProperties>
                 <fieldItem>Record.Total_Price_formula__c</fieldItem>
@@ -453,8 +446,18 @@
                     <name>uiBehavior</name>
                     <value>none</value>
                 </fieldInstanceProperties>
-                <fieldItem>Record.settingType__c</fieldItem>
-                <identifier>RecordsettingType__cField</identifier>
+                <fieldItem>Record.Show_FEH_Button__c</fieldItem>
+                <identifier>RecordShow_FEH_Button__cField</identifier>
+            </fieldInstance>
+        </itemInstances>
+        <itemInstances>
+            <fieldInstance>
+                <fieldInstanceProperties>
+                    <name>uiBehavior</name>
+                    <value>none</value>
+                </fieldInstanceProperties>
+                <fieldItem>Record.Show_FULLSet_Button__c</fieldItem>
+                <identifier>RecordShow_FULLSet_Button__cField</identifier>
             </fieldInstance>
         </itemInstances>
         <name>Facet-65818ae7-a599-4c29-a74e-e6a9f37b5cb5</name>
@@ -465,30 +468,10 @@
             <fieldInstance>
                 <fieldInstanceProperties>
                     <name>uiBehavior</name>
-                    <value>readonly</value>
-                </fieldInstanceProperties>
-                <fieldItem>Record.RSM_Approval_Required__c</fieldItem>
-                <identifier>RecordRSM_Approval_Required_cField</identifier>
-            </fieldInstance>
-        </itemInstances>
-        <itemInstances>
-            <fieldInstance>
-                <fieldInstanceProperties>
-                    <name>uiBehavior</name>
                     <value>none</value>
                 </fieldInstanceProperties>
                 <fieldItem>Record.ExpirationDate</fieldItem>
                 <identifier>RecordExpirationDateField</identifier>
-            </fieldInstance>
-        </itemInstances>
-        <itemInstances>
-            <fieldInstance>
-                <fieldInstanceProperties>
-                    <name>uiBehavior</name>
-                    <value>readonly</value>
-                </fieldInstanceProperties>
-                <fieldItem>Record.IsSyncing</fieldItem>
-                <identifier>RecordIsSyncingField</identifier>
             </fieldInstance>
         </itemInstances>
         <itemInstances>
@@ -643,6 +626,16 @@
                 </fieldInstanceProperties>
                 <fieldItem>Record.SalesGrp__c</fieldItem>
                 <identifier>RecordSalesGrp_cField</identifier>
+            </fieldInstance>
+        </itemInstances>
+        <itemInstances>
+            <fieldInstance>
+                <fieldInstanceProperties>
+                    <name>uiBehavior</name>
+                    <value>none</value>
+                </fieldInstanceProperties>
+                <fieldItem>Record.settingType__c</fieldItem>
+                <identifier>RecordsettingType_cField</identifier>
             </fieldInstance>
         </itemInstances>
         <name>Facet-012db6c9-1d62-4e82-88eb-245b452ba0e7</name>
@@ -907,16 +900,6 @@
         <type>Facet</type>
     </flexiPageRegions>
     <flexiPageRegions>
-        <itemInstances>
-            <fieldInstance>
-                <fieldInstanceProperties>
-                    <name>uiBehavior</name>
-                    <value>none</value>
-                </fieldInstanceProperties>
-                <fieldItem>Record.Total_Price2__c</fieldItem>
-                <identifier>RecordTotal_Price2_cField</identifier>
-            </fieldInstance>
-        </itemInstances>
         <itemInstances>
             <fieldInstance>
                 <fieldInstanceProperties>
@@ -1503,12 +1486,6 @@
         </itemInstances>
         <itemInstances>
             <componentInstance>
-                <componentName>offerProductManage</componentName>
-                <identifier>c_offerProductManage</identifier>
-            </componentInstance>
-        </itemInstances>
-        <itemInstances>
-            <componentInstance>
                 <componentName>force:recordDetailPanelMobile</componentName>
                 <identifier>force_recordDetailPanelMobile</identifier>
             </componentInstance>
@@ -1521,21 +1498,26 @@
         <itemInstances>
             <componentInstance>
                 <componentInstanceProperties>
-                    <name>active</name>
-                    <value>false</value>
+                    <name>relatedListComponentOverride</name>
+                    <value>NONE</value>
                 </componentInstanceProperties>
                 <componentInstanceProperties>
-                    <name>body</name>
-                    <value>relatedListTabContent</value>
+                    <name>rowsToDisplay</name>
+                    <value>10</value>
                 </componentInstanceProperties>
                 <componentInstanceProperties>
-                    <name>title</name>
-                    <value>Standard.Tab.relatedLists</value>
+                    <name>showActionBar</name>
+                    <value>true</value>
                 </componentInstanceProperties>
-                <componentName>flexipage:tab</componentName>
-                <identifier>relatedListsTab</identifier>
+                <componentName>force:relatedListContainer</componentName>
+                <identifier>force_relatedListContainer</identifier>
             </componentInstance>
         </itemInstances>
+        <mode>Replace</mode>
+        <name>relatedListTabContent</name>
+        <type>Facet</type>
+    </flexiPageRegions>
+    <flexiPageRegions>
         <itemInstances>
             <componentInstance>
                 <componentInstanceProperties>
@@ -1552,6 +1534,24 @@
                 </componentInstanceProperties>
                 <componentName>flexipage:tab</componentName>
                 <identifier>detailTab</identifier>
+            </componentInstance>
+        </itemInstances>
+        <itemInstances>
+            <componentInstance>
+                <componentInstanceProperties>
+                    <name>active</name>
+                    <value>false</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>body</name>
+                    <value>relatedListTabContent</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>title</name>
+                    <value>Standard.Tab.relatedLists</value>
+                </componentInstanceProperties>
+                <componentName>flexipage:tab</componentName>
+                <identifier>relatedListsTab</identifier>
             </componentInstance>
         </itemInstances>
         <mode>Replace</mode>

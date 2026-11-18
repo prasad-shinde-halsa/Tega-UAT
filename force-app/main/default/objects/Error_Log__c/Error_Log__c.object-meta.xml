@@ -148,14 +148,14 @@
     <enableFeeds>false</enableFeeds>
     <enableHistory>false</enableHistory>
     <enableLicensing>false</enableLicensing>
-    <enableReports>true</enableReports>
+    <enableReports>false</enableReports>
     <enableSearch>true</enableSearch>
     <enableSharing>true</enableSharing>
     <enableStreamingApi>true</enableStreamingApi>
     <externalSharingModel>Private</externalSharingModel>
     <label>Error Log</label>
     <nameField>
-        <displayFormat>E-{00000000}</displayFormat>
+        <displayFormat>E-{00000}</displayFormat>
         <label>Error Log Name</label>
         <type>AutoNumber</type>
     </nameField>

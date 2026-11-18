@@ -166,10 +166,10 @@
                         <td class="total-label">TOTAL</td>
                         <td class="total-monthly">USD {!totals.budgetedOrder}</td>
                         <td class="total-monthly">USD {!totals.monthlyReceived}</td>
-                        <td class="total-monthly">{!totals.achievement}%</td>
+                        <td class="total-monthly">{!totals.achievement}</td>
                         <td class="total-ytd">USD {!totals.ytdBudget}</td>
                         <td class="total-ytd">USD {!totals.ytdActual}</td>
-                        <td class="total-ytd">{!totals.ytdAchievement}%</td>
+                        <td class="total-ytd">{!totals.ytdAchievement}</td>
                         <td class="total-forecast">USD {!totals.forecastBudget}</td>
                         <td class="total-forecast">USD {!totals.forecastMIS}</td>
                         <td class="total-full-year">USD {!totals.fullYearForecast}</td>

@@ -181,7 +181,7 @@
             <label>System Administrator</label>
         </rules>
     </decisions>
-    <description>Adding Fault Screen</description>
+    <description>added filter as active should be true</description>
     <environments>Default</environments>
     <formulas>
         <name>dateRange</name>
@@ -239,6 +239,14 @@
         <faultConnector>
             <targetReference>Fault_Sreen</targetReference>
         </faultConnector>
+        <filterLogic>and</filterLogic>
+        <filters>
+            <field>Active__c</field>
+            <operator>EqualTo</operator>
+            <value>
+                <booleanValue>true</booleanValue>
+            </value>
+        </filters>
         <getFirstRecordOnly>true</getFirstRecordOnly>
         <object>Budget_FY_year_Config__mdt</object>
         <storeOutputAutomatically>true</storeOutputAutomatically>

@@ -21,7 +21,7 @@ public with sharing class IntegrationTransactionHandler extends TriggerHandler{
     public override void beforeDelete(Map<Id, SObject> oldItemsMap) {
     }
     public override void afterUpdate(List<SObject> newItems, Map<Id, SObject> newItemsMap, Map < Id, SObject > oldItemsMap) {
-         updateCustomer(newItems);
+        //   updateCustomer(newItems);
         // updatesapOfferId(newItems);
         //updatesapOfferId(newItems);
         //  List<Integration_Transaction__c> newlines = new List<Integration_Transaction__c>();
@@ -51,8 +51,7 @@ Params : newList
             SAPCallout_Utility.updateCustomer(it.Record_Id__c, it.Id);
         }
         if(it.Operation__c == label.Create_Partlist){
-            if(!System.isFuture() && !System.isBatch()) {    // modified by ranjeet 
-            CreatePartListController.getPartList(it.Record_Id__c, it.Id); }
+            CreatePartListController.getPartList(it.Record_Id__c, it.Id);
         }
         if(it.Operation__c == label.Create_Non_Spare_Offer){
             system.enqueueJob(new CreateNonSpareOffer(it.Record_Id__c, it.Id));

@@ -67,16 +67,8 @@
         <translation><!-- Dimensional Problem --></translation>
     </picklistValues>
     <picklistValues>
-        <masterLabel>Dimensional/ Fitment Problem</masterLabel>
-        <translation><!-- Dimensional/ Fitment Problem --></translation>
-    </picklistValues>
-    <picklistValues>
-        <masterLabel>Dimensional/Fitment</masterLabel>
-        <translation><!-- Dimensional/Fitment --></translation>
-    </picklistValues>
-    <picklistValues>
-        <masterLabel>Dimensional/Fitment problem</masterLabel>
-        <translation><!-- Dimensional/Fitment problem --></translation>
+        <masterLabel>Dimensional/Fitment Problem</masterLabel>
+        <translation><!-- Dimensional/Fitment Problem --></translation>
     </picklistValues>
     <picklistValues>
         <masterLabel>FLIP FLO Screen problem</masterLabel>

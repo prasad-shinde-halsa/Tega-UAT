@@ -4,7 +4,7 @@
     <protected>false</protected>
     <values>
         <field>End_Date__c</field>
-        <value xsi:type="xsd:date">2027-04-30</value>
+        <value xsi:type="xsd:date">2024-02-25</value>
     </values>
     <values>
         <field>Referential_Year_For_Budget__c</field>

@@ -19,18 +19,6 @@
                 <behavior>Edit</behavior>
                 <field>Company__c</field>
             </layoutItems>
-            <layoutItems>
-                <behavior>Readonly</behavior>
-                <field>Total_Order_In_USD__c</field>
-            </layoutItems>
-            <layoutItems>
-                <behavior>Readonly</behavior>
-                <field>Total_Sales_In_USD__c</field>
-            </layoutItems>
-            <layoutItems>
-                <behavior>Edit</behavior>
-                <field>Exchange_Rate_In_INR__c</field>
-            </layoutItems>
         </layoutColumns>
         <layoutColumns>
             <layoutItems>
@@ -68,7 +56,7 @@
             </layoutItems>
             <layoutItems>
                 <behavior>Edit</behavior>
-                <field>Exchange_Rate_In_USD__c</field>
+                <field>Original_Exchange_Rate__c</field>
             </layoutItems>
         </layoutColumns>
         <layoutColumns>
@@ -81,8 +69,12 @@
                 <field>Total_Sales_In_INR_Value__c</field>
             </layoutItems>
             <layoutItems>
+                <behavior>Readonly</behavior>
+                <field>Total_Sales_In_USD__c</field>
+            </layoutItems>
+            <layoutItems>
                 <behavior>Edit</behavior>
-                <field>Original_Exchange_Rate__c</field>
+                <field>Exchange_Rate_In_USD__c</field>
             </layoutItems>
         </layoutColumns>
         <style>TwoColumnsLeftToRight</style>

@@ -110,6 +110,7 @@
                 <aura:set attribute="else">
                     <lightning:recordViewForm recordId="{!v.recordId}" objectApiName="Quote">
                         <lightning:outputField fieldName="Part_List__c" />
+                        <lightning:outputField fieldName="Part_List_Revision_No__c" />
                     </lightning:recordViewForm>
                 </aura:set>
             </aura:if>

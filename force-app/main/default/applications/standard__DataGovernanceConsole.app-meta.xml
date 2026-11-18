@@ -10,10 +10,6 @@
     <tabs>standard-home</tabs>
     <tabs>standard-DataMgmtPolicy</tabs>
     <tabs>Budget_Report_Segregation__c</tabs>
-    <tabs>Sales_Organization_Product__c</tabs>
-    <tabs>L2_L3_product__c</tabs>
-    <tabs>SAP_data_Sync__c</tabs>
-    <tabs>TOP_Field_Staging__c</tabs>
-    <tabs>Molycop_Referral__c</tabs>
+    <tabs>Item_Weight__c</tabs>
     <uiType>Lightning</uiType>
 </CustomApplication>

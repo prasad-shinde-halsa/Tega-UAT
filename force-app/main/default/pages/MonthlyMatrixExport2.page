@@ -143,7 +143,7 @@
                         USD {!totals.monthlyReceived}
                     </td>
                     <td style="background-color:#1e3a6e; color:#a8d4f5; text-align:center; padding:8px; border:1px solid #5a8fc4; font-weight:bold; font-size:10pt;">
-                        {!totals.achievement}%
+                        {!totals.achievement}
                     </td>
                     <td style="background-color:#0e3d2a; color:#a8f5d4; text-align:center; padding:8px; border:1px solid #5a8fc4; font-weight:bold; font-size:10pt;">
                         USD {!totals.ytdBudget}
@@ -152,7 +152,7 @@
                         USD {!totals.ytdActual}
                     </td>
                     <td style="background-color:#0e3d2a; color:#a8f5d4; text-align:center; padding:8px; border:1px solid #5a8fc4; font-weight:bold; font-size:10pt;">
-                        {!totals.ytdAchievement}%
+                        {!totals.ytdAchievement}
                     </td>
                     <td style="background-color:#3d1e00; color:#f5d4a8; text-align:center; padding:8px; border:1px solid #5a8fc4; font-weight:bold; font-size:10pt;">
                         USD {!totals.forecastBudget}

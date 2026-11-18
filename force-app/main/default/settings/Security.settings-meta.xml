@@ -2,7 +2,7 @@
 <SecuritySettings xmlns="http://soap.sforce.com/2006/04/metadata">
     <canUsersGrantLoginAccess>true</canUsersGrantLoginAccess>
     <enableAdminLoginAsAnyUser>true</enableAdminLoginAsAnyUser>
-    <enableAuditFieldsInactiveOwner>true</enableAuditFieldsInactiveOwner>
+    <enableAuditFieldsInactiveOwner>false</enableAuditFieldsInactiveOwner>
     <enableAuraSecureEvalPref>true</enableAuraSecureEvalPref>
     <enableCoepHeader>false</enableCoepHeader>
     <enableCoopHeader>false</enableCoopHeader>
@@ -62,13 +62,13 @@
         <enforceIpRangesEveryRequest>false</enforceIpRangesEveryRequest>
         <enforceUserDeviceRevoked>false</enforceUserDeviceRevoked>
         <forceLogoutOnSessionTimeout>true</forceLogoutOnSessionTimeout>
-        <forceRelogin>true</forceRelogin>
+        <forceRelogin>false</forceRelogin>
         <grantCameraAccess>TrustedUrls</grantCameraAccess>
         <grantMicrophoneAccess>TrustedUrls</grantMicrophoneAccess>
         <hasRetainedLoginHints>false</hasRetainedLoginHints>
         <hasUserSwitching>true</hasUserSwitching>
         <identityConfirmationOnEmailChange>false</identityConfirmationOnEmailChange>
-        <identityConfirmationOnTwoFactorRegistrationEnabled>true</identityConfirmationOnTwoFactorRegistrationEnabled>
+        <identityConfirmationOnTwoFactorRegistrationEnabled>false</identityConfirmationOnTwoFactorRegistrationEnabled>
         <lockSessionsToDomain>true</lockSessionsToDomain>
         <lockSessionsToIp>false</lockSessionsToIp>
         <lockerServiceCSP>false</lockerServiceCSP>
@@ -88,6 +88,7 @@
         <untrustedRedirect>AlwaysAllowed</untrustedRedirect>
         <useEAPIRateLimitForConnectAPI>false</useEAPIRateLimitForConnectAPI>
         <useLocalStorageForLogoutUrl>false</useLocalStorageForLogoutUrl>
+        <welcomeEmailTemplateId>000000000000000</welcomeEmailTemplateId>
     </sessionSettings>
     <singleSignOnSettings>
         <enableCaseInsensitiveFederationID>false</enableCaseInsensitiveFederationID>

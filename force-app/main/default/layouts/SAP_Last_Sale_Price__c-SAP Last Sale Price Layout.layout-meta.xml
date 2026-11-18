@@ -15,6 +15,10 @@
                 <behavior>Edit</behavior>
                 <field>Product_L3__c</field>
             </layoutItems>
+            <layoutItems>
+                <behavior>Edit</behavior>
+                <field>Part_List__c</field>
+            </layoutItems>
         </layoutColumns>
         <layoutColumns>
             <layoutItems>
@@ -64,10 +68,6 @@
     <relatedLists>
         <fields>NAME</fields>
         <relatedList>Sales_Org_Last_SAP_SO__c.SAP_Last_Sale__c</relatedList>
-    </relatedLists>
-    <relatedLists>
-        <fields>NAME</fields>
-        <relatedList>L1_L3_Product__c.SAP_Last_Sale_Price__c</relatedList>
     </relatedLists>
     <showEmailCheckbox>false</showEmailCheckbox>
     <showHighlightsPanel>false</showHighlightsPanel>

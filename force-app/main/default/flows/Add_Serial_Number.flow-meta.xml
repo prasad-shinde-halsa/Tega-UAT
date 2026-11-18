@@ -3,6 +3,19 @@
     <apiVersion>64.0</apiVersion>
     <areMetricsLoggedToDataCloud>false</areMetricsLoggedToDataCloud>
     <assignments>
+        <name>Assign_Sales_Region</name>
+        <label>Assign Sales Region</label>
+        <locationX>0</locationX>
+        <locationY>0</locationY>
+        <assignmentItems>
+            <assignToReference>$Record.Region_From_Cus_Com__c</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <elementReference>$Record.Customer_Branch_Assignment__r.Branch__r.Sales_Region__r.Name</elementReference>
+            </value>
+        </assignmentItems>
+    </assignments>
+    <assignments>
         <name>assign_serial_number</name>
         <label>assign serial number</label>
         <locationX>0</locationX>
@@ -14,7 +27,33 @@
                 <elementReference>serial_number_formula</elementReference>
             </value>
         </assignmentItems>
+        <connector>
+            <targetReference>if_not_coorect_the_region_name</targetReference>
+        </connector>
     </assignments>
+    <decisions>
+        <name>if_not_coorect_the_region_name</name>
+        <label>if not coorect the region name</label>
+        <locationX>0</locationX>
+        <locationY>0</locationY>
+        <defaultConnectorLabel>Default Outcome</defaultConnectorLabel>
+        <rules>
+            <name>isNotSame</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>$Record.Customer_Branch_Assignment__r.Branch__r.Sales_Region__r.Name</leftValueReference>
+                <operator>NotEqualTo</operator>
+                <rightValue>
+                    <elementReference>$Record.Region_From_Cus_Com__c</elementReference>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Assign_Sales_Region</targetReference>
+            </connector>
+            <label>isNotSame</label>
+        </rules>
+    </decisions>
+    <description>adding new check the branch and region and update</description>
     <environments>Default</environments>
     <formulas>
         <name>serial_number_formula</name>
@@ -76,5 +115,5 @@
         <recordTriggerType>Create</recordTriggerType>
         <triggerType>RecordBeforeSave</triggerType>
     </start>
-    <status>Active</status>
+    <status>Draft</status>
 </Flow>

@@ -6,9 +6,9 @@
     <enableClickjackUserPageHeaderless>true</enableClickjackUserPageHeaderless>
     <enableCollapsibleSections>true</enableCollapsibleSections>
     <enableCollapsibleSideBar>true</enableCollapsibleSideBar>
-    <enableCustomObjectTruncate>true</enableCustomObjectTruncate>
+    <enableCustomObjectTruncate>false</enableCustomObjectTruncate>
     <enableCustomeSideBarOnAllPages>false</enableCustomeSideBarOnAllPages>
-    <enableDeleteFieldHistory>true</enableDeleteFieldHistory>
+    <enableDeleteFieldHistory>false</enableDeleteFieldHistory>
     <enableExternalObjectAsyncRelatedLists>true</enableExternalObjectAsyncRelatedLists>
     <enableHoverDetails>true</enableHoverDetails>
     <enableInlineEdit>true</enableInlineEdit>
@@ -18,7 +18,6 @@
     <enableProfileCustomTabsets>true</enableProfileCustomTabsets>
     <enableQuickCreate>true</enableQuickCreate>
     <enableRelatedListHovers>true</enableRelatedListHovers>
-    <enableSldsV2>false</enableSldsV2>
     <enableSldsV2DarkModeInCosmos>false</enableSldsV2DarkModeInCosmos>
     <enableTabOrganizer>true</enableTabOrganizer>
     <multiColumnSort>false</multiColumnSort>

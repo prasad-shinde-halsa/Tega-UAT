@@ -4,6 +4,6 @@
     <protected>false</protected>
     <values>
         <field>Report_URL__c</field>
-        <value xsi:type="xsd:string">https://www.google.com</value>
+        <value xsi:type="xsd:string">https://tegaindustrieslimited.lightning.force.com/lightning/r/Report/00OS2000004tIJlMAM/view?queryScope=mru</value>
     </values>
 </CustomMetadata>

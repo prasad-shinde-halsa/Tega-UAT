@@ -105,8 +105,8 @@
     <decisions>
         <name>check_if_any_customer_branch_assignment_found</name>
         <label>check if any customer branch assignment found</label>
-        <locationX>685</locationX>
-        <locationY>614</locationY>
+        <locationX>1018</locationX>
+        <locationY>584</locationY>
         <defaultConnector>
             <targetReference>customerBranchAssignmentNotFoundScrren</targetReference>
         </defaultConnector>
@@ -134,6 +134,14 @@
         <displayField xsi:nil="true"/>
         <object xsi:nil="true"/>
         <picklistField>Status__c</picklistField>
+        <picklistObject>Customer_Visit__c</picklistObject>
+    </dynamicChoiceSets>
+    <dynamicChoiceSets>
+        <name>RiskFactor</name>
+        <dataType>Picklist</dataType>
+        <displayField xsi:nil="true"/>
+        <object xsi:nil="true"/>
+        <picklistField>Customer_Risk_Factor__c</picklistField>
         <picklistObject>Customer_Visit__c</picklistObject>
     </dynamicChoiceSets>
     <environments>Default</environments>
@@ -200,6 +208,12 @@
             <field>Customer_Branch_Assignment__c</field>
             <value>
                 <elementReference>get_customer_branch_assignment.Id</elementReference>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>Customer_Risk_Factor__c</field>
+            <value>
+                <elementReference>Risk_Factor</elementReference>
             </value>
         </inputAssignments>
         <inputAssignments>
@@ -393,8 +407,8 @@
     <screens>
         <name>Customer_Visit_Creation_Screen</name>
         <label>Customer Visit Creation Screen</label>
-        <locationX>1213</locationX>
-        <locationY>182</locationY>
+        <locationX>782</locationX>
+        <locationY>166</locationY>
         <actions>
             <name>Get_Related_Branch</name>
             <actionName>Get_Related_Branch_and_Company</actionName>
@@ -414,19 +428,6 @@
         <connector>
             <targetReference>check_branch_and_company_selected</targetReference>
         </connector>
-        <fields>
-            <name>gjghjg</name>
-            <fieldText>&lt;p&gt;{!$User.No_of_days_for_Customer_Visit__c}&lt;/p&gt;</fieldText>
-            <fieldType>DisplayText</fieldType>
-            <styleProperties>
-                <verticalAlignment>
-                    <stringValue>top</stringValue>
-                </verticalAlignment>
-                <width>
-                    <stringValue>12</stringValue>
-                </width>
-            </styleProperties>
-        </fields>
         <fields>
             <name>Information</name>
             <fieldText>Information</fieldText>
@@ -1073,6 +1074,23 @@
                 <name>General_Column1</name>
                 <fieldType>Region</fieldType>
                 <fields>
+                    <name>Risk_Factor</name>
+                    <choiceReferences>RiskFactor</choiceReferences>
+                    <dataType>String</dataType>
+                    <fieldText>Risk Factor</fieldText>
+                    <fieldType>DropdownBox</fieldType>
+                    <inputsOnNextNavToAssocScrn>UseStoredValues</inputsOnNextNavToAssocScrn>
+                    <isRequired>true</isRequired>
+                    <styleProperties>
+                        <verticalAlignment>
+                            <stringValue>top</stringValue>
+                        </verticalAlignment>
+                        <width>
+                            <stringValue>6</stringValue>
+                        </width>
+                    </styleProperties>
+                </fields>
+                <fields>
                     <name>General_Comments_Font</name>
                     <fieldText>General Comments Font</fieldText>
                     <fieldType>LargeTextArea</fieldType>
@@ -1136,7 +1154,7 @@
         <name>customerBranchAssignmentNotFoundScrren</name>
         <label>customerBranchAssignmentNotFoundScrren</label>
         <locationX>949</locationX>
-        <locationY>722</locationY>
+        <locationY>721</locationY>
         <allowBack>true</allowBack>
         <allowFinish>false</allowFinish>
         <allowPause>false</allowPause>
@@ -1211,7 +1229,7 @@
             <targetReference>Customer_Visit_Creation_Screen</targetReference>
         </connector>
     </start>
-    <status>Draft</status>
+    <status>Active</status>
     <variables>
         <name>CheckIfConversionTrue</name>
         <dataType>Boolean</dataType>

@@ -14,5 +14,10 @@
     <columns>Sales_Organizations__c</columns>
     <columns>Sales_Office_Description__c</columns>
     <filterScope>Everything</filterScope>
+    <filters>
+        <field>Company_Code__c</field>
+        <operation>equals</operation>
+        <value>TCL1</value>
+    </filters>
     <label>All</label>
 </ListView>

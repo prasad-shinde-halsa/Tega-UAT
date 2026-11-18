@@ -660,12 +660,6 @@
                 <identifier>RecordEnd_Customer_PO_Value__cField</identifier>
             </fieldInstance>
         </itemInstances>
-        <itemInstances>
-            <fieldInstance>
-                <fieldItem>Record.Opportunity__c</fieldItem>
-                <identifier>RecordOpportunity__cField</identifier>
-            </fieldInstance>
-        </itemInstances>
         <name>Facet-7d862c74-7758-484e-a51a-98f79e325da4</name>
         <type>Facet</type>
     </flexiPageRegions>
@@ -1002,6 +996,33 @@
                 </fieldInstanceProperties>
                 <fieldItem>Record.Budgeted_Order_Month__c</fieldItem>
                 <identifier>RecordBudgeted_Order_Month_cField</identifier>
+            </fieldInstance>
+        </itemInstances>
+        <itemInstances>
+            <fieldInstance>
+                <fieldInstanceProperties>
+                    <name>uiBehavior</name>
+                    <value>readonly</value>
+                </fieldInstanceProperties>
+                <fieldItem>Record.Closed_Date__c</fieldItem>
+                <identifier>RecordClosed_Date_cField</identifier>
+            </fieldInstance>
+        </itemInstances>
+        <itemInstances>
+            <fieldInstance>
+                <fieldInstanceProperties>
+                    <name>uiBehavior</name>
+                    <value>none</value>
+                </fieldInstanceProperties>
+                <fieldItem>Record.Company__c</fieldItem>
+                <identifier>RecordCompany_cField</identifier>
+                <visibilityRule>
+                    <criteria>
+                        <leftValue>{!$User.Profile.Name}</leftValue>
+                        <operator>EQUAL</operator>
+                        <rightValue>System Administrator</rightValue>
+                    </criteria>
+                </visibilityRule>
             </fieldInstance>
         </itemInstances>
         <name>Facet-38fc2916-b7f2-4d25-a651-76b7f1d73ecf</name>

@@ -161,7 +161,11 @@
         <type>AutoNumber</type>
     </nameField>
     <pluralLabel>TOP Field Stagings</pluralLabel>
-    <searchLayouts></searchLayouts>
+    <searchLayouts>
+        <searchResultsAdditionalFields>partListRevisionNo__c</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>partListName__c</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>Error_Log__c</searchResultsAdditionalFields>
+    </searchLayouts>
     <sharingModel>ReadWrite</sharingModel>
     <visibility>Public</visibility>
 </CustomObject>

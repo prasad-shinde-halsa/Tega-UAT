@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Layout xmlns="http://soap.sforce.com/2006/04/metadata">
     <excludeButtons>OpenSlackRecordChannel</excludeButtons>
+    <excludeButtons>SmartFillEnrich</excludeButtons>
     <layoutSections>
         <customLabel>false</customLabel>
         <detailHeading>false</detailHeading>
@@ -16,7 +17,7 @@
                 <field>Opportunity__c</field>
             </layoutItems>
             <layoutItems>
-                <behavior>Edit</behavior>
+                <behavior>Required</behavior>
                 <field>Type__c</field>
             </layoutItems>
             <layoutItems>
@@ -170,6 +171,10 @@
             <layoutItems>
                 <behavior>Edit</behavior>
                 <field>Actual_Response_Time_Days__c</field>
+            </layoutItems>
+            <layoutItems>
+                <behavior>Edit</behavior>
+                <field>Financial_Year2__c</field>
             </layoutItems>
             <layoutItems>
                 <behavior>Edit</behavior>
@@ -338,22 +343,6 @@
             <layoutItems>
                 <behavior>Readonly</behavior>
                 <field>Customer_Code__c</field>
-            </layoutItems>
-            <layoutItems>
-                <behavior>Readonly</behavior>
-                <field>Exchange_Rate_In_USD__c</field>
-            </layoutItems>
-            <layoutItems>
-                <behavior>Readonly</behavior>
-                <field>Exchange_Rate_In_INR__c</field>
-            </layoutItems>
-            <layoutItems>
-                <behavior>Edit</behavior>
-                <field>Financial_Year2__c</field>
-            </layoutItems>
-            <layoutItems>
-                <behavior>Edit</behavior>
-                <field>Is_Cloned_PRF__c</field>
             </layoutItems>
         </layoutColumns>
         <layoutColumns>
@@ -528,22 +517,10 @@
         </quickActionListItems>
     </quickActionList>
     <relatedLists>
-        <fields>NAME</fields>
-        <fields>CREATED_DATE</fields>
-        <fields>Company__c</fields>
-        <fields>Branch__c</fields>
-        <fields>Customer_Name__c</fields>
-        <fields>RECORDTYPE</fields>
-        <fields>Opportunity__c</fields>
-        <fields>SAP_Offer_Number__c</fields>
-        <fields>Status__c</fields>
-        <relatedList>Proposal_Form__c.Parent_Proposal_Form__c</relatedList>
-    </relatedLists>
-    <relatedLists>
         <fields>CreatedDate</fields>
         <fields>StepStatus</fields>
-        <fields>OriginalActor</fields>
         <fields>Actor</fields>
+        <fields>OriginalActor</fields>
         <fields>Comments</fields>
         <relatedList>RelatedProcessHistoryList</relatedList>
     </relatedLists>
@@ -558,6 +535,9 @@
     </relatedLists>
     <relatedLists>
         <relatedList>RelatedNoteList</relatedList>
+    </relatedLists>
+    <relatedLists>
+        <relatedList>RelatedEntityHistoryList</relatedList>
     </relatedLists>
     <relatedLists>
         <fields>NAME</fields>

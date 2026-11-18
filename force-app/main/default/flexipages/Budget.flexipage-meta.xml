@@ -12,7 +12,7 @@
                         <valueListItems>
                             <value>DC_Budget__c.Clone</value>
                             <visibilityRule>
-                                <booleanFilter>(1 OR 2) AND (3 OR 4)</booleanFilter>
+                                <booleanFilter>((1 OR 2) AND (3 OR 4)) AND 5</booleanFilter>
                                 <criteria>
                                     <leftValue>{!$User.Profile.Name}</leftValue>
                                     <operator>EQUAL</operator>
@@ -32,6 +32,11 @@
                                     <leftValue>{!Record.RecordType.DeveloperName}</leftValue>
                                     <operator>EQUAL</operator>
                                     <rightValue>Advance_Budget</rightValue>
+                                </criteria>
+                                <criteria>
+                                    <leftValue>{!Record.Financial_Year__c}</leftValue>
+                                    <operator>EQUAL</operator>
+                                    <rightValue>2025-26</rightValue>
                                 </criteria>
                             </visibilityRule>
                         </valueListItems>
@@ -67,7 +72,7 @@
                                 <criteria>
                                     <leftValue>{!$User.Profile.Name}</leftValue>
                                     <operator>EQUAL</operator>
-                                    <rightValue>Leadership</rightValue>
+                                    <rightValue>Ex-Com Leadership</rightValue>
                                 </criteria>
                                 <criteria>
                                     <leftValue>{!$User.Profile.Name}</leftValue>
@@ -103,7 +108,7 @@
                                 <criteria>
                                     <leftValue>{!$User.Profile.Name}</leftValue>
                                     <operator>EQUAL</operator>
-                                    <rightValue>Ex-Com Leadership</rightValue>
+                                    <rightValue>Leadership</rightValue>
                                 </criteria>
                             </visibilityRule>
                         </valueListItems>
@@ -155,7 +160,7 @@
                                 <criteria>
                                     <leftValue>{!$User.Profile.Name}</leftValue>
                                     <operator>EQUAL</operator>
-                                    <rightValue>Leadership</rightValue>
+                                    <rightValue>Ex-Com Leadership</rightValue>
                                 </criteria>
                                 <criteria>
                                     <leftValue>{!Record.Status__c}</leftValue>
@@ -175,7 +180,7 @@
                                 <criteria>
                                     <leftValue>{!$User.Profile.Name}</leftValue>
                                     <operator>EQUAL</operator>
-                                    <rightValue>Ex-Com Leadership</rightValue>
+                                    <rightValue>Leadership</rightValue>
                                 </criteria>
                                 <criteria>
                                     <leftValue>{!$User.Profile.Name}</leftValue>
@@ -231,7 +236,7 @@
                                 <criteria>
                                     <leftValue>{!$User.Profile.Name}</leftValue>
                                     <operator>EQUAL</operator>
-                                    <rightValue>Leadership</rightValue>
+                                    <rightValue>Ex-Com Leadership</rightValue>
                                 </criteria>
                                 <criteria>
                                     <leftValue>{!$User.Profile.Name}</leftValue>
@@ -262,7 +267,7 @@
                                 <criteria>
                                     <leftValue>{!$User.Profile.Name}</leftValue>
                                     <operator>EQUAL</operator>
-                                    <rightValue>Ex-Com Leadership</rightValue>
+                                    <rightValue>Leadership</rightValue>
                                 </criteria>
                                 <criteria>
                                     <leftValue>{!Record.BLI_Count__c}</leftValue>
@@ -344,7 +349,7 @@
                                 <criteria>
                                     <leftValue>{!$User.Profile.Name}</leftValue>
                                     <operator>EQUAL</operator>
-                                    <rightValue>Leadership</rightValue>
+                                    <rightValue>Ex-Com Leadership</rightValue>
                                 </criteria>
                                 <criteria>
                                     <leftValue>{!Record.Status__c}</leftValue>
@@ -364,7 +369,7 @@
                                 <criteria>
                                     <leftValue>{!$User.Profile.Name}</leftValue>
                                     <operator>EQUAL</operator>
-                                    <rightValue>Ex-Com Leadership</rightValue>
+                                    <rightValue>Leadership</rightValue>
                                 </criteria>
                             </visibilityRule>
                         </valueListItems>
@@ -503,6 +508,16 @@
     <flexiPageRegions>
         <itemInstances>
             <componentInstance>
+                <componentName>budgetOrderSalesDetails</componentName>
+                <identifier>c_budgetOrderSalesDetails</identifier>
+            </componentInstance>
+        </itemInstances>
+        <name>Facet-budgetOrderSalesDetails</name>
+        <type>Facet</type>
+    </flexiPageRegions>
+    <flexiPageRegions>
+        <itemInstances>
+            <componentInstance>
                 <componentName>showMISDetails</componentName>
                 <identifier>c_showMISDetails</identifier>
             </componentInstance>
@@ -541,6 +556,20 @@
                 </componentInstanceProperties>
                 <componentName>flexipage:tab</componentName>
                 <identifier>flexipage_tab4</identifier>
+            </componentInstance>
+        </itemInstances>
+        <itemInstances>
+            <componentInstance>
+                <componentInstanceProperties>
+                    <name>body</name>
+                    <value>Facet-budgetOrderSalesDetails</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>title</name>
+                    <value>Order &amp; Sales Details</value>
+                </componentInstanceProperties>
+                <componentName>flexipage:tab</componentName>
+                <identifier>flexipage_tabOrderSales</identifier>
             </componentInstance>
         </itemInstances>
         <itemInstances>

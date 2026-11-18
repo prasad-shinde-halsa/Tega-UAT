@@ -10,15 +10,15 @@
         <layoutColumns>
             <layoutItems>
                 <behavior>Required</behavior>
+                <field>Customer__c</field>
+            </layoutItems>
+            <layoutItems>
+                <behavior>Required</behavior>
                 <field>Name</field>
             </layoutItems>
             <layoutItems>
                 <behavior>Edit</behavior>
                 <field>Customer_Equipment__c</field>
-            </layoutItems>
-            <layoutItems>
-                <behavior>Required</behavior>
-                <field>Customer__c</field>
             </layoutItems>
             <layoutItems>
                 <behavior>Edit</behavior>
@@ -39,10 +39,6 @@
             <layoutItems>
                 <behavior>Edit</behavior>
                 <field>Active__c</field>
-            </layoutItems>
-            <layoutItems>
-                <behavior>Edit</behavior>
-                <field>PLM_Last_Updated_Date__c</field>
             </layoutItems>
         </layoutColumns>
         <layoutColumns>
@@ -65,6 +61,10 @@
             <layoutItems>
                 <behavior>Edit</behavior>
                 <field>Delivery_Req__c</field>
+            </layoutItems>
+            <layoutItems>
+                <behavior>Readonly</behavior>
+                <field>Delivery_SLA_Weeks__c</field>
             </layoutItems>
             <layoutItems>
                 <behavior>Edit</behavior>
@@ -213,12 +213,13 @@
     </relatedLists>
     <relatedLists>
         <fields>NAME</fields>
-        <fields>CURRENCY_ISO_CODE</fields>
+        <fields>L1L3_Code__c</fields>
         <fields>Product_del__c</fields>
+        <fields>Sales_Organization__c</fields>
+        <fields>Order_Number__c</fields>
         <fields>OrderDate__c</fields>
         <fields>Last_Sales_Price__c</fields>
-        <fields>Last_Sales_Date__c</fields>
-        <fields>Sales_Organization__c</fields>
+        <fields>CURRENCY_ISO_CODE</fields>
         <relatedList>L1_L3_Product__c.Part_List__c</relatedList>
     </relatedLists>
     <relatedLists>
@@ -250,6 +251,10 @@
     <relatedLists>
         <fields>NAME</fields>
         <relatedList>Installation_line_Items__c.Part_List__c</relatedList>
+    </relatedLists>
+    <relatedLists>
+        <fields>NAME</fields>
+        <relatedList>SAP_Last_Sale_Price__c.Part_List__c</relatedList>
     </relatedLists>
     <showEmailCheckbox>false</showEmailCheckbox>
     <showHighlightsPanel>false</showHighlightsPanel>

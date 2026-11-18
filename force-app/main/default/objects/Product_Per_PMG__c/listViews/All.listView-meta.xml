@@ -7,8 +7,20 @@
     <columns>Active__c</columns>
     <columns>Company__c</columns>
     <columns>PMG_Fo__c</columns>
+    <columns>PMG_Product_Name_Fo__c</columns>
+    <columns>Product_Group_Name_Fo__c</columns>
+    <columns>Product_Name__c</columns>
     <columns>Financial_Year__c</columns>
-    <columns>PMG__c</columns>
     <filterScope>Everything</filterScope>
+    <filters>
+        <field>Company__c</field>
+        <operation>equals</operation>
+        <value>Tega Chile</value>
+    </filters>
+    <filters>
+        <field>PMG_Master__c</field>
+        <operation>equals</operation>
+        <value>Screen</value>
+    </filters>
     <label>All</label>
 </ListView>

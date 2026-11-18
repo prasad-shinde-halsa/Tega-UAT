@@ -1,0 +1,210 @@
+.section-header {
+    height: auto;
+    gap: 0.5rem 1rem;
+    background-color: rgb(1, 68, 134);
+}
+
+.header-text {
+    font-weight: bold;
+    font-size: 1.2em;
+    color: rgb(255, 255, 255);
+}
+
+.header-totals {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    margin-left: auto;
+}
+
+.total-chip {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 0.25rem 0.75rem 0.25rem 0.25rem;
+    background-color: rgb(255, 255, 255);
+    border-radius: 4px;
+}
+
+.total-chip-value {
+    font-weight: bold;
+    color: rgb(3, 3, 3);
+    white-space: nowrap;
+}
+
+/* The flag that says which row is which. Same colours in the header and the table. */
+.type-flag {
+    display: inline-block;
+    min-width: 3.25em;
+    padding: 0.15em 0.35em;
+    font-size: 11px;
+    font-weight: bold;
+    line-height: 1.4;
+    text-align: center;
+    color: rgb(255, 255, 255);
+    border-radius: 3px;
+}
+
+.type-flag-order {
+    background-color: rgb(1, 68, 134);
+}
+
+.type-flag-sales {
+    background-color: rgb(46, 132, 74);
+}
+
+.table-scroll {
+    width: 100%;
+    max-height: 800px;
+    overflow-x: hidden;
+    overflow-y: auto;
+}
+
+.table-head {
+    position: sticky;
+    top: 0;
+    z-index: 1;
+}
+
+.budget-grid {
+    width: 100%;
+    table-layout: fixed;
+    border-collapse: separate;
+    border-spacing: 0;
+}
+
+.budget-grid thead tr th {
+    padding: 0.5em 0.15rem !important;
+    font-size: 11px;
+    font-weight: bold;
+    color: white;
+    text-align: center;
+    text-transform: uppercase;
+    white-space: normal;
+    overflow-wrap: anywhere;
+    vertical-align: middle;
+    background-color: rgb(1, 68, 134);
+}
+
+.budget-grid td {
+    padding: 0.2rem 0.15rem !important;
+    font-size: 11px;
+    font-weight: bold;
+    text-align: center;
+    white-space: normal;
+    overflow-wrap: anywhere;
+    vertical-align: middle;
+}
+
+/* A strong line starts each budget line; a light one divides its Order and Sales rows. */
+.budget-grid tbody .line-order td {
+    border-top: 2px solid rgb(116, 116, 116);
+}
+
+.budget-grid tbody .line-sales td {
+    border-top: 1px dashed rgb(201, 201, 201);
+}
+
+.budget-grid tbody .line-order td.type-cell,
+.budget-grid tbody .line-order td.month-cell,
+.budget-grid tbody .line-order td.total-cell {
+    background-color: rgb(238, 244, 252);
+}
+
+.budget-grid tbody .line-sales td.type-cell,
+.budget-grid tbody .line-sales td.month-cell,
+.budget-grid tbody .line-sales td.total-cell {
+    background-color: rgb(236, 247, 239);
+}
+
+.budget-grid td.type-cell {
+    border-left: 2px solid rgb(116, 116, 116);
+}
+
+.budget-grid td.total-cell {
+    border-left: 2px solid rgb(116, 116, 116);
+}
+
+.budget-grid td.info-cell {
+    background-color: rgb(255, 255, 255);
+}
+
+.budget-grid .month-input {
+    width: 100%;
+    min-width: 0;
+    height: 1.6rem;
+    padding: 0.1rem !important;
+    font-size: 11px;
+    font-weight: bold;
+    line-height: 1.2;
+    text-align: center;
+}
+
+.budget-grid .month-input-edited {
+    background-color: rgb(255, 243, 176);
+    border-color: rgb(186, 133, 0);
+}
+
+.budget-grid th:nth-child(1)  { width: 2.5%; }  /* Sl. No */
+.budget-grid th:nth-child(2)  { width: 6.5%; }  /* Name */
+.budget-grid th:nth-child(3)  { width: 5%; }    /* PMG */
+.budget-grid th:nth-child(4)  { width: 5%; }    /* Product Group */
+.budget-grid th:nth-child(5)  { width: 5%; }    /* Application Type */
+.budget-grid th:nth-child(6)  { width: 5%; }    /* Order Type */
+.budget-grid th:nth-child(7)  { width: 9%; }    /* Customer */
+.budget-grid th:nth-child(8)  { width: 4.5%; }  /* Part List */
+.budget-grid th:nth-child(9)  { width: 5%; }    /* Product Name */
+.budget-grid th:nth-child(10) { width: 7.5%; }  /* Description */
+.budget-grid th:nth-child(11) { width: 4%; }    /* Type */
+.budget-grid th:nth-child(n+12):nth-child(-n+23) { width: 3%; } /* APR to MAR */
+.budget-grid th:nth-child(24) { width: 5%; }    /* Total Orders / Sales */
+
+.red-font {
+    color: rgb(0, 113, 63);
+}
+
+/* Stays in view while the table is being edited. */
+.save-bar {
+    position: sticky;
+    bottom: 0;
+    z-index: 2;
+    padding: 0.75rem;
+    text-align: center;
+    background-color: rgb(255, 255, 255);
+    border-top: 1px solid rgb(201, 201, 201);
+}
+
+.save-bar-text {
+    margin-right: 1rem;
+    font-weight: bold;
+}
+
+.neon-input,
+.neon-combobox {
+    display: block;
+    padding: 10px;
+    color: #070707;
+    font-weight: bold;
+    background-color: #d9f5f8;
+    border: 2px solid #0026ff;
+    border-radius: 5px;
+    box-shadow: 0 0 20px rgba(1, 31, 255, 0.7);
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.neon-input:hover,
+.neon-combobox:hover {
+    border-color: #048d21;
+    box-shadow: 0 0 20px rgba(17, 255, 0, 0.7);
+}
+
+/* Narrow screens scroll sideways: two rows per line cannot stack into cards. */
+@media only screen and (max-width: 1000px) {
+    .table-scroll {
+        overflow-x: auto;
+    }
+
+    .budget-grid {
+        min-width: 1200px;
+    }
+}

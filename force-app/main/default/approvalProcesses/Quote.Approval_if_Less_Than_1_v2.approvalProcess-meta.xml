@@ -55,16 +55,16 @@
             <name>Auto_Status_Approved</name>
             <type>FieldUpdate</type>
         </action>
-        <action>
-            <name>Price_Accepted2</name>
-            <type>FieldUpdate</type>
-        </action>
     </finalApprovalActions>
     <finalApprovalRecordLock>false</finalApprovalRecordLock>
     <finalRejectionRecordLock>false</finalRejectionRecordLock>
     <initialSubmissionActions>
         <action>
             <name>Pending_Approval</name>
+            <type>FieldUpdate</type>
+        </action>
+        <action>
+            <name>Price_Accepted2</name>
             <type>FieldUpdate</type>
         </action>
     </initialSubmissionActions>

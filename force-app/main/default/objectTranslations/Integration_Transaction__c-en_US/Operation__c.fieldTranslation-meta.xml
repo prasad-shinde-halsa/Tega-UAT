@@ -11,10 +11,6 @@
         <translation><!-- Create Offer Spare --></translation>
     </picklistValues>
     <picklistValues>
-        <masterLabel>Create SO-BOM</masterLabel>
-        <translation><!-- Create SO-BOM --></translation>
-    </picklistValues>
-    <picklistValues>
         <masterLabel>Create part list</masterLabel>
         <translation><!-- Create part list --></translation>
     </picklistValues>

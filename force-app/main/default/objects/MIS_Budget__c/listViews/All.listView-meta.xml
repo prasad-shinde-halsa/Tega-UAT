@@ -6,6 +6,8 @@
     <columns>CURRENCY_ISO_CODE</columns>
     <columns>CREATED_DATE</columns>
     <columns>Mis_Monthly_Report__c</columns>
+    <columns>CREATEDBY_USER</columns>
+    <columns>UPDATEDBY_USER</columns>
     <filterScope>Everything</filterScope>
     <label>All</label>
 </ListView>

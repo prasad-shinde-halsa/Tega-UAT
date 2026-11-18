@@ -11,14 +11,11 @@
     <tabs>standard-FlowRecord</tabs>
     <tabs>standard-Monitor</tabs>
     <tabs>Budget_Report_Segregation__c</tabs>
+    <tabs>Item_Weight__c</tabs>
     <tabs>standard-ActionHub</tabs>
-    <tabs>Sales_Organization_Product__c</tabs>
     <tabs>standard-FlowLogs</tabs>
-    <tabs>L2_L3_product__c</tabs>
-    <tabs>SAP_data_Sync__c</tabs>
-    <tabs>TOP_Field_Staging__c</tabs>
     <tabs>standard-GlobalFlowResources</tabs>
-    <tabs>Molycop_Referral__c</tabs>
+    <tabs>standard-Tags</tabs>
     <uiType>Lightning</uiType>
     <utilityBar>FlowsApp_UtilityBar</utilityBar>
 </CustomApplication>

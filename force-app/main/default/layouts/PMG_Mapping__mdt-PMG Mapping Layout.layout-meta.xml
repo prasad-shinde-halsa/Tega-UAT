@@ -34,10 +34,6 @@
                 <behavior>Edit</behavior>
                 <field>PMG_Head_Name__c</field>
             </layoutItems>
-            <layoutItems>
-                <behavior>Edit</behavior>
-                <field>PMG_Head_ID__c</field>
-            </layoutItems>
         </layoutColumns>
         <layoutColumns>
             <layoutItems>
@@ -63,6 +59,10 @@
             <layoutItems>
                 <behavior>Edit</behavior>
                 <field>PMG_code__c</field>
+            </layoutItems>
+            <layoutItems>
+                <behavior>Edit</behavior>
+                <field>PMG_Head_ID__c</field>
             </layoutItems>
         </layoutColumns>
         <style>TwoColumnsTopToBottom</style>

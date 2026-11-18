@@ -10,6 +10,16 @@
                             <value>Edit</value>
                         </valueListItems>
                         <valueListItems>
+                            <value>Customer_Sales_Organization__c.Enable_Disable_Customer_Branch_Assignment</value>
+                            <visibilityRule>
+                                <criteria>
+                                    <leftValue>{!$User.Profile.Name}</leftValue>
+                                    <operator>EQUAL</operator>
+                                    <rightValue>System Administrator</rightValue>
+                                </criteria>
+                            </visibilityRule>
+                        </valueListItems>
+                        <valueListItems>
                             <value>Customer_Sales_Organization__c.Cancel_Branch_Assignment</value>
                             <visibilityRule>
                                 <criteria>
@@ -50,32 +60,16 @@
                             <value>FeedItem.ContentNote</value>
                         </valueListItems>
                         <valueListItems>
-                            <value>FeedItem.PollPost</value>
-                        </valueListItems>
-                        <valueListItems>
-                            <value>FeedItem.RypplePost</value>
-                        </valueListItems>
-                        <valueListItems>
                             <value>Delete</value>
                         </valueListItems>
                         <valueListItems>
                             <value>Clone</value>
                         </valueListItems>
                         <valueListItems>
+                            <value>ChangeOwnerOne</value>
+                        </valueListItems>
+                        <valueListItems>
                             <value>ChangeRecordType</value>
-                        </valueListItems>
-                        <valueListItems>
-                            <value>PrintableView</value>
-                        </valueListItems>
-                        <valueListItems>
-                            <value>Customer_Sales_Organization__c.Enable_Disable_Customer_Branch_Assignment</value>
-                            <visibilityRule>
-                                <criteria>
-                                    <leftValue>{!$User.Profile.Name}</leftValue>
-                                    <operator>EQUAL</operator>
-                                    <rightValue>System Administrator</rightValue>
-                                </criteria>
-                            </visibilityRule>
                         </valueListItems>
                     </valueList>
                 </componentInstanceProperties>

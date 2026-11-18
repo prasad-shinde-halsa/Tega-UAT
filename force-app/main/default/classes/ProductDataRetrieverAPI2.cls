@@ -158,8 +158,6 @@ global class ProductDataRetrieverAPI2 {
                             l1l3Map.put('Last_Sales_Date__c',  l1l3.Last_Sales_Date__c);
                             l1l3Map.put('Last_Sales_Price__c', l1l3.Last_Sales_Price__c);
                             l1l3Map.put('Order_Number__c',     l1l3.Order_Number__c);
-                            //l1l3Map.put('Sales_Organization__c', l1l3.Sales_Organization__c);
-                            
                             l1l3Data.add(l1l3Map);
                         }
                         response.L1L3product = l1l3Data.isEmpty() ? noRecords() : l1l3Data;

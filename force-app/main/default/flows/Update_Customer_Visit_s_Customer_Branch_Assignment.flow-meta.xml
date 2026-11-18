@@ -560,7 +560,7 @@
             <targetReference>get_Customer_Visit</targetReference>
         </connector>
     </start>
-    <status>Active</status>
+    <status>Draft</status>
     <variables>
         <name>customerVisitRecVAR</name>
         <dataType>SObject</dataType>

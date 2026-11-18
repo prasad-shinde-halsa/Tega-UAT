@@ -17,7 +17,8 @@
         <inputParameters>
             <name>emailAddresses</name>
             <value>
-                <stringValue>updatecustomerfromemail@w-27px5ne89wfo1ajdrxubnve6vdps5obe51xaiv1ohvv42z3dhg.hf-1vkxv2au.ind28s.apex.sandbox.salesforce.com</stringValue>
+                <inputConfiguratorMode>Custom</inputConfiguratorMode>
+                <stringValue>updatecustomerfromemail@2hmj2op5yj3f4623ui8ltv0vy1cgvx6i0buj0dd3ay4e0eo8i1.hf-3q37i2as.ind28s.apex.sandbox.salesforce.com</stringValue>
             </value>
         </inputParameters>
         <inputParameters>
@@ -67,7 +68,7 @@
             <stringValue>Create SO-BOM</stringValue>
         </value>
     </choices>
-    <description>EMAIL MODIFIED FOR UAT TESTING</description>
+    <description>EMAIL UPDATED 2</description>
     <environments>Default</environments>
     <formulas>
         <name>body</name>

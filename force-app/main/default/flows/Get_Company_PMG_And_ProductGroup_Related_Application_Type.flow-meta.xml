@@ -3,29 +3,9 @@
     <apiVersion>62.0</apiVersion>
     <areMetricsLoggedToDataCloud>false</areMetricsLoggedToDataCloud>
     <assignments>
-        <name>Copy_1_of_Return_All_Application_Type</name>
-        <label>Copy 1 of Return All Application Type</label>
-        <locationX>314</locationX>
-        <locationY>866</locationY>
-        <assignmentItems>
-            <assignToReference>varApplicationTypeList</assignToReference>
-            <operator>Add</operator>
-            <value>
-                <elementReference>Get_All_Application_Type</elementReference>
-            </value>
-        </assignmentItems>
-        <assignmentItems>
-            <assignToReference>varIsListEmpty</assignToReference>
-            <operator>Assign</operator>
-            <value>
-                <booleanValue>false</booleanValue>
-            </value>
-        </assignmentItems>
-    </assignments>
-    <assignments>
         <name>Get_All_Application_Type_Id</name>
         <label>Get All Application Type Id</label>
-        <locationX>402</locationX>
+        <locationX>138</locationX>
         <locationY>458</locationY>
         <assignmentItems>
             <assignToReference>ApplicationTypeId</assignToReference>
@@ -42,7 +22,7 @@
         <name>Return_All_Application_Type</name>
         <label>Return All Application Type</label>
         <locationX>50</locationX>
-        <locationY>866</locationY>
+        <locationY>758</locationY>
         <assignmentItems>
             <assignToReference>varApplicationTypeList</assignToReference>
             <operator>Add</operator>
@@ -50,18 +30,11 @@
                 <elementReference>Get_All_Application_Type</elementReference>
             </value>
         </assignmentItems>
-        <assignmentItems>
-            <assignToReference>varIsListEmpty</assignToReference>
-            <operator>Assign</operator>
-            <value>
-                <booleanValue>true</booleanValue>
-            </value>
-        </assignmentItems>
     </assignments>
     <decisions>
         <name>Check_If_Application_Type_PMG_PG_Relationship</name>
         <label>Check If Application Type-PMG-PG Relationship</label>
-        <locationX>578</locationX>
+        <locationX>182</locationX>
         <locationY>242</locationY>
         <defaultConnectorLabel>Default Outcome</defaultConnectorLabel>
         <rules>
@@ -80,43 +53,6 @@
             <label>Not Null</label>
         </rules>
     </decisions>
-    <decisions>
-        <name>isListEmpty</name>
-        <label>isListEmpty</label>
-        <locationX>314</locationX>
-        <locationY>758</locationY>
-        <defaultConnectorLabel>Default Outcome</defaultConnectorLabel>
-        <rules>
-            <name>empty_list</name>
-            <conditionLogic>and</conditionLogic>
-            <conditions>
-                <leftValueReference>Get_All_Application_Type</leftValueReference>
-                <operator>IsNull</operator>
-                <rightValue>
-                    <booleanValue>true</booleanValue>
-                </rightValue>
-            </conditions>
-            <connector>
-                <targetReference>Return_All_Application_Type</targetReference>
-            </connector>
-            <label>empty list</label>
-        </rules>
-        <rules>
-            <name>not_empty</name>
-            <conditionLogic>and</conditionLogic>
-            <conditions>
-                <leftValueReference>Get_All_Application_Type</leftValueReference>
-                <operator>IsNull</operator>
-                <rightValue>
-                    <booleanValue>false</booleanValue>
-                </rightValue>
-            </conditions>
-            <connector>
-                <targetReference>Copy_1_of_Return_All_Application_Type</targetReference>
-            </connector>
-            <label>not empty</label>
-        </rules>
-    </decisions>
     <description>Added Active checking</description>
     <environments>Default</environments>
     <interviewLabel>Get Company PMG And ProductGroup Related Application Type {!$Flow.CurrentDateTime}</interviewLabel>
@@ -124,7 +60,7 @@
     <loops>
         <name>For_Application_Type_Record</name>
         <label>For Application Type Record</label>
-        <locationX>314</locationX>
+        <locationX>50</locationX>
         <locationY>350</locationY>
         <collectionReference>Get_Application_Type_PMG_PG_Relationship</collectionReference>
         <iterationOrder>Asc</iterationOrder>
@@ -157,11 +93,11 @@
     <recordLookups>
         <name>Get_All_Application_Type</name>
         <label>Get All Application Type</label>
-        <locationX>314</locationX>
+        <locationX>50</locationX>
         <locationY>650</locationY>
         <assignNullValuesIfNoRecordsFound>false</assignNullValuesIfNoRecordsFound>
         <connector>
-            <targetReference>isListEmpty</targetReference>
+            <targetReference>Return_All_Application_Type</targetReference>
         </connector>
         <filterLogic>and</filterLogic>
         <filters>
@@ -178,7 +114,7 @@
     <recordLookups>
         <name>Get_Application_Type_PMG_PG_Relationship</name>
         <label>Get Application Type-PMG-PG Relationship</label>
-        <locationX>578</locationX>
+        <locationX>182</locationX>
         <locationY>134</locationY>
         <assignNullValuesIfNoRecordsFound>false</assignNullValuesIfNoRecordsFound>
         <connector>
@@ -218,7 +154,7 @@
         <storeOutputAutomatically>true</storeOutputAutomatically>
     </recordLookups>
     <start>
-        <locationX>452</locationX>
+        <locationX>56</locationX>
         <locationY>0</locationY>
         <connector>
             <targetReference>Get_Application_Type_PMG_PG_Relationship</targetReference>
@@ -260,12 +196,5 @@
         <isInput>false</isInput>
         <isOutput>true</isOutput>
         <objectType>Application_Type_Master__c</objectType>
-    </variables>
-    <variables>
-        <name>varIsListEmpty</name>
-        <dataType>Boolean</dataType>
-        <isCollection>false</isCollection>
-        <isInput>false</isInput>
-        <isOutput>true</isOutput>
     </variables>
 </Flow>

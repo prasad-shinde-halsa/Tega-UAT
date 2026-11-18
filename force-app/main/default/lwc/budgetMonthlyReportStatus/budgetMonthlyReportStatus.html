@@ -1,0 +1,104 @@
+<template>
+    <div class="page">
+        <template lwc:if={isListView}>
+            <div class="filters">
+                <div class="filter-row">
+                    <label class="filter">
+                        <span>Fin Year:</span>
+                        <select onchange={handleYearChange}>
+                            <template for:each={yearOptions} for:item="option">
+                                <option key={option.value} value={option.value} selected={option.selected}>{option.label}</option>
+                            </template>
+                        </select>
+                    </label>
+                    <label class="filter">
+                        <span>Month:</span>
+                        <select onchange={handleMonthChange}>
+                            <template for:each={monthOptions} for:item="option">
+                                <option key={option.value} value={option.value} selected={option.selected}>{option.label}</option>
+                            </template>
+                        </select>
+                    </label>
+                </div>
+                <div class="filter-row">
+                    <label class="filter">
+                        <span>Company:</span>
+                        <select class="wide" onchange={handleCompanyChange}>
+                            <template for:each={companyOptions} for:item="option">
+                                <option key={option.value} value={option.value} selected={option.selected}>{option.label}</option>
+                            </template>
+                        </select>
+                    </label>
+                </div>
+                <div class="filter-row">
+                    <label class="filter">
+                        <span>Branch:</span>
+                        <select class="wide" onchange={handleBranchChange}>
+                            <template for:each={branchOptions} for:item="option">
+                                <option key={option.value} value={option.value} selected={option.selected}>{option.label}</option>
+                            </template>
+                        </select>
+                    </label>
+                </div>
+                <button type="button" class="attachment-button" onclick={handleAttachmentsClick}>Previous attachment</button>
+            </div>
+
+            <div lwc:if={showAttachments} class="attachments">
+                <template lwc:if={hasAttachments}>
+                    <template for:each={attachments} for:item="file">
+                        <a key={file.documentId} href={file.url} target="_blank" rel="noopener">{file.name}</a>
+                    </template>
+                </template>
+                <span lwc:else>No files are attached to the budgets listed below.</span>
+            </div>
+
+            <p lwc:if={errorMessage} class="message error" role="alert">{errorMessage}</p>
+
+            <div class="table-wrap">
+                <lightning-spinner lwc:if={isLoading} alternative-text="Loading" size="medium"></lightning-spinner>
+                <table>
+                    <thead>
+                        <tr>
+                            <th scope="col" class="serial">#</th>
+                            <th scope="col">Budget</th>
+                            <th scope="col">Budget Branch Name</th>
+                            <th scope="col">Budget Employee Name</th>
+                            <th scope="col">MR Branch Name</th>
+                            <th scope="col">MR Employee Name</th>
+                            <th scope="col">Monthly Report</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <template for:each={rows} for:item="row" for:index="index">
+                            <tr key={row.key}>
+                                <td>{row.serial}</td>
+                                <td>
+                                    <button type="button" class="view" data-index={index} onclick={handleViewBudget}>View</button>
+                                </td>
+                                <td>{row.branchName}</td>
+                                <td>{row.employeeName}</td>
+                                <td>{row.mrBranchName}</td>
+                                <td>{row.mrEmployeeName}</td>
+                                <td>
+                                    <button lwc:if={row.hasReport} type="button" class="view" data-index={index} onclick={handleViewReport}>View</button>
+                                    <span lwc:else>-</span>
+                                </td>
+                            </tr>
+                        </template>
+                    </tbody>
+                </table>
+                <p lwc:if={showNoRows} class="message">No approved budgets match these filters.</p>
+            </div>
+        </template>
+
+        <c-budget-monthly-report-grid
+            lwc:else
+            mode={grid.mode}
+            budget-ids={grid.budgetIds}
+            financial-year={selectedYear}
+            month={selectedMonth}
+            title={grid.title}
+            onback={handleBack}
+        ></c-budget-monthly-report-grid>
+    </div>
+</template>

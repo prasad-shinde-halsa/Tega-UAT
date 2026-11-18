@@ -1,0 +1,411 @@
+.page {
+    color: #000;
+    background: #fff;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 12px;
+}
+
+.filters {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 16px 32px;
+    padding: 16px;
+    margin-bottom: 8px;
+    background: #d9d9d9;
+}
+
+.main-filters {
+    flex: 1 1 520px;
+    min-width: 0;
+}
+
+.side-filters {
+    flex: 2 1 620px;
+    min-width: 0;
+}
+
+.field-row {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 6px 16px;
+    margin-bottom: 8px;
+}
+
+.field {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    min-width: 0;
+}
+
+.caption {
+    display: inline-block;
+    width: 112px;
+}
+
+select {
+    height: 22px;
+    max-width: 100%;
+    font: inherit;
+    background: #fff;
+    border: 1px solid #1b5f9e;
+}
+
+select:disabled {
+    background: #ececec;
+    border-color: #b5b5b5;
+}
+
+select.tiny {
+    width: 72px;
+}
+
+select.short {
+    width: 132px;
+}
+
+select.medium {
+    width: 260px;
+}
+
+select.long {
+    width: 400px;
+}
+
+select.customer {
+    background: #ffecec;
+    border-color: #d32f2f;
+}
+
+select.required {
+    border-color: #d32f2f;
+}
+
+fieldset {
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+.budget-types {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 4px 12px;
+    font-weight: 700;
+}
+
+.radio,
+.check {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+}
+
+.lists {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+}
+
+.list-field {
+    display: flex;
+    flex: 1 1 180px;
+    gap: 6px;
+    min-width: 0;
+}
+
+.list-field legend {
+    float: left;
+}
+
+.list-box {
+    flex: 1;
+    height: 128px;
+    min-width: 0;
+    padding: 6px 8px;
+    overflow-y: auto;
+    background: #fff;
+    border: 1px solid #8a8a8a;
+}
+
+.check {
+    padding: 2px 0;
+}
+
+.show {
+    display: block;
+    width: 110px;
+    padding: 7px 0;
+    margin-top: 8px;
+    font: inherit;
+    font-weight: 700;
+    color: #fff;
+    background: linear-gradient(#2f8fdb, #0b63b6);
+    border: 1px solid #0b5aa5;
+    border-radius: 2px;
+    cursor: pointer;
+}
+
+.show:hover {
+    background: #0b63b6;
+}
+
+.sheet {
+    position: relative;
+    min-height: 120px;
+    max-height: 75vh;
+    overflow: auto;
+}
+
+table {
+    border-collapse: separate;
+    border-spacing: 0;
+    border-left: 1px solid #000;
+}
+
+th {
+    position: sticky;
+    top: 0;
+    z-index: 1;
+    min-width: 56px;
+    padding: 6px;
+    font-weight: 700;
+    color: #fff;
+    text-align: center;
+    background: #3399cc;
+    border-top: 1px solid #000;
+    border-right: 1px solid #000;
+    border-bottom: 1px solid #000;
+}
+
+td {
+    padding: 4px 5px;
+    vertical-align: top;
+    background: #eaf2fd;
+    border-right: 1px solid #000;
+    border-bottom: 1px solid #000;
+}
+
+.customer-col {
+    min-width: 400px;
+}
+
+td.branch {
+    min-width: 110px;
+}
+
+td.description {
+    min-width: 120px;
+}
+
+td.no-wrap {
+    white-space: nowrap;
+}
+
+td.amount {
+    text-align: right;
+    white-space: nowrap;
+}
+
+td.serial {
+    min-width: 44px;
+    text-align: center;
+}
+
+td.outside {
+    background: #2ecc40;
+}
+
+td.month-cell {
+    min-width: 96px;
+}
+
+/* Colours follow the existing report where it shows the stage; the others extend the same palette. */
+td.status-no-work-done {
+    background: #ffcc99;
+}
+
+td.status-indent {
+    background: #fff2cc;
+}
+
+td.status-enquiry {
+    background: #ffe699;
+}
+
+td.status-offer {
+    background: #bde0fe;
+}
+
+td.status-presentation-and-data-collection {
+    background: #ffffb3;
+}
+
+td.status-mapping-pain-point {
+    background: #ffd9ec;
+}
+
+td.status-presentation-of-solution {
+    background: #b3e5fc;
+}
+
+td.status-follow-up-on-presentation {
+    background: #33cccc;
+}
+
+td.status-generation-of-rfq {
+    background: #c5e1a5;
+}
+
+td.status-installation-of-trial-order {
+    background: #ccccff;
+}
+
+td.status-completion-of-trial-order {
+    background: #b39ddb;
+}
+
+td.status-contact-initiation-consultant-oem {
+    background: #ffe0b2;
+}
+
+td.status-product-presentation-consultant-oem-end-customer {
+    background: #b2ebf2;
+}
+
+td.status-specification-incorporation {
+    background: #dcedc8;
+}
+
+td.status-tender-rfq {
+    background: #c5e1a5;
+}
+
+td.status-offer-submission {
+    background: #bde0fe;
+}
+
+td.status-negotiation {
+    background: #99ffcc;
+}
+
+td.status-lost {
+    color: #5c0000;
+    background: #ff3300;
+}
+
+.message {
+    padding: 8px;
+    text-align: center;
+}
+
+.error {
+    color: #ba0517;
+    font-weight: 700;
+}
+
+.assistive {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    clip: rect(0 0 0 0);
+}
+
+.show:disabled {
+    cursor: wait;
+    opacity: 0.6;
+}
+
+/* Full-screen loader, centred in the viewport whatever the scroll position of the table. */
+.loading-overlay {
+    position: fixed;
+    inset: 0;
+    z-index: 9000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: rgba(255, 255, 255, 0.65);
+    backdrop-filter: blur(1px);
+    cursor: wait;
+}
+
+.loading-card {
+    min-width: 260px;
+    padding: 24px 32px 20px;
+    text-align: center;
+    background: #fff;
+    border: 1px solid #d8dde6;
+    border-radius: 8px;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.18);
+}
+
+.loading-spinner {
+    position: relative;
+    height: 48px;
+    margin-bottom: 12px;
+}
+
+.loading-title {
+    margin: 0;
+    font-size: 15px;
+    font-weight: 700;
+    color: #032d60;
+}
+
+.loading-text {
+    margin: 4px 0 0;
+    font-size: 12px;
+    color: #5c6b7a;
+}
+
+/* Row count on the left, paging on the right, just above the table. */
+.table-toolbar {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    gap: 8px;
+    padding: 6px 2px;
+}
+
+.rows-message {
+    font-weight: 700;
+    color: #032d60;
+}
+
+.pager {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    margin-left: auto;
+}
+
+.page-label {
+    margin-right: 4px;
+    color: #5c6b7a;
+}
+
+.pager-button {
+    min-width: 72px;
+    padding: 4px 10px;
+    font: inherit;
+    font-weight: 700;
+    color: #fff;
+    background: linear-gradient(#2f8fdb, #0b63b6);
+    border: 1px solid #0b5aa5;
+    border-radius: 2px;
+    cursor: pointer;
+}
+
+.pager-button:hover:not(:disabled) {
+    background: #0b63b6;
+}
+
+.pager-button:disabled {
+    color: #8c96a3;
+    background: #eef1f6;
+    border-color: #c9d0da;
+    cursor: not-allowed;
+}

@@ -17,5 +17,5 @@
     <protected>false</protected>
     <showsLocation>false</showsLocation>
     <showsStatus>false</showsStatus>
-    <url>https://tegaindustrieslimited--uatfc.sandbox.lightning.force.com/lightning/r/Report/00OS2000002p6BtMAI/view?&amp;fv0={!DC_Budget__c.Id}</url>
+    <url>https://tegaindustrieslimited.my.salesforce.com/lightning/r/Report/00OS2000004GTOkMAO/view?fv0={!DC_Budget__c.Id}</url>
 </WebLink>

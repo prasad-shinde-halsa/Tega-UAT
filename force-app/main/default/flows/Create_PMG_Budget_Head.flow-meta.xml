@@ -265,7 +265,7 @@ Introduce Active checkbox in meta data</description>
         <name>Get_Active_FY_Year</name>
         <label>Get Active FY Year</label>
         <locationX>1560</locationX>
-        <locationY>462</locationY>
+        <locationY>463</locationY>
         <assignNullValuesIfNoRecordsFound>false</assignNullValuesIfNoRecordsFound>
         <connector>
             <targetReference>PMG_Record_Type</targetReference>

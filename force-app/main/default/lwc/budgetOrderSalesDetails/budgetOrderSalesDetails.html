@@ -1,0 +1,111 @@
+<template>
+    <lightning-spinner if:true={isLoading} size="large" alternative-text="Loading..."></lightning-spinner>
+
+    <header class="slds-modal__header slds-grid slds-wrap slds-grid_vertical-align-center section-header">
+        <h2 class="slds-text-heading_medium slds-hyphenate slds-col header-text">
+            Order &amp; Sales Details (Figures are in Thousand (000))
+        </h2>
+        <div class="header-totals">
+            <span class="total-chip">
+                <span class="type-flag type-flag-order">Order</span>
+                <span class="total-chip-value">{totalOrderText}</span>
+            </span>
+            <span class="total-chip">
+                <span class="type-flag type-flag-sales">Sales</span>
+                <span class="total-chip-value">{totalSalesText}</span>
+            </span>
+        </div>
+    </header>
+
+    <div class="slds-grid slds-wrap slds-p-around_medium">
+        <div class="slds-col slds-size_1-of-1 slds-medium-size_1-of-3 slds-p-horizontal_small">
+            <lightning-input type="search" label="Search By Customer" placeholder="Enter search term ..."
+                class="neon-input" value={filter.customer} data-filter="customer" onchange={handleFilterChange}>
+            </lightning-input>
+        </div>
+        <div class="slds-col slds-size_1-of-1 slds-medium-size_1-of-3 slds-p-horizontal_small">
+            <lightning-input type="search" label="Search By PMG" placeholder="Enter search term ..."
+                class="neon-input" value={filter.pmg} data-filter="pmg" onchange={handleFilterChange}>
+            </lightning-input>
+        </div>
+        <div class="slds-col slds-size_1-of-1 slds-medium-size_1-of-3 slds-p-horizontal_small">
+            <lightning-combobox label="Search By Order Type" class="neon-combobox" value={filter.orderType}
+                options={orderTypeOptions} data-filter="orderType" onchange={handleFilterChange}>
+            </lightning-combobox>
+        </div>
+    </div>
+
+    <template if:false={hasRows}>
+        <header class="slds-modal__header section-header">
+            <h2 class="slds-text-heading_medium slds-hyphenate header-text">No Order or Sales Details Found</h2>
+        </header>
+    </template>
+
+    <template if:true={hasRows}>
+        <div class="slds-is-relative table-scroll">
+            <table class="slds-table slds-table_bordered slds-no-row-hover budget-grid">
+                <thead class="table-head">
+                    <tr class="slds-line-height_reset">
+                        <th scope="col">Sl. No</th>
+                        <th scope="col">Name</th>
+                        <th scope="col">PMG</th>
+                        <th scope="col">Product Group</th>
+                        <th scope="col">Application Type</th>
+                        <th scope="col">Order Type</th>
+                        <th scope="col">Customer</th>
+                        <th scope="col">Part List</th>
+                        <th scope="col">Product Name</th>
+                        <th scope="col">Description</th>
+                        <th scope="col">Type</th>
+                        <th scope="col">APR</th>
+                        <th scope="col">MAY</th>
+                        <th scope="col">JUN</th>
+                        <th scope="col">JUL</th>
+                        <th scope="col">AUG</th>
+                        <th scope="col">SEP</th>
+                        <th scope="col">OCT</th>
+                        <th scope="col">NOV</th>
+                        <th scope="col">DEC</th>
+                        <th scope="col">JAN</th>
+                        <th scope="col">FEB</th>
+                        <th scope="col">MAR</th>
+                        <th scope="col">Total Orders / Sales</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <template for:each={tableRows} for:item="row">
+                        <tr key={row.key} class={row.rowClass}>
+                            <template if:true={row.isFirstRow}>
+                                <td rowspan="2" class="info-cell">{row.serialNumber}</td>
+                                <td rowspan="2" class="info-cell">{row.name}</td>
+                                <td rowspan="2" class="info-cell" title={row.pmg}>{row.pmg}</td>
+                                <td rowspan="2" class="info-cell" title={row.productGroup}>{row.productGroup}</td>
+                                <td rowspan="2" class="info-cell" title={row.applicationType}>{row.applicationType}</td>
+                                <td rowspan="2" class="info-cell" title={row.orderType}>{row.orderType}</td>
+                                <td rowspan="2" class="info-cell" title={row.customerName}>{row.customerLabel}</td>
+                                <td rowspan="2" class="info-cell" title={row.partList}>{row.partList}</td>
+                                <td rowspan="2" class="info-cell" title={row.productName}>{row.productName}</td>
+                                <td rowspan="2" class="info-cell" title={row.description}>{row.description}</td>
+                            </template>
+                            <td class="type-cell"><span class={row.flagClass}>{row.type}</span></td>
+                            <template for:each={row.months} for:item="month">
+                                <td key={month.field} class="month-cell">
+                                    <input type="text" class={month.inputClass} value={month.value} title={month.label}
+                                        aria-label={month.label} data-id={row.Id} data-field={month.field}
+                                        disabled={month.disabled} onchange={handleInlineEdit} />
+                                </td>
+                            </template>
+                            <td class="total-cell" title={row.type}>{row.total}</td>
+                        </tr>
+                    </template>
+                </tbody>
+            </table>
+        </div>
+    </template>
+
+    <div if:true={hasEdits} class="save-bar">
+        <span class="save-bar-text">{editSummary}</span>
+        <lightning-button label="Save" variant="brand" onclick={handleSave}></lightning-button>
+        <lightning-button label="Cancel" variant="neutral" onclick={handleCancel} class="slds-m-left_small"></lightning-button>
+    </div>
+</template>

@@ -1,0 +1,205 @@
+<template>
+    <div class="page">
+        <div class="filters">
+            <div class="main-filters">
+                <div class="field-row">
+                    <label class="field">
+                        <span class="caption">Region:</span>
+                        <select class="medium" onchange={handleRegionChange}>
+                            <template for:each={regionOptions} for:item="option">
+                                <option key={option.value} value={option.value} selected={option.selected}>{option.label}</option>
+                            </template>
+                        </select>
+                    </label>
+                    <fieldset class="budget-types">
+                        <legend class="assistive">Budget type</legend>
+                        <template for:each={budgetTypeOptions} for:item="type">
+                            <label key={type.value} class="radio">
+                                <input type="radio" name="budgetType" value={type.value} checked={type.checked} onchange={handleBudgetTypeChange} />
+                                <span>{type.label}</span>
+                            </label>
+                        </template>
+                    </fieldset>
+                </div>
+                <div class="field-row">
+                    <label class="field">
+                        <span class="caption">Country:</span>
+                        <select class="medium" disabled={isCountryDisabled} onchange={handleCountryChange}>
+                            <template for:each={countryOptions} for:item="option">
+                                <option key={option.value} value={option.value} selected={option.selected}>{option.label}</option>
+                            </template>
+                        </select>
+                    </label>
+                </div>
+                <div class="field-row">
+                    <label class="field">
+                        <span class="caption">Customer:</span>
+                        <select class="long customer" onchange={handleCustomerChange}>
+                            <template for:each={customerOptions} for:item="option">
+                                <option key={option.value} value={option.value} selected={option.selected}>{option.label}</option>
+                            </template>
+                        </select>
+                    </label>
+                </div>
+                <div class="field-row">
+                    <label class="field">
+                        <span class="caption">For the Month:</span>
+                        <select class="short" onchange={handleMonthChange}>
+                            <template for:each={monthOptions} for:item="option">
+                                <option key={option.value} value={option.value} selected={option.selected}>{option.label}</option>
+                            </template>
+                        </select>
+                    </label>
+                    <label class="field">
+                        <span>Financial Year:</span>
+                        <select class="short required" onchange={handleYearChange}>
+                            <template for:each={yearOptions} for:item="option">
+                                <option key={option.value} value={option.value} selected={option.selected}>{option.label}</option>
+                            </template>
+                        </select>
+                    </label>
+                </div>
+                <div class="field-row">
+                    <label class="field">
+                        <span class="caption">Figures in:</span>
+                        <select class="short" onchange={handleFiguresChange}>
+                            <template for:each={figuresOptions} for:item="option">
+                                <option key={option.value} value={option.value} selected={option.selected}>{option.label}</option>
+                            </template>
+                        </select>
+                    </label>
+                    <label class="field">
+                        <span>Decimal Point:</span>
+                        <select class="short" onchange={handleDecimalsChange}>
+                            <template for:each={decimalOptions} for:item="option">
+                                <option key={option.value} value={option.value} selected={option.selected}>{option.label}</option>
+                            </template>
+                        </select>
+                    </label>
+                    <label class="field">
+                        <span class="assistive">Order type</span>
+                        <select class="short" onchange={handleOrderTypeChange}>
+                            <template for:each={orderTypeOptions} for:item="option">
+                                <option key={option.value} value={option.value} selected={option.selected}>{option.label}</option>
+                            </template>
+                        </select>
+                    </label>
+                </div>
+                <div class="field-row">
+                    <span class="caption"></span>
+                    <strong>Currency: INR</strong>
+                    <label class="field">
+                        <span>Show Top:</span>
+                        <select class="tiny" onchange={handleTopChange}>
+                            <template for:each={topOptions} for:item="option">
+                                <option key={option.value} value={option.value} selected={option.selected}>{option.label}</option>
+                            </template>
+                        </select>
+                        <span>Customer</span>
+                    </label>
+                </div>
+            </div>
+
+            <div class="side-filters">
+                <div class="lists">
+                    <fieldset class="list-field">
+                        <legend>Qtr:</legend>
+                        <div class="list-box">
+                            <template for:each={quarterOptions} for:item="option">
+                                <label key={option.value} class="check">
+                                    <input type="checkbox" value={option.value} checked={option.checked} onchange={handleQuarterChange} />
+                                    <span>{option.label}</span>
+                                </label>
+                            </template>
+                        </div>
+                    </fieldset>
+                    <fieldset class="list-field">
+                        <legend>PMG:</legend>
+                        <div class="list-box">
+                            <template for:each={pmgOptions} for:item="option">
+                                <label key={option.value} class="check">
+                                    <input type="checkbox" value={option.value} checked={option.checked} onchange={handlePmgChange} />
+                                    <span>{option.label}</span>
+                                </label>
+                            </template>
+                        </div>
+                    </fieldset>
+                    <fieldset class="list-field">
+                        <legend class="assistive">Product group</legend>
+                        <div class="list-box">
+                            <template for:each={groupOptions} for:item="option">
+                                <label key={option.value} class="check">
+                                    <input type="checkbox" value={option.value} checked={option.checked} onchange={handleGroupChange} />
+                                    <span>{option.label}</span>
+                                </label>
+                            </template>
+                        </div>
+                    </fieldset>
+                </div>
+                <button type="button" class="show" onclick={handleShow} disabled={isLoading}>Show</button>
+            </div>
+        </div>
+
+        <p lwc:if={errorMessage} class="message error" role="alert">{errorMessage}</p>
+        <div lwc:if={hasRows} class="table-toolbar">
+            <span class="rows-message" role="status">{rowsMessage}</span>
+            <div class="pager">
+                <span class="page-label">{pageLabel}</span>
+                <button type="button" class="pager-button" onclick={handleBack} disabled={isBackDisabled}>&#8249; Back</button>
+                <button type="button" class="pager-button" onclick={handleNext} disabled={isNextDisabled}>Next &#8250;</button>
+            </div>
+        </div>
+
+        <div class="sheet">
+            <table>
+                <thead>
+                    <tr>
+                        <th scope="col">Sl</th>
+                        <th scope="col">Branch</th>
+                        <th scope="col" class="customer-col">Customer</th>
+                        <th scope="col">PMG</th>
+                        <th scope="col">Product Grp</th>
+                        <th scope="col">Description</th>
+                        <th scope="col">Partlist</th>
+                        <th scope="col">Budget Month</th>
+                        <th scope="col">Exp Month</th>
+                        <th scope="col">Budget Amt</th>
+                        <template for:each={monthColumns} for:item="month">
+                            <th key={month} scope="col">{month}</th>
+                        </template>
+                    </tr>
+                </thead>
+                <tbody>
+                    <template for:each={visibleRows} for:item="row">
+                        <tr key={row.key}>
+                            <td class={row.serialClass}>{row.serialLabel}</td>
+                            <td class="branch">{row.branch}</td>
+                            <td class="customer-col">{row.customerLabel}</td>
+                            <td>{row.pmg}</td>
+                            <td>{row.productGroup}</td>
+                            <td class="description">{row.description}</td>
+                            <td>{row.partList}</td>
+                            <td class="no-wrap">{row.budgetMonthLabel}</td>
+                            <td class="no-wrap">{row.expectedMonth}</td>
+                            <td class="amount">{row.amount}</td>
+                            <template for:each={row.cells} for:item="cell">
+                                <td key={cell.month} class={cell.className}>{cell.stage}</td>
+                            </template>
+                        </tr>
+                    </template>
+                </tbody>
+            </table>
+            <p lwc:if={showNoRows} class="message">No records match these filters.</p>
+        </div>
+
+        <div lwc:if={isLoading} class="loading-overlay" role="status" aria-live="polite">
+            <div class="loading-card">
+                <div class="loading-spinner">
+                    <lightning-spinner alternative-text="Loading" size="medium" variant="brand"></lightning-spinner>
+                </div>
+                <p class="loading-title">Loading budget stages</p>
+                <p class="loading-text">Please wait while the data is prepared…</p>
+            </div>
+        </div>
+    </div>
+</template>

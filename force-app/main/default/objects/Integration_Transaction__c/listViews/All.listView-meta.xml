@@ -7,6 +7,7 @@
     <columns>Request__c</columns>
     <columns>Record_Id__c</columns>
     <columns>Status__c</columns>
+    <columns>Sync__c</columns>
     <columns>Error__c</columns>
     <columns>Response__c</columns>
     <filterScope>Everything</filterScope>

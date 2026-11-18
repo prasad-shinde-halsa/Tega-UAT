@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>PMG_Count_Conveyor__c</fullName>
+    <description>Number of PMG Visit Detail rows with PMG Conveyor Component. Used by PMG_List__c for the Visit Report Overview PMG filter.</description>
+    <label>PMG Count Conveyor</label>
+    <summaryFilterItems>
+        <field>PMG_Visit_Detail__c.PMG__c</field>
+        <operation>equals</operation>
+        <value>Conveyor Component</value>
+    </summaryFilterItems>
+    <summaryForeignKey>PMG_Visit_Detail__c.Customer_Visit__c</summaryForeignKey>
+    <summaryOperation>count</summaryOperation>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Summary</type>
+</CustomField>

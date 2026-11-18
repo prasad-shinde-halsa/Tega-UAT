@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- This new field Financial Year has been added in PRF to enable Users to choose budget line item either from FY 2025-26 or from FY 2026-27. --></help>
     <label><!-- Financial Year --></label>
     <name>Financial_Year2__c</name>
     <picklistValues>
